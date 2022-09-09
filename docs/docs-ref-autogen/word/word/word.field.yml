@@ -419,4 +419,4 @@ methods:
       return:
         type: '<xref uid="word!Word.Field:class" />'
         description: ''
-extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+extends: '<xref uid="word!~OfficeExtension.ClientObject:class" />'
