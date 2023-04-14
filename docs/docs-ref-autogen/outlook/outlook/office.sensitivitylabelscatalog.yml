@@ -19,6 +19,14 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
+
+
+  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+  To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
+  or appointment in compose mode
+  (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 isPreview: true
 isDeprecated: false
 type: interface
@@ -42,8 +50,16 @@ methods:
       Compose
 
 
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
       **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
       `getIsEnabledAsync` before using `getAsync`<!-- -->.
+
+
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
+      message or appointment in compose mode
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -55,14 +71,14 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The available sensitivity labels
             and their properties are returned in the `asyncResult.value` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.SensitivityLabelDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
@@ -86,8 +102,16 @@ methods:
       Compose
 
 
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
       **Recommended**: To determine whether the catalog of sensitivity labels is enabled in Outlook, call
       `getIsEnabledAsync` before using `getAsync`<!-- -->.
+
+
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
+      message or appointment in compose mode
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 
 
       #### Examples
@@ -128,7 +152,7 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The available sensitivity labels
             and their properties are returned in the `asyncResult.value` property.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.SensitivityLabelDetails:interface" />[]&gt;) =&gt; void
       return:
         type: void
@@ -155,6 +179,14 @@ methods:
       **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more
       information, see [Get started with sensitivity
       labels](https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)<!-- -->.
+
+
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
+      message or appointment in compose mode
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
     isPreview: true
     isDeprecated: false
     syntax:
@@ -166,13 +198,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The status of the catalog of
             sensitivity labels is returned in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -198,6 +230,14 @@ methods:
       **Important**: The catalog of sensitivity labels is configured by an organization's administrator. For more
       information, see [Get started with sensitivity
       labels](https://learn.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels)<!-- -->.
+
+
+      **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+      To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
+      message or appointment in compose mode
+      (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
 
 
       #### Examples
@@ -229,7 +269,7 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. The status of the catalog of
             sensitivity labels is returned in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;boolean&gt;) =&gt; void'
       return:
         type: void
         description: ''

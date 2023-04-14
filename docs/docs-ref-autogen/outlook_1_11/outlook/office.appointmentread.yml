@@ -1160,7 +1160,7 @@ methods:
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
-          type: '<xref uid="office!Office.EventType:enum" /> | string'
+          type: '<xref uid="office!~Office_2.EventType:enum" /> | string'
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -1171,12 +1171,12 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1212,7 +1212,7 @@ methods:
       parameters:
         - id: eventType
           description: The event that should invoke the handler.
-          type: '<xref uid="office!Office.EventType:enum" /> | string'
+          type: '<xref uid="office!~Office_2.EventType:enum" /> | string'
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -1223,7 +1223,7 @@ methods:
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1439,12 +1439,12 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1499,7 +1499,7 @@ methods:
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1750,12 +1750,12 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1810,7 +1810,7 @@ methods:
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -1893,14 +1893,14 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the
             `asyncResult.error` property will contain an error code with the reason for the failure.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void
       return:
         type: void
@@ -1958,7 +1958,7 @@ methods:
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object. If the call fails, the
             `asyncResult.error` property will contain an error code with the reason for the failure.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.AttachmentContent:interface" />&gt;) =&gt; void
       return:
         type: void
@@ -2230,13 +2230,13 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string
             (or an empty string if there's no initialization context) in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2269,7 +2269,7 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. On success, the initialization context data is provided as a string
             (or an empty string if there's no initialization context) in the `asyncResult.value` property.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;string&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -2782,14 +2782,14 @@ methods:
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the properties of the shared
             item.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void
       return:
         type: void
@@ -2851,7 +2851,7 @@ methods:
             of type `Office.AsyncResult`<!-- -->. The `value` property of the result is the properties of the shared
             item.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.SharedProperties:interface" />&gt;) =&gt; void
       return:
         type: void
@@ -2969,7 +2969,7 @@ methods:
             When the method completes, the function passed in the `callback` parameter is called with a single parameter
             of type `Office.AsyncResult`<!-- -->.
           type: >-
-            (asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;<xref
+            (asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;<xref
             uid="outlook!Office.CustomProperties:interface" />&gt;) =&gt; void
         - id: userContext
           description: >-
@@ -3012,17 +3012,17 @@ methods:
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
-          type: '<xref uid="office!Office.EventType:enum" /> | string'
+          type: '<xref uid="office!~Office_2.EventType:enum" /> | string'
         - id: options
           description: >-
             An object literal that contains one or more of the following properties:- `asyncContext`<!-- -->: Developers
             can provide any object they wish to access in the callback function.
-          type: '<xref uid="office!Office.AsyncContextOptions:interface" />'
+          type: '<xref uid="office!~Office_2.AsyncContextOptions:interface" />'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
@@ -3059,12 +3059,12 @@ methods:
       parameters:
         - id: eventType
           description: The event that should revoke the handler.
-          type: '<xref uid="office!Office.EventType:enum" /> | string'
+          type: '<xref uid="office!~Office_2.EventType:enum" /> | string'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the `callback` parameter is called with a single
             parameter, `asyncResult`<!-- -->, which is an `Office.AsyncResult` object.
-          type: '(asyncResult: <xref uid="office!Office.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
+          type: '(asyncResult: <xref uid="office!~Office_2.AsyncResult:interface" />&lt;void&gt;) =&gt; void'
       return:
         type: void
         description: ''
