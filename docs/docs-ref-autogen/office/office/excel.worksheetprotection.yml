@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.WorksheetProtection
 summary: Represents the protection of a worksheet object.
 remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -20,7 +19,6 @@ properties:
       `AllowEditRange` object can be used to allow editing of a specific range, while maintaining protection on the rest
       of the worksheet.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
     fullName: canPauseProtection
     summary: Specifies if protection can be paused for this worksheet.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +57,6 @@ properties:
     fullName: isPasswordProtected
     summary: Specifies if the sheet is password protected.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +69,6 @@ properties:
     fullName: isPaused
     summary: Specifies if worksheet protection is paused.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +81,6 @@ properties:
     fullName: options
     summary: Specifies the protection options for the worksheet.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,7 +93,6 @@ properties:
     fullName: protected
     summary: Specifies if the worksheet is protected.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +107,6 @@ properties:
       Specifies the protection options saved in the worksheet. This will return the same `WorksheetProtectionOptions`
       object regardless of the worksheet protection state.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,7 +123,6 @@ methods:
       protection state. If a password is input but no password is required to unlock worksheet protection, this method
       will return false.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +142,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -172,7 +161,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,7 +180,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,7 +211,6 @@ methods:
       throws an `InvalidArgument` error and fails to pause protection. This method does not change the protection state
       if worksheet protection is not enabled or already paused.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -270,7 +256,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -294,7 +279,6 @@ methods:
       must be paused for this method to work. If worksheet protection is not paused, then this method will not change
       the protection state of the worksheet.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -313,7 +297,6 @@ methods:
       `InvalidOperation` error and fails to change the password. If worksheet protection is enabled and not paused, this
       method throws an `AccessDenied` error and fails to change the password.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -336,7 +319,6 @@ methods:
       a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`<!-- -->) that contains shallow
       copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -371,7 +353,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -392,7 +373,6 @@ methods:
       must be disabled or paused for this method to work properly. If worksheet protection is enabled and not paused,
       this method throws an `AccessDenied` error and fails to change the worksheet protection options.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

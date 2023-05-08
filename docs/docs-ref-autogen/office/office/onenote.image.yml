@@ -5,7 +5,6 @@ package: office!
 fullName: OneNote.Image
 summary: Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
 remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: description
     summary: Gets or sets the description of the Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: height
     summary: Gets or sets the height of the Image layout.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: hyperlink
     summary: Gets or sets the hyperlink of the Image.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +65,6 @@ properties:
     fullName: id
     summary: Gets the ID of the Image object. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +110,6 @@ properties:
           console.log(image.ocrData.ocrLanguageId);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,7 +124,6 @@ properties:
       Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
       This object defines the position of the Image on the page. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +138,6 @@ properties:
       Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
       Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +150,6 @@ properties:
     fullName: width
     summary: Gets or sets the width of the Image layout.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,7 +196,6 @@ methods:
           console.log(imageString);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -222,7 +211,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,7 +230,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,7 +284,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -327,7 +313,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -350,7 +335,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -373,7 +357,6 @@ methods:
       JavaScript object (typed as `OneNote.Interfaces.ImageData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -392,7 +375,6 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -410,7 +392,6 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.CustomPropertyUpdateData
 summary: 'An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       The value of the custom property. The value is limited to 255 characters outside of Excel on the web (larger
       values are automatically trimmed to 255 characters on other platforms).
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

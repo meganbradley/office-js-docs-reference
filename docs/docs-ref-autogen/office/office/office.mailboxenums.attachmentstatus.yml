@@ -32,7 +32,6 @@ remarks: >-
   Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
 
   ```
-example: []
 isPreview: false
 isDeprecated: false
 fields:

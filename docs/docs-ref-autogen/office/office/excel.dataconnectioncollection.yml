@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.DataConnectionCollection
 summary: Represents a collection of all the data connections that are part of the workbook.
 remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,7 +34,6 @@ methods:
       data connections outside the original workbook (except Power BI connections), and connections to data protected by
       a firewall.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +52,6 @@ methods:
       returns a plain JavaScript object (typed as `Excel.Interfaces.DataConnectionCollectionData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

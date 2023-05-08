@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.ChartLegendEntryUpdateData
 summary: 'An interface for updating data on the ChartLegendEntry object, for use in `chartLegendEntry.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: visible
     summary: Represents the visibility of a chart legend entry.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

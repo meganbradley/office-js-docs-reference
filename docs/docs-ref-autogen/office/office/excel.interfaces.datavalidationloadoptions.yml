@@ -8,7 +8,6 @@ summary: >-
   read [Add data validation to Excel
   ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-data-validation)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +20,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +32,6 @@ properties:
     fullName: errorAlert
     summary: Error alert when user enters invalid data.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +44,6 @@ properties:
     fullName: ignoreBlanks
     summary: Specifies if data validation will be performed on blank cells. Default is `true`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +56,6 @@ properties:
     fullName: prompt
     summary: Prompt when users select a cell.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +68,6 @@ properties:
     fullName: rule
     summary: Data validation rule that contains different type of data validation criteria.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +80,6 @@ properties:
     fullName: type
     summary: 'Type of the data validation, see `Excel.DataValidationType` for details.'
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +95,6 @@ properties:
       are valid, or `false` if all cell values are invalid. Returns `null` if there are both valid and invalid cell
       values within the range.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

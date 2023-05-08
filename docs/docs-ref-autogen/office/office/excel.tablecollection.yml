@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.TableCollection
 summary: 'Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.'
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: count
     summary: Returns the number of tables in the workbook.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +70,6 @@ methods:
           console.log(table.name);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +97,6 @@ methods:
     fullName: getCount()
     summary: Gets the number of tables in the collection.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,7 +124,6 @@ methods:
           console.log(table.name);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -161,7 +154,6 @@ methods:
           console.log(table.name);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -183,7 +175,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,7 +194,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -227,7 +217,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -261,7 +250,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,7 +274,6 @@ methods:
       plain JavaScript object (typed as `Excel.Interfaces.TableCollectionData`<!-- -->) that contains an "items" array
       with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -301,7 +288,6 @@ events:
     fullName: onAdded
     summary: Occurs when a new table is added in a workbook.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -336,7 +322,6 @@ events:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -351,7 +336,6 @@ events:
     fullName: onDeleted
     summary: Occurs when the specified table is deleted in a workbook.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -366,7 +350,6 @@ events:
     fullName: onFiltered
     summary: 'Occurs when a filter is applied on any table in a workbook, or a worksheet.'
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

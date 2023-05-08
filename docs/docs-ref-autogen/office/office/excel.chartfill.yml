@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ChartFill
 summary: Represents the fill formatting for a chart element.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +44,6 @@ methods:
           console.log("Chart Major Gridlines Format Cleared");
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +57,6 @@ methods:
     fullName: getSolidColor()
     summary: Gets the uniform color fill formatting of a chart element.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,7 +94,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

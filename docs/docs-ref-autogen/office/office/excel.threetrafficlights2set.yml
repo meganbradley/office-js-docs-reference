@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ThreeTrafficLights2Set
 summary: ''
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: greenTrafficLight
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: redTrafficLight
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: yellowTrafficLight
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

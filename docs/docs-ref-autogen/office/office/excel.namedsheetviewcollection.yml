@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.NamedSheetViewCollection
 summary: Represents the collection of sheet views in the worksheet.
 remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,7 +42,6 @@ methods:
     fullName: add(name)
     summary: Creates a new sheet view with the given name.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +64,6 @@ methods:
       exiting the temporary view with the exit method, or switching to another sheet view. The temporary sheet view can
       also be acccessed with the empty string (""), if the temporary view exists.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -82,7 +77,6 @@ methods:
     fullName: exit()
     summary: Exits the currently active sheet view.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +90,6 @@ methods:
     fullName: getActive()
     summary: Gets the worksheet's currently active sheet view.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +103,6 @@ methods:
     fullName: getCount()
     summary: Gets the number of sheet views in this worksheet. Includes the temporary sheet view if it exists.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +116,6 @@ methods:
     fullName: getItem(key)
     summary: Gets a sheet view using its name.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +137,6 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a sheet view by its index in the collection.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +158,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -190,7 +179,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,7 +202,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -234,7 +221,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,7 +245,6 @@ methods:
       returns a plain JavaScript object (typed as `Excel.Interfaces.NamedSheetViewCollectionData`<!-- -->) that contains
       an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

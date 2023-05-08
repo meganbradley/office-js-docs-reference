@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.TableSortData
 summary: An interface describing the data returned by calling `tableSort.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: fields
     summary: Specifies the current conditions used to last sort the table.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: matchCase
     summary: Specifies if the casing impacts the last sort of the table.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: method
     summary: Represents the Chinese character ordering method last used to sort the table.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

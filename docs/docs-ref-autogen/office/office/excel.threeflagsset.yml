@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ThreeFlagsSet
 summary: ''
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: greenFlag
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: redFlag
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: yellowFlag
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

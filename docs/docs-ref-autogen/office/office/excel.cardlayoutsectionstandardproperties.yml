@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.CardLayoutSectionStandardProperties
 summary: Properties of a card layout relevant to most card layouts.
 remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: collapsed
     summary: Represents whether this section of the card is initially collapsed.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
       Represents whether this section of the card is collapsible. If the card section has a title, the default value is
       `true`<!-- -->. If the card section doesn't have a title, the default value is `false`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: properties
     summary: Represents the names of the properties in this section.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: title
     summary: Represents the title of this section of the card.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

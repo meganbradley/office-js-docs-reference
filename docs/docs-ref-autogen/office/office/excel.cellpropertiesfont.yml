@@ -8,7 +8,6 @@ summary: >-
   `getColumnProperties`<!-- -->, or the `format.font` input parameter of `setCellProperties`<!-- -->,
   `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +18,6 @@ properties:
     fullName: bold
     summary: Represents the `format.font.bold` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +114,6 @@ properties:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -129,7 +126,6 @@ properties:
     fullName: italic
     summary: Represents the `format.font.italic` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -142,7 +138,6 @@ properties:
     fullName: name
     summary: Represents the `format.font.name` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,7 +150,6 @@ properties:
     fullName: size
     summary: Represents the `format.font.size` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +162,6 @@ properties:
     fullName: strikethrough
     summary: Represents the `format.font.strikethrough` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,7 +174,6 @@ properties:
     fullName: subscript
     summary: Represents the `format.font.subscript` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -194,7 +186,6 @@ properties:
     fullName: superscript
     summary: Represents the `format.font.superscript` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -207,7 +198,6 @@ properties:
     fullName: tintAndShade
     summary: Represents the `format.font.tintAndShade` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,7 +210,6 @@ properties:
     fullName: underline
     summary: Represents the `format.font.underline` property.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

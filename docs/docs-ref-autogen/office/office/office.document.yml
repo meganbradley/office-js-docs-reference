@@ -5,7 +5,6 @@ package: office!
 fullName: Office.Document
 summary: An abstract class that represents the document the add-in is interacting with.
 remarks: '**Applications**: Excel, PowerPoint, Project, Word'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -43,7 +42,6 @@ properties:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,7 +54,6 @@ properties:
     fullName: customXmlParts
     summary: Gets an object that represents the custom XML parts in the document.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +83,6 @@ properties:
     fullName: mode
     summary: Gets the mode the document is in.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -148,7 +144,6 @@ properties:
       Gets an object that represents the saved custom settings of the content or task pane add-in for the current
       document.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -163,7 +158,6 @@ properties:
       Gets the URL of the document that the Office application currently has open. Returns null if the URL is
       unavailable.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -198,7 +192,6 @@ methods:
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -531,7 +524,6 @@ methods:
       https://learn.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -570,7 +562,6 @@ methods:
 
 
       Can trigger an event when the view changes.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -623,7 +614,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -786,7 +776,6 @@ methods:
       );
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -855,7 +844,6 @@ methods:
       </strong></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>,
       <code>Pdf</code>, <code>Text</code></td><td><code>Compressed</code>,
       <code>Pdf</code></td><td><code>Compressed</code>, <code>Pdf</code>, <code>Text</code></td></tr> </table>
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -886,7 +874,6 @@ methods:
 
 
       You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -950,7 +937,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -976,7 +962,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1005,7 +990,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1110,7 +1094,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1139,7 +1122,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1241,7 +1223,6 @@ methods:
     fullName: 'getProjectFieldAsync(fieldId, options, callback)'
     summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1270,7 +1251,6 @@ methods:
     fullName: 'getProjectFieldAsync(fieldId, callback)'
     summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1365,7 +1345,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1397,7 +1376,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1512,7 +1490,6 @@ methods:
     fullName: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1544,7 +1521,6 @@ methods:
     fullName: 'getResourceFieldAsync(resourceId, fieldId, callback)'
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1848,7 +1824,6 @@ methods:
       })();
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1937,7 +1912,6 @@ methods:
       <td><code>Office.CoercionType.Text</code> (string)</td> <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
       </tr> <tr> <td><code>Office.CoercionType.XmlSvg</code></td> <td>- Excel on Windows and on Mac<br>- PowerPoint on
       Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td> </tr> </table>
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1964,7 +1938,6 @@ methods:
     fullName: 'getSelectedResourceAsync(options, callback)'
     summary: Project documents only. Get the current selected Resource's Id.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1990,7 +1963,6 @@ methods:
     fullName: getSelectedResourceAsync(callback)
     summary: Project documents only. Get the current selected Resource's Id.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2116,7 +2088,6 @@ methods:
     fullName: 'getSelectedTaskAsync(options, callback)'
     summary: Project documents only. Get the current selected Task's Id.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2142,7 +2113,6 @@ methods:
     fullName: getSelectedTaskAsync(callback)
     summary: Project documents only. Get the current selected Task's Id.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2236,7 +2206,6 @@ methods:
     fullName: 'getSelectedViewAsync(options, callback)'
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2261,7 +2230,6 @@ methods:
     fullName: getSelectedViewAsync(callback)
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2331,7 +2299,6 @@ methods:
     fullName: 'getTaskAsync(taskId, options, callback)'
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2363,7 +2330,6 @@ methods:
     fullName: 'getTaskAsync(taskId, callback)'
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2467,7 +2433,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2499,7 +2464,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2605,7 +2569,6 @@ methods:
     fullName: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2637,7 +2600,6 @@ methods:
     fullName: 'getTaskFieldAsync(taskId, fieldId, callback)'
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2754,7 +2716,6 @@ methods:
     fullName: 'getWSSUrlAsync(options, callback)'
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2779,7 +2740,6 @@ methods:
     fullName: getWSSUrlAsync(callback)
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2823,7 +2783,6 @@ methods:
       In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text
       bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
       data cell (not first cell in header row for tables).
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3015,7 +2974,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3044,7 +3002,6 @@ methods:
     remarks: >-
       **Requirement set**:
       [DocumentEvents](https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#documentevents)
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3166,7 +3123,6 @@ methods:
       })();
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3192,7 +3148,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3229,7 +3184,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3604,7 +3558,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3780,7 +3733,6 @@ methods:
       <td><code>Office.CoercionType.Text</code> (string)</td> <td>- Excel<br>- PowerPoint<br>- Project<br>- Word</td>
       </tr> <tr> <td><code>Office.CoercionType.XmlSvg</code></td> <td>- Excel on Windows and on Mac<br>- PowerPoint on
       Windows, on Mac, and on the web<br>- Word on Windows and on Mac</td> </tr> </table>
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3843,7 +3795,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -3880,7 +3831,6 @@ methods:
 
       **Important**: This API works only in Project 2016 on Windows desktop.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

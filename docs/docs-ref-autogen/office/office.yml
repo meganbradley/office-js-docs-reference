@@ -1856,7 +1856,6 @@ functions:
 
       \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1895,7 +1894,6 @@ functions:
     package: office!
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1915,7 +1913,6 @@ functions:
     package: office!
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1934,7 +1931,6 @@ functions:
       Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1958,7 +1954,6 @@ functions:
       previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
       during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1988,7 +1983,6 @@ functions:
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of
       previously-created API objects.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2020,7 +2014,6 @@ functions:
       previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
       during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2051,7 +2044,6 @@ functions:
       previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
       during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2147,7 +2139,6 @@ functions:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2164,7 +2155,6 @@ functions:
     package: office!
     summary: Checks if the specified requirement set is supported by the Office application.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2189,7 +2179,6 @@ functions:
       once Office.js determines that it is running outside of an Office application, it will call the callback and
       resolve the promise with "null" for both the application and platform.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2246,7 +2235,6 @@ functions:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2321,7 +2309,6 @@ functions:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2340,7 +2327,6 @@ functions:
       Executes a batch script that performs actions on the OneNote object model, using a new request context. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2363,7 +2349,6 @@ functions:
       Executes a batch script that performs actions on the OneNote object model, using the request context of a
       previously-created API object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2392,7 +2377,6 @@ functions:
       Executes a batch script that performs actions on the OneNote object model, using the request context of
       previously-created API objects.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2422,7 +2406,6 @@ functions:
 
       \[ [API set: PowerPointApi 1.1](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2460,7 +2443,6 @@ functions:
       Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2488,7 +2470,6 @@ functions:
       previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
       during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2520,7 +2501,6 @@ functions:
       Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of
       previously-created API objects.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2553,7 +2533,6 @@ functions:
       Executes a batch script that performs actions on the Visio object model, using a new request context. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2576,7 +2555,6 @@ functions:
       Executes a batch script that performs actions on the Visio object model, using the request context of a
       previously-created API object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2607,7 +2585,6 @@ functions:
       Executes a batch script that performs actions on the Visio object model, using the request context of
       previously-created API objects.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2650,7 +2627,6 @@ functions:
 
       `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
       Promise<T>;`
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2681,7 +2657,6 @@ functions:
       Executes a batch script that performs actions on the Word object model, using the RequestContext of previously
       created API objects.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2713,7 +2688,6 @@ functions:
       created API object. When the promise is resolved, any tracked objects that were automatically allocated during
       execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -2743,7 +2717,6 @@ functions:
       Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: office!
 fullName: OneNote.Paragraph
 summary: A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
 remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: id
     summary: Gets the ID of the Paragraph object. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: image
     summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: inkWords
     summary: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +65,6 @@ properties:
     fullName: outline
     summary: Gets the Outline object that contains the Paragraph. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +77,6 @@ properties:
     fullName: paragraphs
     summary: The collection of paragraphs under this paragraph. Read only
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,7 +89,6 @@ properties:
     fullName: parentParagraph
     summary: Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,7 +101,6 @@ properties:
     fullName: parentParagraphOrNull
     summary: Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +115,6 @@ properties:
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
       ItemNotFound. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +129,6 @@ properties:
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
       Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +141,6 @@ properties:
     fullName: richText
     summary: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,7 +153,6 @@ properties:
     fullName: table
     summary: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,7 +165,6 @@ properties:
     fullName: type
     summary: Gets the type of the Paragraph object. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -192,7 +178,6 @@ methods:
     fullName: 'addNoteTag(type, status)'
     summary: Add NoteTag to the paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -213,7 +198,6 @@ methods:
     fullName: 'addNoteTag(type, status)'
     summary: Add NoteTag to the paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -269,7 +253,6 @@ methods:
           await context.sync();
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -283,7 +266,6 @@ methods:
     fullName: getParagraphInfo()
     summary: Get list information of paragraph
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -329,7 +311,6 @@ methods:
           await context.sync();
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -353,7 +334,6 @@ methods:
     fullName: 'insertHtmlAsSibling(insertLocation, html)'
     summary: Inserts the specified HTML content
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -407,7 +387,6 @@ methods:
           await context.sync();
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -436,7 +415,6 @@ methods:
     fullName: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
     summary: Inserts the image at the specified insert location..
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -494,7 +472,6 @@ methods:
           await context.sync();
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -515,7 +492,6 @@ methods:
     fullName: 'insertRichTextAsSibling(insertLocation, paragraphText)'
     summary: Inserts the paragraph text at the specifiec insert location.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -536,7 +512,6 @@ methods:
     fullName: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
     summary: Adds a table with the specified number of rows and columns before or after the current paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -565,7 +540,6 @@ methods:
     fullName: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
     summary: Adds a table with the specified number of rows and columns before or after the current paragraph.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -596,7 +570,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -616,7 +589,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -665,7 +637,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -695,7 +666,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -718,7 +688,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -741,7 +710,6 @@ methods:
       JavaScript object (typed as `OneNote.Interfaces.ParagraphData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -760,7 +728,6 @@ methods:
       or invoking a method on the object, you needed to have added the object to the tracked object collection when the
       object was first created.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -778,7 +745,6 @@ methods:
       so please remember to free any objects you add, once you're done using them. You will need to call
       `context.sync()` before the memory release takes effect.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

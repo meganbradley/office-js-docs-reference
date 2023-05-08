@@ -5,7 +5,6 @@ package: office!
 fullName: Word.ParagraphFormat
 summary: Represents a style of paragraph in a document.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -16,7 +15,6 @@ properties:
     fullName: alignment
     summary: Gets or sets the alignment for the specified paragraphs.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -46,7 +43,6 @@ properties:
       Gets or sets the value (in points) for a first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -61,7 +57,6 @@ properties:
       Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates
       the document.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -76,7 +71,6 @@ properties:
       Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when
       Microsoft Word repaginates the document.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -89,7 +83,6 @@ properties:
     fullName: leftIndent
     summary: Gets or sets the left indent.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -102,7 +95,6 @@ properties:
     fullName: lineSpacing
     summary: Gets or sets the line spacing (in points) for the specified paragraphs.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -115,7 +107,6 @@ properties:
     fullName: lineUnitAfter
     summary: Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -128,7 +119,6 @@ properties:
     fullName: lineUnitBefore
     summary: Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -141,7 +131,6 @@ properties:
     fullName: mirrorIndents
     summary: Gets or sets whether left and right indents are the same width.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -154,7 +143,6 @@ properties:
     fullName: outlineLevel
     summary: Gets or sets the outline level for the specified paragraphs.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -173,7 +161,6 @@ properties:
     fullName: rightIndent
     summary: Gets or sets the right indent (in points) for the specified paragraphs.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -186,7 +173,6 @@ properties:
     fullName: spaceAfter
     summary: Gets or sets the amount of spacing (in points) after the specified paragraph or text column.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -199,7 +185,6 @@ properties:
     fullName: spaceBefore
     summary: Gets or sets the spacing (in points) before the specified paragraphs.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -214,7 +199,6 @@ properties:
       Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of
       the paragraph when Microsoft Word repaginates the document.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -230,7 +214,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -250,7 +233,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -270,7 +252,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -300,7 +281,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -323,7 +303,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -346,7 +325,6 @@ methods:
       plain JavaScript object (typed as `Word.Interfaces.ParagraphFormatData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -367,7 +345,6 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -385,7 +362,6 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

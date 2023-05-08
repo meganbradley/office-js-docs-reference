@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.BusyErrorCellValueSubType
 summary: 'Represents types of \#BUSY! errors.'
 remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

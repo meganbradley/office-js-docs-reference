@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.ChartSeriesFormatData
 summary: An interface describing the data returned by calling `chartSeriesFormat.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: line
     summary: Represents line formatting.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

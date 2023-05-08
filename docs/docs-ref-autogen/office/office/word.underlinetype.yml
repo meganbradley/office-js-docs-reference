@@ -26,7 +26,6 @@ remarks: |-
       console.log('The selection now has an underline style.');
   });
   ```
-example: []
 isPreview: false
 isDeprecated: false
 fields:

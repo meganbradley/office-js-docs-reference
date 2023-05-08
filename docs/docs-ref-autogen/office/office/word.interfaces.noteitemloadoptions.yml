@@ -5,7 +5,6 @@ package: office!
 fullName: Word.Interfaces.NoteItemLoadOptions
 summary: Represents a footnote or endnote.
 remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: body
     summary: Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: reference
     summary: Represents a footnote or endnote reference in the main document.
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: type
     summary: 'Represents the note item type: footnote or endnote.'
     remarks: '\[ [API set: WordApiOnline 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

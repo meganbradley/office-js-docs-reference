@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.ChartGridlinesUpdateData
 summary: 'An interface for updating data on the ChartGridlines object, for use in `chartGridlines.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: format
     summary: Represents the formatting of chart gridlines.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: visible
     summary: Specifies if the axis gridlines are visible.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

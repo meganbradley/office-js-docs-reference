@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ConditionalFormatCollection
 summary: Represents a collection of all the conditional formats that are overlap the range.
 remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +69,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -90,7 +86,6 @@ methods:
     fullName: add(type)
     summary: Adds a new conditional format to the collection at the first/top priority.
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,7 +129,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,7 +159,6 @@ methods:
           console.log("Count: " + cfCount.value);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -195,7 +188,6 @@ methods:
           console.log("Conditional Format at Item 3 Loaded");
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,7 +243,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -274,7 +265,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -294,7 +284,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -318,7 +307,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -338,7 +326,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -363,7 +350,6 @@ methods:
       method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatCollectionData`<!-- -->)
       that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

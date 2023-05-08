@@ -7,7 +7,6 @@ summary: >-
   Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to per
   file and add-in (task-pane or content) combination.
 remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -20,7 +19,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,7 +64,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +84,6 @@ methods:
     fullName: getCount()
     summary: Gets the number of settings in the collection.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +97,6 @@ methods:
     fullName: getItem(key)
     summary: Gets a setting entry via the key.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,7 +147,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,7 +166,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,7 +189,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,7 +208,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,7 +232,6 @@ methods:
       a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`<!-- -->) that contains an "items"
       array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,7 +266,6 @@ events:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

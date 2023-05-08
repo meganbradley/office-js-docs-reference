@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.LinkedWorkbookCollectionLoadOptions
 summary: Represents a collection of linked workbook objects.
 remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       For EACH ITEM in the collection: The original URL pointing to the linked workbook. It is unique across all linked
       workbooks in the collection.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

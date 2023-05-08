@@ -5,7 +5,6 @@ package: office!
 fullName: Word.StyleType
 summary: Represents the type of style.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 fields:

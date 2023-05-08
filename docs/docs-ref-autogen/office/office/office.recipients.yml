@@ -16,7 +16,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -102,7 +101,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,7 +176,6 @@ methods:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -256,7 +253,6 @@ methods:
 
       To resolve an email address once it's added to a mail item, the sender must use the **Tab** key or select a
       suggested contact or email address from the auto-complete list.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -431,7 +427,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -500,7 +495,6 @@ methods:
 
 
       - `NumberOfRecipientsExceeded`<!-- -->: The number of recipients exceeded 100 entries.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -695,7 +689,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

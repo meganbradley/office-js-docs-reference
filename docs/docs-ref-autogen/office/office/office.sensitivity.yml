@@ -19,7 +19,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
-example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -41,7 +40,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -101,7 +99,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -157,7 +154,6 @@ methods:
       );
 
       ```
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -198,7 +194,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.ChartLineFormatUpdateData
 summary: 'An interface for updating data on the ChartLineFormat object, for use in `chartLineFormat.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: color
     summary: HTML color code representing the color of lines in the chart.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: lineStyle
     summary: Represents the line style. See `Excel.ChartLineStyle` for details.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +43,6 @@ properties:
     fullName: weight
     summary: 'Represents weight of the line, in points.'
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

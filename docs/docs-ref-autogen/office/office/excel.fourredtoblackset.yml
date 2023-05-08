@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.FourRedToBlackSet
 summary: ''
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: blackCircle
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: grayCircle
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: pinkCircle
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +51,6 @@ properties:
     fullName: redCircle
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

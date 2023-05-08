@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.DocumentTaskUpdateData
 summary: 'An interface for updating data on the DocumentTask object, for use in `documentTask.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a
       completed task.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: priority
     summary: 'Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.'
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: startAndDueDateTime
     summary: Gets or sets the date and time the task should start and is due.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: title
     summary: Specifies title of the task.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

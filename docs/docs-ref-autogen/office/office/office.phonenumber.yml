@@ -41,7 +41,6 @@ remarks: >-
   });
 
   ```
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -52,7 +51,6 @@ properties:
     fullName: originalPhoneString
     summary: Gets the text that was identified in an item as a phone number.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,7 +65,6 @@ properties:
       Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes
       characters like parentheses and hyphens, if they exist in the original item.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +77,6 @@ properties:
     fullName: type
     summary: 'Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

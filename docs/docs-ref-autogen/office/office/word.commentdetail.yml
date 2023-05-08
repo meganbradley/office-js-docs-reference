@@ -5,7 +5,6 @@ package: office!
 fullName: Word.CommentDetail
 summary: A structure for the ID and reply IDs of this comment.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: id
     summary: Represents the ID of this comment.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: replyIds
     summary: Represents the IDs of the replies to this comment.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

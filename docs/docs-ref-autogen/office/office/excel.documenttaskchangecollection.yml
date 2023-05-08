@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.DocumentTaskChangeCollection
 summary: Represents a collection of change records for a task.
 remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -45,7 +42,6 @@ methods:
     fullName: getCount()
     summary: Gets the number of change records in the collection for the task.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -59,7 +55,6 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a task change record by using its index in the collection.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -81,7 +76,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -105,7 +99,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -125,7 +118,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -150,7 +142,6 @@ methods:
       method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskChangeCollectionData`<!-- -->)
       that contains an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

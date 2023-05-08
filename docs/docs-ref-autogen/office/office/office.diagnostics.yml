@@ -18,7 +18,6 @@ remarks: >-
   Starting with Mailbox requirement set 1.5, you can also use the
   [Office.context.diagnostics](https://learn.microsoft.com/javascript/api/office/office.context?view=outlook-js-preview&preserve-view=true#office-office-context-diagnostics-member)
   property to get similar information.
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -45,7 +44,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +71,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,7 +115,6 @@ properties:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose or Read
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

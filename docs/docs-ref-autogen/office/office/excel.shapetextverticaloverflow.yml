@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ShapeTextVerticalOverflow
 summary: Specifies the vertical overflow for the text frame in a shape.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

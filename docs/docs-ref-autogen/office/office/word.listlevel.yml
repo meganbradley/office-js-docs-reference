@@ -5,7 +5,6 @@ package: office!
 fullName: Word.ListLevel
 summary: Represents a list level.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -16,7 +15,6 @@ properties:
     fullName: alignment
     summary: 'Gets or sets the horizontal alignment of the list level. The value can be ''Left'', ''Centered'', or ''Right''.'
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: font
     summary: Gets a Font object that represents the character formatting of the specified object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: linkedStyle
     summary: Gets or sets the name of the style that's linked to the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -70,7 +65,6 @@ properties:
     fullName: numberFormat
     summary: Gets or sets the number format for the specified list level.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -83,7 +77,6 @@ properties:
     fullName: numberPosition
     summary: Gets or sets the position (in points) of the number or bullet for the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -96,7 +89,6 @@ properties:
     fullName: numberStyle
     summary: Gets or sets the number style for the list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -131,7 +123,6 @@ properties:
     fullName: resetOnHigher
     summary: Gets or sets the list level that must appear before the specified list level restarts numbering at 1.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -144,7 +135,6 @@ properties:
     fullName: startAt
     summary: Gets or sets the starting number for the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -157,7 +147,6 @@ properties:
     fullName: tabPosition
     summary: Gets or sets the tab position for the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -170,7 +159,6 @@ properties:
     fullName: textPosition
     summary: Gets or sets the position (in points) for the second line of wrapping text for the specified list level object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -183,7 +171,6 @@ properties:
     fullName: trailingCharacter
     summary: Gets or sets the character inserted after the number for the specified list level.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -199,7 +186,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -219,7 +205,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -239,7 +224,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -269,7 +253,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -292,7 +275,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -315,7 +297,6 @@ methods:
       JavaScript object (typed as `Word.Interfaces.ListLevelData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -336,7 +317,6 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -354,7 +334,6 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

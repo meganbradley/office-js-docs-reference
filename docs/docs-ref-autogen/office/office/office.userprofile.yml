@@ -15,7 +15,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -65,7 +64,6 @@ properties:
       console.log(Office.context.mailbox.userProfile.accountType);
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -98,7 +96,6 @@ properties:
       console.log(Office.context.mailbox.userProfile.displayName);
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,7 +128,6 @@ properties:
       console.log(Office.context.mailbox.userProfile.emailAddress);
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,7 +165,6 @@ properties:
       console.log(Office.context.mailbox.userProfile.timeZone);
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

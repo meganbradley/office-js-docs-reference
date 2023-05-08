@@ -11,7 +11,6 @@ summary: >-
   To learn more about the error codes, see [Office Common API error
   codes](https://learn.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -22,7 +21,6 @@ properties:
     fullName: accessDenied
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ properties:
     fullName: activityLimitReached
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
     fullName: apiNotFound
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +57,6 @@ properties:
     fullName: cannotRegisterEvent
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +69,6 @@ properties:
     fullName: connectionFailure
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +81,6 @@ properties:
     fullName: generalException
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,7 +93,6 @@ properties:
     fullName: invalidArgument
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,7 +105,6 @@ properties:
     fullName: invalidObjectPath
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -126,7 +117,6 @@ properties:
     fullName: invalidRequestContext
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -139,7 +129,6 @@ properties:
     fullName: propertyNotLoaded
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +141,6 @@ properties:
     fullName: runMustReturnPromise
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -165,7 +153,6 @@ properties:
     fullName: valueNotLoaded
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

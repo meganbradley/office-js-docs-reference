@@ -5,7 +5,6 @@ package: office!
 fullName: PowerPoint.Interfaces.SlideData
 summary: An interface describing the data returned by calling `slide.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: id
     summary: Gets the unique ID of the slide.
     remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

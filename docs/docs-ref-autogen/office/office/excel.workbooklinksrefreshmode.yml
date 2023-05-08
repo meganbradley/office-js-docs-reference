@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.WorkbookLinksRefreshMode
 summary: Represents the refresh mode of the workbook links.
 remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

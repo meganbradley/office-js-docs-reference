@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Base64EncodedImage
 summary: The base64 encoding type and data of an image.
 remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: data
     summary: The base64 string encoding.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: type
     summary: The file type of the encoded image.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

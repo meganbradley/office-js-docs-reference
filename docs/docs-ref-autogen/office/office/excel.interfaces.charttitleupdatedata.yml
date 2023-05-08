@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.ChartTitleUpdateData
 summary: 'An interface for updating data on the ChartTitle object, for use in `chartTitle.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: format
     summary: 'Represents the formatting of a chart title, which includes fill and font formatting.'
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: horizontalAlignment
     summary: Specifies the horizontal alignment for chart title.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
       Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Value is
       `null` if the chart title is not visible.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +57,6 @@ properties:
     fullName: overlay
     summary: Specifies if the chart title will overlay the chart.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -74,7 +69,6 @@ properties:
     fullName: position
     summary: Represents the position of chart title. See `Excel.ChartTitlePosition` for details.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +81,6 @@ properties:
     fullName: showShadow
     summary: Represents a boolean value that determines if the chart title has a shadow.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,7 +93,6 @@ properties:
     fullName: text
     summary: Specifies the chart's title text.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +107,6 @@ properties:
       Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from
       -90 to 90 or the integer 180 for vertically-oriented text.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -130,7 +121,6 @@ properties:
       Specifies the distance, in points, from the top edge of chart title to the top of chart area. Value is `null` if
       the chart title is not visible.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -143,7 +133,6 @@ properties:
     fullName: verticalAlignment
     summary: Specifies the vertical alignment of chart title. See `Excel.ChartTextVerticalAlignment` for details.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -158,7 +147,6 @@ properties:
     fullName: visible
     summary: Specifies if the chart title is visibile.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

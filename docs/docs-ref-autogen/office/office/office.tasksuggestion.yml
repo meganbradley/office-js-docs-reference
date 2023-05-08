@@ -40,7 +40,6 @@ remarks: >-
   });
 
   ```
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -51,7 +50,6 @@ properties:
     fullName: assignees
     summary: Gets the users that should be assigned a suggested task.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -64,7 +62,6 @@ properties:
     fullName: taskString
     summary: Gets the text of an item that was identified as a task suggestion.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

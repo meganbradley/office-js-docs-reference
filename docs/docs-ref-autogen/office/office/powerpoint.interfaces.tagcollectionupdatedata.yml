@@ -5,7 +5,6 @@ package: office!
 fullName: PowerPoint.Interfaces.TagCollectionUpdateData
 summary: 'An interface for updating data on the TagCollection object, for use in `tagCollection.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: items
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

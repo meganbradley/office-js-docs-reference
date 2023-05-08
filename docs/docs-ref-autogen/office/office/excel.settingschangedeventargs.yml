@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.SettingsChangedEventArgs
 summary: Provides information about the setting that raised the settings changed event
 remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: settings
     summary: Gets the `Setting` object that represents the binding that raised the settings changed event
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

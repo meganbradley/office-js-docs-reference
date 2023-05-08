@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.GroupShapeCollectionLoadOptions
 summary: Represents the shape collection inside a shape group.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: altTextDescription
     summary: 'For EACH ITEM in the collection: Specifies the alternative description text for a `Shape` object.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: altTextTitle
     summary: 'For EACH ITEM in the collection: Specifies the alternative title text for a `Shape` object.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: connectionSiteCount
     summary: 'For EACH ITEM in the collection: Returns the number of connection sites on this shape.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -73,7 +68,6 @@ properties:
       that is localized and may not match its `name`<!-- -->. In this scenario, you can use this API to get the name
       that is displayed in the UI.
     remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +80,6 @@ properties:
     fullName: fill
     summary: 'For EACH ITEM in the collection: Returns the fill formatting of this shape.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -101,7 +94,6 @@ properties:
       For EACH ITEM in the collection: Returns the geometric shape associated with the shape. An error will be thrown if
       the shape type is not "GeometricShape".
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +108,6 @@ properties:
       For EACH ITEM in the collection: Specifies the geometric shape type of this geometric shape. See
       `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,7 +122,6 @@ properties:
       For EACH ITEM in the collection: Returns the shape group associated with the shape. An error will be thrown if the
       shape type is not "GroupShape".
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -146,7 +136,6 @@ properties:
       For EACH ITEM in the collection: Specifies the height, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value or zero as an input.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -159,7 +148,6 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: Specifies the shape identifier.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -174,7 +162,6 @@ properties:
       For EACH ITEM in the collection: Returns the image associated with the shape. An error will be thrown if the shape
       type is not "Image".
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,7 +176,6 @@ properties:
       For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the
       worksheet. Throws an `InvalidArgument` exception when set with a negative value as an input.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -205,7 +191,6 @@ properties:
       the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2
       means the shape is part of a sub-group of the top level.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -220,7 +205,6 @@ properties:
       For EACH ITEM in the collection: Returns the line associated with the shape. An error will be thrown if the shape
       type is not "Line".
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -233,7 +217,6 @@ properties:
     fullName: lineFormat
     summary: 'For EACH ITEM in the collection: Returns the line formatting of this shape.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +229,6 @@ properties:
     fullName: lockAspectRatio
     summary: 'For EACH ITEM in the collection: Specifies if the aspect ratio of this shape is locked.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -259,7 +241,6 @@ properties:
     fullName: name
     summary: 'For EACH ITEM in the collection: Specifies the name of the shape.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -272,7 +253,6 @@ properties:
     fullName: parentGroup
     summary: 'For EACH ITEM in the collection: Specifies the parent group of this shape.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -285,7 +265,6 @@ properties:
     fullName: placement
     summary: 'For EACH ITEM in the collection: Represents how the object is attached to the cells below it.'
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -298,7 +277,6 @@ properties:
     fullName: rotation
     summary: 'For EACH ITEM in the collection: Specifies the rotation, in degrees, of the shape.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -311,7 +289,6 @@ properties:
     fullName: textFrame
     summary: 'For EACH ITEM in the collection: Returns the text frame object of this shape.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -326,7 +303,6 @@ properties:
       For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the
       worksheet. Throws an `InvalidArgument` exception when set with a negative value as an input.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -339,7 +315,6 @@ properties:
     fullName: type
     summary: 'For EACH ITEM in the collection: Returns the type of this shape. See `Excel.ShapeType` for details.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -352,7 +327,6 @@ properties:
     fullName: visible
     summary: 'For EACH ITEM in the collection: Specifies if the shape is visible.'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -367,7 +341,6 @@ properties:
       For EACH ITEM in the collection: Specifies the width, in points, of the shape. Throws an `InvalidArgument`
       exception when set with a negative value or zero as an input.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -382,7 +355,6 @@ properties:
       For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing
       the bottom of the order stack.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -8,7 +8,6 @@ summary: >-
   protection properties. When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing
   of a specific range, while maintaining protection on the rest of the worksheet.
 remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +20,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +32,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -51,7 +48,6 @@ methods:
       to work properly. If worksheet protection is enabled and not paused, then this method throws an `AccessDenied`
       error and the add operation fails.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,7 +71,6 @@ methods:
     fullName: getCount()
     summary: Returns the number of `AllowEditRange` objects in the collection.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,7 +84,6 @@ methods:
     fullName: getItem(key)
     summary: Gets the `AllowEditRange` object by its title.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,7 +103,6 @@ methods:
     fullName: getItemAt(index)
     summary: Returns an `AllowEditRange` object by its index in the collection.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -127,7 +120,6 @@ methods:
     fullName: getItemOrNullObject(key)
     summary: Gets the `AllowEditRange` object by its title.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -152,7 +144,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -176,7 +167,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -196,7 +186,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,7 +210,6 @@ methods:
       protection for the range. If the password does not match any `AllowEditRange` objects in the collection, then this
       method throws a `BadPassword` error and fails to pause protection for any range in the collection.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -244,7 +232,6 @@ methods:
       returns a plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeCollectionData`<!-- -->) that contains
       an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

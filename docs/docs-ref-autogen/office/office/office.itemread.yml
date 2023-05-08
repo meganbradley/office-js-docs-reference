@@ -21,7 +21,6 @@ summary: >-
 
   - [MessageRead](xref:office!Office.MessageRead:interface)
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface

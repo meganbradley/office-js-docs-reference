@@ -12,7 +12,6 @@ summary: >-
   Add-ins](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
   information.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -29,7 +28,6 @@ methods:
 
       You can add multiple event handlers for the specified event type as long as the name of each event handler
       function is unique.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -69,7 +67,6 @@ methods:
 
       You can add multiple event handlers for the specified event type as long as the name of each event handler
       function is unique.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -123,7 +120,6 @@ methods:
 
 
       - Called from a module extension: No effect.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -221,7 +217,6 @@ methods:
       operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error
       information if the operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Access your
       user-defined object or value, if you passed one as the asyncContext parameter</td> </tr> </table>
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -337,7 +332,6 @@ methods:
       operation</td> </tr> <tr> <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error
       information if the operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Access your
       user-defined object or value, if you passed one as the asyncContext parameter</td> </tr> </table>
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -371,7 +365,6 @@ methods:
       - If the `messageOptions` parameter is used, [DialogOrigin
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets) is also
       required.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -396,7 +389,6 @@ methods:
     remarks: >-
       **Requirement set**: [OpenBrowserWindowAPI
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/open-browser-window-api-requirement-sets)
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

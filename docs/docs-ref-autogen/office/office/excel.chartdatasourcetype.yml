@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ChartDataSourceType
 summary: Specifies the data source type of the chart series.
 remarks: '\[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

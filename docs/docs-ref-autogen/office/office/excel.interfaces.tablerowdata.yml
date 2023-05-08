@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.TableRowData
 summary: An interface describing the data returned by calling `tableRow.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: index
     summary: Returns the index number of the row within the rows collection of the table. Zero-indexed.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +30,6 @@ properties:
       that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
       or equal sign ("="), Excel interprets this value as a formula.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +47,6 @@ properties:
       aligns with the en-US locale. To retrieve data in the user's display locale, use `TableRow.valuesAsJsonLocal`<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -68,7 +64,6 @@ properties:
       always aligns with the user's display locale. To retrieve data independent of locale, use
       `TableRow.valuesAsJson`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

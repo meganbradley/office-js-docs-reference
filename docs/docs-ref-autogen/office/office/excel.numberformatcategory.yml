@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.NumberFormatCategory
 summary: Represents a category of number formats.
 remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

@@ -21,7 +21,6 @@ summary: >-
 
   - [MessageCompose](xref:office!Office.MessageCompose:interface)
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface

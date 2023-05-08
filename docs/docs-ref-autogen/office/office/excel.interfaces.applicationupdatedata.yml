@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.ApplicationUpdateData
 summary: 'An interface for updating data on the Application object, for use in `application.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +21,6 @@ properties:
     remarks: >-
       \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +35,6 @@ properties:
       Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled. The stale
       formulas are rendered with stale formatting if the option is enabled.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -52,7 +49,6 @@ properties:
       Returns the iterative calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
       Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.HeaderFooterLoadOptions
 summary: ''
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       The center footer of the worksheet. To apply font formatting or insert a variable value, use format codes
       specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
       The center header of the worksheet. To apply font formatting or insert a variable value, use format codes
       specified here: https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +59,6 @@ properties:
       The left footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,7 +73,6 @@ properties:
       The left header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -93,7 +87,6 @@ properties:
       The right footer of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -108,7 +101,6 @@ properties:
       The right header of the worksheet. To apply font formatting or insert a variable value, use format codes specified
       here: https://msdn.microsoft.com/library/bb225426.aspx.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

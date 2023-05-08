@@ -7,7 +7,6 @@ summary: >-
   An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in
   `conditionalDataBarNegativeFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,7 +19,6 @@ properties:
       HTML color code representing the color of the border line, in the form \#RRGGBB (e.g., "FFA500") or as a named
       HTML color (e.g., "orange"). Value is "" (an empty string) if no border is present or set.
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ properties:
       HTML color code representing the fill color, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color (e.g.,
       "orange").
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
     fullName: matchPositiveBorderColor
     summary: Specifies if the negative data bar has the same border color as the positive data bar.
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +57,6 @@ properties:
     fullName: matchPositiveFillColor
     summary: Specifies if the negative data bar has the same fill color as the positive data bar.
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

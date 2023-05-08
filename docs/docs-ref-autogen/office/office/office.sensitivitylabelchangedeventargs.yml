@@ -16,7 +16,6 @@ remarks: >-
   To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
   or appointment in compose mode
   (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
-example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -29,7 +28,6 @@ properties:
       The type of event that was raised. For details, refer to
       [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
     remarks: '\[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

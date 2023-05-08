@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.SettingUpdateData
 summary: 'An interface for updating data on the Setting object, for use in `setting.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: value
     summary: Represents the value stored for this setting.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

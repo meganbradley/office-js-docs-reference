@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.PivotLayoutUpdateData
 summary: 'An interface for updating data on the PivotLayout object, for use in `pivotLayout.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -23,7 +22,6 @@ properties:
       table. A title can be read to a person with a disability and is used to determine whether they wish to hear the
       description of the content.
     remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -43,7 +41,6 @@ properties:
       table. A title can be read to a person with a disability and is used to determine whether they wish to hear the
       description of the content.
     remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -56,7 +53,6 @@ properties:
     fullName: autoFormat
     summary: Specifies if formatting will be automatically formatted when it’s refreshed or when fields are moved.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +68,6 @@ properties:
       Note that this value persists if `fillEmptyCells` is set to `false`<!-- -->, and that setting this value does not
       set that property to `true`<!-- -->. By default, this is an empty string.
     remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,7 +80,6 @@ properties:
     fullName: enableFieldList
     summary: Specifies if the field list can be shown in the UI.
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -100,7 +94,6 @@ properties:
       Specifies whether empty cells in the PivotTable should be populated with the `emptyCellText`<!-- -->. Default is
       `false`<!-- -->. Note that the value of `emptyCellText` persists when this property is set to `false`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +108,6 @@ properties:
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
       will be null.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,7 +120,6 @@ properties:
     fullName: pivotStyle
     summary: The style applied to the PivotTable.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -143,7 +134,6 @@ properties:
       Specifies if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
       sorting, or changing page field items.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -156,7 +146,6 @@ properties:
     fullName: showColumnGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for columns.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,7 +158,6 @@ properties:
     fullName: showFieldHeaders
     summary: Specifies whether the PivotTable displays field headers (field captions and filter drop-downs).
     remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -182,7 +170,6 @@ properties:
     fullName: showRowGrandTotals
     summary: Specifies if the PivotTable report shows grand totals for rows.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,7 +184,6 @@ properties:
       This property indicates the `SubtotalLocationType` of all fields on the PivotTable. If fields have different
       states, this will be `null`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

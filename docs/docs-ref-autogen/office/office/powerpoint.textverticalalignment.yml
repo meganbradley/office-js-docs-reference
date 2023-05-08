@@ -10,7 +10,6 @@ summary: >-
   a text, see [PowerPoint.ParagraphFormat](xref:office!PowerPoint.ParagraphFormat:class) and
   [PowerPoint.ParagraphHorizontalAlignment](xref:office!PowerPoint.ParagraphHorizontalAlignment:enum)<!-- -->.
 remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.NamedItemData
 summary: An interface describing the data returned by calling `namedItem.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: arrayValues
     summary: Returns an object containing values and types of the named item.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: comment
     summary: Specifies the comment associated with this name.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: formula
     summary: The formula of the named item. Formulas always start with an equal sign ("=").
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +51,6 @@ properties:
     fullName: name
     summary: The name of the object.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +65,6 @@ properties:
       Specifies if the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
       Workbook.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,7 +79,6 @@ properties:
     remarks: >-
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
       Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +95,6 @@ properties:
       Represents the value computed by the name's formula. For a named range it will return the range address. Note:
       This API returns the \#VALUE! error in the Excel UI if it refers to a custom function.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +111,6 @@ properties:
       addition to the standard boolean, number, and string values. Data returned from this API always aligns with the
       en-US locale. To retrieve data in the user's display locale, use `NamedItem.valueAsJsonLocal`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -137,7 +128,6 @@ properties:
       always aligns with the user's display locale. To retrieve data independent of locale, use
       `NamedItem.valueAsJson`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,7 +140,6 @@ properties:
     fullName: visible
     summary: Specifies if the object is visible.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

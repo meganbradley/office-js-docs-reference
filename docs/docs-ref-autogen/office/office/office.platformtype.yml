@@ -13,7 +13,6 @@ remarks: |-
   const contextInfo = Office.context.diagnostics;
   console.log("Platform: " + contextInfo.platform);
   ```
-example: []
 isPreview: false
 isDeprecated: false
 fields:

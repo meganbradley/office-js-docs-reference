@@ -9,7 +9,6 @@ summary: >-
 remarks: >-
   **Requirement set**:
   [DialogAPI](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-api-requirement-sets)
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -25,7 +24,6 @@ methods:
 
       - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +59,6 @@ methods:
       information: [Opening another dialog immediately after closing
       one](https://learn.microsoft.com/office/dev/add-ins/develop/dialog-best-practices#opening-another-dialog-immediately-after-closing-one)
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,7 +89,6 @@ methods:
       - If the `messageOptions` parameter is used, [DialogOrigin
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/dialog-origin-requirement-sets) is also
       required.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +111,6 @@ methods:
     fullName: sendMessage(name)
     summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

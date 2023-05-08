@@ -21,7 +21,6 @@ summary: >-
 
   - [AppointmentRead](xref:office!Office.AppointmentRead:interface)
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface

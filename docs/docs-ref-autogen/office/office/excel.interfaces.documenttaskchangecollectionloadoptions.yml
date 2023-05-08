@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions
 summary: Represents a collection of change records for a task.
 remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       For EACH ITEM in the collection: Represents the user assigned to the task for an `assign` change action, or the
       user unassigned from the task for an `unassign` change action.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -46,7 +43,6 @@ properties:
     fullName: changedBy
     summary: 'For EACH ITEM in the collection: Represents the identity of the user who made the task change.'
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -61,7 +57,6 @@ properties:
       For EACH ITEM in the collection: Represents the ID of the `comment` or `commentReply` to which the task change is
       anchored.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -76,7 +71,6 @@ properties:
       For EACH ITEM in the collection: Represents the creation date and time of the task change record. All dates are in
       UTC.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -92,7 +86,6 @@ properties:
       action. It is in UTC time zone. It can be set to `null` to remove the due date and time. It should be set together
       with `startDateTime` to avoid conflicts.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -105,7 +98,6 @@ properties:
     fullName: id
     summary: 'For EACH ITEM in the collection: The unique GUID of the task change.'
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -122,7 +114,6 @@ properties:
       Changing this value to 100 also completes the associated comment. Changing the completion from 100 to a lower
       value reactivates the associated comment.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -138,7 +129,6 @@ properties:
       This is a value between 0 and 10, with 5 being the default priority if not set, and where 0 represents the highest
       priority.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -154,7 +144,6 @@ properties:
       change action. It is in UTC time zone. It can be set to `null` to remove the start date and time. It should be set
       together with `dueDateTime` to avoid conflicts.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -167,7 +156,6 @@ properties:
     fullName: title
     summary: 'For EACH ITEM in the collection: Represents the task''s title. It is used for the `setTitle` change action.'
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -182,7 +170,6 @@ properties:
       For EACH ITEM in the collection: Represents the action type of the task change record. Some examples of action
       types are `assign`<!-- -->, `undo`<!-- -->, and `setPriority`<!-- -->.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -197,7 +184,6 @@ properties:
       For EACH ITEM in the collection: Represents the `DocumentTaskChange.id` property that was undone for the `undo`
       change action.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

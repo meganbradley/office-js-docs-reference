@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.PivotFilterTopBottomCriterion
 summary: Represents the criteria for the top/bottom values filter.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

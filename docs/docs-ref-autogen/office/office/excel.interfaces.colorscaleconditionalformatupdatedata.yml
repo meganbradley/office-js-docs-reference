@@ -7,7 +7,6 @@ summary: >-
   An interface for updating data on the ColorScaleConditionalFormat object, for use in
   `colorScaleConditionalFormat.set({ ... })`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
     fullName: criteria
     summary: The criteria of the color scale. Midpoint is optional when using a two point color scale.
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

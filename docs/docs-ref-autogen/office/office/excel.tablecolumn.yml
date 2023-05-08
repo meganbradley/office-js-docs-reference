@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.TableColumn
 summary: Represents a column in a table.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: filter
     summary: Retrieves the filter applied to the column.
     remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: id
     summary: Returns a unique key that identifies the column within the table.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: index
     summary: Returns the index number of the column within the columns collection of the table. Zero-indexed.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +67,6 @@ properties:
     remarks: >-
       \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
       it.](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +82,6 @@ properties:
       that contain an error will return the error string. If the returned value starts with a plus ("+"), minus ("-"),
       or equal sign ("="), Excel interprets this value as a formula.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -106,7 +99,6 @@ properties:
       always aligns with the en-US locale. To retrieve data in the user's display locale, use
       `TableColumn.valuesAsJsonLocal`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -124,7 +116,6 @@ properties:
       always aligns with the user's display locale. To retrieve data independent of locale, use
       `TableColumn.valuesAsJson`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -150,7 +141,6 @@ methods:
           await context.sync(); 
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -179,7 +169,6 @@ methods:
           console.log(dataBodyRange.address);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -208,7 +197,6 @@ methods:
           console.log(headerRowRange.address);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -237,7 +225,6 @@ methods:
           console.log(columnRange.address);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -266,7 +253,6 @@ methods:
           console.log(totalRowRange.address);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -282,7 +268,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -302,7 +287,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -336,7 +320,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -366,7 +349,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -389,7 +371,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -412,7 +393,6 @@ methods:
       JavaScript object (typed as `Excel.Interfaces.TableColumnData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

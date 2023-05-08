@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.LinkedDataTypeCollection
 summary: Represents a collection of linked data types.
 remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -45,7 +42,6 @@ methods:
     fullName: getCount()
     summary: Gets the number of linked data types in the collection.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -59,7 +55,6 @@ methods:
     fullName: getItem(key)
     summary: Gets a linked data type by service ID.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -77,7 +72,6 @@ methods:
     fullName: getItemAt(index)
     summary: Gets a linked data type by its index in the collection.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -99,7 +93,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -119,7 +112,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -143,7 +135,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -163,7 +154,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -185,7 +175,6 @@ methods:
       Makes a request to refresh all the linked data types in the collection. If the service is busy or otherwise
       temporarily inaccessible, the request will not be fulfilled.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -204,7 +193,6 @@ methods:
       returns a plain JavaScript object (typed as `Excel.Interfaces.LinkedDataTypeCollectionData`<!-- -->) that contains
       an "items" array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

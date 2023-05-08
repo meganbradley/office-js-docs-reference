@@ -21,7 +21,6 @@ remarks: >-
 
   The developer is responsible for calling the saveAsync method after adding or deleting settings to save the settings
   in the document.
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -45,7 +44,6 @@ methods:
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,7 +123,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -184,7 +181,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -246,7 +242,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -293,7 +288,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -333,7 +327,6 @@ methods:
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
       operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
       that is returned in the AsyncResult object without being altered</td> </tr> </table>
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -408,7 +401,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -453,7 +445,6 @@ methods:
       <td><code>AsyncResult.error</code></td> <td>Access an Error object that provides error information if the
       operation failed</td> </tr> <tr> <td><code>AsyncResult.asyncContext</code></td> <td>Define an item of any type
       that is returned in the AsyncResult object without being altered</td> </tr> </table>
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -518,7 +509,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -565,7 +555,6 @@ methods:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

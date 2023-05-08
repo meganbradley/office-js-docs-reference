@@ -7,7 +7,6 @@ summary: >-
   Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the
   border of the shape.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -20,7 +19,6 @@ properties:
       Represents the line color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
       (e.g., "orange").
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +47,6 @@ properties:
       Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent dash
       styles. See `Excel.ShapeLineDashStyle` for details.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +66,6 @@ properties:
       Represents the line style of the shape. Returns `null` when the line is not visible or there are inconsistent
       styles. See `Excel.ShapeLineStyle` for details.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +82,6 @@ properties:
       Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear).
       Returns `null` when the shape has inconsistent transparencies.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +96,6 @@ properties:
       Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent
       visibilities.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,7 +110,6 @@ properties:
       Represents the weight of the line, in points. Returns `null` when the line is not visible or there are
       inconsistent line weights.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +125,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,7 +144,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,7 +163,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,7 +192,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -226,7 +214,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -249,7 +236,6 @@ methods:
       plain JavaScript object (typed as `Excel.Interfaces.ShapeLineFormatData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.RunOptions
 summary: ''
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +21,6 @@ properties:
       automatically fail. When true, the batch request will be executed immediately if the user is not in cell edit
       mode, but if the user is in cell edit mode the batch request will be delayed until the user exits cell edit mode.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

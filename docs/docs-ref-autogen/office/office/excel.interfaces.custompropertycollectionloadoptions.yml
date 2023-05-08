@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.CustomPropertyCollectionLoadOptions
 summary: Contains the collection of custom properties.
 remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       For EACH ITEM in the collection: The key of the custom property. The key is limited to 255 characters outside of
       Excel on the web (larger keys are automatically trimmed to 255 characters on other platforms).
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +43,6 @@ properties:
     fullName: type
     summary: 'For EACH ITEM in the collection: The type of the value used for the custom property.'
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +57,6 @@ properties:
       For EACH ITEM in the collection: The value of the custom property. The value is limited to 255 characters outside
       of Excel on the web (larger values are automatically trimmed to 255 characters on other platforms).
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

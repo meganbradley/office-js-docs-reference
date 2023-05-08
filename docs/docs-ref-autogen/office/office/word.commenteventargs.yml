@@ -5,7 +5,6 @@ package: office!
 fullName: Word.CommentEventArgs
 summary: Provides information about the comments that raised the comment event.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: changeType
     summary: Represents how the comment changed event is triggered.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
     fullName: commentDetails
     summary: Gets the CommentDetail array which contains the IDs and reply IDs of the involved comments.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -46,7 +43,6 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through coauthoring).
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -59,7 +55,6 @@ properties:
     fullName: type
     summary: The event type. See Word.EventType for details.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

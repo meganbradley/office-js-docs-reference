@@ -8,7 +8,6 @@ summary: >-
   discontiguous ranges, read [Work with multiple ranges simultaneously in Excel
   add-ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-multiple-ranges)<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -21,7 +20,6 @@ properties:
       Returns the `RangeAreas` reference in A1-style. Address value will contain the worksheet name for each rectangular
       block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +32,6 @@ properties:
     fullName: addressLocal
     summary: Returns the `RangeAreas` reference in the user locale.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -47,7 +44,6 @@ properties:
     fullName: areaCount
     summary: Returns the number of rectangular ranges that comprise this `RangeAreas` object.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -60,7 +56,6 @@ properties:
     fullName: areas
     summary: Returns a collection of rectangular ranges that comprise this `RangeAreas` object.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -75,7 +70,6 @@ properties:
       Returns the number of cells in the `RangeAreas` object, summing up the cell counts of all of the individual
       rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -88,7 +82,6 @@ properties:
     fullName: conditionalFormats
     summary: Returns a collection of conditional formats that intersect with any cells in this `RangeAreas` object.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -103,7 +96,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -116,7 +108,6 @@ properties:
     fullName: dataValidation
     summary: Returns a data validation object for all ranges in the `RangeAreas`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -155,7 +146,6 @@ properties:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -168,7 +158,6 @@ properties:
     fullName: isEntireColumn
     summary: 'Specifies if all the ranges on this `RangeAreas` object represent entire columns (e.g., "A:C, Q:Z").'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -181,7 +170,6 @@ properties:
     fullName: isEntireRow
     summary: 'Specifies if all the ranges on this `RangeAreas` object represent entire rows (e.g., "1:3, 5:7").'
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -197,7 +185,6 @@ properties:
       `null` will be returned. For custom styles, the style name will be returned. For built-in styles, a string
       representing a value in the `BuiltInStyle` enum will be returned.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,7 +197,6 @@ properties:
     fullName: worksheet
     summary: Returns the worksheet for the current `RangeAreas`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,7 +210,6 @@ methods:
     fullName: calculate()
     summary: Calculates all cells in the `RangeAreas`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -240,7 +225,6 @@ methods:
       Clears values, format, fill, border, and other properties on each of the areas that comprise this `RangeAreas`
       object.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -260,7 +244,6 @@ methods:
       Clears values, format, fill, border, and other properties on each of the areas that comprise this `RangeAreas`
       object.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -278,7 +261,6 @@ methods:
     fullName: convertDataTypeToText()
     summary: Converts all cells in the `RangeAreas` with data types into text.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -292,7 +274,6 @@ methods:
     fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
     summary: Converts all cells in the `RangeAreas` into linked data types.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -316,7 +297,6 @@ methods:
       destination `RangeAreas` can be a different size than the source range or `RangeAreas`<!-- -->. The destination
       will be expanded automatically if it is smaller than the source.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -350,7 +330,6 @@ methods:
       destination `RangeAreas` can be a different size than the source range or `RangeAreas`<!-- -->. The destination
       will be expanded automatically if it is smaller than the source.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -383,7 +362,6 @@ methods:
       Returns a `RangeAreas` object that represents the entire columns of the `RangeAreas` (for example, if the current
       `RangeAreas` represents cells "B4:E11, H2", it returns a `RangeAreas` that represents columns "B:E, H:H").
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -399,7 +377,6 @@ methods:
       Returns a `RangeAreas` object that represents the entire rows of the `RangeAreas` (for example, if the current
       `RangeAreas` represents cells "B4:E11", it returns a `RangeAreas` that represents rows "4:11").
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -415,7 +392,6 @@ methods:
       Returns the `RangeAreas` object that represents the intersection of the given ranges or `RangeAreas`<!-- -->. If
       no intersection is found, an `ItemNotFound` error will be thrown.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -438,7 +414,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -459,7 +434,6 @@ methods:
       `RangeAreas` will match the original object. If the resulting `RangeAreas` is forced outside the bounds of the
       worksheet grid, an error will be thrown.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -486,7 +460,6 @@ methods:
       Returns a `RangeAreas` object that represents all the cells that match the specified type and value. Throws an
       error if no special cells are found that match the criteria.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -512,7 +485,6 @@ methods:
       Returns a `RangeAreas` object that represents all the cells that match the specified type and value. Throws an
       error if no special cells are found that match the criteria.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -550,7 +522,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -581,7 +552,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -615,7 +585,6 @@ methods:
     fullName: getTables(fullyContained)
     summary: Returns a scoped collection of tables that overlap with any range in this `RangeAreas` object.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -638,7 +607,6 @@ methods:
       `RangeAreas` object. If there are no used cells within the `RangeAreas`<!-- -->, the `ItemNotFound` error will be
       thrown.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -662,7 +630,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -682,7 +649,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -702,7 +668,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -722,7 +687,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -752,7 +716,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -775,7 +738,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -793,7 +755,6 @@ methods:
     fullName: setDirty()
     summary: Sets the `RangeAreas` to be recalculated when the next recalculation occurs.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -812,7 +773,6 @@ methods:
       JavaScript object (typed as `Excel.Interfaces.RangeAreasData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -832,7 +792,6 @@ methods:
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -850,7 +809,6 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -13,7 +13,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -27,7 +26,6 @@ properties:
       appointment, as represented by the `optionalAttendees` or `requiredAttendees` property. This property returns
       undefined in other scenarios.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +52,6 @@ properties:
     fullName: displayName
     summary: Gets the display name associated with an email address.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +73,6 @@ properties:
     fullName: emailAddress
     summary: Gets the SMTP email address.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -119,7 +115,6 @@ properties:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

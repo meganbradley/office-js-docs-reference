@@ -7,7 +7,6 @@ summary: >-
   Represents the horizontal alignment of the [PowerPoint.TextFrame](xref:office!PowerPoint.TextFrame:class) in a
   [PowerPoint.Shape](xref:office!PowerPoint.Shape:class)<!-- -->.
 remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

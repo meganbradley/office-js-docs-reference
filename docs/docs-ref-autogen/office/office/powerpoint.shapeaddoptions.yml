@@ -5,7 +5,6 @@ package: office!
 fullName: PowerPoint.ShapeAddOptions
 summary: Represents the available options when adding shapes.
 remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       Specifies the height, in points, of the shape. When not provided, a default value will be used. Throws an
       `InvalidArgument` exception when set with a negative value.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
       Specifies the distance, in points, from the left side of the shape to the left side of the slide. When not
       provided, a default value will be used.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
       Specifies the distance, in points, from the top edge of the shape to the top edge of the slide. When not provided,
       a default value will be used.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +59,6 @@ properties:
       Specifies the width, in points, of the shape. When not provided, a default value will be used. Throws an
       `InvalidArgument` exception when set with a negative value.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

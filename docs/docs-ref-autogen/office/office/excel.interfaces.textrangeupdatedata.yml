@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.TextRangeUpdateData
 summary: 'An interface for updating data on the TextRange object, for use in `textRange.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: font
     summary: Returns a `ShapeFont` object that represents the font attributes for the text range.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: text
     summary: Represents the plain text content of the text range.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

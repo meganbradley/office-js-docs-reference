@@ -7,7 +7,6 @@ summary: Represents add-in level functionality for operating or configuring vari
 remarks: >-
   **Requirement set**: [SharedRuntime
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,7 +21,6 @@ properties:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.2](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -38,7 +36,6 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -54,7 +51,6 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +66,6 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,7 +90,6 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +109,6 @@ methods:
     remarks: >-
       **Requirement set**: [SharedRuntime
       1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets)
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

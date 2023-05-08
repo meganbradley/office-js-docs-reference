@@ -26,7 +26,6 @@ remarks: >-
   });
 
   ```
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -39,7 +38,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +50,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -132,7 +129,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -185,7 +181,6 @@ methods:
           console.log(count.value);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -231,7 +226,6 @@ methods:
           console.log(count.value);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -271,7 +265,6 @@ methods:
           console.log(JSON.stringify(startMonth.value));
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -331,7 +324,6 @@ methods:
               }
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -351,7 +343,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -375,7 +366,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -395,7 +385,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -420,7 +409,6 @@ methods:
       a plain JavaScript object (typed as `Word.Interfaces.SettingCollectionData`<!-- -->) that contains an "items"
       array with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -441,7 +429,6 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -459,7 +446,6 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -7,7 +7,6 @@ summary: >-
   Represents the top-level object that contains all globally addressable OneNote objects such as notebooks, the active
   notebook, and the active section.
 remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -20,7 +19,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ properties:
       Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one
       notebook at a time is open in the application instance. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -72,7 +69,6 @@ methods:
                   
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -110,7 +106,6 @@ methods:
           }
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +139,6 @@ methods:
           console.log("outline id: " + outline.id);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -178,7 +172,6 @@ methods:
           }
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -214,7 +207,6 @@ methods:
           console.log("Page ID: " + page.id);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -252,7 +244,6 @@ methods:
           }
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -266,7 +257,6 @@ methods:
     fullName: getActiveParagraph()
     summary: 'Gets the active Paragraph if one exists, If no Paragraph is active, throws ItemNotFound.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -280,7 +270,6 @@ methods:
     fullName: getActiveParagraphOrNull()
     summary: 'Gets the active Paragraph if one exists, otherwise returns null.'
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -316,7 +305,6 @@ methods:
           console.log("Section ID: " + section.id);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -353,7 +341,6 @@ methods:
           }
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -367,7 +354,6 @@ methods:
     fullName: getSelectedInkStrokes()
     summary: Gets the currently selected ink strokes.
     remarks: '\[ [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -381,7 +367,6 @@ methods:
     fullName: getWindowSize()
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -395,7 +380,6 @@ methods:
     fullName: insertHtmlAtCurrentPosition(html)
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -413,7 +397,6 @@ methods:
     fullName: isViewingDeletedNotes()
     summary: ''
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -429,7 +412,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -449,7 +431,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -469,7 +450,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -524,7 +504,6 @@ methods:
           await context.sync();
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -571,7 +550,6 @@ methods:
           await context.sync();
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -591,7 +569,6 @@ methods:
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -614,7 +591,6 @@ methods:
     fullName: set(properties)
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -637,7 +613,6 @@ methods:
       plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

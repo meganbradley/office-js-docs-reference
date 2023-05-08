@@ -7,7 +7,6 @@ summary: >-
   Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the
   border of the shape.
 remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -20,7 +19,6 @@ properties:
       Represents the line color in HTML color format, in the form \#RRGGBB (e.g., "FFA500") or as a named HTML color
       (e.g., "orange").
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +47,6 @@ properties:
       Represents the dash style of the line. Returns null when the line is not visible or there are inconsistent dash
       styles. See PowerPoint.ShapeLineDashStyle for details.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +66,6 @@ properties:
       Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent
       styles. See PowerPoint.ShapeLineStyle for details.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -87,7 +82,6 @@ properties:
       Specifies the transparency percentage of the line as a value from 0.0 (opaque) through 1.0 (clear). Returns null
       when the shape has inconsistent transparencies.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +96,6 @@ properties:
       Specifies if the line formatting of a shape element is visible. Returns `null` when the shape has inconsistent
       visibilities.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -117,7 +110,6 @@ properties:
       Represents the weight of the line, in points. Returns `null` when the line is not visible or there are
       inconsistent line weights.
     remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -133,7 +125,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,7 +144,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -173,7 +163,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -206,7 +195,6 @@ methods:
       returns a plain JavaScript object (typed as `PowerPoint.Interfaces.ShapeLineFormatData`<!-- -->) that contains
       shallow copies of any loaded child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -52,7 +52,6 @@ remarks: >-
   console.log(outputString);
 
   ```
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -63,7 +62,6 @@ properties:
     fullName: attachmentType
     summary: Gets a value that indicates the type of an attachment.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -84,7 +82,6 @@ properties:
       post](https://devblogs.microsoft.com/microsoft365dev/outlook-javascript-api-deprecation-for-attachmentdetails-contenttype-property/)<!--
       -->.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: 'If you require specific content types, grab the attachment''s extension and process accordingly.'
@@ -100,7 +97,6 @@ properties:
       Gets the Exchange attachment ID of the attachment. However, if the attachment type is
       `MailboxEnums.AttachmentType.Cloud`<!-- -->, then a URL for the file is returned.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -113,7 +109,6 @@ properties:
     fullName: isInline
     summary: Gets a value that indicates whether the attachment should be displayed in the body of the item.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -131,7 +126,6 @@ properties:
       **Important**: For message or appointment items that were attached by drag-and-drop or "Attach Item", `name`
       includes a file extension in Outlook on Mac, but excludes the extension on the web or Windows.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -144,7 +138,6 @@ properties:
     fullName: size
     summary: Gets the size of the attachment in bytes.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

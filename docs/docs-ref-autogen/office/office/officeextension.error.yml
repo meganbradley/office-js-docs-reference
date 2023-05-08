@@ -7,7 +7,6 @@ summary: >-
   The error object returned by `context.sync()`<!-- -->, if a promise is rejected due to an error while processing the
   request.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
     fullName: code
     summary: 'Error code string, such as "InvalidArgument".'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: debugInfo
     summary: 'Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`<!-- -->).'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: innerError
     summary: 'Inner error, if applicable.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -57,7 +53,6 @@ properties:
     fullName: message
     summary: The error message passed through from the Office application.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +65,6 @@ properties:
     fullName: name
     summary: 'Error name: "OfficeExtension.Error".'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +77,6 @@ properties:
     fullName: stack
     summary: 'Stack trace, if applicable.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +92,6 @@ properties:
       -->. If there was an error, this contains all trace messages that were executed before the error occurred. These
       messages can help you monitor the program execution sequence and detect the case of the error.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

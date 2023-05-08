@@ -13,7 +13,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Read
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -24,7 +23,6 @@ properties:
     fullName: date
     summary: Integer value representing the day of the month.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -37,7 +35,6 @@ properties:
     fullName: hours
     summary: Integer value representing the hour on a 24-hour clock.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -50,7 +47,6 @@ properties:
     fullName: milliseconds
     summary: Integer value representing the milliseconds.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +59,6 @@ properties:
     fullName: minutes
     summary: Integer value representing the minutes.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +71,6 @@ properties:
     fullName: month
     summary: 'Integer value representing the month, beginning with 0 for January to 11 for December.'
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -89,7 +83,6 @@ properties:
     fullName: seconds
     summary: Integer value representing the seconds.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -102,7 +95,6 @@ properties:
     fullName: timezoneOffset
     summary: Integer value representing the number of minutes difference between the local time zone and UTC.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -115,7 +107,6 @@ properties:
     fullName: year
     summary: Integer value representing the year.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

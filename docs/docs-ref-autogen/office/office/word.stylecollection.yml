@@ -5,7 +5,6 @@ package: office!
 fullName: Word.StyleCollection
 summary: 'Contains a collection of [Word.Style](xref:office!Word.Style:class) objects.'
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -45,7 +42,6 @@ methods:
     fullName: getByName(name)
     summary: Get the style object by its name.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -65,7 +61,6 @@ methods:
       If the corresponding style doesn't exist, then this method returns an object with its `isNullObject` property set
       to `true`<!-- -->.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -83,7 +78,6 @@ methods:
     fullName: getCount()
     summary: Gets the number of the styles in the collection.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -97,7 +91,6 @@ methods:
     fullName: getItem(index)
     summary: Gets a style object by its index in the collection.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -117,7 +110,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -141,7 +133,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -161,7 +152,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -186,7 +176,6 @@ methods:
       plain JavaScript object (typed as `Word.Interfaces.StyleCollectionData`<!-- -->) that contains an "items" array
       with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -207,7 +196,6 @@ methods:
       object to the tracked object collection when the object was first created. If this object is part of a collection,
       you should also track the parent collection.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -225,7 +213,6 @@ methods:
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
       once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

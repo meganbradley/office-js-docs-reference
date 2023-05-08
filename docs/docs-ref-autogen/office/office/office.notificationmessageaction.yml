@@ -62,7 +62,6 @@ remarks: >-
   });
 
   ```
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -73,7 +72,6 @@ properties:
     fullName: actionText
     summary: The text of the action link.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -86,7 +84,6 @@ properties:
     fullName: actionType
     summary: The type of action to be performed. `ActionType.ShowTaskPane` is the only supported action.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -99,7 +96,6 @@ properties:
     fullName: commandId
     summary: The button defined in the manifest.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -114,7 +110,6 @@ properties:
       Any JSON data the action button needs to pass on. This data can be retrieved by calling
       `item.getInitializationContextAsync`<!-- -->.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

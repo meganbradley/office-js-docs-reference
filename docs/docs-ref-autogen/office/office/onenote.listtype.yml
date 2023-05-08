@@ -5,7 +5,6 @@ package: office!
 fullName: OneNote.ListType
 summary: ''
 remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

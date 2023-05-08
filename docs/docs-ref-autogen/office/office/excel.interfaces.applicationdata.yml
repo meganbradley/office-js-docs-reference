@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.ApplicationData
 summary: An interface describing the data returned by calling `application.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: calculationEngineVersion
     summary: Returns the Excel calculation engine version used for the last full recalculation.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -35,7 +33,6 @@ properties:
     remarks: >-
       \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
     fullName: calculationState
     summary: Returns the calculation state of the application. See `Excel.CalculationState` for details.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +59,6 @@ properties:
       Provides information based on current system culture settings. This includes the culture names, number formatting,
       and other culturally dependent settings.
     remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -76,7 +71,6 @@ properties:
     fullName: decimalSeparator
     summary: Gets the string used as the decimal separator for numeric values. This is based on the local Excel settings.
     remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,7 +85,6 @@ properties:
       Specifies whether the Format Stale Values option within Calculation Options is enabled or disabled. The stale
       formulas are rendered with stale formatting if the option is enabled.
     remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -106,7 +99,6 @@ properties:
       Returns the iterative calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
       Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,7 +113,6 @@ properties:
       Gets the string used to separate groups of digits to the left of the decimal for numeric values. This is based on
       the local Excel settings.
     remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -136,7 +127,6 @@ properties:
       Specifies if the system separators of Excel are enabled. System separators include the decimal separator and
       thousands separator.
     remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

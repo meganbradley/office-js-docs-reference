@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ConditionalTopBottomCriterionType
 summary: Represents the criteria for the above/below average conditional format type.
 remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

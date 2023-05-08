@@ -5,7 +5,6 @@ package: office!
 fullName: Word.SaveBehavior
 summary: Specifies the save behavior for `Document.save`<!-- -->.
 remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

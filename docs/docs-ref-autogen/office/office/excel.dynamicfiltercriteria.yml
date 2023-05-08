@@ -36,7 +36,6 @@ remarks: >-
       await context.sync();
      });
   ```
-example: []
 isPreview: false
 isDeprecated: false
 fields:

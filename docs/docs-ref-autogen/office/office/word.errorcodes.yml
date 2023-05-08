@@ -5,7 +5,6 @@ package: office!
 fullName: Word.ErrorCodes
 summary: ''
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 fields:

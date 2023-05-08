@@ -8,7 +8,6 @@ summary: >-
   worksheet. Every sheet view (even a temporary sheet view) has a unique, worksheet-scoped name that is used to access
   the view.
 remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +20,6 @@ properties:
       Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
       navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -36,7 +34,6 @@ properties:
       Gets or sets the name of the sheet view. The temporary sheet view name is the empty string (""). Naming the view
       by using the name property causes the sheet view to be saved.
     remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

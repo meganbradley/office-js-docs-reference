@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ConditionalCellValueOperator
 summary: Represents the operator of the text conditional format type.
 remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

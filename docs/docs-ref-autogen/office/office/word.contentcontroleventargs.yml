@@ -5,7 +5,6 @@ package: office!
 fullName: Word.ContentControlEventArgs
 summary: Provides information about the content control that raised an event.
 remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -35,7 +34,6 @@ properties:
       }
 
       ```
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -67,7 +65,6 @@ properties:
       }
 
       ```
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -86,7 +83,6 @@ properties:
     fullName: ids
     summary: Gets the content control IDs.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -99,7 +95,6 @@ properties:
     fullName: source
     summary: The source of the event. It can be local or remote (through coauthoring).
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.ChartAreaFormatUpdateData
 summary: 'An interface for updating data on the ChartAreaFormat object, for use in `chartAreaFormat.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: border
     summary: 'Represents the border format of chart area, which includes color, linestyle, and weight.'
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: colorScheme
     summary: Specifies the color scheme of the chart.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +49,6 @@ properties:
     fullName: font
     summary: 'Represents the font attributes (font name, font size, color, etc.) for the current object.'
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,7 +61,6 @@ properties:
     fullName: roundedCorners
     summary: Specifies if the chart area of the chart has rounded corners.
     remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

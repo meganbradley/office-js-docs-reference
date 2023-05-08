@@ -7,7 +7,6 @@ summary: >-
   Configurable template for a value filter to apply to a PivotField. The `condition` defines what criteria need to be
   set in order for the filter to operate.
 remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -21,7 +20,6 @@ properties:
       condition. For example, if comparator is "50" and condition is "greaterThan", all item values that are not greater
       than 50 will be removed by the filter.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,7 +32,6 @@ properties:
     fullName: condition
     summary: 'Specifies the condition for the filter, which defines the necessary filtering criteria.'
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -53,7 +50,6 @@ properties:
       If `true`<!-- -->, filter *excludes* items that meet criteria. The default is `false` (filter to include items
       that meet criteria).
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -66,7 +62,6 @@ properties:
     fullName: lowerBound
     summary: The lower-bound of the range for the `between` filter condition.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -79,7 +74,6 @@ properties:
     fullName: selectionType
     summary: 'Specifies if the filter is for the top/bottom N items, top/bottom N percent, or top/bottom N sum.'
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -92,7 +86,6 @@ properties:
     fullName: threshold
     summary: 'The "N" threshold number of items, percent, or sum to be filtered for a top/bottom filter condition.'
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +98,6 @@ properties:
     fullName: upperBound
     summary: The upper-bound of the range for the `between` filter condition.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -118,7 +110,6 @@ properties:
     fullName: value
     summary: Name of the chosen "value" in the field by which to filter.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

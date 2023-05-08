@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.CellValueConditionalFormatData
 summary: An interface describing the data returned by calling `cellValueConditionalFormat.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: format
     summary: 'Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.'
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: rule
     summary: Specifies the rule object on this conditional format.
     remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

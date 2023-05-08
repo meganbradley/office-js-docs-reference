@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.RibbonTab
 summary: ''
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

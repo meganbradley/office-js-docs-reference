@@ -27,7 +27,6 @@ remarks: >-
   To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
   or appointment in compose mode
   (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
-example: []
 isPreview: true
 isDeprecated: false
 type: interface
@@ -61,7 +60,6 @@ methods:
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
       message or appointment in compose mode
       (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -143,7 +141,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -190,7 +187,6 @@ methods:
       To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your
       message or appointment in compose mode
       (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -263,7 +259,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

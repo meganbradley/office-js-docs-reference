@@ -5,7 +5,6 @@ package: office!
 fullName: Word.Interfaces.SectionUpdateData
 summary: 'An interface for updating data on the Section object, for use in `section.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: body
     summary: Gets the body object of the section. This does not include the header/footer and other section metadata.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

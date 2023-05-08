@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.DataValidationAlertStyle
 summary: Represents the data validation error alert style. The default is `Stop`<!-- -->.
 remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

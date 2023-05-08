@@ -5,7 +5,6 @@ package: office!
 fullName: PowerPoint.GeometricShapeType
 summary: Specifies the shape type for a `GeometricShape` object.
 remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Query
 summary: Represents a Power Query query.
 remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: error
     summary: Gets the query error message from when the query was last refreshed.
     remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -48,7 +45,6 @@ properties:
     fullName: loadedTo
     summary: Gets the query loaded to object type.
     remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,7 +57,6 @@ properties:
     fullName: loadedToDataModel
     summary: Specifies if the query loaded to the data model.
     remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -91,7 +86,6 @@ properties:
           console.log("  " + queries.items.map((query) => query.name).join("\n  "));
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -121,7 +115,6 @@ properties:
           console.log("  " + queries.items.map((query) => query.refreshDate).join("\n  "));
       });       
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -153,7 +146,6 @@ properties:
           console.log("  " + queries.items.map((query) => query.rowsLoadedCount).join("\n  "));
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -169,7 +161,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -189,7 +180,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -209,7 +199,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,7 +231,6 @@ methods:
       JavaScript object (typed as `Excel.Interfaces.QueryData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

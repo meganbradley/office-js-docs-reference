@@ -16,7 +16,6 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -44,7 +43,6 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
       Compose
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -105,7 +103,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -217,7 +214,6 @@ methods:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -277,7 +273,6 @@ methods:
 
 
       - `InvalidEndTime`<!-- -->: The appointment end time is before the appointment start time.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

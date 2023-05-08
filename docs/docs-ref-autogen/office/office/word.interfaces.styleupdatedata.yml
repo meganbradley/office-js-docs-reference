@@ -5,7 +5,6 @@ package: office!
 fullName: Word.Interfaces.StyleUpdateData
 summary: 'An interface for updating data on the Style object, for use in `style.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: font
     summary: Gets a font object that represents the character formatting of the specified style.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: listTemplate
     summary: Gets a ListTemplate object that represents the list formatting for the specified Style object.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -42,7 +39,6 @@ properties:
     fullName: paragraphFormat
     summary: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -55,7 +51,6 @@ properties:
     fullName: priority
     summary: Gets or sets the priority.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -68,7 +63,6 @@ properties:
     fullName: quickStyle
     summary: Gets or sets whether the style corresponds to an available quick style.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -83,7 +77,6 @@ properties:
       Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles
       task pane in Microsoft Word after it's used in the document.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -98,7 +91,6 @@ properties:
       Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles
       task pane.
     remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    example: []
     isPreview: true
     isDeprecated: false
     syntax:

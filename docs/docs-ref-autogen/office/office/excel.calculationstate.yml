@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.CalculationState
 summary: Represents the state of calculation across the entire Excel application.
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

@@ -7,7 +7,6 @@ summary: An interface that contains all the functionality provided to manage the
 remarks: >-
   **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -26,7 +25,6 @@ methods:
       application and may not be complete when the returned `Promise` object is resolved. For more information and code
       examples, see [Create custom contextual
       tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -63,7 +61,6 @@ methods:
       For code examples, see [Enable and Disable Add-in
       Commands](https://learn.microsoft.com/office/dev/add-ins/design/disable-add-in-commands) and [Create custom
       contextual tabs](https://learn.microsoft.com/office/dev/add-ins/design/contextual-tabs)<!-- -->.
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

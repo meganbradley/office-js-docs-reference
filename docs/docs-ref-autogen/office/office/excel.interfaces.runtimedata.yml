@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.RuntimeData
 summary: An interface describing the data returned by calling `runtime.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: enableEvents
     summary: Toggle JavaScript events in the current task pane or content add-in.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

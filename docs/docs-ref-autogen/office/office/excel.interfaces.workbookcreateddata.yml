@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.WorkbookCreatedData
 summary: An interface describing the data returned by calling `workbookCreated.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface

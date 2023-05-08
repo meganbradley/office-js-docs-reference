@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.CommentUpdateData
 summary: 'An interface for updating data on the Comment object, for use in `comment.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: content
     summary: The comment's content. The string is plain text.
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: resolved
     summary: The comment thread status. A value of `true` means that the comment thread is resolved.
     remarks: '\[ [API set: ExcelApi 1.11](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

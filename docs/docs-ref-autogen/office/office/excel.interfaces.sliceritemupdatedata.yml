@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.Interfaces.SlicerItemUpdateData
 summary: 'An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`<!-- -->.'
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,7 +18,6 @@ properties:
       slicer items. By default, if the slicer item is the only one selected, when it is deselected, all items will be
       selected.
     remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

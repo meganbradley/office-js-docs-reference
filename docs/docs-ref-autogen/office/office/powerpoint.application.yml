@@ -5,7 +5,6 @@ package: office!
 fullName: PowerPoint.Application
 summary: ''
 remarks: '\[ [API set: PowerPointApi 1.0](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -32,7 +30,6 @@ methods:
     fullName: newObject(context)
     summary: Create a new instance of PowerPoint.Application object
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -55,7 +52,6 @@ methods:
       plain JavaScript object (typed as `PowerPoint.Interfaces.ApplicationData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

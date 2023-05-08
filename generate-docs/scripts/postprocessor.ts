@@ -62,102 +62,102 @@ const requirementSetRefPath = path.resolve("../../docs/requirement-sets");
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
 
-    console.log(`Deleting old docs at: ${docsDestination}`);
-    // delete everything except the 'overview' folder from the /docs folder
-    fsx.readdirSync(docsDestination)
-        .filter(filename => filename !== "overview" && filename !== "images")
-        .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
+    // console.log(`Deleting old docs at: ${docsDestination}`);
+    // // delete everything except the 'overview' folder from the /docs folder
+    // fsx.readdirSync(docsDestination)
+    //     .filter(filename => filename !== "overview" && filename !== "images")
+    //     .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
-    console.log(`Creating global TOC`);
-    let globalToc = <Toc>{items: [{name: "API reference"}]};
-    globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
-                                {"name": "Excel", "href": "/javascript/api/excel"},
-                                {"name": "OneNote", "href": "/javascript/api/onenote"},
-                                {"name": "Outlook", "href": "/javascript/api/outlook"},
-                                {"name": "PowerPoint", "href": "/javascript/api/powerpoint"},
-                                {"name": "Visio", "href": "/javascript/api/visio"},
-                                {"name": "Word", "href": "/javascript/api/word"},
-                                {"name": "Common APIs", "href": "/javascript/api/office"}] as any;
+    // console.log(`Creating global TOC`);
+    // let globalToc = <Toc>{items: [{name: "API reference"}]};
+    // globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
+    //                             {"name": "Excel", "href": "/javascript/api/excel"},
+    //                             {"name": "OneNote", "href": "/javascript/api/onenote"},
+    //                             {"name": "Outlook", "href": "/javascript/api/outlook"},
+    //                             {"name": "PowerPoint", "href": "/javascript/api/powerpoint"},
+    //                             {"name": "Visio", "href": "/javascript/api/visio"},
+    //                             {"name": "Word", "href": "/javascript/api/word"},
+    //                             {"name": "Common APIs", "href": "/javascript/api/office"}] as any;
 
-    console.log(`Copying docs output files to: ${docsDestination}`);
-    // copy docs output to /docs/docs-ref-autogen folder
-    fsx.readdirSync(docsSource)
-        .forEach(filename => {
-        fsx.copySync(
-            docsSource + '/' + filename,
-            docsDestination + '/' + filename
-        );
-    });
+    // console.log(`Copying docs output files to: ${docsDestination}`);
+    // // copy docs output to /docs/docs-ref-autogen folder
+    // fsx.readdirSync(docsSource)
+    //     .forEach(filename => {
+    //     fsx.copySync(
+    //         docsSource + '/' + filename,
+    //         docsDestination + '/' + filename
+    //     );
+    // });
 
-    // fix all the individual TOC files
-    (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
-    const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
-    const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
-    const hostVersionMap = [{host: "excel", versions: 18}, /*not including online*/
-                            {host: "onenote", versions: 1},
-                            {host: "outlook", versions: 13},
-                            {host: "powerpoint", versions: 6},
-                            {host: "visio", versions: 1},
-                            {host: "word", versions: 5}]; /* not including online or desktop*/
+    // // fix all the individual TOC files
+    // (globalToc.items[0].items[0] as ApplicationTocNode).href = "../overview/overview.md"; // Stay within a moniker
+    // const tocWithPreviewCommon = scrubAndWriteToc(docsDestination + "/office", globalToc);
+    // const tocWithReleaseCommon = scrubAndWriteToc(docsDestination + "/office_release", globalToc);
+    // const hostVersionMap = [{host: "excel", versions: 18}, /*not including online*/
+    //                         {host: "onenote", versions: 1},
+    //                         {host: "outlook", versions: 13},
+    //                         {host: "powerpoint", versions: 6},
+    //                         {host: "visio", versions: 1},
+    //                         {host: "word", versions: 5}]; /* not including online or desktop*/
 
-    hostVersionMap.forEach(category => {
-        if (category.versions > 1) {
-            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithPreviewCommon, category.host, category.versions);
-            for (let i = 1; i < category.versions; i++) {
-                scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, i);
-            }
-        } else {
-            // This assumes the single version of the application's docs is not a preview version.
-            scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, category.versions);
-        }
-    });
+    // hostVersionMap.forEach(category => {
+    //     if (category.versions > 1) {
+    //         scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithPreviewCommon, category.host, category.versions);
+    //         for (let i = 1; i < category.versions; i++) {
+    //             scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}_1_${i}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, i);
+    //         }
+    //     } else {
+    //         // This assumes the single version of the application's docs is not a preview version.
+    //         scrubAndWriteToc(path.resolve(`${docsDestination}/${category.host}`), category.host === "visio" ? globalToc : tocWithReleaseCommon, category.host, category.versions);
+    //     }
+    // });
 
-    // Special case for ExcelApi Online
-    scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), tocWithReleaseCommon, "excel", 99);
+    // // Special case for ExcelApi Online
+    // scrubAndWriteToc(path.resolve(`${docsDestination}/excel_online`), tocWithReleaseCommon, "excel", 99);
 
-    // Special case for WordApi Online
-    scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
+    // // Special case for WordApi Online
+    // scrubAndWriteToc(path.resolve(`${docsDestination}/word_online`), tocWithReleaseCommon, "word", 99);
 
-    // Special case for WordApi Desktop
-    scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_4_hidden_document`), tocWithReleaseCommon, "word", 4.5);
-    scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_3_hidden_document`), tocWithReleaseCommon, "word", 3.5);
+    // // Special case for WordApi Desktop
+    // scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_4_hidden_document`), tocWithReleaseCommon, "word", 4.5);
+    // scrubAndWriteToc(path.resolve(`${docsDestination}/word_1_3_hidden_document`), tocWithReleaseCommon, "word", 3.5);
 
-    console.log(`Namespace pass on Outlook docs`);
-    // replace Outlook/CommonAPI namespace references with Office
-    fsx.readdirSync(docsDestination)
-        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
-        .forEach(filename => {
-            let subfolder = docsDestination + '/' + filename + "/outlook";
-            fsx.readdirSync(subfolder)
-                .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
-                });
-        });
-    console.log(`Namespace pass on Office docs`);
-    const officeFolders: string[] = [docsDestination + "/office/office", docsDestination + "/office_release/office"];
-    officeFolders.forEach((officeFolder) => {
-    console.log(officeFolder);
-        fsx.readdirSync(officeFolder)
-            .forEach(filename => {
-                fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings").replace(/Outlook\.SensitivityLabelsCatalog/g, "Office.SensitivityLabelsCatalog"));
-            });
-    });
+    // console.log(`Namespace pass on Outlook docs`);
+    // // replace Outlook/CommonAPI namespace references with Office
+    // fsx.readdirSync(docsDestination)
+    //     .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
+    //     .forEach(filename => {
+    //         let subfolder = docsDestination + '/' + filename + "/outlook";
+    //         fsx.readdirSync(subfolder)
+    //             .forEach(subfilename => {
+    //                 fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
+    //             });
+    //     });
+    // console.log(`Namespace pass on Office docs`);
+    // const officeFolders: string[] = [docsDestination + "/office/office", docsDestination + "/office_release/office"];
+    // officeFolders.forEach((officeFolder) => {
+    // console.log(officeFolder);
+    //     fsx.readdirSync(officeFolder)
+    //         .forEach(filename => {
+    //             fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings").replace(/Outlook\.SensitivityLabelsCatalog/g, "Office.SensitivityLabelsCatalog"));
+    //         });
+    // });
 
-    console.log(`Custom Functions API requirement set link pass`);
-    fsx.readdirSync(docsDestination)
-        .filter(filename => filename.indexOf("excel") >= 0 && filename.indexOf(".yml") < 0)
-        .forEach(filename => {
-            let subfolder = docsDestination + '/' + filename + "/custom-functions-runtime";
-            if (fsx.existsSync(subfolder)) {
-                fsx.readdirSync(subfolder)
-                    .forEach(subfilename => {
-                        fsx.writeFileSync(subfolder + '/' + subfilename,
-                            fsx.readFileSync(subfolder + '/' + subfilename).toString()
-                                .replace(/\/office\/dev\/add-ins\/reference\/javascript-api-for-office/g, "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets")
-                                .replace(/\/office\/dev\/add-ins\/reference\/overview\/visio-javascript-reference-overview/g, "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets"));
-                    });
-            }
-        });
+    // console.log(`Custom Functions API requirement set link pass`);
+    // fsx.readdirSync(docsDestination)
+    //     .filter(filename => filename.indexOf("excel") >= 0 && filename.indexOf(".yml") < 0)
+    //     .forEach(filename => {
+    //         let subfolder = docsDestination + '/' + filename + "/custom-functions-runtime";
+    //         if (fsx.existsSync(subfolder)) {
+    //             fsx.readdirSync(subfolder)
+    //                 .forEach(subfilename => {
+    //                     fsx.writeFileSync(subfolder + '/' + subfilename,
+    //                         fsx.readFileSync(subfolder + '/' + subfilename).toString()
+    //                             .replace(/\/office\/dev\/add-ins\/reference\/javascript-api-for-office/g, "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets")
+    //                             .replace(/\/office\/dev\/add-ins\/reference\/overview\/visio-javascript-reference-overview/g, "/javascript/api/requirement-sets/excel/custom-functions-requirement-sets"));
+    //                 });
+    //         }
+    //     });
 
     console.log(`Fixing top href`);
     fsx.readdirSync(docsDestination)
@@ -167,7 +167,7 @@ tryCatch(async () => {
             fsx.readdirSync(subfolder).forEach(subfilename => {
                     if (subfilename.indexOf("toc") >= 0) {
                         // Update overview HREF.
-                        fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
+                       // fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
                     } else if (subfilename.indexOf(".") < 0) {
                         let packageFolder = subfolder + '/' + subfilename;
                         fsx.readdirSync(packageFolder).filter(packageFileName => packageFileName.indexOf(".yml") > 0).forEach(packageFileName => {
@@ -181,16 +181,16 @@ tryCatch(async () => {
                 });
         });
 
-    console.log(`Moving common TOC to its own folder`);
-    fsx.copySync(docsDestination + "/office/toc.yml", docsDestination +  "/common_preview/toc.yml");
-    fsx.copySync(docsDestination + "/office_release/toc.yml", docsDestination +  "/common/toc.yml");
+    // console.log(`Moving common TOC to its own folder`);
+    // fsx.copySync(docsDestination + "/office/toc.yml", docsDestination +  "/common_preview/toc.yml");
+    // fsx.copySync(docsDestination + "/office_release/toc.yml", docsDestination +  "/common/toc.yml");
 
-    // remove to prevent build errors
-    fsx.removeSync(docsDestination + "/office/overview.md");
-    fsx.removeSync(docsDestination + "/office/toc.yml");
-    fsx.removeSync(docsDestination + "/office_release/toc.yml");
+    // // remove to prevent build errors
+    // fsx.removeSync(docsDestination + "/office/overview.md");
+    // fsx.removeSync(docsDestination + "/office/toc.yml");
+    // fsx.removeSync(docsDestination + "/office_release/toc.yml");
 
-    console.log("\nPostprocessor script complete!\n");
+    // console.log("\nPostprocessor script complete!\n");
 
     process.exit(0);
 });

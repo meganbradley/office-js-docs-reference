@@ -7,7 +7,6 @@ summary: >-
   An interface for updating data on the WorksheetCustomProperty object, for use in `worksheetCustomProperty.set({ ...
   })`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
     fullName: value
     summary: Gets or sets the value of the custom property.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

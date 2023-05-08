@@ -31,7 +31,6 @@ remarks: >-
   Office.context.mailbox.item.notificationMessages.addAsync(id, details, handleResult);
 
   ```
-example: []
 isPreview: false
 isDeprecated: false
 fields:

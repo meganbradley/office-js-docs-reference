@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ReferencedValue
 summary: Represents the value in a cell.
 remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 syntax: export type ReferencedValue = ArrayCellValue | EntityCellValue | RootReferenceCellValue;

@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ChartAxisCategoryType
 summary: Specifies the type of the category axis.
 remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

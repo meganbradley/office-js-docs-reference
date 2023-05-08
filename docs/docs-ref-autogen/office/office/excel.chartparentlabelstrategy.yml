@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ChartParentLabelStrategy
 summary: Represents the parent label strategy of the chart series layout. This only applies to treemap charts
 remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 fields:

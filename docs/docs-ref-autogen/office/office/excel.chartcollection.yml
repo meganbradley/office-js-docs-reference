@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ChartCollection
 summary: A collection of all the chart objects on a worksheet.
 remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -18,7 +17,6 @@ properties:
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -31,7 +29,6 @@ properties:
     fullName: count
     summary: Returns the number of charts in the worksheet.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -44,7 +41,6 @@ properties:
     fullName: items
     summary: Gets the loaded child items in this collection.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -78,7 +74,6 @@ methods:
           console.log("New Chart Added");
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -104,7 +99,6 @@ methods:
     fullName: 'add(type, sourceData, seriesBy)'
     summary: Creates a new chart.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -160,7 +154,6 @@ methods:
     fullName: getCount()
     summary: Returns the number of charts in the worksheet.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -188,7 +181,6 @@ methods:
           console.log("charts: Count= " + charts.count);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -219,7 +211,6 @@ methods:
           console.log(chart.name);
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -242,7 +233,6 @@ methods:
       properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
       -->.
     remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -262,7 +252,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -286,7 +275,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -321,7 +309,6 @@ methods:
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -346,7 +333,6 @@ methods:
       plain JavaScript object (typed as `Excel.Interfaces.ChartCollectionData`<!-- -->) that contains an "items" array
       with shallow copies of any loaded properties from the collection's items.
     remarks: ''
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -404,7 +390,6 @@ events:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -435,7 +420,6 @@ events:
           await context.sync();
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -485,7 +469,6 @@ events:
       }
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -516,7 +499,6 @@ events:
           await context.sync();
       });
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

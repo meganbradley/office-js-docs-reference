@@ -5,7 +5,6 @@ package: office!
 fullName: Excel.ShowAsRule
 summary: ''
 remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -18,7 +17,6 @@ properties:
       The PivotField to base the `ShowAs` calculation on, if applicable according to the `ShowAsCalculation` type, else
       `null`<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -70,7 +68,6 @@ properties:
       });
 
       ```
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -83,7 +80,6 @@ properties:
     fullName: calculation
     summary: The `ShowAs` calculation to use for the PivotField. See `Excel.ShowAsCalculation` for details.
     remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

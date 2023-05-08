@@ -7,7 +7,6 @@ summary: >-
   Configurable template for a label filter to apply to a PivotField. The `condition` defines what criteria need to be
   set in order for the filter to operate.
 remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -20,7 +19,6 @@ properties:
       The comparator is the static value to which other values are compared. The type of comparison is defined by the
       condition. Note: A numeric string is treated as a number when being compared against other numeric strings.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -33,7 +31,6 @@ properties:
     fullName: condition
     summary: 'Specifies the condition for the filter, which defines the necessary filtering criteria.'
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -52,7 +49,6 @@ properties:
       If `true`<!-- -->, filter *excludes* items that meet criteria. The default is `false` (filter to include items
       that meet criteria).
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -67,7 +63,6 @@ properties:
       The lower-bound of the range for the `between` filter condition. Note: A numeric string is treated as a number
       when being compared against other numeric strings.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -80,7 +75,6 @@ properties:
     fullName: substring
     summary: 'The substring used for `beginsWith`<!-- -->, `endsWith`<!-- -->, and `contains` filter conditions.'
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -95,7 +89,6 @@ properties:
       The upper-bound of the range for the `between` filter condition. Note: A numeric string is treated as a number
       when being compared against other numeric strings.
     remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -21,7 +21,6 @@ remarks: >-
   console.log(Office.context.mailbox.item.getEntitiesByType(Office.MailboxEnums.EntityType.Address));
 
   ```
-example: []
 isPreview: false
 isDeprecated: false
 fields:

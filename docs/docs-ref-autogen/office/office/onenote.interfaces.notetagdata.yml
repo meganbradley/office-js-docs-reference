@@ -5,7 +5,6 @@ package: office!
 fullName: OneNote.Interfaces.NoteTagData
 summary: An interface describing the data returned by calling `noteTag.toJSON()`<!-- -->.
 remarks: ''
-example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -16,7 +15,6 @@ properties:
     fullName: id
     summary: Gets the Id of the NoteTag object. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -29,7 +27,6 @@ properties:
     fullName: status
     summary: Gets the status of the NoteTag object. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -46,7 +43,6 @@ properties:
     fullName: type
     summary: Gets the type of the NoteTag object. Read-only.
     remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
-    example: []
     isPreview: false
     isDeprecated: false
     syntax:
