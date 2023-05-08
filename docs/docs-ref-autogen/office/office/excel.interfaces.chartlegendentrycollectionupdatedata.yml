@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartLegendEntryCollectionUpdateData
+uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartLegendEntryCollectionUpdateData
+summary: >-
+  An interface for updating data on the ChartLegendEntryCollection object, for use in `chartLegendEntryCollection.set({
+  ... })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.ChartLegendEntryData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartLegendEntryData:interface" />[]'

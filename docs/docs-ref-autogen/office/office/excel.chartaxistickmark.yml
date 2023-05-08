@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Excel.ChartAxisTickMark
+uid: 'office!Excel.ChartAxisTickMark:enum'
+package: office!
+fullName: Excel.ChartAxisTickMark
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: cross
+    uid: 'office!Excel.ChartAxisTickMark.cross:member'
+    package: office!
+    summary: ''
+    value: '"Cross"'
+  - name: inside
+    uid: 'office!Excel.ChartAxisTickMark.inside:member'
+    package: office!
+    summary: ''
+    value: '"Inside"'
+  - name: none
+    uid: 'office!Excel.ChartAxisTickMark.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: outside
+    uid: 'office!Excel.ChartAxisTickMark.outside:member'
+    package: office!
+    summary: ''
+    value: '"Outside"'

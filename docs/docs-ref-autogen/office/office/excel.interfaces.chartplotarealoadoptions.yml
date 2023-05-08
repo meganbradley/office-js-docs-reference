@@ -1,0 +1,157 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartPlotAreaLoadOptions
+uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ChartPlotAreaLoadOptions
+summary: This object represents the attributes for a chart plot area.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#format:member'
+    package: office!
+    fullName: format
+    summary: Specifies the formatting of a chart plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface" />'
+  - name: height
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#height:member'
+    package: office!
+    fullName: height
+    summary: Specifies the height value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: insideHeight
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#insideHeight:member'
+    package: office!
+    fullName: insideHeight
+    summary: Specifies the inside height value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insideHeight?: boolean;'
+      return:
+        type: boolean
+  - name: insideLeft
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#insideLeft:member'
+    package: office!
+    fullName: insideLeft
+    summary: Specifies the inside left value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insideLeft?: boolean;'
+      return:
+        type: boolean
+  - name: insideTop
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#insideTop:member'
+    package: office!
+    fullName: insideTop
+    summary: Specifies the inside top value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insideTop?: boolean;'
+      return:
+        type: boolean
+  - name: insideWidth
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#insideWidth:member'
+    package: office!
+    fullName: insideWidth
+    summary: Specifies the inside width value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'insideWidth?: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#left:member'
+    package: office!
+    fullName: left
+    summary: Specifies the left value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type: boolean
+  - name: position
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#position:member'
+    package: office!
+    fullName: position
+    summary: Specifies the position of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type: boolean
+  - name: top
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#top:member'
+    package: office!
+    fullName: top
+    summary: Specifies the top value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'office!Excel.Interfaces.ChartPlotAreaLoadOptions#width:member'
+    package: office!
+    fullName: width
+    summary: Specifies the width value of a plot area.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,2800 @@
+### YamlMime:TSEnum
+name: Excel.EntityCompactLayoutIcons
+uid: 'office!Excel.EntityCompactLayoutIcons:enum'
+package: office!
+fullName: Excel.EntityCompactLayoutIcons
+summary: >-
+  The list of icons available for `EntityCompactLayout`<!-- -->. An icon displays in the Excel UI, either to the left of
+  the title in a cell that contains an entity card, or to the left of the title of a referenced entity inside an entity
+  card. Selecting the icon opens the entity card.
+remarks: >-
+  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-entity-icons.yaml
+
+  function createEntitiesWithIcons(icons): Excel.EntityCellValue[][] {
+    /* This method creates an entity data type for each
+     * icon in the `EntityCompactLayoutIcons` enum,
+     * and then displays the icon name with its icon.
+     */
+    let entities = [];
+    icons.forEach(function(iconName, index, array) {
+      let icon = iconNames[iconName];
+      entities.push([
+        {
+          type: "Entity",
+          text: iconName,
+          properties: {},
+          layouts: {
+            compact: {
+              icon
+            }
+          }
+        }
+      ]);
+    });
+    return entities;
+  }
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accessibility
+    uid: 'office!Excel.EntityCompactLayoutIcons.accessibility:member'
+    package: office!
+    summary: Accessibility icon.
+    value: '"Accessibility"'
+  - name: airplane
+    uid: 'office!Excel.EntityCompactLayoutIcons.airplane:member'
+    package: office!
+    summary: Airplane icon.
+    value: '"Airplane"'
+  - name: airplaneTakeOff
+    uid: 'office!Excel.EntityCompactLayoutIcons.airplaneTakeOff:member'
+    package: office!
+    summary: Airplane taking off icon.
+    value: '"AirplaneTakeOff"'
+  - name: album
+    uid: 'office!Excel.EntityCompactLayoutIcons.album:member'
+    package: office!
+    summary: Album icon.
+    value: '"Album"'
+  - name: alert
+    uid: 'office!Excel.EntityCompactLayoutIcons.alert:member'
+    package: office!
+    summary: Alert icon.
+    value: '"Alert"'
+  - name: alertUrgent
+    uid: 'office!Excel.EntityCompactLayoutIcons.alertUrgent:member'
+    package: office!
+    summary: Alert urgent icon.
+    value: '"AlertUrgent"'
+  - name: animal
+    uid: 'office!Excel.EntityCompactLayoutIcons.animal:member'
+    package: office!
+    summary: Animal icon. Displays as a pawprint.
+    value: '"Animal"'
+  - name: animalCat
+    uid: 'office!Excel.EntityCompactLayoutIcons.animalCat:member'
+    package: office!
+    summary: Animal cat icon.
+    value: '"AnimalCat"'
+  - name: animalDog
+    uid: 'office!Excel.EntityCompactLayoutIcons.animalDog:member'
+    package: office!
+    summary: Animal dog icon.
+    value: '"AnimalDog"'
+  - name: animalRabbit
+    uid: 'office!Excel.EntityCompactLayoutIcons.animalRabbit:member'
+    package: office!
+    summary: Animal rabbit icon.
+    value: '"AnimalRabbit"'
+  - name: animalTurtle
+    uid: 'office!Excel.EntityCompactLayoutIcons.animalTurtle:member'
+    package: office!
+    summary: Animal turtle icon.
+    value: '"AnimalTurtle"'
+  - name: appFolder
+    uid: 'office!Excel.EntityCompactLayoutIcons.appFolder:member'
+    package: office!
+    summary: App folder icon.
+    value: '"AppFolder"'
+  - name: appGeneric
+    uid: 'office!Excel.EntityCompactLayoutIcons.appGeneric:member'
+    package: office!
+    summary: App generic icon.
+    value: '"AppGeneric"'
+  - name: apple
+    uid: 'office!Excel.EntityCompactLayoutIcons.apple:member'
+    package: office!
+    summary: Apple icon.
+    value: '"Apple"'
+  - name: approvalsApp
+    uid: 'office!Excel.EntityCompactLayoutIcons.approvalsApp:member'
+    package: office!
+    summary: Approvals app icon.
+    value: '"ApprovalsApp"'
+  - name: archive
+    uid: 'office!Excel.EntityCompactLayoutIcons.archive:member'
+    package: office!
+    summary: Archive icon.
+    value: '"Archive"'
+  - name: archiveMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.archiveMultiple:member'
+    package: office!
+    summary: Archive multiple icon.
+    value: '"ArchiveMultiple"'
+  - name: arrowTrendingLines
+    uid: 'office!Excel.EntityCompactLayoutIcons.arrowTrendingLines:member'
+    package: office!
+    summary: Arrow trending lines icon.
+    value: '"ArrowTrendingLines"'
+  - name: art
+    uid: 'office!Excel.EntityCompactLayoutIcons.art:member'
+    package: office!
+    summary: Art icon. Displays as a paint palette.
+    value: '"Art"'
+  - name: atom
+    uid: 'office!Excel.EntityCompactLayoutIcons.atom:member'
+    package: office!
+    summary: Atom icon.
+    value: '"Atom"'
+  - name: attach
+    uid: 'office!Excel.EntityCompactLayoutIcons.attach:member'
+    package: office!
+    summary: Attach icon.
+    value: '"Attach"'
+  - name: automobile
+    uid: 'office!Excel.EntityCompactLayoutIcons.automobile:member'
+    package: office!
+    summary: Automobile icon.
+    value: '"Automobile"'
+  - name: autosum
+    uid: 'office!Excel.EntityCompactLayoutIcons.autosum:member'
+    package: office!
+    summary: Autosum icon.
+    value: '"Autosum"'
+  - name: backpack
+    uid: 'office!Excel.EntityCompactLayoutIcons.backpack:member'
+    package: office!
+    summary: Backpack icon.
+    value: '"Backpack"'
+  - name: badge
+    uid: 'office!Excel.EntityCompactLayoutIcons.badge:member'
+    package: office!
+    summary: Badge icon.
+    value: '"Badge"'
+  - name: balloon
+    uid: 'office!Excel.EntityCompactLayoutIcons.balloon:member'
+    package: office!
+    summary: Balloon icon.
+    value: '"Balloon"'
+  - name: bank
+    uid: 'office!Excel.EntityCompactLayoutIcons.bank:member'
+    package: office!
+    summary: Bank icon. Displays as a building with pillars and a triangular roof.
+    value: '"Bank"'
+  - name: barcodeScanner
+    uid: 'office!Excel.EntityCompactLayoutIcons.barcodeScanner:member'
+    package: office!
+    summary: Barcode scanner icon.
+    value: '"BarcodeScanner"'
+  - name: basketball
+    uid: 'office!Excel.EntityCompactLayoutIcons.basketball:member'
+    package: office!
+    summary: Basketball icon.
+    value: '"Basketball"'
+  - name: battery0
+    uid: 'office!Excel.EntityCompactLayoutIcons.battery0:member'
+    package: office!
+    summary: Battery empty icon.
+    value: '"Battery0"'
+  - name: battery10
+    uid: 'office!Excel.EntityCompactLayoutIcons.battery10:member'
+    package: office!
+    summary: Battery full icon.
+    value: '"Battery10"'
+  - name: beach
+    uid: 'office!Excel.EntityCompactLayoutIcons.beach:member'
+    package: office!
+    summary: Beach icon.
+    value: '"Beach"'
+  - name: beaker
+    uid: 'office!Excel.EntityCompactLayoutIcons.beaker:member'
+    package: office!
+    summary: Beaker icon.
+    value: '"Beaker"'
+  - name: bed
+    uid: 'office!Excel.EntityCompactLayoutIcons.bed:member'
+    package: office!
+    summary: Bed icon.
+    value: '"Bed"'
+  - name: binFull
+    uid: 'office!Excel.EntityCompactLayoutIcons.binFull:member'
+    package: office!
+    summary: Bin full icon.
+    value: '"BinFull"'
+  - name: bird
+    uid: 'office!Excel.EntityCompactLayoutIcons.bird:member'
+    package: office!
+    summary: Bird icon.
+    value: '"Bird"'
+  - name: bluetooth
+    uid: 'office!Excel.EntityCompactLayoutIcons.bluetooth:member'
+    package: office!
+    summary: Bluetooth icon.
+    value: '"Bluetooth"'
+  - name: board
+    uid: 'office!Excel.EntityCompactLayoutIcons.board:member'
+    package: office!
+    summary: Board icon.
+    value: '"Board"'
+  - name: boardGames
+    uid: 'office!Excel.EntityCompactLayoutIcons.boardGames:member'
+    package: office!
+    summary: Board games icon.
+    value: '"BoardGames"'
+  - name: book
+    uid: 'office!Excel.EntityCompactLayoutIcons.book:member'
+    package: office!
+    summary: Book icon.
+    value: '"Book"'
+  - name: bookmark
+    uid: 'office!Excel.EntityCompactLayoutIcons.bookmark:member'
+    package: office!
+    summary: Bookmark icon.
+    value: '"Bookmark"'
+  - name: bookmarkMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.bookmarkMultiple:member'
+    package: office!
+    summary: Bookmark multiple icon.
+    value: '"BookmarkMultiple"'
+  - name: bot
+    uid: 'office!Excel.EntityCompactLayoutIcons.bot:member'
+    package: office!
+    summary: Bot icon.
+    value: '"Bot"'
+  - name: bowlChopsticks
+    uid: 'office!Excel.EntityCompactLayoutIcons.bowlChopsticks:member'
+    package: office!
+    summary: Bowl chopsticks icon.
+    value: '"BowlChopsticks"'
+  - name: box
+    uid: 'office!Excel.EntityCompactLayoutIcons.box:member'
+    package: office!
+    summary: Box icon.
+    value: '"Box"'
+  - name: boxMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.boxMultiple:member'
+    package: office!
+    summary: Box multiple icon.
+    value: '"BoxMultiple"'
+  - name: brainCircuit
+    uid: 'office!Excel.EntityCompactLayoutIcons.brainCircuit:member'
+    package: office!
+    summary: Brain circuit icon.
+    value: '"BrainCircuit"'
+  - name: branch
+    uid: 'office!Excel.EntityCompactLayoutIcons.branch:member'
+    package: office!
+    summary: Branch icon.
+    value: '"Branch"'
+  - name: branchFork
+    uid: 'office!Excel.EntityCompactLayoutIcons.branchFork:member'
+    package: office!
+    summary: Branch fork icon.
+    value: '"BranchFork"'
+  - name: branchRequest
+    uid: 'office!Excel.EntityCompactLayoutIcons.branchRequest:member'
+    package: office!
+    summary: Branch request icon.
+    value: '"BranchRequest"'
+  - name: bridge
+    uid: 'office!Excel.EntityCompactLayoutIcons.bridge:member'
+    package: office!
+    summary: Bridge icon.
+    value: '"Bridge"'
+  - name: briefcase
+    uid: 'office!Excel.EntityCompactLayoutIcons.briefcase:member'
+    package: office!
+    summary: Briefcase icon.
+    value: '"Briefcase"'
+  - name: briefcaseMedical
+    uid: 'office!Excel.EntityCompactLayoutIcons.briefcaseMedical:member'
+    package: office!
+    summary: Briefcase medical icon.
+    value: '"BriefcaseMedical"'
+  - name: broadActivityFeed
+    uid: 'office!Excel.EntityCompactLayoutIcons.broadActivityFeed:member'
+    package: office!
+    summary: Broad activity feed icon.
+    value: '"BroadActivityFeed"'
+  - name: broom
+    uid: 'office!Excel.EntityCompactLayoutIcons.broom:member'
+    package: office!
+    summary: Broom icon.
+    value: '"Broom"'
+  - name: bug
+    uid: 'office!Excel.EntityCompactLayoutIcons.bug:member'
+    package: office!
+    summary: Bug icon.
+    value: '"Bug"'
+  - name: building
+    uid: 'office!Excel.EntityCompactLayoutIcons.building:member'
+    package: office!
+    summary: Building icon.
+    value: '"Building"'
+  - name: buildingBank
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingBank:member'
+    package: office!
+    summary: Building bank icon.
+    value: '"BuildingBank"'
+  - name: buildingFactory
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingFactory:member'
+    package: office!
+    summary: Building factory icon.
+    value: '"BuildingFactory"'
+  - name: buildingGovernment
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingGovernment:member'
+    package: office!
+    summary: Building government icon.
+    value: '"BuildingGovernment"'
+  - name: buildingHome
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingHome:member'
+    package: office!
+    summary: Building home icon.
+    value: '"BuildingHome"'
+  - name: buildingLighthouse
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingLighthouse:member'
+    package: office!
+    summary: Building lighthouse icon.
+    value: '"BuildingLighthouse"'
+  - name: buildingMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingMultiple:member'
+    package: office!
+    summary: Building multiple icon.
+    value: '"BuildingMultiple"'
+  - name: buildingRetail
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingRetail:member'
+    package: office!
+    summary: Building retail icon.
+    value: '"BuildingRetail"'
+  - name: buildingRetailMore
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingRetailMore:member'
+    package: office!
+    summary: Building retail more icon.
+    value: '"BuildingRetailMore"'
+  - name: buildingRetailToolbox
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingRetailToolbox:member'
+    package: office!
+    summary: Building retail toolbox icon.
+    value: '"BuildingRetailToolbox"'
+  - name: buildingShop
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingShop:member'
+    package: office!
+    summary: Building shop icon.
+    value: '"BuildingShop"'
+  - name: buildingSkyscraper
+    uid: 'office!Excel.EntityCompactLayoutIcons.buildingSkyscraper:member'
+    package: office!
+    summary: Building skyscraper icon.
+    value: '"BuildingSkyscraper"'
+  - name: calculator
+    uid: 'office!Excel.EntityCompactLayoutIcons.calculator:member'
+    package: office!
+    summary: Calculator icon.
+    value: '"Calculator"'
+  - name: calendarLtr
+    uid: 'office!Excel.EntityCompactLayoutIcons.calendarLtr:member'
+    package: office!
+    summary: Calendar left to right icon.
+    value: '"CalendarLtr"'
+  - name: calendarRtl
+    uid: 'office!Excel.EntityCompactLayoutIcons.calendarRtl:member'
+    package: office!
+    summary: Calendar right to left icon.
+    value: '"CalendarRtl"'
+  - name: call
+    uid: 'office!Excel.EntityCompactLayoutIcons.call:member'
+    package: office!
+    summary: Call icon.
+    value: '"Call"'
+  - name: calligraphyPen
+    uid: 'office!Excel.EntityCompactLayoutIcons.calligraphyPen:member'
+    package: office!
+    summary: Calligraphy pen icon.
+    value: '"CalligraphyPen"'
+  - name: camera
+    uid: 'office!Excel.EntityCompactLayoutIcons.camera:member'
+    package: office!
+    summary: Camera icon.
+    value: '"Camera"'
+  - name: cameraDome
+    uid: 'office!Excel.EntityCompactLayoutIcons.cameraDome:member'
+    package: office!
+    summary: Camera dome icon.
+    value: '"CameraDome"'
+  - name: car
+    uid: 'office!Excel.EntityCompactLayoutIcons.car:member'
+    package: office!
+    summary: Car icon.
+    value: '"Car"'
+  - name: cart
+    uid: 'office!Excel.EntityCompactLayoutIcons.cart:member'
+    package: office!
+    summary: Cart icon.
+    value: '"Cart"'
+  - name: cat
+    uid: 'office!Excel.EntityCompactLayoutIcons.cat:member'
+    package: office!
+    summary: Cat icon.
+    value: '"Cat"'
+  - name: certificate
+    uid: 'office!Excel.EntityCompactLayoutIcons.certificate:member'
+    package: office!
+    summary: Certificate icon.
+    value: '"Certificate"'
+  - name: chartMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.chartMultiple:member'
+    package: office!
+    summary: Chart multiple icon.
+    value: '"ChartMultiple"'
+  - name: chat
+    uid: 'office!Excel.EntityCompactLayoutIcons.chat:member'
+    package: office!
+    summary: Chat icon.
+    value: '"Chat"'
+  - name: chatMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.chatMultiple:member'
+    package: office!
+    summary: Chat multiple icon.
+    value: '"ChatMultiple"'
+  - name: chatVideo
+    uid: 'office!Excel.EntityCompactLayoutIcons.chatVideo:member'
+    package: office!
+    summary: Chat video icon.
+    value: '"ChatVideo"'
+  - name: check
+    uid: 'office!Excel.EntityCompactLayoutIcons.check:member'
+    package: office!
+    summary: Check icon.
+    value: '"Check"'
+  - name: checkboxChecked
+    uid: 'office!Excel.EntityCompactLayoutIcons.checkboxChecked:member'
+    package: office!
+    summary: Checkbox checked icon.
+    value: '"CheckboxChecked"'
+  - name: checkboxUnchecked
+    uid: 'office!Excel.EntityCompactLayoutIcons.checkboxUnchecked:member'
+    package: office!
+    summary: Checkbox unchecked icon.
+    value: '"CheckboxUnchecked"'
+  - name: checkmark
+    uid: 'office!Excel.EntityCompactLayoutIcons.checkmark:member'
+    package: office!
+    summary: Checkmark icon.
+    value: '"Checkmark"'
+  - name: chess
+    uid: 'office!Excel.EntityCompactLayoutIcons.chess:member'
+    package: office!
+    summary: Chess icon.
+    value: '"Chess"'
+  - name: city
+    uid: 'office!Excel.EntityCompactLayoutIcons.city:member'
+    package: office!
+    summary: City icon. Displays as multiple tall buildings.
+    value: '"City"'
+  - name: class
+    uid: 'office!Excel.EntityCompactLayoutIcons.class:member'
+    package: office!
+    summary: Class icon.
+    value: '"Class"'
+  - name: classification
+    uid: 'office!Excel.EntityCompactLayoutIcons.classification:member'
+    package: office!
+    summary: Classification icon.
+    value: '"Classification"'
+  - name: clipboard
+    uid: 'office!Excel.EntityCompactLayoutIcons.clipboard:member'
+    package: office!
+    summary: Clipboard icon.
+    value: '"Clipboard"'
+  - name: clipboardDataBar
+    uid: 'office!Excel.EntityCompactLayoutIcons.clipboardDataBar:member'
+    package: office!
+    summary: Clipboard data bar icon.
+    value: '"ClipboardDataBar"'
+  - name: clipboardPulse
+    uid: 'office!Excel.EntityCompactLayoutIcons.clipboardPulse:member'
+    package: office!
+    summary: Clipboard pulse icon.
+    value: '"ClipboardPulse"'
+  - name: clipboardTask
+    uid: 'office!Excel.EntityCompactLayoutIcons.clipboardTask:member'
+    package: office!
+    summary: Clipboard task icon.
+    value: '"ClipboardTask"'
+  - name: clock
+    uid: 'office!Excel.EntityCompactLayoutIcons.clock:member'
+    package: office!
+    summary: Clock icon.
+    value: '"Clock"'
+  - name: clockAlarm
+    uid: 'office!Excel.EntityCompactLayoutIcons.clockAlarm:member'
+    package: office!
+    summary: Clock alarm icon.
+    value: '"ClockAlarm"'
+  - name: cloud
+    uid: 'office!Excel.EntityCompactLayoutIcons.cloud:member'
+    package: office!
+    summary: Cloud icon.
+    value: '"Cloud"'
+  - name: cloudWords
+    uid: 'office!Excel.EntityCompactLayoutIcons.cloudWords:member'
+    package: office!
+    summary: Cloud words icon.
+    value: '"CloudWords"'
+  - name: code
+    uid: 'office!Excel.EntityCompactLayoutIcons.code:member'
+    package: office!
+    summary: Code icon.
+    value: '"Code"'
+  - name: collections
+    uid: 'office!Excel.EntityCompactLayoutIcons.collections:member'
+    package: office!
+    summary: Collections icon.
+    value: '"Collections"'
+  - name: comment
+    uid: 'office!Excel.EntityCompactLayoutIcons.comment:member'
+    package: office!
+    summary: Comment icon.
+    value: '"Comment"'
+  - name: commentMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.commentMultiple:member'
+    package: office!
+    summary: Comment multiple icon.
+    value: '"CommentMultiple"'
+  - name: communication
+    uid: 'office!Excel.EntityCompactLayoutIcons.communication:member'
+    package: office!
+    summary: Communication icon.
+    value: '"Communication"'
+  - name: compassNorthwest
+    uid: 'office!Excel.EntityCompactLayoutIcons.compassNorthwest:member'
+    package: office!
+    summary: Compass northwest icon.
+    value: '"CompassNorthwest"'
+  - name: conferenceRoom
+    uid: 'office!Excel.EntityCompactLayoutIcons.conferenceRoom:member'
+    package: office!
+    summary: Conference room icon.
+    value: '"ConferenceRoom"'
+  - name: connector
+    uid: 'office!Excel.EntityCompactLayoutIcons.connector:member'
+    package: office!
+    summary: Connector icon.
+    value: '"Connector"'
+  - name: constellation
+    uid: 'office!Excel.EntityCompactLayoutIcons.constellation:member'
+    package: office!
+    summary: Constellation icon. Displays dots in the shape of Ursa Major.
+    value: '"Constellation"'
+  - name: contactCard
+    uid: 'office!Excel.EntityCompactLayoutIcons.contactCard:member'
+    package: office!
+    summary: Contact card icon.
+    value: '"ContactCard"'
+  - name: cookies
+    uid: 'office!Excel.EntityCompactLayoutIcons.cookies:member'
+    package: office!
+    summary: Cookies icon.
+    value: '"Cookies"'
+  - name: couch
+    uid: 'office!Excel.EntityCompactLayoutIcons.couch:member'
+    package: office!
+    summary: Couch icon.
+    value: '"Couch"'
+  - name: creditCardPerson
+    uid: 'office!Excel.EntityCompactLayoutIcons.creditCardPerson:member'
+    package: office!
+    summary: Credit card person icon.
+    value: '"CreditCardPerson"'
+  - name: creditCardToolbox
+    uid: 'office!Excel.EntityCompactLayoutIcons.creditCardToolbox:member'
+    package: office!
+    summary: Credit card toolbox icon.
+    value: '"CreditCardToolbox"'
+  - name: cube
+    uid: 'office!Excel.EntityCompactLayoutIcons.cube:member'
+    package: office!
+    summary: Cube icon.
+    value: '"Cube"'
+  - name: cubeMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.cubeMultiple:member'
+    package: office!
+    summary: Cube multiple icon.
+    value: '"CubeMultiple"'
+  - name: cubeTree
+    uid: 'office!Excel.EntityCompactLayoutIcons.cubeTree:member'
+    package: office!
+    summary: Cube tree icon.
+    value: '"CubeTree"'
+  - name: currencyDollarEuro
+    uid: 'office!Excel.EntityCompactLayoutIcons.currencyDollarEuro:member'
+    package: office!
+    summary: Currency dollar euro icon.
+    value: '"CurrencyDollarEuro"'
+  - name: currencyDollarRupee
+    uid: 'office!Excel.EntityCompactLayoutIcons.currencyDollarRupee:member'
+    package: office!
+    summary: Currency dollar rupee icon.
+    value: '"CurrencyDollarRupee"'
+  - name: dataArea
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataArea:member'
+    package: office!
+    summary: Data area icon.
+    value: '"DataArea"'
+  - name: database
+    uid: 'office!Excel.EntityCompactLayoutIcons.database:member'
+    package: office!
+    summary: Database icon.
+    value: '"Database"'
+  - name: databaseMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.databaseMultiple:member'
+    package: office!
+    summary: Database multiple icon.
+    value: '"DatabaseMultiple"'
+  - name: dataFunnel
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataFunnel:member'
+    package: office!
+    summary: Data funnel icon.
+    value: '"DataFunnel"'
+  - name: dataHistogram
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataHistogram:member'
+    package: office!
+    summary: Data histogram icon.
+    value: '"DataHistogram"'
+  - name: dataLine
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataLine:member'
+    package: office!
+    summary: Data line icon.
+    value: '"DataLine"'
+  - name: dataPie
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataPie:member'
+    package: office!
+    summary: Data pie icon.
+    value: '"DataPie"'
+  - name: dataScatter
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataScatter:member'
+    package: office!
+    summary: Data scatter icon.
+    value: '"DataScatter"'
+  - name: dataSunburst
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataSunburst:member'
+    package: office!
+    summary: Data sunburst icon.
+    value: '"DataSunburst"'
+  - name: dataTreemap
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataTreemap:member'
+    package: office!
+    summary: Data treemap icon.
+    value: '"DataTreemap"'
+  - name: dataWaterfall
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataWaterfall:member'
+    package: office!
+    summary: Data waterfall icon.
+    value: '"DataWaterfall"'
+  - name: dataWhisker
+    uid: 'office!Excel.EntityCompactLayoutIcons.dataWhisker:member'
+    package: office!
+    summary: Data whisker icon.
+    value: '"DataWhisker"'
+  - name: dentist
+    uid: 'office!Excel.EntityCompactLayoutIcons.dentist:member'
+    package: office!
+    summary: Dentist icon.
+    value: '"Dentist"'
+  - name: designIdeas
+    uid: 'office!Excel.EntityCompactLayoutIcons.designIdeas:member'
+    package: office!
+    summary: Design ideas icon.
+    value: '"DesignIdeas"'
+  - name: desktop
+    uid: 'office!Excel.EntityCompactLayoutIcons.desktop:member'
+    package: office!
+    summary: Desktop icon.
+    value: '"Desktop"'
+  - name: desktopMac
+    uid: 'office!Excel.EntityCompactLayoutIcons.desktopMac:member'
+    package: office!
+    summary: Desktop Mac icon.
+    value: '"DesktopMac"'
+  - name: developerBoard
+    uid: 'office!Excel.EntityCompactLayoutIcons.developerBoard:member'
+    package: office!
+    summary: Developer board icon.
+    value: '"DeveloperBoard"'
+  - name: deviceMeetingRoom
+    uid: 'office!Excel.EntityCompactLayoutIcons.deviceMeetingRoom:member'
+    package: office!
+    summary: Device meeting room icon.
+    value: '"DeviceMeetingRoom"'
+  - name: diagram
+    uid: 'office!Excel.EntityCompactLayoutIcons.diagram:member'
+    package: office!
+    summary: Diagram icon.
+    value: '"Diagram"'
+  - name: dialpad
+    uid: 'office!Excel.EntityCompactLayoutIcons.dialpad:member'
+    package: office!
+    summary: Dialpad icon.
+    value: '"Dialpad"'
+  - name: diamond
+    uid: 'office!Excel.EntityCompactLayoutIcons.diamond:member'
+    package: office!
+    summary: Diamond icon.
+    value: '"Diamond"'
+  - name: dinosaur
+    uid: 'office!Excel.EntityCompactLayoutIcons.dinosaur:member'
+    package: office!
+    summary: 'Dinosaur icon. Displays as a long-necked dinosaur, similar to a Brachiosaurus.'
+    value: '"Dinosaur"'
+  - name: directions
+    uid: 'office!Excel.EntityCompactLayoutIcons.directions:member'
+    package: office!
+    summary: Directions icon.
+    value: '"Directions"'
+  - name: disaster
+    uid: 'office!Excel.EntityCompactLayoutIcons.disaster:member'
+    package: office!
+    summary: Disaster icon. Displays as a house sinking in a flood.
+    value: '"Disaster"'
+  - name: diversity
+    uid: 'office!Excel.EntityCompactLayoutIcons.diversity:member'
+    package: office!
+    summary: Diversity icon.
+    value: '"Diversity"'
+  - name: dNA
+    uid: 'office!Excel.EntityCompactLayoutIcons.dNA:member'
+    package: office!
+    summary: DNA icon.
+    value: '"DNA"'
+  - name: doctor
+    uid: 'office!Excel.EntityCompactLayoutIcons.doctor:member'
+    package: office!
+    summary: Doctor icon.
+    value: '"Doctor"'
+  - name: document
+    uid: 'office!Excel.EntityCompactLayoutIcons.document:member'
+    package: office!
+    summary: Document icon.
+    value: '"Document"'
+  - name: documentData
+    uid: 'office!Excel.EntityCompactLayoutIcons.documentData:member'
+    package: office!
+    summary: Document data icon.
+    value: '"DocumentData"'
+  - name: documentLandscape
+    uid: 'office!Excel.EntityCompactLayoutIcons.documentLandscape:member'
+    package: office!
+    summary: Document landscape icon.
+    value: '"DocumentLandscape"'
+  - name: documentMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.documentMultiple:member'
+    package: office!
+    summary: Document multiple icon.
+    value: '"DocumentMultiple"'
+  - name: documentPdf
+    uid: 'office!Excel.EntityCompactLayoutIcons.documentPdf:member'
+    package: office!
+    summary: Document PDF icon.
+    value: '"DocumentPdf"'
+  - name: documentQueue
+    uid: 'office!Excel.EntityCompactLayoutIcons.documentQueue:member'
+    package: office!
+    summary: Document queue icon.
+    value: '"DocumentQueue"'
+  - name: documentText
+    uid: 'office!Excel.EntityCompactLayoutIcons.documentText:member'
+    package: office!
+    summary: Document text icon.
+    value: '"DocumentText"'
+  - name: dog
+    uid: 'office!Excel.EntityCompactLayoutIcons.dog:member'
+    package: office!
+    summary: Dog icon.
+    value: '"Dog"'
+  - name: door
+    uid: 'office!Excel.EntityCompactLayoutIcons.door:member'
+    package: office!
+    summary: Door icon.
+    value: '"Door"'
+  - name: doorTag
+    uid: 'office!Excel.EntityCompactLayoutIcons.doorTag:member'
+    package: office!
+    summary: Door tag icon.
+    value: '"DoorTag"'
+  - name: drafts
+    uid: 'office!Excel.EntityCompactLayoutIcons.drafts:member'
+    package: office!
+    summary: Drafts icon.
+    value: '"Drafts"'
+  - name: drama
+    uid: 'office!Excel.EntityCompactLayoutIcons.drama:member'
+    package: office!
+    summary: Drama icon. Displays as a pair of theatre masks.
+    value: '"Drama"'
+  - name: drinkBeer
+    uid: 'office!Excel.EntityCompactLayoutIcons.drinkBeer:member'
+    package: office!
+    summary: Drink beer icon.
+    value: '"DrinkBeer"'
+  - name: drinkCoffee
+    uid: 'office!Excel.EntityCompactLayoutIcons.drinkCoffee:member'
+    package: office!
+    summary: Drink coffee icon.
+    value: '"DrinkCoffee"'
+  - name: drinkMargarita
+    uid: 'office!Excel.EntityCompactLayoutIcons.drinkMargarita:member'
+    package: office!
+    summary: Drink margarita icon.
+    value: '"DrinkMargarita"'
+  - name: drinkToGo
+    uid: 'office!Excel.EntityCompactLayoutIcons.drinkToGo:member'
+    package: office!
+    summary: Drink to go icon.
+    value: '"DrinkToGo"'
+  - name: drinkWine
+    uid: 'office!Excel.EntityCompactLayoutIcons.drinkWine:member'
+    package: office!
+    summary: Drink wine icon.
+    value: '"DrinkWine"'
+  - name: driveTrain
+    uid: 'office!Excel.EntityCompactLayoutIcons.driveTrain:member'
+    package: office!
+    summary: Drive train icon.
+    value: '"DriveTrain"'
+  - name: drop
+    uid: 'office!Excel.EntityCompactLayoutIcons.drop:member'
+    package: office!
+    summary: Drop icon.
+    value: '"Drop"'
+  - name: dualScreen
+    uid: 'office!Excel.EntityCompactLayoutIcons.dualScreen:member'
+    package: office!
+    summary: Dual screen icon.
+    value: '"DualScreen"'
+  - name: dumbbell
+    uid: 'office!Excel.EntityCompactLayoutIcons.dumbbell:member'
+    package: office!
+    summary: Dumbbell icon.
+    value: '"Dumbbell"'
+  - name: earth
+    uid: 'office!Excel.EntityCompactLayoutIcons.earth:member'
+    package: office!
+    summary: Earth icon.
+    value: '"Earth"'
+  - name: emoji
+    uid: 'office!Excel.EntityCompactLayoutIcons.emoji:member'
+    package: office!
+    summary: Emoji icon.
+    value: '"Emoji"'
+  - name: emojiAngry
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiAngry:member'
+    package: office!
+    summary: Emoji angry icon.
+    value: '"EmojiAngry"'
+  - name: emojiHand
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiHand:member'
+    package: office!
+    summary: Emoji hand icon.
+    value: '"EmojiHand"'
+  - name: emojiLaugh
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiLaugh:member'
+    package: office!
+    summary: Emoji laugh icon.
+    value: '"EmojiLaugh"'
+  - name: emojiMeh
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiMeh:member'
+    package: office!
+    summary: Emoji meh icon.
+    value: '"EmojiMeh"'
+  - name: emojiMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiMultiple:member'
+    package: office!
+    summary: Emoji multiple icon.
+    value: '"EmojiMultiple"'
+  - name: emojiSad
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiSad:member'
+    package: office!
+    summary: Emoji sad icon.
+    value: '"EmojiSad"'
+  - name: emojiSadSlight
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiSadSlight:member'
+    package: office!
+    summary: Emoji sad slight icon.
+    value: '"EmojiSadSlight"'
+  - name: emojiSmileSlight
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiSmileSlight:member'
+    package: office!
+    summary: Emoji smile slight icon.
+    value: '"EmojiSmileSlight"'
+  - name: emojiSparkle
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiSparkle:member'
+    package: office!
+    summary: Emoji sparkle icon.
+    value: '"EmojiSparkle"'
+  - name: emojiSurprise
+    uid: 'office!Excel.EntityCompactLayoutIcons.emojiSurprise:member'
+    package: office!
+    summary: Emoji surprise icon.
+    value: '"EmojiSurprise"'
+  - name: engine
+    uid: 'office!Excel.EntityCompactLayoutIcons.engine:member'
+    package: office!
+    summary: Engine icon.
+    value: '"Engine"'
+  - name: eraser
+    uid: 'office!Excel.EntityCompactLayoutIcons.eraser:member'
+    package: office!
+    summary: Eraser icon.
+    value: '"Eraser"'
+  - name: eye
+    uid: 'office!Excel.EntityCompactLayoutIcons.eye:member'
+    package: office!
+    summary: Eye icon.
+    value: '"Eye"'
+  - name: eyedropper
+    uid: 'office!Excel.EntityCompactLayoutIcons.eyedropper:member'
+    package: office!
+    summary: Eyedropper icon.
+    value: '"Eyedropper"'
+  - name: fax
+    uid: 'office!Excel.EntityCompactLayoutIcons.fax:member'
+    package: office!
+    summary: Fax icon.
+    value: '"Fax"'
+  - name: fingerprint
+    uid: 'office!Excel.EntityCompactLayoutIcons.fingerprint:member'
+    package: office!
+    summary: Fingerprint icon.
+    value: '"Fingerprint"'
+  - name: firstAid
+    uid: 'office!Excel.EntityCompactLayoutIcons.firstAid:member'
+    package: office!
+    summary: First aid icon. Displays as a briefcase with a medical cross symbol.
+    value: '"FirstAid"'
+  - name: flag
+    uid: 'office!Excel.EntityCompactLayoutIcons.flag:member'
+    package: office!
+    summary: Flag icon.
+    value: '"Flag"'
+  - name: flash
+    uid: 'office!Excel.EntityCompactLayoutIcons.flash:member'
+    package: office!
+    summary: Flash icon.
+    value: '"Flash"'
+  - name: flashlight
+    uid: 'office!Excel.EntityCompactLayoutIcons.flashlight:member'
+    package: office!
+    summary: Flashlight icon.
+    value: '"Flashlight"'
+  - name: flow
+    uid: 'office!Excel.EntityCompactLayoutIcons.flow:member'
+    package: office!
+    summary: Flow icon.
+    value: '"Flow"'
+  - name: flowchart
+    uid: 'office!Excel.EntityCompactLayoutIcons.flowchart:member'
+    package: office!
+    summary: Flowchart icon.
+    value: '"Flowchart"'
+  - name: folder
+    uid: 'office!Excel.EntityCompactLayoutIcons.folder:member'
+    package: office!
+    summary: Folder icon.
+    value: '"Folder"'
+  - name: folderOpen
+    uid: 'office!Excel.EntityCompactLayoutIcons.folderOpen:member'
+    package: office!
+    summary: Folder open icon.
+    value: '"FolderOpen"'
+  - name: folderOpenVertical
+    uid: 'office!Excel.EntityCompactLayoutIcons.folderOpenVertical:member'
+    package: office!
+    summary: Folder open vertical icon.
+    value: '"FolderOpenVertical"'
+  - name: folderPerson
+    uid: 'office!Excel.EntityCompactLayoutIcons.folderPerson:member'
+    package: office!
+    summary: Folder person icon.
+    value: '"FolderPerson"'
+  - name: folderZip
+    uid: 'office!Excel.EntityCompactLayoutIcons.folderZip:member'
+    package: office!
+    summary: Folder zip icon.
+    value: '"FolderZip"'
+  - name: food
+    uid: 'office!Excel.EntityCompactLayoutIcons.food:member'
+    package: office!
+    summary: Food icon.
+    value: '"Food"'
+  - name: foodApple
+    uid: 'office!Excel.EntityCompactLayoutIcons.foodApple:member'
+    package: office!
+    summary: Food apple icon.
+    value: '"FoodApple"'
+  - name: foodCake
+    uid: 'office!Excel.EntityCompactLayoutIcons.foodCake:member'
+    package: office!
+    summary: Food cake icon.
+    value: '"FoodCake"'
+  - name: foodEgg
+    uid: 'office!Excel.EntityCompactLayoutIcons.foodEgg:member'
+    package: office!
+    summary: Food egg icon.
+    value: '"FoodEgg"'
+  - name: foodGrains
+    uid: 'office!Excel.EntityCompactLayoutIcons.foodGrains:member'
+    package: office!
+    summary: Food grains icon.
+    value: '"FoodGrains"'
+  - name: foodPizza
+    uid: 'office!Excel.EntityCompactLayoutIcons.foodPizza:member'
+    package: office!
+    summary: Food pizza icon.
+    value: '"FoodPizza"'
+  - name: foodToast
+    uid: 'office!Excel.EntityCompactLayoutIcons.foodToast:member'
+    package: office!
+    summary: Food toast icon.
+    value: '"FoodToast"'
+  - name: galaxy
+    uid: 'office!Excel.EntityCompactLayoutIcons.galaxy:member'
+    package: office!
+    summary: Galaxy icon.
+    value: '"Galaxy"'
+  - name: games
+    uid: 'office!Excel.EntityCompactLayoutIcons.games:member'
+    package: office!
+    summary: Games icon.
+    value: '"Games"'
+  - name: ganttChart
+    uid: 'office!Excel.EntityCompactLayoutIcons.ganttChart:member'
+    package: office!
+    summary: Gantt chart icon.
+    value: '"GanttChart"'
+  - name: gas
+    uid: 'office!Excel.EntityCompactLayoutIcons.gas:member'
+    package: office!
+    summary: Gas icon.
+    value: '"Gas"'
+  - name: gasPump
+    uid: 'office!Excel.EntityCompactLayoutIcons.gasPump:member'
+    package: office!
+    summary: Gas pump icon.
+    value: '"GasPump"'
+  - name: gauge
+    uid: 'office!Excel.EntityCompactLayoutIcons.gauge:member'
+    package: office!
+    summary: Gauge icon.
+    value: '"Gauge"'
+  - name: gavel
+    uid: 'office!Excel.EntityCompactLayoutIcons.gavel:member'
+    package: office!
+    summary: Gavel icon.
+    value: '"Gavel"'
+  - name: generic
+    uid: 'office!Excel.EntityCompactLayoutIcons.generic:member'
+    package: office!
+    summary: The default icon.
+    value: '"Generic"'
+  - name: gift
+    uid: 'office!Excel.EntityCompactLayoutIcons.gift:member'
+    package: office!
+    summary: Gift icon.
+    value: '"Gift"'
+  - name: giftCard
+    uid: 'office!Excel.EntityCompactLayoutIcons.giftCard:member'
+    package: office!
+    summary: Gift card icon.
+    value: '"GiftCard"'
+  - name: glasses
+    uid: 'office!Excel.EntityCompactLayoutIcons.glasses:member'
+    package: office!
+    summary: Glasses icon.
+    value: '"Glasses"'
+  - name: globe
+    uid: 'office!Excel.EntityCompactLayoutIcons.globe:member'
+    package: office!
+    summary: Globe icon.
+    value: '"Globe"'
+  - name: globeSurface
+    uid: 'office!Excel.EntityCompactLayoutIcons.globeSurface:member'
+    package: office!
+    summary: Globe surface icon.
+    value: '"GlobeSurface"'
+  - name: grid
+    uid: 'office!Excel.EntityCompactLayoutIcons.grid:member'
+    package: office!
+    summary: Grid icon.
+    value: '"Grid"'
+  - name: gridDots
+    uid: 'office!Excel.EntityCompactLayoutIcons.gridDots:member'
+    package: office!
+    summary: Grid dots icon.
+    value: '"GridDots"'
+  - name: gridKanban
+    uid: 'office!Excel.EntityCompactLayoutIcons.gridKanban:member'
+    package: office!
+    summary: Grid Kanban icon.
+    value: '"GridKanban"'
+  - name: guardian
+    uid: 'office!Excel.EntityCompactLayoutIcons.guardian:member'
+    package: office!
+    summary: Guardian icon.
+    value: '"Guardian"'
+  - name: guest
+    uid: 'office!Excel.EntityCompactLayoutIcons.guest:member'
+    package: office!
+    summary: Guest icon.
+    value: '"Guest"'
+  - name: guitar
+    uid: 'office!Excel.EntityCompactLayoutIcons.guitar:member'
+    package: office!
+    summary: Guitar icon.
+    value: '"Guitar"'
+  - name: handLeft
+    uid: 'office!Excel.EntityCompactLayoutIcons.handLeft:member'
+    package: office!
+    summary: Hand left icon.
+    value: '"HandLeft"'
+  - name: handRight
+    uid: 'office!Excel.EntityCompactLayoutIcons.handRight:member'
+    package: office!
+    summary: Hand right icon.
+    value: '"HandRight"'
+  - name: handshake
+    uid: 'office!Excel.EntityCompactLayoutIcons.handshake:member'
+    package: office!
+    summary: Handshake icon.
+    value: '"Handshake"'
+  - name: hardDrive
+    uid: 'office!Excel.EntityCompactLayoutIcons.hardDrive:member'
+    package: office!
+    summary: Hard drive icon.
+    value: '"HardDrive"'
+  - name: hatGraduation
+    uid: 'office!Excel.EntityCompactLayoutIcons.hatGraduation:member'
+    package: office!
+    summary: Graduation hat icon. Displays as a hat with a tassel.
+    value: '"HatGraduation"'
+  - name: headphones
+    uid: 'office!Excel.EntityCompactLayoutIcons.headphones:member'
+    package: office!
+    summary: Headphones icon.
+    value: '"Headphones"'
+  - name: headphonesSoundWave
+    uid: 'office!Excel.EntityCompactLayoutIcons.headphonesSoundWave:member'
+    package: office!
+    summary: Headphones sound wave icon.
+    value: '"HeadphonesSoundWave"'
+  - name: headset
+    uid: 'office!Excel.EntityCompactLayoutIcons.headset:member'
+    package: office!
+    summary: Headset icon.
+    value: '"Headset"'
+  - name: headsetVr
+    uid: 'office!Excel.EntityCompactLayoutIcons.headsetVr:member'
+    package: office!
+    summary: Headset VR icon.
+    value: '"HeadsetVr"'
+  - name: heart
+    uid: 'office!Excel.EntityCompactLayoutIcons.heart:member'
+    package: office!
+    summary: Heart icon.
+    value: '"Heart"'
+  - name: heartBroken
+    uid: 'office!Excel.EntityCompactLayoutIcons.heartBroken:member'
+    package: office!
+    summary: Heart broken icon.
+    value: '"HeartBroken"'
+  - name: heartCircle
+    uid: 'office!Excel.EntityCompactLayoutIcons.heartCircle:member'
+    package: office!
+    summary: Heart circle icon.
+    value: '"HeartCircle"'
+  - name: heartHuman
+    uid: 'office!Excel.EntityCompactLayoutIcons.heartHuman:member'
+    package: office!
+    summary: Human heart icon.
+    value: '"HeartHuman"'
+  - name: heartPulse
+    uid: 'office!Excel.EntityCompactLayoutIcons.heartPulse:member'
+    package: office!
+    summary: Heart pulse icon.
+    value: '"HeartPulse"'
+  - name: history
+    uid: 'office!Excel.EntityCompactLayoutIcons.history:member'
+    package: office!
+    summary: History icon.
+    value: '"History"'
+  - name: home
+    uid: 'office!Excel.EntityCompactLayoutIcons.home:member'
+    package: office!
+    summary: Home icon.
+    value: '"Home"'
+  - name: homeMore
+    uid: 'office!Excel.EntityCompactLayoutIcons.homeMore:member'
+    package: office!
+    summary: Home more icon.
+    value: '"HomeMore"'
+  - name: homePerson
+    uid: 'office!Excel.EntityCompactLayoutIcons.homePerson:member'
+    package: office!
+    summary: Home person icon.
+    value: '"HomePerson"'
+  - name: icons
+    uid: 'office!Excel.EntityCompactLayoutIcons.icons:member'
+    package: office!
+    summary: Icons icon.
+    value: '"Icons"'
+  - name: image
+    uid: 'office!Excel.EntityCompactLayoutIcons.image:member'
+    package: office!
+    summary: Image icon.
+    value: '"Image"'
+  - name: imageGlobe
+    uid: 'office!Excel.EntityCompactLayoutIcons.imageGlobe:member'
+    package: office!
+    summary: Image globe icon.
+    value: '"ImageGlobe"'
+  - name: imageMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.imageMultiple:member'
+    package: office!
+    summary: Image multiple icon.
+    value: '"ImageMultiple"'
+  - name: iot
+    uid: 'office!Excel.EntityCompactLayoutIcons.iot:member'
+    package: office!
+    summary: IoT icon.
+    value: '"Iot"'
+  - name: joystick
+    uid: 'office!Excel.EntityCompactLayoutIcons.joystick:member'
+    package: office!
+    summary: Joystick icon.
+    value: '"Joystick"'
+  - name: justice
+    uid: 'office!Excel.EntityCompactLayoutIcons.justice:member'
+    package: office!
+    summary: Justice icon. Displays as the scales of justice.
+    value: '"Justice"'
+  - name: key
+    uid: 'office!Excel.EntityCompactLayoutIcons.key:member'
+    package: office!
+    summary: Key icon.
+    value: '"Key"'
+  - name: keyboard
+    uid: 'office!Excel.EntityCompactLayoutIcons.keyboard:member'
+    package: office!
+    summary: Keyboard icon.
+    value: '"Keyboard"'
+  - name: keyboardLayoutSplit
+    uid: 'office!Excel.EntityCompactLayoutIcons.keyboardLayoutSplit:member'
+    package: office!
+    summary: Keyboard layout split icon.
+    value: '"KeyboardLayoutSplit"'
+  - name: keyMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.keyMultiple:member'
+    package: office!
+    summary: Key multiple icon.
+    value: '"KeyMultiple"'
+  - name: languages
+    uid: 'office!Excel.EntityCompactLayoutIcons.languages:member'
+    package: office!
+    summary: Languages icon. Displays as a document and a globe.
+    value: '"Languages"'
+  - name: laptop
+    uid: 'office!Excel.EntityCompactLayoutIcons.laptop:member'
+    package: office!
+    summary: Laptop icon.
+    value: '"Laptop"'
+  - name: lasso
+    uid: 'office!Excel.EntityCompactLayoutIcons.lasso:member'
+    package: office!
+    summary: Lasso icon.
+    value: '"Lasso"'
+  - name: launcherSettings
+    uid: 'office!Excel.EntityCompactLayoutIcons.launcherSettings:member'
+    package: office!
+    summary: Launcher settings icon.
+    value: '"LauncherSettings"'
+  - name: layer
+    uid: 'office!Excel.EntityCompactLayoutIcons.layer:member'
+    package: office!
+    summary: Layer icon.
+    value: '"Layer"'
+  - name: leaf
+    uid: 'office!Excel.EntityCompactLayoutIcons.leaf:member'
+    package: office!
+    summary: Leaf icon.
+    value: '"Leaf"'
+  - name: leafOne
+    uid: 'office!Excel.EntityCompactLayoutIcons.leafOne:member'
+    package: office!
+    summary: Leaf one icon.
+    value: '"LeafOne"'
+  - name: leafThree
+    uid: 'office!Excel.EntityCompactLayoutIcons.leafThree:member'
+    package: office!
+    summary: Leaf three icon.
+    value: '"LeafThree"'
+  - name: leafTwo
+    uid: 'office!Excel.EntityCompactLayoutIcons.leafTwo:member'
+    package: office!
+    summary: Leaf two icon.
+    value: '"LeafTwo"'
+  - name: library
+    uid: 'office!Excel.EntityCompactLayoutIcons.library:member'
+    package: office!
+    summary: Library icon.
+    value: '"Library"'
+  - name: lightbulb
+    uid: 'office!Excel.EntityCompactLayoutIcons.lightbulb:member'
+    package: office!
+    summary: Lightbulb icon.
+    value: '"Lightbulb"'
+  - name: lightbulbFilament
+    uid: 'office!Excel.EntityCompactLayoutIcons.lightbulbFilament:member'
+    package: office!
+    summary: Lightbulb filament icon.
+    value: '"LightbulbFilament"'
+  - name: likert
+    uid: 'office!Excel.EntityCompactLayoutIcons.likert:member'
+    package: office!
+    summary: Likert icon.
+    value: '"Likert"'
+  - name: link
+    uid: 'office!Excel.EntityCompactLayoutIcons.link:member'
+    package: office!
+    summary: Link icon.
+    value: '"Link"'
+  - name: localLanguage
+    uid: 'office!Excel.EntityCompactLayoutIcons.localLanguage:member'
+    package: office!
+    summary: Local language icon.
+    value: '"LocalLanguage"'
+  - name: location
+    uid: 'office!Excel.EntityCompactLayoutIcons.location:member'
+    package: office!
+    summary: Location icon. Displays as a map marker.
+    value: '"Location"'
+  - name: lockClosed
+    uid: 'office!Excel.EntityCompactLayoutIcons.lockClosed:member'
+    package: office!
+    summary: Lock closed icon.
+    value: '"LockClosed"'
+  - name: lockMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.lockMultiple:member'
+    package: office!
+    summary: Lock multiple icon.
+    value: '"LockMultiple"'
+  - name: lockOpen
+    uid: 'office!Excel.EntityCompactLayoutIcons.lockOpen:member'
+    package: office!
+    summary: Lock open icon.
+    value: '"LockOpen"'
+  - name: lottery
+    uid: 'office!Excel.EntityCompactLayoutIcons.lottery:member'
+    package: office!
+    summary: Lottery icon.
+    value: '"Lottery"'
+  - name: luggage
+    uid: 'office!Excel.EntityCompactLayoutIcons.luggage:member'
+    package: office!
+    summary: Luggage icon.
+    value: '"Luggage"'
+  - name: mail
+    uid: 'office!Excel.EntityCompactLayoutIcons.mail:member'
+    package: office!
+    summary: Mail icon.
+    value: '"Mail"'
+  - name: mailInbox
+    uid: 'office!Excel.EntityCompactLayoutIcons.mailInbox:member'
+    package: office!
+    summary: Mail inbox icon.
+    value: '"MailInbox"'
+  - name: mailMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.mailMultiple:member'
+    package: office!
+    summary: Mail multiple icon.
+    value: '"MailMultiple"'
+  - name: map
+    uid: 'office!Excel.EntityCompactLayoutIcons.map:member'
+    package: office!
+    summary: Map icon.
+    value: '"Map"'
+  - name: mapPin
+    uid: 'office!Excel.EntityCompactLayoutIcons.mapPin:member'
+    package: office!
+    summary: Map pin icon.
+    value: '"MapPin"'
+  - name: markdown
+    uid: 'office!Excel.EntityCompactLayoutIcons.markdown:member'
+    package: office!
+    summary: Markdown icon.
+    value: '"Markdown"'
+  - name: mathFormula
+    uid: 'office!Excel.EntityCompactLayoutIcons.mathFormula:member'
+    package: office!
+    summary: Math formula icon.
+    value: '"MathFormula"'
+  - name: mathSymbols
+    uid: 'office!Excel.EntityCompactLayoutIcons.mathSymbols:member'
+    package: office!
+    summary: Math symbols icon.
+    value: '"MathSymbols"'
+  - name: max
+    uid: 'office!Excel.EntityCompactLayoutIcons.max:member'
+    package: office!
+    summary: Max icon.
+    value: '"Max"'
+  - name: megaphone
+    uid: 'office!Excel.EntityCompactLayoutIcons.megaphone:member'
+    package: office!
+    summary: Megaphone icon.
+    value: '"Megaphone"'
+  - name: megaphoneLoud
+    uid: 'office!Excel.EntityCompactLayoutIcons.megaphoneLoud:member'
+    package: office!
+    summary: Megaphone loud icon.
+    value: '"MegaphoneLoud"'
+  - name: mention
+    uid: 'office!Excel.EntityCompactLayoutIcons.mention:member'
+    package: office!
+    summary: Mention icon.
+    value: '"Mention"'
+  - name: mic
+    uid: 'office!Excel.EntityCompactLayoutIcons.mic:member'
+    package: office!
+    summary: Mic icon.
+    value: '"Mic"'
+  - name: microscope
+    uid: 'office!Excel.EntityCompactLayoutIcons.microscope:member'
+    package: office!
+    summary: Microscope icon.
+    value: '"Microscope"'
+  - name: midi
+    uid: 'office!Excel.EntityCompactLayoutIcons.midi:member'
+    package: office!
+    summary: Midi icon.
+    value: '"Midi"'
+  - name: molecule
+    uid: 'office!Excel.EntityCompactLayoutIcons.molecule:member'
+    package: office!
+    summary: Molecule icon.
+    value: '"Molecule"'
+  - name: money
+    uid: 'office!Excel.EntityCompactLayoutIcons.money:member'
+    package: office!
+    summary: Money icon. Displays as paper money and coins.
+    value: '"Money"'
+  - name: moneyHand
+    uid: 'office!Excel.EntityCompactLayoutIcons.moneyHand:member'
+    package: office!
+    summary: Money hand icon.
+    value: '"MoneyHand"'
+  - name: mountain
+    uid: 'office!Excel.EntityCompactLayoutIcons.mountain:member'
+    package: office!
+    summary: Mountain icon.
+    value: '"Mountain"'
+  - name: movieCamera
+    uid: 'office!Excel.EntityCompactLayoutIcons.movieCamera:member'
+    package: office!
+    summary: Movie camera icon. Displays as a video camera.
+    value: '"MovieCamera"'
+  - name: moviesAndTv
+    uid: 'office!Excel.EntityCompactLayoutIcons.moviesAndTv:member'
+    package: office!
+    summary: Movies and TV icon.
+    value: '"MoviesAndTv"'
+  - name: musicNote
+    uid: 'office!Excel.EntityCompactLayoutIcons.musicNote:member'
+    package: office!
+    summary: Music note icon.
+    value: '"MusicNote"'
+  - name: musicNote1
+    uid: 'office!Excel.EntityCompactLayoutIcons.musicNote1:member'
+    package: office!
+    summary: Music note icon.
+    value: '"MusicNote1"'
+  - name: musicNote2
+    uid: 'office!Excel.EntityCompactLayoutIcons.musicNote2:member'
+    package: office!
+    summary: Music double note icon.
+    value: '"MusicNote2"'
+  - name: myLocation
+    uid: 'office!Excel.EntityCompactLayoutIcons.myLocation:member'
+    package: office!
+    summary: My location icon.
+    value: '"MyLocation"'
+  - name: nByN
+    uid: 'office!Excel.EntityCompactLayoutIcons.nByN:member'
+    package: office!
+    summary: N by N icon. Displays as a three by three grid.
+    value: '"NByN"'
+  - name: nByOne
+    uid: 'office!Excel.EntityCompactLayoutIcons.nByOne:member'
+    package: office!
+    summary: N by one icon. Displays as a three by one grid.
+    value: '"NByOne"'
+  - name: news
+    uid: 'office!Excel.EntityCompactLayoutIcons.news:member'
+    package: office!
+    summary: News icon.
+    value: '"News"'
+  - name: notablePeople
+    uid: 'office!Excel.EntityCompactLayoutIcons.notablePeople:member'
+    package: office!
+    summary: Notable people icon.
+    value: '"NotablePeople"'
+  - name: note
+    uid: 'office!Excel.EntityCompactLayoutIcons.note:member'
+    package: office!
+    summary: Note icon.
+    value: '"Note"'
+  - name: notebook
+    uid: 'office!Excel.EntityCompactLayoutIcons.notebook:member'
+    package: office!
+    summary: Notebook icon.
+    value: '"Notebook"'
+  - name: notepad
+    uid: 'office!Excel.EntityCompactLayoutIcons.notepad:member'
+    package: office!
+    summary: Notepad icon.
+    value: '"Notepad"'
+  - name: notepadPerson
+    uid: 'office!Excel.EntityCompactLayoutIcons.notepadPerson:member'
+    package: office!
+    summary: Notepad person icon.
+    value: '"NotepadPerson"'
+  - name: oneByN
+    uid: 'office!Excel.EntityCompactLayoutIcons.oneByN:member'
+    package: office!
+    summary: One by N icon. Displays as a one by three grid.
+    value: '"OneByN"'
+  - name: oneByOne
+    uid: 'office!Excel.EntityCompactLayoutIcons.oneByOne:member'
+    package: office!
+    summary: One by one icon. Displays as a one by one grid.
+    value: '"OneByOne"'
+  - name: options
+    uid: 'office!Excel.EntityCompactLayoutIcons.options:member'
+    package: office!
+    summary: Options icon.
+    value: '"Options"'
+  - name: organization
+    uid: 'office!Excel.EntityCompactLayoutIcons.organization:member'
+    package: office!
+    summary: Organization icon.
+    value: '"Organization"'
+  - name: organizationHorizontal
+    uid: 'office!Excel.EntityCompactLayoutIcons.organizationHorizontal:member'
+    package: office!
+    summary: Organization horizontal icon.
+    value: '"OrganizationHorizontal"'
+  - name: oval
+    uid: 'office!Excel.EntityCompactLayoutIcons.oval:member'
+    package: office!
+    summary: Oval icon.
+    value: '"Oval"'
+  - name: paintBrush
+    uid: 'office!Excel.EntityCompactLayoutIcons.paintBrush:member'
+    package: office!
+    summary: Paint brush icon.
+    value: '"PaintBrush"'
+  - name: paintBucket
+    uid: 'office!Excel.EntityCompactLayoutIcons.paintBucket:member'
+    package: office!
+    summary: Paint bucket icon.
+    value: '"PaintBucket"'
+  - name: partlySunnyWeather
+    uid: 'office!Excel.EntityCompactLayoutIcons.partlySunnyWeather:member'
+    package: office!
+    summary: Partly sunny weather icon.
+    value: '"PartlySunnyWeather"'
+  - name: password
+    uid: 'office!Excel.EntityCompactLayoutIcons.password:member'
+    package: office!
+    summary: Password icon.
+    value: '"Password"'
+  - name: patch
+    uid: 'office!Excel.EntityCompactLayoutIcons.patch:member'
+    package: office!
+    summary: Patch icon.
+    value: '"Patch"'
+  - name: patient
+    uid: 'office!Excel.EntityCompactLayoutIcons.patient:member'
+    package: office!
+    summary: Patient icon.
+    value: '"Patient"'
+  - name: payment
+    uid: 'office!Excel.EntityCompactLayoutIcons.payment:member'
+    package: office!
+    summary: Payment icon.
+    value: '"Payment"'
+  - name: pen
+    uid: 'office!Excel.EntityCompactLayoutIcons.pen:member'
+    package: office!
+    summary: Pen icon.
+    value: '"Pen"'
+  - name: pentagon
+    uid: 'office!Excel.EntityCompactLayoutIcons.pentagon:member'
+    package: office!
+    summary: Pentagon icon.
+    value: '"Pentagon"'
+  - name: people
+    uid: 'office!Excel.EntityCompactLayoutIcons.people:member'
+    package: office!
+    summary: People icon.
+    value: '"People"'
+  - name: peopleAudience
+    uid: 'office!Excel.EntityCompactLayoutIcons.peopleAudience:member'
+    package: office!
+    summary: People audience icon.
+    value: '"PeopleAudience"'
+  - name: peopleCall
+    uid: 'office!Excel.EntityCompactLayoutIcons.peopleCall:member'
+    package: office!
+    summary: People call icon.
+    value: '"PeopleCall"'
+  - name: peopleCommunity
+    uid: 'office!Excel.EntityCompactLayoutIcons.peopleCommunity:member'
+    package: office!
+    summary: People community icon.
+    value: '"PeopleCommunity"'
+  - name: peopleMoney
+    uid: 'office!Excel.EntityCompactLayoutIcons.peopleMoney:member'
+    package: office!
+    summary: People money icon.
+    value: '"PeopleMoney"'
+  - name: peopleQueue
+    uid: 'office!Excel.EntityCompactLayoutIcons.peopleQueue:member'
+    package: office!
+    summary: People queue icon.
+    value: '"PeopleQueue"'
+  - name: peopleTeam
+    uid: 'office!Excel.EntityCompactLayoutIcons.peopleTeam:member'
+    package: office!
+    summary: People team icon.
+    value: '"PeopleTeam"'
+  - name: peopleToolbox
+    uid: 'office!Excel.EntityCompactLayoutIcons.peopleToolbox:member'
+    package: office!
+    summary: People toolbox icon.
+    value: '"PeopleToolbox"'
+  - name: person
+    uid: 'office!Excel.EntityCompactLayoutIcons.person:member'
+    package: office!
+    summary: Person icon.
+    value: '"Person"'
+  - name: personBoard
+    uid: 'office!Excel.EntityCompactLayoutIcons.personBoard:member'
+    package: office!
+    summary: Person board icon.
+    value: '"PersonBoard"'
+  - name: personCall
+    uid: 'office!Excel.EntityCompactLayoutIcons.personCall:member'
+    package: office!
+    summary: Person call icon.
+    value: '"PersonCall"'
+  - name: personChat
+    uid: 'office!Excel.EntityCompactLayoutIcons.personChat:member'
+    package: office!
+    summary: Person chat icon.
+    value: '"PersonChat"'
+  - name: personFeedback
+    uid: 'office!Excel.EntityCompactLayoutIcons.personFeedback:member'
+    package: office!
+    summary: Person feedback icon.
+    value: '"PersonFeedback"'
+  - name: personSupport
+    uid: 'office!Excel.EntityCompactLayoutIcons.personSupport:member'
+    package: office!
+    summary: Person support icon.
+    value: '"PersonSupport"'
+  - name: personVoice
+    uid: 'office!Excel.EntityCompactLayoutIcons.personVoice:member'
+    package: office!
+    summary: Person voice icon.
+    value: '"PersonVoice"'
+  - name: phone
+    uid: 'office!Excel.EntityCompactLayoutIcons.phone:member'
+    package: office!
+    summary: Phone icon.
+    value: '"Phone"'
+  - name: phoneDesktop
+    uid: 'office!Excel.EntityCompactLayoutIcons.phoneDesktop:member'
+    package: office!
+    summary: Phone desktop icon.
+    value: '"PhoneDesktop"'
+  - name: phoneLaptop
+    uid: 'office!Excel.EntityCompactLayoutIcons.phoneLaptop:member'
+    package: office!
+    summary: Phone laptop icon.
+    value: '"PhoneLaptop"'
+  - name: phoneShake
+    uid: 'office!Excel.EntityCompactLayoutIcons.phoneShake:member'
+    package: office!
+    summary: Phone shake icon.
+    value: '"PhoneShake"'
+  - name: phoneTablet
+    uid: 'office!Excel.EntityCompactLayoutIcons.phoneTablet:member'
+    package: office!
+    summary: Phone tablet icon.
+    value: '"PhoneTablet"'
+  - name: phoneVibrate
+    uid: 'office!Excel.EntityCompactLayoutIcons.phoneVibrate:member'
+    package: office!
+    summary: Phone vibrate icon.
+    value: '"PhoneVibrate"'
+  - name: photoFilter
+    uid: 'office!Excel.EntityCompactLayoutIcons.photoFilter:member'
+    package: office!
+    summary: Photo filter icon.
+    value: '"PhotoFilter"'
+  - name: pi
+    uid: 'office!Excel.EntityCompactLayoutIcons.pi:member'
+    package: office!
+    summary: Pi icon.
+    value: '"Pi"'
+  - name: pictureInPicture
+    uid: 'office!Excel.EntityCompactLayoutIcons.pictureInPicture:member'
+    package: office!
+    summary: Picture in picture icon.
+    value: '"PictureInPicture"'
+  - name: pilates
+    uid: 'office!Excel.EntityCompactLayoutIcons.pilates:member'
+    package: office!
+    summary: Pilates icon.
+    value: '"Pilates"'
+  - name: pill
+    uid: 'office!Excel.EntityCompactLayoutIcons.pill:member'
+    package: office!
+    summary: Pill icon.
+    value: '"Pill"'
+  - name: pin
+    uid: 'office!Excel.EntityCompactLayoutIcons.pin:member'
+    package: office!
+    summary: Pin icon.
+    value: '"Pin"'
+  - name: pipeline
+    uid: 'office!Excel.EntityCompactLayoutIcons.pipeline:member'
+    package: office!
+    summary: Pipeline icon.
+    value: '"Pipeline"'
+  - name: planet
+    uid: 'office!Excel.EntityCompactLayoutIcons.planet:member'
+    package: office!
+    summary: Planet icon.
+    value: '"Planet"'
+  - name: playingCards
+    uid: 'office!Excel.EntityCompactLayoutIcons.playingCards:member'
+    package: office!
+    summary: Playing cards icon.
+    value: '"PlayingCards"'
+  - name: plugConnected
+    uid: 'office!Excel.EntityCompactLayoutIcons.plugConnected:member'
+    package: office!
+    summary: Plug connected icon.
+    value: '"PlugConnected"'
+  - name: plugDisconnected
+    uid: 'office!Excel.EntityCompactLayoutIcons.plugDisconnected:member'
+    package: office!
+    summary: Plug disconnected icon.
+    value: '"PlugDisconnected"'
+  - name: pointScan
+    uid: 'office!Excel.EntityCompactLayoutIcons.pointScan:member'
+    package: office!
+    summary: Point scan icon. Displays as a target focus symbol.
+    value: '"PointScan"'
+  - name: poll
+    uid: 'office!Excel.EntityCompactLayoutIcons.poll:member'
+    package: office!
+    summary: Poll icon.
+    value: '"Poll"'
+  - name: power
+    uid: 'office!Excel.EntityCompactLayoutIcons.power:member'
+    package: office!
+    summary: Power icon.
+    value: '"Power"'
+  - name: predictions
+    uid: 'office!Excel.EntityCompactLayoutIcons.predictions:member'
+    package: office!
+    summary: Predictions icon.
+    value: '"Predictions"'
+  - name: premium
+    uid: 'office!Excel.EntityCompactLayoutIcons.premium:member'
+    package: office!
+    summary: Premium icon.
+    value: '"Premium"'
+  - name: presenter
+    uid: 'office!Excel.EntityCompactLayoutIcons.presenter:member'
+    package: office!
+    summary: Presenter icon.
+    value: '"Presenter"'
+  - name: previewLink
+    uid: 'office!Excel.EntityCompactLayoutIcons.previewLink:member'
+    package: office!
+    summary: Preview link icon.
+    value: '"PreviewLink"'
+  - name: print
+    uid: 'office!Excel.EntityCompactLayoutIcons.print:member'
+    package: office!
+    summary: Print icon.
+    value: '"Print"'
+  - name: production
+    uid: 'office!Excel.EntityCompactLayoutIcons.production:member'
+    package: office!
+    summary: Production icon.
+    value: '"Production"'
+  - name: prohibited
+    uid: 'office!Excel.EntityCompactLayoutIcons.prohibited:member'
+    package: office!
+    summary: Prohibited icon.
+    value: '"Prohibited"'
+  - name: projectionScreen
+    uid: 'office!Excel.EntityCompactLayoutIcons.projectionScreen:member'
+    package: office!
+    summary: Projection screen icon.
+    value: '"ProjectionScreen"'
+  - name: protocolHandler
+    uid: 'office!Excel.EntityCompactLayoutIcons.protocolHandler:member'
+    package: office!
+    summary: Protocol handler icon.
+    value: '"ProtocolHandler"'
+  - name: pulse
+    uid: 'office!Excel.EntityCompactLayoutIcons.pulse:member'
+    package: office!
+    summary: Pulse icon.
+    value: '"Pulse"'
+  - name: pulseSquare
+    uid: 'office!Excel.EntityCompactLayoutIcons.pulseSquare:member'
+    package: office!
+    summary: Pulse square icon.
+    value: '"PulseSquare"'
+  - name: puzzlePiece
+    uid: 'office!Excel.EntityCompactLayoutIcons.puzzlePiece:member'
+    package: office!
+    summary: Puzzle piece icon.
+    value: '"PuzzlePiece"'
+  - name: qrCode
+    uid: 'office!Excel.EntityCompactLayoutIcons.qrCode:member'
+    package: office!
+    summary: QR code icon.
+    value: '"QrCode"'
+  - name: radar
+    uid: 'office!Excel.EntityCompactLayoutIcons.radar:member'
+    package: office!
+    summary: Radar icon.
+    value: '"Radar"'
+  - name: ram
+    uid: 'office!Excel.EntityCompactLayoutIcons.ram:member'
+    package: office!
+    summary: Ram icon.
+    value: '"Ram"'
+  - name: readingList
+    uid: 'office!Excel.EntityCompactLayoutIcons.readingList:member'
+    package: office!
+    summary: Reading list icon.
+    value: '"ReadingList"'
+  - name: realEstate
+    uid: 'office!Excel.EntityCompactLayoutIcons.realEstate:member'
+    package: office!
+    summary: Real estate icon.
+    value: '"RealEstate"'
+  - name: receipt
+    uid: 'office!Excel.EntityCompactLayoutIcons.receipt:member'
+    package: office!
+    summary: Receipt icon.
+    value: '"Receipt"'
+  - name: reward
+    uid: 'office!Excel.EntityCompactLayoutIcons.reward:member'
+    package: office!
+    summary: Reward icon.
+    value: '"Reward"'
+  - name: rhombus
+    uid: 'office!Excel.EntityCompactLayoutIcons.rhombus:member'
+    package: office!
+    summary: Rhombus icon.
+    value: '"Rhombus"'
+  - name: ribbon
+    uid: 'office!Excel.EntityCompactLayoutIcons.ribbon:member'
+    package: office!
+    summary: Ribbon icon.
+    value: '"Ribbon"'
+  - name: ribbonStar
+    uid: 'office!Excel.EntityCompactLayoutIcons.ribbonStar:member'
+    package: office!
+    summary: Ribbon star icon.
+    value: '"RibbonStar"'
+  - name: roadCone
+    uid: 'office!Excel.EntityCompactLayoutIcons.roadCone:member'
+    package: office!
+    summary: Road cone icon.
+    value: '"RoadCone"'
+  - name: rocket
+    uid: 'office!Excel.EntityCompactLayoutIcons.rocket:member'
+    package: office!
+    summary: Rocket icon.
+    value: '"Rocket"'
+  - name: router
+    uid: 'office!Excel.EntityCompactLayoutIcons.router:member'
+    package: office!
+    summary: Router icon.
+    value: '"Router"'
+  - name: rss
+    uid: 'office!Excel.EntityCompactLayoutIcons.rss:member'
+    package: office!
+    summary: RSS icon.
+    value: '"Rss"'
+  - name: ruler
+    uid: 'office!Excel.EntityCompactLayoutIcons.ruler:member'
+    package: office!
+    summary: Ruler icon.
+    value: '"Ruler"'
+  - name: run
+    uid: 'office!Excel.EntityCompactLayoutIcons.run:member'
+    package: office!
+    summary: Run icon.
+    value: '"Run"'
+  - name: running
+    uid: 'office!Excel.EntityCompactLayoutIcons.running:member'
+    package: office!
+    summary: Running icon.
+    value: '"Running"'
+  - name: satellite
+    uid: 'office!Excel.EntityCompactLayoutIcons.satellite:member'
+    package: office!
+    summary: Satellite icon.
+    value: '"Satellite"'
+  - name: save
+    uid: 'office!Excel.EntityCompactLayoutIcons.save:member'
+    package: office!
+    summary: Save icon.
+    value: '"Save"'
+  - name: savings
+    uid: 'office!Excel.EntityCompactLayoutIcons.savings:member'
+    package: office!
+    summary: Savings icon.
+    value: '"Savings"'
+  - name: scales
+    uid: 'office!Excel.EntityCompactLayoutIcons.scales:member'
+    package: office!
+    summary: Scales icon.
+    value: '"Scales"'
+  - name: scan
+    uid: 'office!Excel.EntityCompactLayoutIcons.scan:member'
+    package: office!
+    summary: Scan icon.
+    value: '"Scan"'
+  - name: scratchpad
+    uid: 'office!Excel.EntityCompactLayoutIcons.scratchpad:member'
+    package: office!
+    summary: Scratchpad icon.
+    value: '"Scratchpad"'
+  - name: screenPerson
+    uid: 'office!Excel.EntityCompactLayoutIcons.screenPerson:member'
+    package: office!
+    summary: Screen person icon.
+    value: '"ScreenPerson"'
+  - name: screenshot
+    uid: 'office!Excel.EntityCompactLayoutIcons.screenshot:member'
+    package: office!
+    summary: Screenshot icon.
+    value: '"Screenshot"'
+  - name: search
+    uid: 'office!Excel.EntityCompactLayoutIcons.search:member'
+    package: office!
+    summary: Search icon.
+    value: '"Search"'
+  - name: serialPort
+    uid: 'office!Excel.EntityCompactLayoutIcons.serialPort:member'
+    package: office!
+    summary: Serial port icon.
+    value: '"SerialPort"'
+  - name: server
+    uid: 'office!Excel.EntityCompactLayoutIcons.server:member'
+    package: office!
+    summary: Server icon.
+    value: '"Server"'
+  - name: serverMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.serverMultiple:member'
+    package: office!
+    summary: Server multiple icon.
+    value: '"ServerMultiple"'
+  - name: serviceBell
+    uid: 'office!Excel.EntityCompactLayoutIcons.serviceBell:member'
+    package: office!
+    summary: Service bell icon.
+    value: '"ServiceBell"'
+  - name: settings
+    uid: 'office!Excel.EntityCompactLayoutIcons.settings:member'
+    package: office!
+    summary: Settings icon.
+    value: '"Settings"'
+  - name: shapes
+    uid: 'office!Excel.EntityCompactLayoutIcons.shapes:member'
+    package: office!
+    summary: Shapes icon.
+    value: '"Shapes"'
+  - name: shield
+    uid: 'office!Excel.EntityCompactLayoutIcons.shield:member'
+    package: office!
+    summary: Shield icon.
+    value: '"Shield"'
+  - name: shieldTask
+    uid: 'office!Excel.EntityCompactLayoutIcons.shieldTask:member'
+    package: office!
+    summary: Shield task icon.
+    value: '"ShieldTask"'
+  - name: shoppingBag
+    uid: 'office!Excel.EntityCompactLayoutIcons.shoppingBag:member'
+    package: office!
+    summary: Shopping bag icon.
+    value: '"ShoppingBag"'
+  - name: signature
+    uid: 'office!Excel.EntityCompactLayoutIcons.signature:member'
+    package: office!
+    summary: Signature icon.
+    value: '"Signature"'
+  - name: sim
+    uid: 'office!Excel.EntityCompactLayoutIcons.sim:member'
+    package: office!
+    summary: Sim icon.
+    value: '"Sim"'
+  - name: sleep
+    uid: 'office!Excel.EntityCompactLayoutIcons.sleep:member'
+    package: office!
+    summary: Sleep icon.
+    value: '"Sleep"'
+  - name: smartwatch
+    uid: 'office!Excel.EntityCompactLayoutIcons.smartwatch:member'
+    package: office!
+    summary: Smartwatch icon.
+    value: '"Smartwatch"'
+  - name: soundSource
+    uid: 'office!Excel.EntityCompactLayoutIcons.soundSource:member'
+    package: office!
+    summary: Sound source icon.
+    value: '"SoundSource"'
+  - name: soundWaveCircle
+    uid: 'office!Excel.EntityCompactLayoutIcons.soundWaveCircle:member'
+    package: office!
+    summary: Sound wave circle icon.
+    value: '"SoundWaveCircle"'
+  - name: sparkle
+    uid: 'office!Excel.EntityCompactLayoutIcons.sparkle:member'
+    package: office!
+    summary: Sparkle icon.
+    value: '"Sparkle"'
+  - name: speaker0
+    uid: 'office!Excel.EntityCompactLayoutIcons.speaker0:member'
+    package: office!
+    summary: Speaker icon.
+    value: '"Speaker0"'
+  - name: speaker2
+    uid: 'office!Excel.EntityCompactLayoutIcons.speaker2:member'
+    package: office!
+    summary: Speaker with sound wave icon.
+    value: '"Speaker2"'
+  - name: sport
+    uid: 'office!Excel.EntityCompactLayoutIcons.sport:member'
+    package: office!
+    summary: Sport icon.
+    value: '"Sport"'
+  - name: sportAmericanFootball
+    uid: 'office!Excel.EntityCompactLayoutIcons.sportAmericanFootball:member'
+    package: office!
+    summary: Sport american football icon.
+    value: '"SportAmericanFootball"'
+  - name: sportBaseball
+    uid: 'office!Excel.EntityCompactLayoutIcons.sportBaseball:member'
+    package: office!
+    summary: Sport baseball icon.
+    value: '"SportBaseball"'
+  - name: sportBasketball
+    uid: 'office!Excel.EntityCompactLayoutIcons.sportBasketball:member'
+    package: office!
+    summary: Sport basketball icon.
+    value: '"SportBasketball"'
+  - name: sportHockey
+    uid: 'office!Excel.EntityCompactLayoutIcons.sportHockey:member'
+    package: office!
+    summary: Sport hockey icon.
+    value: '"SportHockey"'
+  - name: sportSoccer
+    uid: 'office!Excel.EntityCompactLayoutIcons.sportSoccer:member'
+    package: office!
+    summary: Sport soccer icon.
+    value: '"SportSoccer"'
+  - name: squareMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.squareMultiple:member'
+    package: office!
+    summary: Square multiple icon.
+    value: '"SquareMultiple"'
+  - name: squareShadow
+    uid: 'office!Excel.EntityCompactLayoutIcons.squareShadow:member'
+    package: office!
+    summary: Square shadow icon.
+    value: '"SquareShadow"'
+  - name: squaresNested
+    uid: 'office!Excel.EntityCompactLayoutIcons.squaresNested:member'
+    package: office!
+    summary: Squares nested icon.
+    value: '"SquaresNested"'
+  - name: stack
+    uid: 'office!Excel.EntityCompactLayoutIcons.stack:member'
+    package: office!
+    summary: Stack icon.
+    value: '"Stack"'
+  - name: stackStar
+    uid: 'office!Excel.EntityCompactLayoutIcons.stackStar:member'
+    package: office!
+    summary: Stack star icon.
+    value: '"StackStar"'
+  - name: star
+    uid: 'office!Excel.EntityCompactLayoutIcons.star:member'
+    package: office!
+    summary: Star icon.
+    value: '"Star"'
+  - name: starFilled
+    uid: 'office!Excel.EntityCompactLayoutIcons.starFilled:member'
+    package: office!
+    summary: Star filled icon.
+    value: '"StarFilled"'
+  - name: starHalf
+    uid: 'office!Excel.EntityCompactLayoutIcons.starHalf:member'
+    package: office!
+    summary: Star half icon.
+    value: '"StarHalf"'
+  - name: starLineHorizontal3
+    uid: 'office!Excel.EntityCompactLayoutIcons.starLineHorizontal3:member'
+    package: office!
+    summary: Star with 3 horizontal lines icon.
+    value: '"StarLineHorizontal3"'
+  - name: starOneQuarter
+    uid: 'office!Excel.EntityCompactLayoutIcons.starOneQuarter:member'
+    package: office!
+    summary: Star one quarter icon.
+    value: '"StarOneQuarter"'
+  - name: starThreeQuarter
+    uid: 'office!Excel.EntityCompactLayoutIcons.starThreeQuarter:member'
+    package: office!
+    summary: Star three quarter icon.
+    value: '"StarThreeQuarter"'
+  - name: status
+    uid: 'office!Excel.EntityCompactLayoutIcons.status:member'
+    package: office!
+    summary: Status icon.
+    value: '"Status"'
+  - name: steps
+    uid: 'office!Excel.EntityCompactLayoutIcons.steps:member'
+    package: office!
+    summary: Steps icon.
+    value: '"Steps"'
+  - name: stethoscope
+    uid: 'office!Excel.EntityCompactLayoutIcons.stethoscope:member'
+    package: office!
+    summary: Stethoscope icon.
+    value: '"Stethoscope"'
+  - name: sticker
+    uid: 'office!Excel.EntityCompactLayoutIcons.sticker:member'
+    package: office!
+    summary: Sticker icon.
+    value: '"Sticker"'
+  - name: storage
+    uid: 'office!Excel.EntityCompactLayoutIcons.storage:member'
+    package: office!
+    summary: Storage icon.
+    value: '"Storage"'
+  - name: stream
+    uid: 'office!Excel.EntityCompactLayoutIcons.stream:member'
+    package: office!
+    summary: Stream icon.
+    value: '"Stream"'
+  - name: streamInput
+    uid: 'office!Excel.EntityCompactLayoutIcons.streamInput:member'
+    package: office!
+    summary: Stream input icon.
+    value: '"StreamInput"'
+  - name: streamInputOutput
+    uid: 'office!Excel.EntityCompactLayoutIcons.streamInputOutput:member'
+    package: office!
+    summary: Stream input output icon.
+    value: '"StreamInputOutput"'
+  - name: streamOutput
+    uid: 'office!Excel.EntityCompactLayoutIcons.streamOutput:member'
+    package: office!
+    summary: Stream output icon.
+    value: '"StreamOutput"'
+  - name: styleGuide
+    uid: 'office!Excel.EntityCompactLayoutIcons.styleGuide:member'
+    package: office!
+    summary: Style guide icon.
+    value: '"StyleGuide"'
+  - name: subGrid
+    uid: 'office!Excel.EntityCompactLayoutIcons.subGrid:member'
+    package: office!
+    summary: Sub grid icon.
+    value: '"SubGrid"'
+  - name: subtitles
+    uid: 'office!Excel.EntityCompactLayoutIcons.subtitles:member'
+    package: office!
+    summary: Subtitles icon.
+    value: '"Subtitles"'
+  - name: surfaceEarbuds
+    uid: 'office!Excel.EntityCompactLayoutIcons.surfaceEarbuds:member'
+    package: office!
+    summary: Surface earbuds icon.
+    value: '"SurfaceEarbuds"'
+  - name: surfaceHub
+    uid: 'office!Excel.EntityCompactLayoutIcons.surfaceHub:member'
+    package: office!
+    summary: Surface hub icon.
+    value: '"SurfaceHub"'
+  - name: symbols
+    uid: 'office!Excel.EntityCompactLayoutIcons.symbols:member'
+    package: office!
+    summary: Symbols icon.
+    value: '"Symbols"'
+  - name: syringe
+    uid: 'office!Excel.EntityCompactLayoutIcons.syringe:member'
+    package: office!
+    summary: Syringe icon.
+    value: '"Syringe"'
+  - name: system
+    uid: 'office!Excel.EntityCompactLayoutIcons.system:member'
+    package: office!
+    summary: System icon.
+    value: '"System"'
+  - name: tabDesktop
+    uid: 'office!Excel.EntityCompactLayoutIcons.tabDesktop:member'
+    package: office!
+    summary: Tab desktop icon.
+    value: '"TabDesktop"'
+  - name: tabInprivateAccount
+    uid: 'office!Excel.EntityCompactLayoutIcons.tabInprivateAccount:member'
+    package: office!
+    summary: Tab InPrivate account icon.
+    value: '"TabInprivateAccount"'
+  - name: table
+    uid: 'office!Excel.EntityCompactLayoutIcons.table:member'
+    package: office!
+    summary: Table icon.
+    value: '"Table"'
+  - name: tableImage
+    uid: 'office!Excel.EntityCompactLayoutIcons.tableImage:member'
+    package: office!
+    summary: Table image icon.
+    value: '"TableImage"'
+  - name: tableMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.tableMultiple:member'
+    package: office!
+    summary: Table multiple icon.
+    value: '"TableMultiple"'
+  - name: tablet
+    uid: 'office!Excel.EntityCompactLayoutIcons.tablet:member'
+    package: office!
+    summary: Tablet icon.
+    value: '"Tablet"'
+  - name: tabs
+    uid: 'office!Excel.EntityCompactLayoutIcons.tabs:member'
+    package: office!
+    summary: Tabs icon.
+    value: '"Tabs"'
+  - name: tag
+    uid: 'office!Excel.EntityCompactLayoutIcons.tag:member'
+    package: office!
+    summary: Tag icon.
+    value: '"Tag"'
+  - name: tagCircle
+    uid: 'office!Excel.EntityCompactLayoutIcons.tagCircle:member'
+    package: office!
+    summary: Tag circle icon.
+    value: '"TagCircle"'
+  - name: tagMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.tagMultiple:member'
+    package: office!
+    summary: Tag multiple icon.
+    value: '"TagMultiple"'
+  - name: target
+    uid: 'office!Excel.EntityCompactLayoutIcons.target:member'
+    package: office!
+    summary: Target icon.
+    value: '"Target"'
+  - name: targetArrow
+    uid: 'office!Excel.EntityCompactLayoutIcons.targetArrow:member'
+    package: office!
+    summary: Target arrow icon.
+    value: '"TargetArrow"'
+  - name: teddy
+    uid: 'office!Excel.EntityCompactLayoutIcons.teddy:member'
+    package: office!
+    summary: Teddy icon.
+    value: '"Teddy"'
+  - name: temperature
+    uid: 'office!Excel.EntityCompactLayoutIcons.temperature:member'
+    package: office!
+    summary: Temperature icon.
+    value: '"Temperature"'
+  - name: tent
+    uid: 'office!Excel.EntityCompactLayoutIcons.tent:member'
+    package: office!
+    summary: Tent icon.
+    value: '"Tent"'
+  - name: tetrisApp
+    uid: 'office!Excel.EntityCompactLayoutIcons.tetrisApp:member'
+    package: office!
+    summary: Tetris app icon.
+    value: '"TetrisApp"'
+  - name: textbox
+    uid: 'office!Excel.EntityCompactLayoutIcons.textbox:member'
+    package: office!
+    summary: Textbox icon.
+    value: '"Textbox"'
+  - name: textQuote
+    uid: 'office!Excel.EntityCompactLayoutIcons.textQuote:member'
+    package: office!
+    summary: Text quote icon.
+    value: '"TextQuote"'
+  - name: thinking
+    uid: 'office!Excel.EntityCompactLayoutIcons.thinking:member'
+    package: office!
+    summary: Thinking icon.
+    value: '"Thinking"'
+  - name: thumbDislike
+    uid: 'office!Excel.EntityCompactLayoutIcons.thumbDislike:member'
+    package: office!
+    summary: Thumb dislike icon.
+    value: '"ThumbDislike"'
+  - name: thumbLike
+    uid: 'office!Excel.EntityCompactLayoutIcons.thumbLike:member'
+    package: office!
+    summary: Thumb like icon.
+    value: '"ThumbLike"'
+  - name: ticketDiagonal
+    uid: 'office!Excel.EntityCompactLayoutIcons.ticketDiagonal:member'
+    package: office!
+    summary: Ticket diagonal icon.
+    value: '"TicketDiagonal"'
+  - name: ticketHorizontal
+    uid: 'office!Excel.EntityCompactLayoutIcons.ticketHorizontal:member'
+    package: office!
+    summary: Ticket horizontal icon.
+    value: '"TicketHorizontal"'
+  - name: timeAndWeather
+    uid: 'office!Excel.EntityCompactLayoutIcons.timeAndWeather:member'
+    package: office!
+    summary: Time and weather icon.
+    value: '"TimeAndWeather"'
+  - name: timeline
+    uid: 'office!Excel.EntityCompactLayoutIcons.timeline:member'
+    package: office!
+    summary: Timeline icon.
+    value: '"Timeline"'
+  - name: timer
+    uid: 'office!Excel.EntityCompactLayoutIcons.timer:member'
+    package: office!
+    summary: Timer icon.
+    value: '"Timer"'
+  - name: toolbox
+    uid: 'office!Excel.EntityCompactLayoutIcons.toolbox:member'
+    package: office!
+    summary: Toolbox icon.
+    value: '"Toolbox"'
+  - name: topSpeed
+    uid: 'office!Excel.EntityCompactLayoutIcons.topSpeed:member'
+    package: office!
+    summary: Top speed icon.
+    value: '"TopSpeed"'
+  - name: translate
+    uid: 'office!Excel.EntityCompactLayoutIcons.translate:member'
+    package: office!
+    summary: Translate icon.
+    value: '"Translate"'
+  - name: transmission
+    uid: 'office!Excel.EntityCompactLayoutIcons.transmission:member'
+    package: office!
+    summary: Transmission icon.
+    value: '"Transmission"'
+  - name: treeDeciduous
+    uid: 'office!Excel.EntityCompactLayoutIcons.treeDeciduous:member'
+    package: office!
+    summary: Tree deciduous icon.
+    value: '"TreeDeciduous"'
+  - name: treeEvergreen
+    uid: 'office!Excel.EntityCompactLayoutIcons.treeEvergreen:member'
+    package: office!
+    summary: Tree evergreen icon.
+    value: '"TreeEvergreen"'
+  - name: trophy
+    uid: 'office!Excel.EntityCompactLayoutIcons.trophy:member'
+    package: office!
+    summary: Trophy icon.
+    value: '"Trophy"'
+  - name: tv
+    uid: 'office!Excel.EntityCompactLayoutIcons.tv:member'
+    package: office!
+    summary: TV icon.
+    value: '"Tv"'
+  - name: tvUsb
+    uid: 'office!Excel.EntityCompactLayoutIcons.tvUsb:member'
+    package: office!
+    summary: TV USB icon.
+    value: '"TvUsb"'
+  - name: umbrella
+    uid: 'office!Excel.EntityCompactLayoutIcons.umbrella:member'
+    package: office!
+    summary: Umbrella icon.
+    value: '"Umbrella"'
+  - name: usbPlug
+    uid: 'office!Excel.EntityCompactLayoutIcons.usbPlug:member'
+    package: office!
+    summary: USB plug icon.
+    value: '"UsbPlug"'
+  - name: usbStick
+    uid: 'office!Excel.EntityCompactLayoutIcons.usbStick:member'
+    package: office!
+    summary: USB stick icon.
+    value: '"UsbStick"'
+  - name: vault
+    uid: 'office!Excel.EntityCompactLayoutIcons.vault:member'
+    package: office!
+    summary: Vault icon.
+    value: '"Vault"'
+  - name: vehicleBicycle
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleBicycle:member'
+    package: office!
+    summary: Vehicle bicycle icon.
+    value: '"VehicleBicycle"'
+  - name: vehicleBus
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleBus:member'
+    package: office!
+    summary: Vehicle bus icon.
+    value: '"VehicleBus"'
+  - name: vehicleCab
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleCab:member'
+    package: office!
+    summary: Vehicle cab icon.
+    value: '"VehicleCab"'
+  - name: vehicleCar
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleCar:member'
+    package: office!
+    summary: Vehicle car icon.
+    value: '"VehicleCar"'
+  - name: vehicleCarCollision
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleCarCollision:member'
+    package: office!
+    summary: Vehicle car collision icon.
+    value: '"VehicleCarCollision"'
+  - name: vehicleCarProfileLtr
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleCarProfileLtr:member'
+    package: office!
+    summary: Vehicle car profile left-to-right icon.
+    value: '"VehicleCarProfileLtr"'
+  - name: vehicleCarProfileRtl
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleCarProfileRtl:member'
+    package: office!
+    summary: Vehicle car profile right-to-left icon.
+    value: '"VehicleCarProfileRtl"'
+  - name: vehicleShip
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleShip:member'
+    package: office!
+    summary: Vehicle ship icon.
+    value: '"VehicleShip"'
+  - name: vehicleSubway
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleSubway:member'
+    package: office!
+    summary: Vehicle subway icon.
+    value: '"VehicleSubway"'
+  - name: vehicleTruck
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleTruck:member'
+    package: office!
+    summary: Vehicle truck icon.
+    value: '"VehicleTruck"'
+  - name: vehicleTruckBag
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleTruckBag:member'
+    package: office!
+    summary: Vehicle truck bag icon.
+    value: '"VehicleTruckBag"'
+  - name: vehicleTruckCube
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleTruckCube:member'
+    package: office!
+    summary: Vehicle truck cube icon.
+    value: '"VehicleTruckCube"'
+  - name: vehicleTruckProfile
+    uid: 'office!Excel.EntityCompactLayoutIcons.vehicleTruckProfile:member'
+    package: office!
+    summary: Vehicle truck profile icon.
+    value: '"VehicleTruckProfile"'
+  - name: video
+    uid: 'office!Excel.EntityCompactLayoutIcons.video:member'
+    package: office!
+    summary: Video icon.
+    value: '"Video"'
+  - name: video360
+    uid: 'office!Excel.EntityCompactLayoutIcons.video360:member'
+    package: office!
+    summary: Video 360 icon.
+    value: '"Video360"'
+  - name: videoChat
+    uid: 'office!Excel.EntityCompactLayoutIcons.videoChat:member'
+    package: office!
+    summary: Video chat icon.
+    value: '"VideoChat"'
+  - name: videoClip
+    uid: 'office!Excel.EntityCompactLayoutIcons.videoClip:member'
+    package: office!
+    summary: Video clip icon.
+    value: '"VideoClip"'
+  - name: videoClipMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.videoClipMultiple:member'
+    package: office!
+    summary: Video clip multiple icon.
+    value: '"VideoClipMultiple"'
+  - name: videoPerson
+    uid: 'office!Excel.EntityCompactLayoutIcons.videoPerson:member'
+    package: office!
+    summary: Video person icon.
+    value: '"VideoPerson"'
+  - name: videoRecording
+    uid: 'office!Excel.EntityCompactLayoutIcons.videoRecording:member'
+    package: office!
+    summary: Video recording icon.
+    value: '"VideoRecording"'
+  - name: videoSecurity
+    uid: 'office!Excel.EntityCompactLayoutIcons.videoSecurity:member'
+    package: office!
+    summary: Video security icon.
+    value: '"VideoSecurity"'
+  - name: viewDesktop
+    uid: 'office!Excel.EntityCompactLayoutIcons.viewDesktop:member'
+    package: office!
+    summary: View desktop icon.
+    value: '"ViewDesktop"'
+  - name: viewDesktopMobile
+    uid: 'office!Excel.EntityCompactLayoutIcons.viewDesktopMobile:member'
+    package: office!
+    summary: View desktop mobile icon.
+    value: '"ViewDesktopMobile"'
+  - name: violin
+    uid: 'office!Excel.EntityCompactLayoutIcons.violin:member'
+    package: office!
+    summary: Violin icon.
+    value: '"Violin"'
+  - name: virtualNetwork
+    uid: 'office!Excel.EntityCompactLayoutIcons.virtualNetwork:member'
+    package: office!
+    summary: Virtual network icon.
+    value: '"VirtualNetwork"'
+  - name: voicemail
+    uid: 'office!Excel.EntityCompactLayoutIcons.voicemail:member'
+    package: office!
+    summary: Voicemail icon.
+    value: '"Voicemail"'
+  - name: vote
+    uid: 'office!Excel.EntityCompactLayoutIcons.vote:member'
+    package: office!
+    summary: Vote icon.
+    value: '"Vote"'
+  - name: walkieTalkie
+    uid: 'office!Excel.EntityCompactLayoutIcons.walkieTalkie:member'
+    package: office!
+    summary: Walkie talkie icon.
+    value: '"WalkieTalkie"'
+  - name: wallet
+    uid: 'office!Excel.EntityCompactLayoutIcons.wallet:member'
+    package: office!
+    summary: Wallet icon.
+    value: '"Wallet"'
+  - name: walletCreditCard
+    uid: 'office!Excel.EntityCompactLayoutIcons.walletCreditCard:member'
+    package: office!
+    summary: Wallet credit card icon.
+    value: '"WalletCreditCard"'
+  - name: wallpaper
+    uid: 'office!Excel.EntityCompactLayoutIcons.wallpaper:member'
+    package: office!
+    summary: Wallpaper icon.
+    value: '"Wallpaper"'
+  - name: wand
+    uid: 'office!Excel.EntityCompactLayoutIcons.wand:member'
+    package: office!
+    summary: Wand icon.
+    value: '"Wand"'
+  - name: warning
+    uid: 'office!Excel.EntityCompactLayoutIcons.warning:member'
+    package: office!
+    summary: Warning icon.
+    value: '"Warning"'
+  - name: weatherBlowingSnow
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherBlowingSnow:member'
+    package: office!
+    summary: Weather blowing snow icon.
+    value: '"WeatherBlowingSnow"'
+  - name: weatherCloudy
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherCloudy:member'
+    package: office!
+    summary: Weather cloudy icon.
+    value: '"WeatherCloudy"'
+  - name: weatherDrizzle
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherDrizzle:member'
+    package: office!
+    summary: Weather drizzle icon.
+    value: '"WeatherDrizzle"'
+  - name: weatherDuststorm
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherDuststorm:member'
+    package: office!
+    summary: Weather duststorm icon.
+    value: '"WeatherDuststorm"'
+  - name: weatherFog
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherFog:member'
+    package: office!
+    summary: Weather fog icon.
+    value: '"WeatherFog"'
+  - name: weatherHailDay
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherHailDay:member'
+    package: office!
+    summary: Weather hail day icon.
+    value: '"WeatherHailDay"'
+  - name: weatherHailNight
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherHailNight:member'
+    package: office!
+    summary: Weather hail night icon.
+    value: '"WeatherHailNight"'
+  - name: weatherHaze
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherHaze:member'
+    package: office!
+    summary: Weather haze icon.
+    value: '"WeatherHaze"'
+  - name: weatherMoon
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherMoon:member'
+    package: office!
+    summary: Weather moon icon.
+    value: '"WeatherMoon"'
+  - name: weatherPartlyCloudyDay
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherPartlyCloudyDay:member'
+    package: office!
+    summary: Weather partly cloudy day icon.
+    value: '"WeatherPartlyCloudyDay"'
+  - name: weatherPartlyCloudyNight
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherPartlyCloudyNight:member'
+    package: office!
+    summary: Weather partly cloudy night icon.
+    value: '"WeatherPartlyCloudyNight"'
+  - name: weatherRain
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherRain:member'
+    package: office!
+    summary: Weather rain icon.
+    value: '"WeatherRain"'
+  - name: weatherRainShowersDay
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherRainShowersDay:member'
+    package: office!
+    summary: Weather rain showers day icon.
+    value: '"WeatherRainShowersDay"'
+  - name: weatherRainShowersNight
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherRainShowersNight:member'
+    package: office!
+    summary: Weather rain showers night icon.
+    value: '"WeatherRainShowersNight"'
+  - name: weatherRainSnow
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherRainSnow:member'
+    package: office!
+    summary: Weather rain snow icon.
+    value: '"WeatherRainSnow"'
+  - name: weatherSnow
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherSnow:member'
+    package: office!
+    summary: Weather snow icon.
+    value: '"WeatherSnow"'
+  - name: weatherSnowflake
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherSnowflake:member'
+    package: office!
+    summary: Weather snowflake icon.
+    value: '"WeatherSnowflake"'
+  - name: weatherSnowShowerDay
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherSnowShowerDay:member'
+    package: office!
+    summary: Weather snow shower day icon.
+    value: '"WeatherSnowShowerDay"'
+  - name: weatherSnowShowerNight
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherSnowShowerNight:member'
+    package: office!
+    summary: Weather snow shower night icon.
+    value: '"WeatherSnowShowerNight"'
+  - name: weatherSqualls
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherSqualls:member'
+    package: office!
+    summary: Weather squalls icon.
+    value: '"WeatherSqualls"'
+  - name: weatherSunnyHigh
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherSunnyHigh:member'
+    package: office!
+    summary: Weather sunny high icon.
+    value: '"WeatherSunnyHigh"'
+  - name: weatherSunnyLow
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherSunnyLow:member'
+    package: office!
+    summary: Weather sunny low icon.
+    value: '"WeatherSunnyLow"'
+  - name: weatherThunderstorm
+    uid: 'office!Excel.EntityCompactLayoutIcons.weatherThunderstorm:member'
+    package: office!
+    summary: Weather thunderstorm icon.
+    value: '"WeatherThunderstorm"'
+  - name: webAsset
+    uid: 'office!Excel.EntityCompactLayoutIcons.webAsset:member'
+    package: office!
+    summary: Web asset icon.
+    value: '"WebAsset"'
+  - name: whiteboard
+    uid: 'office!Excel.EntityCompactLayoutIcons.whiteboard:member'
+    package: office!
+    summary: Whiteboard icon.
+    value: '"Whiteboard"'
+  - name: wifi1
+    uid: 'office!Excel.EntityCompactLayoutIcons.wifi1:member'
+    package: office!
+    summary: Wifi signal with 3 bars icon.
+    value: '"Wifi1"'
+  - name: wifi2
+    uid: 'office!Excel.EntityCompactLayoutIcons.wifi2:member'
+    package: office!
+    summary: Wifi signal with 2 bars icon.
+    value: '"Wifi2"'
+  - name: window
+    uid: 'office!Excel.EntityCompactLayoutIcons.window:member'
+    package: office!
+    summary: Window icon.
+    value: '"Window"'
+  - name: windowMultiple
+    uid: 'office!Excel.EntityCompactLayoutIcons.windowMultiple:member'
+    package: office!
+    summary: Window multiple icon.
+    value: '"WindowMultiple"'
+  - name: windowWrench
+    uid: 'office!Excel.EntityCompactLayoutIcons.windowWrench:member'
+    package: office!
+    summary: Window wrench icon.
+    value: '"WindowWrench"'
+  - name: wrench
+    uid: 'office!Excel.EntityCompactLayoutIcons.wrench:member'
+    package: office!
+    summary: Wrench icon.
+    value: '"Wrench"'
+  - name: wrenchScrewdriver
+    uid: 'office!Excel.EntityCompactLayoutIcons.wrenchScrewdriver:member'
+    package: office!
+    summary: Wrench screwdriver icon.
+    value: '"WrenchScrewdriver"'
+  - name: xray
+    uid: 'office!Excel.EntityCompactLayoutIcons.xray:member'
+    package: office!
+    summary: X-ray icon.
+    value: '"Xray"'
+  - name: yoga
+    uid: 'office!Excel.EntityCompactLayoutIcons.yoga:member'
+    package: office!
+    summary: Yoga icon.
+    value: '"Yoga"'

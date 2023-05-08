@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.RangeAreasCollectionData
+uid: 'office!Excel.Interfaces.RangeAreasCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.RangeAreasCollectionData
+summary: An interface describing the data returned by calling `rangeAreasCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.RangeAreasCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.RangeAreasData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.RangeAreasData:interface" />[]'

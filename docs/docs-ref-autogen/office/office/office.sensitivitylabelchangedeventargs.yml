@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: Office.SensitivityLabelChangedEventArgs
+uid: 'office!Office.SensitivityLabelChangedEventArgs:interface'
+package: office!
+fullName: Office.SensitivityLabelChangedEventArgs
+summary: >-
+  Provides the change status of the sensitivity label applied to a message or appointment in compose mode. This
+  information is provided when the `Office.EventType.SensitivityLabelChanged` event is raised.
+remarks: >-
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+  **Important**: To use the sensitivity label feature in your add-in, you must have a Microsoft 365 E5 subscription.
+
+
+  To learn more about how to manage sensitivity labels in your add-in, see [Manage the sensitivity label of your message
+  or appointment in compose mode
+  (preview)](https://learn.microsoft.com/office/dev/add-ins/outlook/sensitivity-label)<!-- -->.
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: 'office!Office.SensitivityLabelChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: >-
+      The type of event that was raised. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type: "olkSensitivityLabelChanged";'
+      return:
+        type: '"olkSensitivityLabelChanged"'

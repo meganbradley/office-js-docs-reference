@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: Office.Message
+uid: 'office!Office.Message:interface'
+package: office!
+fullName: Office.Message
+summary: >-
+  A subclass of [Item](xref:office!Office.Item:interface) for messages.
+
+
+  **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+  this as a mode of `Office.context.mailbox.item`<!-- -->. For more information, refer to the [Object
+  Model](https://learn.microsoft.com/javascript/api/requirement-sets/outlook/preview-requirement-set/office.context.mailbox.item)
+  page.
+
+
+  Child interfaces:
+
+
+  - [MessageCompose](xref:office!Office.MessageCompose:interface)
+
+
+  - [MessageRead](xref:office!Office.MessageRead:interface)
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+extends: '<xref uid="office!Office.Item:interface" />'

@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotItemData
+uid: 'office!Excel.Interfaces.PivotItemData:interface'
+package: office!
+fullName: Excel.Interfaces.PivotItemData
+summary: An interface describing the data returned by calling `pivotItem.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'office!Excel.Interfaces.PivotItemData#id:member'
+    package: office!
+    fullName: id
+    summary: ID of the PivotItem.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: isExpanded
+    uid: 'office!Excel.Interfaces.PivotItemData#isExpanded:member'
+    package: office!
+    fullName: isExpanded
+    summary: Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isExpanded?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Excel.Interfaces.PivotItemData#name:member'
+    package: office!
+    fullName: name
+    summary: Name of the PivotItem.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: visible
+    uid: 'office!Excel.Interfaces.PivotItemData#visible:member'
+    package: office!
+    fullName: visible
+    summary: Specifies if the PivotItem is visible.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean

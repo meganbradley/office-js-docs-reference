@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ConditionalColorScaleCriteria
+uid: 'office!Excel.ConditionalColorScaleCriteria:interface'
+package: office!
+fullName: Excel.ConditionalColorScaleCriteria
+summary: Represents the criteria of the color scale.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: maximum
+    uid: 'office!Excel.ConditionalColorScaleCriteria#maximum:member'
+    package: office!
+    fullName: maximum
+    summary: The maximum point of the color scale criterion.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maximum: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type: '<xref uid="office!Excel.ConditionalColorScaleCriterion:interface" />'
+  - name: midpoint
+    uid: 'office!Excel.ConditionalColorScaleCriteria#midpoint:member'
+    package: office!
+    fullName: midpoint
+    summary: 'The midpoint of the color scale criterion, if the color scale is a 3-color scale.'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type: '<xref uid="office!Excel.ConditionalColorScaleCriterion:interface" />'
+  - name: minimum
+    uid: 'office!Excel.ConditionalColorScaleCriteria#minimum:member'
+    package: office!
+    fullName: minimum
+    summary: The minimum point of the color scale criterion.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minimum: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type: '<xref uid="office!Excel.ConditionalColorScaleCriterion:interface" />'

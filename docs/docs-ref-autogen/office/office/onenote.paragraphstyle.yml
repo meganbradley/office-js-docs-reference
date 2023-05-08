@@ -1,0 +1,76 @@
+### YamlMime:TSEnum
+name: OneNote.ParagraphStyle
+uid: 'office!OneNote.ParagraphStyle:enum'
+package: office!
+fullName: OneNote.ParagraphStyle
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: citation
+    uid: 'office!OneNote.ParagraphStyle.citation:member'
+    package: office!
+    summary: ''
+    value: '11'
+  - name: code
+    uid: 'office!OneNote.ParagraphStyle.code:member'
+    package: office!
+    summary: ''
+    value: '12'
+  - name: dateTime
+    uid: 'office!OneNote.ParagraphStyle.dateTime:member'
+    package: office!
+    summary: ''
+    value: '3'
+  - name: heading1
+    uid: 'office!OneNote.ParagraphStyle.heading1:member'
+    package: office!
+    summary: ''
+    value: '4'
+  - name: heading2
+    uid: 'office!OneNote.ParagraphStyle.heading2:member'
+    package: office!
+    summary: ''
+    value: '5'
+  - name: heading3
+    uid: 'office!OneNote.ParagraphStyle.heading3:member'
+    package: office!
+    summary: ''
+    value: '6'
+  - name: heading4
+    uid: 'office!OneNote.ParagraphStyle.heading4:member'
+    package: office!
+    summary: ''
+    value: '7'
+  - name: heading5
+    uid: 'office!OneNote.ParagraphStyle.heading5:member'
+    package: office!
+    summary: ''
+    value: '8'
+  - name: heading6
+    uid: 'office!OneNote.ParagraphStyle.heading6:member'
+    package: office!
+    summary: ''
+    value: '9'
+  - name: normal
+    uid: 'office!OneNote.ParagraphStyle.normal:member'
+    package: office!
+    summary: ''
+    value: '1'
+  - name: noStyle
+    uid: 'office!OneNote.ParagraphStyle.noStyle:member'
+    package: office!
+    summary: ''
+    value: '0'
+  - name: quote
+    uid: 'office!OneNote.ParagraphStyle.quote:member'
+    package: office!
+    summary: ''
+    value: '10'
+  - name: title
+    uid: 'office!OneNote.ParagraphStyle.title:member'
+    package: office!
+    summary: ''
+    value: '2'

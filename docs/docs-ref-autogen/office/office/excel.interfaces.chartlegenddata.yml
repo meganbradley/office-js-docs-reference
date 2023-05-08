@@ -1,0 +1,144 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartLegendData
+uid: 'office!Excel.Interfaces.ChartLegendData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartLegendData
+summary: An interface describing the data returned by calling `chartLegend.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'office!Excel.Interfaces.ChartLegendData#format:member'
+    package: office!
+    fullName: format
+    summary: 'Represents the formatting of a chart legend, which includes fill and font formatting.'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartLegendFormatData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartLegendFormatData:interface" />'
+  - name: height
+    uid: 'office!Excel.Interfaces.ChartLegendData#height:member'
+    package: office!
+    fullName: height
+    summary: 'Specifies the height, in points, of the legend on the chart. Value is `null` if the legend is not visible.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: left
+    uid: 'office!Excel.Interfaces.ChartLegendData#left:member'
+    package: office!
+    fullName: left
+    summary: 'Specifies the left value, in points, of the legend on the chart. Value is `null` if the legend is not visible.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: legendEntries
+    uid: 'office!Excel.Interfaces.ChartLegendData#legendEntries:member'
+    package: office!
+    fullName: legendEntries
+    summary: Represents a collection of legendEntries in the legend.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'legendEntries?: Excel.Interfaces.ChartLegendEntryData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartLegendEntryData:interface" />[]'
+  - name: overlay
+    uid: 'office!Excel.Interfaces.ChartLegendData#overlay:member'
+    package: office!
+    fullName: overlay
+    summary: Specifies if the chart legend should overlap with the main body of the chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overlay?: boolean;'
+      return:
+        type: boolean
+  - name: position
+    uid: 'office!Excel.Interfaces.ChartLegendData#position:member'
+    package: office!
+    fullName: position
+    summary: Specifies the position of the legend on the chart. See `Excel.ChartLegendPosition` for details.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
+      return:
+        type: >-
+          <xref uid="office!Excel.ChartLegendPosition:enum" /> | "Invalid" | "Top" | "Bottom" | "Left" | "Right" |
+          "Corner" | "Custom"
+  - name: showShadow
+    uid: 'office!Excel.Interfaces.ChartLegendData#showShadow:member'
+    package: office!
+    fullName: showShadow
+    summary: Specifies if the legend has a shadow on the chart.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showShadow?: boolean;'
+      return:
+        type: boolean
+  - name: top
+    uid: 'office!Excel.Interfaces.ChartLegendData#top:member'
+    package: office!
+    fullName: top
+    summary: Specifies the top of a chart legend.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number
+  - name: visible
+    uid: 'office!Excel.Interfaces.ChartLegendData#visible:member'
+    package: office!
+    fullName: visible
+    summary: Specifies if the chart legend is visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'office!Excel.Interfaces.ChartLegendData#width:member'
+    package: office!
+    fullName: width
+    summary: 'Specifies the width, in points, of the legend on the chart. Value is `null` if the legend is not visible.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

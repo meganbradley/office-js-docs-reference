@@ -3,77 +3,185 @@ uid: office!
 name: office
 type: package
 summary: ''
-interfaces:
-  - 'office!Office.Actions:interface'
-  - 'office!Office.AddBindingFromNamedItemOptions:interface'
-  - 'office!Office.AddBindingFromPromptOptions:interface'
-  - 'office!Office.AddBindingFromSelectionOptions:interface'
-  - 'office!Office.Addin:interface'
-  - 'office!Office.AddinCommands.Event:interface'
-  - 'office!Office.AddinCommands.EventCompletedOptions:interface'
-  - 'office!Office.AddinCommands.Source:interface'
-  - 'office!Office.AsyncContextOptions:interface'
-  - 'office!Office.AsyncResult:interface'
-  - 'office!Office.Auth:interface'
-  - 'office!Office.AuthOptions:interface'
-  - 'office!Office.BeforeDocumentCloseNotification:interface'
-  - 'office!Office.Binding:interface'
-  - 'office!Office.BindingDataChangedEventArgs:interface'
-  - 'office!Office.Bindings:interface'
-  - 'office!Office.BindingSelectionChangedEventArgs:interface'
-  - 'office!Office.Context:interface'
-  - 'office!Office.ContextInformation:interface'
-  - 'office!Office.Control:interface'
-  - 'office!Office.CustomXmlNode:interface'
-  - 'office!Office.CustomXmlPart:interface'
-  - 'office!Office.CustomXmlParts:interface'
-  - 'office!Office.CustomXmlPrefixMappings:interface'
-  - 'office!Office.Dialog:interface'
-  - 'office!Office.DialogMessageOptions:interface'
-  - 'office!Office.DialogOptions:interface'
-  - 'office!Office.DialogParentMessageReceivedEventArgs:interface'
-  - 'office!Office.Document:interface'
-  - 'office!Office.DocumentSelectionChangedEventArgs:interface'
-  - 'office!Office.Error:interface'
-  - 'office!Office.File:interface'
-  - 'office!Office.FileProperties:interface'
-  - 'office!Office.GetBindingDataOptions:interface'
-  - 'office!Office.GetFileOptions:interface'
-  - 'office!Office.GetSelectedDataOptions:interface'
-  - 'office!Office.GoToByIdOptions:interface'
-  - 'office!Office.Group:interface'
-  - 'office!Office.IPromiseConstructor:interface'
-  - 'office!Office.MatrixBinding:interface'
-  - 'office!Office.NodeDeletedEventArgs:interface'
-  - 'office!Office.NodeInsertedEventArgs:interface'
-  - 'office!Office.NodeReplacedEventArgs:interface'
-  - 'office!Office.OfficeTheme:interface'
-  - 'office!Office.RangeCoordinates:interface'
-  - 'office!Office.RangeFormatConfiguration:interface'
-  - 'office!Office.RemoveHandlerOptions:interface'
-  - 'office!Office.RequirementSetSupport:interface'
-  - 'office!Office.Ribbon:interface'
-  - 'office!Office.RibbonUpdaterData:interface'
-  - 'office!Office.SaveSettingsOptions:interface'
-  - 'office!Office.SetBindingDataOptions:interface'
-  - 'office!Office.SetSelectedDataOptions:interface'
-  - 'office!Office.Settings:interface'
-  - 'office!Office.SettingsChangedEventArgs:interface'
-  - 'office!Office.Slice:interface'
-  - 'office!Office.Tab:interface'
-  - 'office!Office.TableBinding:interface'
-  - 'office!Office.TextBinding:interface'
-  - 'office!Office.UI:interface'
-  - 'office!Office.VisibilityModeChangedMessage:interface'
-  - 'office!OfficeExtension.DebugInfo:interface'
-  - 'office!OfficeExtension.EmbeddedOptions:interface'
-  - 'office!OfficeExtension.EventInfo:interface'
-  - 'office!OfficeExtension.LoadOption:interface'
-  - 'office!OfficeExtension.RequestContextDebugInfo:interface'
-  - 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
-  - 'office!OfficeExtension.RunOptions:interface'
-  - 'office!OfficeExtension.UpdateOptions:interface'
 enums:
+  - 'office!Excel.AggregationFunction:enum'
+  - 'office!Excel.ArrowheadLength:enum'
+  - 'office!Excel.ArrowheadStyle:enum'
+  - 'office!Excel.ArrowheadWidth:enum'
+  - 'office!Excel.AutoFillType:enum'
+  - 'office!Excel.Base64EncodingType:enum'
+  - 'office!Excel.BindingType:enum'
+  - 'office!Excel.BlockedErrorCellValueSubType:enum'
+  - 'office!Excel.BorderIndex:enum'
+  - 'office!Excel.BorderLineStyle:enum'
+  - 'office!Excel.BorderWeight:enum'
+  - 'office!Excel.BuiltInPivotTableStyle:enum'
+  - 'office!Excel.BuiltInSlicerStyle:enum'
+  - 'office!Excel.BuiltInStyle:enum'
+  - 'office!Excel.BuiltInTableStyle:enum'
+  - 'office!Excel.BusyErrorCellValueSubType:enum'
+  - 'office!Excel.CalcErrorCellValueSubType:enum'
+  - 'office!Excel.CalculationMode:enum'
+  - 'office!Excel.CalculationState:enum'
+  - 'office!Excel.CalculationType:enum'
+  - 'office!Excel.CellValueType:enum'
+  - 'office!Excel.ChartAxisCategoryType:enum'
+  - 'office!Excel.ChartAxisDisplayUnit:enum'
+  - 'office!Excel.ChartAxisGroup:enum'
+  - 'office!Excel.ChartAxisPosition:enum'
+  - 'office!Excel.ChartAxisScaleType:enum'
+  - 'office!Excel.ChartAxisTickLabelPosition:enum'
+  - 'office!Excel.ChartAxisTickMark:enum'
+  - 'office!Excel.ChartAxisTimeUnit:enum'
+  - 'office!Excel.ChartAxisType:enum'
+  - 'office!Excel.ChartBinType:enum'
+  - 'office!Excel.ChartBoxQuartileCalculation:enum'
+  - 'office!Excel.ChartColorScheme:enum'
+  - 'office!Excel.ChartDataLabelPosition:enum'
+  - 'office!Excel.ChartDataSourceType:enum'
+  - 'office!Excel.ChartDisplayBlanksAs:enum'
+  - 'office!Excel.ChartErrorBarsInclude:enum'
+  - 'office!Excel.ChartErrorBarsType:enum'
+  - 'office!Excel.ChartGradientStyle:enum'
+  - 'office!Excel.ChartGradientStyleType:enum'
+  - 'office!Excel.ChartLegendPosition:enum'
+  - 'office!Excel.ChartLineStyle:enum'
+  - 'office!Excel.ChartMapAreaLevel:enum'
+  - 'office!Excel.ChartMapLabelStrategy:enum'
+  - 'office!Excel.ChartMapProjectionType:enum'
+  - 'office!Excel.ChartMarkerStyle:enum'
+  - 'office!Excel.ChartParentLabelStrategy:enum'
+  - 'office!Excel.ChartPlotAreaPosition:enum'
+  - 'office!Excel.ChartPlotBy:enum'
+  - 'office!Excel.ChartSeriesBy:enum'
+  - 'office!Excel.ChartSeriesDimension:enum'
+  - 'office!Excel.ChartSplitType:enum'
+  - 'office!Excel.ChartTextHorizontalAlignment:enum'
+  - 'office!Excel.ChartTextVerticalAlignment:enum'
+  - 'office!Excel.ChartTickLabelAlignment:enum'
+  - 'office!Excel.ChartTitlePosition:enum'
+  - 'office!Excel.ChartTrendlineType:enum'
+  - 'office!Excel.ChartType:enum'
+  - 'office!Excel.ChartUnderlineStyle:enum'
+  - 'office!Excel.ClearApplyTo:enum'
+  - 'office!Excel.CloseBehavior:enum'
+  - 'office!Excel.CommentChangeType:enum'
+  - 'office!Excel.ConditionalCellValueOperator:enum'
+  - 'office!Excel.ConditionalDataBarAxisFormat:enum'
+  - 'office!Excel.ConditionalDataBarDirection:enum'
+  - 'office!Excel.ConditionalFormatColorCriterionType:enum'
+  - 'office!Excel.ConditionalFormatDirection:enum'
+  - 'office!Excel.ConditionalFormatIconRuleType:enum'
+  - 'office!Excel.ConditionalFormatPresetCriterion:enum'
+  - 'office!Excel.ConditionalFormatRuleType:enum'
+  - 'office!Excel.ConditionalFormatType:enum'
+  - 'office!Excel.ConditionalIconCriterionOperator:enum'
+  - 'office!Excel.ConditionalRangeBorderIndex:enum'
+  - 'office!Excel.ConditionalRangeBorderLineStyle:enum'
+  - 'office!Excel.ConditionalRangeFontUnderlineStyle:enum'
+  - 'office!Excel.ConditionalTextOperator:enum'
+  - 'office!Excel.ConditionalTopBottomCriterionType:enum'
+  - 'office!Excel.ConnectErrorCellValueSubType:enum'
+  - 'office!Excel.ConnectorType:enum'
+  - 'office!Excel.ContentType:enum'
+  - 'office!Excel.DataChangeType:enum'
+  - 'office!Excel.DataSourceType:enum'
+  - 'office!Excel.DataValidationAlertStyle:enum'
+  - 'office!Excel.DataValidationOperator:enum'
+  - 'office!Excel.DataValidationType:enum'
+  - 'office!Excel.DateFilterCondition:enum'
+  - 'office!Excel.DeleteShiftDirection:enum'
+  - 'office!Excel.DocumentPropertyItem:enum'
+  - 'office!Excel.DocumentPropertyType:enum'
+  - 'office!Excel.DocumentTaskChangeAction:enum'
+  - 'office!Excel.DynamicFilterCriteria:enum'
+  - 'office!Excel.EntityCardLayoutType:enum'
+  - 'office!Excel.EntityCompactLayoutIcons:enum'
+  - 'office!Excel.ErrorCellValueType:enum'
+  - 'office!Excel.ErrorCodes:enum'
+  - 'office!Excel.EventSource:enum'
+  - 'office!Excel.EventTriggerSource:enum'
+  - 'office!Excel.EventType:enum'
+  - 'office!Excel.ExternalErrorCellValueSubType:enum'
+  - 'office!Excel.FieldErrorCellValueSubType:enum'
+  - 'office!Excel.FillPattern:enum'
+  - 'office!Excel.FilterDatetimeSpecificity:enum'
+  - 'office!Excel.FilterOn:enum'
+  - 'office!Excel.FilterOperator:enum'
+  - 'office!Excel.GeometricShapeType:enum'
+  - 'office!Excel.GroupOption:enum'
+  - 'office!Excel.HeaderFooterState:enum'
+  - 'office!Excel.HorizontalAlignment:enum'
+  - 'office!Excel.IconSet:enum'
+  - 'office!Excel.ImageFittingMode:enum'
+  - 'office!Excel.InsertShiftDirection:enum'
+  - 'office!Excel.KeyboardDirection:enum'
+  - 'office!Excel.LabelFilterCondition:enum'
+  - 'office!Excel.LinkedDataTypeRefreshMode:enum'
+  - 'office!Excel.LinkedDataTypeState:enum'
+  - 'office!Excel.LoadToType:enum'
+  - 'office!Excel.NamedItemScope:enum'
+  - 'office!Excel.NamedItemType:enum'
+  - 'office!Excel.NumberFormatCategory:enum'
+  - 'office!Excel.NumErrorCellValueSubType:enum'
+  - 'office!Excel.PageOrientation:enum'
+  - 'office!Excel.PaperType:enum'
+  - 'office!Excel.PictureFormat:enum'
+  - 'office!Excel.PivotAxis:enum'
+  - 'office!Excel.PivotFilterTopBottomCriterion:enum'
+  - 'office!Excel.PivotFilterType:enum'
+  - 'office!Excel.PivotLayoutType:enum'
+  - 'office!Excel.PivotTableDateGroupBy:enum'
+  - 'office!Excel.Placement:enum'
+  - 'office!Excel.PrintComments:enum'
+  - 'office!Excel.PrintErrorType:enum'
+  - 'office!Excel.PrintMarginUnit:enum'
+  - 'office!Excel.PrintOrder:enum'
+  - 'office!Excel.ProtectionSelectionMode:enum'
+  - 'office!Excel.QueryError:enum'
+  - 'office!Excel.RangeCopyType:enum'
+  - 'office!Excel.RangeUnderlineStyle:enum'
+  - 'office!Excel.RangeValueType:enum'
+  - 'office!Excel.ReadingOrder:enum'
+  - 'office!Excel.ReferenceValueType:enum'
+  - 'office!Excel.RefErrorCellValueSubType:enum'
+  - 'office!Excel.RibbonTab:enum'
+  - 'office!Excel.RowHiddenChangeType:enum'
+  - 'office!Excel.SaveBehavior:enum'
+  - 'office!Excel.SearchDirection:enum'
+  - 'office!Excel.ShapeAutoSize:enum'
+  - 'office!Excel.ShapeFillType:enum'
+  - 'office!Excel.ShapeFontUnderlineStyle:enum'
+  - 'office!Excel.ShapeLineDashStyle:enum'
+  - 'office!Excel.ShapeLineStyle:enum'
+  - 'office!Excel.ShapeScaleFrom:enum'
+  - 'office!Excel.ShapeScaleType:enum'
+  - 'office!Excel.ShapeTextHorizontalAlignment:enum'
+  - 'office!Excel.ShapeTextHorizontalOverflow:enum'
+  - 'office!Excel.ShapeTextOrientation:enum'
+  - 'office!Excel.ShapeTextReadingOrder:enum'
+  - 'office!Excel.ShapeTextVerticalAlignment:enum'
+  - 'office!Excel.ShapeTextVerticalOverflow:enum'
+  - 'office!Excel.ShapeType:enum'
+  - 'office!Excel.ShapeZOrder:enum'
+  - 'office!Excel.SheetVisibility:enum'
+  - 'office!Excel.ShowAsCalculation:enum'
+  - 'office!Excel.SlicerSortType:enum'
+  - 'office!Excel.SortBy:enum'
+  - 'office!Excel.SortDataOption:enum'
+  - 'office!Excel.SortMethod:enum'
+  - 'office!Excel.SortOn:enum'
+  - 'office!Excel.SortOrientation:enum'
+  - 'office!Excel.SpecialCellType:enum'
+  - 'office!Excel.SpecialCellValueType:enum'
+  - 'office!Excel.SpillErrorCellValueSubType:enum'
+  - 'office!Excel.SubtotalLocationType:enum'
+  - 'office!Excel.TopBottomSelectionType:enum'
+  - 'office!Excel.ValueErrorCellValueSubType:enum'
+  - 'office!Excel.ValueFilterCondition:enum'
+  - 'office!Excel.VerticalAlignment:enum'
+  - 'office!Excel.WorkbookLinksRefreshMode:enum'
+  - 'office!Excel.WorksheetPositionType:enum'
   - 'office!Office.ActiveView:enum'
   - 'office!Office.AsyncResultStatus:enum'
   - 'office!Office.BindingType:enum'
@@ -87,6 +195,30 @@ enums:
   - 'office!Office.HostType:enum'
   - 'office!Office.Index:enum'
   - 'office!Office.InitializationReason:enum'
+  - 'office!Office.MailboxEnums.ActionType:enum'
+  - 'office!Office.MailboxEnums.AppointmentSensitivityType:enum'
+  - 'office!Office.MailboxEnums.AttachmentContentFormat:enum'
+  - 'office!Office.MailboxEnums.AttachmentStatus:enum'
+  - 'office!Office.MailboxEnums.AttachmentType:enum'
+  - 'office!Office.MailboxEnums.CategoryColor:enum'
+  - 'office!Office.MailboxEnums.ComposeType:enum'
+  - 'office!Office.MailboxEnums.Days:enum'
+  - 'office!Office.MailboxEnums.DelegatePermissions:enum'
+  - 'office!Office.MailboxEnums.EntityType:enum'
+  - 'office!Office.MailboxEnums.InfobarActionType:enum'
+  - 'office!Office.MailboxEnums.InfobarType:enum'
+  - 'office!Office.MailboxEnums.ItemNotificationMessageType:enum'
+  - 'office!Office.MailboxEnums.ItemType:enum'
+  - 'office!Office.MailboxEnums.LocationType:enum'
+  - 'office!Office.MailboxEnums.Month:enum'
+  - 'office!Office.MailboxEnums.OWAView:enum'
+  - 'office!Office.MailboxEnums.RecipientType:enum'
+  - 'office!Office.MailboxEnums.RecurrenceTimeZone:enum'
+  - 'office!Office.MailboxEnums.RecurrenceType:enum'
+  - 'office!Office.MailboxEnums.ResponseType:enum'
+  - 'office!Office.MailboxEnums.RestVersion:enum'
+  - 'office!Office.MailboxEnums.SourceProperty:enum'
+  - 'office!Office.MailboxEnums.WeekNumber:enum'
   - 'office!Office.PlatformType:enum'
   - 'office!Office.ProjectProjectFields:enum'
   - 'office!Office.ProjectResourceFields:enum'
@@ -97,8 +229,270 @@ enums:
   - 'office!Office.Table:enum'
   - 'office!Office.ValueFormat:enum'
   - 'office!Office.VisibilityMode:enum'
+  - 'office!OneNote.ErrorCodes:enum'
+  - 'office!OneNote.EventType:enum'
+  - 'office!OneNote.InsertLocation:enum'
+  - 'office!OneNote.ListType:enum'
+  - 'office!OneNote.NoteTagStatus:enum'
+  - 'office!OneNote.NoteTagType:enum'
+  - 'office!OneNote.NumberType:enum'
+  - 'office!OneNote.PageContentType:enum'
+  - 'office!OneNote.ParagraphStyle:enum'
+  - 'office!OneNote.ParagraphType:enum'
+  - 'office!PowerPoint.ConnectorType:enum'
+  - 'office!PowerPoint.ErrorCodes:enum'
+  - 'office!PowerPoint.GeometricShapeType:enum'
+  - 'office!PowerPoint.InsertSlideFormatting:enum'
+  - 'office!PowerPoint.ParagraphHorizontalAlignment:enum'
+  - 'office!PowerPoint.ShapeAutoSize:enum'
+  - 'office!PowerPoint.ShapeFillType:enum'
+  - 'office!PowerPoint.ShapeFontUnderlineStyle:enum'
+  - 'office!PowerPoint.ShapeLineDashStyle:enum'
+  - 'office!PowerPoint.ShapeLineStyle:enum'
+  - 'office!PowerPoint.ShapeType:enum'
+  - 'office!PowerPoint.TextVerticalAlignment:enum'
+  - 'office!Visio.ColumnType:enum'
+  - 'office!Visio.ConnectorDirection:enum'
+  - 'office!Visio.CrossFunctionalFlowchartOrientation:enum'
+  - 'office!Visio.DataSourceType:enum'
+  - 'office!Visio.DataValidationErrorType:enum'
+  - 'office!Visio.DataVisualizerDiagramOperationType:enum'
+  - 'office!Visio.DataVisualizerDiagramResultType:enum'
+  - 'office!Visio.DataVisualizerDiagramType:enum'
+  - 'office!Visio.ErrorCodes:enum'
+  - 'office!Visio.EventType:enum'
+  - 'office!Visio.LayoutVariant:enum'
+  - 'office!Visio.OverlayHorizontalAlignment:enum'
+  - 'office!Visio.OverlayType:enum'
+  - 'office!Visio.OverlayVerticalAlignment:enum'
+  - 'office!Visio.TaskPaneType:enum'
+  - 'office!Visio.ToolBarType:enum'
+  - 'office!Word.Alignment:enum'
+  - 'office!Word.BodyType:enum'
+  - 'office!Word.BorderLocation:enum'
+  - 'office!Word.BorderType:enum'
+  - 'office!Word.BreakType:enum'
+  - 'office!Word.BuiltInStyleName:enum'
+  - 'office!Word.CellPaddingLocation:enum'
+  - 'office!Word.ChangeTrackingMode:enum'
+  - 'office!Word.ChangeTrackingState:enum'
+  - 'office!Word.ChangeTrackingVersion:enum'
+  - 'office!Word.CloseBehavior:enum'
+  - 'office!Word.CommentChangeType:enum'
+  - 'office!Word.ContentControlAppearance:enum'
+  - 'office!Word.ContentControlType:enum'
+  - 'office!Word.DocumentPropertyType:enum'
+  - 'office!Word.ErrorCodes:enum'
+  - 'office!Word.EventSource:enum'
+  - 'office!Word.EventType:enum'
+  - 'office!Word.FieldKind:enum'
+  - 'office!Word.FieldType:enum'
+  - 'office!Word.HeaderFooterType:enum'
+  - 'office!Word.ImageFormat:enum'
+  - 'office!Word.InsertLocation:enum'
+  - 'office!Word.ListBuiltInNumberStyle:enum'
+  - 'office!Word.ListBullet:enum'
+  - 'office!Word.ListLevelType:enum'
+  - 'office!Word.ListNumbering:enum'
+  - 'office!Word.LocationRelation:enum'
+  - 'office!Word.NoteItemType:enum'
+  - 'office!Word.OutlineLevel:enum'
+  - 'office!Word.RangeLocation:enum'
+  - 'office!Word.SaveBehavior:enum'
+  - 'office!Word.SelectionMode:enum'
+  - 'office!Word.StyleType:enum'
+  - 'office!Word.TrailingCharacter:enum'
+  - 'office!Word.UnderlineType:enum'
+  - 'office!Word.VerticalAlignment:enum'
 classes:
+  - 'office!Excel.AllowEditRange:class'
+  - 'office!Excel.AllowEditRangeCollection:class'
+  - 'office!Excel.Application:class'
+  - 'office!Excel.AutoFilter:class'
+  - 'office!Excel.Binding:class'
+  - 'office!Excel.BindingCollection:class'
+  - 'office!Excel.CellValueConditionalFormat:class'
+  - 'office!Excel.Chart:class'
+  - 'office!Excel.ChartAreaFormat:class'
+  - 'office!Excel.ChartAxes:class'
+  - 'office!Excel.ChartAxis:class'
+  - 'office!Excel.ChartAxisFormat:class'
+  - 'office!Excel.ChartAxisTitle:class'
+  - 'office!Excel.ChartAxisTitleFormat:class'
+  - 'office!Excel.ChartBinOptions:class'
+  - 'office!Excel.ChartBorder:class'
+  - 'office!Excel.ChartBoxwhiskerOptions:class'
+  - 'office!Excel.ChartCollection:class'
+  - 'office!Excel.ChartDataLabel:class'
+  - 'office!Excel.ChartDataLabelFormat:class'
+  - 'office!Excel.ChartDataLabels:class'
+  - 'office!Excel.ChartDataTable:class'
+  - 'office!Excel.ChartDataTableFormat:class'
+  - 'office!Excel.ChartErrorBars:class'
+  - 'office!Excel.ChartErrorBarsFormat:class'
+  - 'office!Excel.ChartFill:class'
+  - 'office!Excel.ChartFont:class'
+  - 'office!Excel.ChartFormatString:class'
+  - 'office!Excel.ChartGridlines:class'
+  - 'office!Excel.ChartGridlinesFormat:class'
+  - 'office!Excel.ChartLegend:class'
+  - 'office!Excel.ChartLegendEntry:class'
+  - 'office!Excel.ChartLegendEntryCollection:class'
+  - 'office!Excel.ChartLegendFormat:class'
+  - 'office!Excel.ChartLineFormat:class'
+  - 'office!Excel.ChartMapOptions:class'
+  - 'office!Excel.ChartPivotOptions:class'
+  - 'office!Excel.ChartPlotArea:class'
+  - 'office!Excel.ChartPlotAreaFormat:class'
+  - 'office!Excel.ChartPoint:class'
+  - 'office!Excel.ChartPointFormat:class'
+  - 'office!Excel.ChartPointsCollection:class'
+  - 'office!Excel.ChartSeries:class'
+  - 'office!Excel.ChartSeriesCollection:class'
+  - 'office!Excel.ChartSeriesFormat:class'
+  - 'office!Excel.ChartTitle:class'
+  - 'office!Excel.ChartTitleFormat:class'
+  - 'office!Excel.ChartTrendline:class'
+  - 'office!Excel.ChartTrendlineCollection:class'
+  - 'office!Excel.ChartTrendlineFormat:class'
+  - 'office!Excel.ChartTrendlineLabel:class'
+  - 'office!Excel.ChartTrendlineLabelFormat:class'
+  - 'office!Excel.ColorScaleConditionalFormat:class'
+  - 'office!Excel.Comment:class'
+  - 'office!Excel.CommentCollection:class'
+  - 'office!Excel.CommentReply:class'
+  - 'office!Excel.CommentReplyCollection:class'
+  - 'office!Excel.ConditionalDataBarNegativeFormat:class'
+  - 'office!Excel.ConditionalDataBarPositiveFormat:class'
+  - 'office!Excel.ConditionalFormat:class'
+  - 'office!Excel.ConditionalFormatCollection:class'
+  - 'office!Excel.ConditionalFormatRule:class'
+  - 'office!Excel.ConditionalRangeBorder:class'
+  - 'office!Excel.ConditionalRangeBorderCollection:class'
+  - 'office!Excel.ConditionalRangeFill:class'
+  - 'office!Excel.ConditionalRangeFont:class'
+  - 'office!Excel.ConditionalRangeFormat:class'
+  - 'office!Excel.CultureInfo:class'
+  - 'office!Excel.CustomConditionalFormat:class'
+  - 'office!Excel.CustomProperty:class'
+  - 'office!Excel.CustomPropertyCollection:class'
+  - 'office!Excel.CustomXmlPart:class'
+  - 'office!Excel.CustomXmlPartCollection:class'
+  - 'office!Excel.CustomXmlPartScopedCollection:class'
+  - 'office!Excel.DataBarConditionalFormat:class'
+  - 'office!Excel.DataConnectionCollection:class'
+  - 'office!Excel.DataPivotHierarchy:class'
+  - 'office!Excel.DataPivotHierarchyCollection:class'
+  - 'office!Excel.DataValidation:class'
+  - 'office!Excel.DatetimeFormatInfo:class'
+  - 'office!Excel.DocumentProperties:class'
+  - 'office!Excel.DocumentTask:class'
+  - 'office!Excel.DocumentTaskChange:class'
+  - 'office!Excel.DocumentTaskChangeCollection:class'
+  - 'office!Excel.DocumentTaskCollection:class'
+  - 'office!Excel.Filter:class'
+  - 'office!Excel.FilterPivotHierarchy:class'
+  - 'office!Excel.FilterPivotHierarchyCollection:class'
+  - 'office!Excel.FormatProtection:class'
+  - 'office!Excel.FunctionResult:class'
+  - 'office!Excel.Functions:class'
+  - 'office!Excel.GeometricShape:class'
+  - 'office!Excel.GroupShapeCollection:class'
+  - 'office!Excel.HeaderFooter:class'
+  - 'office!Excel.HeaderFooterGroup:class'
+  - 'office!Excel.IconSetConditionalFormat:class'
+  - 'office!Excel.Image:class'
+  - 'office!Excel.IterativeCalculation:class'
+  - 'office!Excel.Line:class'
+  - 'office!Excel.LinkedDataType:class'
+  - 'office!Excel.LinkedDataTypeCollection:class'
+  - 'office!Excel.LinkedWorkbook:class'
+  - 'office!Excel.LinkedWorkbookCollection:class'
+  - 'office!Excel.NamedItem:class'
+  - 'office!Excel.NamedItemArrayValues:class'
+  - 'office!Excel.NamedItemCollection:class'
+  - 'office!Excel.NamedSheetView:class'
+  - 'office!Excel.NamedSheetViewCollection:class'
+  - 'office!Excel.NumberFormatInfo:class'
+  - 'office!Excel.PageBreak:class'
+  - 'office!Excel.PageBreakCollection:class'
+  - 'office!Excel.PageLayout:class'
+  - 'office!Excel.PivotField:class'
+  - 'office!Excel.PivotFieldCollection:class'
+  - 'office!Excel.PivotHierarchy:class'
+  - 'office!Excel.PivotHierarchyCollection:class'
+  - 'office!Excel.PivotItem:class'
+  - 'office!Excel.PivotItemCollection:class'
+  - 'office!Excel.PivotLayout:class'
+  - 'office!Excel.PivotTable:class'
+  - 'office!Excel.PivotTableCollection:class'
+  - 'office!Excel.PivotTableScopedCollection:class'
+  - 'office!Excel.PivotTableStyle:class'
+  - 'office!Excel.PivotTableStyleCollection:class'
+  - 'office!Excel.PresetCriteriaConditionalFormat:class'
+  - 'office!Excel.Query:class'
+  - 'office!Excel.QueryCollection:class'
+  - 'office!Excel.Range:class'
+  - 'office!Excel.RangeAreas:class'
+  - 'office!Excel.RangeAreasCollection:class'
+  - 'office!Excel.RangeBorder:class'
+  - 'office!Excel.RangeBorderCollection:class'
+  - 'office!Excel.RangeCollection:class'
+  - 'office!Excel.RangeFill:class'
+  - 'office!Excel.RangeFont:class'
+  - 'office!Excel.RangeFormat:class'
+  - 'office!Excel.RangeSort:class'
+  - 'office!Excel.RangeView:class'
+  - 'office!Excel.RangeViewCollection:class'
+  - 'office!Excel.RemoveDuplicatesResult:class'
+  - 'office!Excel.RequestContext:class'
+  - 'office!Excel.RowColumnPivotHierarchy:class'
+  - 'office!Excel.RowColumnPivotHierarchyCollection:class'
+  - 'office!Excel.Runtime:class'
+  - 'office!Excel.Setting:class'
+  - 'office!Excel.SettingCollection:class'
+  - 'office!Excel.Shape:class'
+  - 'office!Excel.ShapeCollection:class'
+  - 'office!Excel.ShapeFill:class'
+  - 'office!Excel.ShapeFont:class'
+  - 'office!Excel.ShapeGroup:class'
+  - 'office!Excel.ShapeLineFormat:class'
+  - 'office!Excel.Slicer:class'
+  - 'office!Excel.SlicerCollection:class'
+  - 'office!Excel.SlicerItem:class'
+  - 'office!Excel.SlicerItemCollection:class'
+  - 'office!Excel.SlicerStyle:class'
+  - 'office!Excel.SlicerStyleCollection:class'
+  - 'office!Excel.Style:class'
+  - 'office!Excel.StyleCollection:class'
+  - 'office!Excel.Table:class'
+  - 'office!Excel.TableCollection:class'
+  - 'office!Excel.TableColumn:class'
+  - 'office!Excel.TableColumnCollection:class'
+  - 'office!Excel.TableRow:class'
+  - 'office!Excel.TableRowCollection:class'
+  - 'office!Excel.TableScopedCollection:class'
+  - 'office!Excel.TableSort:class'
+  - 'office!Excel.TableStyle:class'
+  - 'office!Excel.TableStyleCollection:class'
+  - 'office!Excel.TextConditionalFormat:class'
+  - 'office!Excel.TextFrame:class'
+  - 'office!Excel.TextRange:class'
+  - 'office!Excel.TimelineStyle:class'
+  - 'office!Excel.TimelineStyleCollection:class'
+  - 'office!Excel.TopBottomConditionalFormat:class'
+  - 'office!Excel.Workbook:class'
+  - 'office!Excel.WorkbookCreated:class'
+  - 'office!Excel.WorkbookProtection:class'
+  - 'office!Excel.WorkbookRangeAreas:class'
+  - 'office!Excel.Worksheet:class'
+  - 'office!Excel.WorksheetCollection:class'
+  - 'office!Excel.WorksheetCustomProperty:class'
+  - 'office!Excel.WorksheetCustomPropertyCollection:class'
+  - 'office!Excel.WorksheetFreezePanes:class'
+  - 'office!Excel.WorksheetProtection:class'
   - 'office!Office.TableData:class'
+  - 'office!OfficeCore.RequestContext:class'
   - 'office!OfficeExtension.ClientObject:class'
   - 'office!OfficeExtension.ClientRequestContext:class'
   - 'office!OfficeExtension.ClientResult:class'
@@ -108,9 +502,1578 @@ classes:
   - 'office!OfficeExtension.EventHandlerResult:class'
   - 'office!OfficeExtension.EventHandlers:class'
   - 'office!OfficeExtension.TrackedObjects:class'
+  - 'office!OneNote.Application:class'
+  - 'office!OneNote.FloatingInk:class'
+  - 'office!OneNote.Image:class'
+  - 'office!OneNote.InkAnalysis:class'
+  - 'office!OneNote.InkAnalysisLine:class'
+  - 'office!OneNote.InkAnalysisLineCollection:class'
+  - 'office!OneNote.InkAnalysisParagraph:class'
+  - 'office!OneNote.InkAnalysisParagraphCollection:class'
+  - 'office!OneNote.InkAnalysisWord:class'
+  - 'office!OneNote.InkAnalysisWordCollection:class'
+  - 'office!OneNote.InkStroke:class'
+  - 'office!OneNote.InkStrokeCollection:class'
+  - 'office!OneNote.InkWord:class'
+  - 'office!OneNote.InkWordCollection:class'
+  - 'office!OneNote.Notebook:class'
+  - 'office!OneNote.NotebookCollection:class'
+  - 'office!OneNote.NoteTag:class'
+  - 'office!OneNote.Outline:class'
+  - 'office!OneNote.Page:class'
+  - 'office!OneNote.PageCollection:class'
+  - 'office!OneNote.PageContent:class'
+  - 'office!OneNote.PageContentCollection:class'
+  - 'office!OneNote.Paragraph:class'
+  - 'office!OneNote.ParagraphCollection:class'
+  - 'office!OneNote.Point:class'
+  - 'office!OneNote.PointCollection:class'
+  - 'office!OneNote.RequestContext:class'
+  - 'office!OneNote.RichText:class'
+  - 'office!OneNote.Section:class'
+  - 'office!OneNote.SectionCollection:class'
+  - 'office!OneNote.SectionGroup:class'
+  - 'office!OneNote.SectionGroupCollection:class'
+  - 'office!OneNote.Table:class'
+  - 'office!OneNote.TableCell:class'
+  - 'office!OneNote.TableCellCollection:class'
+  - 'office!OneNote.TableRow:class'
+  - 'office!OneNote.TableRowCollection:class'
+  - 'office!PowerPoint.Application:class'
+  - 'office!PowerPoint.BulletFormat:class'
+  - 'office!PowerPoint.ParagraphFormat:class'
+  - 'office!PowerPoint.Presentation:class'
+  - 'office!PowerPoint.RequestContext:class'
+  - 'office!PowerPoint.Shape:class'
+  - 'office!PowerPoint.ShapeCollection:class'
+  - 'office!PowerPoint.ShapeFill:class'
+  - 'office!PowerPoint.ShapeFont:class'
+  - 'office!PowerPoint.ShapeLineFormat:class'
+  - 'office!PowerPoint.ShapeScopedCollection:class'
+  - 'office!PowerPoint.Slide:class'
+  - 'office!PowerPoint.SlideCollection:class'
+  - 'office!PowerPoint.SlideLayout:class'
+  - 'office!PowerPoint.SlideLayoutCollection:class'
+  - 'office!PowerPoint.SlideMaster:class'
+  - 'office!PowerPoint.SlideMasterCollection:class'
+  - 'office!PowerPoint.SlideScopedCollection:class'
+  - 'office!PowerPoint.Tag:class'
+  - 'office!PowerPoint.TagCollection:class'
+  - 'office!PowerPoint.TextFrame:class'
+  - 'office!PowerPoint.TextRange:class'
+  - 'office!Visio.Application:class'
+  - 'office!Visio.Comment:class'
+  - 'office!Visio.CommentCollection:class'
+  - 'office!Visio.Document:class'
+  - 'office!Visio.DocumentView:class'
+  - 'office!Visio.Hyperlink:class'
+  - 'office!Visio.HyperlinkCollection:class'
+  - 'office!Visio.Page:class'
+  - 'office!Visio.PageCollection:class'
+  - 'office!Visio.PageView:class'
+  - 'office!Visio.RequestContext:class'
+  - 'office!Visio.Selection:class'
+  - 'office!Visio.Shape:class'
+  - 'office!Visio.ShapeCollection:class'
+  - 'office!Visio.ShapeDataItem:class'
+  - 'office!Visio.ShapeDataItemCollection:class'
+  - 'office!Visio.ShapeView:class'
+  - 'office!Word.Application:class'
+  - 'office!Word.Body:class'
+  - 'office!Word.Comment:class'
+  - 'office!Word.CommentCollection:class'
+  - 'office!Word.CommentContentRange:class'
+  - 'office!Word.CommentReply:class'
+  - 'office!Word.CommentReplyCollection:class'
+  - 'office!Word.ContentControl:class'
+  - 'office!Word.ContentControlCollection:class'
+  - 'office!Word.CustomProperty:class'
+  - 'office!Word.CustomPropertyCollection:class'
+  - 'office!Word.CustomXmlPart:class'
+  - 'office!Word.CustomXmlPartCollection:class'
+  - 'office!Word.CustomXmlPartScopedCollection:class'
+  - 'office!Word.Document:class'
+  - 'office!Word.DocumentCreated:class'
+  - 'office!Word.DocumentProperties:class'
+  - 'office!Word.Field:class'
+  - 'office!Word.FieldCollection:class'
+  - 'office!Word.Font:class'
+  - 'office!Word.InlinePicture:class'
+  - 'office!Word.InlinePictureCollection:class'
+  - 'office!Word.List:class'
+  - 'office!Word.ListCollection:class'
+  - 'office!Word.ListItem:class'
+  - 'office!Word.ListLevel:class'
+  - 'office!Word.ListLevelCollection:class'
+  - 'office!Word.ListTemplate:class'
+  - 'office!Word.NoteItem:class'
+  - 'office!Word.NoteItemCollection:class'
+  - 'office!Word.Paragraph:class'
+  - 'office!Word.ParagraphCollection:class'
+  - 'office!Word.ParagraphFormat:class'
+  - 'office!Word.Range:class'
+  - 'office!Word.RangeCollection:class'
+  - 'office!Word.RequestContext:class'
+  - 'office!Word.SearchOptions:class'
+  - 'office!Word.Section:class'
+  - 'office!Word.SectionCollection:class'
+  - 'office!Word.Setting:class'
+  - 'office!Word.SettingCollection:class'
+  - 'office!Word.Style:class'
+  - 'office!Word.StyleCollection:class'
+  - 'office!Word.Table:class'
+  - 'office!Word.TableBorder:class'
+  - 'office!Word.TableCell:class'
+  - 'office!Word.TableCellCollection:class'
+  - 'office!Word.TableCollection:class'
+  - 'office!Word.TableRow:class'
+  - 'office!Word.TableRowCollection:class'
+interfaces:
+  - 'office!Excel.AllowEditRangeOptions:interface'
+  - 'office!Excel.ArrayCellValue:interface'
+  - 'office!Excel.Base64EncodedImage:interface'
+  - 'office!Excel.BasicDataValidation:interface'
+  - 'office!Excel.BindingDataChangedEventArgs:interface'
+  - 'office!Excel.BindingSelectionChangedEventArgs:interface'
+  - 'office!Excel.BlockedErrorCellValue:interface'
+  - 'office!Excel.BooleanCellValue:interface'
+  - 'office!Excel.BusyErrorCellValue:interface'
+  - 'office!Excel.CalcErrorCellValue:interface'
+  - 'office!Excel.CardLayoutListSection:interface'
+  - 'office!Excel.CardLayoutPropertyReference:interface'
+  - 'office!Excel.CardLayoutSectionStandardProperties:interface'
+  - 'office!Excel.CardLayoutStandardProperties:interface'
+  - 'office!Excel.CardLayoutTableSection:interface'
+  - 'office!Excel.CellBorder:interface'
+  - 'office!Excel.CellBorderCollection:interface'
+  - 'office!Excel.CellProperties:interface'
+  - 'office!Excel.CellPropertiesBorderLoadOptions:interface'
+  - 'office!Excel.CellPropertiesFill:interface'
+  - 'office!Excel.CellPropertiesFillLoadOptions:interface'
+  - 'office!Excel.CellPropertiesFont:interface'
+  - 'office!Excel.CellPropertiesFontLoadOptions:interface'
+  - 'office!Excel.CellPropertiesFormat:interface'
+  - 'office!Excel.CellPropertiesFormatLoadOptions:interface'
+  - 'office!Excel.CellPropertiesLoadOptions:interface'
+  - 'office!Excel.CellPropertiesProtection:interface'
+  - 'office!Excel.CellValueAttributionAttributes:interface'
+  - 'office!Excel.CellValueExtraProperties:interface'
+  - 'office!Excel.CellValuePropertyMetadata:interface'
+  - 'office!Excel.CellValuePropertyMetadataExclusions:interface'
+  - 'office!Excel.CellValueProviderAttributes:interface'
+  - 'office!Excel.ChangedEventDetail:interface'
+  - 'office!Excel.ChangeDirectionState:interface'
+  - 'office!Excel.ChartActivatedEventArgs:interface'
+  - 'office!Excel.ChartAddedEventArgs:interface'
+  - 'office!Excel.ChartDeactivatedEventArgs:interface'
+  - 'office!Excel.ChartDeletedEventArgs:interface'
+  - 'office!Excel.ColumnProperties:interface'
+  - 'office!Excel.ColumnPropertiesLoadOptions:interface'
+  - 'office!Excel.CommentAddedEventArgs:interface'
+  - 'office!Excel.CommentChangedEventArgs:interface'
+  - 'office!Excel.CommentDeletedEventArgs:interface'
+  - 'office!Excel.CommentDetail:interface'
+  - 'office!Excel.CommentMention:interface'
+  - 'office!Excel.CommentRichContent:interface'
+  - 'office!Excel.ConditionalCellValueRule:interface'
+  - 'office!Excel.ConditionalColorScaleCriteria:interface'
+  - 'office!Excel.ConditionalColorScaleCriterion:interface'
+  - 'office!Excel.ConditionalDataBarRule:interface'
+  - 'office!Excel.ConditionalIconCriterion:interface'
+  - 'office!Excel.ConditionalPresetCriteriaRule:interface'
+  - 'office!Excel.ConditionalTextComparisonRule:interface'
+  - 'office!Excel.ConditionalTopBottomRule:interface'
+  - 'office!Excel.ConnectErrorCellValue:interface'
+  - 'office!Excel.CustomDataValidation:interface'
+  - 'office!Excel.DataValidationErrorAlert:interface'
+  - 'office!Excel.DataValidationPrompt:interface'
+  - 'office!Excel.DataValidationRule:interface'
+  - 'office!Excel.DateTimeDataValidation:interface'
+  - 'office!Excel.Div0ErrorCellValue:interface'
+  - 'office!Excel.DocumentTaskChangeProperties:interface'
+  - 'office!Excel.DocumentTaskSchedule:interface'
+  - 'office!Excel.DoubleCellValue:interface'
+  - 'office!Excel.EmailIdentity:interface'
+  - 'office!Excel.EmptyCellValue:interface'
+  - 'office!Excel.EntityArrayCardLayout:interface'
+  - 'office!Excel.EntityCardLayout:interface'
+  - 'office!Excel.EntityCellValue:interface'
+  - 'office!Excel.EntityCompactLayout:interface'
+  - 'office!Excel.EntityPropertyExtraProperties:interface'
+  - 'office!Excel.EntityViewLayouts:interface'
+  - 'office!Excel.ExternalErrorCellValue:interface'
+  - 'office!Excel.FieldErrorCellValue:interface'
+  - 'office!Excel.FilterCriteria:interface'
+  - 'office!Excel.FilterDatetime:interface'
+  - 'office!Excel.FiveArrowsGraySet:interface'
+  - 'office!Excel.FiveArrowsSet:interface'
+  - 'office!Excel.FiveBoxesSet:interface'
+  - 'office!Excel.FiveQuartersSet:interface'
+  - 'office!Excel.FiveRatingSet:interface'
+  - 'office!Excel.FormattedNumberCellValue:interface'
+  - 'office!Excel.FormulaChangedEventDetail:interface'
+  - 'office!Excel.FourArrowsGraySet:interface'
+  - 'office!Excel.FourArrowsSet:interface'
+  - 'office!Excel.FourRatingSet:interface'
+  - 'office!Excel.FourRedToBlackSet:interface'
+  - 'office!Excel.FourTrafficLightsSet:interface'
+  - 'office!Excel.GettingDataErrorCellValue:interface'
+  - 'office!Excel.Icon:interface'
+  - 'office!Excel.IconCollections:interface'
+  - 'office!Excel.Identity:interface'
+  - 'office!Excel.InsertWorksheetOptions:interface'
+  - 'office!Excel.Interfaces.AllowEditRangeCollectionData:interface'
+  - 'office!Excel.Interfaces.AllowEditRangeCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.AllowEditRangeCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.AllowEditRangeData:interface'
+  - 'office!Excel.Interfaces.AllowEditRangeLoadOptions:interface'
+  - 'office!Excel.Interfaces.AllowEditRangeUpdateData:interface'
+  - 'office!Excel.Interfaces.ApplicationData:interface'
+  - 'office!Excel.Interfaces.ApplicationLoadOptions:interface'
+  - 'office!Excel.Interfaces.ApplicationUpdateData:interface'
+  - 'office!Excel.Interfaces.AutoFilterData:interface'
+  - 'office!Excel.Interfaces.AutoFilterLoadOptions:interface'
+  - 'office!Excel.Interfaces.BindingCollectionData:interface'
+  - 'office!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.BindingCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.BindingData:interface'
+  - 'office!Excel.Interfaces.BindingLoadOptions:interface'
+  - 'office!Excel.Interfaces.CellValueConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartAreaFormatData:interface'
+  - 'office!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartAxesData:interface'
+  - 'office!Excel.Interfaces.ChartAxesLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartAxesUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartAxisData:interface'
+  - 'office!Excel.Interfaces.ChartAxisFormatData:interface'
+  - 'office!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartAxisLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartAxisTitleData:interface'
+  - 'office!Excel.Interfaces.ChartAxisTitleFormatData:interface'
+  - 'office!Excel.Interfaces.ChartAxisTitleFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartAxisUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartBinOptionsData:interface'
+  - 'office!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartBinOptionsUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartBorderData:interface'
+  - 'office!Excel.Interfaces.ChartBorderLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartBorderUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartBoxwhiskerOptionsData:interface'
+  - 'office!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartCollectionData:interface'
+  - 'office!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartData:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelData:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelFormatData:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelsData:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartDataLabelUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartDataTableData:interface'
+  - 'office!Excel.Interfaces.ChartDataTableFormatData:interface'
+  - 'office!Excel.Interfaces.ChartDataTableFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartDataTableFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartDataTableLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartDataTableUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartErrorBarsData:interface'
+  - 'office!Excel.Interfaces.ChartErrorBarsFormatData:interface'
+  - 'office!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartErrorBarsUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartFontData:interface'
+  - 'office!Excel.Interfaces.ChartFontLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartFontUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartFormatStringData:interface'
+  - 'office!Excel.Interfaces.ChartFormatStringLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartFormatStringUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartGridlinesData:interface'
+  - 'office!Excel.Interfaces.ChartGridlinesFormatData:interface'
+  - 'office!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartGridlinesLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartGridlinesUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartLegendData:interface'
+  - 'office!Excel.Interfaces.ChartLegendEntryCollectionData:interface'
+  - 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartLegendEntryCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartLegendEntryData:interface'
+  - 'office!Excel.Interfaces.ChartLegendEntryLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartLegendEntryUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartLegendFormatData:interface'
+  - 'office!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartLegendLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartLegendUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartLineFormatData:interface'
+  - 'office!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartLineFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartMapOptionsData:interface'
+  - 'office!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartMapOptionsUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartPivotOptionsData:interface'
+  - 'office!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartPlotAreaData:interface'
+  - 'office!Excel.Interfaces.ChartPlotAreaFormatData:interface'
+  - 'office!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartPlotAreaFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartPointData:interface'
+  - 'office!Excel.Interfaces.ChartPointFormatData:interface'
+  - 'office!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartPointFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartPointLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartPointsCollectionData:interface'
+  - 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartPointsCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartPointUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartSeriesCollectionData:interface'
+  - 'office!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartSeriesCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartSeriesData:interface'
+  - 'office!Excel.Interfaces.ChartSeriesFormatData:interface'
+  - 'office!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartSeriesLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartSeriesUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartTitleData:interface'
+  - 'office!Excel.Interfaces.ChartTitleFormatData:interface'
+  - 'office!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartTitleFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartTitleLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartTitleUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineCollectionData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineFormatData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineLabelData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineLabelFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineLabelLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineLoadOptions:interface'
+  - 'office!Excel.Interfaces.ChartTrendlineUpdateData:interface'
+  - 'office!Excel.Interfaces.ChartUpdateData:interface'
+  - 'office!Excel.Interfaces.CollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ColorScaleConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ColorScaleConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.CommentCollectionData:interface'
+  - 'office!Excel.Interfaces.CommentCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.CommentCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.CommentData:interface'
+  - 'office!Excel.Interfaces.CommentLoadOptions:interface'
+  - 'office!Excel.Interfaces.CommentReplyCollectionData:interface'
+  - 'office!Excel.Interfaces.CommentReplyCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.CommentReplyCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.CommentReplyData:interface'
+  - 'office!Excel.Interfaces.CommentReplyLoadOptions:interface'
+  - 'office!Excel.Interfaces.CommentReplyUpdateData:interface'
+  - 'office!Excel.Interfaces.CommentUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
+  - 'office!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
+  - 'office!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatCollectionData:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatRuleData:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeBorderData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeBorderLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFillData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFillLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFillUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFontData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFontUpdateData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFormatData:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.CultureInfoData:interface'
+  - 'office!Excel.Interfaces.CultureInfoLoadOptions:interface'
+  - 'office!Excel.Interfaces.CustomConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.CustomPropertyCollectionData:interface'
+  - 'office!Excel.Interfaces.CustomPropertyCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.CustomPropertyCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.CustomPropertyData:interface'
+  - 'office!Excel.Interfaces.CustomPropertyLoadOptions:interface'
+  - 'office!Excel.Interfaces.CustomPropertyUpdateData:interface'
+  - 'office!Excel.Interfaces.CustomXmlPartCollectionData:interface'
+  - 'office!Excel.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.CustomXmlPartCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.CustomXmlPartData:interface'
+  - 'office!Excel.Interfaces.CustomXmlPartLoadOptions:interface'
+  - 'office!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface'
+  - 'office!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.DataBarConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.DataBarConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.DataBarConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.DataPivotHierarchyCollectionData:interface'
+  - 'office!Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.DataPivotHierarchyData:interface'
+  - 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions:interface'
+  - 'office!Excel.Interfaces.DataPivotHierarchyUpdateData:interface'
+  - 'office!Excel.Interfaces.DataValidationData:interface'
+  - 'office!Excel.Interfaces.DataValidationLoadOptions:interface'
+  - 'office!Excel.Interfaces.DataValidationUpdateData:interface'
+  - 'office!Excel.Interfaces.DatetimeFormatInfoData:interface'
+  - 'office!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
+  - 'office!Excel.Interfaces.DocumentPropertiesData:interface'
+  - 'office!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - 'office!Excel.Interfaces.DocumentPropertiesUpdateData:interface'
+  - 'office!Excel.Interfaces.DocumentTaskChangeCollectionData:interface'
+  - 'office!Excel.Interfaces.DocumentTaskChangeCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.DocumentTaskChangeCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.DocumentTaskChangeData:interface'
+  - 'office!Excel.Interfaces.DocumentTaskChangeLoadOptions:interface'
+  - 'office!Excel.Interfaces.DocumentTaskCollectionData:interface'
+  - 'office!Excel.Interfaces.DocumentTaskCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.DocumentTaskCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.DocumentTaskData:interface'
+  - 'office!Excel.Interfaces.DocumentTaskLoadOptions:interface'
+  - 'office!Excel.Interfaces.DocumentTaskUpdateData:interface'
+  - 'office!Excel.Interfaces.FilterData:interface'
+  - 'office!Excel.Interfaces.FilterLoadOptions:interface'
+  - 'office!Excel.Interfaces.FilterPivotHierarchyCollectionData:interface'
+  - 'office!Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.FilterPivotHierarchyCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.FilterPivotHierarchyData:interface'
+  - 'office!Excel.Interfaces.FilterPivotHierarchyLoadOptions:interface'
+  - 'office!Excel.Interfaces.FilterPivotHierarchyUpdateData:interface'
+  - 'office!Excel.Interfaces.FormatProtectionData:interface'
+  - 'office!Excel.Interfaces.FormatProtectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.FormatProtectionUpdateData:interface'
+  - 'office!Excel.Interfaces.FunctionResultData:interface'
+  - 'office!Excel.Interfaces.FunctionResultLoadOptions:interface'
+  - 'office!Excel.Interfaces.GeometricShapeData:interface'
+  - 'office!Excel.Interfaces.GeometricShapeLoadOptions:interface'
+  - 'office!Excel.Interfaces.GroupShapeCollectionData:interface'
+  - 'office!Excel.Interfaces.GroupShapeCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.GroupShapeCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.HeaderFooterData:interface'
+  - 'office!Excel.Interfaces.HeaderFooterGroupData:interface'
+  - 'office!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface'
+  - 'office!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
+  - 'office!Excel.Interfaces.HeaderFooterLoadOptions:interface'
+  - 'office!Excel.Interfaces.HeaderFooterUpdateData:interface'
+  - 'office!Excel.Interfaces.IconSetConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.IconSetConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ImageData:interface'
+  - 'office!Excel.Interfaces.ImageLoadOptions:interface'
+  - 'office!Excel.Interfaces.IterativeCalculationData:interface'
+  - 'office!Excel.Interfaces.IterativeCalculationLoadOptions:interface'
+  - 'office!Excel.Interfaces.IterativeCalculationUpdateData:interface'
+  - 'office!Excel.Interfaces.LineData:interface'
+  - 'office!Excel.Interfaces.LineLoadOptions:interface'
+  - 'office!Excel.Interfaces.LineUpdateData:interface'
+  - 'office!Excel.Interfaces.LinkedDataTypeCollectionData:interface'
+  - 'office!Excel.Interfaces.LinkedDataTypeCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.LinkedDataTypeCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.LinkedDataTypeData:interface'
+  - 'office!Excel.Interfaces.LinkedDataTypeLoadOptions:interface'
+  - 'office!Excel.Interfaces.LinkedWorkbookCollectionData:interface'
+  - 'office!Excel.Interfaces.LinkedWorkbookCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.LinkedWorkbookCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.LinkedWorkbookData:interface'
+  - 'office!Excel.Interfaces.LinkedWorkbookLoadOptions:interface'
+  - 'office!Excel.Interfaces.NamedItemArrayValuesData:interface'
+  - 'office!Excel.Interfaces.NamedItemArrayValuesLoadOptions:interface'
+  - 'office!Excel.Interfaces.NamedItemCollectionData:interface'
+  - 'office!Excel.Interfaces.NamedItemCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.NamedItemCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.NamedItemData:interface'
+  - 'office!Excel.Interfaces.NamedItemLoadOptions:interface'
+  - 'office!Excel.Interfaces.NamedItemUpdateData:interface'
+  - 'office!Excel.Interfaces.NamedSheetViewCollectionData:interface'
+  - 'office!Excel.Interfaces.NamedSheetViewCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.NamedSheetViewCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.NamedSheetViewData:interface'
+  - 'office!Excel.Interfaces.NamedSheetViewLoadOptions:interface'
+  - 'office!Excel.Interfaces.NamedSheetViewUpdateData:interface'
+  - 'office!Excel.Interfaces.NumberFormatInfoData:interface'
+  - 'office!Excel.Interfaces.NumberFormatInfoLoadOptions:interface'
+  - 'office!Excel.Interfaces.PageBreakCollectionData:interface'
+  - 'office!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.PageBreakCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.PageBreakData:interface'
+  - 'office!Excel.Interfaces.PageBreakLoadOptions:interface'
+  - 'office!Excel.Interfaces.PageLayoutData:interface'
+  - 'office!Excel.Interfaces.PageLayoutLoadOptions:interface'
+  - 'office!Excel.Interfaces.PageLayoutUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotFieldCollectionData:interface'
+  - 'office!Excel.Interfaces.PivotFieldCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotFieldCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotFieldData:interface'
+  - 'office!Excel.Interfaces.PivotFieldLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotFieldUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotHierarchyCollectionData:interface'
+  - 'office!Excel.Interfaces.PivotHierarchyCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotHierarchyCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotHierarchyData:interface'
+  - 'office!Excel.Interfaces.PivotHierarchyLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotHierarchyUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotItemCollectionData:interface'
+  - 'office!Excel.Interfaces.PivotItemCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotItemCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotItemData:interface'
+  - 'office!Excel.Interfaces.PivotItemLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotItemUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotLayoutData:interface'
+  - 'office!Excel.Interfaces.PivotLayoutLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotLayoutUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotTableCollectionData:interface'
+  - 'office!Excel.Interfaces.PivotTableCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotTableCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotTableData:interface'
+  - 'office!Excel.Interfaces.PivotTableLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotTableScopedCollectionData:interface'
+  - 'office!Excel.Interfaces.PivotTableScopedCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotTableScopedCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotTableStyleCollectionData:interface'
+  - 'office!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotTableStyleData:interface'
+  - 'office!Excel.Interfaces.PivotTableStyleLoadOptions:interface'
+  - 'office!Excel.Interfaces.PivotTableStyleUpdateData:interface'
+  - 'office!Excel.Interfaces.PivotTableUpdateData:interface'
+  - 'office!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.QueryCollectionData:interface'
+  - 'office!Excel.Interfaces.QueryCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.QueryCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.QueryData:interface'
+  - 'office!Excel.Interfaces.QueryLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeAreasCollectionData:interface'
+  - 'office!Excel.Interfaces.RangeAreasCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeAreasCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeAreasData:interface'
+  - 'office!Excel.Interfaces.RangeAreasLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeAreasUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeBorderCollectionData:interface'
+  - 'office!Excel.Interfaces.RangeBorderCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeBorderCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeBorderData:interface'
+  - 'office!Excel.Interfaces.RangeBorderLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeBorderUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeCollectionData:interface'
+  - 'office!Excel.Interfaces.RangeCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeData:interface'
+  - 'office!Excel.Interfaces.RangeFillData:interface'
+  - 'office!Excel.Interfaces.RangeFillLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeFillUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeFontData:interface'
+  - 'office!Excel.Interfaces.RangeFontLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeFontUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeFormatData:interface'
+  - 'office!Excel.Interfaces.RangeFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeViewCollectionData:interface'
+  - 'office!Excel.Interfaces.RangeViewCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeViewCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.RangeViewData:interface'
+  - 'office!Excel.Interfaces.RangeViewLoadOptions:interface'
+  - 'office!Excel.Interfaces.RangeViewUpdateData:interface'
+  - 'office!Excel.Interfaces.RemoveDuplicatesResultData:interface'
+  - 'office!Excel.Interfaces.RemoveDuplicatesResultLoadOptions:interface'
+  - 'office!Excel.Interfaces.RowColumnPivotHierarchyCollectionData:interface'
+  - 'office!Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
+  - 'office!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions:interface'
+  - 'office!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface'
+  - 'office!Excel.Interfaces.RuntimeData:interface'
+  - 'office!Excel.Interfaces.RuntimeLoadOptions:interface'
+  - 'office!Excel.Interfaces.RuntimeUpdateData:interface'
+  - 'office!Excel.Interfaces.SettingCollectionData:interface'
+  - 'office!Excel.Interfaces.SettingCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.SettingCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.SettingData:interface'
+  - 'office!Excel.Interfaces.SettingLoadOptions:interface'
+  - 'office!Excel.Interfaces.SettingUpdateData:interface'
+  - 'office!Excel.Interfaces.ShapeCollectionData:interface'
+  - 'office!Excel.Interfaces.ShapeCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.ShapeCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.ShapeData:interface'
+  - 'office!Excel.Interfaces.ShapeFillData:interface'
+  - 'office!Excel.Interfaces.ShapeFillLoadOptions:interface'
+  - 'office!Excel.Interfaces.ShapeFillUpdateData:interface'
+  - 'office!Excel.Interfaces.ShapeFontData:interface'
+  - 'office!Excel.Interfaces.ShapeFontLoadOptions:interface'
+  - 'office!Excel.Interfaces.ShapeFontUpdateData:interface'
+  - 'office!Excel.Interfaces.ShapeGroupData:interface'
+  - 'office!Excel.Interfaces.ShapeGroupLoadOptions:interface'
+  - 'office!Excel.Interfaces.ShapeLineFormatData:interface'
+  - 'office!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.ShapeLoadOptions:interface'
+  - 'office!Excel.Interfaces.ShapeUpdateData:interface'
+  - 'office!Excel.Interfaces.SlicerCollectionData:interface'
+  - 'office!Excel.Interfaces.SlicerCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.SlicerCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.SlicerData:interface'
+  - 'office!Excel.Interfaces.SlicerItemCollectionData:interface'
+  - 'office!Excel.Interfaces.SlicerItemCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.SlicerItemCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.SlicerItemData:interface'
+  - 'office!Excel.Interfaces.SlicerItemLoadOptions:interface'
+  - 'office!Excel.Interfaces.SlicerItemUpdateData:interface'
+  - 'office!Excel.Interfaces.SlicerLoadOptions:interface'
+  - 'office!Excel.Interfaces.SlicerStyleCollectionData:interface'
+  - 'office!Excel.Interfaces.SlicerStyleCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.SlicerStyleData:interface'
+  - 'office!Excel.Interfaces.SlicerStyleLoadOptions:interface'
+  - 'office!Excel.Interfaces.SlicerStyleUpdateData:interface'
+  - 'office!Excel.Interfaces.SlicerUpdateData:interface'
+  - 'office!Excel.Interfaces.StyleCollectionData:interface'
+  - 'office!Excel.Interfaces.StyleCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.StyleCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.StyleData:interface'
+  - 'office!Excel.Interfaces.StyleLoadOptions:interface'
+  - 'office!Excel.Interfaces.StyleUpdateData:interface'
+  - 'office!Excel.Interfaces.TableCollectionData:interface'
+  - 'office!Excel.Interfaces.TableCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.TableColumnCollectionData:interface'
+  - 'office!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableColumnCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.TableColumnData:interface'
+  - 'office!Excel.Interfaces.TableColumnLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableColumnUpdateData:interface'
+  - 'office!Excel.Interfaces.TableData:interface'
+  - 'office!Excel.Interfaces.TableLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableRowCollectionData:interface'
+  - 'office!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableRowCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.TableRowData:interface'
+  - 'office!Excel.Interfaces.TableRowLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableRowUpdateData:interface'
+  - 'office!Excel.Interfaces.TableScopedCollectionData:interface'
+  - 'office!Excel.Interfaces.TableScopedCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableScopedCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.TableSortData:interface'
+  - 'office!Excel.Interfaces.TableSortLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableStyleCollectionData:interface'
+  - 'office!Excel.Interfaces.TableStyleCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableStyleCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.TableStyleData:interface'
+  - 'office!Excel.Interfaces.TableStyleLoadOptions:interface'
+  - 'office!Excel.Interfaces.TableStyleUpdateData:interface'
+  - 'office!Excel.Interfaces.TableUpdateData:interface'
+  - 'office!Excel.Interfaces.TextConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.TextFrameData:interface'
+  - 'office!Excel.Interfaces.TextFrameLoadOptions:interface'
+  - 'office!Excel.Interfaces.TextFrameUpdateData:interface'
+  - 'office!Excel.Interfaces.TextRangeData:interface'
+  - 'office!Excel.Interfaces.TextRangeLoadOptions:interface'
+  - 'office!Excel.Interfaces.TextRangeUpdateData:interface'
+  - 'office!Excel.Interfaces.TimelineStyleCollectionData:interface'
+  - 'office!Excel.Interfaces.TimelineStyleCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.TimelineStyleData:interface'
+  - 'office!Excel.Interfaces.TimelineStyleLoadOptions:interface'
+  - 'office!Excel.Interfaces.TimelineStyleUpdateData:interface'
+  - 'office!Excel.Interfaces.TopBottomConditionalFormatData:interface'
+  - 'office!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
+  - 'office!Excel.Interfaces.TopBottomConditionalFormatUpdateData:interface'
+  - 'office!Excel.Interfaces.WorkbookCreatedData:interface'
+  - 'office!Excel.Interfaces.WorkbookData:interface'
+  - 'office!Excel.Interfaces.WorkbookLoadOptions:interface'
+  - 'office!Excel.Interfaces.WorkbookProtectionData:interface'
+  - 'office!Excel.Interfaces.WorkbookProtectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.WorkbookRangeAreasData:interface'
+  - 'office!Excel.Interfaces.WorkbookRangeAreasLoadOptions:interface'
+  - 'office!Excel.Interfaces.WorkbookUpdateData:interface'
+  - 'office!Excel.Interfaces.WorksheetCollectionData:interface'
+  - 'office!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.WorksheetCustomPropertyCollectionData:interface'
+  - 'office!Excel.Interfaces.WorksheetCustomPropertyCollectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
+  - 'office!Excel.Interfaces.WorksheetCustomPropertyData:interface'
+  - 'office!Excel.Interfaces.WorksheetCustomPropertyLoadOptions:interface'
+  - 'office!Excel.Interfaces.WorksheetCustomPropertyUpdateData:interface'
+  - 'office!Excel.Interfaces.WorksheetData:interface'
+  - 'office!Excel.Interfaces.WorksheetLoadOptions:interface'
+  - 'office!Excel.Interfaces.WorksheetProtectionData:interface'
+  - 'office!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+  - 'office!Excel.Interfaces.WorksheetUpdateData:interface'
+  - 'office!Excel.LinkedDataTypeAddedEventArgs:interface'
+  - 'office!Excel.LinkedEntityCellValue:interface'
+  - 'office!Excel.LinkedEntityId:interface'
+  - 'office!Excel.ListDataValidation:interface'
+  - 'office!Excel.LocalImageCellValue:interface'
+  - 'office!Excel.LocalImageCellValueCacheId:interface'
+  - 'office!Excel.NameErrorCellValue:interface'
+  - 'office!Excel.NotAvailableErrorCellValue:interface'
+  - 'office!Excel.NullErrorCellValue:interface'
+  - 'office!Excel.NumErrorCellValue:interface'
+  - 'office!Excel.PageLayoutMarginOptions:interface'
+  - 'office!Excel.PageLayoutZoomOptions:interface'
+  - 'office!Excel.PivotDateFilter:interface'
+  - 'office!Excel.PivotFilters:interface'
+  - 'office!Excel.PivotLabelFilter:interface'
+  - 'office!Excel.PivotManualFilter:interface'
+  - 'office!Excel.PivotValueFilter:interface'
+  - 'office!Excel.PlaceholderErrorCellValue:interface'
+  - 'office!Excel.RangeHyperlink:interface'
+  - 'office!Excel.RangeReference:interface'
+  - 'office!Excel.ReferenceCellValue:interface'
+  - 'office!Excel.RefErrorCellValue:interface'
+  - 'office!Excel.RefreshModeChangedEventArgs:interface'
+  - 'office!Excel.RefreshRequestCompletedEventArgs:interface'
+  - 'office!Excel.ReplaceCriteria:interface'
+  - 'office!Excel.RootReferenceCellValue:interface'
+  - 'office!Excel.RowProperties:interface'
+  - 'office!Excel.RowPropertiesLoadOptions:interface'
+  - 'office!Excel.RunOptions:interface'
+  - 'office!Excel.SearchCriteria:interface'
+  - 'office!Excel.SelectionChangedEventArgs:interface'
+  - 'office!Excel.Session:interface'
+  - 'office!Excel.SettableCellProperties:interface'
+  - 'office!Excel.SettableColumnProperties:interface'
+  - 'office!Excel.SettableRowProperties:interface'
+  - 'office!Excel.SettingsChangedEventArgs:interface'
+  - 'office!Excel.ShapeActivatedEventArgs:interface'
+  - 'office!Excel.ShapeDeactivatedEventArgs:interface'
+  - 'office!Excel.ShowAsRule:interface'
+  - 'office!Excel.SortField:interface'
+  - 'office!Excel.SpillErrorCellValue:interface'
+  - 'office!Excel.StringCellValue:interface'
+  - 'office!Excel.Subtotals:interface'
+  - 'office!Excel.TableAddedEventArgs:interface'
+  - 'office!Excel.TableChangedEventArgs:interface'
+  - 'office!Excel.TableDeletedEventArgs:interface'
+  - 'office!Excel.TableFilteredEventArgs:interface'
+  - 'office!Excel.TableSelectionChangedEventArgs:interface'
+  - 'office!Excel.ThreeArrowsGraySet:interface'
+  - 'office!Excel.ThreeArrowsSet:interface'
+  - 'office!Excel.ThreeFlagsSet:interface'
+  - 'office!Excel.ThreeSignsSet:interface'
+  - 'office!Excel.ThreeStarsSet:interface'
+  - 'office!Excel.ThreeSymbols2Set:interface'
+  - 'office!Excel.ThreeSymbolsSet:interface'
+  - 'office!Excel.ThreeTrafficLights1Set:interface'
+  - 'office!Excel.ThreeTrafficLights2Set:interface'
+  - 'office!Excel.ThreeTrianglesSet:interface'
+  - 'office!Excel.ValueErrorCellValue:interface'
+  - 'office!Excel.ValueTypeNotAvailableCellValue:interface'
+  - 'office!Excel.WebImageCellValue:interface'
+  - 'office!Excel.WorkbookActivatedEventArgs:interface'
+  - 'office!Excel.WorkbookAutoSaveSettingChangedEventArgs:interface'
+  - 'office!Excel.WorksheetActivatedEventArgs:interface'
+  - 'office!Excel.WorksheetAddedEventArgs:interface'
+  - 'office!Excel.WorksheetCalculatedEventArgs:interface'
+  - 'office!Excel.WorksheetChangedEventArgs:interface'
+  - 'office!Excel.WorksheetColumnSortedEventArgs:interface'
+  - 'office!Excel.WorksheetDeactivatedEventArgs:interface'
+  - 'office!Excel.WorksheetDeletedEventArgs:interface'
+  - 'office!Excel.WorksheetFilteredEventArgs:interface'
+  - 'office!Excel.WorksheetFormatChangedEventArgs:interface'
+  - 'office!Excel.WorksheetFormulaChangedEventArgs:interface'
+  - 'office!Excel.WorksheetMovedEventArgs:interface'
+  - 'office!Excel.WorksheetNameChangedEventArgs:interface'
+  - 'office!Excel.WorksheetProtectionChangedEventArgs:interface'
+  - 'office!Excel.WorksheetProtectionOptions:interface'
+  - 'office!Excel.WorksheetRowHiddenChangedEventArgs:interface'
+  - 'office!Excel.WorksheetRowSortedEventArgs:interface'
+  - 'office!Excel.WorksheetSearchCriteria:interface'
+  - 'office!Excel.WorksheetSelectionChangedEventArgs:interface'
+  - 'office!Excel.WorksheetSingleClickedEventArgs:interface'
+  - 'office!Excel.WorksheetVisibilityChangedEventArgs:interface'
+  - 'office!Office.Actions:interface'
+  - 'office!Office.AddBindingFromNamedItemOptions:interface'
+  - 'office!Office.AddBindingFromPromptOptions:interface'
+  - 'office!Office.AddBindingFromSelectionOptions:interface'
+  - 'office!Office.Addin:interface'
+  - 'office!Office.AddinCommands.Event:interface'
+  - 'office!Office.AddinCommands.EventCompletedOptions:interface'
+  - 'office!Office.AddinCommands.Source:interface'
+  - 'office!Office.Appointment:interface'
+  - 'office!Office.AppointmentCompose:interface'
+  - 'office!Office.AppointmentForm:interface'
+  - 'office!Office.AppointmentRead:interface'
+  - 'office!Office.AppointmentTimeChangedEventArgs:interface'
+  - 'office!Office.AsyncContextOptions:interface'
+  - 'office!Office.AsyncResult:interface'
+  - 'office!Office.AttachmentContent:interface'
+  - 'office!Office.AttachmentDetails:interface'
+  - 'office!Office.AttachmentDetailsCompose:interface'
+  - 'office!Office.AttachmentsChangedEventArgs:interface'
+  - 'office!Office.Auth:interface'
+  - 'office!Office.AuthOptions:interface'
+  - 'office!Office.BeforeDocumentCloseNotification:interface'
+  - 'office!Office.Binding:interface'
+  - 'office!Office.BindingDataChangedEventArgs:interface'
+  - 'office!Office.Bindings:interface'
+  - 'office!Office.BindingSelectionChangedEventArgs:interface'
+  - 'office!Office.Body:interface'
+  - 'office!Office.Categories:interface'
+  - 'office!Office.CategoryDetails:interface'
+  - 'office!Office.CoercionTypeOptions:interface'
+  - 'office!Office.Contact:interface'
+  - 'office!Office.Context:interface'
+  - 'office!Office.ContextInformation:interface'
+  - 'office!Office.Control:interface'
+  - 'office!Office.CustomProperties:interface'
+  - 'office!Office.CustomXmlNode:interface'
+  - 'office!Office.CustomXmlPart:interface'
+  - 'office!Office.CustomXmlParts:interface'
+  - 'office!Office.CustomXmlPrefixMappings:interface'
+  - 'office!Office.DelayDeliveryTime:interface'
+  - 'office!Office.Diagnostics:interface'
+  - 'office!Office.Dialog:interface'
+  - 'office!Office.DialogMessageOptions:interface'
+  - 'office!Office.DialogOptions:interface'
+  - 'office!Office.DialogParentMessageReceivedEventArgs:interface'
+  - 'office!Office.Document:interface'
+  - 'office!Office.DocumentSelectionChangedEventArgs:interface'
+  - 'office!Office.EmailAddressDetails:interface'
+  - 'office!Office.EmailUser:interface'
+  - 'office!Office.EnhancedLocation:interface'
+  - 'office!Office.EnhancedLocationsChangedEventArgs:interface'
+  - 'office!Office.Entities:interface'
+  - 'office!Office.Error:interface'
+  - 'office!Office.File:interface'
+  - 'office!Office.FileProperties:interface'
+  - 'office!Office.From:interface'
+  - 'office!Office.GetBindingDataOptions:interface'
+  - 'office!Office.GetFileOptions:interface'
+  - 'office!Office.GetSelectedDataOptions:interface'
+  - 'office!Office.GoToByIdOptions:interface'
+  - 'office!Office.Group:interface'
+  - 'office!Office.InfobarClickedEventArgs:interface'
+  - 'office!Office.InfobarDetails:interface'
+  - 'office!Office.InternetHeaders:interface'
+  - 'office!Office.IPromiseConstructor:interface'
+  - 'office!Office.IsAllDayEvent:interface'
+  - 'office!Office.Item:interface'
+  - 'office!Office.ItemCompose:interface'
+  - 'office!Office.ItemRead:interface'
+  - 'office!Office.LocalClientTime:interface'
+  - 'office!Office.Location:interface'
+  - 'office!Office.LocationDetails:interface'
+  - 'office!Office.LocationIdentifier:interface'
+  - 'office!Office.Mailbox:interface'
+  - 'office!Office.MasterCategories:interface'
+  - 'office!Office.MatrixBinding:interface'
+  - 'office!Office.MeetingSuggestion:interface'
+  - 'office!Office.Message:interface'
+  - 'office!Office.MessageCompose:interface'
+  - 'office!Office.MessageRead:interface'
+  - 'office!Office.NodeDeletedEventArgs:interface'
+  - 'office!Office.NodeInsertedEventArgs:interface'
+  - 'office!Office.NodeReplacedEventArgs:interface'
+  - 'office!Office.NotificationMessageAction:interface'
+  - 'office!Office.NotificationMessageDetails:interface'
+  - 'office!Office.NotificationMessages:interface'
+  - 'office!Office.OfficeTheme:interface'
+  - 'office!Office.OfficeThemeChangedEventArgs:interface'
+  - 'office!Office.Organizer:interface'
+  - 'office!Office.PhoneNumber:interface'
+  - 'office!Office.RangeCoordinates:interface'
+  - 'office!Office.RangeFormatConfiguration:interface'
+  - 'office!Office.Recipients:interface'
+  - 'office!Office.RecipientsChangedEventArgs:interface'
+  - 'office!Office.RecipientsChangedFields:interface'
+  - 'office!Office.Recurrence:interface'
+  - 'office!Office.RecurrenceChangedEventArgs:interface'
+  - 'office!Office.RecurrenceProperties:interface'
+  - 'office!Office.RecurrenceTimeZone:interface'
+  - 'office!Office.RemoveHandlerOptions:interface'
+  - 'office!Office.ReplyFormAttachment:interface'
+  - 'office!Office.ReplyFormData:interface'
+  - 'office!Office.RequirementSetSupport:interface'
+  - 'office!Office.Ribbon:interface'
+  - 'office!Office.RibbonUpdaterData:interface'
+  - 'office!Office.RoamingSettings:interface'
+  - 'office!Office.SaveSettingsOptions:interface'
+  - 'office!Office.Sensitivity:interface'
+  - 'office!Office.SensitivityLabel:interface'
+  - 'office!Office.SensitivityLabelChangedEventArgs:interface'
+  - 'office!Office.SensitivityLabelDetails:interface'
+  - 'office!Office.SensitivityLabelsCatalog:interface'
+  - 'office!Office.SeriesTime:interface'
+  - 'office!Office.SessionData:interface'
+  - 'office!Office.SetBindingDataOptions:interface'
+  - 'office!Office.SetSelectedDataOptions:interface'
+  - 'office!Office.Settings:interface'
+  - 'office!Office.SettingsChangedEventArgs:interface'
+  - 'office!Office.SharedProperties:interface'
+  - 'office!Office.Slice:interface'
+  - 'office!Office.Subject:interface'
+  - 'office!Office.Tab:interface'
+  - 'office!Office.TableBinding:interface'
+  - 'office!Office.TaskSuggestion:interface'
+  - 'office!Office.TextBinding:interface'
+  - 'office!Office.Time:interface'
+  - 'office!Office.UI:interface'
+  - 'office!Office.UserProfile:interface'
+  - 'office!Office.VisibilityModeChangedMessage:interface'
+  - 'office!OfficeExtension.DebugInfo:interface'
+  - 'office!OfficeExtension.EmbeddedOptions:interface'
+  - 'office!OfficeExtension.EventInfo:interface'
+  - 'office!OfficeExtension.LoadOption:interface'
+  - 'office!OfficeExtension.RequestContextDebugInfo:interface'
+  - 'office!OfficeExtension.RequestUrlAndHeaderInfo:interface'
+  - 'office!OfficeExtension.RunOptions:interface'
+  - 'office!OfficeExtension.UpdateOptions:interface'
+  - 'office!OneNote.ImageOcrData:interface'
+  - 'office!OneNote.InkStrokePointer:interface'
+  - 'office!OneNote.Interfaces.ApplicationData:interface'
+  - 'office!OneNote.Interfaces.ApplicationLoadOptions:interface'
+  - 'office!OneNote.Interfaces.ApplicationUpdateData:interface'
+  - 'office!OneNote.Interfaces.CollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.FloatingInkData:interface'
+  - 'office!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+  - 'office!OneNote.Interfaces.ImageData:interface'
+  - 'office!OneNote.Interfaces.ImageLoadOptions:interface'
+  - 'office!OneNote.Interfaces.ImageUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisLineCollectionData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisLineData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisParagraphData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisWordData:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkStrokeCollectionData:interface'
+  - 'office!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkStrokeCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkStrokeData:interface'
+  - 'office!OneNote.Interfaces.InkStrokeLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkWordCollectionData:interface'
+  - 'office!OneNote.Interfaces.InkWordCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.InkWordCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.InkWordData:interface'
+  - 'office!OneNote.Interfaces.InkWordLoadOptions:interface'
+  - 'office!OneNote.Interfaces.NotebookCollectionData:interface'
+  - 'office!OneNote.Interfaces.NotebookCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.NotebookCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.NotebookData:interface'
+  - 'office!OneNote.Interfaces.NotebookLoadOptions:interface'
+  - 'office!OneNote.Interfaces.NoteTagData:interface'
+  - 'office!OneNote.Interfaces.NoteTagLoadOptions:interface'
+  - 'office!OneNote.Interfaces.OutlineData:interface'
+  - 'office!OneNote.Interfaces.OutlineLoadOptions:interface'
+  - 'office!OneNote.Interfaces.PageCollectionData:interface'
+  - 'office!OneNote.Interfaces.PageCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.PageCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.PageContentCollectionData:interface'
+  - 'office!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.PageContentCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.PageContentData:interface'
+  - 'office!OneNote.Interfaces.PageContentLoadOptions:interface'
+  - 'office!OneNote.Interfaces.PageContentUpdateData:interface'
+  - 'office!OneNote.Interfaces.PageData:interface'
+  - 'office!OneNote.Interfaces.PageLoadOptions:interface'
+  - 'office!OneNote.Interfaces.PageUpdateData:interface'
+  - 'office!OneNote.Interfaces.ParagraphCollectionData:interface'
+  - 'office!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.ParagraphCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.ParagraphData:interface'
+  - 'office!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - 'office!OneNote.Interfaces.ParagraphUpdateData:interface'
+  - 'office!OneNote.Interfaces.PointCollectionData:interface'
+  - 'office!OneNote.Interfaces.PointCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.PointCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.PointData:interface'
+  - 'office!OneNote.Interfaces.PointLoadOptions:interface'
+  - 'office!OneNote.Interfaces.RichTextData:interface'
+  - 'office!OneNote.Interfaces.RichTextLoadOptions:interface'
+  - 'office!OneNote.Interfaces.SectionCollectionData:interface'
+  - 'office!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.SectionCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.SectionData:interface'
+  - 'office!OneNote.Interfaces.SectionGroupCollectionData:interface'
+  - 'office!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.SectionGroupCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.SectionGroupData:interface'
+  - 'office!OneNote.Interfaces.SectionGroupLoadOptions:interface'
+  - 'office!OneNote.Interfaces.SectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.TableCellCollectionData:interface'
+  - 'office!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.TableCellCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.TableCellData:interface'
+  - 'office!OneNote.Interfaces.TableCellLoadOptions:interface'
+  - 'office!OneNote.Interfaces.TableCellUpdateData:interface'
+  - 'office!OneNote.Interfaces.TableData:interface'
+  - 'office!OneNote.Interfaces.TableLoadOptions:interface'
+  - 'office!OneNote.Interfaces.TableRowCollectionData:interface'
+  - 'office!OneNote.Interfaces.TableRowCollectionLoadOptions:interface'
+  - 'office!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
+  - 'office!OneNote.Interfaces.TableRowData:interface'
+  - 'office!OneNote.Interfaces.TableRowLoadOptions:interface'
+  - 'office!OneNote.Interfaces.TableUpdateData:interface'
+  - 'office!OneNote.ParagraphInfo:interface'
+  - 'office!PowerPoint.AddSlideOptions:interface'
+  - 'office!PowerPoint.InsertSlideOptions:interface'
+  - 'office!PowerPoint.Interfaces.BulletFormatData:interface'
+  - 'office!PowerPoint.Interfaces.BulletFormatLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.BulletFormatUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.CollectionLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ParagraphFormatData:interface'
+  - 'office!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.PresentationData:interface'
+  - 'office!PowerPoint.Interfaces.PresentationLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ShapeCollectionData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeCollectionLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ShapeCollectionUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeFillData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeFillLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ShapeFillUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeFontData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeFontLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ShapeFontUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeLineFormatData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeLineFormatLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ShapeScopedCollectionData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.ShapeUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.SlideCollectionData:interface'
+  - 'office!PowerPoint.Interfaces.SlideCollectionLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.SlideCollectionUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.SlideData:interface'
+  - 'office!PowerPoint.Interfaces.SlideLayoutCollectionData:interface'
+  - 'office!PowerPoint.Interfaces.SlideLayoutCollectionLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.SlideLayoutData:interface'
+  - 'office!PowerPoint.Interfaces.SlideLayoutLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.SlideLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.SlideMasterCollectionData:interface'
+  - 'office!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.SlideMasterCollectionUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.SlideMasterData:interface'
+  - 'office!PowerPoint.Interfaces.SlideMasterLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.SlideScopedCollectionData:interface'
+  - 'office!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.TagCollectionData:interface'
+  - 'office!PowerPoint.Interfaces.TagCollectionLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.TagCollectionUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.TagData:interface'
+  - 'office!PowerPoint.Interfaces.TagLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.TagUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.TextFrameData:interface'
+  - 'office!PowerPoint.Interfaces.TextFrameLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.TextFrameUpdateData:interface'
+  - 'office!PowerPoint.Interfaces.TextRangeData:interface'
+  - 'office!PowerPoint.Interfaces.TextRangeLoadOptions:interface'
+  - 'office!PowerPoint.Interfaces.TextRangeUpdateData:interface'
+  - 'office!PowerPoint.ShapeAddOptions:interface'
+  - 'office!Visio.BoundingBox:interface'
+  - 'office!Visio.ConnectorBinding:interface'
+  - 'office!Visio.DataRefreshCompleteEventArgs:interface'
+  - 'office!Visio.DocumentErrorEventArgs:interface'
+  - 'office!Visio.DocumentLoadCompleteEventArgs:interface'
+  - 'office!Visio.Highlight:interface'
+  - 'office!Visio.Interfaces.ApplicationData:interface'
+  - 'office!Visio.Interfaces.ApplicationLoadOptions:interface'
+  - 'office!Visio.Interfaces.ApplicationUpdateData:interface'
+  - 'office!Visio.Interfaces.CollectionLoadOptions:interface'
+  - 'office!Visio.Interfaces.CommentCollectionData:interface'
+  - 'office!Visio.Interfaces.CommentCollectionLoadOptions:interface'
+  - 'office!Visio.Interfaces.CommentCollectionUpdateData:interface'
+  - 'office!Visio.Interfaces.CommentData:interface'
+  - 'office!Visio.Interfaces.CommentLoadOptions:interface'
+  - 'office!Visio.Interfaces.CommentUpdateData:interface'
+  - 'office!Visio.Interfaces.DocumentData:interface'
+  - 'office!Visio.Interfaces.DocumentLoadOptions:interface'
+  - 'office!Visio.Interfaces.DocumentUpdateData:interface'
+  - 'office!Visio.Interfaces.DocumentViewData:interface'
+  - 'office!Visio.Interfaces.DocumentViewLoadOptions:interface'
+  - 'office!Visio.Interfaces.DocumentViewUpdateData:interface'
+  - 'office!Visio.Interfaces.HyperlinkCollectionData:interface'
+  - 'office!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
+  - 'office!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
+  - 'office!Visio.Interfaces.HyperlinkData:interface'
+  - 'office!Visio.Interfaces.HyperlinkLoadOptions:interface'
+  - 'office!Visio.Interfaces.PageCollectionData:interface'
+  - 'office!Visio.Interfaces.PageCollectionLoadOptions:interface'
+  - 'office!Visio.Interfaces.PageCollectionUpdateData:interface'
+  - 'office!Visio.Interfaces.PageData:interface'
+  - 'office!Visio.Interfaces.PageLoadOptions:interface'
+  - 'office!Visio.Interfaces.PageUpdateData:interface'
+  - 'office!Visio.Interfaces.PageViewData:interface'
+  - 'office!Visio.Interfaces.PageViewLoadOptions:interface'
+  - 'office!Visio.Interfaces.PageViewUpdateData:interface'
+  - 'office!Visio.Interfaces.SelectionData:interface'
+  - 'office!Visio.Interfaces.ShapeCollectionData:interface'
+  - 'office!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
+  - 'office!Visio.Interfaces.ShapeCollectionUpdateData:interface'
+  - 'office!Visio.Interfaces.ShapeData:interface'
+  - 'office!Visio.Interfaces.ShapeDataItemCollectionData:interface'
+  - 'office!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
+  - 'office!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
+  - 'office!Visio.Interfaces.ShapeDataItemData:interface'
+  - 'office!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
+  - 'office!Visio.Interfaces.ShapeLoadOptions:interface'
+  - 'office!Visio.Interfaces.ShapeUpdateData:interface'
+  - 'office!Visio.Interfaces.ShapeViewData:interface'
+  - 'office!Visio.Interfaces.ShapeViewLoadOptions:interface'
+  - 'office!Visio.Interfaces.ShapeViewUpdateData:interface'
+  - 'office!Visio.PageLoadCompleteEventArgs:interface'
+  - 'office!Visio.PageRenderCompleteEventArgs:interface'
+  - 'office!Visio.Position:interface'
+  - 'office!Visio.SelectionChangedEventArgs:interface'
+  - 'office!Visio.ShapeBinding:interface'
+  - 'office!Visio.ShapeMouseEnterEventArgs:interface'
+  - 'office!Visio.ShapeMouseLeaveEventArgs:interface'
+  - 'office!Visio.TaskPaneStateChangedEventArgs:interface'
+  - 'office!Word.CommentDetail:interface'
+  - 'office!Word.CommentEventArgs:interface'
+  - 'office!Word.ContentControlAddedEventArgs:interface'
+  - 'office!Word.ContentControlDataChangedEventArgs:interface'
+  - 'office!Word.ContentControlDeletedEventArgs:interface'
+  - 'office!Word.ContentControlEnteredEventArgs:interface'
+  - 'office!Word.ContentControlEventArgs:interface'
+  - 'office!Word.ContentControlExitedEventArgs:interface'
+  - 'office!Word.ContentControlOptions:interface'
+  - 'office!Word.ContentControlSelectionChangedEventArgs:interface'
+  - 'office!Word.InsertFileOptions:interface'
+  - 'office!Word.Interfaces.BodyData:interface'
+  - 'office!Word.Interfaces.BodyLoadOptions:interface'
+  - 'office!Word.Interfaces.BodyUpdateData:interface'
+  - 'office!Word.Interfaces.CollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.CommentCollectionData:interface'
+  - 'office!Word.Interfaces.CommentCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.CommentCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.CommentContentRangeData:interface'
+  - 'office!Word.Interfaces.CommentContentRangeLoadOptions:interface'
+  - 'office!Word.Interfaces.CommentContentRangeUpdateData:interface'
+  - 'office!Word.Interfaces.CommentData:interface'
+  - 'office!Word.Interfaces.CommentLoadOptions:interface'
+  - 'office!Word.Interfaces.CommentReplyCollectionData:interface'
+  - 'office!Word.Interfaces.CommentReplyCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.CommentReplyCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.CommentReplyData:interface'
+  - 'office!Word.Interfaces.CommentReplyLoadOptions:interface'
+  - 'office!Word.Interfaces.CommentReplyUpdateData:interface'
+  - 'office!Word.Interfaces.CommentUpdateData:interface'
+  - 'office!Word.Interfaces.ContentControlCollectionData:interface'
+  - 'office!Word.Interfaces.ContentControlCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.ContentControlCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.ContentControlData:interface'
+  - 'office!Word.Interfaces.ContentControlLoadOptions:interface'
+  - 'office!Word.Interfaces.ContentControlUpdateData:interface'
+  - 'office!Word.Interfaces.CustomPropertyCollectionData:interface'
+  - 'office!Word.Interfaces.CustomPropertyCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.CustomPropertyData:interface'
+  - 'office!Word.Interfaces.CustomPropertyLoadOptions:interface'
+  - 'office!Word.Interfaces.CustomPropertyUpdateData:interface'
+  - 'office!Word.Interfaces.CustomXmlPartCollectionData:interface'
+  - 'office!Word.Interfaces.CustomXmlPartCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.CustomXmlPartCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.CustomXmlPartData:interface'
+  - 'office!Word.Interfaces.CustomXmlPartLoadOptions:interface'
+  - 'office!Word.Interfaces.CustomXmlPartScopedCollectionData:interface'
+  - 'office!Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.DocumentCreatedData:interface'
+  - 'office!Word.Interfaces.DocumentCreatedLoadOptions:interface'
+  - 'office!Word.Interfaces.DocumentCreatedUpdateData:interface'
+  - 'office!Word.Interfaces.DocumentData:interface'
+  - 'office!Word.Interfaces.DocumentLoadOptions:interface'
+  - 'office!Word.Interfaces.DocumentPropertiesData:interface'
+  - 'office!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - 'office!Word.Interfaces.DocumentPropertiesUpdateData:interface'
+  - 'office!Word.Interfaces.DocumentUpdateData:interface'
+  - 'office!Word.Interfaces.FieldCollectionData:interface'
+  - 'office!Word.Interfaces.FieldCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.FieldCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.FieldData:interface'
+  - 'office!Word.Interfaces.FieldLoadOptions:interface'
+  - 'office!Word.Interfaces.FieldUpdateData:interface'
+  - 'office!Word.Interfaces.FontData:interface'
+  - 'office!Word.Interfaces.FontLoadOptions:interface'
+  - 'office!Word.Interfaces.FontUpdateData:interface'
+  - 'office!Word.Interfaces.InlinePictureCollectionData:interface'
+  - 'office!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.InlinePictureCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.InlinePictureData:interface'
+  - 'office!Word.Interfaces.InlinePictureLoadOptions:interface'
+  - 'office!Word.Interfaces.InlinePictureUpdateData:interface'
+  - 'office!Word.Interfaces.ListCollectionData:interface'
+  - 'office!Word.Interfaces.ListCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.ListCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.ListData:interface'
+  - 'office!Word.Interfaces.ListItemData:interface'
+  - 'office!Word.Interfaces.ListItemLoadOptions:interface'
+  - 'office!Word.Interfaces.ListItemUpdateData:interface'
+  - 'office!Word.Interfaces.ListLevelCollectionData:interface'
+  - 'office!Word.Interfaces.ListLevelCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.ListLevelCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.ListLevelData:interface'
+  - 'office!Word.Interfaces.ListLevelLoadOptions:interface'
+  - 'office!Word.Interfaces.ListLevelUpdateData:interface'
+  - 'office!Word.Interfaces.ListLoadOptions:interface'
+  - 'office!Word.Interfaces.ListTemplateData:interface'
+  - 'office!Word.Interfaces.ListTemplateLoadOptions:interface'
+  - 'office!Word.Interfaces.ListTemplateUpdateData:interface'
+  - 'office!Word.Interfaces.NoteItemCollectionData:interface'
+  - 'office!Word.Interfaces.NoteItemCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.NoteItemCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.NoteItemData:interface'
+  - 'office!Word.Interfaces.NoteItemLoadOptions:interface'
+  - 'office!Word.Interfaces.NoteItemUpdateData:interface'
+  - 'office!Word.Interfaces.ParagraphCollectionData:interface'
+  - 'office!Word.Interfaces.ParagraphCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.ParagraphCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.ParagraphData:interface'
+  - 'office!Word.Interfaces.ParagraphFormatData:interface'
+  - 'office!Word.Interfaces.ParagraphFormatLoadOptions:interface'
+  - 'office!Word.Interfaces.ParagraphFormatUpdateData:interface'
+  - 'office!Word.Interfaces.ParagraphLoadOptions:interface'
+  - 'office!Word.Interfaces.ParagraphUpdateData:interface'
+  - 'office!Word.Interfaces.RangeCollectionData:interface'
+  - 'office!Word.Interfaces.RangeCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.RangeCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.RangeData:interface'
+  - 'office!Word.Interfaces.RangeLoadOptions:interface'
+  - 'office!Word.Interfaces.RangeUpdateData:interface'
+  - 'office!Word.Interfaces.SearchOptionsData:interface'
+  - 'office!Word.Interfaces.SearchOptionsLoadOptions:interface'
+  - 'office!Word.Interfaces.SearchOptionsUpdateData:interface'
+  - 'office!Word.Interfaces.SectionCollectionData:interface'
+  - 'office!Word.Interfaces.SectionCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.SectionCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.SectionData:interface'
+  - 'office!Word.Interfaces.SectionLoadOptions:interface'
+  - 'office!Word.Interfaces.SectionUpdateData:interface'
+  - 'office!Word.Interfaces.SettingCollectionData:interface'
+  - 'office!Word.Interfaces.SettingCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.SettingCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.SettingData:interface'
+  - 'office!Word.Interfaces.SettingLoadOptions:interface'
+  - 'office!Word.Interfaces.SettingUpdateData:interface'
+  - 'office!Word.Interfaces.StyleCollectionData:interface'
+  - 'office!Word.Interfaces.StyleCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.StyleCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.StyleData:interface'
+  - 'office!Word.Interfaces.StyleLoadOptions:interface'
+  - 'office!Word.Interfaces.StyleUpdateData:interface'
+  - 'office!Word.Interfaces.TableBorderData:interface'
+  - 'office!Word.Interfaces.TableBorderLoadOptions:interface'
+  - 'office!Word.Interfaces.TableBorderUpdateData:interface'
+  - 'office!Word.Interfaces.TableCellCollectionData:interface'
+  - 'office!Word.Interfaces.TableCellCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.TableCellCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.TableCellData:interface'
+  - 'office!Word.Interfaces.TableCellLoadOptions:interface'
+  - 'office!Word.Interfaces.TableCellUpdateData:interface'
+  - 'office!Word.Interfaces.TableCollectionData:interface'
+  - 'office!Word.Interfaces.TableCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.TableCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.TableData:interface'
+  - 'office!Word.Interfaces.TableLoadOptions:interface'
+  - 'office!Word.Interfaces.TableRowCollectionData:interface'
+  - 'office!Word.Interfaces.TableRowCollectionLoadOptions:interface'
+  - 'office!Word.Interfaces.TableRowCollectionUpdateData:interface'
+  - 'office!Word.Interfaces.TableRowData:interface'
+  - 'office!Word.Interfaces.TableRowLoadOptions:interface'
+  - 'office!Word.Interfaces.TableRowUpdateData:interface'
+  - 'office!Word.Interfaces.TableUpdateData:interface'
 typeAliases:
+  - 'office!Excel.CardLayout:type'
+  - 'office!Excel.CardLayoutSection:type'
+  - 'office!Excel.CellValue:type'
+  - 'office!Excel.CellValueAndPropertyMetadata:type'
+  - 'office!Excel.CompactLayout:type'
+  - 'office!Excel.EntityPropertyType:type'
+  - 'office!Excel.ErrorCellValue:type'
+  - 'office!Excel.ReferencedValue:type'
   - 'office!OfficeExtension.IPromise:type'
 functions:
+  - name: Excel.createWorkbook(base64)
+    uid: 'office!Excel.createWorkbook:function(1)'
+    package: office!
+    summary: >-
+      Creates and opens a new workbook. Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
+      Note: Macros can be a security risk. If this API is used to create a workbook that includes a macro, the add-in
+      user will be prompted with a "Trust this add-in?" dialog in the Excel UI. The user must select the "Trust add-in"
+      button to proceed.
+
+
+      \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function createWorkbook(base64?: string): Promise<void>;'
+      parameters:
+        - id: base64
+          description: ''
+          type: string
+      return:
+        type: Promise&lt;void&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          const myFile = <HTMLInputElement>document.getElementById("file");
+          const reader = new FileReader();
+
+          reader.onload = (event) => {
+              Excel.run((context) => {
+              // Remove the metadata before the base64-encoded string.
+              const startIndex = reader.result.toString().indexOf("base64,");
+              const mybase64 = reader.result.toString().substr(startIndex + 7);
+
+              Excel.createWorkbook(mybase64);
+              return context.sync();
+              });
+          };
+
+          // Read in the file as a data URL so we can parse the base64-encoded string.
+          reader.readAsDataURL(myFile.files[0]);
+          ```
+  - name: 'Excel.getDataCommonPostprocess(response, callArgs)'
+    uid: 'office!Excel.getDataCommonPostprocess:function(1)'
+    package: office!
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function getDataCommonPostprocess(response: any, callArgs: any): any;'
+      parameters:
+        - id: response
+          description: ''
+          type: any
+        - id: callArgs
+          description: ''
+          type: any
+      return:
+        type: any
+        description: ''
+  - name: Excel.postprocessBindingDescriptor(response)
+    uid: 'office!Excel.postprocessBindingDescriptor:function(1)'
+    package: office!
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function postprocessBindingDescriptor(response: any): any;'
+      parameters:
+        - id: response
+          description: ''
+          type: any
+      return:
+        type: any
+        description: ''
+  - name: Excel.run(batch)
+    uid: 'office!Excel.run:function(1)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;'
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="office!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Excel.run(object, batch)'
+    uid: 'office!Excel.run:function(2)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
+      parameters:
+        - id: object
+          description: >-
+            A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="office!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Excel.run(objects, batch)'
+    uid: 'office!Excel.run:function(3)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of
+      previously-created API objects.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="office!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Excel.run(options, batch)'
+    uid: 'office!Excel.run:function(4)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>):
+        Promise<T>;
+      parameters:
+        - id: options
+          description: >-
+            The additional options for this Excel.run which specify previous objects, whether to delay the request for
+            cell edit, session info, etc.
+          type: '<xref uid="office!Excel.RunOptions:interface" />'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="office!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Excel.run(context, batch)'
+    uid: 'office!Excel.run:function(5)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) =>
+        Promise<T>): Promise<T>;
+      parameters:
+        - id: context
+          description: >-
+            A previously-created object. The batch will use the same RequestContext as the passed-in object, which means
+            that any changes applied to the object will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type: '(context: <xref uid="office!Excel.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
   - name: Office.initialize(reason)
     uid: 'office!Office.initialize:function(1)'
     package: office!
@@ -184,6 +2147,7 @@ functions:
       }
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -200,6 +2164,7 @@ functions:
     package: office!
     summary: Checks if the specified requirement set is supported by the Office application.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -224,6 +2189,7 @@ functions:
       once Office.js determines that it is running outside of an Office application, it will call the callback and
       resolve the promise with "null" for both the application and platform.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -280,6 +2246,7 @@ functions:
       }
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -354,6 +2321,7 @@ functions:
       }
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -364,4 +2332,430 @@ functions:
           type: boolean
       return:
         type: void
+        description: ''
+  - name: OneNote.run(batch)
+    uid: 'office!OneNote.run:function(1)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the OneNote object model, using a new request context. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;'
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office
+            add-in and the OneNote application run in two different processes, the request context is required to get
+            access to the OneNote object model from the add-in.
+          type: '(context: <xref uid="office!OneNote.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'OneNote.run(object, batch)'
+    uid: 'office!OneNote.run:function(2)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the OneNote object model, using the request context of a
+      previously-created API object.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) =>
+        Promise<T>): Promise<T>;
+      parameters:
+        - id: object
+          description: >-
+            A previously-created API object. The batch will use the same request context as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+        - id: batch
+          description: >-
+            A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
+          type: '(context: <xref uid="office!OneNote.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'OneNote.run(objects, batch)'
+    uid: 'office!OneNote.run:function(3)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the OneNote object model, using the request context of
+      previously-created API objects.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) =>
+        Promise<T>): Promise<T>;
+      parameters:
+        - id: objects
+          description: ''
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+        - id: batch
+          description: >-
+            A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
+          type: '(context: <xref uid="office!OneNote.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: PowerPoint.createPresentation(base64File)
+    uid: 'office!PowerPoint.createPresentation:function(1)'
+    package: office!
+    summary: >-
+      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded
+      .pptx file.
+
+
+      \[ [API set: PowerPointApi 1.1](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function createPresentation(base64File?: string): Promise<void>;'
+      parameters:
+        - id: base64File
+          description: Optional. The base64-encoded .pptx file. The default value is null.
+          type: string
+      return:
+        type: Promise&lt;void&gt;
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          const myFile = <HTMLInputElement>document.getElementById("file");
+          const reader = new FileReader();
+
+          reader.onload = (event) => {
+            // Remove the metadata before the base64-encoded string.
+            const startIndex = reader.result.toString().indexOf("base64,");
+            const copyBase64 = reader.result.toString().substr(startIndex + 7);
+
+            PowerPoint.createPresentation(copyBase64);
+          };
+
+          // Read in the file as a data URL so we can parse the base64-encoded string.
+          reader.readAsDataURL(myFile.files[0]);
+          ```
+  - name: PowerPoint.run(batch)
+    uid: 'office!PowerPoint.run:function(1)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the PowerPoint object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(batch: (context: PowerPoint.RequestContext) => OfficeExtension.IPromise<T>):
+        OfficeExtension.IPromise<T>;
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type: >-
+            (context: <xref uid="office!PowerPoint.RequestContext:class" />) =&gt; <xref
+            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+      return:
+        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        description: ''
+  - name: 'PowerPoint.run(object, batch)'
+    uid: 'office!PowerPoint.run:function(2)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: PowerPoint.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      parameters:
+        - id: object
+          description: >-
+            A previously-created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type: >-
+            (context: <xref uid="office!PowerPoint.RequestContext:class" />) =&gt; <xref
+            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+      return:
+        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        description: ''
+  - name: 'PowerPoint.run(objects, batch)'
+    uid: 'office!PowerPoint.run:function(3)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the PowerPoint object model, using the RequestContext of
+      previously-created API objects.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: PowerPoint.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the PowerPoint application. Since the
+            Office add-in and the PowerPoint application run in two different processes, the RequestContext is required
+            to get access to the PowerPoint object model from the add-in.
+          type: >-
+            (context: <xref uid="office!PowerPoint.RequestContext:class" />) =&gt; <xref
+            uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;
+      return:
+        type: '<xref uid="office!OfficeExtension.IPromise:type" />&lt;T&gt;'
+        description: ''
+  - name: Visio.run(batch)
+    uid: 'office!Visio.run:function(1)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Visio object model, using a new request context. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;'
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office
+            add-in and the Visio application run in two different processes, the request context is required to get
+            access to the Visio object model from the add-in.
+          type: '(context: <xref uid="office!Visio.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Visio.run(object, batch)'
+    uid: 'office!Visio.run:function(2)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Visio object model, using the request context of a
+      previously-created API object.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
+        Visio.RequestContext) => Promise<T>): Promise<T>;
+      parameters:
+        - id: object
+          description: >-
+            A previously-created API object. The batch will use the same request context as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type: >-
+            <xref uid="office!OfficeExtension.ClientObject:class" /> | <xref
+            uid="office!OfficeExtension.EmbeddedSession:class" />
+        - id: batch
+          description: >-
+            A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
+          type: '(context: <xref uid="office!Visio.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Visio.run(objects, batch)'
+    uid: 'office!Visio.run:function(3)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Visio object model, using the request context of
+      previously-created API objects.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) =>
+        Promise<T>): Promise<T>;
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared request context, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+        - id: batch
+          description: >-
+            A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
+          type: '(context: <xref uid="office!Visio.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Visio.run(contextObject, batch)'
+    uid: 'office!Visio.run:function(4)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Visio object model, using the RequestContext of a
+      previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    remarks: >-
+      In addition to this signature, the method also has the following signatures:
+
+
+      `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`
+
+
+      `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context:
+      Visio.RequestContext) => Promise<T>): Promise<T>;`
+
+
+      `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
+      Promise<T>;`
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context:
+        Visio.RequestContext) => Promise<T>): Promise<T>;
+      parameters:
+        - id: contextObject
+          description: >-
+            A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of
+            having a new context created). This means that the batch will be able to pick up changes made to existing
+            API objects, if those objects were derived from this same context.
+          type: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office
+            add-in and the Visio application run in two different processes, the RequestContext is required to get
+            access to the Visio object model from the add-in.
+          type: '(context: <xref uid="office!Visio.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Word.run(objects, batch)'
+    uid: 'office!Word.run:function(1)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Word object model, using the RequestContext of previously
+      created API objects.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) =>
+        Promise<T>): Promise<T>;
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
+            add-in and the Word application run in two different processes, the RequestContext is required to get access
+            to the Word object model from the add-in.
+          type: '(context: <xref uid="office!Word.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: 'Word.run(object, batch)'
+    uid: 'office!Word.run:function(2)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously
+      created API object. When the promise is resolved, any tracked objects that were automatically allocated during
+      execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) =>
+        Promise<T>): Promise<T>;
+      parameters:
+        - id: object
+          description: >-
+            A previously created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
+            add-in and the Word application run in two different processes, the RequestContext is required to get access
+            to the Word object model from the add-in.
+          type: '(context: <xref uid="office!Word.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
+        description: ''
+  - name: Word.run(batch)
+    uid: 'office!Word.run:function(3)'
+    package: office!
+    summary: >-
+      Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;'
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
+            add-in and the Word application run in two different processes, the RequestContext is required to get access
+            to the Word object model from the add-in.
+          type: '(context: <xref uid="office!Word.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
+      return:
+        type: Promise&lt;T&gt;
         description: ''

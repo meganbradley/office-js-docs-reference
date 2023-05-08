@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: Visio.OverlayVerticalAlignment
+uid: 'office!Visio.OverlayVerticalAlignment:enum'
+package: office!
+fullName: Visio.OverlayVerticalAlignment
+summary: |-
+  Represents the Vertical Alignment of the Overlay relative to the shape.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'office!Visio.OverlayVerticalAlignment.bottom:member'
+    package: office!
+    summary: bottom
+    value: '"Bottom"'
+  - name: middle
+    uid: 'office!Visio.OverlayVerticalAlignment.middle:member'
+    package: office!
+    summary: middle
+    value: '"Middle"'
+  - name: top
+    uid: 'office!Visio.OverlayVerticalAlignment.top:member'
+    package: office!
+    summary: top
+    value: '"Top"'

@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: Excel.InsertWorksheetOptions
+uid: 'office!Excel.InsertWorksheetOptions:interface'
+package: office!
+fullName: Excel.InsertWorksheetOptions
+summary: The options that define which worksheets to insert and where in the workbook the new worksheets will be inserted.
+remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: positionType
+    uid: 'office!Excel.InsertWorksheetOptions#positionType:member'
+    package: office!
+    fullName: positionType
+    summary: >-
+      The insert position, in the current workbook, of the new worksheets. See `Excel.WorksheetPositionType` for
+      details. The default position is "End".
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'positionType?: Excel.WorksheetPositionType | "None" | "Before" | "After" | "Beginning" | "End";'
+      return:
+        type: '<xref uid="office!Excel.WorksheetPositionType:enum" /> | "None" | "Before" | "After" | "Beginning" | "End"'
+  - name: relativeTo
+    uid: 'office!Excel.InsertWorksheetOptions#relativeTo:member'
+    package: office!
+    fullName: relativeTo
+    summary: >-
+      The worksheet in the current workbook that is referenced for the `WorksheetPositionType` parameter. The default is
+      `null`<!-- -->. If the `relativeTo` parameter is not set, worksheets will be inserted based on `positionType`<!--
+      -->, at the start or end of the current workbook.
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relativeTo?: Worksheet | string;'
+      return:
+        type: '<xref uid="office!Excel.Worksheet:class" /> | string'
+  - name: sheetNamesToInsert
+    uid: 'office!Excel.InsertWorksheetOptions#sheetNamesToInsert:member'
+    package: office!
+    fullName: sheetNamesToInsert
+    summary: >-
+      The names of individual worksheets to insert. By default, all the worksheets from the source workbook are
+      inserted.
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sheetNamesToInsert?: string[];'
+      return:
+        type: 'string[]'

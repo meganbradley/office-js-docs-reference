@@ -1,0 +1,79 @@
+### YamlMime:TSType
+name: Excel.Interfaces.FilterPivotHierarchyLoadOptions
+uid: 'office!Excel.Interfaces.FilterPivotHierarchyLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.FilterPivotHierarchyLoadOptions
+summary: Represents the Excel FilterPivotHierarchy.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: enableMultipleFilterItems
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyLoadOptions#enableMultipleFilterItems:member'
+    package: office!
+    fullName: enableMultipleFilterItems
+    summary: Determines whether to allow multiple filter items.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableMultipleFilterItems?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: ID of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: Name of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: position
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyLoadOptions#position:member'
+    package: office!
+    fullName: position
+    summary: Position of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type: boolean

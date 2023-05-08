@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.WorksheetVisibilityChangedEventArgs
+uid: 'office!Excel.WorksheetVisibilityChangedEventArgs:interface'
+package: office!
+fullName: Excel.WorksheetVisibilityChangedEventArgs
+summary: Provides information about the worksheet whose visibility has changed.
+remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: source
+    uid: 'office!Excel.WorksheetVisibilityChangedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through co-authoring).
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'office!Excel.WorksheetVisibilityChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event.
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: string;'
+      return:
+        type: string
+  - name: visibilityAfter
+    uid: 'office!Excel.WorksheetVisibilityChangedEventArgs#visibilityAfter:member'
+    package: office!
+    fullName: visibilityAfter
+    summary: 'Gets the new visibility setting of the worksheet, after the visibility change.'
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visibilityAfter: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
+      return:
+        type: '<xref uid="office!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden" | "VeryHidden"'
+  - name: visibilityBefore
+    uid: 'office!Excel.WorksheetVisibilityChangedEventArgs#visibilityBefore:member'
+    package: office!
+    fullName: visibilityBefore
+    summary: 'Gets the previous visibility setting of the worksheet, before the visibility change.'
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visibilityBefore: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";'
+      return:
+        type: '<xref uid="office!Excel.SheetVisibility:enum" /> | "Visible" | "Hidden" | "VeryHidden"'
+  - name: worksheetId
+    uid: 'office!Excel.WorksheetVisibilityChangedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet whose visibility has changed.
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

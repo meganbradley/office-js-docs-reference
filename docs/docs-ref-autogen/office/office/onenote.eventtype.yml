@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: OneNote.EventType
+uid: 'office!OneNote.EventType:enum'
+package: office!
+fullName: OneNote.EventType
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.9](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: alterationSelected
+    uid: 'office!OneNote.EventType.alterationSelected:member'
+    package: office!
+    summary: ''
+    value: '"AlterationSelected"'
+  - name: inkSelectedForCorrection
+    uid: 'office!OneNote.EventType.inkSelectedForCorrection:member'
+    package: office!
+    summary: ''
+    value: '"InkSelectedForCorrection"'
+  - name: reset
+    uid: 'office!OneNote.EventType.reset:member'
+    package: office!
+    summary: ''
+    value: '"Reset"'
+  - name: restrictionsCalculated
+    uid: 'office!OneNote.EventType.restrictionsCalculated:member'
+    package: office!
+    summary: ''
+    value: '"RestrictionsCalculated"'

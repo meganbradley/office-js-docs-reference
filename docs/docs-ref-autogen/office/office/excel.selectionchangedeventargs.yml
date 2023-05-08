@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.SelectionChangedEventArgs
+uid: 'office!Excel.SelectionChangedEventArgs:interface'
+package: office!
+fullName: Excel.SelectionChangedEventArgs
+summary: Provides information about the document that raised the selection changed event.
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: workbook
+    uid: 'office!Excel.SelectionChangedEventArgs#workbook:member'
+    package: office!
+    fullName: workbook
+    summary: Gets the workbook object that raised the selection changed event.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workbook: Excel.Workbook;'
+      return:
+        type: '<xref uid="office!Excel.Workbook:class" />'

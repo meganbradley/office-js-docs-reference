@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: Excel.Interfaces.RangeAreasUpdateData
+uid: 'office!Excel.Interfaces.RangeAreasUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.RangeAreasUpdateData
+summary: 'An interface for updating data on the RangeAreas object, for use in `rangeAreas.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dataValidation
+    uid: 'office!Excel.Interfaces.RangeAreasUpdateData#dataValidation:member'
+    package: office!
+    fullName: dataValidation
+    summary: Returns a data validation object for all ranges in the `RangeAreas`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataValidation?: Excel.Interfaces.DataValidationUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.DataValidationUpdateData:interface" />'
+  - name: format
+    uid: 'office!Excel.Interfaces.RangeAreasUpdateData#format:member'
+    package: office!
+    fullName: format
+    summary: >-
+      Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all
+      ranges in the `RangeAreas` object.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.RangeFormatUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.RangeFormatUpdateData:interface" />'
+  - name: style
+    uid: 'office!Excel.Interfaces.RangeAreasUpdateData#style:member'
+    package: office!
+    fullName: style
+    summary: >-
+      Represents the style for all ranges in this `RangeAreas` object. If the styles of the cells are inconsistent,
+      `null` will be returned. For custom styles, the style name will be returned. For built-in styles, a string
+      representing a value in the `BuiltInStyle` enum will be returned.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: string;'
+      return:
+        type: string

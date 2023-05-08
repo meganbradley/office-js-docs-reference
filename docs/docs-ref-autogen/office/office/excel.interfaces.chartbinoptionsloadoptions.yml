@@ -1,0 +1,118 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartBinOptionsLoadOptions
+uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ChartBinOptionsLoadOptions
+summary: Encapsulates the bin options for histogram charts and pareto charts.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: allowOverflow
+    uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions#allowOverflow:member'
+    package: office!
+    fullName: allowOverflow
+    summary: Specifies if bin overflow is enabled in a histogram chart or pareto chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowOverflow?: boolean;'
+      return:
+        type: boolean
+  - name: allowUnderflow
+    uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions#allowUnderflow:member'
+    package: office!
+    fullName: allowUnderflow
+    summary: Specifies if bin underflow is enabled in a histogram chart or pareto chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowUnderflow?: boolean;'
+      return:
+        type: boolean
+  - name: count
+    uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions#count:member'
+    package: office!
+    fullName: count
+    summary: Specifies the bin count of a histogram chart or pareto chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: boolean;'
+      return:
+        type: boolean
+  - name: overflowValue
+    uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions#overflowValue:member'
+    package: office!
+    fullName: overflowValue
+    summary: Specifies the bin overflow value of a histogram chart or pareto chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'overflowValue?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions#type:member'
+    package: office!
+    fullName: type
+    summary: Specifies the bin's type for a histogram chart or pareto chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: underflowValue
+    uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions#underflowValue:member'
+    package: office!
+    fullName: underflowValue
+    summary: Specifies the bin underflow value of a histogram chart or pareto chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underflowValue?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'office!Excel.Interfaces.ChartBinOptionsLoadOptions#width:member'
+    package: office!
+    fullName: width
+    summary: Specifies the bin width value of a histogram chart or pareto chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

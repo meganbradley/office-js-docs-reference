@@ -1,0 +1,74 @@
+### YamlMime:TSEnum
+name: Excel.ClearApplyTo
+uid: 'office!Excel.ClearApplyTo:enum'
+package: office!
+fullName: Excel.ClearApplyTo
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-hyperlink.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Orders");
+
+      const productsRange = sheet.getRange("A3:A11");
+      productsRange.load("values");
+
+      await context.sync();
+
+      // Clear all hyperlinks.
+      for (let i = 0; i < productsRange.values.length; i++) {
+          let cellRange = productsRange.getCell(i, 0);
+
+          // Clear the hyperlink.
+          // This eliminates the hyperlink but does not update text format.
+          cellRange.clear(Excel.ClearApplyTo.hyperlinks);
+
+          // Update text format.
+          cellRange.format.font.underline = Excel.RangeUnderlineStyle.none;
+          cellRange.format.font.color = "#000000";
+      }
+
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: all
+    uid: 'office!Excel.ClearApplyTo.all:member'
+    package: office!
+    summary: ''
+    value: '"All"'
+  - name: contents
+    uid: 'office!Excel.ClearApplyTo.contents:member'
+    package: office!
+    summary: Clears the contents of the range.
+    value: '"Contents"'
+  - name: formats
+    uid: 'office!Excel.ClearApplyTo.formats:member'
+    package: office!
+    summary: Clears all formatting for the range.
+    value: '"Formats"'
+  - name: hyperlinks
+    uid: 'office!Excel.ClearApplyTo.hyperlinks:member'
+    package: office!
+    summary: 'Clears all hyperlinks, but leaves all content and formatting intact.'
+    value: '"Hyperlinks"'
+  - name: removeHyperlinks
+    uid: 'office!Excel.ClearApplyTo.removeHyperlinks:member'
+    package: office!
+    summary: >-
+      Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation
+      intact.
+    value: '"RemoveHyperlinks"'

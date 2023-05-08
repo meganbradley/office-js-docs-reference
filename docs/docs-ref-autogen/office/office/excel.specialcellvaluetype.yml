@@ -1,0 +1,86 @@
+### YamlMime:TSEnum
+name: Excel.SpecialCellValueType
+uid: 'office!Excel.SpecialCellValueType:enum'
+package: office!
+fullName: Excel.SpecialCellValueType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: all
+    uid: 'office!Excel.SpecialCellValueType.all:member'
+    package: office!
+    summary: 'Cells that have errors, boolean, numeric, or string values.'
+    value: '"All"'
+  - name: errors
+    uid: 'office!Excel.SpecialCellValueType.errors:member'
+    package: office!
+    summary: Cells that have errors.
+    value: '"Errors"'
+  - name: errorsLogical
+    uid: 'office!Excel.SpecialCellValueType.errorsLogical:member'
+    package: office!
+    summary: Cells that have errors or boolean values.
+    value: '"ErrorsLogical"'
+  - name: errorsLogicalNumber
+    uid: 'office!Excel.SpecialCellValueType.errorsLogicalNumber:member'
+    package: office!
+    summary: 'Cells that have errors, boolean, or numeric values.'
+    value: '"ErrorsLogicalNumber"'
+  - name: errorsLogicalText
+    uid: 'office!Excel.SpecialCellValueType.errorsLogicalText:member'
+    package: office!
+    summary: 'Cells that have errors, boolean, or string values.'
+    value: '"ErrorsLogicalText"'
+  - name: errorsNumbers
+    uid: 'office!Excel.SpecialCellValueType.errorsNumbers:member'
+    package: office!
+    summary: Cells that have errors or numeric values.
+    value: '"ErrorsNumbers"'
+  - name: errorsNumberText
+    uid: 'office!Excel.SpecialCellValueType.errorsNumberText:member'
+    package: office!
+    summary: 'Cells that have errors, numeric, or string values.'
+    value: '"ErrorsNumberText"'
+  - name: errorsText
+    uid: 'office!Excel.SpecialCellValueType.errorsText:member'
+    package: office!
+    summary: Cells that have errors or string values.
+    value: '"ErrorsText"'
+  - name: logical
+    uid: 'office!Excel.SpecialCellValueType.logical:member'
+    package: office!
+    summary: Cells that have a boolean value.
+    value: '"Logical"'
+  - name: logicalNumbers
+    uid: 'office!Excel.SpecialCellValueType.logicalNumbers:member'
+    package: office!
+    summary: Cells that have a boolean or numeric value.
+    value: '"LogicalNumbers"'
+  - name: logicalNumbersText
+    uid: 'office!Excel.SpecialCellValueType.logicalNumbersText:member'
+    package: office!
+    summary: 'Cells that have a boolean, numeric, or string value.'
+    value: '"LogicalNumbersText"'
+  - name: logicalText
+    uid: 'office!Excel.SpecialCellValueType.logicalText:member'
+    package: office!
+    summary: Cells that have a boolean or string value.
+    value: '"LogicalText"'
+  - name: numbers
+    uid: 'office!Excel.SpecialCellValueType.numbers:member'
+    package: office!
+    summary: Cells that have a numeric value.
+    value: '"Numbers"'
+  - name: numbersText
+    uid: 'office!Excel.SpecialCellValueType.numbersText:member'
+    package: office!
+    summary: Cells that have a numeric or string value.
+    value: '"NumbersText"'
+  - name: text
+    uid: 'office!Excel.SpecialCellValueType.text:member'
+    package: office!
+    summary: Cells that have a string value.
+    value: '"Text"'

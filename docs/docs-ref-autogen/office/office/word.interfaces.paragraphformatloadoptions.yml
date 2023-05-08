@@ -1,0 +1,217 @@
+### YamlMime:TSType
+name: Word.Interfaces.ParagraphFormatLoadOptions
+uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions:interface'
+package: office!
+fullName: Word.Interfaces.ParagraphFormatLoadOptions
+summary: Represents a style of paragraph in a document.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: alignment
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#alignment:member'
+    package: office!
+    fullName: alignment
+    summary: Gets or sets the alignment for the specified paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'alignment?: boolean;'
+      return:
+        type: boolean
+  - name: firstLineIndent
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#firstLineIndent:member'
+    package: office!
+    fullName: firstLineIndent
+    summary: >-
+      Gets or sets the value (in points) for a first line or hanging indent. Use a positive value to set a first-line
+      indent, and use a negative value to set a hanging indent.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'firstLineIndent?: boolean;'
+      return:
+        type: boolean
+  - name: keepTogether
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#keepTogether:member'
+    package: office!
+    fullName: keepTogether
+    summary: >-
+      Gets or sets whether all lines in the specified paragraphs remain on the same page when Microsoft Word repaginates
+      the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'keepTogether?: boolean;'
+      return:
+        type: boolean
+  - name: keepWithNext
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#keepWithNext:member'
+    package: office!
+    fullName: keepWithNext
+    summary: >-
+      Gets or sets whether the specified paragraph remains on the same page as the paragraph that follows it when
+      Microsoft Word repaginates the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'keepWithNext?: boolean;'
+      return:
+        type: boolean
+  - name: leftIndent
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#leftIndent:member'
+    package: office!
+    fullName: leftIndent
+    summary: Gets or sets the left indent.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'leftIndent?: boolean;'
+      return:
+        type: boolean
+  - name: lineSpacing
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#lineSpacing:member'
+    package: office!
+    fullName: lineSpacing
+    summary: Gets or sets the line spacing (in points) for the specified paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lineSpacing?: boolean;'
+      return:
+        type: boolean
+  - name: lineUnitAfter
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#lineUnitAfter:member'
+    package: office!
+    fullName: lineUnitAfter
+    summary: Gets or sets the amount of spacing (in gridlines) after the specified paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lineUnitAfter?: boolean;'
+      return:
+        type: boolean
+  - name: lineUnitBefore
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#lineUnitBefore:member'
+    package: office!
+    fullName: lineUnitBefore
+    summary: Gets or sets the amount of spacing (in gridlines) before the specified paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'lineUnitBefore?: boolean;'
+      return:
+        type: boolean
+  - name: mirrorIndents
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#mirrorIndents:member'
+    package: office!
+    fullName: mirrorIndents
+    summary: Gets or sets whether left and right indents are the same width.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'mirrorIndents?: boolean;'
+      return:
+        type: boolean
+  - name: outlineLevel
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#outlineLevel:member'
+    package: office!
+    fullName: outlineLevel
+    summary: Gets or sets the outline level for the specified paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'outlineLevel?: boolean;'
+      return:
+        type: boolean
+  - name: rightIndent
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#rightIndent:member'
+    package: office!
+    fullName: rightIndent
+    summary: Gets or sets the right indent (in points) for the specified paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'rightIndent?: boolean;'
+      return:
+        type: boolean
+  - name: spaceAfter
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#spaceAfter:member'
+    package: office!
+    fullName: spaceAfter
+    summary: Gets or sets the amount of spacing (in points) after the specified paragraph or text column.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'spaceAfter?: boolean;'
+      return:
+        type: boolean
+  - name: spaceBefore
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#spaceBefore:member'
+    package: office!
+    fullName: spaceBefore
+    summary: Gets or sets the spacing (in points) before the specified paragraphs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'spaceBefore?: boolean;'
+      return:
+        type: boolean
+  - name: widowControl
+    uid: 'office!Word.Interfaces.ParagraphFormatLoadOptions#widowControl:member'
+    package: office!
+    fullName: widowControl
+    summary: >-
+      Gets or sets whether the first and last lines in the specified paragraph remain on the same page as the rest of
+      the paragraph when Microsoft Word repaginates the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'widowControl?: boolean;'
+      return:
+        type: boolean

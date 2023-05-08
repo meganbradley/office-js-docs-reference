@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalRangeBorderLineStyle
+uid: 'office!Excel.ConditionalRangeBorderLineStyle:enum'
+package: office!
+fullName: Excel.ConditionalRangeBorderLineStyle
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: continuous
+    uid: 'office!Excel.ConditionalRangeBorderLineStyle.continuous:member'
+    package: office!
+    summary: ''
+    value: '"Continuous"'
+  - name: dash
+    uid: 'office!Excel.ConditionalRangeBorderLineStyle.dash:member'
+    package: office!
+    summary: ''
+    value: '"Dash"'
+  - name: dashDot
+    uid: 'office!Excel.ConditionalRangeBorderLineStyle.dashDot:member'
+    package: office!
+    summary: ''
+    value: '"DashDot"'
+  - name: dashDotDot
+    uid: 'office!Excel.ConditionalRangeBorderLineStyle.dashDotDot:member'
+    package: office!
+    summary: ''
+    value: '"DashDotDot"'
+  - name: dot
+    uid: 'office!Excel.ConditionalRangeBorderLineStyle.dot:member'
+    package: office!
+    summary: ''
+    value: '"Dot"'
+  - name: none
+    uid: 'office!Excel.ConditionalRangeBorderLineStyle.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'

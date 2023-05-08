@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.Interfaces.AutoFilterData
+uid: 'office!Excel.Interfaces.AutoFilterData:interface'
+package: office!
+fullName: Excel.Interfaces.AutoFilterData
+summary: An interface describing the data returned by calling `autoFilter.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: criteria
+    uid: 'office!Excel.Interfaces.AutoFilterData#criteria:member'
+    package: office!
+    fullName: criteria
+    summary: An array that holds all the filter criteria in the autofiltered range.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'criteria?: Excel.FilterCriteria[];'
+      return:
+        type: '<xref uid="office!Excel.FilterCriteria:interface" />[]'
+  - name: enabled
+    uid: 'office!Excel.Interfaces.AutoFilterData#enabled:member'
+    package: office!
+    fullName: enabled
+    summary: Specifies if the AutoFilter is enabled.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enabled?: boolean;'
+      return:
+        type: boolean
+  - name: isDataFiltered
+    uid: 'office!Excel.Interfaces.AutoFilterData#isDataFiltered:member'
+    package: office!
+    fullName: isDataFiltered
+    summary: Specifies if the AutoFilter has filter criteria.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDataFiltered?: boolean;'
+      return:
+        type: boolean

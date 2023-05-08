@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Excel.ChartBinType
+uid: 'office!Excel.ChartBinType:enum'
+package: office!
+fullName: Excel.ChartBinType
+summary: Specifies the bin type of a histogram chart or pareto chart series.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: auto
+    uid: 'office!Excel.ChartBinType.auto:member'
+    package: office!
+    summary: ''
+    value: '"Auto"'
+  - name: binCount
+    uid: 'office!Excel.ChartBinType.binCount:member'
+    package: office!
+    summary: ''
+    value: '"BinCount"'
+  - name: binWidth
+    uid: 'office!Excel.ChartBinType.binWidth:member'
+    package: office!
+    summary: ''
+    value: '"BinWidth"'
+  - name: category
+    uid: 'office!Excel.ChartBinType.category:member'
+    package: office!
+    summary: ''
+    value: '"Category"'

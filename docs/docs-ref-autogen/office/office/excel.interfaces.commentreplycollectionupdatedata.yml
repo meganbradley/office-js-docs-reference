@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.CommentReplyCollectionUpdateData
+uid: 'office!Excel.Interfaces.CommentReplyCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.CommentReplyCollectionUpdateData
+summary: >-
+  An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.CommentReplyCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.CommentReplyData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.CommentReplyData:interface" />[]'

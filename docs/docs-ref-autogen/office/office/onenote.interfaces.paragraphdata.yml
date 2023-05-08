@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.ParagraphData
+uid: 'office!OneNote.Interfaces.ParagraphData:interface'
+package: office!
+fullName: OneNote.Interfaces.ParagraphData
+summary: An interface describing the data returned by calling `paragraph.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'office!OneNote.Interfaces.ParagraphData#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the Paragraph object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: image
+    uid: 'office!OneNote.Interfaces.ParagraphData#image:member'
+    package: office!
+    fullName: image
+    summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'image?: OneNote.Interfaces.ImageData;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ImageData:interface" />'
+  - name: inkWords
+    uid: 'office!OneNote.Interfaces.ParagraphData#inkWords:member'
+    package: office!
+    fullName: inkWords
+    summary: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inkWords?: OneNote.Interfaces.InkWordData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkWordData:interface" />[]'
+  - name: paragraphs
+    uid: 'office!OneNote.Interfaces.ParagraphData#paragraphs:member'
+    package: office!
+    fullName: paragraphs
+    summary: The collection of paragraphs under this paragraph. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paragraphs?: OneNote.Interfaces.ParagraphData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ParagraphData:interface" />[]'
+  - name: richText
+    uid: 'office!OneNote.Interfaces.ParagraphData#richText:member'
+    package: office!
+    fullName: richText
+    summary: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'richText?: OneNote.Interfaces.RichTextData;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.RichTextData:interface" />'
+  - name: table
+    uid: 'office!OneNote.Interfaces.ParagraphData#table:member'
+    package: office!
+    fullName: table
+    summary: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'table?: OneNote.Interfaces.TableData;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.TableData:interface" />'
+  - name: type
+    uid: 'office!OneNote.Interfaces.ParagraphData#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the Paragraph object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other";'
+      return:
+        type: '<xref uid="office!OneNote.ParagraphType:enum" /> | "RichText" | "Image" | "Table" | "Ink" | "Other"'

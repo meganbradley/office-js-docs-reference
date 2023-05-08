@@ -1,0 +1,85 @@
+### YamlMime:TSEnum
+name: Word.EventType
+uid: 'office!Word.EventType:enum'
+package: office!
+fullName: Word.EventType
+summary: Provides information about the type of a raised event.
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+  async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+    await Word.run(async (context) => {
+      // Display the deleted content control's ID.
+      console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+    });
+  }
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: commentAdded
+    uid: 'office!Word.EventType.commentAdded:member'
+    package: office!
+    summary: Represents that one or more new comments were added.
+    value: '"CommentAdded"'
+  - name: commentChanged
+    uid: 'office!Word.EventType.commentChanged:member'
+    package: office!
+    summary: Represents that a comment or its reply was changed.
+    value: '"CommentChanged"'
+  - name: commentDeleted
+    uid: 'office!Word.EventType.commentDeleted:member'
+    package: office!
+    summary: Represents that one or more comments were deleted.
+    value: '"CommentDeleted"'
+  - name: commentDeselected
+    uid: 'office!Word.EventType.commentDeselected:member'
+    package: office!
+    summary: Represents that a comment was deselected.
+    value: '"CommentDeselected"'
+  - name: commentSelected
+    uid: 'office!Word.EventType.commentSelected:member'
+    package: office!
+    summary: Represents that a comment was selected.
+    value: '"CommentSelected"'
+  - name: contentControlAdded
+    uid: 'office!Word.EventType.contentControlAdded:member'
+    package: office!
+    summary: ContentControlAdded represents the event a content control has been added to the document.
+    value: '"ContentControlAdded"'
+  - name: contentControlDataChanged
+    uid: 'office!Word.EventType.contentControlDataChanged:member'
+    package: office!
+    summary: ContentControlDataChanged represents the event that the data in the content control have been changed.
+    value: '"ContentControlDataChanged"'
+  - name: contentControlDeleted
+    uid: 'office!Word.EventType.contentControlDeleted:member'
+    package: office!
+    summary: ContentControlDeleted represents the event that the content control has been deleted.
+    value: '"ContentControlDeleted"'
+  - name: contentControlEntered
+    uid: 'office!Word.EventType.contentControlEntered:member'
+    package: office!
+    summary: Represents that a content control has been entered.
+    value: '"ContentControlEntered"'
+  - name: contentControlExited
+    uid: 'office!Word.EventType.contentControlExited:member'
+    package: office!
+    summary: Represents that a content control has been exited.
+    value: '"ContentControlExited"'
+  - name: contentControlSelectionChanged
+    uid: 'office!Word.EventType.contentControlSelectionChanged:member'
+    package: office!
+    summary: ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
+    value: '"ContentControlSelectionChanged"'

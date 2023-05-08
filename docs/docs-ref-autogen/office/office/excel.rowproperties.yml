@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.RowProperties
+uid: 'office!Excel.RowProperties:interface'
+package: office!
+fullName: Excel.RowProperties
+summary: |-
+  Represents the returned properties of getRowProperties.
+
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'office!Excel.RowProperties#address:member'
+    package: office!
+    fullName: address
+    summary: |-
+      Represents the `address` property.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address?: string;'
+      return:
+        type: string
+  - name: addressLocal
+    uid: 'office!Excel.RowProperties#addressLocal:member'
+    package: office!
+    fullName: addressLocal
+    summary: |-
+      Represents the `addressLocal` property.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addressLocal?: string;'
+      return:
+        type: string
+  - name: rowIndex
+    uid: 'office!Excel.RowProperties#rowIndex:member'
+    package: office!
+    fullName: rowIndex
+    summary: |-
+      Represents the `rowIndex` property.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowIndex?: number;'
+      return:
+        type: number
+extends: '<xref uid="office!Excel.SettableRowProperties:interface" />'

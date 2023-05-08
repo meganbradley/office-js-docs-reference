@@ -1,0 +1,52 @@
+### YamlMime:TSEnum
+name: Excel.ArrowheadLength
+uid: 'office!Excel.ArrowheadLength:enum'
+package: office!
+fullName: Excel.ArrowheadLength
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+  await Excel.run(async (context) => {
+      const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+      const line = shapes.getItem("StraightLine").line;
+      line.beginArrowheadLength = Excel.ArrowheadLength.long;
+      line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+      line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+      line.endArrowheadLength = Excel.ArrowheadLength.long;
+      line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+      line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: long
+    uid: 'office!Excel.ArrowheadLength.long:member'
+    package: office!
+    summary: ''
+    value: '"Long"'
+  - name: medium
+    uid: 'office!Excel.ArrowheadLength.medium:member'
+    package: office!
+    summary: ''
+    value: '"Medium"'
+  - name: short
+    uid: 'office!Excel.ArrowheadLength.short:member'
+    package: office!
+    summary: ''
+    value: '"Short"'

@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.NotebookData
+uid: 'office!OneNote.Interfaces.NotebookData:interface'
+package: office!
+fullName: OneNote.Interfaces.NotebookData
+summary: An interface describing the data returned by calling `notebook.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: baseUrl
+    uid: 'office!OneNote.Interfaces.NotebookData#baseUrl:member'
+    package: office!
+    fullName: baseUrl
+    summary: The url of the site where this notebook is located. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseUrl?: string;'
+      return:
+        type: string
+  - name: clientUrl
+    uid: 'office!OneNote.Interfaces.NotebookData#clientUrl:member'
+    package: office!
+    fullName: clientUrl
+    summary: The client url of the notebook. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientUrl?: string;'
+      return:
+        type: string
+  - name: id
+    uid: 'office!OneNote.Interfaces.NotebookData#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the notebook. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: isVirtual
+    uid: 'office!OneNote.Interfaces.NotebookData#isVirtual:member'
+    package: office!
+    fullName: isVirtual
+    summary: 'True if the notebook is not created by the user (i.e., ''Misplaced Sections''). Read only'
+    remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isVirtual?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!OneNote.Interfaces.NotebookData#name:member'
+    package: office!
+    fullName: name
+    summary: Gets the name of the notebook. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: sectionGroups
+    uid: 'office!OneNote.Interfaces.NotebookData#sectionGroups:member'
+    package: office!
+    fullName: sectionGroups
+    summary: The section groups in the notebook. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sectionGroups?: OneNote.Interfaces.SectionGroupData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.SectionGroupData:interface" />[]'
+  - name: sections
+    uid: 'office!OneNote.Interfaces.NotebookData#sections:member'
+    package: office!
+    fullName: sections
+    summary: The sections of the notebook. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sections?: OneNote.Interfaces.SectionData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.SectionData:interface" />[]'

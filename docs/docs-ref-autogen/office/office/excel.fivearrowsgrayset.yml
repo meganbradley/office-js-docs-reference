@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.FiveArrowsGraySet
+uid: 'office!Excel.FiveArrowsGraySet:interface'
+package: office!
+fullName: Excel.FiveArrowsGraySet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: grayDownArrow
+    uid: 'office!Excel.FiveArrowsGraySet#grayDownArrow:member'
+    package: office!
+    fullName: grayDownArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: grayDownInclineArrow
+    uid: 'office!Excel.FiveArrowsGraySet#grayDownInclineArrow:member'
+    package: office!
+    fullName: grayDownInclineArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayDownInclineArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: graySideArrow
+    uid: 'office!Excel.FiveArrowsGraySet#graySideArrow:member'
+    package: office!
+    fullName: graySideArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'graySideArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: grayUpArrow
+    uid: 'office!Excel.FiveArrowsGraySet#grayUpArrow:member'
+    package: office!
+    fullName: grayUpArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: grayUpInclineArrow
+    uid: 'office!Excel.FiveArrowsGraySet#grayUpInclineArrow:member'
+    package: office!
+    fullName: grayUpInclineArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayUpInclineArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

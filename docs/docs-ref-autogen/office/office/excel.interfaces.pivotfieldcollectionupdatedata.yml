@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotFieldCollectionUpdateData
+uid: 'office!Excel.Interfaces.PivotFieldCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.PivotFieldCollectionUpdateData
+summary: >-
+  An interface for updating data on the PivotFieldCollection object, for use in `pivotFieldCollection.set({ ... })`<!--
+  -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotFieldData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.PivotFieldData:interface" />[]'

@@ -1,0 +1,59 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.AppointmentSensitivityType
+uid: 'office!Office.MailboxEnums.AppointmentSensitivityType:enum'
+package: office!
+fullName: Office.MailboxEnums.AppointmentSensitivityType
+summary: 'Specifies the [sensitivity level](xref:office!Office.Sensitivity:interface) of an appointment.'
+remarks: >-
+  \[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose or Read
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/99-preview-apis/calendar-properties-apis.yaml
+
+  Office.context.mailbox.item.sensitivity.setAsync(
+    Office.MailboxEnums.AppointmentSensitivityType.Confidential,
+    function callback(asyncResult) {
+      if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+        console.log("Failed to set appointment sensitivity: " + JSON.stringify(asyncResult.error));
+      } else {
+        console.log("Successfully set appointment sensitivity.");
+      }
+    }
+  );
+
+  ```
+example: []
+isPreview: true
+isDeprecated: false
+fields:
+  - name: Confidential
+    uid: 'office!Office.MailboxEnums.AppointmentSensitivityType.Confidential:member'
+    package: office!
+    summary: Treat the item as confidential.
+    value: '"confidential"'
+  - name: Normal
+    uid: 'office!Office.MailboxEnums.AppointmentSensitivityType.Normal:member'
+    package: office!
+    summary: The item needs no special treatment.
+    value: '"normal"'
+  - name: Personal
+    uid: 'office!Office.MailboxEnums.AppointmentSensitivityType.Personal:member'
+    package: office!
+    summary: Treat the item as personal.
+    value: '"personal"'
+  - name: Private
+    uid: 'office!Office.MailboxEnums.AppointmentSensitivityType.Private:member'
+    package: office!
+    summary: Treat the item as private.
+    value: '"private"'

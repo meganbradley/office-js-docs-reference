@@ -1,0 +1,118 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentReplyLoadOptions
+uid: 'office!Word.Interfaces.CommentReplyLoadOptions:interface'
+package: office!
+fullName: Word.Interfaces.CommentReplyLoadOptions
+summary: Represents a comment reply in the document.
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Word.Interfaces.CommentReplyLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: authorEmail
+    uid: 'office!Word.Interfaces.CommentReplyLoadOptions#authorEmail:member'
+    package: office!
+    fullName: authorEmail
+    summary: Gets the email of the comment reply's author.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorEmail?: boolean;'
+      return:
+        type: boolean
+  - name: authorName
+    uid: 'office!Word.Interfaces.CommentReplyLoadOptions#authorName:member'
+    package: office!
+    fullName: authorName
+    summary: Gets the name of the comment reply's author.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorName?: boolean;'
+      return:
+        type: boolean
+  - name: content
+    uid: 'office!Word.Interfaces.CommentReplyLoadOptions#content:member'
+    package: office!
+    fullName: content
+    summary: Gets or sets the comment reply's content. The string is plain text.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: boolean;'
+      return:
+        type: boolean
+  - name: contentRange
+    uid: 'office!Word.Interfaces.CommentReplyLoadOptions#contentRange:member'
+    package: office!
+    fullName: contentRange
+    summary: Gets or sets the commentReply's content range.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.CommentContentRangeLoadOptions:interface" />'
+  - name: creationDate
+    uid: 'office!Word.Interfaces.CommentReplyLoadOptions#creationDate:member'
+    package: office!
+    fullName: creationDate
+    summary: Gets the creation date of the comment reply.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Word.Interfaces.CommentReplyLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the comment reply.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: parentComment
+    uid: 'office!Word.Interfaces.CommentReplyLoadOptions#parentComment:member'
+    package: office!
+    fullName: parentComment
+    summary: Gets the parent comment of this reply.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentComment?: Word.Interfaces.CommentLoadOptions;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.CommentLoadOptions:interface" />'

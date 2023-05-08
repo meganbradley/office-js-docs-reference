@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Excel.CellValueAttributionAttributes
+uid: 'office!Excel.CellValueAttributionAttributes:interface'
+package: office!
+fullName: Excel.CellValueAttributionAttributes
+summary: >-
+  The attribution attributes object represents the set of details that can be used to describe where information came
+  from, if the information comes from a public source.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: licenseAddress
+    uid: 'office!Excel.CellValueAttributionAttributes#licenseAddress:member'
+    package: office!
+    fullName: licenseAddress
+    summary: Represents a URL to a license or source that describes how this property can be used.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'licenseAddress?: string;'
+      return:
+        type: string
+  - name: licenseText
+    uid: 'office!Excel.CellValueAttributionAttributes#licenseText:member'
+    package: office!
+    fullName: licenseText
+    summary: Represents a name for the license that governs this property.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'licenseText?: string;'
+      return:
+        type: string
+  - name: sourceAddress
+    uid: 'office!Excel.CellValueAttributionAttributes#sourceAddress:member'
+    package: office!
+    fullName: sourceAddress
+    summary: Represents a URL to the source of the `CellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceAddress?: string;'
+      return:
+        type: string
+  - name: sourceText
+    uid: 'office!Excel.CellValueAttributionAttributes#sourceText:member'
+    package: office!
+    fullName: sourceText
+    summary: Represents a name for the source of the `CellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sourceText?: string;'
+      return:
+        type: string

@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.WorkbookLinksRefreshMode
+uid: 'office!Excel.WorkbookLinksRefreshMode:enum'
+package: office!
+fullName: Excel.WorkbookLinksRefreshMode
+summary: Represents the refresh mode of the workbook links.
+remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.WorkbookLinksRefreshMode.automatic:member'
+    package: office!
+    summary: The workbook links are updated at a set interval determined by the Excel application.
+    value: '"Automatic"'
+  - name: manual
+    uid: 'office!Excel.WorkbookLinksRefreshMode.manual:member'
+    package: office!
+    summary: The workbook links are updated manually.
+    value: '"Manual"'

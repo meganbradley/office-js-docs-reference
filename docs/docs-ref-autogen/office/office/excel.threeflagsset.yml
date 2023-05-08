@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ThreeFlagsSet
+uid: 'office!Excel.ThreeFlagsSet:interface'
+package: office!
+fullName: Excel.ThreeFlagsSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenFlag
+    uid: 'office!Excel.ThreeFlagsSet#greenFlag:member'
+    package: office!
+    fullName: greenFlag
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'greenFlag: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redFlag
+    uid: 'office!Excel.ThreeFlagsSet#redFlag:member'
+    package: office!
+    fullName: redFlag
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redFlag: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowFlag
+    uid: 'office!Excel.ThreeFlagsSet#yellowFlag:member'
+    package: office!
+    fullName: yellowFlag
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowFlag: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

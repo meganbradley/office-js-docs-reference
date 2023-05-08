@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: Excel.Interfaces.WorksheetProtectionLoadOptions
+uid: 'office!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.WorksheetProtectionLoadOptions
+summary: Represents the protection of a worksheet object.
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.WorksheetProtectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: canPauseProtection
+    uid: 'office!Excel.Interfaces.WorksheetProtectionLoadOptions#canPauseProtection:member'
+    package: office!
+    fullName: canPauseProtection
+    summary: Specifies if protection can be paused for this worksheet.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canPauseProtection?: boolean;'
+      return:
+        type: boolean
+  - name: isPasswordProtected
+    uid: 'office!Excel.Interfaces.WorksheetProtectionLoadOptions#isPasswordProtected:member'
+    package: office!
+    fullName: isPasswordProtected
+    summary: Specifies if the sheet is password protected.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isPasswordProtected?: boolean;'
+      return:
+        type: boolean
+  - name: isPaused
+    uid: 'office!Excel.Interfaces.WorksheetProtectionLoadOptions#isPaused:member'
+    package: office!
+    fullName: isPaused
+    summary: Specifies if worksheet protection is paused.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isPaused?: boolean;'
+      return:
+        type: boolean
+  - name: options
+    uid: 'office!Excel.Interfaces.WorksheetProtectionLoadOptions#options:member'
+    package: office!
+    fullName: options
+    summary: Specifies the protection options for the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'options?: boolean;'
+      return:
+        type: boolean
+  - name: protected
+    uid: 'office!Excel.Interfaces.WorksheetProtectionLoadOptions#protected:member'
+    package: office!
+    fullName: protected
+    summary: Specifies if the worksheet is protected.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protected?: boolean;'
+      return:
+        type: boolean
+  - name: savedOptions
+    uid: 'office!Excel.Interfaces.WorksheetProtectionLoadOptions#savedOptions:member'
+    package: office!
+    fullName: savedOptions
+    summary: >-
+      Specifies the protection options saved in the worksheet. This will return the same `WorksheetProtectionOptions`
+      object regardless of the worksheet protection state.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'savedOptions?: boolean;'
+      return:
+        type: boolean

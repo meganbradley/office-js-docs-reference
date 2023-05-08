@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.TableRowData
+uid: 'office!OneNote.Interfaces.TableRowData:interface'
+package: office!
+fullName: OneNote.Interfaces.TableRowData
+summary: An interface describing the data returned by calling `tableRow.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cellCount
+    uid: 'office!OneNote.Interfaces.TableRowData#cellCount:member'
+    package: office!
+    fullName: cellCount
+    summary: Gets the number of cells in the row. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cellCount?: number;'
+      return:
+        type: number
+  - name: cells
+    uid: 'office!OneNote.Interfaces.TableRowData#cells:member'
+    package: office!
+    fullName: cells
+    summary: Gets the cells in the row. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cells?: OneNote.Interfaces.TableCellData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.TableCellData:interface" />[]'
+  - name: id
+    uid: 'office!OneNote.Interfaces.TableRowData#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the row. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: rowIndex
+    uid: 'office!OneNote.Interfaces.TableRowData#rowIndex:member'
+    package: office!
+    fullName: rowIndex
+    summary: Gets the index of the row in its parent table. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowIndex?: number;'
+      return:
+        type: number

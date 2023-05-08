@@ -8,6 +8,7 @@ summary: >-
   [context.trackedObjects](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)
   for more information.
 remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: class
@@ -23,6 +24,7 @@ methods:
       to have added the object to the tracked object collection when the object was first created. If this object is
       part of a collection in Word, you should also track the parent collection.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -45,6 +47,7 @@ methods:
       needed to have added the object to the tracked object collection when the object was first created. If this object
       is part of a collection in Word, you should also track the parent collection.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -65,6 +68,7 @@ methods:
       objects slows down the Office application, so please remember to free any objects you add, once you're done using
       them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -85,6 +89,7 @@ methods:
       objects slows down the Office application, so please remember to free any objects you add, once you're done using
       them. You will need to call `context.sync()` before the memory release takes effect.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

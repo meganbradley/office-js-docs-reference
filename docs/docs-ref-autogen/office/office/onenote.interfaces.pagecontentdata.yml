@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.PageContentData
+uid: 'office!OneNote.Interfaces.PageContentData:interface'
+package: office!
+fullName: OneNote.Interfaces.PageContentData
+summary: An interface describing the data returned by calling `pageContent.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'office!OneNote.Interfaces.PageContentData#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the PageContent object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: image
+    uid: 'office!OneNote.Interfaces.PageContentData#image:member'
+    package: office!
+    fullName: image
+    summary: Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'image?: OneNote.Interfaces.ImageData;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ImageData:interface" />'
+  - name: ink
+    uid: 'office!OneNote.Interfaces.PageContentData#ink:member'
+    package: office!
+    fullName: ink
+    summary: Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ink?: OneNote.Interfaces.FloatingInkData;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.FloatingInkData:interface" />'
+  - name: left
+    uid: 'office!OneNote.Interfaces.PageContentData#left:member'
+    package: office!
+    fullName: left
+    summary: Gets or sets the left (X-axis) position of the PageContent object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: outline
+    uid: 'office!OneNote.Interfaces.PageContentData#outline:member'
+    package: office!
+    fullName: outline
+    summary: Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outline?: OneNote.Interfaces.OutlineData;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.OutlineData:interface" />'
+  - name: top
+    uid: 'office!OneNote.Interfaces.PageContentData#top:member'
+    package: office!
+    fullName: top
+    summary: Gets or sets the top (Y-axis) position of the PageContent object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'office!OneNote.Interfaces.PageContentData#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the PageContent object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other";'
+      return:
+        type: '<xref uid="office!OneNote.PageContentType:enum" /> | "Outline" | "Image" | "Ink" | "Other"'

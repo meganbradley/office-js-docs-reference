@@ -1,0 +1,44 @@
+### YamlMime:TSEnum
+name: Visio.DataVisualizerDiagramOperationType
+uid: 'office!Visio.DataVisualizerDiagramOperationType:enum'
+package: office!
+fullName: Visio.DataVisualizerDiagramOperationType
+summary: |-
+  Type of the Data Visualizer Diagram operation
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: create
+    uid: 'office!Visio.DataVisualizerDiagramOperationType.create:member'
+    package: office!
+    summary: Creation operation.
+    value: '"Create"'
+  - name: delete
+    uid: 'office!Visio.DataVisualizerDiagramOperationType.delete:member'
+    package: office!
+    summary: Delete the diagram content.
+    value: '"Delete"'
+  - name: unknown
+    uid: 'office!Visio.DataVisualizerDiagramOperationType.unknown:member'
+    package: office!
+    summary: unknown operation type.
+    value: '"Unknown"'
+  - name: update
+    uid: 'office!Visio.DataVisualizerDiagramOperationType.update:member'
+    package: office!
+    summary: Update both data and mappings.
+    value: '"Update"'
+  - name: updateData
+    uid: 'office!Visio.DataVisualizerDiagramOperationType.updateData:member'
+    package: office!
+    summary: Update data associated with diagram.
+    value: '"UpdateData"'
+  - name: updateMappings
+    uid: 'office!Visio.DataVisualizerDiagramOperationType.updateMappings:member'
+    package: office!
+    summary: Update Mappings operation.
+    value: '"UpdateMappings"'

@@ -1,0 +1,79 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+uid: 'office!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+summary: >-
+  An interface for updating data on the ConditionalRangeBorderCollection object, for use in
+  `conditionalRangeBorderCollection.set({ ... })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bottom
+    uid: 'office!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#bottom:member'
+    package: office!
+    fullName: bottom
+    summary: Gets the bottom border.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottom?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface" />'
+  - name: items
+    uid: 'office!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.ConditionalRangeBorderData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalRangeBorderData:interface" />[]'
+  - name: left
+    uid: 'office!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#left:member'
+    package: office!
+    fullName: left
+    summary: Gets the left border.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface" />'
+  - name: right
+    uid: 'office!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#right:member'
+    package: office!
+    fullName: right
+    summary: Gets the right border.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'right?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface" />'
+  - name: top
+    uid: 'office!Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData#top:member'
+    package: office!
+    fullName: top
+    summary: Gets the top border.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: Excel.Interfaces.ConditionalRangeBorderUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalRangeBorderUpdateData:interface" />'

@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ReferenceValueType
+uid: 'office!Excel.ReferenceValueType:enum'
+package: office!
+fullName: Excel.ReferenceValueType
+summary: Represents the types of the `ReferenceValue` object.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: array
+    uid: 'office!Excel.ReferenceValueType.array:member'
+    package: office!
+    summary: Represents an `ArrayCellValue`<!-- -->.
+    value: '"Array"'
+  - name: entity
+    uid: 'office!Excel.ReferenceValueType.entity:member'
+    package: office!
+    summary: Represents an `EntityCellValue`<!-- -->.
+    value: '"Entity"'
+  - name: root
+    uid: 'office!Excel.ReferenceValueType.root:member'
+    package: office!
+    summary: Represents a `RootReferenceCellValue`<!-- -->.
+    value: '"Root"'

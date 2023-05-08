@@ -1,0 +1,121 @@
+### YamlMime:TSEnum
+name: Excel.ErrorCellValueType
+uid: 'office!Excel.ErrorCellValueType:enum'
+package: office!
+fullName: Excel.ErrorCellValueType
+summary: Represents the types of the `ErrorCellValue` object.
+remarks: >-
+  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml
+
+  // This function sets the value of cell A1 to a #BUSY! error using data types.
+
+  await Excel.run(async (context) => {
+    // Retrieve the Sample worksheet and cell A1 on that sheet.
+    const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+    const range = sheet.getRange("A1");
+
+    // Get the error data type and set its type to `busy`. 
+    const error: Excel.ErrorCellValue = {
+      type: Excel.CellValueType.error,
+      errorType: Excel.ErrorCellValueType.busy
+    };
+
+    // Set cell A1 as the busy error.
+    range.valuesAsJson = [[error]];
+    await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: blocked
+    uid: 'office!Excel.ErrorCellValueType.blocked:member'
+    package: office!
+    summary: Represents a `BlockedErrorCellValue`<!-- -->.
+    value: '"Blocked"'
+  - name: busy
+    uid: 'office!Excel.ErrorCellValueType.busy:member'
+    package: office!
+    summary: Represents a `BusyErrorCellValue`<!-- -->.
+    value: '"Busy"'
+  - name: calc
+    uid: 'office!Excel.ErrorCellValueType.calc:member'
+    package: office!
+    summary: Represents a `CalcErrorCellValue`<!-- -->.
+    value: '"Calc"'
+  - name: connect
+    uid: 'office!Excel.ErrorCellValueType.connect:member'
+    package: office!
+    summary: Represents a `ConnectErrorCellValue`<!-- -->.
+    value: '"Connect"'
+  - name: div0
+    uid: 'office!Excel.ErrorCellValueType.div0:member'
+    package: office!
+    summary: Represents a `Div0ErrorCellValue`<!-- -->.
+    value: '"Div0"'
+  - name: external
+    uid: 'office!Excel.ErrorCellValueType.external:member'
+    package: office!
+    summary: Represents an `ExternalErrorCellValue`<!-- -->.
+    value: '"External"'
+  - name: field
+    uid: 'office!Excel.ErrorCellValueType.field:member'
+    package: office!
+    summary: Represents a `FieldErrorCellValue`<!-- -->.
+    value: '"Field"'
+  - name: gettingData
+    uid: 'office!Excel.ErrorCellValueType.gettingData:member'
+    package: office!
+    summary: Represents a `GettingDataErrorCellValue`<!-- -->.
+    value: '"GettingData"'
+  - name: name
+    uid: 'office!Excel.ErrorCellValueType.name:member'
+    package: office!
+    summary: Represents a `NameErrorCellValue`<!-- -->.
+    value: '"Name"'
+  - name: notAvailable
+    uid: 'office!Excel.ErrorCellValueType.notAvailable:member'
+    package: office!
+    summary: Represents a `NotAvailableErrorCellValue`<!-- -->.
+    value: '"NotAvailable"'
+  - name: 'null'
+    uid: 'office!Excel.ErrorCellValueType.null:member'
+    package: office!
+    summary: Represents a `NullErrorCellValue`<!-- -->.
+    value: '"Null"'
+  - name: num
+    uid: 'office!Excel.ErrorCellValueType.num:member'
+    package: office!
+    summary: Represents a `NumErrorCellValue`<!-- -->.
+    value: '"Num"'
+  - name: placeholder
+    uid: 'office!Excel.ErrorCellValueType.placeholder:member'
+    package: office!
+    summary: Represents a `PlaceholderErrorCellValue`<!-- -->.
+    value: '"Placeholder"'
+  - name: ref
+    uid: 'office!Excel.ErrorCellValueType.ref:member'
+    package: office!
+    summary: Represents a `RefErrorCellValue`<!-- -->.
+    value: '"Ref"'
+  - name: spill
+    uid: 'office!Excel.ErrorCellValueType.spill:member'
+    package: office!
+    summary: Represents a `SpillErrorCellValue`<!-- -->.
+    value: '"Spill"'
+  - name: value
+    uid: 'office!Excel.ErrorCellValueType.value:member'
+    package: office!
+    summary: Represents a `ValueErrorCellValue`<!-- -->.
+    value: '"Value"'

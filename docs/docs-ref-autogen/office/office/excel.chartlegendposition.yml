@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: Excel.ChartLegendPosition
+uid: 'office!Excel.ChartLegendPosition:enum'
+package: office!
+fullName: Excel.ChartLegendPosition
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'office!Excel.ChartLegendPosition.bottom:member'
+    package: office!
+    summary: ''
+    value: '"Bottom"'
+  - name: corner
+    uid: 'office!Excel.ChartLegendPosition.corner:member'
+    package: office!
+    summary: ''
+    value: '"Corner"'
+  - name: custom
+    uid: 'office!Excel.ChartLegendPosition.custom:member'
+    package: office!
+    summary: ''
+    value: '"Custom"'
+  - name: invalid
+    uid: 'office!Excel.ChartLegendPosition.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: left
+    uid: 'office!Excel.ChartLegendPosition.left:member'
+    package: office!
+    summary: ''
+    value: '"Left"'
+  - name: right
+    uid: 'office!Excel.ChartLegendPosition.right:member'
+    package: office!
+    summary: ''
+    value: '"Right"'
+  - name: top
+    uid: 'office!Excel.ChartLegendPosition.top:member'
+    package: office!
+    summary: ''
+    value: '"Top"'

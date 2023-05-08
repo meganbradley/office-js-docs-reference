@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: Word.CommentChangeType
+uid: 'office!Word.CommentChangeType:enum'
+package: office!
+fullName: Word.CommentChangeType
+summary: Represents how the comments in the event were changed.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+fields:
+  - name: edited
+    uid: 'office!Word.CommentChangeType.edited:member'
+    package: office!
+    summary: A comment was edited.
+    value: '"edited"'
+  - name: none
+    uid: 'office!Word.CommentChangeType.none:member'
+    package: office!
+    summary: No comment changed event is triggered.
+    value: '"none"'
+  - name: reopened
+    uid: 'office!Word.CommentChangeType.reopened:member'
+    package: office!
+    summary: A comment was reopened.
+    value: '"reopened"'
+  - name: replyAdded
+    uid: 'office!Word.CommentChangeType.replyAdded:member'
+    package: office!
+    summary: A reply was added.
+    value: '"replyAdded"'
+  - name: replyDeleted
+    uid: 'office!Word.CommentChangeType.replyDeleted:member'
+    package: office!
+    summary: A reply was deleted.
+    value: '"replyDeleted"'
+  - name: replyEdited
+    uid: 'office!Word.CommentChangeType.replyEdited:member'
+    package: office!
+    summary: A reply was edited.
+    value: '"replyEdited"'
+  - name: resolved
+    uid: 'office!Word.CommentChangeType.resolved:member'
+    package: office!
+    summary: A comment was resolved.
+    value: '"resolved"'

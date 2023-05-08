@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ChartGradientStyleType
+uid: 'office!Excel.ChartGradientStyleType:enum'
+package: office!
+fullName: Excel.ChartGradientStyleType
+summary: Represents the gradient style type of a chart series. This is only applicable for region map charts.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: extremeValue
+    uid: 'office!Excel.ChartGradientStyleType.extremeValue:member'
+    package: office!
+    summary: ''
+    value: '"ExtremeValue"'
+  - name: number
+    uid: 'office!Excel.ChartGradientStyleType.number:member'
+    package: office!
+    summary: ''
+    value: '"Number"'
+  - name: percent
+    uid: 'office!Excel.ChartGradientStyleType.percent:member'
+    package: office!
+    summary: ''
+    value: '"Percent"'

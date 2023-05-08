@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Excel.Interfaces.TableSortLoadOptions
+uid: 'office!Excel.Interfaces.TableSortLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.TableSortLoadOptions
+summary: Manages sorting operations on `Table` objects.
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.TableSortLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: fields
+    uid: 'office!Excel.Interfaces.TableSortLoadOptions#fields:member'
+    package: office!
+    fullName: fields
+    summary: Specifies the current conditions used to last sort the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fields?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'office!Excel.Interfaces.TableSortLoadOptions#matchCase:member'
+    package: office!
+    fullName: matchCase
+    summary: Specifies if the casing impacts the last sort of the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean
+  - name: method
+    uid: 'office!Excel.Interfaces.TableSortLoadOptions#method:member'
+    package: office!
+    fullName: method
+    summary: Represents the Chinese character ordering method last used to sort the table.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'method?: boolean;'
+      return:
+        type: boolean

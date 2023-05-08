@@ -1,0 +1,56 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalCellValueOperator
+uid: 'office!Excel.ConditionalCellValueOperator:enum'
+package: office!
+fullName: Excel.ConditionalCellValueOperator
+summary: Represents the operator of the text conditional format type.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: between
+    uid: 'office!Excel.ConditionalCellValueOperator.between:member'
+    package: office!
+    summary: ''
+    value: '"Between"'
+  - name: equalTo
+    uid: 'office!Excel.ConditionalCellValueOperator.equalTo:member'
+    package: office!
+    summary: ''
+    value: '"EqualTo"'
+  - name: greaterThan
+    uid: 'office!Excel.ConditionalCellValueOperator.greaterThan:member'
+    package: office!
+    summary: ''
+    value: '"GreaterThan"'
+  - name: greaterThanOrEqual
+    uid: 'office!Excel.ConditionalCellValueOperator.greaterThanOrEqual:member'
+    package: office!
+    summary: ''
+    value: '"GreaterThanOrEqual"'
+  - name: invalid
+    uid: 'office!Excel.ConditionalCellValueOperator.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: lessThan
+    uid: 'office!Excel.ConditionalCellValueOperator.lessThan:member'
+    package: office!
+    summary: ''
+    value: '"LessThan"'
+  - name: lessThanOrEqual
+    uid: 'office!Excel.ConditionalCellValueOperator.lessThanOrEqual:member'
+    package: office!
+    summary: ''
+    value: '"LessThanOrEqual"'
+  - name: notBetween
+    uid: 'office!Excel.ConditionalCellValueOperator.notBetween:member'
+    package: office!
+    summary: ''
+    value: '"NotBetween"'
+  - name: notEqualTo
+    uid: 'office!Excel.ConditionalCellValueOperator.notEqualTo:member'
+    package: office!
+    summary: ''
+    value: '"NotEqualTo"'

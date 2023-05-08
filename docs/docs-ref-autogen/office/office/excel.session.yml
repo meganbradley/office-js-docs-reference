@@ -1,0 +1,11 @@
+### YamlMime:TSType
+name: Excel.Session
+uid: 'office!Excel.Session:interface'
+package: office!
+fullName: Excel.Session
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface

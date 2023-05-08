@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.BindingDataChangedEventArgs
+uid: 'office!Excel.BindingDataChangedEventArgs:interface'
+package: office!
+fullName: Excel.BindingDataChangedEventArgs
+summary: Provides information about the binding that raised the data changed event.
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: binding
+    uid: 'office!Excel.BindingDataChangedEventArgs#binding:member'
+    package: office!
+    fullName: binding
+    summary: >-
+      Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID
+      with `BindingCollection.getItem(id)` to get the binding.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'binding: Excel.Binding;'
+      return:
+        type: '<xref uid="office!Excel.Binding:class" />'

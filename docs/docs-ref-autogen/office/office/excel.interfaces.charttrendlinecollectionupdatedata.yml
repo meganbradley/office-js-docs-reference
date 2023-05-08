@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartTrendlineCollectionUpdateData
+uid: 'office!Excel.Interfaces.ChartTrendlineCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartTrendlineCollectionUpdateData
+summary: >-
+  An interface for updating data on the ChartTrendlineCollection object, for use in `chartTrendlineCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.ChartTrendlineCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.ChartTrendlineData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartTrendlineData:interface" />[]'

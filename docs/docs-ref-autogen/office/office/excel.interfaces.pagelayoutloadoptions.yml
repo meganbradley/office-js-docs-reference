@@ -1,0 +1,295 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PageLayoutLoadOptions
+uid: 'office!Excel.Interfaces.PageLayoutLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.PageLayoutLoadOptions
+summary: >-
+  Represents layout and print settings that are not dependent on any printer-specific implementation. These settings
+  include margins, orientation, page numbering, title rows, and print area.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: blackAndWhite
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#blackAndWhite:member'
+    package: office!
+    fullName: blackAndWhite
+    summary: The worksheet's black and white print option.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blackAndWhite?: boolean;'
+      return:
+        type: boolean
+  - name: bottomMargin
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#bottomMargin:member'
+    package: office!
+    fullName: bottomMargin
+    summary: The worksheet's bottom page margin to use for printing in points.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottomMargin?: boolean;'
+      return:
+        type: boolean
+  - name: centerHorizontally
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#centerHorizontally:member'
+    package: office!
+    fullName: centerHorizontally
+    summary: >-
+      The worksheet's center horizontally flag. This flag determines whether the worksheet will be centered horizontally
+      when it's printed.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'centerHorizontally?: boolean;'
+      return:
+        type: boolean
+  - name: centerVertically
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#centerVertically:member'
+    package: office!
+    fullName: centerVertically
+    summary: >-
+      The worksheet's center vertically flag. This flag determines whether the worksheet will be centered vertically
+      when it's printed.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'centerVertically?: boolean;'
+      return:
+        type: boolean
+  - name: draftMode
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#draftMode:member'
+    package: office!
+    fullName: draftMode
+    summary: 'The worksheet''s draft mode option. If `true`<!-- -->, the sheet will be printed without graphics.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'draftMode?: boolean;'
+      return:
+        type: boolean
+  - name: firstPageNumber
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#firstPageNumber:member'
+    package: office!
+    fullName: firstPageNumber
+    summary: The worksheet's first page number to print. A `null` value represents "auto" page numbering.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'firstPageNumber?: boolean;'
+      return:
+        type: boolean
+  - name: footerMargin
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#footerMargin:member'
+    package: office!
+    fullName: footerMargin
+    summary: 'The worksheet''s footer margin, in points, for use when printing.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'footerMargin?: boolean;'
+      return:
+        type: boolean
+  - name: headerMargin
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#headerMargin:member'
+    package: office!
+    fullName: headerMargin
+    summary: 'The worksheet''s header margin, in points, for use when printing.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headerMargin?: boolean;'
+      return:
+        type: boolean
+  - name: headersFooters
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#headersFooters:member'
+    package: office!
+    fullName: headersFooters
+    summary: Header and footer configuration for the worksheet.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.HeaderFooterGroupLoadOptions:interface" />'
+  - name: leftMargin
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#leftMargin:member'
+    package: office!
+    fullName: leftMargin
+    summary: 'The worksheet''s left margin, in points, for use when printing.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftMargin?: boolean;'
+      return:
+        type: boolean
+  - name: orientation
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#orientation:member'
+    package: office!
+    fullName: orientation
+    summary: The worksheet's orientation of the page.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'orientation?: boolean;'
+      return:
+        type: boolean
+  - name: paperSize
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#paperSize:member'
+    package: office!
+    fullName: paperSize
+    summary: The worksheet's paper size of the page.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paperSize?: boolean;'
+      return:
+        type: boolean
+  - name: printComments
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#printComments:member'
+    package: office!
+    fullName: printComments
+    summary: Specifies if the worksheet's comments should be displayed when printing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'printComments?: boolean;'
+      return:
+        type: boolean
+  - name: printErrors
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#printErrors:member'
+    package: office!
+    fullName: printErrors
+    summary: The worksheet's print errors option.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'printErrors?: boolean;'
+      return:
+        type: boolean
+  - name: printGridlines
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#printGridlines:member'
+    package: office!
+    fullName: printGridlines
+    summary: Specifies if the worksheet's gridlines will be printed.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'printGridlines?: boolean;'
+      return:
+        type: boolean
+  - name: printHeadings
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#printHeadings:member'
+    package: office!
+    fullName: printHeadings
+    summary: Specifies if the worksheet's headings will be printed.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'printHeadings?: boolean;'
+      return:
+        type: boolean
+  - name: printOrder
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#printOrder:member'
+    package: office!
+    fullName: printOrder
+    summary: The worksheet's page print order option. This specifies the order to use for processing the page number printed.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'printOrder?: boolean;'
+      return:
+        type: boolean
+  - name: rightMargin
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#rightMargin:member'
+    package: office!
+    fullName: rightMargin
+    summary: 'The worksheet''s right margin, in points, for use when printing.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightMargin?: boolean;'
+      return:
+        type: boolean
+  - name: topMargin
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#topMargin:member'
+    package: office!
+    fullName: topMargin
+    summary: 'The worksheet''s top margin, in points, for use when printing.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topMargin?: boolean;'
+      return:
+        type: boolean
+  - name: zoom
+    uid: 'office!Excel.Interfaces.PageLayoutLoadOptions#zoom:member'
+    package: office!
+    fullName: zoom
+    summary: >-
+      The worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom =
+      {...}` instead of `x.zoom.scale = ...`<!-- -->).
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'zoom?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Word.EventSource
+uid: 'office!Word.EventSource:enum'
+package: office!
+fullName: Word.EventSource
+summary: An enum that specifies an event's source. It can be local or remote (through coauthoring).
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+fields:
+  - name: local
+    uid: 'office!Word.EventSource.local:member'
+    package: office!
+    summary: ''
+    value: '"Local"'
+  - name: remote
+    uid: 'office!Word.EventSource.remote:member'
+    package: office!
+    summary: ''
+    value: '"Remote"'

@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.ChartPlotBy
+uid: 'office!Excel.ChartPlotBy:enum'
+package: office!
+fullName: Excel.ChartPlotBy
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: columns
+    uid: 'office!Excel.ChartPlotBy.columns:member'
+    package: office!
+    summary: ''
+    value: '"Columns"'
+  - name: rows
+    uid: 'office!Excel.ChartPlotBy.rows:member'
+    package: office!
+    summary: ''
+    value: '"Rows"'

@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: Office.RecipientsChangedEventArgs
+uid: 'office!Office.RecipientsChangedEventArgs:interface'
+package: office!
+fullName: Office.RecipientsChangedEventArgs
+summary: Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised.
+remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: changedRecipientFields
+    uid: 'office!Office.RecipientsChangedEventArgs#changedRecipientFields:member'
+    package: office!
+    fullName: changedRecipientFields
+    summary: Gets an object that indicates change state of recipients fields.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'changedRecipientFields: RecipientsChangedFields;'
+      return:
+        type: '<xref uid="office!Office.RecipientsChangedFields:interface" />'
+  - name: type
+    uid: 'office!Office.RecipientsChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "olkRecipientsChanged";'
+      return:
+        type: '"olkRecipientsChanged"'

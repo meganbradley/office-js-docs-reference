@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+uid: 'office!Excel.Interfaces.RowColumnPivotHierarchyCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+summary: An interface describing the data returned by calling `rowColumnPivotHierarchyCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.RowColumnPivotHierarchyCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.RowColumnPivotHierarchyData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.RowColumnPivotHierarchyData:interface" />[]'

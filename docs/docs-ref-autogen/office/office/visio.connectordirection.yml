@@ -1,0 +1,24 @@
+### YamlMime:TSEnum
+name: Visio.ConnectorDirection
+uid: 'office!Visio.ConnectorDirection:enum'
+package: office!
+fullName: Visio.ConnectorDirection
+summary: |-
+  Direction of connector in DataVisualizer diagram.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: fromTarget
+    uid: 'office!Visio.ConnectorDirection.fromTarget:member'
+    package: office!
+    summary: Direction will be from target to source shape.
+    value: '"FromTarget"'
+  - name: toTarget
+    uid: 'office!Visio.ConnectorDirection.toTarget:member'
+    package: office!
+    summary: Direction will be from source to target shape.
+    value: '"ToTarget"'

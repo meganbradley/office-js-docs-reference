@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.RangeBorderCollectionData
+uid: 'office!Excel.Interfaces.RangeBorderCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.RangeBorderCollectionData
+summary: An interface describing the data returned by calling `rangeBorderCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.RangeBorderCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.RangeBorderData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.RangeBorderData:interface" />[]'

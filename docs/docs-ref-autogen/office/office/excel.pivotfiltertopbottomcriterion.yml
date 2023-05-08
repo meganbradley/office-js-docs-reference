@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: Excel.PivotFilterTopBottomCriterion
+uid: 'office!Excel.PivotFilterTopBottomCriterion:enum'
+package: office!
+fullName: Excel.PivotFilterTopBottomCriterion
+summary: Represents the criteria for the top/bottom values filter.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottomItems
+    uid: 'office!Excel.PivotFilterTopBottomCriterion.bottomItems:member'
+    package: office!
+    summary: ''
+    value: '"BottomItems"'
+  - name: bottomPercent
+    uid: 'office!Excel.PivotFilterTopBottomCriterion.bottomPercent:member'
+    package: office!
+    summary: ''
+    value: '"BottomPercent"'
+  - name: bottomSum
+    uid: 'office!Excel.PivotFilterTopBottomCriterion.bottomSum:member'
+    package: office!
+    summary: ''
+    value: '"BottomSum"'
+  - name: invalid
+    uid: 'office!Excel.PivotFilterTopBottomCriterion.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: topItems
+    uid: 'office!Excel.PivotFilterTopBottomCriterion.topItems:member'
+    package: office!
+    summary: ''
+    value: '"TopItems"'
+  - name: topPercent
+    uid: 'office!Excel.PivotFilterTopBottomCriterion.topPercent:member'
+    package: office!
+    summary: ''
+    value: '"TopPercent"'
+  - name: topSum
+    uid: 'office!Excel.PivotFilterTopBottomCriterion.topSum:member'
+    package: office!
+    summary: ''
+    value: '"TopSum"'

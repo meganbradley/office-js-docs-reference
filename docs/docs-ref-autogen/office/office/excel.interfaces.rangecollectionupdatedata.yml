@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.RangeCollectionUpdateData
+uid: 'office!Excel.Interfaces.RangeCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.RangeCollectionUpdateData
+summary: 'An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.RangeCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.RangeData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.RangeData:interface" />[]'

@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ChartMapLabelStrategy
+uid: 'office!Excel.ChartMapLabelStrategy:enum'
+package: office!
+fullName: Excel.ChartMapLabelStrategy
+summary: Represents the region level of a chart series layout. This only applies to region map charts.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bestFit
+    uid: 'office!Excel.ChartMapLabelStrategy.bestFit:member'
+    package: office!
+    summary: ''
+    value: '"BestFit"'
+  - name: none
+    uid: 'office!Excel.ChartMapLabelStrategy.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: showAll
+    uid: 'office!Excel.ChartMapLabelStrategy.showAll:member'
+    package: office!
+    summary: ''
+    value: '"ShowAll"'

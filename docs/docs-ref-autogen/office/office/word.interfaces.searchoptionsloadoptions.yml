@@ -1,0 +1,135 @@
+### YamlMime:TSType
+name: Word.Interfaces.SearchOptionsLoadOptions
+uid: 'office!Word.Interfaces.SearchOptionsLoadOptions:interface'
+package: office!
+fullName: Word.Interfaces.SearchOptionsLoadOptions
+summary: >-
+  Specifies the options to be included in a search operation. To learn more about how to use search options in the Word
+  JavaScript APIs, read [Use search options to find text in your Word
+  add-in](https://docs.microsoft.com/office/dev/add-ins/word/search-option-guidance)<!-- -->.
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Word.Interfaces.SearchOptionsLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: ignorePunct
+    uid: 'office!Word.Interfaces.SearchOptionsLoadOptions#ignorePunct:member'
+    package: office!
+    fullName: ignorePunct
+    summary: >-
+      Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
+      Ignore punctuation check box in the Find and Replace dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ignorePunct?: boolean;'
+      return:
+        type: boolean
+  - name: ignoreSpace
+    uid: 'office!Word.Interfaces.SearchOptionsLoadOptions#ignoreSpace:member'
+    package: office!
+    fullName: ignoreSpace
+    summary: >-
+      Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
+      whitespace characters check box in the Find and Replace dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ignoreSpace?: boolean;'
+      return:
+        type: boolean
+  - name: matchCase
+    uid: 'office!Word.Interfaces.SearchOptionsLoadOptions#matchCase:member'
+    package: office!
+    fullName: matchCase
+    summary: >-
+      Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
+      check box in the Find and Replace dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type: boolean
+  - name: matchPrefix
+    uid: 'office!Word.Interfaces.SearchOptionsLoadOptions#matchPrefix:member'
+    package: office!
+    fullName: matchPrefix
+    summary: >-
+      Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
+      Match prefix check box in the Find and Replace dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchPrefix?: boolean;'
+      return:
+        type: boolean
+  - name: matchSuffix
+    uid: 'office!Word.Interfaces.SearchOptionsLoadOptions#matchSuffix:member'
+    package: office!
+    fullName: matchSuffix
+    summary: >-
+      Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
+      Match suffix check box in the Find and Replace dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchSuffix?: boolean;'
+      return:
+        type: boolean
+  - name: matchWholeWord
+    uid: 'office!Word.Interfaces.SearchOptionsLoadOptions#matchWholeWord:member'
+    package: office!
+    fullName: matchWholeWord
+    summary: >-
+      Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
+      word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchWholeWord?: boolean;'
+      return:
+        type: boolean
+  - name: matchWildcards
+    uid: 'office!Word.Interfaces.SearchOptionsLoadOptions#matchWildcards:member'
+    package: office!
+    fullName: matchWildcards
+    summary: >-
+      Gets or sets a value that indicates whether the search will be performed using special search operators.
+      Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'matchWildcards?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
+uid: 'office!Excel.Interfaces.PivotTableStyleCollectionLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
+summary: Represents a collection of PivotTable styles.
+remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: 'For EACH ITEM in the collection: Specifies the name of the PivotTable style.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: readOnly
+    uid: 'office!Excel.Interfaces.PivotTableStyleCollectionLoadOptions#readOnly:member'
+    package: office!
+    fullName: readOnly
+    summary: 'For EACH ITEM in the collection: Specifies if this `PivotTableStyle` object is read-only.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type: boolean

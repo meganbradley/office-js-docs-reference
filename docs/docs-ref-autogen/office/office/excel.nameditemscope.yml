@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.NamedItemScope
+uid: 'office!Excel.NamedItemScope:enum'
+package: office!
+fullName: Excel.NamedItemScope
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.4](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: workbook
+    uid: 'office!Excel.NamedItemScope.workbook:member'
+    package: office!
+    summary: ''
+    value: '"Workbook"'
+  - name: worksheet
+    uid: 'office!Excel.NamedItemScope.worksheet:member'
+    package: office!
+    summary: ''
+    value: '"Worksheet"'

@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.DocumentPropertyType
+uid: 'office!Excel.DocumentPropertyType:enum'
+package: office!
+fullName: Excel.DocumentPropertyType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: boolean
+    uid: 'office!Excel.DocumentPropertyType.boolean:member'
+    package: office!
+    summary: ''
+    value: '"Boolean"'
+  - name: date
+    uid: 'office!Excel.DocumentPropertyType.date:member'
+    package: office!
+    summary: ''
+    value: '"Date"'
+  - name: float
+    uid: 'office!Excel.DocumentPropertyType.float:member'
+    package: office!
+    summary: ''
+    value: '"Float"'
+  - name: number
+    uid: 'office!Excel.DocumentPropertyType.number:member'
+    package: office!
+    summary: ''
+    value: '"Number"'
+  - name: string
+    uid: 'office!Excel.DocumentPropertyType.string:member'
+    package: office!
+    summary: ''
+    value: '"String"'

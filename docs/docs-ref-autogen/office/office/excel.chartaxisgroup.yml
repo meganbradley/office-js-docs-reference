@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.ChartAxisGroup
+uid: 'office!Excel.ChartAxisGroup:enum'
+package: office!
+fullName: Excel.ChartAxisGroup
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: primary
+    uid: 'office!Excel.ChartAxisGroup.primary:member'
+    package: office!
+    summary: ''
+    value: '"Primary"'
+  - name: secondary
+    uid: 'office!Excel.ChartAxisGroup.secondary:member'
+    package: office!
+    summary: ''
+    value: '"Secondary"'

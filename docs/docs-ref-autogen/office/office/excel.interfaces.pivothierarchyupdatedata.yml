@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotHierarchyUpdateData
+uid: 'office!Excel.Interfaces.PivotHierarchyUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.PivotHierarchyUpdateData
+summary: 'An interface for updating data on the PivotHierarchy object, for use in `pivotHierarchy.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: 'office!Excel.Interfaces.PivotHierarchyUpdateData#name:member'
+    package: office!
+    fullName: name
+    summary: Name of the PivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string

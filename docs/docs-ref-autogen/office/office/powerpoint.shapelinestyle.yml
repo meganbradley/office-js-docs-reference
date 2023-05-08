@@ -1,0 +1,40 @@
+### YamlMime:TSEnum
+name: PowerPoint.ShapeLineStyle
+uid: 'office!PowerPoint.ShapeLineStyle:enum'
+package: office!
+fullName: PowerPoint.ShapeLineStyle
+summary: Specifies the style for a line.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: single
+    uid: 'office!PowerPoint.ShapeLineStyle.single:member'
+    package: office!
+    summary: Single line.
+    value: '"Single"'
+  - name: thickBetweenThin
+    uid: 'office!PowerPoint.ShapeLineStyle.thickBetweenThin:member'
+    package: office!
+    summary: Thick line with a thin line on each side.
+    value: '"ThickBetweenThin"'
+  - name: thickThin
+    uid: 'office!PowerPoint.ShapeLineStyle.thickThin:member'
+    package: office!
+    summary: >-
+      Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the
+      thick line is to the left of the thin line.
+    value: '"ThickThin"'
+  - name: thinThick
+    uid: 'office!PowerPoint.ShapeLineStyle.thinThick:member'
+    package: office!
+    summary: >-
+      Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the
+      thick line is to the right of the thin line.
+    value: '"ThinThick"'
+  - name: thinThin
+    uid: 'office!PowerPoint.ShapeLineStyle.thinThin:member'
+    package: office!
+    summary: Two thin lines.
+    value: '"ThinThin"'

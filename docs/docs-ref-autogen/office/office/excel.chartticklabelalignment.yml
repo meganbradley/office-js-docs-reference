@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ChartTickLabelAlignment
+uid: 'office!Excel.ChartTickLabelAlignment:enum'
+package: office!
+fullName: Excel.ChartTickLabelAlignment
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: center
+    uid: 'office!Excel.ChartTickLabelAlignment.center:member'
+    package: office!
+    summary: ''
+    value: '"Center"'
+  - name: left
+    uid: 'office!Excel.ChartTickLabelAlignment.left:member'
+    package: office!
+    summary: ''
+    value: '"Left"'
+  - name: right
+    uid: 'office!Excel.ChartTickLabelAlignment.right:member'
+    package: office!
+    summary: ''
+    value: '"Right"'

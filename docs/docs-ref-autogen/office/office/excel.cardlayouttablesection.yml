@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: Excel.CardLayoutTableSection
+uid: 'office!Excel.CardLayoutTableSection:interface'
+package: office!
+fullName: Excel.CardLayoutTableSection
+summary: Represents a section of a card that is arranged as a table in card view.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: layout
+    uid: 'office!Excel.CardLayoutTableSection#layout:member'
+    package: office!
+    fullName: layout
+    summary: Represents the type of layout for this section.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'layout: "Table";'
+      return:
+        type: '"Table"'
+extends: '<xref uid="office!Excel.CardLayoutSectionStandardProperties:interface" />'

@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.TableDeletedEventArgs
+uid: 'office!Excel.TableDeletedEventArgs:interface'
+package: office!
+fullName: Excel.TableDeletedEventArgs
+summary: Provides information about the table that raised the deleted event.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: source
+    uid: 'office!Excel.TableDeletedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: tableId
+    uid: 'office!Excel.TableDeletedEventArgs#tableId:member'
+    package: office!
+    fullName: tableId
+    summary: Gets the ID of the table that is deleted.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tableId: string;'
+      return:
+        type: string
+  - name: tableName
+    uid: 'office!Excel.TableDeletedEventArgs#tableName:member'
+    package: office!
+    fullName: tableName
+    summary: Gets the name of the table that is deleted.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tableName: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Excel.TableDeletedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "TableDeleted";'
+      return:
+        type: '"TableDeleted"'
+  - name: worksheetId
+    uid: 'office!Excel.TableDeletedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet in which the table is deleted.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: PowerPoint.InsertSlideFormatting
+uid: 'office!PowerPoint.InsertSlideFormatting:enum'
+package: office!
+fullName: PowerPoint.InsertSlideFormatting
+summary: Specifies the formatting options for when slides are inserted.
+remarks: '\[ [API set: PowerPointApi 1.2](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: keepSourceFormatting
+    uid: 'office!PowerPoint.InsertSlideFormatting.keepSourceFormatting:member'
+    package: office!
+    summary: Copy the source theme into the target presentation and use that theme.
+    value: '"KeepSourceFormatting"'
+  - name: useDestinationTheme
+    uid: 'office!PowerPoint.InsertSlideFormatting.useDestinationTheme:member'
+    package: office!
+    summary: Use the existing theme in the target presentation.
+    value: '"UseDestinationTheme"'

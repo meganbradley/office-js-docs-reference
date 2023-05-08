@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ChartAxisTimeUnit
+uid: 'office!Excel.ChartAxisTimeUnit:enum'
+package: office!
+fullName: Excel.ChartAxisTimeUnit
+summary: Specifies the unit of time for chart axes and data series.
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: days
+    uid: 'office!Excel.ChartAxisTimeUnit.days:member'
+    package: office!
+    summary: ''
+    value: '"Days"'
+  - name: months
+    uid: 'office!Excel.ChartAxisTimeUnit.months:member'
+    package: office!
+    summary: ''
+    value: '"Months"'
+  - name: years
+    uid: 'office!Excel.ChartAxisTimeUnit.years:member'
+    package: office!
+    summary: ''
+    value: '"Years"'

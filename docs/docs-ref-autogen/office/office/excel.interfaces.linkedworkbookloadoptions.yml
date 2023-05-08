@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: Excel.Interfaces.LinkedWorkbookLoadOptions
+uid: 'office!Excel.Interfaces.LinkedWorkbookLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.LinkedWorkbookLoadOptions
+summary: >-
+  Contains information about a linked workbook. If a workbook has links pointing to data in another workbook, the second
+  workbook is linked to the first workbook. In this scenario, the second workbook is called the "linked workbook".
+remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.LinkedWorkbookLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Excel.Interfaces.LinkedWorkbookLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: The original URL pointing to the linked workbook. It is unique across all linked workbooks in the collection.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean

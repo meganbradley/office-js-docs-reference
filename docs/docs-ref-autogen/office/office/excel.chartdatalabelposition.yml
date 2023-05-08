@@ -1,0 +1,71 @@
+### YamlMime:TSEnum
+name: Excel.ChartDataLabelPosition
+uid: 'office!Excel.ChartDataLabelPosition:enum'
+package: office!
+fullName: Excel.ChartDataLabelPosition
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bestFit
+    uid: 'office!Excel.ChartDataLabelPosition.bestFit:member'
+    package: office!
+    summary: ''
+    value: '"BestFit"'
+  - name: bottom
+    uid: 'office!Excel.ChartDataLabelPosition.bottom:member'
+    package: office!
+    summary: ''
+    value: '"Bottom"'
+  - name: callout
+    uid: 'office!Excel.ChartDataLabelPosition.callout:member'
+    package: office!
+    summary: ''
+    value: '"Callout"'
+  - name: center
+    uid: 'office!Excel.ChartDataLabelPosition.center:member'
+    package: office!
+    summary: ''
+    value: '"Center"'
+  - name: insideBase
+    uid: 'office!Excel.ChartDataLabelPosition.insideBase:member'
+    package: office!
+    summary: ''
+    value: '"InsideBase"'
+  - name: insideEnd
+    uid: 'office!Excel.ChartDataLabelPosition.insideEnd:member'
+    package: office!
+    summary: ''
+    value: '"InsideEnd"'
+  - name: invalid
+    uid: 'office!Excel.ChartDataLabelPosition.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: left
+    uid: 'office!Excel.ChartDataLabelPosition.left:member'
+    package: office!
+    summary: ''
+    value: '"Left"'
+  - name: none
+    uid: 'office!Excel.ChartDataLabelPosition.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: outsideEnd
+    uid: 'office!Excel.ChartDataLabelPosition.outsideEnd:member'
+    package: office!
+    summary: ''
+    value: '"OutsideEnd"'
+  - name: right
+    uid: 'office!Excel.ChartDataLabelPosition.right:member'
+    package: office!
+    summary: ''
+    value: '"Right"'
+  - name: top
+    uid: 'office!Excel.ChartDataLabelPosition.top:member'
+    package: office!
+    summary: ''
+    value: '"Top"'

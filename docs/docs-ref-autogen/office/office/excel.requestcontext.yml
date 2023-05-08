@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: Excel.RequestContext
+uid: 'office!Excel.RequestContext:class'
+package: office!
+fullName: Excel.RequestContext
+summary: >-
+  The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel
+  application run in two different processes, the request context is required to get access to the Excel object model
+  from the add-in.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(url)
+    uid: 'office!Excel.RequestContext:constructor(1)'
+    package: office!
+    fullName: (constructor)(url)
+    summary: Constructs a new instance of the `RequestContext` class
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(url?: string | Session);'
+      parameters:
+        - id: url
+          description: ''
+          type: 'string | <xref uid="office!Excel.Session:interface" />'
+properties:
+  - name: application
+    uid: 'office!Excel.RequestContext#application:member'
+    package: office!
+    fullName: application
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly application: Application;'
+      return:
+        type: '<xref uid="office!Excel.Application:class" />'
+  - name: runtime
+    uid: 'office!Excel.RequestContext#runtime:member'
+    package: office!
+    fullName: runtime
+    summary: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly runtime: Runtime;'
+      return:
+        type: '<xref uid="office!Excel.Runtime:class" />'
+  - name: workbook
+    uid: 'office!Excel.RequestContext#workbook:member'
+    package: office!
+    fullName: workbook
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly workbook: Workbook;'
+      return:
+        type: '<xref uid="office!Excel.Workbook:class" />'
+extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'

@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Word.Interfaces.DocumentUpdateData
+uid: 'office!Word.Interfaces.DocumentUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.DocumentUpdateData
+summary: 'An interface for updating data on the Document object, for use in `document.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'office!Word.Interfaces.DocumentUpdateData#body:member'
+    package: office!
+    fullName: body
+    summary: >-
+      Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes,
+      textboxes, etc.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'body?: Word.Interfaces.BodyUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.BodyUpdateData:interface" />'
+  - name: changeTrackingMode
+    uid: 'office!Word.Interfaces.DocumentUpdateData#changeTrackingMode:member'
+    package: office!
+    fullName: changeTrackingMode
+    summary: Gets or sets the ChangeTracking mode.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";'
+      return:
+        type: '<xref uid="office!Word.ChangeTrackingMode:enum" /> | "Off" | "TrackAll" | "TrackMineOnly"'
+  - name: properties
+    uid: 'office!Word.Interfaces.DocumentUpdateData#properties:member'
+    package: office!
+    fullName: properties
+    summary: Gets the properties of the document.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.DocumentPropertiesUpdateData:interface" />'

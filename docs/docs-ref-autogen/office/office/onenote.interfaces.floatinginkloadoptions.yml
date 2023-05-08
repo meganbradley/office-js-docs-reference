@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.FloatingInkLoadOptions
+uid: 'office!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+package: office!
+fullName: OneNote.Interfaces.FloatingInkLoadOptions
+summary: Represents a group of ink strokes.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!OneNote.Interfaces.FloatingInkLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!OneNote.Interfaces.FloatingInkLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the FloatingInk object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: inkStrokes
+    uid: 'office!OneNote.Interfaces.FloatingInkLoadOptions#inkStrokes:member'
+    package: office!
+    fullName: inkStrokes
+    summary: Gets the strokes of the FloatingInk object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inkStrokes?: OneNote.Interfaces.InkStrokeCollectionLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface" />'
+  - name: pageContent
+    uid: 'office!OneNote.Interfaces.FloatingInkLoadOptions#pageContent:member'
+    package: office!
+    fullName: pageContent
+    summary: Gets the PageContent parent of the FloatingInk object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.PageContentLoadOptions:interface" />'

@@ -1,0 +1,108 @@
+### YamlMime:TSType
+name: Word.ContentControlEventArgs
+uid: 'office!Word.ContentControlEventArgs:interface'
+package: office!
+fullName: Word.ContentControlEventArgs
+summary: Provides information about the content control that raised an event.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: contentControl
+    uid: 'office!Word.ContentControlEventArgs#contentControl:member'
+    package: office!
+    fullName: contentControl
+    summary: The object that raised the event. Load this object to get its properties.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+        await Word.run(async (context) => {
+          // Display the deleted content control's ID.
+          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        });
+      }
+
+      ```
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'contentControl: Word.ContentControl;'
+      return:
+        type: '<xref uid="office!Word.ContentControl:class" />'
+  - name: eventType
+    uid: 'office!Word.ContentControlEventArgs#eventType:member'
+    package: office!
+    fullName: eventType
+    summary: The event type. See Word.EventType for details.
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/content-control-ondeleted-event.yaml
+
+      async function contentControlDeleted(event: Word.ContentControlEventArgs) {
+        await Word.run(async (context) => {
+          // Display the deleted content control's ID.
+          console.log(`${event.eventType} event detected. ID of content control that was deleted: ${event.contentControl.id}`);
+        });
+      }
+
+      ```
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+        "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected"
+        | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited";
+      return:
+        type: >-
+          <xref uid="office!Word.EventType:enum" /> | "ContentControlDeleted" | "ContentControlSelectionChanged" |
+          "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" |
+          "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited"
+  - name: ids
+    uid: 'office!Word.ContentControlEventArgs#ids:member'
+    package: office!
+    fullName: ids
+    summary: Gets the content control IDs.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'ids: number[];'
+      return:
+        type: 'number[]'
+  - name: source
+    uid: 'office!Word.ContentControlEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through coauthoring).
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'source: Word.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Word.EventSource:enum" /> | "Local" | "Remote"'

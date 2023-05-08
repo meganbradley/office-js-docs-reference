@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: Excel.ConditionalTopBottomRule
+uid: 'office!Excel.ConditionalTopBottomRule:interface'
+package: office!
+fullName: Excel.ConditionalTopBottomRule
+summary: Represents the rule of the top/bottom conditional format.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: rank
+    uid: 'office!Excel.ConditionalTopBottomRule#rank:member'
+    package: office!
+    fullName: rank
+    summary: The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rank: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'office!Excel.ConditionalTopBottomRule#type:member'
+    package: office!
+    fullName: type
+    summary: Format values based on the top or bottom rank.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Excel.ConditionalTopBottomCriterionType | "Invalid" | "TopItems" | "TopPercent" | "BottomItems" |
+        "BottomPercent";
+      return:
+        type: >-
+          <xref uid="office!Excel.ConditionalTopBottomCriterionType:enum" /> | "Invalid" | "TopItems" | "TopPercent" |
+          "BottomItems" | "BottomPercent"

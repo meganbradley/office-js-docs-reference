@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideScopedCollectionUpdateData
+uid: 'office!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface'
+package: office!
+fullName: PowerPoint.Interfaces.SlideScopedCollectionUpdateData
+summary: >-
+  An interface for updating data on the SlideScopedCollection object, for use in `slideScopedCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!PowerPoint.Interfaces.SlideScopedCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.SlideData[];'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.SlideData:interface" />[]'

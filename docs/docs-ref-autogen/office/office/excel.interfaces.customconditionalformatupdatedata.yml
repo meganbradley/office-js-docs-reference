@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: Excel.Interfaces.CustomConditionalFormatUpdateData
+uid: 'office!Excel.Interfaces.CustomConditionalFormatUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.CustomConditionalFormatUpdateData
+summary: >-
+  An interface for updating data on the CustomConditionalFormat object, for use in `customConditionalFormat.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'office!Excel.Interfaces.CustomConditionalFormatUpdateData#format:member'
+    package: office!
+    fullName: format
+    summary: 'Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface" />'
+  - name: rule
+    uid: 'office!Excel.Interfaces.CustomConditionalFormatUpdateData#rule:member'
+    package: office!
+    fullName: rule
+    summary: Specifies the `Rule` object on this conditional format.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rule?: Excel.Interfaces.ConditionalFormatRuleUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalFormatRuleUpdateData:interface" />'

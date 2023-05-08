@@ -12,6 +12,7 @@ remarks: >-
 
   **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -22,6 +23,7 @@ properties:
     fullName: enabled
     summary: Indicates whether the control should be enabled or disabled. The default is true.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -34,6 +36,7 @@ properties:
     fullName: id
     summary: Identifier of the control as specified in the manifest.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

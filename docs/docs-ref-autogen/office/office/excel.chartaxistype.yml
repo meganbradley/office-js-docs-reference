@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Excel.ChartAxisType
+uid: 'office!Excel.ChartAxisType:enum'
+package: office!
+fullName: Excel.ChartAxisType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: category
+    uid: 'office!Excel.ChartAxisType.category:member'
+    package: office!
+    summary: Axis displays categories.
+    value: '"Category"'
+  - name: invalid
+    uid: 'office!Excel.ChartAxisType.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: series
+    uid: 'office!Excel.ChartAxisType.series:member'
+    package: office!
+    summary: Axis displays data series.
+    value: '"Series"'
+  - name: value
+    uid: 'office!Excel.ChartAxisType.value:member'
+    package: office!
+    summary: Axis displays values.
+    value: '"Value"'

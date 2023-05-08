@@ -7,6 +7,7 @@ summary: >-
   Represents the runtime environment of the add-in and provides access to key objects of the API. The current context
   exists as a property of Office. It is accessed using `Office.context`<!-- -->.
 remarks: '**Applications**: Excel, Outlook, PowerPoint, Project, Word'
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
     fullName: auth
     summary: Provides information and access to the signed-in user.
     remarks: ''
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
@@ -39,6 +41,7 @@ properties:
       Office Add-ins running in Office on the Windows desktop or in the browser do allow such links. If you want the UI
       of your add-in to provide a link to an external payment system on platforms other than iOS, you can use the
       commerceAllowed property to control when that link is displayed.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -96,6 +99,7 @@ properties:
       }
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -128,6 +132,7 @@ properties:
       console.log("Platform: " + contextInfo.platform);
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -191,6 +196,7 @@ properties:
       }
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -203,6 +209,7 @@ properties:
     fullName: document
     summary: Gets an object that represents the document the content or task pane add-in is interacting with.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -239,6 +246,7 @@ properties:
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -251,6 +259,7 @@ properties:
     fullName: license
     summary: Gets the license information for the user's Office installation.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -295,18 +304,20 @@ properties:
       const item = Office.context.mailbox.item;
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'mailbox: Office.Mailbox;'
       return:
-        type: '<xref uid="outlook!Office.Mailbox:interface" />'
+        type: '<xref uid="office!Office.Mailbox:interface" />'
   - name: officeTheme
     uid: 'office!Office.Context#officeTheme:member'
     package: office!
     fullName: officeTheme
     summary: Provides access to the properties for Office theme colors.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -341,6 +352,7 @@ properties:
       requirement sets, you can use the
       [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
       property to get similar information.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -355,6 +367,7 @@ properties:
       Provides a method for determining what requirement sets are supported on the current Office application and
       platform.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -400,12 +413,13 @@ properties:
       Office.context.roamingSettings.saveAsync();
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'roamingSettings: Office.RoamingSettings;'
       return:
-        type: '<xref uid="outlook!Office.RoamingSettings:interface" />'
+        type: '<xref uid="office!Office.RoamingSettings:interface" />'
   - name: sensitivityLabelsCatalog
     uid: 'office!Office.Context#sensitivityLabelsCatalog:member'
     package: office!
@@ -449,12 +463,13 @@ properties:
       });
 
       ```
+    example: []
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'sensitivityLabelsCatalog: Office.SensitivityLabelsCatalog;'
       return:
-        type: '<xref uid="outlook!Office.SensitivityLabelsCatalog:interface" />'
+        type: '<xref uid="office!Office.SensitivityLabelsCatalog:interface" />'
   - name: touchEnabled
     uid: 'office!Office.Context#touchEnabled:member'
     package: office!
@@ -471,6 +486,7 @@ properties:
 
       Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust
       the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -483,6 +499,7 @@ properties:
     fullName: ui
     summary: 'Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.'
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartSeriesCollectionData
+uid: 'office!Excel.Interfaces.ChartSeriesCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartSeriesCollectionData
+summary: An interface describing the data returned by calling `chartSeriesCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.ChartSeriesCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.ChartSeriesData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartSeriesData:interface" />[]'

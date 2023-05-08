@@ -5,6 +5,7 @@ package: office!
 fullName: Office.FileProperties
 summary: ''
 remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -15,6 +16,7 @@ properties:
     fullName: url
     summary: File's URL
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

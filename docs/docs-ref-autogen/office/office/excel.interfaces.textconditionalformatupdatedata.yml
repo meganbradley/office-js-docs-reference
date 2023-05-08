@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: Excel.Interfaces.TextConditionalFormatUpdateData
+uid: 'office!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.TextConditionalFormatUpdateData
+summary: >-
+  An interface for updating data on the TextConditionalFormat object, for use in `textConditionalFormat.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'office!Excel.Interfaces.TextConditionalFormatUpdateData#format:member'
+    package: office!
+    fullName: format
+    summary: 'Returns a format object, encapsulating the conditional format''s font, fill, borders, and other properties.'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface" />'
+  - name: rule
+    uid: 'office!Excel.Interfaces.TextConditionalFormatUpdateData#rule:member'
+    package: office!
+    fullName: rule
+    summary: The rule of the conditional format.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rule?: Excel.ConditionalTextComparisonRule;'
+      return:
+        type: '<xref uid="office!Excel.ConditionalTextComparisonRule:interface" />'

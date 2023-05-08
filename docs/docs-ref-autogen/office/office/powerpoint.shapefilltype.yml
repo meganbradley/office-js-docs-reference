@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: PowerPoint.ShapeFillType
+uid: 'office!PowerPoint.ShapeFillType:enum'
+package: office!
+fullName: PowerPoint.ShapeFillType
+summary: Specifies a shape's fill type.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: gradient
+    uid: 'office!PowerPoint.ShapeFillType.gradient:member'
+    package: office!
+    summary: Specifies that the shape should have gradient fill.
+    value: '"Gradient"'
+  - name: noFill
+    uid: 'office!PowerPoint.ShapeFillType.noFill:member'
+    package: office!
+    summary: Specifies that the shape should have no fill.
+    value: '"NoFill"'
+  - name: pattern
+    uid: 'office!PowerPoint.ShapeFillType.pattern:member'
+    package: office!
+    summary: Specifies that the shape should have pattern fill.
+    value: '"Pattern"'
+  - name: pictureAndTexture
+    uid: 'office!PowerPoint.ShapeFillType.pictureAndTexture:member'
+    package: office!
+    summary: Specifies that the shape should have picture or texture fill.
+    value: '"PictureAndTexture"'
+  - name: slideBackground
+    uid: 'office!PowerPoint.ShapeFillType.slideBackground:member'
+    package: office!
+    summary: Specifies that the shape should have slide background fill.
+    value: '"SlideBackground"'
+  - name: solid
+    uid: 'office!PowerPoint.ShapeFillType.solid:member'
+    package: office!
+    summary: Specifies that the shape should have regular solid fill.
+    value: '"Solid"'

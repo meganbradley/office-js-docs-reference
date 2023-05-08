@@ -1,0 +1,351 @@
+### YamlMime:TSEnum
+name: Word.ListBuiltInNumberStyle
+uid: 'office!Word.ListBuiltInNumberStyle:enum'
+package: office!
+fullName: Word.ListBuiltInNumberStyle
+summary: ''
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+fields:
+  - name: aiueo
+    uid: 'office!Word.ListBuiltInNumberStyle.aiueo:member'
+    package: office!
+    summary: ''
+    value: '"Aiueo"'
+  - name: aiueoHalfWidth
+    uid: 'office!Word.ListBuiltInNumberStyle.aiueoHalfWidth:member'
+    package: office!
+    summary: ''
+    value: '"AiueoHalfWidth"'
+  - name: arabic
+    uid: 'office!Word.ListBuiltInNumberStyle.arabic:member'
+    package: office!
+    summary: ''
+    value: '"Arabic"'
+  - name: arabic1
+    uid: 'office!Word.ListBuiltInNumberStyle.arabic1:member'
+    package: office!
+    summary: ''
+    value: '"Arabic1"'
+  - name: arabic2
+    uid: 'office!Word.ListBuiltInNumberStyle.arabic2:member'
+    package: office!
+    summary: ''
+    value: '"Arabic2"'
+  - name: arabicFullWidth
+    uid: 'office!Word.ListBuiltInNumberStyle.arabicFullWidth:member'
+    package: office!
+    summary: ''
+    value: '"ArabicFullWidth"'
+  - name: arabicLZ
+    uid: 'office!Word.ListBuiltInNumberStyle.arabicLZ:member'
+    package: office!
+    summary: ''
+    value: '"ArabicLZ"'
+  - name: arabicLZ2
+    uid: 'office!Word.ListBuiltInNumberStyle.arabicLZ2:member'
+    package: office!
+    summary: ''
+    value: '"ArabicLZ2"'
+  - name: arabicLZ3
+    uid: 'office!Word.ListBuiltInNumberStyle.arabicLZ3:member'
+    package: office!
+    summary: ''
+    value: '"ArabicLZ3"'
+  - name: arabicLZ4
+    uid: 'office!Word.ListBuiltInNumberStyle.arabicLZ4:member'
+    package: office!
+    summary: ''
+    value: '"ArabicLZ4"'
+  - name: bullet
+    uid: 'office!Word.ListBuiltInNumberStyle.bullet:member'
+    package: office!
+    summary: ''
+    value: '"Bullet"'
+  - name: cardinalText
+    uid: 'office!Word.ListBuiltInNumberStyle.cardinalText:member'
+    package: office!
+    summary: ''
+    value: '"CardinalText"'
+  - name: chosung
+    uid: 'office!Word.ListBuiltInNumberStyle.chosung:member'
+    package: office!
+    summary: ''
+    value: '"Chosung"'
+  - name: ganada
+    uid: 'office!Word.ListBuiltInNumberStyle.ganada:member'
+    package: office!
+    summary: ''
+    value: '"Ganada"'
+  - name: gbnum1
+    uid: 'office!Word.ListBuiltInNumberStyle.gbnum1:member'
+    package: office!
+    summary: ''
+    value: '"GBNum1"'
+  - name: gbnum2
+    uid: 'office!Word.ListBuiltInNumberStyle.gbnum2:member'
+    package: office!
+    summary: ''
+    value: '"GBNum2"'
+  - name: gbnum3
+    uid: 'office!Word.ListBuiltInNumberStyle.gbnum3:member'
+    package: office!
+    summary: ''
+    value: '"GBNum3"'
+  - name: gbnum4
+    uid: 'office!Word.ListBuiltInNumberStyle.gbnum4:member'
+    package: office!
+    summary: ''
+    value: '"GBNum4"'
+  - name: hangul
+    uid: 'office!Word.ListBuiltInNumberStyle.hangul:member'
+    package: office!
+    summary: ''
+    value: '"Hangul"'
+  - name: hanja
+    uid: 'office!Word.ListBuiltInNumberStyle.hanja:member'
+    package: office!
+    summary: ''
+    value: '"Hanja"'
+  - name: hanjaRead
+    uid: 'office!Word.ListBuiltInNumberStyle.hanjaRead:member'
+    package: office!
+    summary: ''
+    value: '"HanjaRead"'
+  - name: hanjaReadDigit
+    uid: 'office!Word.ListBuiltInNumberStyle.hanjaReadDigit:member'
+    package: office!
+    summary: ''
+    value: '"HanjaReadDigit"'
+  - name: hebrew1
+    uid: 'office!Word.ListBuiltInNumberStyle.hebrew1:member'
+    package: office!
+    summary: ''
+    value: '"Hebrew1"'
+  - name: hebrew2
+    uid: 'office!Word.ListBuiltInNumberStyle.hebrew2:member'
+    package: office!
+    summary: ''
+    value: '"Hebrew2"'
+  - name: hindiArabic
+    uid: 'office!Word.ListBuiltInNumberStyle.hindiArabic:member'
+    package: office!
+    summary: ''
+    value: '"HindiArabic"'
+  - name: hindiCardinalText
+    uid: 'office!Word.ListBuiltInNumberStyle.hindiCardinalText:member'
+    package: office!
+    summary: ''
+    value: '"HindiCardinalText"'
+  - name: hindiLetter1
+    uid: 'office!Word.ListBuiltInNumberStyle.hindiLetter1:member'
+    package: office!
+    summary: ''
+    value: '"HindiLetter1"'
+  - name: hindiLetter2
+    uid: 'office!Word.ListBuiltInNumberStyle.hindiLetter2:member'
+    package: office!
+    summary: ''
+    value: '"HindiLetter2"'
+  - name: iroha
+    uid: 'office!Word.ListBuiltInNumberStyle.iroha:member'
+    package: office!
+    summary: ''
+    value: '"Iroha"'
+  - name: irohaHalfWidth
+    uid: 'office!Word.ListBuiltInNumberStyle.irohaHalfWidth:member'
+    package: office!
+    summary: ''
+    value: '"IrohaHalfWidth"'
+  - name: kanji
+    uid: 'office!Word.ListBuiltInNumberStyle.kanji:member'
+    package: office!
+    summary: ''
+    value: '"Kanji"'
+  - name: kanjiDigit
+    uid: 'office!Word.ListBuiltInNumberStyle.kanjiDigit:member'
+    package: office!
+    summary: ''
+    value: '"KanjiDigit"'
+  - name: kanjiTraditional
+    uid: 'office!Word.ListBuiltInNumberStyle.kanjiTraditional:member'
+    package: office!
+    summary: ''
+    value: '"KanjiTraditional"'
+  - name: kanjiTraditional2
+    uid: 'office!Word.ListBuiltInNumberStyle.kanjiTraditional2:member'
+    package: office!
+    summary: ''
+    value: '"KanjiTraditional2"'
+  - name: legal
+    uid: 'office!Word.ListBuiltInNumberStyle.legal:member'
+    package: office!
+    summary: ''
+    value: '"Legal"'
+  - name: legalLZ
+    uid: 'office!Word.ListBuiltInNumberStyle.legalLZ:member'
+    package: office!
+    summary: ''
+    value: '"LegalLZ"'
+  - name: lowercaseBulgarian
+    uid: 'office!Word.ListBuiltInNumberStyle.lowercaseBulgarian:member'
+    package: office!
+    summary: ''
+    value: '"LowercaseBulgarian"'
+  - name: lowercaseGreek
+    uid: 'office!Word.ListBuiltInNumberStyle.lowercaseGreek:member'
+    package: office!
+    summary: ''
+    value: '"LowercaseGreek"'
+  - name: lowercaseRussian
+    uid: 'office!Word.ListBuiltInNumberStyle.lowercaseRussian:member'
+    package: office!
+    summary: ''
+    value: '"LowercaseRussian"'
+  - name: lowercaseTurkish
+    uid: 'office!Word.ListBuiltInNumberStyle.lowercaseTurkish:member'
+    package: office!
+    summary: ''
+    value: '"LowercaseTurkish"'
+  - name: lowerLetter
+    uid: 'office!Word.ListBuiltInNumberStyle.lowerLetter:member'
+    package: office!
+    summary: ''
+    value: '"LowerLetter"'
+  - name: lowerRoman
+    uid: 'office!Word.ListBuiltInNumberStyle.lowerRoman:member'
+    package: office!
+    summary: ''
+    value: '"LowerRoman"'
+  - name: none
+    uid: 'office!Word.ListBuiltInNumberStyle.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: numberInCircle
+    uid: 'office!Word.ListBuiltInNumberStyle.numberInCircle:member'
+    package: office!
+    summary: ''
+    value: '"NumberInCircle"'
+  - name: ordinal
+    uid: 'office!Word.ListBuiltInNumberStyle.ordinal:member'
+    package: office!
+    summary: ''
+    value: '"Ordinal"'
+  - name: ordinalText
+    uid: 'office!Word.ListBuiltInNumberStyle.ordinalText:member'
+    package: office!
+    summary: ''
+    value: '"OrdinalText"'
+  - name: pictureBullet
+    uid: 'office!Word.ListBuiltInNumberStyle.pictureBullet:member'
+    package: office!
+    summary: ''
+    value: '"PictureBullet"'
+  - name: simpChinNum1
+    uid: 'office!Word.ListBuiltInNumberStyle.simpChinNum1:member'
+    package: office!
+    summary: ''
+    value: '"SimpChinNum1"'
+  - name: simpChinNum2
+    uid: 'office!Word.ListBuiltInNumberStyle.simpChinNum2:member'
+    package: office!
+    summary: ''
+    value: '"SimpChinNum2"'
+  - name: simpChinNum3
+    uid: 'office!Word.ListBuiltInNumberStyle.simpChinNum3:member'
+    package: office!
+    summary: ''
+    value: '"SimpChinNum3"'
+  - name: simpChinNum4
+    uid: 'office!Word.ListBuiltInNumberStyle.simpChinNum4:member'
+    package: office!
+    summary: ''
+    value: '"SimpChinNum4"'
+  - name: thaiArabic
+    uid: 'office!Word.ListBuiltInNumberStyle.thaiArabic:member'
+    package: office!
+    summary: ''
+    value: '"ThaiArabic"'
+  - name: thaiCardinalText
+    uid: 'office!Word.ListBuiltInNumberStyle.thaiCardinalText:member'
+    package: office!
+    summary: ''
+    value: '"ThaiCardinalText"'
+  - name: thaiLetter
+    uid: 'office!Word.ListBuiltInNumberStyle.thaiLetter:member'
+    package: office!
+    summary: ''
+    value: '"ThaiLetter"'
+  - name: tradChinNum1
+    uid: 'office!Word.ListBuiltInNumberStyle.tradChinNum1:member'
+    package: office!
+    summary: ''
+    value: '"TradChinNum1"'
+  - name: tradChinNum2
+    uid: 'office!Word.ListBuiltInNumberStyle.tradChinNum2:member'
+    package: office!
+    summary: ''
+    value: '"TradChinNum2"'
+  - name: tradChinNum3
+    uid: 'office!Word.ListBuiltInNumberStyle.tradChinNum3:member'
+    package: office!
+    summary: ''
+    value: '"TradChinNum3"'
+  - name: tradChinNum4
+    uid: 'office!Word.ListBuiltInNumberStyle.tradChinNum4:member'
+    package: office!
+    summary: ''
+    value: '"TradChinNum4"'
+  - name: uppercaseBulgarian
+    uid: 'office!Word.ListBuiltInNumberStyle.uppercaseBulgarian:member'
+    package: office!
+    summary: ''
+    value: '"UppercaseBulgarian"'
+  - name: uppercaseGreek
+    uid: 'office!Word.ListBuiltInNumberStyle.uppercaseGreek:member'
+    package: office!
+    summary: ''
+    value: '"UppercaseGreek"'
+  - name: uppercaseRussian
+    uid: 'office!Word.ListBuiltInNumberStyle.uppercaseRussian:member'
+    package: office!
+    summary: ''
+    value: '"UppercaseRussian"'
+  - name: uppercaseTurkish
+    uid: 'office!Word.ListBuiltInNumberStyle.uppercaseTurkish:member'
+    package: office!
+    summary: ''
+    value: '"UppercaseTurkish"'
+  - name: upperLetter
+    uid: 'office!Word.ListBuiltInNumberStyle.upperLetter:member'
+    package: office!
+    summary: ''
+    value: '"UpperLetter"'
+  - name: upperRoman
+    uid: 'office!Word.ListBuiltInNumberStyle.upperRoman:member'
+    package: office!
+    summary: ''
+    value: '"UpperRoman"'
+  - name: vietCardinalText
+    uid: 'office!Word.ListBuiltInNumberStyle.vietCardinalText:member'
+    package: office!
+    summary: ''
+    value: '"VietCardinalText"'
+  - name: zodiac1
+    uid: 'office!Word.ListBuiltInNumberStyle.zodiac1:member'
+    package: office!
+    summary: ''
+    value: '"Zodiac1"'
+  - name: zodiac2
+    uid: 'office!Word.ListBuiltInNumberStyle.zodiac2:member'
+    package: office!
+    summary: ''
+    value: '"Zodiac2"'
+  - name: zodiac3
+    uid: 'office!Word.ListBuiltInNumberStyle.zodiac3:member'
+    package: office!
+    summary: ''
+    value: '"Zodiac3"'

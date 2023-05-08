@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartPivotOptionsUpdateData
+uid: 'office!Excel.Interfaces.ChartPivotOptionsUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartPivotOptionsUpdateData
+summary: 'An interface for updating data on the ChartPivotOptions object, for use in `chartPivotOptions.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: showAxisFieldButtons
+    uid: 'office!Excel.Interfaces.ChartPivotOptionsUpdateData#showAxisFieldButtons:member'
+    package: office!
+    fullName: showAxisFieldButtons
+    summary: >-
+      Specifies whether to display the axis field buttons on a PivotChart. The `showAxisFieldButtons` property
+      corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab,
+      which is available when a PivotChart is selected.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAxisFieldButtons?: boolean;'
+      return:
+        type: boolean
+  - name: showLegendFieldButtons
+    uid: 'office!Excel.Interfaces.ChartPivotOptionsUpdateData#showLegendFieldButtons:member'
+    package: office!
+    fullName: showLegendFieldButtons
+    summary: Specifies whether to display the legend field buttons on a PivotChart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showLegendFieldButtons?: boolean;'
+      return:
+        type: boolean
+  - name: showReportFilterFieldButtons
+    uid: 'office!Excel.Interfaces.ChartPivotOptionsUpdateData#showReportFilterFieldButtons:member'
+    package: office!
+    fullName: showReportFilterFieldButtons
+    summary: Specifies whether to display the report filter field buttons on a PivotChart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showReportFilterFieldButtons?: boolean;'
+      return:
+        type: boolean
+  - name: showValueFieldButtons
+    uid: 'office!Excel.Interfaces.ChartPivotOptionsUpdateData#showValueFieldButtons:member'
+    package: office!
+    fullName: showValueFieldButtons
+    summary: Specifies whether to display the show value field buttons on a PivotChart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showValueFieldButtons?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,40 @@
+### YamlMime:TSEnum
+name: Excel.PivotFilterType
+uid: 'office!Excel.PivotFilterType:enum'
+package: office!
+fullName: Excel.PivotFilterType
+summary: A simple enum that represents a type of filter for a PivotField.
+remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: date
+    uid: 'office!Excel.PivotFilterType.date:member'
+    package: office!
+    summary: >-
+      Filters PivotItems with a date in place of a label. Note: A PivotField cannot simultaneously have a label filter
+      and a date filter applied.
+    value: '"Date"'
+  - name: label
+    uid: 'office!Excel.PivotFilterType.label:member'
+    package: office!
+    summary: >-
+      Filters PivotItems based on their labels. Note: A PivotField cannot simultaneously have a label filter and a date
+      filter applied.
+    value: '"Label"'
+  - name: manual
+    uid: 'office!Excel.PivotFilterType.manual:member'
+    package: office!
+    summary: Filters specific manually selected PivotItems from the PivotTable.
+    value: '"Manual"'
+  - name: unknown
+    uid: 'office!Excel.PivotFilterType.unknown:member'
+    package: office!
+    summary: '`PivotFilterType` is unknown or unsupported.'
+    value: '"Unknown"'
+  - name: value
+    uid: 'office!Excel.PivotFilterType.value:member'
+    package: office!
+    summary: Filters based on the value of a PivotItem with respect to a `DataPivotHierarchy`<!-- -->.
+    value: '"Value"'

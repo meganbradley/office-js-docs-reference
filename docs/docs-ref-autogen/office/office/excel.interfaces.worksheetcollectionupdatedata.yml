@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.WorksheetCollectionUpdateData
+uid: 'office!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.WorksheetCollectionUpdateData
+summary: >-
+  An interface for updating data on the WorksheetCollection object, for use in `worksheetCollection.set({ ... })`<!--
+  -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.WorksheetCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.WorksheetData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.WorksheetData:interface" />[]'

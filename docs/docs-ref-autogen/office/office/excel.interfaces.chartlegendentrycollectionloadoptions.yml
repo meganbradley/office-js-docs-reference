@@ -1,0 +1,105 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
+uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions
+summary: Represents a collection of legend entries.
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#height:member'
+    package: office!
+    fullName: height
+    summary: 'For EACH ITEM in the collection: Specifies the height of the legend entry on the chart legend.'
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: index
+    uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#index:member'
+    package: office!
+    fullName: index
+    summary: 'For EACH ITEM in the collection: Specifies the index of the legend entry in the chart legend.'
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#left:member'
+    package: office!
+    fullName: left
+    summary: 'For EACH ITEM in the collection: Specifies the left value of a chart legend entry.'
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type: boolean
+  - name: top
+    uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#top:member'
+    package: office!
+    fullName: top
+    summary: 'For EACH ITEM in the collection: Specifies the top of a chart legend entry.'
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#visible:member'
+    package: office!
+    fullName: visible
+    summary: 'For EACH ITEM in the collection: Represents the visibility of a chart legend entry.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'office!Excel.Interfaces.ChartLegendEntryCollectionLoadOptions#width:member'
+    package: office!
+    fullName: width
+    summary: 'For EACH ITEM in the collection: Represents the width of the legend entry on the chart Legend.'
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

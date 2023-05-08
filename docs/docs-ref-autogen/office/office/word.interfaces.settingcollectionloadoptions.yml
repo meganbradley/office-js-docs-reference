@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Word.Interfaces.SettingCollectionLoadOptions
+uid: 'office!Word.Interfaces.SettingCollectionLoadOptions:interface'
+package: office!
+fullName: Word.Interfaces.SettingCollectionLoadOptions
+summary: 'Contains the collection of [Word.Setting](xref:office!Word.Setting:class) objects.'
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Word.Interfaces.SettingCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: key
+    uid: 'office!Word.Interfaces.SettingCollectionLoadOptions#key:member'
+    package: office!
+    fullName: key
+    summary: 'For EACH ITEM in the collection: Gets the key of the setting.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'key?: boolean;'
+      return:
+        type: boolean
+  - name: value
+    uid: 'office!Word.Interfaces.SettingCollectionLoadOptions#value:member'
+    package: office!
+    fullName: value
+    summary: 'For EACH ITEM in the collection: Gets or sets the value of the setting.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type: boolean

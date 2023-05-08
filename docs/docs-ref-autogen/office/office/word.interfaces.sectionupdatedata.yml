@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Word.Interfaces.SectionUpdateData
+uid: 'office!Word.Interfaces.SectionUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.SectionUpdateData
+summary: 'An interface for updating data on the Section object, for use in `section.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: body
+    uid: 'office!Word.Interfaces.SectionUpdateData#body:member'
+    package: office!
+    fullName: body
+    summary: Gets the body object of the section. This does not include the header/footer and other section metadata.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'body?: Word.Interfaces.BodyUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.BodyUpdateData:interface" />'

@@ -1,0 +1,129 @@
+### YamlMime:TSType
+name: Excel.EntityCellValue
+uid: 'office!Excel.EntityCellValue:interface'
+package: office!
+fullName: Excel.EntityCellValue
+summary: Represents a set of properties without a schema or defined structure.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: basicType
+    uid: 'office!Excel.EntityCellValue#basicType:member'
+    package: office!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="office!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'office!Excel.EntityCellValue#basicValue:member'
+    package: office!
+    fullName: basicValue
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#VALUE!" | string;'
+      return:
+        type: '"#VALUE!" | string'
+  - name: layouts
+    uid: 'office!Excel.EntityCellValue#layouts:member'
+    package: office!
+    fullName: layouts
+    summary: Represents layout information for views of this entity.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'layouts?: EntityViewLayouts;'
+      return:
+        type: '<xref uid="office!Excel.EntityViewLayouts:interface" />'
+  - name: properties
+    uid: 'office!Excel.EntityCellValue#properties:member'
+    package: office!
+    fullName: properties
+    summary: Represents the properties of this entity and their metadata.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        properties?: {
+                    [key: string]: EntityPropertyType;
+                };
+      return:
+        type: |-
+          {
+                      [key: string]: <xref uid="office!Excel.EntityPropertyType:type" />;
+                  }
+  - name: provider
+    uid: 'office!Excel.EntityCellValue#provider:member'
+    package: office!
+    fullName: provider
+    summary: >-
+      Represents information that describes the service that provided the data in this `EntityCellValue`<!-- -->. This
+      information can be used for branding in entity cards.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provider?: CellValueProviderAttributes;'
+      return:
+        type: '<xref uid="office!Excel.CellValueProviderAttributes:interface" />'
+  - name: referencedValues
+    uid: 'office!Excel.EntityCellValue#referencedValues:member'
+    package: office!
+    fullName: referencedValues
+    summary: Represents the cell values which are referenced within `EntityCellValue.properties`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'referencedValues?: ReferencedValue[];'
+      return:
+        type: '<xref uid="office!Excel.ReferencedValue:type" />[]'
+  - name: text
+    uid: 'office!Excel.EntityCellValue#text:member'
+    package: office!
+    fullName: text
+    summary: Represents the text shown when a cell with this value is rendered.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Excel.EntityCellValue#type:member'
+    package: office!
+    fullName: type
+    summary: Represents the type of this cell value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: CellValueType.entity | ReferenceValueType.entity | "Entity";'
+      return:
+        type: >-
+          <xref uid="office!Excel.CellValueType.entity:member" /> | <xref
+          uid="office!Excel.ReferenceValueType.entity:member" /> | "Entity"

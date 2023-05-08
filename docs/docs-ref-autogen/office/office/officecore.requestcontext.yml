@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: OfficeCore.RequestContext
+uid: 'office!OfficeCore.RequestContext:class'
+package: office!
+fullName: OfficeCore.RequestContext
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: (constructor)(url)
+    uid: 'office!OfficeCore.RequestContext:constructor(1)'
+    package: office!
+    fullName: (constructor)(url)
+    summary: Constructs a new instance of the `RequestContext` class
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);'
+      parameters:
+        - id: url
+          description: ''
+          type: 'string | <xref uid="office!OfficeExtension.RequestUrlAndHeaderInfo:interface" /> | any'
+extends: '<xref uid="office!OfficeExtension.ClientRequestContext:class" />'

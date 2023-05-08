@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.Interfaces.FilterPivotHierarchyData
+uid: 'office!Excel.Interfaces.FilterPivotHierarchyData:interface'
+package: office!
+fullName: Excel.Interfaces.FilterPivotHierarchyData
+summary: An interface describing the data returned by calling `filterPivotHierarchy.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: enableMultipleFilterItems
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyData#enableMultipleFilterItems:member'
+    package: office!
+    fullName: enableMultipleFilterItems
+    summary: Determines whether to allow multiple filter items.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enableMultipleFilterItems?: boolean;'
+      return:
+        type: boolean
+  - name: fields
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyData#fields:member'
+    package: office!
+    fullName: fields
+    summary: Returns the PivotFields associated with the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Excel.Interfaces.PivotFieldData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.PivotFieldData:interface" />[]'
+  - name: id
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyData#id:member'
+    package: office!
+    fullName: id
+    summary: ID of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: name
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyData#name:member'
+    package: office!
+    fullName: name
+    summary: Name of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: position
+    uid: 'office!Excel.Interfaces.FilterPivotHierarchyData#position:member'
+    package: office!
+    fullName: position
+    summary: Position of the FilterPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: number;'
+      return:
+        type: number

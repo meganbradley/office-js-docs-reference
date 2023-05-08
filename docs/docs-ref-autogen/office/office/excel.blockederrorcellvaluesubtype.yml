@@ -1,0 +1,51 @@
+### YamlMime:TSEnum
+name: Excel.BlockedErrorCellValueSubType
+uid: 'office!Excel.BlockedErrorCellValueSubType:enum'
+package: office!
+fullName: Excel.BlockedErrorCellValueSubType
+summary: 'Represents types of \#BLOCKED! errors.'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dataTypePrivacySetting
+    uid: 'office!Excel.BlockedErrorCellValueSubType.dataTypePrivacySetting:member'
+    package: office!
+    summary: 'An error caused by privacy settings. Displays as error type \#BLOCKED! in Excel.'
+    value: '"DataTypePrivacySetting"'
+  - name: dataTypeRestrictedDomain
+    uid: 'office!Excel.BlockedErrorCellValueSubType.dataTypeRestrictedDomain:member'
+    package: office!
+    summary: 'An error caused by a service not supporting a linked data type. Displays as error type \#BLOCKED! in Excel.'
+    value: '"DataTypeRestrictedDomain"'
+  - name: dataTypeUnsupportedApp
+    uid: 'office!Excel.BlockedErrorCellValueSubType.dataTypeUnsupportedApp:member'
+    package: office!
+    summary: 'An error caused by an unsupported data type. Displays as error type \#BLOCKED! in Excel.'
+    value: '"DataTypeUnsupportedApp"'
+  - name: externalLinksGeneric
+    uid: 'office!Excel.BlockedErrorCellValueSubType.externalLinksGeneric:member'
+    package: office!
+    summary: 'An error caused by external links. Displays as error type \#BLOCKED! in Excel.'
+    value: '"ExternalLinksGeneric"'
+  - name: noLicense
+    uid: 'office!Excel.BlockedErrorCellValueSubType.noLicense:member'
+    package: office!
+    summary: 'An error caused by a license verification failure. Displays as error type \#BLOCKED! in Excel.'
+    value: '"NoLicense"'
+  - name: richDataLinkDisabled
+    uid: 'office!Excel.BlockedErrorCellValueSubType.richDataLinkDisabled:member'
+    package: office!
+    summary: 'An error caused by disabled rich data links. Displays as error type \#BLOCKED! in Excel.'
+    value: '"RichDataLinkDisabled"'
+  - name: signInError
+    uid: 'office!Excel.BlockedErrorCellValueSubType.signInError:member'
+    package: office!
+    summary: 'An error caused by sign in failure. Displays as error type \#BLOCKED! in Excel.'
+    value: '"SignInError"'
+  - name: unknown
+    uid: 'office!Excel.BlockedErrorCellValueSubType.unknown:member'
+    package: office!
+    summary: 'An unknown type of error. Displays as error type \#BLOCKED! in Excel.'
+    value: '"Unknown"'

@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.SubtotalLocationType
+uid: 'office!Excel.SubtotalLocationType:enum'
+package: office!
+fullName: Excel.SubtotalLocationType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: atBottom
+    uid: 'office!Excel.SubtotalLocationType.atBottom:member'
+    package: office!
+    summary: Subtotals are at the bottom.
+    value: '"AtBottom"'
+  - name: atTop
+    uid: 'office!Excel.SubtotalLocationType.atTop:member'
+    package: office!
+    summary: Subtotals are at the top.
+    value: '"AtTop"'
+  - name: 'off'
+    uid: 'office!Excel.SubtotalLocationType.off:member'
+    package: office!
+    summary: Subtotals are off.
+    value: '"Off"'

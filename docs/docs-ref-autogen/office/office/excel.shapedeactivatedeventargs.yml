@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ShapeDeactivatedEventArgs
+uid: 'office!Excel.ShapeDeactivatedEventArgs:interface'
+package: office!
+fullName: Excel.ShapeDeactivatedEventArgs
+summary: Provides information about the shape that raised the deactivated event.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: shapeId
+    uid: 'office!Excel.ShapeDeactivatedEventArgs#shapeId:member'
+    package: office!
+    fullName: shapeId
+    summary: Gets the ID of the shape deactivated shape.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shapeId: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Excel.ShapeDeactivatedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "ShapeDeactivated";'
+      return:
+        type: '"ShapeDeactivated"'
+  - name: worksheetId
+    uid: 'office!Excel.ShapeDeactivatedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet in which the shape is deactivated.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

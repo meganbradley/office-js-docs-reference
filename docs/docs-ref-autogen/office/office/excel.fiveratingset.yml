@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.FiveRatingSet
+uid: 'office!Excel.FiveRatingSet:interface'
+package: office!
+fullName: Excel.FiveRatingSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fourBars
+    uid: 'office!Excel.FiveRatingSet#fourBars:member'
+    package: office!
+    fullName: fourBars
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fourBars: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: noBars
+    uid: 'office!Excel.FiveRatingSet#noBars:member'
+    package: office!
+    fullName: noBars
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'noBars: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: oneBar
+    uid: 'office!Excel.FiveRatingSet#oneBar:member'
+    package: office!
+    fullName: oneBar
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'oneBar: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: threeBars
+    uid: 'office!Excel.FiveRatingSet#threeBars:member'
+    package: office!
+    fullName: threeBars
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'threeBars: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: twoBars
+    uid: 'office!Excel.FiveRatingSet#twoBars:member'
+    package: office!
+    fullName: twoBars
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'twoBars: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

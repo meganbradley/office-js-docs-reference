@@ -1,0 +1,159 @@
+### YamlMime:TSEnum
+name: Word.BorderType
+uid: 'office!Word.BorderType:enum'
+package: office!
+fullName: Word.BorderType
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+  // Get border details about the first of the first table in the document.
+
+  await Word.run(async (context) => {
+    const firstTable = context.document.body.tables.getFirst();
+    const firstCell = firstTable.getCell(0, 0);
+    const borderLocation = "Left";
+    const border = firstCell.getBorder(borderLocation);
+    border.load(["type", "color", "width"]);
+    await context.sync();
+
+    console.log(`Details about the ${borderLocation} border of the first table's first cell:`);
+    console.log(`- Color: ${border.color}`);
+    console.log(`- Type: ${border.type}`);
+    console.log(`- Width: ${border.width} points`);
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dashDotStroked
+    uid: 'office!Word.BorderType.dashDotStroked:member'
+    package: office!
+    summary: ''
+    value: '"DashDotStroked"'
+  - name: dashed
+    uid: 'office!Word.BorderType.dashed:member'
+    package: office!
+    summary: ''
+    value: '"Dashed"'
+  - name: dashedSmall
+    uid: 'office!Word.BorderType.dashedSmall:member'
+    package: office!
+    summary: ''
+    value: '"DashedSmall"'
+  - name: dot2Dashed
+    uid: 'office!Word.BorderType.dot2Dashed:member'
+    package: office!
+    summary: ''
+    value: '"Dot2Dashed"'
+  - name: dotDashed
+    uid: 'office!Word.BorderType.dotDashed:member'
+    package: office!
+    summary: ''
+    value: '"DotDashed"'
+  - name: dotted
+    uid: 'office!Word.BorderType.dotted:member'
+    package: office!
+    summary: ''
+    value: '"Dotted"'
+  - name: double
+    uid: 'office!Word.BorderType.double:member'
+    package: office!
+    summary: ''
+    value: '"Double"'
+  - name: doubleWave
+    uid: 'office!Word.BorderType.doubleWave:member'
+    package: office!
+    summary: ''
+    value: '"DoubleWave"'
+  - name: mixed
+    uid: 'office!Word.BorderType.mixed:member'
+    package: office!
+    summary: ''
+    value: '"Mixed"'
+  - name: none
+    uid: 'office!Word.BorderType.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: single
+    uid: 'office!Word.BorderType.single:member'
+    package: office!
+    summary: ''
+    value: '"Single"'
+  - name: thickThinLarge
+    uid: 'office!Word.BorderType.thickThinLarge:member'
+    package: office!
+    summary: ''
+    value: '"ThickThinLarge"'
+  - name: thickThinMed
+    uid: 'office!Word.BorderType.thickThinMed:member'
+    package: office!
+    summary: ''
+    value: '"ThickThinMed"'
+  - name: thickThinSmall
+    uid: 'office!Word.BorderType.thickThinSmall:member'
+    package: office!
+    summary: ''
+    value: '"ThickThinSmall"'
+  - name: thinThickLarge
+    uid: 'office!Word.BorderType.thinThickLarge:member'
+    package: office!
+    summary: ''
+    value: '"ThinThickLarge"'
+  - name: thinThickMed
+    uid: 'office!Word.BorderType.thinThickMed:member'
+    package: office!
+    summary: ''
+    value: '"ThinThickMed"'
+  - name: thinThickSmall
+    uid: 'office!Word.BorderType.thinThickSmall:member'
+    package: office!
+    summary: ''
+    value: '"ThinThickSmall"'
+  - name: thinThickThinLarge
+    uid: 'office!Word.BorderType.thinThickThinLarge:member'
+    package: office!
+    summary: ''
+    value: '"ThinThickThinLarge"'
+  - name: thinThickThinMed
+    uid: 'office!Word.BorderType.thinThickThinMed:member'
+    package: office!
+    summary: ''
+    value: '"ThinThickThinMed"'
+  - name: thinThickThinSmall
+    uid: 'office!Word.BorderType.thinThickThinSmall:member'
+    package: office!
+    summary: ''
+    value: '"ThinThickThinSmall"'
+  - name: threeDEmboss
+    uid: 'office!Word.BorderType.threeDEmboss:member'
+    package: office!
+    summary: ''
+    value: '"ThreeDEmboss"'
+  - name: threeDEngrave
+    uid: 'office!Word.BorderType.threeDEngrave:member'
+    package: office!
+    summary: ''
+    value: '"ThreeDEngrave"'
+  - name: triple
+    uid: 'office!Word.BorderType.triple:member'
+    package: office!
+    summary: ''
+    value: '"Triple"'
+  - name: wave
+    uid: 'office!Word.BorderType.wave:member'
+    package: office!
+    summary: ''
+    value: '"Wave"'

@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.FloatingInkData
+uid: 'office!OneNote.Interfaces.FloatingInkData:interface'
+package: office!
+fullName: OneNote.Interfaces.FloatingInkData
+summary: An interface describing the data returned by calling `floatingInk.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'office!OneNote.Interfaces.FloatingInkData#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the FloatingInk object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: inkStrokes
+    uid: 'office!OneNote.Interfaces.FloatingInkData#inkStrokes:member'
+    package: office!
+    fullName: inkStrokes
+    summary: Gets the strokes of the FloatingInk object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inkStrokes?: OneNote.Interfaces.InkStrokeData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkStrokeData:interface" />[]'

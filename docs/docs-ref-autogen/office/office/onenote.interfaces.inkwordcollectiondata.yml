@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.InkWordCollectionData
+uid: 'office!OneNote.Interfaces.InkWordCollectionData:interface'
+package: office!
+fullName: OneNote.Interfaces.InkWordCollectionData
+summary: An interface describing the data returned by calling `inkWordCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!OneNote.Interfaces.InkWordCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: OneNote.Interfaces.InkWordData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkWordData:interface" />[]'

@@ -1,0 +1,133 @@
+### YamlMime:TSType
+name: Excel.LinkedEntityCellValue
+uid: 'office!Excel.LinkedEntityCellValue:interface'
+package: office!
+fullName: Excel.LinkedEntityCellValue
+summary: Represents a value whose properties derive from a service.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: basicType
+    uid: 'office!Excel.LinkedEntityCellValue#basicType:member'
+    package: office!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="office!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'office!Excel.LinkedEntityCellValue#basicValue:member'
+    package: office!
+    fullName: basicValue
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#VALUE!" | string;'
+      return:
+        type: '"#VALUE!" | string'
+  - name: cardLayout
+    uid: 'office!Excel.LinkedEntityCellValue#cardLayout:member'
+    package: office!
+    fullName: cardLayout
+    summary: >-
+      Represents the layout of this linked entity in card view. If the `CardLayout` object doesn't have a layout
+      property, it default value is "Entity".
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cardLayout?: CardLayout;'
+      return:
+        type: '<xref uid="office!Excel.CardLayout:type" />'
+  - name: id
+    uid: 'office!Excel.LinkedEntityCellValue#id:member'
+    package: office!
+    fullName: id
+    summary: Represents the service source that provided the information in this value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: LinkedEntityId;'
+      return:
+        type: '<xref uid="office!Excel.LinkedEntityId:interface" />'
+  - name: properties
+    uid: 'office!Excel.LinkedEntityCellValue#properties:member'
+    package: office!
+    fullName: properties
+    summary: Represents the properties of this linked entity and their metadata.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        properties?: {
+                    [key: string]: CellValue & {
+                        propertyMetadata?: CellValuePropertyMetadata;
+                    };
+                };
+      return:
+        type: |-
+          {
+                      [key: string]: <xref uid="office!Excel.CellValue:type" /> & {
+                          propertyMetadata?: <xref uid="office!Excel.CellValuePropertyMetadata:interface" />;
+                      };
+                  }
+  - name: provider
+    uid: 'office!Excel.LinkedEntityCellValue#provider:member'
+    package: office!
+    fullName: provider
+    summary: >-
+      Represents information that describes the service that provided data in this `LinkedEntityCellValue`<!-- -->. This
+      information can be used for branding in entity cards.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'provider?: CellValueProviderAttributes;'
+      return:
+        type: '<xref uid="office!Excel.CellValueProviderAttributes:interface" />'
+  - name: text
+    uid: 'office!Excel.LinkedEntityCellValue#text:member'
+    package: office!
+    fullName: text
+    summary: Represents the text shown when a cell with this value is rendered.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Excel.LinkedEntityCellValue#type:member'
+    package: office!
+    fullName: type
+    summary: Represents the type of this cell value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: CellValueType.linkedEntity | "LinkedEntity";'
+      return:
+        type: '<xref uid="office!Excel.CellValueType.linkedEntity:member" /> | "LinkedEntity"'

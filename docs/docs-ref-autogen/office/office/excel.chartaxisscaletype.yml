@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.ChartAxisScaleType
+uid: 'office!Excel.ChartAxisScaleType:enum'
+package: office!
+fullName: Excel.ChartAxisScaleType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: linear
+    uid: 'office!Excel.ChartAxisScaleType.linear:member'
+    package: office!
+    summary: ''
+    value: '"Linear"'
+  - name: logarithmic
+    uid: 'office!Excel.ChartAxisScaleType.logarithmic:member'
+    package: office!
+    summary: ''
+    value: '"Logarithmic"'

@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: OneNote.PageContentType
+uid: 'office!OneNote.PageContentType:enum'
+package: office!
+fullName: OneNote.PageContentType
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: image
+    uid: 'office!OneNote.PageContentType.image:member'
+    package: office!
+    summary: ''
+    value: '"Image"'
+  - name: ink
+    uid: 'office!OneNote.PageContentType.ink:member'
+    package: office!
+    summary: ''
+    value: '"Ink"'
+  - name: other
+    uid: 'office!OneNote.PageContentType.other:member'
+    package: office!
+    summary: ''
+    value: '"Other"'
+  - name: outline
+    uid: 'office!OneNote.PageContentType.outline:member'
+    package: office!
+    summary: ''
+    value: '"Outline"'

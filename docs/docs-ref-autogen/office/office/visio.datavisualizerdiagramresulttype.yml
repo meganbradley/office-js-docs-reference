@@ -1,0 +1,34 @@
+### YamlMime:TSEnum
+name: Visio.DataVisualizerDiagramResultType
+uid: 'office!Visio.DataVisualizerDiagramResultType:enum'
+package: office!
+fullName: Visio.DataVisualizerDiagramResultType
+summary: |-
+  Result of Data Visualizer Diagram operations.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: conflictError
+    uid: 'office!Visio.DataVisualizerDiagramResultType.conflictError:member'
+    package: office!
+    summary: Conflict error in operation.
+    value: '"ConflictError"'
+  - name: success
+    uid: 'office!Visio.DataVisualizerDiagramResultType.success:member'
+    package: office!
+    summary: Operation is success.
+    value: '"Success"'
+  - name: unexpected
+    uid: 'office!Visio.DataVisualizerDiagramResultType.unexpected:member'
+    package: office!
+    summary: Unexpected error during operation.
+    value: '"Unexpected"'
+  - name: validationError
+    uid: 'office!Visio.DataVisualizerDiagramResultType.validationError:member'
+    package: office!
+    summary: Validation error in operation.
+    value: '"ValidationError"'

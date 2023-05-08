@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: Excel.ConditionalColorScaleCriterion
+uid: 'office!Excel.ConditionalColorScaleCriterion:interface'
+package: office!
+fullName: Excel.ConditionalColorScaleCriterion
+summary: 'Represents a color scale criterion which contains a type, value, and a color.'
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'office!Excel.ConditionalColorScaleCriterion#color:member'
+    package: office!
+    fullName: color
+    summary: 'HTML color code representation of the color scale color (e.g., \#FF0000 represents Red).'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: formula
+    uid: 'office!Excel.ConditionalColorScaleCriterion#formula:member'
+    package: office!
+    fullName: formula
+    summary: 'A number, a formula, or `null` (if `type` is `lowestValue`<!-- -->).'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Excel.ConditionalColorScaleCriterion#type:member'
+    package: office!
+    fullName: type
+    summary: What the criterion conditional formula should be based on.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Excel.ConditionalFormatColorCriterionType | "Invalid" | "LowestValue" | "HighestValue" | "Number" |
+        "Percent" | "Formula" | "Percentile";
+      return:
+        type: >-
+          <xref uid="office!Excel.ConditionalFormatColorCriterionType:enum" /> | "Invalid" | "LowestValue" |
+          "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"

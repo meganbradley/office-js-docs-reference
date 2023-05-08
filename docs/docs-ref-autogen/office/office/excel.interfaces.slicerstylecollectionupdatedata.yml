@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.SlicerStyleCollectionUpdateData
+uid: 'office!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.SlicerStyleCollectionUpdateData
+summary: >-
+  An interface for updating data on the SlicerStyleCollection object, for use in `slicerStyleCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.SlicerStyleData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.SlicerStyleData:interface" />[]'

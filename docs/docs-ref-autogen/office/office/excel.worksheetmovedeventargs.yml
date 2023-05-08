@@ -1,0 +1,84 @@
+### YamlMime:TSType
+name: Excel.WorksheetMovedEventArgs
+uid: 'office!Excel.WorksheetMovedEventArgs:interface'
+package: office!
+fullName: Excel.WorksheetMovedEventArgs
+summary: >-
+  Notifies when a worksheet is moved within a workbook.
+
+
+  If a worksheet is moved from one position within the workbook to another via the Excel UI, then this API will trigger
+  an event. Note that if the position of a worksheet changes as a result of moving a different worksheet, then this
+  event won't trigger for both position changes. This event only triggers for the primary worksheet move, and not any
+  worksheet position changes that occur as a result of that primary move.
+remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: positionAfter
+    uid: 'office!Excel.WorksheetMovedEventArgs#positionAfter:member'
+    package: office!
+    fullName: positionAfter
+    summary: 'Gets the new position of the worksheet, after the move.'
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'positionAfter: number;'
+      return:
+        type: number
+  - name: positionBefore
+    uid: 'office!Excel.WorksheetMovedEventArgs#positionBefore:member'
+    package: office!
+    fullName: positionBefore
+    summary: 'Gets the previous position of the worksheet, prior to the move.'
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'positionBefore: number;'
+      return:
+        type: number
+  - name: source
+    uid: 'office!Excel.WorksheetMovedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through co-authoring).
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'office!Excel.WorksheetMovedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event.
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: string;'
+      return:
+        type: string
+  - name: worksheetId
+    uid: 'office!Excel.WorksheetMovedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet that was moved.
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

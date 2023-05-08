@@ -1,0 +1,109 @@
+### YamlMime:TSEnum
+name: Word.ImageFormat
+uid: 'office!Word.ImageFormat:enum'
+package: office!
+fullName: Word.ImageFormat
+summary: ''
+remarks: >-
+  \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-get-pictures.yaml
+
+  // Get the first image in the document.
+
+  await Word.run(async (context) => {
+    const firstPicture = context.document.body.inlinePictures.getFirst();
+    firstPicture.load("width, height, imageFormat");
+
+    await context.sync();
+    console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+    console.log(`Image format: ${firstPicture.imageFormat}`);
+    // Get the image encoded as Base64.
+    const base64 = firstPicture.getBase64ImageSrc();
+
+    await context.sync();
+    console.log(base64.value);
+  });
+
+  ```
+example: []
+isPreview: true
+isDeprecated: false
+fields:
+  - name: bmp
+    uid: 'office!Word.ImageFormat.bmp:member'
+    package: office!
+    summary: ''
+    value: '"Bmp"'
+  - name: emf
+    uid: 'office!Word.ImageFormat.emf:member'
+    package: office!
+    summary: ''
+    value: '"Emf"'
+  - name: exif
+    uid: 'office!Word.ImageFormat.exif:member'
+    package: office!
+    summary: ''
+    value: '"Exif"'
+  - name: gif
+    uid: 'office!Word.ImageFormat.gif:member'
+    package: office!
+    summary: ''
+    value: '"Gif"'
+  - name: icon
+    uid: 'office!Word.ImageFormat.icon:member'
+    package: office!
+    summary: ''
+    value: '"Icon"'
+  - name: jpeg
+    uid: 'office!Word.ImageFormat.jpeg:member'
+    package: office!
+    summary: ''
+    value: '"Jpeg"'
+  - name: pdf
+    uid: 'office!Word.ImageFormat.pdf:member'
+    package: office!
+    summary: ''
+    value: '"Pdf"'
+  - name: pict
+    uid: 'office!Word.ImageFormat.pict:member'
+    package: office!
+    summary: ''
+    value: '"Pict"'
+  - name: png
+    uid: 'office!Word.ImageFormat.png:member'
+    package: office!
+    summary: ''
+    value: '"Png"'
+  - name: svg
+    uid: 'office!Word.ImageFormat.svg:member'
+    package: office!
+    summary: ''
+    value: '"Svg"'
+  - name: tiff
+    uid: 'office!Word.ImageFormat.tiff:member'
+    package: office!
+    summary: ''
+    value: '"Tiff"'
+  - name: undefined
+    uid: 'office!Word.ImageFormat.undefined:member'
+    package: office!
+    summary: ''
+    value: '"Undefined"'
+  - name: unsupported
+    uid: 'office!Word.ImageFormat.unsupported:member'
+    package: office!
+    summary: ''
+    value: '"Unsupported"'
+  - name: wmf
+    uid: 'office!Word.ImageFormat.wmf:member'
+    package: office!
+    summary: ''
+    value: '"Wmf"'

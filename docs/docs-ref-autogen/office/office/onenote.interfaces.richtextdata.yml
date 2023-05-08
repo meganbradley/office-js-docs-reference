@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.RichTextData
+uid: 'office!OneNote.Interfaces.RichTextData:interface'
+package: office!
+fullName: OneNote.Interfaces.RichTextData
+summary: An interface describing the data returned by calling `richText.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'office!OneNote.Interfaces.RichTextData#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: languageId
+    uid: 'office!OneNote.Interfaces.RichTextData#languageId:member'
+    package: office!
+    fullName: languageId
+    summary: The language id of the text. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'languageId?: string;'
+      return:
+        type: string
+  - name: style
+    uid: 'office!OneNote.Interfaces.RichTextData#style:member'
+    package: office!
+    fullName: style
+    summary: Gets the text style of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: OneNote.ParagraphStyle;'
+      return:
+        type: '<xref uid="office!OneNote.ParagraphStyle:enum" />'
+  - name: text
+    uid: 'office!OneNote.Interfaces.RichTextData#text:member'
+    package: office!
+    fullName: text
+    summary: Gets the text content of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: string;'
+      return:
+        type: string

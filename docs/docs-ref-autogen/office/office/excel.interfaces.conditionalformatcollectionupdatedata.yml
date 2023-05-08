@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ConditionalFormatCollectionUpdateData
+uid: 'office!Excel.Interfaces.ConditionalFormatCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ConditionalFormatCollectionUpdateData
+summary: >-
+  An interface for updating data on the ConditionalFormatCollection object, for use in
+  `conditionalFormatCollection.set({ ... })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.ConditionalFormatCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.ConditionalFormatData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalFormatData:interface" />[]'

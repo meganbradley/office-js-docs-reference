@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomPropertyCollectionUpdateData
+uid: 'office!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.CustomPropertyCollectionUpdateData
+summary: >-
+  An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.CustomPropertyData[];'
+      return:
+        type: '<xref uid="office!Word.Interfaces.CustomPropertyData:interface" />[]'

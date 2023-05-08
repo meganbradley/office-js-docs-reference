@@ -1,0 +1,170 @@
+### YamlMime:TSType
+name: Excel.Interfaces.DocumentPropertiesLoadOptions
+uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.DocumentPropertiesLoadOptions
+summary: Represents workbook properties.
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: author
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#author:member'
+    package: office!
+    fullName: author
+    summary: The author of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type: boolean
+  - name: category
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#category:member'
+    package: office!
+    fullName: category
+    summary: The category of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'category?: boolean;'
+      return:
+        type: boolean
+  - name: comments
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#comments:member'
+    package: office!
+    fullName: comments
+    summary: The comments of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'comments?: boolean;'
+      return:
+        type: boolean
+  - name: company
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#company:member'
+    package: office!
+    fullName: company
+    summary: The company of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'company?: boolean;'
+      return:
+        type: boolean
+  - name: creationDate
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
+    package: office!
+    fullName: creationDate
+    summary: Gets the creation date of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type: boolean
+  - name: keywords
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
+    package: office!
+    fullName: keywords
+    summary: The keywords of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'keywords?: boolean;'
+      return:
+        type: boolean
+  - name: lastAuthor
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
+    package: office!
+    fullName: lastAuthor
+    summary: Gets the last author of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastAuthor?: boolean;'
+      return:
+        type: boolean
+  - name: manager
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#manager:member'
+    package: office!
+    fullName: manager
+    summary: The manager of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'manager?: boolean;'
+      return:
+        type: boolean
+  - name: revisionNumber
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
+    package: office!
+    fullName: revisionNumber
+    summary: Gets the revision number of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'revisionNumber?: boolean;'
+      return:
+        type: boolean
+  - name: subject
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#subject:member'
+    package: office!
+    fullName: subject
+    summary: The subject of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subject?: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'office!Excel.Interfaces.DocumentPropertiesLoadOptions#title:member'
+    package: office!
+    fullName: title
+    summary: The title of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type: boolean

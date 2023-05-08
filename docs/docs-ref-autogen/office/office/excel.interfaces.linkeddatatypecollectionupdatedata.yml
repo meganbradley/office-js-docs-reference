@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.LinkedDataTypeCollectionUpdateData
+uid: 'office!Excel.Interfaces.LinkedDataTypeCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.LinkedDataTypeCollectionUpdateData
+summary: >-
+  An interface for updating data on the LinkedDataTypeCollection object, for use in `linkedDataTypeCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.LinkedDataTypeCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.LinkedDataTypeData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.LinkedDataTypeData:interface" />[]'

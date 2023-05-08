@@ -7,6 +7,7 @@ summary: 'Specifies changes to the ribbon, such as the enabled or disabled statu
 remarks: >-
   **Requirement set**: [RibbonAPI
   1.1](https://learn.microsoft.com/javascript/api/requirement-sets/common/ribbon-api-requirement-sets)
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -17,6 +18,7 @@ properties:
     fullName: tabs
     summary: Collection of tabs whose state is set with the call of `requestUpdate`<!-- -->.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

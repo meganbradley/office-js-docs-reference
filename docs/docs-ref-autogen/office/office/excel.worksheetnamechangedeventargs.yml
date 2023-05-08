@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.WorksheetNameChangedEventArgs
+uid: 'office!Excel.WorksheetNameChangedEventArgs:interface'
+package: office!
+fullName: Excel.WorksheetNameChangedEventArgs
+summary: Provides information about the worksheet whose name has changed.
+remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: nameAfter
+    uid: 'office!Excel.WorksheetNameChangedEventArgs#nameAfter:member'
+    package: office!
+    fullName: nameAfter
+    summary: 'Gets the new name of the worksheet, after the name change.'
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameAfter: string;'
+      return:
+        type: string
+  - name: nameBefore
+    uid: 'office!Excel.WorksheetNameChangedEventArgs#nameBefore:member'
+    package: office!
+    fullName: nameBefore
+    summary: 'Gets the previous name of the worksheet, before the name changed.'
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'nameBefore: string;'
+      return:
+        type: string
+  - name: source
+    uid: 'office!Excel.WorksheetNameChangedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through co-authoring).
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'office!Excel.WorksheetNameChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event.
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: string;'
+      return:
+        type: string
+  - name: worksheetId
+    uid: 'office!Excel.WorksheetNameChangedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet with the new name.
+    remarks: '\[ [API set: ExcelApi 1.17](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

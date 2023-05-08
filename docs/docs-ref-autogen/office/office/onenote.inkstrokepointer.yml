@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: OneNote.InkStrokePointer
+uid: 'office!OneNote.InkStrokePointer:interface'
+package: office!
+fullName: OneNote.InkStrokePointer
+summary: Weak reference to an ink stroke object and its content parent.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: contentId
+    uid: 'office!OneNote.InkStrokePointer#contentId:member'
+    package: office!
+    fullName: contentId
+    summary: Represents the id of the page content object corresponding to this stroke
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentId: string;'
+      return:
+        type: string
+  - name: inkStrokeId
+    uid: 'office!OneNote.InkStrokePointer#inkStrokeId:member'
+    package: office!
+    fullName: inkStrokeId
+    summary: Represents the id of the ink stroke
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inkStrokeId: string;'
+      return:
+        type: string

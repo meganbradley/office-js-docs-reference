@@ -1,0 +1,67 @@
+### YamlMime:TSEnum
+name: Excel.ArrowheadStyle
+uid: 'office!Excel.ArrowheadStyle:enum'
+package: office!
+fullName: Excel.ArrowheadStyle
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-lines.yaml
+
+  await Excel.run(async (context) => {
+      const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+      const line = shapes.getItem("StraightLine").line;
+      line.beginArrowheadLength = Excel.ArrowheadLength.long;
+      line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+      line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
+
+      line.endArrowheadLength = Excel.ArrowheadLength.long;
+      line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+      line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
+
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: diamond
+    uid: 'office!Excel.ArrowheadStyle.diamond:member'
+    package: office!
+    summary: ''
+    value: '"Diamond"'
+  - name: none
+    uid: 'office!Excel.ArrowheadStyle.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: open
+    uid: 'office!Excel.ArrowheadStyle.open:member'
+    package: office!
+    summary: ''
+    value: '"Open"'
+  - name: oval
+    uid: 'office!Excel.ArrowheadStyle.oval:member'
+    package: office!
+    summary: ''
+    value: '"Oval"'
+  - name: stealth
+    uid: 'office!Excel.ArrowheadStyle.stealth:member'
+    package: office!
+    summary: ''
+    value: '"Stealth"'
+  - name: triangle
+    uid: 'office!Excel.ArrowheadStyle.triangle:member'
+    package: office!
+    summary: ''
+    value: '"Triangle"'

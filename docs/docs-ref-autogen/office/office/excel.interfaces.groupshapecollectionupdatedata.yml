@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.GroupShapeCollectionUpdateData
+uid: 'office!Excel.Interfaces.GroupShapeCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.GroupShapeCollectionUpdateData
+summary: >-
+  An interface for updating data on the GroupShapeCollection object, for use in `groupShapeCollection.set({ ... })`<!--
+  -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.GroupShapeCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.ShapeData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ShapeData:interface" />[]'

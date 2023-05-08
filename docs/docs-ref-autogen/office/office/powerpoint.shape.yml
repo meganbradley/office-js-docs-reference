@@ -1,0 +1,545 @@
+### YamlMime:TSType
+name: PowerPoint.Shape
+uid: 'office!PowerPoint.Shape:class'
+package: office!
+fullName: PowerPoint.Shape
+summary: Represents a single shape in the slide.
+remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: context
+    uid: 'office!PowerPoint.Shape#context:member'
+    package: office!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="office!PowerPoint.RequestContext:class" />'
+  - name: fill
+    uid: 'office!PowerPoint.Shape#fill:member'
+    package: office!
+    fullName: fill
+    summary: Returns the fill formatting of this shape.
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Changes the selected shapes fill color to red.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.fill.setSolidColor("red");
+        });
+        await context.sync();
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly fill: PowerPoint.ShapeFill;'
+      return:
+        type: '<xref uid="office!PowerPoint.ShapeFill:class" />'
+  - name: height
+    uid: 'office!PowerPoint.Shape#height:member'
+    package: office!
+    fullName: height
+    summary: >-
+      Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value.
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height: number;'
+      return:
+        type: number
+  - name: id
+    uid: 'office!PowerPoint.Shape#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the unique ID of the shape.
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: left
+    uid: 'office!PowerPoint.Shape#left:member'
+    package: office!
+    fullName: left
+    summary: 'The distance, in points, from the left side of the shape to the left side of the slide.'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left: number;'
+      return:
+        type: number
+  - name: lineFormat
+    uid: 'office!PowerPoint.Shape#lineFormat:member'
+    package: office!
+    fullName: lineFormat
+    summary: Returns the line formatting of this shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly lineFormat: PowerPoint.ShapeLineFormat;'
+      return:
+        type: '<xref uid="office!PowerPoint.ShapeLineFormat:class" />'
+  - name: name
+    uid: 'office!PowerPoint.Shape#name:member'
+    package: office!
+    fullName: name
+    summary: Specifies the name of this shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string;'
+      return:
+        type: string
+  - name: tags
+    uid: 'office!PowerPoint.Shape#tags:member'
+    package: office!
+    fullName: tags
+    summary: Returns a collection of tags in the shape.
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly tags: PowerPoint.TagCollection;'
+      return:
+        type: '<xref uid="office!PowerPoint.TagCollection:class" />'
+  - name: textFrame
+    uid: 'office!PowerPoint.Shape#textFrame:member'
+    package: office!
+    fullName: textFrame
+    summary: Returns the text frame object of this shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly textFrame: PowerPoint.TextFrame;'
+      return:
+        type: '<xref uid="office!PowerPoint.TextFrame:class" />'
+  - name: top
+    uid: 'office!PowerPoint.Shape#top:member'
+    package: office!
+    fullName: top
+    summary: 'The distance, in points, from the top edge of the shape to the top edge of the slide.'
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top: number;'
+      return:
+        type: number
+  - name: type
+    uid: 'office!PowerPoint.Shape#type:member'
+    package: office!
+    fullName: type
+    summary: 'Returns the type of this shape. See [PowerPoint.ShapeType](xref:office!PowerPoint.ShapeType:enum) for details.'
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly type: PowerPoint.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
+      return:
+        type: >-
+          <xref uid="office!PowerPoint.ShapeType:enum" /> | "Unsupported" | "Image" | "GeometricShape" | "Group" |
+          "Line"
+  - name: width
+    uid: 'office!PowerPoint.Shape#width:member'
+    package: office!
+    fullName: width
+    summary: >-
+      Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value.
+    remarks: >-
+      \[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/powerpoint/shapes/get-set-shapes.yaml
+
+      // Arranges the selected shapes in a line from left to right.
+
+      await PowerPoint.run(async (context) => {
+        const shapes = context.presentation.getSelectedShapes();
+        const shapeCount = shapes.getCount();
+        shapes.load("items");
+        await context.sync();
+        let maxHeight = 0;
+        shapes.items.map((shape) => {
+          shape.load("width,height");
+        });
+        await context.sync();
+        shapes.items.map((shape) => {
+          shape.left = currentLeft;
+          shape.top = currentTop;
+          currentLeft += shape.width;
+          if (shape.height > maxHeight) maxHeight = shape.height;
+        });
+        await context.sync();
+        currentLeft = 0;
+        if (currentTop > slideHeight - 200) currentTop = 0;
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width: number;'
+      return:
+        type: number
+methods:
+  - name: delete()
+    uid: 'office!PowerPoint.Shape#delete:member(1)'
+    package: office!
+    fullName: delete()
+    summary: Deletes the shape from the shape collection. Does nothing if the shape does not exist.
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getParentSlide()
+    uid: 'office!PowerPoint.Shape#getParentSlide:member(1)'
+    package: office!
+    fullName: getParentSlide()
+    summary: >-
+      Returns the parent [PowerPoint.Slide](xref:office!PowerPoint.Slide:class) object that holds this `Shape`<!-- -->.
+      Throws an exception if this shape does not belong to a `Slide`<!-- -->.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getParentSlide(): PowerPoint.Slide;'
+      return:
+        type: '<xref uid="office!PowerPoint.Slide:class" />'
+        description: ''
+  - name: getParentSlideLayout()
+    uid: 'office!PowerPoint.Shape#getParentSlideLayout:member(1)'
+    package: office!
+    fullName: getParentSlideLayout()
+    summary: >-
+      Returns the parent [PowerPoint.SlideLayout](xref:office!PowerPoint.SlideLayout:class) object that holds this
+      `Shape`<!-- -->. Throws an exception if this shape does not belong to a `SlideLayout`<!-- -->.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getParentSlideLayout(): PowerPoint.SlideLayout;'
+      return:
+        type: '<xref uid="office!PowerPoint.SlideLayout:class" />'
+        description: ''
+  - name: getParentSlideLayoutOrNullObject()
+    uid: 'office!PowerPoint.Shape#getParentSlideLayoutOrNullObject:member(1)'
+    package: office!
+    fullName: getParentSlideLayoutOrNullObject()
+    summary: >-
+      Returns the parent [PowerPoint.SlideLayout](xref:office!PowerPoint.SlideLayout:class) object that holds this
+      `Shape`<!-- -->. If this shape does not belong to a `SlideLayout`<!-- -->, an object with an `isNullObject`
+      property set to `true` is returned.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getParentSlideLayoutOrNullObject(): PowerPoint.SlideLayout;'
+      return:
+        type: '<xref uid="office!PowerPoint.SlideLayout:class" />'
+        description: ''
+  - name: getParentSlideMaster()
+    uid: 'office!PowerPoint.Shape#getParentSlideMaster:member(1)'
+    package: office!
+    fullName: getParentSlideMaster()
+    summary: >-
+      Returns the parent [PowerPoint.SlideMaster](xref:office!PowerPoint.SlideMaster:class) object that holds this
+      `Shape`<!-- -->. Throws an exception if this shape does not belong to a `SlideMaster`<!-- -->.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getParentSlideMaster(): PowerPoint.SlideMaster;'
+      return:
+        type: '<xref uid="office!PowerPoint.SlideMaster:class" />'
+        description: ''
+  - name: getParentSlideMasterOrNullObject()
+    uid: 'office!PowerPoint.Shape#getParentSlideMasterOrNullObject:member(1)'
+    package: office!
+    fullName: getParentSlideMasterOrNullObject()
+    summary: >-
+      Returns the parent [PowerPoint.SlideMaster](xref:office!PowerPoint.SlideMaster:class) object that holds this
+      `Shape`<!-- -->. If this shape does not belong to a `SlideMaster`<!-- -->, an object with an `isNullObject`
+      property set to `true` is returned.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getParentSlideMasterOrNullObject(): PowerPoint.SlideMaster;'
+      return:
+        type: '<xref uid="office!PowerPoint.SlideMaster:class" />'
+        description: ''
+  - name: getParentSlideOrNullObject()
+    uid: 'office!PowerPoint.Shape#getParentSlideOrNullObject:member(1)'
+    package: office!
+    fullName: getParentSlideOrNullObject()
+    summary: >-
+      Returns the parent [PowerPoint.Slide](xref:office!PowerPoint.Slide:class) object that holds this `Shape`<!-- -->.
+      If this shape does not belong to a `Slide`<!-- -->, an object with an `isNullObject` property set to `true` is
+      returned.
+    remarks: '\[ [API set: PowerPointApi 1.5](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getParentSlideOrNullObject(): PowerPoint.Slide;'
+      return:
+        type: '<xref uid="office!PowerPoint.Slide:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'office!PowerPoint.Shape#load:member(1)'
+    package: office!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: PowerPoint.Interfaces.ShapeLoadOptions): PowerPoint.Shape;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="office!PowerPoint.Interfaces.ShapeLoadOptions:interface" />'
+      return:
+        type: '<xref uid="office!PowerPoint.Shape:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'office!PowerPoint.Shape#load:member(2)'
+    package: office!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): PowerPoint.Shape;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="office!PowerPoint.Shape:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'office!PowerPoint.Shape#load:member(3)'
+    package: office!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): PowerPoint.Shape;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="office!PowerPoint.Shape:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'office!PowerPoint.Shape#toJSON:member(1)'
+    package: office!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original PowerPoint.Shape object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `PowerPoint.Interfaces.ShapeData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): PowerPoint.Interfaces.ShapeData;'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.ShapeData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

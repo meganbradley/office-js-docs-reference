@@ -1,0 +1,45 @@
+### YamlMime:TSEnum
+name: Word.SelectionMode
+uid: 'office!Word.SelectionMode:enum'
+package: office!
+fullName: Word.SelectionMode
+summary: This enum sets where the cursor (insertion point) in the document is after a selection.
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/scroll-to-range.yaml
+
+  await Word.run(async (context) => {
+    // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+    context.document.body.paragraphs.getLast().select(Word.SelectionMode.end);
+
+    await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: end
+    uid: 'office!Word.SelectionMode.end:member'
+    package: office!
+    summary: The cursor is at the end of the selection (just after the end of the selected range).
+    value: '"End"'
+  - name: select
+    uid: 'office!Word.SelectionMode.select:member'
+    package: office!
+    summary: The entire range is selected.
+    value: '"Select"'
+  - name: start
+    uid: 'office!Word.SelectionMode.start:member'
+    package: office!
+    summary: The cursor is at the beginning of the selection (just before the start of the selected range).
+    value: '"Start"'

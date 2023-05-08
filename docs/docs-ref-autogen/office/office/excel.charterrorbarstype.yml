@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.ChartErrorBarsType
+uid: 'office!Excel.ChartErrorBarsType:enum'
+package: office!
+fullName: Excel.ChartErrorBarsType
+summary: Represents the range type for error bars.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: custom
+    uid: 'office!Excel.ChartErrorBarsType.custom:member'
+    package: office!
+    summary: ''
+    value: '"Custom"'
+  - name: fixedValue
+    uid: 'office!Excel.ChartErrorBarsType.fixedValue:member'
+    package: office!
+    summary: ''
+    value: '"FixedValue"'
+  - name: percent
+    uid: 'office!Excel.ChartErrorBarsType.percent:member'
+    package: office!
+    summary: ''
+    value: '"Percent"'
+  - name: stDev
+    uid: 'office!Excel.ChartErrorBarsType.stDev:member'
+    package: office!
+    summary: ''
+    value: '"StDev"'
+  - name: stError
+    uid: 'office!Excel.ChartErrorBarsType.stError:member'
+    package: office!
+    summary: ''
+    value: '"StError"'

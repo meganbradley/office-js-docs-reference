@@ -1,0 +1,70 @@
+### YamlMime:TSEnum
+name: Word.Alignment
+uid: 'office!Word.Alignment:enum'
+package: office!
+fullName: Word.Alignment
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/paragraph-properties.yaml
+
+  await Word.run(async (context) => {
+    const body = context.document.body;
+    body.clear();
+    body.insertParagraph(
+      "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.",
+      "Start"
+    );
+    body.paragraphs
+      .getLast()
+      .insertText(
+        "To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries.",
+        "Replace"
+      );
+    body.paragraphs.getFirst().alignment = "Left";
+    body.paragraphs.getLast().alignment = Word.Alignment.left;
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: centered
+    uid: 'office!Word.Alignment.centered:member'
+    package: office!
+    summary: Alignment to the center.
+    value: '"Centered"'
+  - name: justified
+    uid: 'office!Word.Alignment.justified:member'
+    package: office!
+    summary: Fully justified alignment.
+    value: '"Justified"'
+  - name: left
+    uid: 'office!Word.Alignment.left:member'
+    package: office!
+    summary: Alignment to the left.
+    value: '"Left"'
+  - name: mixed
+    uid: 'office!Word.Alignment.mixed:member'
+    package: office!
+    summary: ''
+    value: '"Mixed"'
+  - name: right
+    uid: 'office!Word.Alignment.right:member'
+    package: office!
+    summary: Alignment to the right.
+    value: '"Right"'
+  - name: unknown
+    uid: 'office!Word.Alignment.unknown:member'
+    package: office!
+    summary: Unknown alignment.
+    value: '"Unknown"'

@@ -1,0 +1,123 @@
+### YamlMime:TSEnum
+name: Word.LocationRelation
+uid: 'office!Word.LocationRelation:enum'
+package: office!
+fullName: Word.LocationRelation
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/35-ranges/compare-location.yaml
+
+  // Compare the location of one paragraph in relation to another paragraph.
+
+  await Word.run(async (context) => {
+    const paragraphs = context.document.body.paragraphs;
+    paragraphs.load("items");
+
+    await context.sync();
+
+    const firstParagraphAsRange = paragraphs.items[0].getRange();
+    const secondParagraphAsRange = paragraphs.items[1].getRange();
+
+    const comparedLocation = firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
+
+    await context.sync();
+
+    console.log(`Location of the first paragraph in relation to the second paragraph: ${comparedLocation.value}`);
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: adjacentAfter
+    uid: 'office!Word.LocationRelation.adjacentAfter:member'
+    package: office!
+    summary: 'Indicates that this instance occurs after, and is adjacent to, the range.'
+    value: '"AdjacentAfter"'
+  - name: adjacentBefore
+    uid: 'office!Word.LocationRelation.adjacentBefore:member'
+    package: office!
+    summary: 'Indicates that this instance occurs before, and is adjacent to, the range.'
+    value: '"AdjacentBefore"'
+  - name: after
+    uid: 'office!Word.LocationRelation.after:member'
+    package: office!
+    summary: Indicates that this instance occurs after the range.
+    value: '"After"'
+  - name: before
+    uid: 'office!Word.LocationRelation.before:member'
+    package: office!
+    summary: Indicates that this instance occurs before the range.
+    value: '"Before"'
+  - name: contains
+    uid: 'office!Word.LocationRelation.contains:member'
+    package: office!
+    summary: >-
+      Indicates that this instance contains the range, with the exception of the start and end character of this
+      instance.
+    value: '"Contains"'
+  - name: containsEnd
+    uid: 'office!Word.LocationRelation.containsEnd:member'
+    package: office!
+    summary: >-
+      Indicates that this instance contains the range and that it shares the same end character. The range does not
+      share the same start character as this instance.
+    value: '"ContainsEnd"'
+  - name: containsStart
+    uid: 'office!Word.LocationRelation.containsStart:member'
+    package: office!
+    summary: >-
+      Indicates that this instance contains the range and that it shares the same start character. The range does not
+      share the same end character as this instance.
+    value: '"ContainsStart"'
+  - name: equal
+    uid: 'office!Word.LocationRelation.equal:member'
+    package: office!
+    summary: Indicates that this instance and the range represent the same range.
+    value: '"Equal"'
+  - name: inside
+    uid: 'office!Word.LocationRelation.inside:member'
+    package: office!
+    summary: >-
+      Indicates that this instance is inside the range. The range does not share the same start and end characters as
+      this instance.
+    value: '"Inside"'
+  - name: insideEnd
+    uid: 'office!Word.LocationRelation.insideEnd:member'
+    package: office!
+    summary: >-
+      Indicates that this instance is inside the range and that it shares the same end character. The range does not
+      share the same start character as this instance.
+    value: '"InsideEnd"'
+  - name: insideStart
+    uid: 'office!Word.LocationRelation.insideStart:member'
+    package: office!
+    summary: >-
+      Indicates that this instance is inside the range and that it shares the same start character. The range does not
+      share the same end character as this instance.
+    value: '"InsideStart"'
+  - name: overlapsAfter
+    uid: 'office!Word.LocationRelation.overlapsAfter:member'
+    package: office!
+    summary: Indicates that this instance starts inside the range and overlaps the range’s last character.
+    value: '"OverlapsAfter"'
+  - name: overlapsBefore
+    uid: 'office!Word.LocationRelation.overlapsBefore:member'
+    package: office!
+    summary: Indicates that this instance starts before the range and overlaps the range’s first character.
+    value: '"OverlapsBefore"'
+  - name: unrelated
+    uid: 'office!Word.LocationRelation.unrelated:member'
+    package: office!
+    summary: Indicates that this instance and the range are in different sub-documents.
+    value: '"Unrelated"'

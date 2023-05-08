@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.RefErrorCellValueSubType
+uid: 'office!Excel.RefErrorCellValueSubType:enum'
+package: office!
+fullName: Excel.RefErrorCellValueSubType
+summary: 'Represents types of \#REF! errors.'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: externalLinksCalculatedRef
+    uid: 'office!Excel.RefErrorCellValueSubType.externalLinksCalculatedRef:member'
+    package: office!
+    summary: 'An error caused by dynamic array references from the linked workbook. Displays as error type \#REF! in Excel.'
+    value: '"ExternalLinksCalculatedRef"'
+  - name: externalLinksStructuredRef
+    uid: 'office!Excel.RefErrorCellValueSubType.externalLinksStructuredRef:member'
+    package: office!
+    summary: 'An error caused by structured references from the linked workbook. Displays as error type \#REF! in Excel.'
+    value: '"ExternalLinksStructuredRef"'
+  - name: unknown
+    uid: 'office!Excel.RefErrorCellValueSubType.unknown:member'
+    package: office!
+    summary: 'An unknown type of error. Displays as error type \#REF! in Excel.'
+    value: '"Unknown"'

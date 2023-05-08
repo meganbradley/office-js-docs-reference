@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ConditionalFormatRuleLoadOptions
+uid: 'office!Excel.Interfaces.ConditionalFormatRuleLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ConditionalFormatRuleLoadOptions
+summary: 'Represents a rule, for all traditional rule/format pairings.'
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ConditionalFormatRuleLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: formula
+    uid: 'office!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formula:member'
+    package: office!
+    fullName: formula
+    summary: 'The formula, if required, on which to evaluate the conditional format rule.'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula?: boolean;'
+      return:
+        type: boolean
+  - name: formulaLocal
+    uid: 'office!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formulaLocal:member'
+    package: office!
+    fullName: formulaLocal
+    summary: 'The formula, if required, on which to evaluate the conditional format rule in the user''s language.'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formulaLocal?: boolean;'
+      return:
+        type: boolean
+  - name: formulaR1C1
+    uid: 'office!Excel.Interfaces.ConditionalFormatRuleLoadOptions#formulaR1C1:member'
+    package: office!
+    fullName: formulaR1C1
+    summary: 'The formula, if required, on which to evaluate the conditional format rule in R1C1-style notation.'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formulaR1C1?: boolean;'
+      return:
+        type: boolean

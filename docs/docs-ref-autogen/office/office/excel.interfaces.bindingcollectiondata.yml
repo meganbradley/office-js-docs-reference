@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.BindingCollectionData
+uid: 'office!Excel.Interfaces.BindingCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.BindingCollectionData
+summary: An interface describing the data returned by calling `bindingCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.BindingCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.BindingData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.BindingData:interface" />[]'

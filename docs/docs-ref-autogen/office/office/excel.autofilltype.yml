@@ -1,0 +1,99 @@
+### YamlMime:TSEnum
+name: Excel.AutoFillType
+uid: 'office!Excel.AutoFillType:enum'
+package: office!
+fullName: Excel.AutoFillType
+summary: The behavior types when AutoFill is used on a range in the workbook.
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/range-auto-fill.yaml
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getActiveWorksheet();
+    const sumCell = sheet.getRange("K4");
+
+    // Copy only the formatting, not the values and formulas.
+    sumCell.autoFill("K4:K7", Excel.AutoFillType.fillFormats);
+    sumCell.format.autofitColumns();
+    await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: fillCopy
+    uid: 'office!Excel.AutoFillType.fillCopy:member'
+    package: office!
+    summary: Populates the adjacent cells with data based on the selected data.
+    value: '"FillCopy"'
+  - name: fillDays
+    uid: 'office!Excel.AutoFillType.fillDays:member'
+    package: office!
+    summary: >-
+      A version of "FillSeries" for dates that bases the pattern on either the day of the month or the day of the week,
+      depending on the context.
+    value: '"FillDays"'
+  - name: fillDefault
+    uid: 'office!Excel.AutoFillType.fillDefault:member'
+    package: office!
+    summary: Populates the adjacent cells based on the surrounding data (the standard AutoFill behavior).
+    value: '"FillDefault"'
+  - name: fillFormats
+    uid: 'office!Excel.AutoFillType.fillFormats:member'
+    package: office!
+    summary: Populates the adjacent cells with the selected formulas.
+    value: '"FillFormats"'
+  - name: fillMonths
+    uid: 'office!Excel.AutoFillType.fillMonths:member'
+    package: office!
+    summary: A version of "FillSeries" for dates that bases the pattern on the month.
+    value: '"FillMonths"'
+  - name: fillSeries
+    uid: 'office!Excel.AutoFillType.fillSeries:member'
+    package: office!
+    summary: Populates the adjacent cells with data that follows a pattern in the copied cells.
+    value: '"FillSeries"'
+  - name: fillValues
+    uid: 'office!Excel.AutoFillType.fillValues:member'
+    package: office!
+    summary: Populates the adjacent cells with the selected values.
+    value: '"FillValues"'
+  - name: fillWeekdays
+    uid: 'office!Excel.AutoFillType.fillWeekdays:member'
+    package: office!
+    summary: A version of "FillSeries" for dates that bases the pattern on the day of the week and only includes weekdays.
+    value: '"FillWeekdays"'
+  - name: fillYears
+    uid: 'office!Excel.AutoFillType.fillYears:member'
+    package: office!
+    summary: A version of "FillSeries" for dates that bases the pattern on the year.
+    value: '"FillYears"'
+  - name: flashFill
+    uid: 'office!Excel.AutoFillType.flashFill:member'
+    package: office!
+    summary: Populates the adjacent cells by using Excel's Flash Fill feature.
+    value: '"FlashFill"'
+  - name: growthTrend
+    uid: 'office!Excel.AutoFillType.growthTrend:member'
+    package: office!
+    summary: >-
+      A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a growth trend
+      model.
+    value: '"GrowthTrend"'
+  - name: linearTrend
+    uid: 'office!Excel.AutoFillType.linearTrend:member'
+    package: office!
+    summary: >-
+      A version of "FillSeries" for numbers that fills out the values in the adjacent cells according to a linear trend
+      model.
+    value: '"LinearTrend"'

@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideMasterCollectionData
+uid: 'office!PowerPoint.Interfaces.SlideMasterCollectionData:interface'
+package: office!
+fullName: PowerPoint.Interfaces.SlideMasterCollectionData
+summary: An interface describing the data returned by calling `slideMasterCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!PowerPoint.Interfaces.SlideMasterCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.SlideMasterData[];'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.SlideMasterData:interface" />[]'

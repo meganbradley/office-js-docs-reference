@@ -1,0 +1,24 @@
+### YamlMime:TSEnum
+name: Visio.CrossFunctionalFlowchartOrientation
+uid: 'office!Visio.CrossFunctionalFlowchartOrientation:enum'
+package: office!
+fullName: Visio.CrossFunctionalFlowchartOrientation
+summary: |-
+  Represents the orientation of the Cross Functional Flowchart diagram.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: horizontal
+    uid: 'office!Visio.CrossFunctionalFlowchartOrientation.horizontal:member'
+    package: office!
+    summary: Horizontal Cross Functional Flowchart.
+    value: '"Horizontal"'
+  - name: vertical
+    uid: 'office!Visio.CrossFunctionalFlowchartOrientation.vertical:member'
+    package: office!
+    summary: Vertical Cross Functional Flowchart.
+    value: '"Vertical"'

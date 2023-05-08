@@ -1,0 +1,246 @@
+### YamlMime:TSType
+name: Excel.Interfaces.WorkbookLoadOptions
+uid: 'office!Excel.Interfaces.WorkbookLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.WorkbookLoadOptions
+summary: >-
+  Workbook is the top level object which contains related workbook objects such as worksheets, tables, and ranges. To
+  learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
+  API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: application
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#application:member'
+    package: office!
+    fullName: application
+    summary: Represents the Excel application instance that contains this workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ApplicationLoadOptions:interface" />'
+  - name: autoSave
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#autoSave:member'
+    package: office!
+    fullName: autoSave
+    summary: Specifies if the workbook is in AutoSave mode.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoSave?: boolean;'
+      return:
+        type: boolean
+  - name: bindings
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
+    package: office!
+    fullName: bindings
+    summary: Represents a collection of bindings that are part of the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.BindingCollectionLoadOptions:interface" />'
+  - name: calculationEngineVersion
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#calculationEngineVersion:member'
+    package: office!
+    fullName: calculationEngineVersion
+    summary: Returns a number about the version of Excel Calculation Engine.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'calculationEngineVersion?: boolean;'
+      return:
+        type: boolean
+  - name: chartDataPointTrack
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#chartDataPointTrack:member'
+    package: office!
+    fullName: chartDataPointTrack
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'chartDataPointTrack?: boolean;'
+      return:
+        type: boolean
+  - name: isDirty
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#isDirty:member'
+    package: office!
+    fullName: isDirty
+    summary: >-
+      Specifies if changes have been made since the workbook was last saved. You can set this property to `true` if you
+      want to close a modified workbook without either saving it or being prompted to save it.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isDirty?: boolean;'
+      return:
+        type: boolean
+  - name: linkedWorkbooks
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#linkedWorkbooks:member'
+    package: office!
+    fullName: linkedWorkbooks
+    summary: >-
+      Returns a collection of linked workbooks. In formulas, the workbook links can be used to reference data (cell
+      values and names) outside of the current workbook.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkedWorkbooks?: Excel.Interfaces.LinkedWorkbookCollectionLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.LinkedWorkbookCollectionLoadOptions:interface" />'
+  - name: name
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: Gets the workbook name.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: previouslySaved
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#previouslySaved:member'
+    package: office!
+    fullName: previouslySaved
+    summary: Specifies if the workbook has ever been saved locally or online.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previouslySaved?: boolean;'
+      return:
+        type: boolean
+  - name: properties
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#properties:member'
+    package: office!
+    fullName: properties
+    summary: Gets the workbook properties.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.DocumentPropertiesLoadOptions:interface" />'
+  - name: protection
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#protection:member'
+    package: office!
+    fullName: protection
+    summary: Returns the protection object for a workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.WorkbookProtectionLoadOptions:interface" />'
+  - name: readOnly
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#readOnly:member'
+    package: office!
+    fullName: readOnly
+    summary: Returns `true` if the workbook is open in read-only mode.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type: boolean
+  - name: showPivotFieldList
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#showPivotFieldList:member'
+    package: office!
+    fullName: showPivotFieldList
+    summary: Specifies whether the PivotTable's field list pane is shown at the workbook level.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showPivotFieldList?: boolean;'
+      return:
+        type: boolean
+  - name: tables
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#tables:member'
+    package: office!
+    fullName: tables
+    summary: Represents a collection of tables associated with the workbook.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.TableCollectionLoadOptions:interface" />'
+  - name: use1904DateSystem
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#use1904DateSystem:member'
+    package: office!
+    fullName: use1904DateSystem
+    summary: True if the workbook uses the 1904 date system.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'use1904DateSystem?: boolean;'
+      return:
+        type: boolean
+  - name: usePrecisionAsDisplayed
+    uid: 'office!Excel.Interfaces.WorkbookLoadOptions#usePrecisionAsDisplayed:member'
+    package: office!
+    fullName: usePrecisionAsDisplayed
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from `false` to `true`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'usePrecisionAsDisplayed?: boolean;'
+      return:
+        type: boolean

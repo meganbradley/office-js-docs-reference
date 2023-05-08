@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ChartErrorBarsInclude
+uid: 'office!Excel.ChartErrorBarsInclude:enum'
+package: office!
+fullName: Excel.ChartErrorBarsInclude
+summary: Represents which parts of the error bar to include.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: both
+    uid: 'office!Excel.ChartErrorBarsInclude.both:member'
+    package: office!
+    summary: ''
+    value: '"Both"'
+  - name: minusValues
+    uid: 'office!Excel.ChartErrorBarsInclude.minusValues:member'
+    package: office!
+    summary: ''
+    value: '"MinusValues"'
+  - name: plusValues
+    uid: 'office!Excel.ChartErrorBarsInclude.plusValues:member'
+    package: office!
+    summary: ''
+    value: '"PlusValues"'

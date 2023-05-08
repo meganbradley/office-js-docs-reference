@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartAxisFormatLoadOptions
+uid: 'office!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ChartAxisFormatLoadOptions
+summary: Encapsulates the format properties for the chart axis.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ChartAxisFormatLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: font
+    uid: 'office!Excel.Interfaces.ChartAxisFormatLoadOptions#font:member'
+    package: office!
+    fullName: font
+    summary: 'Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartFontLoadOptions:interface" />'
+  - name: line
+    uid: 'office!Excel.Interfaces.ChartAxisFormatLoadOptions#line:member'
+    package: office!
+    fullName: line
+    summary: Specifies chart line formatting.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartLineFormatLoadOptions:interface" />'

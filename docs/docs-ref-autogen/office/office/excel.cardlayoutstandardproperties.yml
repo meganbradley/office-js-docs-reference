@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.CardLayoutStandardProperties
+uid: 'office!Excel.CardLayoutStandardProperties:interface'
+package: office!
+fullName: Excel.CardLayoutStandardProperties
+summary: Properties of a card layout relevant to most card layouts.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: mainImage
+    uid: 'office!Excel.CardLayoutStandardProperties#mainImage:member'
+    package: office!
+    fullName: mainImage
+    summary: Specifies a property which will be used as the main image of the card.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mainImage?: CardLayoutPropertyReference;'
+      return:
+        type: '<xref uid="office!Excel.CardLayoutPropertyReference:interface" />'
+  - name: sections
+    uid: 'office!Excel.CardLayoutStandardProperties#sections:member'
+    package: office!
+    fullName: sections
+    summary: Represents the sections of the card.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sections?: CardLayoutSection[];'
+      return:
+        type: '<xref uid="office!Excel.CardLayoutSection:type" />[]'
+  - name: subTitle
+    uid: 'office!Excel.CardLayoutStandardProperties#subTitle:member'
+    package: office!
+    fullName: subTitle
+    summary: Represents a specification of which property contains the subtitle of the card.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subTitle?: CardLayoutPropertyReference;'
+      return:
+        type: '<xref uid="office!Excel.CardLayoutPropertyReference:interface" />'
+  - name: title
+    uid: 'office!Excel.CardLayoutStandardProperties#title:member'
+    package: office!
+    fullName: title
+    summary: Represents the title of the card or the specification of which property contains the title of the card.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: string | CardLayoutPropertyReference;'
+      return:
+        type: 'string | <xref uid="office!Excel.CardLayoutPropertyReference:interface" />'

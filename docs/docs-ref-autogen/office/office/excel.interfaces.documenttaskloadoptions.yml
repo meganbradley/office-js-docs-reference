@@ -1,0 +1,172 @@
+### YamlMime:TSType
+name: Excel.Interfaces.DocumentTaskLoadOptions
+uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.DocumentTaskLoadOptions
+summary: Represents a task.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: assignees
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#assignees:member'
+    package: office!
+    fullName: assignees
+    summary: Returns a collection of assignees of the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'assignees?: boolean;'
+      return:
+        type: boolean
+  - name: comment
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#comment:member'
+    package: office!
+    fullName: comment
+    summary: Gets the comment associated with the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'comment?: Excel.Interfaces.CommentLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.CommentLoadOptions:interface" />'
+  - name: completedBy
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#completedBy:member'
+    package: office!
+    fullName: completedBy
+    summary: Gets the most recent user to have completed the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'completedBy?: boolean;'
+      return:
+        type: boolean
+  - name: completedDateTime
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#completedDateTime:member'
+    package: office!
+    fullName: completedDateTime
+    summary: Gets the date and time that the task was completed. All dates are in UTC.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'completedDateTime?: boolean;'
+      return:
+        type: boolean
+  - name: createdBy
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#createdBy:member'
+    package: office!
+    fullName: createdBy
+    summary: Gets the user who created the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'createdBy?: boolean;'
+      return:
+        type: boolean
+  - name: createdDateTime
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#createdDateTime:member'
+    package: office!
+    fullName: createdDateTime
+    summary: Gets the date and time that the task was created. All dates are in UTC.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'createdDateTime?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: percentComplete
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#percentComplete:member'
+    package: office!
+    fullName: percentComplete
+    summary: >-
+      Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a
+      completed task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'percentComplete?: boolean;'
+      return:
+        type: boolean
+  - name: priority
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#priority:member'
+    package: office!
+    fullName: priority
+    summary: 'Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.'
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'priority?: boolean;'
+      return:
+        type: boolean
+  - name: startAndDueDateTime
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#startAndDueDateTime:member'
+    package: office!
+    fullName: startAndDueDateTime
+    summary: Gets or sets the date and time the task should start and is due.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'startAndDueDateTime?: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'office!Excel.Interfaces.DocumentTaskLoadOptions#title:member'
+    package: office!
+    fullName: title
+    summary: Specifies title of the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: PowerPoint.ConnectorType
+uid: 'office!PowerPoint.ConnectorType:enum'
+package: office!
+fullName: PowerPoint.ConnectorType
+summary: Specifies the connector type for line shapes.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: curve
+    uid: 'office!PowerPoint.ConnectorType.curve:member'
+    package: office!
+    summary: Curve connector type
+    value: '"Curve"'
+  - name: elbow
+    uid: 'office!PowerPoint.ConnectorType.elbow:member'
+    package: office!
+    summary: Elbow connector type
+    value: '"Elbow"'
+  - name: straight
+    uid: 'office!PowerPoint.ConnectorType.straight:member'
+    package: office!
+    summary: Straight connector type
+    value: '"Straight"'

@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Excel.PageLayoutZoomOptions
+uid: 'office!Excel.PageLayoutZoomOptions:interface'
+package: office!
+fullName: Excel.PageLayoutZoomOptions
+summary: Represents page zoom properties.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: horizontalFitToPages
+    uid: 'office!Excel.PageLayoutZoomOptions#horizontalFitToPages:member'
+    package: office!
+    fullName: horizontalFitToPages
+    summary: Number of pages to fit horizontally. This value can be `null` if percentage scale is used.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'horizontalFitToPages?: number;'
+      return:
+        type: number
+  - name: scale
+    uid: 'office!Excel.PageLayoutZoomOptions#scale:member'
+    package: office!
+    fullName: scale
+    summary: >-
+      Print page scale value can be between 10 and 400. This value can be `null` if fit to page tall or wide is
+      specified.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scale?: number;'
+      return:
+        type: number
+  - name: verticalFitToPages
+    uid: 'office!Excel.PageLayoutZoomOptions#verticalFitToPages:member'
+    package: office!
+    fullName: verticalFitToPages
+    summary: Number of pages to fit vertically. This value can be `null` if percentage scale is used.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalFitToPages?: number;'
+      return:
+        type: number

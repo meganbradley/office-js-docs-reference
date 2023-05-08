@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Word.Interfaces.SectionCollectionUpdateData
+uid: 'office!Word.Interfaces.SectionCollectionUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.SectionCollectionUpdateData
+summary: 'An interface for updating data on the SectionCollection object, for use in `sectionCollection.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Word.Interfaces.SectionCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.SectionData[];'
+      return:
+        type: '<xref uid="office!Word.Interfaces.SectionData:interface" />[]'

@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: Office.InfobarDetails
+uid: 'office!Office.InfobarDetails:interface'
+package: office!
+fullName: Office.InfobarDetails
+summary: Provides additional details about the notification message that raised the `Office.EventType.InfobarClicked` event.
+remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actionType
+    uid: 'office!Office.InfobarDetails#actionType:member'
+    package: office!
+    fullName: actionType
+    summary: 'The action type. Currently, "Dismiss" is the only supported action.'
+    remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actionType: MailboxEnums.InfobarActionType;'
+      return:
+        type: '<xref uid="office!Office.MailboxEnums.InfobarActionType:enum" />'
+  - name: infobarType
+    uid: 'office!Office.InfobarDetails#infobarType:member'
+    package: office!
+    fullName: infobarType
+    summary: The notification type.
+    remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'infobarType: MailboxEnums.InfobarType;'
+      return:
+        type: '<xref uid="office!Office.MailboxEnums.InfobarType:enum" />'

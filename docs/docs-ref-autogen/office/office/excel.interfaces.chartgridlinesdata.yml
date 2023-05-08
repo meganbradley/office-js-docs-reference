@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartGridlinesData
+uid: 'office!Excel.Interfaces.ChartGridlinesData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartGridlinesData
+summary: An interface describing the data returned by calling `chartGridlines.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'office!Excel.Interfaces.ChartGridlinesData#format:member'
+    package: office!
+    fullName: format
+    summary: Represents the formatting of chart gridlines.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartGridlinesFormatData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartGridlinesFormatData:interface" />'
+  - name: visible
+    uid: 'office!Excel.Interfaces.ChartGridlinesData#visible:member'
+    package: office!
+    fullName: visible
+    summary: Specifies if the axis gridlines are visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean

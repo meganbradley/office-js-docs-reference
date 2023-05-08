@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartGridlinesLoadOptions
+uid: 'office!Excel.Interfaces.ChartGridlinesLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ChartGridlinesLoadOptions
+summary: Represents major or minor gridlines on a chart axis.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ChartGridlinesLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: 'office!Excel.Interfaces.ChartGridlinesLoadOptions#format:member'
+    package: office!
+    fullName: format
+    summary: Represents the formatting of chart gridlines.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface" />'
+  - name: visible
+    uid: 'office!Excel.Interfaces.ChartGridlinesLoadOptions#visible:member'
+    package: office!
+    fullName: visible
+    summary: Specifies if the axis gridlines are visible.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean

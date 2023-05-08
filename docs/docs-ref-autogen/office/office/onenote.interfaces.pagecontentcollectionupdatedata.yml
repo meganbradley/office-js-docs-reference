@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.PageContentCollectionUpdateData
+uid: 'office!OneNote.Interfaces.PageContentCollectionUpdateData:interface'
+package: office!
+fullName: OneNote.Interfaces.PageContentCollectionUpdateData
+summary: >-
+  An interface for updating data on the PageContentCollection object, for use in `pageContentCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!OneNote.Interfaces.PageContentCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: OneNote.Interfaces.PageContentData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.PageContentData:interface" />[]'

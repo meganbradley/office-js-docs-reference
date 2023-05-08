@@ -1,0 +1,606 @@
+### YamlMime:TSType
+name: Word.Field
+uid: 'office!Word.Field:class'
+package: office!
+fullName: Word.Field
+summary: Represents a field.
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: code
+    uid: 'office!Word.Field#code:member'
+    package: office!
+    fullName: code
+    summary: Gets or sets the field's code instruction.
+    remarks: >-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+      // Gets the first field in the document body.
+
+      await Word.run(async (context) => {
+        const field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
+        } else {
+          console.log("Code of first field: " + field.code);
+          console.log("Result of first field: " + JSON.stringify(field.result));
+        }
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'office!Word.Field#context:member'
+    package: office!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="office!Word.RequestContext:class" />'
+  - name: data
+    uid: 'office!Word.Field#data:member'
+    package: office!
+    fullName: data
+    summary: >-
+      Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      exception when code attempts to set it.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'data: string;'
+      return:
+        type: string
+  - name: kind
+    uid: 'office!Word.Field#kind:member'
+    package: office!
+    fullName: kind
+    summary: Gets the field's kind.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly kind: Word.FieldKind | "None" | "Hot" | "Warm" | "Cold";'
+      return:
+        type: '<xref uid="office!Word.FieldKind:enum" /> | "None" | "Hot" | "Warm" | "Cold"'
+  - name: locked
+    uid: 'office!Word.Field#locked:member'
+    package: office!
+    fullName: locked
+    summary: 'Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'locked: boolean;'
+      return:
+        type: boolean
+  - name: parentBody
+    uid: 'office!Word.Field#parentBody:member'
+    package: office!
+    fullName: parentBody
+    summary: Gets the parent body of the field.
+    remarks: >-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+      // Gets the parent body of the first field in the document.
+
+      await Word.run(async (context) => {
+        const field = context.document.body.fields.getFirstOrNullObject();
+        field.load("parentBody/text");
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("This document has no fields.");
+        } else {
+          const parentBody = field.parentBody;
+          console.log("Text of first field's parent body: " + JSON.stringify(parentBody.text));
+        }
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentBody: Word.Body;'
+      return:
+        type: '<xref uid="office!Word.Body:class" />'
+  - name: parentContentControl
+    uid: 'office!Word.Field#parentContentControl:member'
+    package: office!
+    fullName: parentContentControl
+    summary: >-
+      Gets the content control that contains the field. Throws an `ItemNotFound` error if there isn't a parent content
+      control.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentContentControl: Word.ContentControl;'
+      return:
+        type: '<xref uid="office!Word.ContentControl:class" />'
+  - name: parentContentControlOrNullObject
+    uid: 'office!Word.Field#parentContentControlOrNullObject:member'
+    package: office!
+    fullName: parentContentControlOrNullObject
+    summary: >-
+      Gets the content control that contains the field. If there isn't a parent content control, then this method will
+      return an object with its `isNullObject` property set to `true`<!-- -->. For further information, see
+      [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
+      return:
+        type: '<xref uid="office!Word.ContentControl:class" />'
+  - name: parentTable
+    uid: 'office!Word.Field#parentTable:member'
+    package: office!
+    fullName: parentTable
+    summary: Gets the table that contains the field. Throws an `ItemNotFound` error if it is not contained in a table.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentTable: Word.Table;'
+      return:
+        type: '<xref uid="office!Word.Table:class" />'
+  - name: parentTableCell
+    uid: 'office!Word.Field#parentTableCell:member'
+    package: office!
+    fullName: parentTableCell
+    summary: >-
+      Gets the table cell that contains the field. Throws an `ItemNotFound` error if it is not contained in a table
+      cell.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentTableCell: Word.TableCell;'
+      return:
+        type: '<xref uid="office!Word.TableCell:class" />'
+  - name: parentTableCellOrNullObject
+    uid: 'office!Word.Field#parentTableCellOrNullObject:member'
+    package: office!
+    fullName: parentTableCellOrNullObject
+    summary: >-
+      Gets the table cell that contains the field. If it is not contained in a table cell, then this method will return
+      an object with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject
+      methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
+      return:
+        type: '<xref uid="office!Word.TableCell:class" />'
+  - name: parentTableOrNullObject
+    uid: 'office!Word.Field#parentTableOrNullObject:member'
+    package: office!
+    fullName: parentTableOrNullObject
+    summary: >-
+      Gets the table that contains the field. If it is not contained in a table, then this method will return an object
+      with its `isNullObject` property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly parentTableOrNullObject: Word.Table;'
+      return:
+        type: '<xref uid="office!Word.Table:class" />'
+  - name: result
+    uid: 'office!Word.Field#result:member'
+    package: office!
+    fullName: result
+    summary: Gets the field's result data.
+    remarks: >-
+      \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-fields.yaml
+
+      // Gets the first field in the document body.
+
+      await Word.run(async (context) => {
+        const field = context.document.body.fields.getFirstOrNullObject();
+        field.load(["code", "result"]);
+
+        await context.sync();
+
+        if (field.isNullObject) {
+          console.log("There are no fields in this document.");
+        } else {
+          console.log("Code of first field: " + field.code);
+          console.log("Result of first field: " + JSON.stringify(field.result));
+        }
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly result: Word.Range;'
+      return:
+        type: '<xref uid="office!Word.Range:class" />'
+  - name: showCodes
+    uid: 'office!Word.Field#showCodes:member'
+    package: office!
+    fullName: showCodes
+    summary: >-
+      Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are
+      displayed, `false` otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showCodes: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'office!Word.Field#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the field's type.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        readonly type: Word.FieldType | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" | "AutoText" |
+        "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare" | "CreateDate"
+        | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime" | "Embedded" |
+        "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" | "FormText" |
+        "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" | "IncludeText" |
+        "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" | "MergeBarcode" |
+        "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" | "NumPages" | "NumWords" |
+        "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" | "Ref" | "RevNum" | "SaveDate"
+        | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" | "Subject" | "Subscriber" |
+        "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" | "UserAddress" | "UserInitials" |
+        "UserName" | "XE" | "Empty" | "Others" | "Undefined";
+      return:
+        type: >-
+          <xref uid="office!Word.FieldType:enum" /> | "Addin" | "AddressBlock" | "Advance" | "Ask" | "Author" |
+          "AutoText" | "AutoTextList" | "BarCode" | "Bibliography" | "BidiOutline" | "Citation" | "Comments" | "Compare"
+          | "CreateDate" | "Data" | "Database" | "Date" | "DisplayBarcode" | "DocProperty" | "DocVariable" | "EditTime"
+          | "Embedded" | "EQ" | "Expression" | "FileName" | "FileSize" | "FillIn" | "FormCheckbox" | "FormDropdown" |
+          "FormText" | "GotoButton" | "GreetingLine" | "Hyperlink" | "If" | "Import" | "Include" | "IncludePicture" |
+          "IncludeText" | "Index" | "Info" | "Keywords" | "LastSavedBy" | "Link" | "ListNum" | "MacroButton" |
+          "MergeBarcode" | "MergeField" | "MergeRec" | "MergeSeq" | "Next" | "NextIf" | "NoteRef" | "NumChars" |
+          "NumPages" | "NumWords" | "OCX" | "Page" | "PageRef" | "Print" | "PrintDate" | "Private" | "Quote" | "RD" |
+          "Ref" | "RevNum" | "SaveDate" | "Section" | "SectionPages" | "Seq" | "Set" | "Shape" | "SkipIf" | "StyleRef" |
+          "Subject" | "Subscriber" | "Symbol" | "TA" | "TC" | "Template" | "Time" | "Title" | "TOA" | "TOC" |
+          "UserAddress" | "UserInitials" | "UserName" | "XE" | "Empty" | "Others" | "Undefined"
+methods:
+  - name: delete()
+    uid: 'office!Word.Field#delete:member(1)'
+    package: office!
+    fullName: delete()
+    summary: Deletes the field.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: getNext()
+    uid: 'office!Word.Field#getNext:member(1)'
+    package: office!
+    fullName: getNext()
+    summary: Gets the next field. Throws an `ItemNotFound` error if this field is the last one.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNext(): Word.Field;'
+      return:
+        type: '<xref uid="office!Word.Field:class" />'
+        description: ''
+  - name: getNextOrNullObject()
+    uid: 'office!Word.Field#getNextOrNullObject:member(1)'
+    package: office!
+    fullName: getNextOrNullObject()
+    summary: >-
+      Gets the next field. If this field is the last one, then this method will return an object with its `isNullObject`
+      property set to `true`<!-- -->. For further information, see [*OrNullObject methods and
+      properties](https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties)<!--
+      -->.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getNextOrNullObject(): Word.Field;'
+      return:
+        type: '<xref uid="office!Word.Field:class" />'
+        description: ''
+  - name: load(options)
+    uid: 'office!Word.Field#load:member(1)'
+    package: office!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Word.Interfaces.FieldLoadOptions): Word.Field;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="office!Word.Interfaces.FieldLoadOptions:interface" />'
+      return:
+        type: '<xref uid="office!Word.Field:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'office!Word.Field#load:member(2)'
+    package: office!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Field;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="office!Word.Field:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'office!Word.Field#load:member(3)'
+    package: office!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Word.Field;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="office!Word.Field:class" />'
+        description: ''
+  - name: select(selectionMode)
+    uid: 'office!Word.Field#select:member(1)'
+    package: office!
+    fullName: select(selectionMode)
+    summary: Selects the field.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'select(selectionMode?: Word.SelectionMode): void;'
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode must be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type: '<xref uid="office!Word.SelectionMode:enum" />'
+      return:
+        type: void
+        description: ''
+  - name: select(selectionMode)
+    uid: 'office!Word.Field#select:member(2)'
+    package: office!
+    fullName: select(selectionMode)
+    summary: Selects the field.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode must be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type: '"Select" | "Start" | "End"'
+      return:
+        type: void
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'office!Word.Field#set:member(1)'
+    package: office!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.FieldUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="office!Word.Interfaces.FieldUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'office!Word.Field#set:member(2)'
+    package: office!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Word.Field): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="office!Word.Field:class" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'office!Word.Field#toJSON:member(1)'
+    package: office!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Field object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.FieldData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Word.Interfaces.FieldData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.FieldData:interface" />'
+        description: ''
+  - name: track()
+    uid: 'office!Word.Field#track:member(1)'
+    package: office!
+    fullName: track()
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for
+      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
+      object to the tracked object collection when the object was first created. If this object is part of a collection,
+      you should also track the parent collection.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track(): Word.Field;'
+      return:
+        type: '<xref uid="office!Word.Field:class" />'
+        description: ''
+  - name: untrack()
+    uid: 'office!Word.Field#untrack:member(1)'
+    package: office!
+    fullName: untrack()
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
+      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'untrack(): Word.Field;'
+      return:
+        type: '<xref uid="office!Word.Field:class" />'
+        description: ''
+  - name: updateResult()
+    uid: 'office!Word.Field#updateResult:member(1)'
+    package: office!
+    fullName: updateResult()
+    summary: Updates the field.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'updateResult(): void;'
+      return:
+        type: void
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

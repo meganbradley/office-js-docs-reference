@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.FiveBoxesSet
+uid: 'office!Excel.FiveBoxesSet:interface'
+package: office!
+fullName: Excel.FiveBoxesSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fourFilledBoxes
+    uid: 'office!Excel.FiveBoxesSet#fourFilledBoxes:member'
+    package: office!
+    fullName: fourFilledBoxes
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fourFilledBoxes: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: noFilledBoxes
+    uid: 'office!Excel.FiveBoxesSet#noFilledBoxes:member'
+    package: office!
+    fullName: noFilledBoxes
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'noFilledBoxes: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: oneFilledBox
+    uid: 'office!Excel.FiveBoxesSet#oneFilledBox:member'
+    package: office!
+    fullName: oneFilledBox
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'oneFilledBox: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: threeFilledBoxes
+    uid: 'office!Excel.FiveBoxesSet#threeFilledBoxes:member'
+    package: office!
+    fullName: threeFilledBoxes
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'threeFilledBoxes: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: twoFilledBoxes
+    uid: 'office!Excel.FiveBoxesSet#twoFilledBoxes:member'
+    package: office!
+    fullName: twoFilledBoxes
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'twoFilledBoxes: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

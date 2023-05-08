@@ -1,0 +1,57 @@
+### YamlMime:TSType
+name: Office.AttachmentsChangedEventArgs
+uid: 'office!Office.AttachmentsChangedEventArgs:interface'
+package: office!
+fullName: Office.AttachmentsChangedEventArgs
+summary: Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
+remarks: '\[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: attachmentDetails
+    uid: 'office!Office.AttachmentsChangedEventArgs#attachmentDetails:member'
+    package: office!
+    fullName: attachmentDetails
+    summary: >-
+      Represents the set of attachments that were added or removed. For each such attachment, gets `id`<!-- -->,
+      `name`<!-- -->, `size`<!-- -->, and `attachmentType` properties.
+    remarks: '\[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attachmentDetails: object[];'
+      return:
+        type: 'object[]'
+  - name: attachmentStatus
+    uid: 'office!Office.AttachmentsChangedEventArgs#attachmentStatus:member'
+    package: office!
+    fullName: attachmentStatus
+    summary: >-
+      Gets whether the attachments were added or removed. For details, refer to
+      [MailboxEnums.AttachmentStatus](xref:office!Office.MailboxEnums.AttachmentStatus:enum)<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'attachmentStatus: MailboxEnums.AttachmentStatus | string;'
+      return:
+        type: '<xref uid="office!Office.MailboxEnums.AttachmentStatus:enum" /> | string'
+  - name: type
+    uid: 'office!Office.AttachmentsChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.8](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "olkAttachmentsChanged";'
+      return:
+        type: '"olkAttachmentsChanged"'

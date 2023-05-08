@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.CalculationState
+uid: 'office!Excel.CalculationState:enum'
+package: office!
+fullName: Excel.CalculationState
+summary: Represents the state of calculation across the entire Excel application.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: calculating
+    uid: 'office!Excel.CalculationState.calculating:member'
+    package: office!
+    summary: Calculations in progress.
+    value: '"Calculating"'
+  - name: done
+    uid: 'office!Excel.CalculationState.done:member'
+    package: office!
+    summary: Calculations complete.
+    value: '"Done"'
+  - name: pending
+    uid: 'office!Excel.CalculationState.pending:member'
+    package: office!
+    summary: 'Changes that trigger calculation have been made, but a recalculation has not yet been performed.'
+    value: '"Pending"'

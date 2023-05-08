@@ -1,0 +1,346 @@
+### YamlMime:TSType
+name: Visio.Page
+uid: 'office!Visio.Page:class'
+package: office!
+fullName: Visio.Page
+summary: |-
+  Represents the Page class.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: allShapes
+    uid: 'office!Visio.Page#allShapes:member'
+    package: office!
+    fullName: allShapes
+    summary: |-
+      All shapes in the Page, including subshapes. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly allShapes: Visio.ShapeCollection;'
+      return:
+        type: '<xref uid="office!Visio.ShapeCollection:class" />'
+  - name: comments
+    uid: 'office!Visio.Page#comments:member'
+    package: office!
+    fullName: comments
+    summary: |-
+      Returns the Comments Collection. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly comments: Visio.CommentCollection;'
+      return:
+        type: '<xref uid="office!Visio.CommentCollection:class" />'
+  - name: context
+    uid: 'office!Visio.Page#context:member'
+    package: office!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="office!Visio.RequestContext:class" />'
+  - name: height
+    uid: 'office!Visio.Page#height:member'
+    package: office!
+    fullName: height
+    summary: |-
+      Returns the height of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type: number
+  - name: index
+    uid: 'office!Visio.Page#index:member'
+    package: office!
+    fullName: index
+    summary: |-
+      Index of the Page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type: number
+  - name: isBackground
+    uid: 'office!Visio.Page#isBackground:member'
+    package: office!
+    fullName: isBackground
+    summary: |-
+      Whether the page is a background page or not. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isBackground: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Visio.Page#name:member'
+    package: office!
+    fullName: name
+    summary: |-
+      Page name. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type: string
+  - name: shapes
+    uid: 'office!Visio.Page#shapes:member'
+    package: office!
+    fullName: shapes
+    summary: |-
+      All top-level shapes in the Page.Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly shapes: Visio.ShapeCollection;'
+      return:
+        type: '<xref uid="office!Visio.ShapeCollection:class" />'
+  - name: view
+    uid: 'office!Visio.Page#view:member'
+    package: office!
+    fullName: view
+    summary: |-
+      Returns the view of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly view: Visio.PageView;'
+      return:
+        type: '<xref uid="office!Visio.PageView:class" />'
+  - name: width
+    uid: 'office!Visio.Page#width:member'
+    package: office!
+    fullName: width
+    summary: |-
+      Returns the width of the page. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type: number
+methods:
+  - name: activate()
+    uid: 'office!Visio.Page#activate:member(1)'
+    package: office!
+    fullName: activate()
+    summary: |-
+      Set the page as Active Page of the document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'office!Visio.Page#load:member(1)'
+    package: office!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Visio.Interfaces.PageLoadOptions): Visio.Page;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="office!Visio.Interfaces.PageLoadOptions:interface" />'
+      return:
+        type: '<xref uid="office!Visio.Page:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'office!Visio.Page#load:member(2)'
+    package: office!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.Page;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="office!Visio.Page:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'office!Visio.Page#load:member(3)'
+    package: office!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Visio.Page;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="office!Visio.Page:class" />'
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'office!Visio.Page#set:member(1)'
+    package: office!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Visio.Page): void`
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.PageUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="office!Visio.Interfaces.PageUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'office!Visio.Page#set:member(2)'
+    package: office!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Visio.Page): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="office!Visio.Page:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setMockData(data)
+    uid: 'office!Visio.Page#setMockData:member(1)'
+    package: office!
+    fullName: setMockData(data)
+    summary: Set mock data
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setMockData(data: Visio.Interfaces.PageData): void;'
+      parameters:
+        - id: data
+          description: ''
+          type: '<xref uid="office!Visio.Interfaces.PageData:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'office!Visio.Page#toJSON:member(1)'
+    package: office!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Visio.Page object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Visio.Interfaces.PageData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.PageData;'
+      return:
+        type: '<xref uid="office!Visio.Interfaces.PageData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

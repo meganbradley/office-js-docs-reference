@@ -55,11 +55,11 @@ tryCatch(async () => {
     // ----
     // Process office.d.ts
     // ----
-    const localReleaseDtsPath = "../script-inputs/office.d.ts";
-    if (urlToCopyOfficeJsFrom.length > 0) {
-        console.log(`Pulling Office.js TypeScript definition file from: ${urlToCopyOfficeJsFrom}`);
-        fsx.writeFileSync(localReleaseDtsPath, await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
-    }
+    // const localReleaseDtsPath = "../script-inputs/office.d.ts";
+    // if (urlToCopyOfficeJsFrom.length > 0) {
+    //     console.log(`Pulling Office.js TypeScript definition file from: ${urlToCopyOfficeJsFrom}`);
+    //     fsx.writeFileSync(localReleaseDtsPath, await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
+    // }
 
     const localPreviewDtsPath = "../script-inputs/office_preview.d.ts";
     if (urlToCopyPreviewOfficeJsFrom.length > 0) {
@@ -67,154 +67,155 @@ tryCatch(async () => {
         fsx.writeFileSync(localPreviewDtsPath, await fetchAndThrowOnError(urlToCopyPreviewOfficeJsFrom, "text"));
     }
 
-    let releaseDefinitions = cleanUpDts(localReleaseDtsPath);
+    // let releaseDefinitions = cleanUpDts(localReleaseDtsPath);
     let previewDefinitions = cleanUpDts(localPreviewDtsPath);
+    fsx.writeFileSync('../api-extractor-inputs-office/office.d.ts', previewDefinitions)
 
-    const dtsBuilder = new DtsBuilder();
+    // const dtsBuilder = new DtsBuilder();
 
-    console.log("\nCreating separate d.ts files...");
+    // console.log("\nCreating separate d.ts files...");
 
-    console.log("create file: office.d.ts (preview)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-office/office.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Office namespace", "End Office namespace") +
-            '\n' +
-            '\n' +
-            dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API"),
-        "office",
-        forceRebuild
-    );
+    // console.log("create file: office.d.ts (preview)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-office/office.d.ts',
+    //     handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Office namespace", "End Office namespace") +
+    //         '\n' +
+    //         '\n' +
+    //         dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API"),
+    //     "office",
+    //     forceRebuild
+    // );
 
-    console.log("create file: office.d.ts");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-office-release/office.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Office namespace", "End Office namespace") +
-            '\n' +
-            '\n' +
-            dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API"),
-        "office",
-        forceRebuild
-    );
+    // console.log("create file: office.d.ts");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-office-release/office.d.ts',
+    //     handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Office namespace", "End Office namespace") +
+    //         '\n' +
+    //         '\n' +
+    //         dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API"),
+    //     "office",
+    //     forceRebuild
+    // );
 
-    console.log("\ncreate file: excel.d.ts (preview)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-excel/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other"),
-        "excel",
-        forceRebuild
-    );
+    // console.log("\ncreate file: excel.d.ts (preview)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-excel/excel.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other"),
+    //     "excel",
+    //     forceRebuild
+    // );
 
-    console.log("\ncreate file: excel.d.ts (release)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-excel-release/excel_online/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other", true),
-        "excel",
-        forceRebuild
-    );
+    // console.log("\ncreate file: excel.d.ts (release)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-excel-release/excel_online/excel.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other", true),
+    //     "excel",
+    //     forceRebuild
+    // );
 
-    console.log("create file: onenote.d.ts");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-onenote/onenote.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs")), "Other"),
-        "onenote",
-        forceRebuild
-    );
+    // console.log("create file: onenote.d.ts");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-onenote/onenote.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs")), "Other"),
+    //     "onenote",
+    //     forceRebuild
+    // );
 
-    console.log("create file: outlook.d.ts (preview)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-outlook/outlook.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook"),
-        "outlook",
-        forceRebuild
-    );
+    // console.log("create file: outlook.d.ts (preview)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-outlook/outlook.d.ts',
+    //     handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook"),
+    //     "outlook",
+    //     forceRebuild
+    // );
 
-    console.log("create file: outlook.d.ts (release)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true),
-        "outlook",
-        forceRebuild
-    );
+    // console.log("create file: outlook.d.ts (release)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts',
+    //     handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true),
+    //     "outlook",
+    //     forceRebuild
+    // );
 
-    console.log("create file: powerpoint.d.ts (preview)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other"),
-        "powerpoint",
-        forceRebuild
-    );
+    // console.log("create file: powerpoint.d.ts (preview)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other"),
+    //     "powerpoint",
+    //     forceRebuild
+    // );
 
-    console.log("create file: powerpoint.d.ts (release)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_5/powerpoint.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true),
-        "powerpoint",
-        forceRebuild
-    );
+    // console.log("create file: powerpoint.d.ts (release)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-powerpoint-release/PowerPoint_1_5/powerpoint.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true),
+    //     "powerpoint",
+    //     forceRebuild
+    // );
 
-    console.log("create file: visio.d.ts");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-visio/visio.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs")), "Other"),
-        "visio",
-        forceRebuild
-    );
+    // console.log("create file: visio.d.ts");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-visio/visio.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs")), "Other"),
+    //     "visio",
+    //     forceRebuild
+    // );
 
-    console.log("create file: word.d.ts (preview)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-word/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs"))), "Other"),
-        "word",
-        forceRebuild
-    );
+    // console.log("create file: word.d.ts (preview)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-word/word.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs"))), "Other"),
+    //     "word",
+    //     forceRebuild
+    // );
 
-    console.log("\ncreate file: word.d.ts (release)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-word-release/word_online/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
-        "word",
-        forceRebuild
-    );
+    // console.log("\ncreate file: word.d.ts (release)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-word-release/word_online/word.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
+    //     "word",
+    //     forceRebuild
+    // );
 
-    console.log("\ncreate file: word-init.d.ts (release-desktop)");
-    makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-word-release/word_1_4_hidden_document/word-init.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
-        "word",
-        forceRebuild
-    );
+    // console.log("\ncreate file: word-init.d.ts (release-desktop)");
+    // makeDtsAndClearJsonIfNew(
+    //     '../api-extractor-inputs-word-release/word_1_4_hidden_document/word-init.d.ts',
+    //     handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true),
+    //     "word",
+    //     forceRebuild
+    // );
 
-    // ----
-    // Process Custom Functions d.ts
-    // ----
-    if (urlToCopyCustomFunctionsRuntimeFrom.length > 0) {
-        console.log(`Pulling Custom Functions TypeScript definition file from: ${urlToCopyCustomFunctionsRuntimeFrom}`);
-        fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(urlToCopyCustomFunctionsRuntimeFrom, "text"));
-    }
-    console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
-    let definitionsForCfs : string = fsx.readFileSync("../script-inputs/custom-functions-runtime.d.ts").toString();
+    // // ----
+    // // Process Custom Functions d.ts
+    // // ----
+    // if (urlToCopyCustomFunctionsRuntimeFrom.length > 0) {
+    //     console.log(`Pulling Custom Functions TypeScript definition file from: ${urlToCopyCustomFunctionsRuntimeFrom}`);
+    //     fsx.writeFileSync("../script-inputs/custom-functions-runtime.d.ts", await fetchAndThrowOnError(urlToCopyCustomFunctionsRuntimeFrom, "text"));
+    // }
+    // console.log(`\nReading from ${path.resolve("../script-inputs/custom-functions-runtime.d.ts")}`);
+    // let definitionsForCfs : string = fsx.readFileSync("../script-inputs/custom-functions-runtime.d.ts").toString();
 
-    console.log("Fixing issues with d.ts file...");
-    definitionsForCfs = applyRegularExpressions(definitionsForCfs);
+    // console.log("Fixing issues with d.ts file...");
+    // definitionsForCfs = applyRegularExpressions(definitionsForCfs);
 
-    console.log("create file: custom-functions-runtime.d.ts");
-    makeDtsAndClearJsonIfNew('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs, "excel", forceRebuild);
+    // console.log("create file: custom-functions-runtime.d.ts");
+    // makeDtsAndClearJsonIfNew('../api-extractor-inputs-custom-functions-runtime/custom-functions-runtime.d.ts', definitionsForCfs, "excel", forceRebuild);
 
-    // ----
-    // Process Office Runtime d.ts
-    // ----
-    if (urlToCopyOfficeRuntimeFrom.length > 0) {
-        console.log(`Pulling Office Runtime TypeScript definition file from: ${urlToCopyOfficeRuntimeFrom}`);
-        fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(urlToCopyOfficeRuntimeFrom, "text"));
-    }
-    console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
-    let definitionsForORun : string = fsx.readFileSync("../script-inputs/office-runtime.d.ts").toString();
+    // // ----
+    // // Process Office Runtime d.ts
+    // // ----
+    // if (urlToCopyOfficeRuntimeFrom.length > 0) {
+    //     console.log(`Pulling Office Runtime TypeScript definition file from: ${urlToCopyOfficeRuntimeFrom}`);
+    //     fsx.writeFileSync("../script-inputs/office-runtime.d.ts", await fetchAndThrowOnError(urlToCopyOfficeRuntimeFrom, "text"));
+    // }
+    // console.log(`\nReading from ${path.resolve("../script-inputs/office-runtime.d.ts")}`);
+    // let definitionsForORun : string = fsx.readFileSync("../script-inputs/office-runtime.d.ts").toString();
 
-    console.log("Fixing issues with d.ts file...");
-    definitionsForORun = applyRegularExpressions(definitionsForORun);
+    // console.log("Fixing issues with d.ts file...");
+    // definitionsForORun = applyRegularExpressions(definitionsForORun);
 
-    console.log("create file: office-runtime.d.ts");
-    makeDtsAndClearJsonIfNew('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun, "office", forceRebuild);
+    // console.log("create file: office-runtime.d.ts");
+    // makeDtsAndClearJsonIfNew('../api-extractor-inputs-office-runtime/office-runtime.d.ts', definitionsForORun, "office", forceRebuild);
 
     console.log("\nPreprocessor script complete!");
 

@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Excel.HeaderFooterState
+uid: 'office!Excel.HeaderFooterState:enum'
+package: office!
+fullName: Excel.HeaderFooterState
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: default
+    uid: 'office!Excel.HeaderFooterState.default:member'
+    package: office!
+    summary: Only one general header/footer is used for all pages printed.
+    value: '"Default"'
+  - name: firstAndDefault
+    uid: 'office!Excel.HeaderFooterState.firstAndDefault:member'
+    package: office!
+    summary: 'There is a separate first page header/footer, and a general header/footer used for all other pages.'
+    value: '"FirstAndDefault"'
+  - name: firstOddAndEven
+    uid: 'office!Excel.HeaderFooterState.firstOddAndEven:member'
+    package: office!
+    summary: 'There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.'
+    value: '"FirstOddAndEven"'
+  - name: oddAndEven
+    uid: 'office!Excel.HeaderFooterState.oddAndEven:member'
+    package: office!
+    summary: There is a different header/footer for odd and even pages.
+    value: '"OddAndEven"'

@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeCollectionData
+uid: 'office!PowerPoint.Interfaces.ShapeCollectionData:interface'
+package: office!
+fullName: PowerPoint.Interfaces.ShapeCollectionData
+summary: An interface describing the data returned by calling `shapeCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!PowerPoint.Interfaces.ShapeCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.ShapeData[];'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.ShapeData:interface" />[]'

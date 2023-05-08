@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData
+uid: 'office!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData
+summary: >-
+  An interface for updating data on the WorksheetCustomPropertyCollection object, for use in
+  `worksheetCustomPropertyCollection.set({ ... })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.WorksheetCustomPropertyCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.WorksheetCustomPropertyData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.WorksheetCustomPropertyData:interface" />[]'

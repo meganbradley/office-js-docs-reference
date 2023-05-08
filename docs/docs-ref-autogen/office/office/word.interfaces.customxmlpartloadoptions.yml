@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlPartLoadOptions
+uid: 'office!Word.Interfaces.CustomXmlPartLoadOptions:interface'
+package: office!
+fullName: Word.Interfaces.CustomXmlPartLoadOptions
+summary: Represents a custom XML part.
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Word.Interfaces.CustomXmlPartLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Word.Interfaces.CustomXmlPartLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the custom XML part.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: namespaceUri
+    uid: 'office!Word.Interfaces.CustomXmlPartLoadOptions#namespaceUri:member'
+    package: office!
+    fullName: namespaceUri
+    summary: Gets the namespace URI of the custom XML part.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: boolean;'
+      return:
+        type: boolean

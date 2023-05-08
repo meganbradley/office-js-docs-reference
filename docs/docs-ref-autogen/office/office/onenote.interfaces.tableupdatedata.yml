@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.TableUpdateData
+uid: 'office!OneNote.Interfaces.TableUpdateData:interface'
+package: office!
+fullName: OneNote.Interfaces.TableUpdateData
+summary: 'An interface for updating data on the Table object, for use in `table.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: borderVisible
+    uid: 'office!OneNote.Interfaces.TableUpdateData#borderVisible:member'
+    package: office!
+    fullName: borderVisible
+    summary: 'Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'borderVisible?: boolean;'
+      return:
+        type: boolean

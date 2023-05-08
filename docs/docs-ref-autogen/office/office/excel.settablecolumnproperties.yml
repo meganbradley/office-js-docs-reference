@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: Excel.SettableColumnProperties
+uid: 'office!Excel.SettableColumnProperties:interface'
+package: office!
+fullName: Excel.SettableColumnProperties
+summary: |-
+  Represents the input parameter of setColumnProperties.
+
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: columnHidden
+    uid: 'office!Excel.SettableColumnProperties#columnHidden:member'
+    package: office!
+    fullName: columnHidden
+    summary: |-
+      Represents the `columnHidden` property.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'columnHidden?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: 'office!Excel.SettableColumnProperties#format:member'
+    package: office!
+    fullName: format
+    summary: |-
+      Represents the `format` property.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        format?: Excel.CellPropertiesFormat & {
+                    columnWidth?: number;
+                };
+      return:
+        type: |-
+          <xref uid="office!Excel.CellPropertiesFormat:interface" /> & {
+                      columnWidth?: number;
+                  }
+extends: '<xref uid="office!Excel.SettableCellProperties:interface" />'

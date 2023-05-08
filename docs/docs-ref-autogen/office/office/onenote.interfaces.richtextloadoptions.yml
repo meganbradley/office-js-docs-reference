@@ -1,0 +1,92 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.RichTextLoadOptions
+uid: 'office!OneNote.Interfaces.RichTextLoadOptions:interface'
+package: office!
+fullName: OneNote.Interfaces.RichTextLoadOptions
+summary: Represents a RichText object in a Paragraph.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!OneNote.Interfaces.RichTextLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!OneNote.Interfaces.RichTextLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: languageId
+    uid: 'office!OneNote.Interfaces.RichTextLoadOptions#languageId:member'
+    package: office!
+    fullName: languageId
+    summary: The language id of the text. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'languageId?: boolean;'
+      return:
+        type: boolean
+  - name: paragraph
+    uid: 'office!OneNote.Interfaces.RichTextLoadOptions#paragraph:member'
+    package: office!
+    fullName: paragraph
+    summary: Gets the Paragraph object that contains the RichText object.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
+  - name: style
+    uid: 'office!OneNote.Interfaces.RichTextLoadOptions#style:member'
+    package: office!
+    fullName: style
+    summary: Gets the text style of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.8](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
+  - name: text
+    uid: 'office!OneNote.Interfaces.RichTextLoadOptions#text:member'
+    package: office!
+    fullName: text
+    summary: Gets the text content of the RichText object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type: boolean

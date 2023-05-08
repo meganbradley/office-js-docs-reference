@@ -1,0 +1,185 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.ParagraphLoadOptions
+uid: 'office!OneNote.Interfaces.ParagraphLoadOptions:interface'
+package: office!
+fullName: OneNote.Interfaces.ParagraphLoadOptions
+summary: A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the Paragraph object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: image
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#image:member'
+    package: office!
+    fullName: image
+    summary: Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ImageLoadOptions:interface" />'
+  - name: inkWords
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#inkWords:member'
+    package: office!
+    fullName: inkWords
+    summary: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkWordCollectionLoadOptions:interface" />'
+  - name: outline
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#outline:member'
+    package: office!
+    fullName: outline
+    summary: Gets the Outline object that contains the Paragraph.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.OutlineLoadOptions:interface" />'
+  - name: paragraphs
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#paragraphs:member'
+    package: office!
+    fullName: paragraphs
+    summary: The collection of paragraphs under this paragraph. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface" />'
+  - name: parentParagraph
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#parentParagraph:member'
+    package: office!
+    fullName: parentParagraph
+    summary: Gets the parent paragraph object. Throws if a parent paragraph does not exist.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
+  - name: parentParagraphOrNull
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#parentParagraphOrNull:member'
+    package: office!
+    fullName: parentParagraphOrNull
+    summary: Gets the parent paragraph object. Returns null if a parent paragraph does not exist.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ParagraphLoadOptions:interface" />'
+  - name: parentTableCell
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#parentTableCell:member'
+    package: office!
+    fullName: parentTableCell
+    summary: >-
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
+      ItemNotFound.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.TableCellLoadOptions:interface" />'
+  - name: parentTableCellOrNull
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#parentTableCellOrNull:member'
+    package: office!
+    fullName: parentTableCellOrNull
+    summary: 'Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.TableCellLoadOptions:interface" />'
+  - name: richText
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#richText:member'
+    package: office!
+    fullName: richText
+    summary: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'richText?: OneNote.Interfaces.RichTextLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.RichTextLoadOptions:interface" />'
+  - name: table
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#table:member'
+    package: office!
+    fullName: table
+    summary: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'table?: OneNote.Interfaces.TableLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.TableLoadOptions:interface" />'
+  - name: type
+    uid: 'office!OneNote.Interfaces.ParagraphLoadOptions#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the Paragraph object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

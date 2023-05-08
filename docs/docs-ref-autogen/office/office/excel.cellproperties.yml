@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.CellProperties
+uid: 'office!Excel.CellProperties:interface'
+package: office!
+fullName: Excel.CellProperties
+summary: |-
+  Represents the returned properties of getCellProperties.
+
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'office!Excel.CellProperties#address:member'
+    package: office!
+    fullName: address
+    summary: |-
+      Represents the `address` property.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address?: string;'
+      return:
+        type: string
+  - name: addressLocal
+    uid: 'office!Excel.CellProperties#addressLocal:member'
+    package: office!
+    fullName: addressLocal
+    summary: |-
+      Represents the `addressLocal` property.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addressLocal?: string;'
+      return:
+        type: string
+  - name: hidden
+    uid: 'office!Excel.CellProperties#hidden:member'
+    package: office!
+    fullName: hidden
+    summary: |-
+      Represents the `hidden` property.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type: boolean
+extends: '<xref uid="office!Excel.SettableCellProperties:interface" />'

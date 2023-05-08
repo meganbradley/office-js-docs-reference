@@ -1,0 +1,56 @@
+### YamlMime:TSEnum
+name: OneNote.ErrorCodes
+uid: 'office!OneNote.ErrorCodes:enum'
+package: office!
+fullName: OneNote.ErrorCodes
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accessDenied
+    uid: 'office!OneNote.ErrorCodes.accessDenied:member'
+    package: office!
+    summary: ''
+    value: '"AccessDenied"'
+  - name: generalException
+    uid: 'office!OneNote.ErrorCodes.generalException:member'
+    package: office!
+    summary: ''
+    value: '"GeneralException"'
+  - name: invalidArgument
+    uid: 'office!OneNote.ErrorCodes.invalidArgument:member'
+    package: office!
+    summary: ''
+    value: '"InvalidArgument"'
+  - name: invalidOperation
+    uid: 'office!OneNote.ErrorCodes.invalidOperation:member'
+    package: office!
+    summary: ''
+    value: '"InvalidOperation"'
+  - name: invalidState
+    uid: 'office!OneNote.ErrorCodes.invalidState:member'
+    package: office!
+    summary: ''
+    value: '"InvalidState"'
+  - name: itemNotFound
+    uid: 'office!OneNote.ErrorCodes.itemNotFound:member'
+    package: office!
+    summary: ''
+    value: '"ItemNotFound"'
+  - name: notImplemented
+    uid: 'office!OneNote.ErrorCodes.notImplemented:member'
+    package: office!
+    summary: ''
+    value: '"NotImplemented"'
+  - name: notSupported
+    uid: 'office!OneNote.ErrorCodes.notSupported:member'
+    package: office!
+    summary: ''
+    value: '"NotSupported"'
+  - name: operationAborted
+    uid: 'office!OneNote.ErrorCodes.operationAborted:member'
+    package: office!
+    summary: ''
+    value: '"OperationAborted"'

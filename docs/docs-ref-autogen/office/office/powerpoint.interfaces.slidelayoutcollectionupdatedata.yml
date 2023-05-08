@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideLayoutCollectionUpdateData
+uid: 'office!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData:interface'
+package: office!
+fullName: PowerPoint.Interfaces.SlideLayoutCollectionUpdateData
+summary: >-
+  An interface for updating data on the SlideLayoutCollection object, for use in `slideLayoutCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!PowerPoint.Interfaces.SlideLayoutCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.SlideLayoutData[];'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.SlideLayoutData:interface" />[]'

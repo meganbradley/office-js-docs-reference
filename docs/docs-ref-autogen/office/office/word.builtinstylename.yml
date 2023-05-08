@@ -1,0 +1,775 @@
+### YamlMime:TSEnum
+name: Word.BuiltInStyleName
+uid: 'office!Word.BuiltInStyleName:enum'
+package: office!
+fullName: Word.BuiltInStyleName
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-formatted-text.yaml
+
+  await Word.run(async (context) => {
+    const sentence = context.document.body.insertParagraph(
+      "To be or not to be",
+      "End"
+    );
+
+    // Use styleBuiltIn to use an enumeration of existing styles. If your style is custom make sure to use: range.style = "name of your style";
+    sentence.styleBuiltIn = Word.BuiltInStyleName.intenseReference;
+
+    await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bibliography
+    uid: 'office!Word.BuiltInStyleName.bibliography:member'
+    package: office!
+    summary: ''
+    value: '"Bibliography"'
+  - name: bookTitle
+    uid: 'office!Word.BuiltInStyleName.bookTitle:member'
+    package: office!
+    summary: ''
+    value: '"BookTitle"'
+  - name: caption
+    uid: 'office!Word.BuiltInStyleName.caption:member'
+    package: office!
+    summary: ''
+    value: '"Caption"'
+  - name: emphasis
+    uid: 'office!Word.BuiltInStyleName.emphasis:member'
+    package: office!
+    summary: ''
+    value: '"Emphasis"'
+  - name: endnoteReference
+    uid: 'office!Word.BuiltInStyleName.endnoteReference:member'
+    package: office!
+    summary: ''
+    value: '"EndnoteReference"'
+  - name: endnoteText
+    uid: 'office!Word.BuiltInStyleName.endnoteText:member'
+    package: office!
+    summary: ''
+    value: '"EndnoteText"'
+  - name: footer
+    uid: 'office!Word.BuiltInStyleName.footer:member'
+    package: office!
+    summary: ''
+    value: '"Footer"'
+  - name: footnoteReference
+    uid: 'office!Word.BuiltInStyleName.footnoteReference:member'
+    package: office!
+    summary: ''
+    value: '"FootnoteReference"'
+  - name: footnoteText
+    uid: 'office!Word.BuiltInStyleName.footnoteText:member'
+    package: office!
+    summary: ''
+    value: '"FootnoteText"'
+  - name: gridTable1Light
+    uid: 'office!Word.BuiltInStyleName.gridTable1Light:member'
+    package: office!
+    summary: ''
+    value: '"GridTable1Light"'
+  - name: gridTable1Light_Accent1
+    uid: 'office!Word.BuiltInStyleName.gridTable1Light_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"GridTable1Light_Accent1"'
+  - name: gridTable1Light_Accent2
+    uid: 'office!Word.BuiltInStyleName.gridTable1Light_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"GridTable1Light_Accent2"'
+  - name: gridTable1Light_Accent3
+    uid: 'office!Word.BuiltInStyleName.gridTable1Light_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"GridTable1Light_Accent3"'
+  - name: gridTable1Light_Accent4
+    uid: 'office!Word.BuiltInStyleName.gridTable1Light_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"GridTable1Light_Accent4"'
+  - name: gridTable1Light_Accent5
+    uid: 'office!Word.BuiltInStyleName.gridTable1Light_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"GridTable1Light_Accent5"'
+  - name: gridTable1Light_Accent6
+    uid: 'office!Word.BuiltInStyleName.gridTable1Light_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"GridTable1Light_Accent6"'
+  - name: gridTable2
+    uid: 'office!Word.BuiltInStyleName.gridTable2:member'
+    package: office!
+    summary: ''
+    value: '"GridTable2"'
+  - name: gridTable2_Accent1
+    uid: 'office!Word.BuiltInStyleName.gridTable2_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"GridTable2_Accent1"'
+  - name: gridTable2_Accent2
+    uid: 'office!Word.BuiltInStyleName.gridTable2_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"GridTable2_Accent2"'
+  - name: gridTable2_Accent3
+    uid: 'office!Word.BuiltInStyleName.gridTable2_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"GridTable2_Accent3"'
+  - name: gridTable2_Accent4
+    uid: 'office!Word.BuiltInStyleName.gridTable2_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"GridTable2_Accent4"'
+  - name: gridTable2_Accent5
+    uid: 'office!Word.BuiltInStyleName.gridTable2_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"GridTable2_Accent5"'
+  - name: gridTable2_Accent6
+    uid: 'office!Word.BuiltInStyleName.gridTable2_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"GridTable2_Accent6"'
+  - name: gridTable3
+    uid: 'office!Word.BuiltInStyleName.gridTable3:member'
+    package: office!
+    summary: ''
+    value: '"GridTable3"'
+  - name: gridTable3_Accent1
+    uid: 'office!Word.BuiltInStyleName.gridTable3_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"GridTable3_Accent1"'
+  - name: gridTable3_Accent2
+    uid: 'office!Word.BuiltInStyleName.gridTable3_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"GridTable3_Accent2"'
+  - name: gridTable3_Accent3
+    uid: 'office!Word.BuiltInStyleName.gridTable3_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"GridTable3_Accent3"'
+  - name: gridTable3_Accent4
+    uid: 'office!Word.BuiltInStyleName.gridTable3_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"GridTable3_Accent4"'
+  - name: gridTable3_Accent5
+    uid: 'office!Word.BuiltInStyleName.gridTable3_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"GridTable3_Accent5"'
+  - name: gridTable3_Accent6
+    uid: 'office!Word.BuiltInStyleName.gridTable3_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"GridTable3_Accent6"'
+  - name: gridTable4
+    uid: 'office!Word.BuiltInStyleName.gridTable4:member'
+    package: office!
+    summary: ''
+    value: '"GridTable4"'
+  - name: gridTable4_Accent1
+    uid: 'office!Word.BuiltInStyleName.gridTable4_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"GridTable4_Accent1"'
+  - name: gridTable4_Accent2
+    uid: 'office!Word.BuiltInStyleName.gridTable4_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"GridTable4_Accent2"'
+  - name: gridTable4_Accent3
+    uid: 'office!Word.BuiltInStyleName.gridTable4_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"GridTable4_Accent3"'
+  - name: gridTable4_Accent4
+    uid: 'office!Word.BuiltInStyleName.gridTable4_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"GridTable4_Accent4"'
+  - name: gridTable4_Accent5
+    uid: 'office!Word.BuiltInStyleName.gridTable4_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"GridTable4_Accent5"'
+  - name: gridTable4_Accent6
+    uid: 'office!Word.BuiltInStyleName.gridTable4_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"GridTable4_Accent6"'
+  - name: gridTable5Dark
+    uid: 'office!Word.BuiltInStyleName.gridTable5Dark:member'
+    package: office!
+    summary: ''
+    value: '"GridTable5Dark"'
+  - name: gridTable5Dark_Accent1
+    uid: 'office!Word.BuiltInStyleName.gridTable5Dark_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"GridTable5Dark_Accent1"'
+  - name: gridTable5Dark_Accent2
+    uid: 'office!Word.BuiltInStyleName.gridTable5Dark_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"GridTable5Dark_Accent2"'
+  - name: gridTable5Dark_Accent3
+    uid: 'office!Word.BuiltInStyleName.gridTable5Dark_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"GridTable5Dark_Accent3"'
+  - name: gridTable5Dark_Accent4
+    uid: 'office!Word.BuiltInStyleName.gridTable5Dark_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"GridTable5Dark_Accent4"'
+  - name: gridTable5Dark_Accent5
+    uid: 'office!Word.BuiltInStyleName.gridTable5Dark_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"GridTable5Dark_Accent5"'
+  - name: gridTable5Dark_Accent6
+    uid: 'office!Word.BuiltInStyleName.gridTable5Dark_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"GridTable5Dark_Accent6"'
+  - name: gridTable6Colorful
+    uid: 'office!Word.BuiltInStyleName.gridTable6Colorful:member'
+    package: office!
+    summary: ''
+    value: '"GridTable6Colorful"'
+  - name: gridTable6Colorful_Accent1
+    uid: 'office!Word.BuiltInStyleName.gridTable6Colorful_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"GridTable6Colorful_Accent1"'
+  - name: gridTable6Colorful_Accent2
+    uid: 'office!Word.BuiltInStyleName.gridTable6Colorful_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"GridTable6Colorful_Accent2"'
+  - name: gridTable6Colorful_Accent3
+    uid: 'office!Word.BuiltInStyleName.gridTable6Colorful_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"GridTable6Colorful_Accent3"'
+  - name: gridTable6Colorful_Accent4
+    uid: 'office!Word.BuiltInStyleName.gridTable6Colorful_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"GridTable6Colorful_Accent4"'
+  - name: gridTable6Colorful_Accent5
+    uid: 'office!Word.BuiltInStyleName.gridTable6Colorful_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"GridTable6Colorful_Accent5"'
+  - name: gridTable6Colorful_Accent6
+    uid: 'office!Word.BuiltInStyleName.gridTable6Colorful_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"GridTable6Colorful_Accent6"'
+  - name: gridTable7Colorful
+    uid: 'office!Word.BuiltInStyleName.gridTable7Colorful:member'
+    package: office!
+    summary: ''
+    value: '"GridTable7Colorful"'
+  - name: gridTable7Colorful_Accent1
+    uid: 'office!Word.BuiltInStyleName.gridTable7Colorful_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"GridTable7Colorful_Accent1"'
+  - name: gridTable7Colorful_Accent2
+    uid: 'office!Word.BuiltInStyleName.gridTable7Colorful_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"GridTable7Colorful_Accent2"'
+  - name: gridTable7Colorful_Accent3
+    uid: 'office!Word.BuiltInStyleName.gridTable7Colorful_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"GridTable7Colorful_Accent3"'
+  - name: gridTable7Colorful_Accent4
+    uid: 'office!Word.BuiltInStyleName.gridTable7Colorful_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"GridTable7Colorful_Accent4"'
+  - name: gridTable7Colorful_Accent5
+    uid: 'office!Word.BuiltInStyleName.gridTable7Colorful_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"GridTable7Colorful_Accent5"'
+  - name: gridTable7Colorful_Accent6
+    uid: 'office!Word.BuiltInStyleName.gridTable7Colorful_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"GridTable7Colorful_Accent6"'
+  - name: header
+    uid: 'office!Word.BuiltInStyleName.header:member'
+    package: office!
+    summary: ''
+    value: '"Header"'
+  - name: heading1
+    uid: 'office!Word.BuiltInStyleName.heading1:member'
+    package: office!
+    summary: ''
+    value: '"Heading1"'
+  - name: heading2
+    uid: 'office!Word.BuiltInStyleName.heading2:member'
+    package: office!
+    summary: ''
+    value: '"Heading2"'
+  - name: heading3
+    uid: 'office!Word.BuiltInStyleName.heading3:member'
+    package: office!
+    summary: ''
+    value: '"Heading3"'
+  - name: heading4
+    uid: 'office!Word.BuiltInStyleName.heading4:member'
+    package: office!
+    summary: ''
+    value: '"Heading4"'
+  - name: heading5
+    uid: 'office!Word.BuiltInStyleName.heading5:member'
+    package: office!
+    summary: ''
+    value: '"Heading5"'
+  - name: heading6
+    uid: 'office!Word.BuiltInStyleName.heading6:member'
+    package: office!
+    summary: ''
+    value: '"Heading6"'
+  - name: heading7
+    uid: 'office!Word.BuiltInStyleName.heading7:member'
+    package: office!
+    summary: ''
+    value: '"Heading7"'
+  - name: heading8
+    uid: 'office!Word.BuiltInStyleName.heading8:member'
+    package: office!
+    summary: ''
+    value: '"Heading8"'
+  - name: heading9
+    uid: 'office!Word.BuiltInStyleName.heading9:member'
+    package: office!
+    summary: ''
+    value: '"Heading9"'
+  - name: hyperlink
+    uid: 'office!Word.BuiltInStyleName.hyperlink:member'
+    package: office!
+    summary: ''
+    value: '"Hyperlink"'
+  - name: intenseEmphasis
+    uid: 'office!Word.BuiltInStyleName.intenseEmphasis:member'
+    package: office!
+    summary: ''
+    value: '"IntenseEmphasis"'
+  - name: intenseQuote
+    uid: 'office!Word.BuiltInStyleName.intenseQuote:member'
+    package: office!
+    summary: ''
+    value: '"IntenseQuote"'
+  - name: intenseReference
+    uid: 'office!Word.BuiltInStyleName.intenseReference:member'
+    package: office!
+    summary: ''
+    value: '"IntenseReference"'
+  - name: listParagraph
+    uid: 'office!Word.BuiltInStyleName.listParagraph:member'
+    package: office!
+    summary: ''
+    value: '"ListParagraph"'
+  - name: listTable1Light
+    uid: 'office!Word.BuiltInStyleName.listTable1Light:member'
+    package: office!
+    summary: ''
+    value: '"ListTable1Light"'
+  - name: listTable1Light_Accent1
+    uid: 'office!Word.BuiltInStyleName.listTable1Light_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"ListTable1Light_Accent1"'
+  - name: listTable1Light_Accent2
+    uid: 'office!Word.BuiltInStyleName.listTable1Light_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"ListTable1Light_Accent2"'
+  - name: listTable1Light_Accent3
+    uid: 'office!Word.BuiltInStyleName.listTable1Light_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"ListTable1Light_Accent3"'
+  - name: listTable1Light_Accent4
+    uid: 'office!Word.BuiltInStyleName.listTable1Light_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"ListTable1Light_Accent4"'
+  - name: listTable1Light_Accent5
+    uid: 'office!Word.BuiltInStyleName.listTable1Light_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"ListTable1Light_Accent5"'
+  - name: listTable1Light_Accent6
+    uid: 'office!Word.BuiltInStyleName.listTable1Light_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"ListTable1Light_Accent6"'
+  - name: listTable2
+    uid: 'office!Word.BuiltInStyleName.listTable2:member'
+    package: office!
+    summary: ''
+    value: '"ListTable2"'
+  - name: listTable2_Accent1
+    uid: 'office!Word.BuiltInStyleName.listTable2_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"ListTable2_Accent1"'
+  - name: listTable2_Accent2
+    uid: 'office!Word.BuiltInStyleName.listTable2_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"ListTable2_Accent2"'
+  - name: listTable2_Accent3
+    uid: 'office!Word.BuiltInStyleName.listTable2_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"ListTable2_Accent3"'
+  - name: listTable2_Accent4
+    uid: 'office!Word.BuiltInStyleName.listTable2_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"ListTable2_Accent4"'
+  - name: listTable2_Accent5
+    uid: 'office!Word.BuiltInStyleName.listTable2_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"ListTable2_Accent5"'
+  - name: listTable2_Accent6
+    uid: 'office!Word.BuiltInStyleName.listTable2_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"ListTable2_Accent6"'
+  - name: listTable3
+    uid: 'office!Word.BuiltInStyleName.listTable3:member'
+    package: office!
+    summary: ''
+    value: '"ListTable3"'
+  - name: listTable3_Accent1
+    uid: 'office!Word.BuiltInStyleName.listTable3_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"ListTable3_Accent1"'
+  - name: listTable3_Accent2
+    uid: 'office!Word.BuiltInStyleName.listTable3_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"ListTable3_Accent2"'
+  - name: listTable3_Accent3
+    uid: 'office!Word.BuiltInStyleName.listTable3_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"ListTable3_Accent3"'
+  - name: listTable3_Accent4
+    uid: 'office!Word.BuiltInStyleName.listTable3_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"ListTable3_Accent4"'
+  - name: listTable3_Accent5
+    uid: 'office!Word.BuiltInStyleName.listTable3_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"ListTable3_Accent5"'
+  - name: listTable3_Accent6
+    uid: 'office!Word.BuiltInStyleName.listTable3_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"ListTable3_Accent6"'
+  - name: listTable4
+    uid: 'office!Word.BuiltInStyleName.listTable4:member'
+    package: office!
+    summary: ''
+    value: '"ListTable4"'
+  - name: listTable4_Accent1
+    uid: 'office!Word.BuiltInStyleName.listTable4_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"ListTable4_Accent1"'
+  - name: listTable4_Accent2
+    uid: 'office!Word.BuiltInStyleName.listTable4_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"ListTable4_Accent2"'
+  - name: listTable4_Accent3
+    uid: 'office!Word.BuiltInStyleName.listTable4_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"ListTable4_Accent3"'
+  - name: listTable4_Accent4
+    uid: 'office!Word.BuiltInStyleName.listTable4_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"ListTable4_Accent4"'
+  - name: listTable4_Accent5
+    uid: 'office!Word.BuiltInStyleName.listTable4_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"ListTable4_Accent5"'
+  - name: listTable4_Accent6
+    uid: 'office!Word.BuiltInStyleName.listTable4_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"ListTable4_Accent6"'
+  - name: listTable5Dark
+    uid: 'office!Word.BuiltInStyleName.listTable5Dark:member'
+    package: office!
+    summary: ''
+    value: '"ListTable5Dark"'
+  - name: listTable5Dark_Accent1
+    uid: 'office!Word.BuiltInStyleName.listTable5Dark_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"ListTable5Dark_Accent1"'
+  - name: listTable5Dark_Accent2
+    uid: 'office!Word.BuiltInStyleName.listTable5Dark_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"ListTable5Dark_Accent2"'
+  - name: listTable5Dark_Accent3
+    uid: 'office!Word.BuiltInStyleName.listTable5Dark_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"ListTable5Dark_Accent3"'
+  - name: listTable5Dark_Accent4
+    uid: 'office!Word.BuiltInStyleName.listTable5Dark_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"ListTable5Dark_Accent4"'
+  - name: listTable5Dark_Accent5
+    uid: 'office!Word.BuiltInStyleName.listTable5Dark_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"ListTable5Dark_Accent5"'
+  - name: listTable5Dark_Accent6
+    uid: 'office!Word.BuiltInStyleName.listTable5Dark_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"ListTable5Dark_Accent6"'
+  - name: listTable6Colorful
+    uid: 'office!Word.BuiltInStyleName.listTable6Colorful:member'
+    package: office!
+    summary: ''
+    value: '"ListTable6Colorful"'
+  - name: listTable6Colorful_Accent1
+    uid: 'office!Word.BuiltInStyleName.listTable6Colorful_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"ListTable6Colorful_Accent1"'
+  - name: listTable6Colorful_Accent2
+    uid: 'office!Word.BuiltInStyleName.listTable6Colorful_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"ListTable6Colorful_Accent2"'
+  - name: listTable6Colorful_Accent3
+    uid: 'office!Word.BuiltInStyleName.listTable6Colorful_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"ListTable6Colorful_Accent3"'
+  - name: listTable6Colorful_Accent4
+    uid: 'office!Word.BuiltInStyleName.listTable6Colorful_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"ListTable6Colorful_Accent4"'
+  - name: listTable6Colorful_Accent5
+    uid: 'office!Word.BuiltInStyleName.listTable6Colorful_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"ListTable6Colorful_Accent5"'
+  - name: listTable6Colorful_Accent6
+    uid: 'office!Word.BuiltInStyleName.listTable6Colorful_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"ListTable6Colorful_Accent6"'
+  - name: listTable7Colorful
+    uid: 'office!Word.BuiltInStyleName.listTable7Colorful:member'
+    package: office!
+    summary: ''
+    value: '"ListTable7Colorful"'
+  - name: listTable7Colorful_Accent1
+    uid: 'office!Word.BuiltInStyleName.listTable7Colorful_Accent1:member'
+    package: office!
+    summary: ''
+    value: '"ListTable7Colorful_Accent1"'
+  - name: listTable7Colorful_Accent2
+    uid: 'office!Word.BuiltInStyleName.listTable7Colorful_Accent2:member'
+    package: office!
+    summary: ''
+    value: '"ListTable7Colorful_Accent2"'
+  - name: listTable7Colorful_Accent3
+    uid: 'office!Word.BuiltInStyleName.listTable7Colorful_Accent3:member'
+    package: office!
+    summary: ''
+    value: '"ListTable7Colorful_Accent3"'
+  - name: listTable7Colorful_Accent4
+    uid: 'office!Word.BuiltInStyleName.listTable7Colorful_Accent4:member'
+    package: office!
+    summary: ''
+    value: '"ListTable7Colorful_Accent4"'
+  - name: listTable7Colorful_Accent5
+    uid: 'office!Word.BuiltInStyleName.listTable7Colorful_Accent5:member'
+    package: office!
+    summary: ''
+    value: '"ListTable7Colorful_Accent5"'
+  - name: listTable7Colorful_Accent6
+    uid: 'office!Word.BuiltInStyleName.listTable7Colorful_Accent6:member'
+    package: office!
+    summary: ''
+    value: '"ListTable7Colorful_Accent6"'
+  - name: normal
+    uid: 'office!Word.BuiltInStyleName.normal:member'
+    package: office!
+    summary: Reset character and paragraph style to default.
+    value: '"Normal"'
+  - name: noSpacing
+    uid: 'office!Word.BuiltInStyleName.noSpacing:member'
+    package: office!
+    summary: ''
+    value: '"NoSpacing"'
+  - name: other
+    uid: 'office!Word.BuiltInStyleName.other:member'
+    package: office!
+    summary: Mixed styles or other style not in this list.
+    value: '"Other"'
+  - name: plainTable1
+    uid: 'office!Word.BuiltInStyleName.plainTable1:member'
+    package: office!
+    summary: ''
+    value: '"PlainTable1"'
+  - name: plainTable2
+    uid: 'office!Word.BuiltInStyleName.plainTable2:member'
+    package: office!
+    summary: ''
+    value: '"PlainTable2"'
+  - name: plainTable3
+    uid: 'office!Word.BuiltInStyleName.plainTable3:member'
+    package: office!
+    summary: ''
+    value: '"PlainTable3"'
+  - name: plainTable4
+    uid: 'office!Word.BuiltInStyleName.plainTable4:member'
+    package: office!
+    summary: ''
+    value: '"PlainTable4"'
+  - name: plainTable5
+    uid: 'office!Word.BuiltInStyleName.plainTable5:member'
+    package: office!
+    summary: ''
+    value: '"PlainTable5"'
+  - name: quote
+    uid: 'office!Word.BuiltInStyleName.quote:member'
+    package: office!
+    summary: ''
+    value: '"Quote"'
+  - name: strong
+    uid: 'office!Word.BuiltInStyleName.strong:member'
+    package: office!
+    summary: ''
+    value: '"Strong"'
+  - name: subtitle
+    uid: 'office!Word.BuiltInStyleName.subtitle:member'
+    package: office!
+    summary: ''
+    value: '"Subtitle"'
+  - name: subtleEmphasis
+    uid: 'office!Word.BuiltInStyleName.subtleEmphasis:member'
+    package: office!
+    summary: ''
+    value: '"SubtleEmphasis"'
+  - name: subtleReference
+    uid: 'office!Word.BuiltInStyleName.subtleReference:member'
+    package: office!
+    summary: ''
+    value: '"SubtleReference"'
+  - name: tableGrid
+    uid: 'office!Word.BuiltInStyleName.tableGrid:member'
+    package: office!
+    summary: ''
+    value: '"TableGrid"'
+  - name: tableGridLight
+    uid: 'office!Word.BuiltInStyleName.tableGridLight:member'
+    package: office!
+    summary: ''
+    value: '"TableGridLight"'
+  - name: title
+    uid: 'office!Word.BuiltInStyleName.title:member'
+    package: office!
+    summary: ''
+    value: '"Title"'
+  - name: toc1
+    uid: 'office!Word.BuiltInStyleName.toc1:member'
+    package: office!
+    summary: Table-of-content level 1.
+    value: '"Toc1"'
+  - name: toc2
+    uid: 'office!Word.BuiltInStyleName.toc2:member'
+    package: office!
+    summary: Table-of-content level 2.
+    value: '"Toc2"'
+  - name: toc3
+    uid: 'office!Word.BuiltInStyleName.toc3:member'
+    package: office!
+    summary: Table-of-content level 3.
+    value: '"Toc3"'
+  - name: toc4
+    uid: 'office!Word.BuiltInStyleName.toc4:member'
+    package: office!
+    summary: Table-of-content level 4.
+    value: '"Toc4"'
+  - name: toc5
+    uid: 'office!Word.BuiltInStyleName.toc5:member'
+    package: office!
+    summary: Table-of-content level 5.
+    value: '"Toc5"'
+  - name: toc6
+    uid: 'office!Word.BuiltInStyleName.toc6:member'
+    package: office!
+    summary: Table-of-content level 6.
+    value: '"Toc6"'
+  - name: toc7
+    uid: 'office!Word.BuiltInStyleName.toc7:member'
+    package: office!
+    summary: Table-of-content level 7.
+    value: '"Toc7"'
+  - name: toc8
+    uid: 'office!Word.BuiltInStyleName.toc8:member'
+    package: office!
+    summary: Table-of-content level 8.
+    value: '"Toc8"'
+  - name: toc9
+    uid: 'office!Word.BuiltInStyleName.toc9:member'
+    package: office!
+    summary: Table-of-content level 9.
+    value: '"Toc9"'
+  - name: tocHeading
+    uid: 'office!Word.BuiltInStyleName.tocHeading:member'
+    package: office!
+    summary: Table-of-content heading.
+    value: '"TocHeading"'

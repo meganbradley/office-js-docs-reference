@@ -1,0 +1,137 @@
+### YamlMime:TSEnum
+name: Excel.ValueErrorCellValueSubType
+uid: 'office!Excel.ValueErrorCellValueSubType:enum'
+package: office!
+fullName: Excel.ValueErrorCellValueSubType
+summary: 'Represents types of \#VALUE! errors.'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: coerceStringToBoolInvalid
+    uid: 'office!Excel.ValueErrorCellValueSubType.coerceStringToBoolInvalid:member'
+    package: office!
+    summary: >-
+      An error caused by encountering a string where a boolean was expected, and that string not being coercible to a
+      boolean. Displays as error type \#VALUE! in Excel.
+    value: '"CoerceStringToBoolInvalid"'
+  - name: coerceStringToInvalidType
+    uid: 'office!Excel.ValueErrorCellValueSubType.coerceStringToInvalidType:member'
+    package: office!
+    summary: >-
+      An error caused by conversion of a string to a type other than a boolean or number. Displays as error type
+      \#VALUE! in Excel.
+    value: '"CoerceStringToInvalidType"'
+  - name: coerceStringToNumberInvalid
+    uid: 'office!Excel.ValueErrorCellValueSubType.coerceStringToNumberInvalid:member'
+    package: office!
+    summary: >-
+      An error caused by encountering a string where a number was expected, and that string not being coercible to a
+      number. Displays as error type \#VALUE! in Excel.
+    value: '"CoerceStringToNumberInvalid"'
+  - name: hlookupResultNotFound
+    uid: 'office!Excel.ValueErrorCellValueSubType.hlookupResultNotFound:member'
+    package: office!
+    summary: 'An error caused by HLOOKUP not finding its lookup\_value parameter. Displays as error type \#VALUE! in Excel.'
+    value: '"HlookupResultNotFound"'
+  - name: hlookupRowIndexLessThanOne
+    uid: 'office!Excel.ValueErrorCellValueSubType.hlookupRowIndexLessThanOne:member'
+    package: office!
+    summary: >-
+      An error caused by a row\_index\_num parameter of HLOOKUP of less than 1. Displays as error type \#VALUE! in
+      Excel.
+    value: '"HlookupRowIndexLessThanOne"'
+  - name: invalidImageUrl
+    uid: 'office!Excel.ValueErrorCellValueSubType.invalidImageUrl:member'
+    package: office!
+    summary: 'An error caused by a `WebImageValue` with an invalid URL. Displays as error type \#VALUE! in Excel.'
+    value: '"InvalidImageUrl"'
+  - name: lambdaWrongParamCount
+    uid: 'office!Excel.ValueErrorCellValueSubType.lambdaWrongParamCount:member'
+    package: office!
+    summary: >-
+      An error caused by passing the incorrect number of parameters to a lambda value. Displays as error type \#VALUE!
+      in Excel.
+    value: '"LambdaWrongParamCount"'
+  - name: stockHistoryEndBeforeStart
+    uid: 'office!Excel.ValueErrorCellValueSubType.stockHistoryEndBeforeStart:member'
+    package: office!
+    summary: >-
+      An error caused by passing an end\_date parameter that precedes the start\_date parameter to STOCKHISTORY.
+      Displays as error type \#VALUE! in Excel.
+    value: '"StockHistoryEndBeforeStart"'
+  - name: stockHistoryInvalidDate
+    uid: 'office!Excel.ValueErrorCellValueSubType.stockHistoryInvalidDate:member'
+    package: office!
+    summary: 'An error caused by passing an invalid date to STOCKHISTORY. Displays as error type \#VALUE! in Excel.'
+    value: '"StockHistoryInvalidDate"'
+  - name: stockHistoryInvalidEnum
+    uid: 'office!Excel.ValueErrorCellValueSubType.stockHistoryInvalidEnum:member'
+    package: office!
+    summary: >-
+      An error caused by invalid interval or header parameters for STOCKHISTORY. Displays as error type \#VALUE! in
+      Excel.
+    value: '"StockHistoryInvalidEnum"'
+  - name: stockHistoryNonTradingDays
+    uid: 'office!Excel.ValueErrorCellValueSubType.stockHistoryNonTradingDays:member'
+    package: office!
+    summary: >-
+      An error caused by STOCKHISTORY having a date range which only contains days that don't have stock trading.
+      Displays as error type \#VALUE! in Excel.
+    value: '"StockHistoryNonTradingDays"'
+  - name: stockHistoryNotAStock
+    uid: 'office!Excel.ValueErrorCellValueSubType.stockHistoryNotAStock:member'
+    package: office!
+    summary: >-
+      An error caused by passing a stock parameter which is not a stock to STOCKHISTORY. Displays as error type \#VALUE!
+      in Excel.
+    value: '"StockHistoryNotAStock"'
+  - name: stockHistoryNotFound
+    uid: 'office!Excel.ValueErrorCellValueSubType.stockHistoryNotFound:member'
+    package: office!
+    summary: >-
+      An error caused by STOCKHISTORY not finding the history of the specified stock. Displays as error type \#VALUE! in
+      Excel.
+    value: '"StockHistoryNotFound"'
+  - name: stockHistoryOnlyDateRequested
+    uid: 'office!Excel.ValueErrorCellValueSubType.stockHistoryOnlyDateRequested:member'
+    package: office!
+    summary: >-
+      An error caused by STOCKHISTORY parameters that request only the date and no other fields. Displays as error type
+      \#VALUE! in Excel.
+    value: '"StockHistoryOnlyDateRequested"'
+  - name: stockHistoryStartInFuture
+    uid: 'office!Excel.ValueErrorCellValueSubType.stockHistoryStartInFuture:member'
+    package: office!
+    summary: >-
+      An error caused by passing a future start\_date parameter to STOCKHISTORY. Displays as error type \#VALUE! in
+      Excel.
+    value: '"StockHistoryStartInFuture"'
+  - name: subArrayStartColumnMissingEndColumnNot
+    uid: 'office!Excel.ValueErrorCellValueSubType.subArrayStartColumnMissingEndColumnNot:member'
+    package: office!
+    summary: 'An error caused by SUBARRAY missing a start column. Displays as error type \#VALUE! in Excel.'
+    value: '"SubArrayStartColumnMissingEndColumnNot"'
+  - name: subArrayStartRowMissingEndRowNot
+    uid: 'office!Excel.ValueErrorCellValueSubType.subArrayStartRowMissingEndRowNot:member'
+    package: office!
+    summary: 'An error caused by SUBARRAY missing a start row. Displays as error type \#VALUE! in Excel.'
+    value: '"SubArrayStartRowMissingEndRowNot"'
+  - name: unknown
+    uid: 'office!Excel.ValueErrorCellValueSubType.unknown:member'
+    package: office!
+    summary: 'An unknown type of error. Displays as error type \#VALUE! in Excel.'
+    value: '"Unknown"'
+  - name: vlookupColumnIndexLessThanOne
+    uid: 'office!Excel.ValueErrorCellValueSubType.vlookupColumnIndexLessThanOne:member'
+    package: office!
+    summary: >-
+      An error caused by a column\_index\_num parameter of VLOOKUP of less than 1. Displays as error type \#VALUE! in
+      Excel.
+    value: '"VlookupColumnIndexLessThanOne"'
+  - name: vlookupResultNotFound
+    uid: 'office!Excel.ValueErrorCellValueSubType.vlookupResultNotFound:member'
+    package: office!
+    summary: 'An error caused by VLOOKUP not finding its lookup\_value parameter. Displays as error type \#VALUE! in Excel.'
+    value: '"VlookupResultNotFound"'

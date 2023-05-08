@@ -1,0 +1,81 @@
+### YamlMime:TSType
+name: Word.Interfaces.FieldUpdateData
+uid: 'office!Word.Interfaces.FieldUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.FieldUpdateData
+summary: 'An interface for updating data on the Field object, for use in `field.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: code
+    uid: 'office!Word.Interfaces.FieldUpdateData#code:member'
+    package: office!
+    fullName: code
+    summary: Gets or sets the field's code instruction.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'code?: string;'
+      return:
+        type: string
+  - name: data
+    uid: 'office!Word.Interfaces.FieldUpdateData#data:member'
+    package: office!
+    fullName: data
+    summary: >-
+      Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      exception when code attempts to set it.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'data?: string;'
+      return:
+        type: string
+  - name: locked
+    uid: 'office!Word.Interfaces.FieldUpdateData#locked:member'
+    package: office!
+    fullName: locked
+    summary: 'Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.'
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type: boolean
+  - name: result
+    uid: 'office!Word.Interfaces.FieldUpdateData#result:member'
+    package: office!
+    fullName: result
+    summary: Gets the field's result data.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'result?: Word.Interfaces.RangeUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.RangeUpdateData:interface" />'
+  - name: showCodes
+    uid: 'office!Word.Interfaces.FieldUpdateData#showCodes:member'
+    package: office!
+    fullName: showCodes
+    summary: >-
+      Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are
+      displayed, `false` otherwise.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'showCodes?: boolean;'
+      return:
+        type: boolean

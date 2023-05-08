@@ -1,0 +1,170 @@
+### YamlMime:TSType
+name: Excel.Subtotals
+uid: 'office!Excel.Subtotals:interface'
+package: office!
+fullName: Excel.Subtotals
+summary: Subtotals for the Pivot Field.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: automatic
+    uid: 'office!Excel.Subtotals#automatic:member'
+    package: office!
+    fullName: automatic
+    summary: >-
+      If `Automatic` is set to `true`<!-- -->, then all other values will be ignored when setting the `Subtotals`<!--
+      -->.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'automatic?: boolean;'
+      return:
+        type: boolean
+  - name: average
+    uid: 'office!Excel.Subtotals#average:member'
+    package: office!
+    fullName: average
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'average?: boolean;'
+      return:
+        type: boolean
+  - name: count
+    uid: 'office!Excel.Subtotals#count:member'
+    package: office!
+    fullName: count
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'count?: boolean;'
+      return:
+        type: boolean
+  - name: countNumbers
+    uid: 'office!Excel.Subtotals#countNumbers:member'
+    package: office!
+    fullName: countNumbers
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'countNumbers?: boolean;'
+      return:
+        type: boolean
+  - name: max
+    uid: 'office!Excel.Subtotals#max:member'
+    package: office!
+    fullName: max
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'max?: boolean;'
+      return:
+        type: boolean
+  - name: min
+    uid: 'office!Excel.Subtotals#min:member'
+    package: office!
+    fullName: min
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'min?: boolean;'
+      return:
+        type: boolean
+  - name: product
+    uid: 'office!Excel.Subtotals#product:member'
+    package: office!
+    fullName: product
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'product?: boolean;'
+      return:
+        type: boolean
+  - name: standardDeviation
+    uid: 'office!Excel.Subtotals#standardDeviation:member'
+    package: office!
+    fullName: standardDeviation
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'standardDeviation?: boolean;'
+      return:
+        type: boolean
+  - name: standardDeviationP
+    uid: 'office!Excel.Subtotals#standardDeviationP:member'
+    package: office!
+    fullName: standardDeviationP
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'standardDeviationP?: boolean;'
+      return:
+        type: boolean
+  - name: sum
+    uid: 'office!Excel.Subtotals#sum:member'
+    package: office!
+    fullName: sum
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sum?: boolean;'
+      return:
+        type: boolean
+  - name: variance
+    uid: 'office!Excel.Subtotals#variance:member'
+    package: office!
+    fullName: variance
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'variance?: boolean;'
+      return:
+        type: boolean
+  - name: varianceP
+    uid: 'office!Excel.Subtotals#varianceP:member'
+    package: office!
+    fullName: varianceP
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'varianceP?: boolean;'
+      return:
+        type: boolean

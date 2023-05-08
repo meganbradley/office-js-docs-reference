@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: Visio.ToolBarType
+uid: 'office!Visio.ToolBarType:enum'
+package: office!
+fullName: Visio.ToolBarType
+summary: |-
+  Toolbar IDs of the app
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: commandBar
+    uid: 'office!Visio.ToolBarType.commandBar:member'
+    package: office!
+    summary: CommandBar
+    value: '"CommandBar"'
+  - name: pageNavigationBar
+    uid: 'office!Visio.ToolBarType.pageNavigationBar:member'
+    package: office!
+    summary: PageNavigationBar
+    value: '"PageNavigationBar"'
+  - name: statusBar
+    uid: 'office!Visio.ToolBarType.statusBar:member'
+    package: office!
+    summary: StatusBar
+    value: '"StatusBar"'

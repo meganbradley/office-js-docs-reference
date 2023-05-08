@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: Office.OfficeThemeChangedEventArgs
+uid: 'office!Office.OfficeThemeChangedEventArgs:interface'
+package: office!
+fullName: Office.OfficeThemeChangedEventArgs
+summary: Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
+remarks: '\[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: officeTheme
+    uid: 'office!Office.OfficeThemeChangedEventArgs#officeTheme:member'
+    package: office!
+    fullName: officeTheme
+    summary: Gets the updated Office theme.
+    remarks: '\[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'officeTheme: Office.OfficeTheme;'
+      return:
+        type: '<xref uid="office!Office.OfficeTheme:interface" />'
+  - name: type
+    uid: 'office!Office.OfficeThemeChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox preview](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type: "officeThemeChanged";'
+      return:
+        type: '"officeThemeChanged"'

@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotTableStyleCollectionUpdateData
+uid: 'office!Excel.Interfaces.PivotTableStyleCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.PivotTableStyleCollectionUpdateData
+summary: >-
+  An interface for updating data on the PivotTableStyleCollection object, for use in `pivotTableStyleCollection.set({
+  ... })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.PivotTableStyleCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotTableStyleData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.PivotTableStyleData:interface" />[]'

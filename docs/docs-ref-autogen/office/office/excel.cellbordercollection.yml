@@ -1,0 +1,119 @@
+### YamlMime:TSType
+name: Excel.CellBorderCollection
+uid: 'office!Excel.CellBorderCollection:interface'
+package: office!
+fullName: Excel.CellBorderCollection
+summary: >-
+  Represents the `format.borders` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
+  `getColumnProperties`<!-- -->, or the `format.borders` input parameter of `setCellProperties`<!-- -->,
+  `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bottom
+    uid: 'office!Excel.CellBorderCollection#bottom:member'
+    package: office!
+    fullName: bottom
+    summary: Represents the `format.borders.bottom` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottom?: Excel.CellBorder;'
+      return:
+        type: '<xref uid="office!Excel.CellBorder:interface" />'
+  - name: diagonalDown
+    uid: 'office!Excel.CellBorderCollection#diagonalDown:member'
+    package: office!
+    fullName: diagonalDown
+    summary: Represents the `format.borders.diagonalDown` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'diagonalDown?: Excel.CellBorder;'
+      return:
+        type: '<xref uid="office!Excel.CellBorder:interface" />'
+  - name: diagonalUp
+    uid: 'office!Excel.CellBorderCollection#diagonalUp:member'
+    package: office!
+    fullName: diagonalUp
+    summary: Represents the `format.borders.diagonalUp` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'diagonalUp?: Excel.CellBorder;'
+      return:
+        type: '<xref uid="office!Excel.CellBorder:interface" />'
+  - name: horizontal
+    uid: 'office!Excel.CellBorderCollection#horizontal:member'
+    package: office!
+    fullName: horizontal
+    summary: Represents the `format.borders.horizontal` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'horizontal?: Excel.CellBorder;'
+      return:
+        type: '<xref uid="office!Excel.CellBorder:interface" />'
+  - name: left
+    uid: 'office!Excel.CellBorderCollection#left:member'
+    package: office!
+    fullName: left
+    summary: Represents the `format.borders.left` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: Excel.CellBorder;'
+      return:
+        type: '<xref uid="office!Excel.CellBorder:interface" />'
+  - name: right
+    uid: 'office!Excel.CellBorderCollection#right:member'
+    package: office!
+    fullName: right
+    summary: Represents the `format.borders.right` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'right?: Excel.CellBorder;'
+      return:
+        type: '<xref uid="office!Excel.CellBorder:interface" />'
+  - name: top
+    uid: 'office!Excel.CellBorderCollection#top:member'
+    package: office!
+    fullName: top
+    summary: Represents the `format.borders.top` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: Excel.CellBorder;'
+      return:
+        type: '<xref uid="office!Excel.CellBorder:interface" />'
+  - name: vertical
+    uid: 'office!Excel.CellBorderCollection#vertical:member'
+    package: office!
+    fullName: vertical
+    summary: Represents the `format.borders.vertical` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'vertical?: Excel.CellBorder;'
+      return:
+        type: '<xref uid="office!Excel.CellBorder:interface" />'

@@ -1,0 +1,68 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.OutlineLoadOptions
+uid: 'office!OneNote.Interfaces.OutlineLoadOptions:interface'
+package: office!
+fullName: OneNote.Interfaces.OutlineLoadOptions
+summary: Represents a container for Paragraph objects.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!OneNote.Interfaces.OutlineLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!OneNote.Interfaces.OutlineLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the Outline object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: pageContent
+    uid: 'office!OneNote.Interfaces.OutlineLoadOptions#pageContent:member'
+    package: office!
+    fullName: pageContent
+    summary: >-
+      Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
+      page.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.PageContentLoadOptions:interface" />'
+  - name: paragraphs
+    uid: 'office!OneNote.Interfaces.OutlineLoadOptions#paragraphs:member'
+    package: office!
+    fullName: paragraphs
+    summary: Gets the collection of Paragraph objects in the Outline.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface" />'

@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotItemCollectionData
+uid: 'office!Excel.Interfaces.PivotItemCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.PivotItemCollectionData
+summary: An interface describing the data returned by calling `pivotItemCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.PivotItemCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotItemData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.PivotItemData:interface" />[]'

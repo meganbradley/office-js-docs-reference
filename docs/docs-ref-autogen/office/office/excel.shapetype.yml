@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.ShapeType
+uid: 'office!Excel.ShapeType:enum'
+package: office!
+fullName: Excel.ShapeType
+summary: Specifies the type of a shape.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: geometricShape
+    uid: 'office!Excel.ShapeType.geometricShape:member'
+    package: office!
+    summary: ''
+    value: '"GeometricShape"'
+  - name: group
+    uid: 'office!Excel.ShapeType.group:member'
+    package: office!
+    summary: ''
+    value: '"Group"'
+  - name: image
+    uid: 'office!Excel.ShapeType.image:member'
+    package: office!
+    summary: ''
+    value: '"Image"'
+  - name: line
+    uid: 'office!Excel.ShapeType.line:member'
+    package: office!
+    summary: ''
+    value: '"Line"'
+  - name: unsupported
+    uid: 'office!Excel.ShapeType.unsupported:member'
+    package: office!
+    summary: ''
+    value: '"Unsupported"'

@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Excel.QueryError
+uid: 'office!Excel.QueryError:enum'
+package: office!
+fullName: Excel.QueryError
+summary: An enum that specifies the query load error message.
+remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: failedDownload
+    uid: 'office!Excel.QueryError.failedDownload:member'
+    package: office!
+    summary: Download failed.
+    value: '"FailedDownload"'
+  - name: failedLoadToDataModel
+    uid: 'office!Excel.QueryError.failedLoadToDataModel:member'
+    package: office!
+    summary: Load to the data model failed.
+    value: '"FailedLoadToDataModel"'
+  - name: failedLoadToWorksheet
+    uid: 'office!Excel.QueryError.failedLoadToWorksheet:member'
+    package: office!
+    summary: Load to the worksheet failed.
+    value: '"FailedLoadToWorksheet"'
+  - name: failedToCompleteDownload
+    uid: 'office!Excel.QueryError.failedToCompleteDownload:member'
+    package: office!
+    summary: Download did not complete.
+    value: '"FailedToCompleteDownload"'
+  - name: none
+    uid: 'office!Excel.QueryError.none:member'
+    package: office!
+    summary: No error.
+    value: '"None"'
+  - name: unknown
+    uid: 'office!Excel.QueryError.unknown:member'
+    package: office!
+    summary: Unknown error.
+    value: '"Unknown"'

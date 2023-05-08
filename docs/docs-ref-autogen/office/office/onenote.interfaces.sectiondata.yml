@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.SectionData
+uid: 'office!OneNote.Interfaces.SectionData:interface'
+package: office!
+fullName: OneNote.Interfaces.SectionData
+summary: An interface describing the data returned by calling `section.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientUrl
+    uid: 'office!OneNote.Interfaces.SectionData#clientUrl:member'
+    package: office!
+    fullName: clientUrl
+    summary: The client url of the section. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientUrl?: string;'
+      return:
+        type: string
+  - name: id
+    uid: 'office!OneNote.Interfaces.SectionData#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the section. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: isEncrypted
+    uid: 'office!OneNote.Interfaces.SectionData#isEncrypted:member'
+    package: office!
+    fullName: isEncrypted
+    summary: True if this section is encrypted with a password. Read only
+    remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isEncrypted?: boolean;'
+      return:
+        type: boolean
+  - name: isLocked
+    uid: 'office!OneNote.Interfaces.SectionData#isLocked:member'
+    package: office!
+    fullName: isLocked
+    summary: True if this section is locked. Read only
+    remarks: '\[ [API set: OneNoteApi 1.2](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isLocked?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!OneNote.Interfaces.SectionData#name:member'
+    package: office!
+    fullName: name
+    summary: Gets the name of the section. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: pages
+    uid: 'office!OneNote.Interfaces.SectionData#pages:member'
+    package: office!
+    fullName: pages
+    summary: The collection of pages in the section. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pages?: OneNote.Interfaces.PageData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.PageData:interface" />[]'
+  - name: webUrl
+    uid: 'office!OneNote.Interfaces.SectionData#webUrl:member'
+    package: office!
+    fullName: webUrl
+    summary: The web url of the page. Read only
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'webUrl?: string;'
+      return:
+        type: string

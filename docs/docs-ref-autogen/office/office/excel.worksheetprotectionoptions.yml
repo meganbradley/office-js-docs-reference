@@ -1,0 +1,194 @@
+### YamlMime:TSType
+name: Excel.WorksheetProtectionOptions
+uid: 'office!Excel.WorksheetProtectionOptions:interface'
+package: office!
+fullName: Excel.WorksheetProtectionOptions
+summary: Represents the options in sheet protection.
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowAutoFilter
+    uid: 'office!Excel.WorksheetProtectionOptions#allowAutoFilter:member'
+    package: office!
+    fullName: allowAutoFilter
+    summary: Represents the worksheet protection option allowing use of the AutoFilter feature.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowAutoFilter?: boolean;'
+      return:
+        type: boolean
+  - name: allowDeleteColumns
+    uid: 'office!Excel.WorksheetProtectionOptions#allowDeleteColumns:member'
+    package: office!
+    fullName: allowDeleteColumns
+    summary: Represents the worksheet protection option allowing deleting of columns.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowDeleteColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowDeleteRows
+    uid: 'office!Excel.WorksheetProtectionOptions#allowDeleteRows:member'
+    package: office!
+    fullName: allowDeleteRows
+    summary: Represents the worksheet protection option allowing deleting of rows.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowDeleteRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowEditObjects
+    uid: 'office!Excel.WorksheetProtectionOptions#allowEditObjects:member'
+    package: office!
+    fullName: allowEditObjects
+    summary: Represents the worksheet protection option allowing editing of objects.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEditObjects?: boolean;'
+      return:
+        type: boolean
+  - name: allowEditScenarios
+    uid: 'office!Excel.WorksheetProtectionOptions#allowEditScenarios:member'
+    package: office!
+    fullName: allowEditScenarios
+    summary: Represents the worksheet protection option allowing editing of scenarios.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowEditScenarios?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatCells
+    uid: 'office!Excel.WorksheetProtectionOptions#allowFormatCells:member'
+    package: office!
+    fullName: allowFormatCells
+    summary: Represents the worksheet protection option allowing formatting of cells.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatCells?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatColumns
+    uid: 'office!Excel.WorksheetProtectionOptions#allowFormatColumns:member'
+    package: office!
+    fullName: allowFormatColumns
+    summary: Represents the worksheet protection option allowing formatting of columns.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowFormatRows
+    uid: 'office!Excel.WorksheetProtectionOptions#allowFormatRows:member'
+    package: office!
+    fullName: allowFormatRows
+    summary: Represents the worksheet protection option allowing formatting of rows.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowFormatRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertColumns
+    uid: 'office!Excel.WorksheetProtectionOptions#allowInsertColumns:member'
+    package: office!
+    fullName: allowInsertColumns
+    summary: Represents the worksheet protection option allowing inserting of columns.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertColumns?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertHyperlinks
+    uid: 'office!Excel.WorksheetProtectionOptions#allowInsertHyperlinks:member'
+    package: office!
+    fullName: allowInsertHyperlinks
+    summary: Represents the worksheet protection option allowing inserting of hyperlinks.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertHyperlinks?: boolean;'
+      return:
+        type: boolean
+  - name: allowInsertRows
+    uid: 'office!Excel.WorksheetProtectionOptions#allowInsertRows:member'
+    package: office!
+    fullName: allowInsertRows
+    summary: Represents the worksheet protection option allowing inserting of rows.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowInsertRows?: boolean;'
+      return:
+        type: boolean
+  - name: allowPivotTables
+    uid: 'office!Excel.WorksheetProtectionOptions#allowPivotTables:member'
+    package: office!
+    fullName: allowPivotTables
+    summary: Represents the worksheet protection option allowing use of the PivotTable feature.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowPivotTables?: boolean;'
+      return:
+        type: boolean
+  - name: allowSort
+    uid: 'office!Excel.WorksheetProtectionOptions#allowSort:member'
+    package: office!
+    fullName: allowSort
+    summary: Represents the worksheet protection option allowing use of the sort feature.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowSort?: boolean;'
+      return:
+        type: boolean
+  - name: selectionMode
+    uid: 'office!Excel.WorksheetProtectionOptions#selectionMode:member'
+    package: office!
+    fullName: selectionMode
+    summary: Represents the worksheet protection option of selection mode.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selectionMode?: Excel.ProtectionSelectionMode | "Normal" | "Unlocked" | "None";'
+      return:
+        type: '<xref uid="office!Excel.ProtectionSelectionMode:enum" /> | "Normal" | "Unlocked" | "None"'

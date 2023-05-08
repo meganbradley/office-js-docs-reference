@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.FourTrafficLightsSet
+uid: 'office!Excel.FourTrafficLightsSet:interface'
+package: office!
+fullName: Excel.FourTrafficLightsSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: blackCircleWithBorder
+    uid: 'office!Excel.FourTrafficLightsSet#blackCircleWithBorder:member'
+    package: office!
+    fullName: blackCircleWithBorder
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blackCircleWithBorder: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: greenCircle
+    uid: 'office!Excel.FourTrafficLightsSet#greenCircle:member'
+    package: office!
+    fullName: greenCircle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'greenCircle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redCircleWithBorder
+    uid: 'office!Excel.FourTrafficLightsSet#redCircleWithBorder:member'
+    package: office!
+    fullName: redCircleWithBorder
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redCircleWithBorder: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowCircle
+    uid: 'office!Excel.FourTrafficLightsSet#yellowCircle:member'
+    package: office!
+    fullName: yellowCircle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowCircle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

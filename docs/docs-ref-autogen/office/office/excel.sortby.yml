@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.SortBy
+uid: 'office!Excel.SortBy:enum'
+package: office!
+fullName: Excel.SortBy
+summary: Represents the sort direction.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ascending
+    uid: 'office!Excel.SortBy.ascending:member'
+    package: office!
+    summary: Ascending sort. Smallest to largest or A to Z.
+    value: '"Ascending"'
+  - name: descending
+    uid: 'office!Excel.SortBy.descending:member'
+    package: office!
+    summary: Descending sort. Largest to smallest or Z to A.
+    value: '"Descending"'

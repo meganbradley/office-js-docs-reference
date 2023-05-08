@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Excel.CommentChangeType
+uid: 'office!Excel.CommentChangeType:enum'
+package: office!
+fullName: Excel.CommentChangeType
+summary: Represents how the comments in the event were changed.
+remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: commentEdited
+    uid: 'office!Excel.CommentChangeType.commentEdited:member'
+    package: office!
+    summary: Comments were edited.
+    value: '"CommentEdited"'
+  - name: commentReopened
+    uid: 'office!Excel.CommentChangeType.commentReopened:member'
+    package: office!
+    summary: Comments were reopened.
+    value: '"CommentReopened"'
+  - name: commentResolved
+    uid: 'office!Excel.CommentChangeType.commentResolved:member'
+    package: office!
+    summary: Comments were resolved.
+    value: '"CommentResolved"'
+  - name: replyAdded
+    uid: 'office!Excel.CommentChangeType.replyAdded:member'
+    package: office!
+    summary: Replies were added.
+    value: '"ReplyAdded"'
+  - name: replyDeleted
+    uid: 'office!Excel.CommentChangeType.replyDeleted:member'
+    package: office!
+    summary: Replies were deleted.
+    value: '"ReplyDeleted"'
+  - name: replyEdited
+    uid: 'office!Excel.CommentChangeType.replyEdited:member'
+    package: office!
+    summary: Replies were edited.
+    value: '"ReplyEdited"'

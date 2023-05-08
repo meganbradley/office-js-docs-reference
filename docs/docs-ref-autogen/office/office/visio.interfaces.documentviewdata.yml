@@ -1,0 +1,92 @@
+### YamlMime:TSType
+name: Visio.Interfaces.DocumentViewData
+uid: 'office!Visio.Interfaces.DocumentViewData:interface'
+package: office!
+fullName: Visio.Interfaces.DocumentViewData
+summary: An interface describing the data returned by calling `documentView.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: disableHyperlinks
+    uid: 'office!Visio.Interfaces.DocumentViewData#disableHyperlinks:member'
+    package: office!
+    fullName: disableHyperlinks
+    summary: |-
+      Disable Hyperlinks.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableHyperlinks?: boolean;'
+      return:
+        type: boolean
+  - name: disablePan
+    uid: 'office!Visio.Interfaces.DocumentViewData#disablePan:member'
+    package: office!
+    fullName: disablePan
+    summary: |-
+      Disable Pan.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disablePan?: boolean;'
+      return:
+        type: boolean
+  - name: disablePanZoomWindow
+    uid: 'office!Visio.Interfaces.DocumentViewData#disablePanZoomWindow:member'
+    package: office!
+    fullName: disablePanZoomWindow
+    summary: |-
+      Disable PanZoomWindow.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disablePanZoomWindow?: boolean;'
+      return:
+        type: boolean
+  - name: disableZoom
+    uid: 'office!Visio.Interfaces.DocumentViewData#disableZoom:member'
+    package: office!
+    fullName: disableZoom
+    summary: |-
+      Disable Zoom.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableZoom?: boolean;'
+      return:
+        type: boolean
+  - name: hideDiagramBoundary
+    uid: 'office!Visio.Interfaces.DocumentViewData#hideDiagramBoundary:member'
+    package: office!
+    fullName: hideDiagramBoundary
+    summary: |-
+      Hide Diagram Boundary.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hideDiagramBoundary?: boolean;'
+      return:
+        type: boolean

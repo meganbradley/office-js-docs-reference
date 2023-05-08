@@ -1,0 +1,56 @@
+### YamlMime:TSEnum
+name: Word.VerticalAlignment
+uid: 'office!Word.VerticalAlignment:enum'
+package: office!
+fullName: Word.VerticalAlignment
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+  // Get content alignment details about the first row of the first table in the document.
+
+  await Word.run(async (context) => {
+    const firstTable = context.document.body.tables.getFirst();
+    const firstTableRow = firstTable.rows.getFirst();
+    firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
+    await context.sync();
+
+    console.log(`Details about the alignment of the first table's first row:`);
+    console.log(`- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`);
+    console.log(`- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'office!Word.VerticalAlignment.bottom:member'
+    package: office!
+    summary: ''
+    value: '"Bottom"'
+  - name: center
+    uid: 'office!Word.VerticalAlignment.center:member'
+    package: office!
+    summary: ''
+    value: '"Center"'
+  - name: mixed
+    uid: 'office!Word.VerticalAlignment.mixed:member'
+    package: office!
+    summary: ''
+    value: '"Mixed"'
+  - name: top
+    uid: 'office!Word.VerticalAlignment.top:member'
+    package: office!
+    summary: ''
+    value: '"Top"'

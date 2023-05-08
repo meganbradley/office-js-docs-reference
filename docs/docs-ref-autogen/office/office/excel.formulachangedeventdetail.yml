@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: Excel.FormulaChangedEventDetail
+uid: 'office!Excel.FormulaChangedEventDetail:interface'
+package: office!
+fullName: Excel.FormulaChangedEventDetail
+summary: Provides information about a changed formula during a formula changed event.
+remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: cellAddress
+    uid: 'office!Excel.FormulaChangedEventDetail#cellAddress:member'
+    package: office!
+    fullName: cellAddress
+    summary: The address of the cell that contains the changed formula.
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cellAddress: string;'
+      return:
+        type: string
+  - name: previousFormula
+    uid: 'office!Excel.FormulaChangedEventDetail#previousFormula:member'
+    package: office!
+    fullName: previousFormula
+    summary: 'Represents the previous formula, before it was changed.'
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'previousFormula: string;'
+      return:
+        type: string

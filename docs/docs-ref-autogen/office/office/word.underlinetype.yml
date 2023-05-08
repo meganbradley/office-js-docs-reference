@@ -1,0 +1,137 @@
+### YamlMime:TSEnum
+name: Word.UnderlineType
+uid: 'office!Word.UnderlineType:enum'
+package: office!
+fullName: Word.UnderlineType
+summary: The supported styles for underline format.
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+  #### Examples
+
+  ```typescript
+  // Underline format text
+  // Run a batch operation against the Word object model.
+  await Word.run(async (context) => {
+
+      // Create a range proxy object for the current selection.
+      const selection = context.document.getSelection();
+
+      // Queue a command to underline the current selection.
+      selection.font.underline = Word.UnderlineType.single;
+
+      // Synchronize the document state by executing the queued commands,
+      // and return a promise to indicate task completion.
+      await context.sync();
+      console.log('The selection now has an underline style.');
+  });
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dashLine
+    uid: 'office!Word.UnderlineType.dashLine:member'
+    package: office!
+    summary: A single dash underline.
+    value: '"DashLine"'
+  - name: dashLineHeavy
+    uid: 'office!Word.UnderlineType.dashLineHeavy:member'
+    package: office!
+    summary: ''
+    value: '"DashLineHeavy"'
+  - name: dashLineLong
+    uid: 'office!Word.UnderlineType.dashLineLong:member'
+    package: office!
+    summary: ''
+    value: '"DashLineLong"'
+  - name: dashLineLongHeavy
+    uid: 'office!Word.UnderlineType.dashLineLongHeavy:member'
+    package: office!
+    summary: ''
+    value: '"DashLineLongHeavy"'
+  - name: dotDashLine
+    uid: 'office!Word.UnderlineType.dotDashLine:member'
+    package: office!
+    summary: An alternating dot-dash underline.
+    value: '"DotDashLine"'
+  - name: dotDashLineHeavy
+    uid: 'office!Word.UnderlineType.dotDashLineHeavy:member'
+    package: office!
+    summary: ''
+    value: '"DotDashLineHeavy"'
+  - name: dotLine
+    uid: 'office!Word.UnderlineType.dotLine:member'
+    package: office!
+    summary: 'Warning: dotLine has been deprecated.'
+    value: '"DotLine"'
+  - name: dotted
+    uid: 'office!Word.UnderlineType.dotted:member'
+    package: office!
+    summary: A dotted underline.
+    value: '"Dotted"'
+  - name: dottedHeavy
+    uid: 'office!Word.UnderlineType.dottedHeavy:member'
+    package: office!
+    summary: ''
+    value: '"DottedHeavy"'
+  - name: double
+    uid: 'office!Word.UnderlineType.double:member'
+    package: office!
+    summary: A double underline.
+    value: '"Double"'
+  - name: hidden
+    uid: 'office!Word.UnderlineType.hidden:member'
+    package: office!
+    summary: 'Warning: hidden has been deprecated.'
+    value: '"Hidden"'
+  - name: mixed
+    uid: 'office!Word.UnderlineType.mixed:member'
+    package: office!
+    summary: ''
+    value: '"Mixed"'
+  - name: none
+    uid: 'office!Word.UnderlineType.none:member'
+    package: office!
+    summary: No underline.
+    value: '"None"'
+  - name: single
+    uid: 'office!Word.UnderlineType.single:member'
+    package: office!
+    summary: A single underline. This is the default value.
+    value: '"Single"'
+  - name: thick
+    uid: 'office!Word.UnderlineType.thick:member'
+    package: office!
+    summary: A single thick underline.
+    value: '"Thick"'
+  - name: twoDotDashLine
+    uid: 'office!Word.UnderlineType.twoDotDashLine:member'
+    package: office!
+    summary: An alternating dot-dot-dash underline.
+    value: '"TwoDotDashLine"'
+  - name: twoDotDashLineHeavy
+    uid: 'office!Word.UnderlineType.twoDotDashLineHeavy:member'
+    package: office!
+    summary: ''
+    value: '"TwoDotDashLineHeavy"'
+  - name: wave
+    uid: 'office!Word.UnderlineType.wave:member'
+    package: office!
+    summary: A single wavy underline.
+    value: '"Wave"'
+  - name: waveDouble
+    uid: 'office!Word.UnderlineType.waveDouble:member'
+    package: office!
+    summary: ''
+    value: '"WaveDouble"'
+  - name: waveHeavy
+    uid: 'office!Word.UnderlineType.waveHeavy:member'
+    package: office!
+    summary: ''
+    value: '"WaveHeavy"'
+  - name: word
+    uid: 'office!Word.UnderlineType.word:member'
+    package: office!
+    summary: Only underline individual words.
+    value: '"Word"'

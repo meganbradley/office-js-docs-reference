@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Excel.WorksheetFormulaChangedEventArgs
+uid: 'office!Excel.WorksheetFormulaChangedEventArgs:interface'
+package: office!
+fullName: Excel.WorksheetFormulaChangedEventArgs
+summary: Provides information about the worksheet and formulas that raised the formula changed event.
+remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: formulaDetails
+    uid: 'office!Excel.WorksheetFormulaChangedEventArgs#formulaDetails:member'
+    package: office!
+    fullName: formulaDetails
+    summary: >-
+      Gets an array of `FormulaChangedEventDetail` objects, which contain the details about the all of the changed
+      formulas.
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formulaDetails: Excel.FormulaChangedEventDetail[];'
+      return:
+        type: '<xref uid="office!Excel.FormulaChangedEventDetail:interface" />[]'
+  - name: source
+    uid: 'office!Excel.WorksheetFormulaChangedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: The source of the event. It can be local or remote (through co-authoring).
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'office!Excel.WorksheetFormulaChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "WorksheetFormulaChanged";'
+      return:
+        type: '"WorksheetFormulaChanged"'
+  - name: worksheetId
+    uid: 'office!Excel.WorksheetFormulaChangedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet in which the formula changed.
+    remarks: '\[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

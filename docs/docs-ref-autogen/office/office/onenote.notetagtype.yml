@@ -1,0 +1,71 @@
+### YamlMime:TSEnum
+name: OneNote.NoteTagType
+uid: 'office!OneNote.NoteTagType:enum'
+package: office!
+fullName: OneNote.NoteTagType
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: address
+    uid: 'office!OneNote.NoteTagType.address:member'
+    package: office!
+    summary: ''
+    value: '"Address"'
+  - name: contact
+    uid: 'office!OneNote.NoteTagType.contact:member'
+    package: office!
+    summary: ''
+    value: '"Contact"'
+  - name: critical
+    uid: 'office!OneNote.NoteTagType.critical:member'
+    package: office!
+    summary: ''
+    value: '"Critical"'
+  - name: idea
+    uid: 'office!OneNote.NoteTagType.idea:member'
+    package: office!
+    summary: ''
+    value: '"Idea"'
+  - name: important
+    uid: 'office!OneNote.NoteTagType.important:member'
+    package: office!
+    summary: ''
+    value: '"Important"'
+  - name: phoneNumber
+    uid: 'office!OneNote.NoteTagType.phoneNumber:member'
+    package: office!
+    summary: ''
+    value: '"PhoneNumber"'
+  - name: question
+    uid: 'office!OneNote.NoteTagType.question:member'
+    package: office!
+    summary: ''
+    value: '"Question"'
+  - name: toDo
+    uid: 'office!OneNote.NoteTagType.toDo:member'
+    package: office!
+    summary: ''
+    value: '"ToDo"'
+  - name: toDoPriority1
+    uid: 'office!OneNote.NoteTagType.toDoPriority1:member'
+    package: office!
+    summary: ''
+    value: '"ToDoPriority1"'
+  - name: toDoPriority2
+    uid: 'office!OneNote.NoteTagType.toDoPriority2:member'
+    package: office!
+    summary: ''
+    value: '"ToDoPriority2"'
+  - name: unknown
+    uid: 'office!OneNote.NoteTagType.unknown:member'
+    package: office!
+    summary: ''
+    value: '"Unknown"'
+  - name: website
+    uid: 'office!OneNote.NoteTagType.website:member'
+    package: office!
+    summary: ''
+    value: '"Website"'

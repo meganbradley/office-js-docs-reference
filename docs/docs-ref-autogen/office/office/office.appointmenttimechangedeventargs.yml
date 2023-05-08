@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: Office.AppointmentTimeChangedEventArgs
+uid: 'office!Office.AppointmentTimeChangedEventArgs:interface'
+package: office!
+fullName: Office.AppointmentTimeChangedEventArgs
+summary: >-
+  Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged`
+  event.
+remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: end
+    uid: 'office!Office.AppointmentTimeChangedEventArgs#end:member'
+    package: office!
+    fullName: end
+    summary: Gets the appointment end date and time.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'end: Date;'
+      return:
+        type: Date
+  - name: start
+    uid: 'office!Office.AppointmentTimeChangedEventArgs#start:member'
+    package: office!
+    fullName: start
+    summary: Gets the appointment start date and time.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'start: Date;'
+      return:
+        type: Date
+  - name: type
+    uid: 'office!Office.AppointmentTimeChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "olkAppointmentTimeChanged";'
+      return:
+        type: '"olkAppointmentTimeChanged"'

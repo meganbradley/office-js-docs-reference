@@ -1,0 +1,450 @@
+### YamlMime:TSEnum
+name: Excel.ChartType
+uid: 'office!Excel.ChartType:enum'
+package: office!
+fullName: Excel.ChartType
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-create-several-charts.yaml
+
+  await Excel.run(async (context) => {
+    let sheet = context.workbook.worksheets.getItem("Sample");
+    let salesTable = sheet.tables.getItem("SalesTable");
+
+    let dataRange = sheet.getRange("A1:E7");
+    let chart = sheet.charts.add(Excel.ChartType.line, dataRange, "Auto");
+
+    chart.setPosition("A22", "F35");
+    chart.legend.position = "Right";
+    chart.legend.format.fill.setSolidColor("white");
+    chart.dataLabels.format.font.size = 15;
+    chart.dataLabels.format.font.color = "black";
+    chart.title.text = "Bicycle Parts Quarterly Sales";
+
+    await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: _3DArea
+    uid: 'office!Excel.ChartType._3DArea:member'
+    package: office!
+    summary: ''
+    value: '"3DArea"'
+  - name: _3DAreaStacked
+    uid: 'office!Excel.ChartType._3DAreaStacked:member'
+    package: office!
+    summary: ''
+    value: '"3DAreaStacked"'
+  - name: _3DAreaStacked100
+    uid: 'office!Excel.ChartType._3DAreaStacked100:member'
+    package: office!
+    summary: ''
+    value: '"3DAreaStacked100"'
+  - name: _3DBarClustered
+    uid: 'office!Excel.ChartType._3DBarClustered:member'
+    package: office!
+    summary: ''
+    value: '"3DBarClustered"'
+  - name: _3DBarStacked
+    uid: 'office!Excel.ChartType._3DBarStacked:member'
+    package: office!
+    summary: ''
+    value: '"3DBarStacked"'
+  - name: _3DBarStacked100
+    uid: 'office!Excel.ChartType._3DBarStacked100:member'
+    package: office!
+    summary: ''
+    value: '"3DBarStacked100"'
+  - name: _3DColumn
+    uid: 'office!Excel.ChartType._3DColumn:member'
+    package: office!
+    summary: ''
+    value: '"3DColumn"'
+  - name: _3DColumnClustered
+    uid: 'office!Excel.ChartType._3DColumnClustered:member'
+    package: office!
+    summary: ''
+    value: '"3DColumnClustered"'
+  - name: _3DColumnStacked
+    uid: 'office!Excel.ChartType._3DColumnStacked:member'
+    package: office!
+    summary: ''
+    value: '"3DColumnStacked"'
+  - name: _3DColumnStacked100
+    uid: 'office!Excel.ChartType._3DColumnStacked100:member'
+    package: office!
+    summary: ''
+    value: '"3DColumnStacked100"'
+  - name: _3DLine
+    uid: 'office!Excel.ChartType._3DLine:member'
+    package: office!
+    summary: ''
+    value: '"3DLine"'
+  - name: _3DPie
+    uid: 'office!Excel.ChartType._3DPie:member'
+    package: office!
+    summary: ''
+    value: '"3DPie"'
+  - name: _3DPieExploded
+    uid: 'office!Excel.ChartType._3DPieExploded:member'
+    package: office!
+    summary: ''
+    value: '"3DPieExploded"'
+  - name: area
+    uid: 'office!Excel.ChartType.area:member'
+    package: office!
+    summary: ''
+    value: '"Area"'
+  - name: areaStacked
+    uid: 'office!Excel.ChartType.areaStacked:member'
+    package: office!
+    summary: ''
+    value: '"AreaStacked"'
+  - name: areaStacked100
+    uid: 'office!Excel.ChartType.areaStacked100:member'
+    package: office!
+    summary: ''
+    value: '"AreaStacked100"'
+  - name: barClustered
+    uid: 'office!Excel.ChartType.barClustered:member'
+    package: office!
+    summary: ''
+    value: '"BarClustered"'
+  - name: barOfPie
+    uid: 'office!Excel.ChartType.barOfPie:member'
+    package: office!
+    summary: ''
+    value: '"BarOfPie"'
+  - name: barStacked
+    uid: 'office!Excel.ChartType.barStacked:member'
+    package: office!
+    summary: ''
+    value: '"BarStacked"'
+  - name: barStacked100
+    uid: 'office!Excel.ChartType.barStacked100:member'
+    package: office!
+    summary: ''
+    value: '"BarStacked100"'
+  - name: boxwhisker
+    uid: 'office!Excel.ChartType.boxwhisker:member'
+    package: office!
+    summary: ''
+    value: '"Boxwhisker"'
+  - name: bubble
+    uid: 'office!Excel.ChartType.bubble:member'
+    package: office!
+    summary: ''
+    value: '"Bubble"'
+  - name: bubble3DEffect
+    uid: 'office!Excel.ChartType.bubble3DEffect:member'
+    package: office!
+    summary: ''
+    value: '"Bubble3DEffect"'
+  - name: columnClustered
+    uid: 'office!Excel.ChartType.columnClustered:member'
+    package: office!
+    summary: ''
+    value: '"ColumnClustered"'
+  - name: columnStacked
+    uid: 'office!Excel.ChartType.columnStacked:member'
+    package: office!
+    summary: ''
+    value: '"ColumnStacked"'
+  - name: columnStacked100
+    uid: 'office!Excel.ChartType.columnStacked100:member'
+    package: office!
+    summary: ''
+    value: '"ColumnStacked100"'
+  - name: coneBarClustered
+    uid: 'office!Excel.ChartType.coneBarClustered:member'
+    package: office!
+    summary: ''
+    value: '"ConeBarClustered"'
+  - name: coneBarStacked
+    uid: 'office!Excel.ChartType.coneBarStacked:member'
+    package: office!
+    summary: ''
+    value: '"ConeBarStacked"'
+  - name: coneBarStacked100
+    uid: 'office!Excel.ChartType.coneBarStacked100:member'
+    package: office!
+    summary: ''
+    value: '"ConeBarStacked100"'
+  - name: coneCol
+    uid: 'office!Excel.ChartType.coneCol:member'
+    package: office!
+    summary: ''
+    value: '"ConeCol"'
+  - name: coneColClustered
+    uid: 'office!Excel.ChartType.coneColClustered:member'
+    package: office!
+    summary: ''
+    value: '"ConeColClustered"'
+  - name: coneColStacked
+    uid: 'office!Excel.ChartType.coneColStacked:member'
+    package: office!
+    summary: ''
+    value: '"ConeColStacked"'
+  - name: coneColStacked100
+    uid: 'office!Excel.ChartType.coneColStacked100:member'
+    package: office!
+    summary: ''
+    value: '"ConeColStacked100"'
+  - name: cylinderBarClustered
+    uid: 'office!Excel.ChartType.cylinderBarClustered:member'
+    package: office!
+    summary: ''
+    value: '"CylinderBarClustered"'
+  - name: cylinderBarStacked
+    uid: 'office!Excel.ChartType.cylinderBarStacked:member'
+    package: office!
+    summary: ''
+    value: '"CylinderBarStacked"'
+  - name: cylinderBarStacked100
+    uid: 'office!Excel.ChartType.cylinderBarStacked100:member'
+    package: office!
+    summary: ''
+    value: '"CylinderBarStacked100"'
+  - name: cylinderCol
+    uid: 'office!Excel.ChartType.cylinderCol:member'
+    package: office!
+    summary: ''
+    value: '"CylinderCol"'
+  - name: cylinderColClustered
+    uid: 'office!Excel.ChartType.cylinderColClustered:member'
+    package: office!
+    summary: ''
+    value: '"CylinderColClustered"'
+  - name: cylinderColStacked
+    uid: 'office!Excel.ChartType.cylinderColStacked:member'
+    package: office!
+    summary: ''
+    value: '"CylinderColStacked"'
+  - name: cylinderColStacked100
+    uid: 'office!Excel.ChartType.cylinderColStacked100:member'
+    package: office!
+    summary: ''
+    value: '"CylinderColStacked100"'
+  - name: doughnut
+    uid: 'office!Excel.ChartType.doughnut:member'
+    package: office!
+    summary: ''
+    value: '"Doughnut"'
+  - name: doughnutExploded
+    uid: 'office!Excel.ChartType.doughnutExploded:member'
+    package: office!
+    summary: ''
+    value: '"DoughnutExploded"'
+  - name: funnel
+    uid: 'office!Excel.ChartType.funnel:member'
+    package: office!
+    summary: ''
+    value: '"Funnel"'
+  - name: histogram
+    uid: 'office!Excel.ChartType.histogram:member'
+    package: office!
+    summary: ''
+    value: '"Histogram"'
+  - name: invalid
+    uid: 'office!Excel.ChartType.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: line
+    uid: 'office!Excel.ChartType.line:member'
+    package: office!
+    summary: ''
+    value: '"Line"'
+  - name: lineMarkers
+    uid: 'office!Excel.ChartType.lineMarkers:member'
+    package: office!
+    summary: ''
+    value: '"LineMarkers"'
+  - name: lineMarkersStacked
+    uid: 'office!Excel.ChartType.lineMarkersStacked:member'
+    package: office!
+    summary: ''
+    value: '"LineMarkersStacked"'
+  - name: lineMarkersStacked100
+    uid: 'office!Excel.ChartType.lineMarkersStacked100:member'
+    package: office!
+    summary: ''
+    value: '"LineMarkersStacked100"'
+  - name: lineStacked
+    uid: 'office!Excel.ChartType.lineStacked:member'
+    package: office!
+    summary: ''
+    value: '"LineStacked"'
+  - name: lineStacked100
+    uid: 'office!Excel.ChartType.lineStacked100:member'
+    package: office!
+    summary: ''
+    value: '"LineStacked100"'
+  - name: pareto
+    uid: 'office!Excel.ChartType.pareto:member'
+    package: office!
+    summary: ''
+    value: '"Pareto"'
+  - name: pie
+    uid: 'office!Excel.ChartType.pie:member'
+    package: office!
+    summary: ''
+    value: '"Pie"'
+  - name: pieExploded
+    uid: 'office!Excel.ChartType.pieExploded:member'
+    package: office!
+    summary: ''
+    value: '"PieExploded"'
+  - name: pieOfPie
+    uid: 'office!Excel.ChartType.pieOfPie:member'
+    package: office!
+    summary: ''
+    value: '"PieOfPie"'
+  - name: pyramidBarClustered
+    uid: 'office!Excel.ChartType.pyramidBarClustered:member'
+    package: office!
+    summary: ''
+    value: '"PyramidBarClustered"'
+  - name: pyramidBarStacked
+    uid: 'office!Excel.ChartType.pyramidBarStacked:member'
+    package: office!
+    summary: ''
+    value: '"PyramidBarStacked"'
+  - name: pyramidBarStacked100
+    uid: 'office!Excel.ChartType.pyramidBarStacked100:member'
+    package: office!
+    summary: ''
+    value: '"PyramidBarStacked100"'
+  - name: pyramidCol
+    uid: 'office!Excel.ChartType.pyramidCol:member'
+    package: office!
+    summary: ''
+    value: '"PyramidCol"'
+  - name: pyramidColClustered
+    uid: 'office!Excel.ChartType.pyramidColClustered:member'
+    package: office!
+    summary: ''
+    value: '"PyramidColClustered"'
+  - name: pyramidColStacked
+    uid: 'office!Excel.ChartType.pyramidColStacked:member'
+    package: office!
+    summary: ''
+    value: '"PyramidColStacked"'
+  - name: pyramidColStacked100
+    uid: 'office!Excel.ChartType.pyramidColStacked100:member'
+    package: office!
+    summary: ''
+    value: '"PyramidColStacked100"'
+  - name: radar
+    uid: 'office!Excel.ChartType.radar:member'
+    package: office!
+    summary: ''
+    value: '"Radar"'
+  - name: radarFilled
+    uid: 'office!Excel.ChartType.radarFilled:member'
+    package: office!
+    summary: ''
+    value: '"RadarFilled"'
+  - name: radarMarkers
+    uid: 'office!Excel.ChartType.radarMarkers:member'
+    package: office!
+    summary: ''
+    value: '"RadarMarkers"'
+  - name: regionMap
+    uid: 'office!Excel.ChartType.regionMap:member'
+    package: office!
+    summary: ''
+    value: '"RegionMap"'
+  - name: stockHLC
+    uid: 'office!Excel.ChartType.stockHLC:member'
+    package: office!
+    summary: ''
+    value: '"StockHLC"'
+  - name: stockOHLC
+    uid: 'office!Excel.ChartType.stockOHLC:member'
+    package: office!
+    summary: ''
+    value: '"StockOHLC"'
+  - name: stockVHLC
+    uid: 'office!Excel.ChartType.stockVHLC:member'
+    package: office!
+    summary: ''
+    value: '"StockVHLC"'
+  - name: stockVOHLC
+    uid: 'office!Excel.ChartType.stockVOHLC:member'
+    package: office!
+    summary: ''
+    value: '"StockVOHLC"'
+  - name: sunburst
+    uid: 'office!Excel.ChartType.sunburst:member'
+    package: office!
+    summary: ''
+    value: '"Sunburst"'
+  - name: surface
+    uid: 'office!Excel.ChartType.surface:member'
+    package: office!
+    summary: ''
+    value: '"Surface"'
+  - name: surfaceTopView
+    uid: 'office!Excel.ChartType.surfaceTopView:member'
+    package: office!
+    summary: ''
+    value: '"SurfaceTopView"'
+  - name: surfaceTopViewWireframe
+    uid: 'office!Excel.ChartType.surfaceTopViewWireframe:member'
+    package: office!
+    summary: ''
+    value: '"SurfaceTopViewWireframe"'
+  - name: surfaceWireframe
+    uid: 'office!Excel.ChartType.surfaceWireframe:member'
+    package: office!
+    summary: ''
+    value: '"SurfaceWireframe"'
+  - name: treemap
+    uid: 'office!Excel.ChartType.treemap:member'
+    package: office!
+    summary: ''
+    value: '"Treemap"'
+  - name: waterfall
+    uid: 'office!Excel.ChartType.waterfall:member'
+    package: office!
+    summary: ''
+    value: '"Waterfall"'
+  - name: xyscatter
+    uid: 'office!Excel.ChartType.xyscatter:member'
+    package: office!
+    summary: ''
+    value: '"XYScatter"'
+  - name: xyscatterLines
+    uid: 'office!Excel.ChartType.xyscatterLines:member'
+    package: office!
+    summary: ''
+    value: '"XYScatterLines"'
+  - name: xyscatterLinesNoMarkers
+    uid: 'office!Excel.ChartType.xyscatterLinesNoMarkers:member'
+    package: office!
+    summary: ''
+    value: '"XYScatterLinesNoMarkers"'
+  - name: xyscatterSmooth
+    uid: 'office!Excel.ChartType.xyscatterSmooth:member'
+    package: office!
+    summary: ''
+    value: '"XYScatterSmooth"'
+  - name: xyscatterSmoothNoMarkers
+    uid: 'office!Excel.ChartType.xyscatterSmoothNoMarkers:member'
+    package: office!
+    summary: ''
+    value: '"XYScatterSmoothNoMarkers"'

@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartLineFormatData
+uid: 'office!Excel.Interfaces.ChartLineFormatData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartLineFormatData
+summary: An interface describing the data returned by calling `chartLineFormat.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'office!Excel.Interfaces.ChartLineFormatData#color:member'
+    package: office!
+    fullName: color
+    summary: HTML color code representing the color of lines in the chart.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: lineStyle
+    uid: 'office!Excel.Interfaces.ChartLineFormatData#lineStyle:member'
+    package: office!
+    fullName: lineStyle
+    summary: Represents the line style. See `Excel.ChartLineStyle` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        lineStyle?: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25"
+        | "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+      return:
+        type: >-
+          <xref uid="office!Excel.ChartLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+          "Dot" | "Grey25" | "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+  - name: weight
+    uid: 'office!Excel.Interfaces.ChartLineFormatData#weight:member'
+    package: office!
+    fullName: weight
+    summary: 'Represents weight of the line, in points.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weight?: number;'
+      return:
+        type: number

@@ -1,0 +1,216 @@
+### YamlMime:TSEnum
+name: Excel.PaperType
+uid: 'office!Excel.PaperType:enum'
+package: office!
+fullName: Excel.PaperType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: a3
+    uid: 'office!Excel.PaperType.a3:member'
+    package: office!
+    summary: ''
+    value: '"A3"'
+  - name: a4
+    uid: 'office!Excel.PaperType.a4:member'
+    package: office!
+    summary: ''
+    value: '"A4"'
+  - name: a4Small
+    uid: 'office!Excel.PaperType.a4Small:member'
+    package: office!
+    summary: ''
+    value: '"A4Small"'
+  - name: a5
+    uid: 'office!Excel.PaperType.a5:member'
+    package: office!
+    summary: ''
+    value: '"A5"'
+  - name: b4
+    uid: 'office!Excel.PaperType.b4:member'
+    package: office!
+    summary: ''
+    value: '"B4"'
+  - name: b5
+    uid: 'office!Excel.PaperType.b5:member'
+    package: office!
+    summary: ''
+    value: '"B5"'
+  - name: csheet
+    uid: 'office!Excel.PaperType.csheet:member'
+    package: office!
+    summary: ''
+    value: '"Csheet"'
+  - name: dsheet
+    uid: 'office!Excel.PaperType.dsheet:member'
+    package: office!
+    summary: ''
+    value: '"Dsheet"'
+  - name: envelope10
+    uid: 'office!Excel.PaperType.envelope10:member'
+    package: office!
+    summary: ''
+    value: '"Envelope10"'
+  - name: envelope11
+    uid: 'office!Excel.PaperType.envelope11:member'
+    package: office!
+    summary: ''
+    value: '"Envelope11"'
+  - name: envelope12
+    uid: 'office!Excel.PaperType.envelope12:member'
+    package: office!
+    summary: ''
+    value: '"Envelope12"'
+  - name: envelope14
+    uid: 'office!Excel.PaperType.envelope14:member'
+    package: office!
+    summary: ''
+    value: '"Envelope14"'
+  - name: envelope9
+    uid: 'office!Excel.PaperType.envelope9:member'
+    package: office!
+    summary: ''
+    value: '"Envelope9"'
+  - name: envelopeB4
+    uid: 'office!Excel.PaperType.envelopeB4:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeB4"'
+  - name: envelopeB5
+    uid: 'office!Excel.PaperType.envelopeB5:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeB5"'
+  - name: envelopeB6
+    uid: 'office!Excel.PaperType.envelopeB6:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeB6"'
+  - name: envelopeC3
+    uid: 'office!Excel.PaperType.envelopeC3:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeC3"'
+  - name: envelopeC4
+    uid: 'office!Excel.PaperType.envelopeC4:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeC4"'
+  - name: envelopeC5
+    uid: 'office!Excel.PaperType.envelopeC5:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeC5"'
+  - name: envelopeC6
+    uid: 'office!Excel.PaperType.envelopeC6:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeC6"'
+  - name: envelopeC65
+    uid: 'office!Excel.PaperType.envelopeC65:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeC65"'
+  - name: envelopeDL
+    uid: 'office!Excel.PaperType.envelopeDL:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeDL"'
+  - name: envelopeItaly
+    uid: 'office!Excel.PaperType.envelopeItaly:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeItaly"'
+  - name: envelopeMonarch
+    uid: 'office!Excel.PaperType.envelopeMonarch:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopeMonarch"'
+  - name: envelopePersonal
+    uid: 'office!Excel.PaperType.envelopePersonal:member'
+    package: office!
+    summary: ''
+    value: '"EnvelopePersonal"'
+  - name: esheet
+    uid: 'office!Excel.PaperType.esheet:member'
+    package: office!
+    summary: ''
+    value: '"Esheet"'
+  - name: executive
+    uid: 'office!Excel.PaperType.executive:member'
+    package: office!
+    summary: ''
+    value: '"Executive"'
+  - name: fanfoldLegalGerman
+    uid: 'office!Excel.PaperType.fanfoldLegalGerman:member'
+    package: office!
+    summary: ''
+    value: '"FanfoldLegalGerman"'
+  - name: fanfoldStdGerman
+    uid: 'office!Excel.PaperType.fanfoldStdGerman:member'
+    package: office!
+    summary: ''
+    value: '"FanfoldStdGerman"'
+  - name: fanfoldUS
+    uid: 'office!Excel.PaperType.fanfoldUS:member'
+    package: office!
+    summary: ''
+    value: '"FanfoldUS"'
+  - name: folio
+    uid: 'office!Excel.PaperType.folio:member'
+    package: office!
+    summary: ''
+    value: '"Folio"'
+  - name: ledger
+    uid: 'office!Excel.PaperType.ledger:member'
+    package: office!
+    summary: ''
+    value: '"Ledger"'
+  - name: legal
+    uid: 'office!Excel.PaperType.legal:member'
+    package: office!
+    summary: ''
+    value: '"Legal"'
+  - name: letter
+    uid: 'office!Excel.PaperType.letter:member'
+    package: office!
+    summary: ''
+    value: '"Letter"'
+  - name: letterSmall
+    uid: 'office!Excel.PaperType.letterSmall:member'
+    package: office!
+    summary: ''
+    value: '"LetterSmall"'
+  - name: note
+    uid: 'office!Excel.PaperType.note:member'
+    package: office!
+    summary: ''
+    value: '"Note"'
+  - name: paper10x14
+    uid: 'office!Excel.PaperType.paper10x14:member'
+    package: office!
+    summary: ''
+    value: '"Paper10x14"'
+  - name: paper11x17
+    uid: 'office!Excel.PaperType.paper11x17:member'
+    package: office!
+    summary: ''
+    value: '"Paper11x17"'
+  - name: quatro
+    uid: 'office!Excel.PaperType.quatro:member'
+    package: office!
+    summary: ''
+    value: '"Quatro"'
+  - name: statement
+    uid: 'office!Excel.PaperType.statement:member'
+    package: office!
+    summary: ''
+    value: '"Statement"'
+  - name: tabloid
+    uid: 'office!Excel.PaperType.tabloid:member'
+    package: office!
+    summary: ''
+    value: '"Tabloid"'

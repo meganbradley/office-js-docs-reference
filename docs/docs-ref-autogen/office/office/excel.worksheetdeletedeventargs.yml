@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.WorksheetDeletedEventArgs
+uid: 'office!Excel.WorksheetDeletedEventArgs:interface'
+package: office!
+fullName: Excel.WorksheetDeletedEventArgs
+summary: Provides information about the worksheet that raised the deleted event.
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: source
+    uid: 'office!Excel.WorksheetDeletedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'office!Excel.WorksheetDeletedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "WorksheetDeleted";'
+      return:
+        type: '"WorksheetDeleted"'
+  - name: worksheetId
+    uid: 'office!Excel.WorksheetDeletedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet that is deleted from the workbook.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

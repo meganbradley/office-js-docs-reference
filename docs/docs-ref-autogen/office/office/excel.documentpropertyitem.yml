@@ -1,0 +1,91 @@
+### YamlMime:TSEnum
+name: Excel.DocumentPropertyItem
+uid: 'office!Excel.DocumentPropertyItem:enum'
+package: office!
+fullName: Excel.DocumentPropertyItem
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: appName
+    uid: 'office!Excel.DocumentPropertyItem.appName:member'
+    package: office!
+    summary: ''
+    value: '"AppName"'
+  - name: author
+    uid: 'office!Excel.DocumentPropertyItem.author:member'
+    package: office!
+    summary: ''
+    value: '"Author"'
+  - name: category
+    uid: 'office!Excel.DocumentPropertyItem.category:member'
+    package: office!
+    summary: ''
+    value: '"Category"'
+  - name: comments
+    uid: 'office!Excel.DocumentPropertyItem.comments:member'
+    package: office!
+    summary: ''
+    value: '"Comments"'
+  - name: company
+    uid: 'office!Excel.DocumentPropertyItem.company:member'
+    package: office!
+    summary: ''
+    value: '"Company"'
+  - name: creation
+    uid: 'office!Excel.DocumentPropertyItem.creation:member'
+    package: office!
+    summary: ''
+    value: '"Creation"'
+  - name: format
+    uid: 'office!Excel.DocumentPropertyItem.format:member'
+    package: office!
+    summary: ''
+    value: '"Format"'
+  - name: keywords
+    uid: 'office!Excel.DocumentPropertyItem.keywords:member'
+    package: office!
+    summary: ''
+    value: '"Keywords"'
+  - name: lastAuth
+    uid: 'office!Excel.DocumentPropertyItem.lastAuth:member'
+    package: office!
+    summary: ''
+    value: '"LastAuth"'
+  - name: lastPrint
+    uid: 'office!Excel.DocumentPropertyItem.lastPrint:member'
+    package: office!
+    summary: ''
+    value: '"LastPrint"'
+  - name: lastSave
+    uid: 'office!Excel.DocumentPropertyItem.lastSave:member'
+    package: office!
+    summary: ''
+    value: '"LastSave"'
+  - name: manager
+    uid: 'office!Excel.DocumentPropertyItem.manager:member'
+    package: office!
+    summary: ''
+    value: '"Manager"'
+  - name: revision
+    uid: 'office!Excel.DocumentPropertyItem.revision:member'
+    package: office!
+    summary: ''
+    value: '"Revision"'
+  - name: subject
+    uid: 'office!Excel.DocumentPropertyItem.subject:member'
+    package: office!
+    summary: ''
+    value: '"Subject"'
+  - name: template
+    uid: 'office!Excel.DocumentPropertyItem.template:member'
+    package: office!
+    summary: ''
+    value: '"Template"'
+  - name: title
+    uid: 'office!Excel.DocumentPropertyItem.title:member'
+    package: office!
+    summary: ''
+    value: '"Title"'

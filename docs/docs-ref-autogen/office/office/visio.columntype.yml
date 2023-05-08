@@ -1,0 +1,39 @@
+### YamlMime:TSEnum
+name: Visio.ColumnType
+uid: 'office!Visio.ColumnType:enum'
+package: office!
+fullName: Visio.ColumnType
+summary: |-
+  Represents the type of column values.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: currency
+    uid: 'office!Visio.ColumnType.currency:member'
+    package: office!
+    summary: Currency
+    value: '"Currency"'
+  - name: date
+    uid: 'office!Visio.ColumnType.date:member'
+    package: office!
+    summary: Date
+    value: '"Date"'
+  - name: number
+    uid: 'office!Visio.ColumnType.number:member'
+    package: office!
+    summary: Numerical values
+    value: '"Number"'
+  - name: string
+    uid: 'office!Visio.ColumnType.string:member'
+    package: office!
+    summary: String values
+    value: '"String"'
+  - name: unknown
+    uid: 'office!Visio.ColumnType.unknown:member'
+    package: office!
+    summary: Other
+    value: '"Unknown"'

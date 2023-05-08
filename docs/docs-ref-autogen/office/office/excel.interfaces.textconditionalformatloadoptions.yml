@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Excel.Interfaces.TextConditionalFormatLoadOptions
+uid: 'office!Excel.Interfaces.TextConditionalFormatLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.TextConditionalFormatLoadOptions
+summary: Represents a specific text conditional format.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.TextConditionalFormatLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: 'office!Excel.Interfaces.TextConditionalFormatLoadOptions#format:member'
+    package: office!
+    fullName: format
+    summary: 'Returns a format object, encapsulating the conditional format''s font, fill, borders, and other properties.'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface" />'
+  - name: rule
+    uid: 'office!Excel.Interfaces.TextConditionalFormatLoadOptions#rule:member'
+    package: office!
+    fullName: rule
+    summary: The rule of the conditional format.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rule?: boolean;'
+      return:
+        type: boolean

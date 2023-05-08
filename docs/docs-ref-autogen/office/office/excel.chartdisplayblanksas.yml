@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ChartDisplayBlanksAs
+uid: 'office!Excel.ChartDisplayBlanksAs:enum'
+package: office!
+fullName: Excel.ChartDisplayBlanksAs
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: interplotted
+    uid: 'office!Excel.ChartDisplayBlanksAs.interplotted:member'
+    package: office!
+    summary: ''
+    value: '"Interplotted"'
+  - name: notPlotted
+    uid: 'office!Excel.ChartDisplayBlanksAs.notPlotted:member'
+    package: office!
+    summary: ''
+    value: '"NotPlotted"'
+  - name: zero
+    uid: 'office!Excel.ChartDisplayBlanksAs.zero:member'
+    package: office!
+    summary: ''
+    value: '"Zero"'

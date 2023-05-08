@@ -5,6 +5,7 @@ package: office!
 fullName: Office.AddinCommands.EventCompletedOptions
 summary: Specifies the behavior for when the event is completed.
 remarks: ''
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -64,6 +65,7 @@ properties:
       }
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -125,6 +127,7 @@ properties:
       }
 
       ```
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

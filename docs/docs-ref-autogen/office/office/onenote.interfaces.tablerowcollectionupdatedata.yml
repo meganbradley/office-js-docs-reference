@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.TableRowCollectionUpdateData
+uid: 'office!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
+package: office!
+fullName: OneNote.Interfaces.TableRowCollectionUpdateData
+summary: 'An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!OneNote.Interfaces.TableRowCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: OneNote.Interfaces.TableRowData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.TableRowData:interface" />[]'

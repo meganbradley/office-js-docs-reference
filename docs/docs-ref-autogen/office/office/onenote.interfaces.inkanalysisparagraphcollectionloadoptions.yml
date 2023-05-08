@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
+uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions:interface'
+package: office!
+fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
+summary: Represents a collection of InkAnalysisParagraph objects.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: Gets the ID of the InkAnalysisParagraph object. Read-only.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: inkAnalysis
+    uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions#inkAnalysis:member'
+    package: office!
+    fullName: inkAnalysis
+    summary: 'For EACH ITEM in the collection: Reference to the parent InkAnalysisPage.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inkAnalysis?: OneNote.Interfaces.InkAnalysisLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkAnalysisLoadOptions:interface" />'
+  - name: lines
+    uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions#lines:member'
+    package: office!
+    fullName: lines
+    summary: 'For EACH ITEM in the collection: Gets the ink analysis lines in this ink analysis paragraph.'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lines?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface" />'

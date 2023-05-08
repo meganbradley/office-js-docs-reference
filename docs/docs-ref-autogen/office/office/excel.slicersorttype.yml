@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.SlicerSortType
+uid: 'office!Excel.SlicerSortType:enum'
+package: office!
+fullName: Excel.SlicerSortType
+summary: Specifies the slicer sort behavior for `Slicer.sortBy`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ascending
+    uid: 'office!Excel.SlicerSortType.ascending:member'
+    package: office!
+    summary: Sort slicer items in ascending order by item captions.
+    value: '"Ascending"'
+  - name: dataSourceOrder
+    uid: 'office!Excel.SlicerSortType.dataSourceOrder:member'
+    package: office!
+    summary: Sort slicer items in the order provided by the data source.
+    value: '"DataSourceOrder"'
+  - name: descending
+    uid: 'office!Excel.SlicerSortType.descending:member'
+    package: office!
+    summary: Sort slicer items in descending order by item captions.
+    value: '"Descending"'

@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Word.InsertFileOptions
+uid: 'office!Word.InsertFileOptions:interface'
+package: office!
+fullName: Word.InsertFileOptions
+summary: Specifies the options to determine what to copy when inserting a file.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: importChangeTrackingMode
+    uid: 'office!Word.InsertFileOptions#importChangeTrackingMode:member'
+    package: office!
+    fullName: importChangeTrackingMode
+    summary: Represents whether the change tracking mode status from the source document should be imported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'importChangeTrackingMode: boolean;'
+      return:
+        type: boolean
+  - name: importPageColor
+    uid: 'office!Word.InsertFileOptions#importPageColor:member'
+    package: office!
+    fullName: importPageColor
+    summary: Represents whether the page color and other background information from the source document should be imported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'importPageColor: boolean;'
+      return:
+        type: boolean
+  - name: importParagraphSpacing
+    uid: 'office!Word.InsertFileOptions#importParagraphSpacing:member'
+    package: office!
+    fullName: importParagraphSpacing
+    summary: Represents whether the paragraph spacing from the source document should be imported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'importParagraphSpacing: boolean;'
+      return:
+        type: boolean
+  - name: importStyles
+    uid: 'office!Word.InsertFileOptions#importStyles:member'
+    package: office!
+    fullName: importStyles
+    summary: Represents whether the styles from the source document should be imported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'importStyles: boolean;'
+      return:
+        type: boolean
+  - name: importTheme
+    uid: 'office!Word.InsertFileOptions#importTheme:member'
+    package: office!
+    fullName: importTheme
+    summary: Represents whether the theme from the source document should be imported.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'importTheme: boolean;'
+      return:
+        type: boolean

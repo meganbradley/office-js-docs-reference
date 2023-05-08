@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ThreeSignsSet
+uid: 'office!Excel.ThreeSignsSet:interface'
+package: office!
+fullName: Excel.ThreeSignsSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenCircle
+    uid: 'office!Excel.ThreeSignsSet#greenCircle:member'
+    package: office!
+    fullName: greenCircle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'greenCircle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redDiamond
+    uid: 'office!Excel.ThreeSignsSet#redDiamond:member'
+    package: office!
+    fullName: redDiamond
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redDiamond: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowTriangle
+    uid: 'office!Excel.ThreeSignsSet#yellowTriangle:member'
+    package: office!
+    fullName: yellowTriangle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowTriangle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

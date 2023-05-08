@@ -1,0 +1,139 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartPointsCollectionLoadOptions
+uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ChartPointsCollectionLoadOptions
+summary: A collection of all the chart points within a series inside a chart.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: dataLabel
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#dataLabel:member'
+    package: office!
+    fullName: dataLabel
+    summary: 'For EACH ITEM in the collection: Returns the data label of a chart point.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dataLabel?: Excel.Interfaces.ChartDataLabelLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartDataLabelLoadOptions:interface" />'
+  - name: format
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#format:member'
+    package: office!
+    fullName: format
+    summary: 'For EACH ITEM in the collection: Encapsulates the format properties chart point.'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartPointFormatLoadOptions:interface" />'
+  - name: hasDataLabel
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#hasDataLabel:member'
+    package: office!
+    fullName: hasDataLabel
+    summary: >-
+      For EACH ITEM in the collection: Represents whether a data point has a data label. Not applicable for surface
+      charts.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasDataLabel?: boolean;'
+      return:
+        type: boolean
+  - name: markerBackgroundColor
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#markerBackgroundColor:member'
+    package: office!
+    fullName: markerBackgroundColor
+    summary: >-
+      For EACH ITEM in the collection: HTML color code representation of the marker background color of a data point
+      (e.g., \#FF0000 represents Red).
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'markerBackgroundColor?: boolean;'
+      return:
+        type: boolean
+  - name: markerForegroundColor
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#markerForegroundColor:member'
+    package: office!
+    fullName: markerForegroundColor
+    summary: >-
+      For EACH ITEM in the collection: HTML color code representation of the marker foreground color of a data point
+      (e.g., \#FF0000 represents Red).
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'markerForegroundColor?: boolean;'
+      return:
+        type: boolean
+  - name: markerSize
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#markerSize:member'
+    package: office!
+    fullName: markerSize
+    summary: 'For EACH ITEM in the collection: Represents marker size of a data point.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'markerSize?: boolean;'
+      return:
+        type: boolean
+  - name: markerStyle
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#markerStyle:member'
+    package: office!
+    fullName: markerStyle
+    summary: >-
+      For EACH ITEM in the collection: Represents marker style of a chart data point. See `Excel.ChartMarkerStyle` for
+      details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'markerStyle?: boolean;'
+      return:
+        type: boolean
+  - name: value
+    uid: 'office!Excel.Interfaces.ChartPointsCollectionLoadOptions#value:member'
+    package: office!
+    fullName: value
+    summary: 'For EACH ITEM in the collection: Returns the value of a chart point.'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type: boolean

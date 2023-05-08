@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.PageUpdateData
+uid: 'office!OneNote.Interfaces.PageUpdateData:interface'
+package: office!
+fullName: OneNote.Interfaces.PageUpdateData
+summary: 'An interface for updating data on the Page object, for use in `page.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: inkAnalysisOrNull
+    uid: 'office!OneNote.Interfaces.PageUpdateData#inkAnalysisOrNull:member'
+    package: office!
+    fullName: inkAnalysisOrNull
+    summary: Text interpretation for the ink on the page. Returns null if there is no ink analysis information.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisUpdateData;'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkAnalysisUpdateData:interface" />'
+  - name: pageLevel
+    uid: 'office!OneNote.Interfaces.PageUpdateData#pageLevel:member'
+    package: office!
+    fullName: pageLevel
+    summary: Gets or sets the indentation level of the page.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pageLevel?: number;'
+      return:
+        type: number
+  - name: title
+    uid: 'office!OneNote.Interfaces.PageUpdateData#title:member'
+    package: office!
+    fullName: title
+    summary: Gets or sets the title of the page.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string

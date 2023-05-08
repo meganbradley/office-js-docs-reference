@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: Office.InfobarClickedEventArgs
+uid: 'office!Office.InfobarClickedEventArgs:interface'
+package: office!
+fullName: Office.InfobarClickedEventArgs
+summary: Provides basic details about the notification message that raised the `Office.EventType.InfobarClicked` event.
+remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: infobarDetails
+    uid: 'office!Office.InfobarClickedEventArgs#infobarDetails:member'
+    package: office!
+    fullName: infobarDetails
+    summary: Gets additional details about the notification message.
+    remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'infobarDetails: InfobarDetails;'
+      return:
+        type: '<xref uid="office!Office.InfobarDetails:interface" />'
+  - name: type
+    uid: 'office!Office.InfobarClickedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "olkInfobarClicked";'
+      return:
+        type: '"olkInfobarClicked"'

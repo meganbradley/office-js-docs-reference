@@ -1,0 +1,71 @@
+### YamlMime:TSEnum
+name: Excel.ShapeLineDashStyle
+uid: 'office!Excel.ShapeLineDashStyle:enum'
+package: office!
+fullName: Excel.ShapeLineDashStyle
+summary: The dash style for a line.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dash
+    uid: 'office!Excel.ShapeLineDashStyle.dash:member'
+    package: office!
+    summary: ''
+    value: '"Dash"'
+  - name: dashDot
+    uid: 'office!Excel.ShapeLineDashStyle.dashDot:member'
+    package: office!
+    summary: ''
+    value: '"DashDot"'
+  - name: dashDotDot
+    uid: 'office!Excel.ShapeLineDashStyle.dashDotDot:member'
+    package: office!
+    summary: ''
+    value: '"DashDotDot"'
+  - name: longDash
+    uid: 'office!Excel.ShapeLineDashStyle.longDash:member'
+    package: office!
+    summary: ''
+    value: '"LongDash"'
+  - name: longDashDot
+    uid: 'office!Excel.ShapeLineDashStyle.longDashDot:member'
+    package: office!
+    summary: ''
+    value: '"LongDashDot"'
+  - name: longDashDotDot
+    uid: 'office!Excel.ShapeLineDashStyle.longDashDotDot:member'
+    package: office!
+    summary: ''
+    value: '"LongDashDotDot"'
+  - name: roundDot
+    uid: 'office!Excel.ShapeLineDashStyle.roundDot:member'
+    package: office!
+    summary: ''
+    value: '"RoundDot"'
+  - name: solid
+    uid: 'office!Excel.ShapeLineDashStyle.solid:member'
+    package: office!
+    summary: ''
+    value: '"Solid"'
+  - name: squareDot
+    uid: 'office!Excel.ShapeLineDashStyle.squareDot:member'
+    package: office!
+    summary: ''
+    value: '"SquareDot"'
+  - name: systemDash
+    uid: 'office!Excel.ShapeLineDashStyle.systemDash:member'
+    package: office!
+    summary: ''
+    value: '"SystemDash"'
+  - name: systemDashDot
+    uid: 'office!Excel.ShapeLineDashStyle.systemDashDot:member'
+    package: office!
+    summary: ''
+    value: '"SystemDashDot"'
+  - name: systemDot
+    uid: 'office!Excel.ShapeLineDashStyle.systemDot:member'
+    package: office!
+    summary: ''
+    value: '"SystemDot"'

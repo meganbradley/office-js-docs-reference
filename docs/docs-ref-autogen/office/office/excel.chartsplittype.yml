@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Excel.ChartSplitType
+uid: 'office!Excel.ChartSplitType:enum'
+package: office!
+fullName: Excel.ChartSplitType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: splitByCustomSplit
+    uid: 'office!Excel.ChartSplitType.splitByCustomSplit:member'
+    package: office!
+    summary: ''
+    value: '"SplitByCustomSplit"'
+  - name: splitByPercentValue
+    uid: 'office!Excel.ChartSplitType.splitByPercentValue:member'
+    package: office!
+    summary: ''
+    value: '"SplitByPercentValue"'
+  - name: splitByPosition
+    uid: 'office!Excel.ChartSplitType.splitByPosition:member'
+    package: office!
+    summary: ''
+    value: '"SplitByPosition"'
+  - name: splitByValue
+    uid: 'office!Excel.ChartSplitType.splitByValue:member'
+    package: office!
+    summary: ''
+    value: '"SplitByValue"'

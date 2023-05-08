@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ConditionalFormatCollectionData
+uid: 'office!Excel.Interfaces.ConditionalFormatCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.ConditionalFormatCollectionData
+summary: An interface describing the data returned by calling `conditionalFormatCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.ConditionalFormatCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.ConditionalFormatData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ConditionalFormatData:interface" />[]'

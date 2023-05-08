@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+uid: 'office!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+summary: >-
+  An interface for updating data on the ChartErrorBarsFormat object, for use in `chartErrorBarsFormat.set({ ... })`<!--
+  -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: line
+    uid: 'office!Excel.Interfaces.ChartErrorBarsFormatUpdateData#line:member'
+    package: office!
+    fullName: line
+    summary: Represents the chart line formatting.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartLineFormatUpdateData:interface" />'

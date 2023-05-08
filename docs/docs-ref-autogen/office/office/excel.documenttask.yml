@@ -1,0 +1,326 @@
+### YamlMime:TSType
+name: Excel.DocumentTask
+uid: 'office!Excel.DocumentTask:class'
+package: office!
+fullName: Excel.DocumentTask
+summary: Represents a task.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+type: class
+properties:
+  - name: assignees
+    uid: 'office!Excel.DocumentTask#assignees:member'
+    package: office!
+    fullName: assignees
+    summary: Returns a collection of assignees of the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly assignees: Excel.EmailIdentity[];'
+      return:
+        type: '<xref uid="office!Excel.EmailIdentity:interface" />[]'
+  - name: changes
+    uid: 'office!Excel.DocumentTask#changes:member'
+    package: office!
+    fullName: changes
+    summary: Gets the change records of the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly changes: Excel.DocumentTaskChangeCollection;'
+      return:
+        type: '<xref uid="office!Excel.DocumentTaskChangeCollection:class" />'
+  - name: comment
+    uid: 'office!Excel.DocumentTask#comment:member'
+    package: office!
+    fullName: comment
+    summary: Gets the comment associated with the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly comment: Excel.Comment;'
+      return:
+        type: '<xref uid="office!Excel.Comment:class" />'
+  - name: completedBy
+    uid: 'office!Excel.DocumentTask#completedBy:member'
+    package: office!
+    fullName: completedBy
+    summary: Gets the most recent user to have completed the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly completedBy: Excel.EmailIdentity;'
+      return:
+        type: '<xref uid="office!Excel.EmailIdentity:interface" />'
+  - name: completedDateTime
+    uid: 'office!Excel.DocumentTask#completedDateTime:member'
+    package: office!
+    fullName: completedDateTime
+    summary: Gets the date and time that the task was completed. All dates are in UTC.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly completedDateTime: Date;'
+      return:
+        type: Date
+  - name: context
+    uid: 'office!Excel.DocumentTask#context:member'
+    package: office!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="office!Excel.RequestContext:class" />'
+  - name: createdBy
+    uid: 'office!Excel.DocumentTask#createdBy:member'
+    package: office!
+    fullName: createdBy
+    summary: Gets the user who created the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly createdBy: Excel.EmailIdentity;'
+      return:
+        type: '<xref uid="office!Excel.EmailIdentity:interface" />'
+  - name: createdDateTime
+    uid: 'office!Excel.DocumentTask#createdDateTime:member'
+    package: office!
+    fullName: createdDateTime
+    summary: Gets the date and time that the task was created. All dates are in UTC.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly createdDateTime: Date;'
+      return:
+        type: Date
+  - name: id
+    uid: 'office!Excel.DocumentTask#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the ID of the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type: string
+  - name: percentComplete
+    uid: 'office!Excel.DocumentTask#percentComplete:member'
+    package: office!
+    fullName: percentComplete
+    summary: >-
+      Specifies the completion percentage of the task. This is a value between 0 and 100, where 100 represents a
+      completed task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'percentComplete: number;'
+      return:
+        type: number
+  - name: priority
+    uid: 'office!Excel.DocumentTask#priority:member'
+    package: office!
+    fullName: priority
+    summary: 'Specifies the priority of the task. This is a value between 0 and 10, where 0 represents the highest priority.'
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'priority: number;'
+      return:
+        type: number
+  - name: startAndDueDateTime
+    uid: 'office!Excel.DocumentTask#startAndDueDateTime:member'
+    package: office!
+    fullName: startAndDueDateTime
+    summary: Gets or sets the date and time the task should start and is due.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'startAndDueDateTime: Excel.DocumentTaskSchedule;'
+      return:
+        type: '<xref uid="office!Excel.DocumentTaskSchedule:interface" />'
+  - name: title
+    uid: 'office!Excel.DocumentTask#title:member'
+    package: office!
+    fullName: title
+    summary: Specifies title of the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string
+methods:
+  - name: assign(assignee)
+    uid: 'office!Excel.DocumentTask#assign:member(1)'
+    package: office!
+    fullName: assign(assignee)
+    summary: Adds the given user to the list of assignees attached to the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'assign(assignee: Excel.EmailIdentity): void;'
+      parameters:
+        - id: assignee
+          description: The identity of the user to add to the assignee list.
+          type: '<xref uid="office!Excel.EmailIdentity:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'office!Excel.DocumentTask#load:member(1)'
+    package: office!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.DocumentTaskLoadOptions): Excel.DocumentTask;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="office!Excel.Interfaces.DocumentTaskLoadOptions:interface" />'
+      return:
+        type: '<xref uid="office!Excel.DocumentTask:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'office!Excel.DocumentTask#load:member(2)'
+    package: office!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.DocumentTask;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="office!Excel.DocumentTask:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'office!Excel.DocumentTask#load:member(3)'
+    package: office!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.DocumentTask;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="office!Excel.DocumentTask:class" />'
+        description: ''
+  - name: toJSON()
+    uid: 'office!Excel.DocumentTask#toJSON:member(1)'
+    package: office!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.DocumentTask object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.DocumentTaskData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
+    remarks: ''
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.DocumentTaskData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.DocumentTaskData:interface" />'
+        description: ''
+  - name: unassign(assignee)
+    uid: 'office!Excel.DocumentTask#unassign:member(1)'
+    package: office!
+    fullName: unassign(assignee)
+    summary: Removes the given user from the list of assignees attached to the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'unassign(assignee: Excel.EmailIdentity): void;'
+      parameters:
+        - id: assignee
+          description: The identity of the user to remove from the assignee list.
+          type: '<xref uid="office!Excel.EmailIdentity:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: unassignAll()
+    uid: 'office!Excel.DocumentTask#unassignAll:member(1)'
+    package: office!
+    fullName: unassignAll()
+    summary: Removes all users from the list of assignees attached to the task.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'unassignAll(): void;'
+      return:
+        type: void
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

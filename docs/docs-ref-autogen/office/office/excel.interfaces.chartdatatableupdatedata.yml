@@ -1,0 +1,90 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartDataTableUpdateData
+uid: 'office!Excel.Interfaces.ChartDataTableUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartDataTableUpdateData
+summary: 'An interface for updating data on the ChartDataTable object, for use in `chartDataTable.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'office!Excel.Interfaces.ChartDataTableUpdateData#format:member'
+    package: office!
+    fullName: format
+    summary: 'Represents the format of a chart data table, which includes fill, font, and border format.'
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartDataTableFormatUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartDataTableFormatUpdateData:interface" />'
+  - name: showHorizontalBorder
+    uid: 'office!Excel.Interfaces.ChartDataTableUpdateData#showHorizontalBorder:member'
+    package: office!
+    fullName: showHorizontalBorder
+    summary: Specifies whether to display the horizontal border of the data table.
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showHorizontalBorder?: boolean;'
+      return:
+        type: boolean
+  - name: showLegendKey
+    uid: 'office!Excel.Interfaces.ChartDataTableUpdateData#showLegendKey:member'
+    package: office!
+    fullName: showLegendKey
+    summary: Specifies whether to show the legend key of the data table.
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showLegendKey?: boolean;'
+      return:
+        type: boolean
+  - name: showOutlineBorder
+    uid: 'office!Excel.Interfaces.ChartDataTableUpdateData#showOutlineBorder:member'
+    package: office!
+    fullName: showOutlineBorder
+    summary: Specifies whether to display the outline border of the data table.
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showOutlineBorder?: boolean;'
+      return:
+        type: boolean
+  - name: showVerticalBorder
+    uid: 'office!Excel.Interfaces.ChartDataTableUpdateData#showVerticalBorder:member'
+    package: office!
+    fullName: showVerticalBorder
+    summary: Specifies whether to display the vertical border of the data table.
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showVerticalBorder?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: 'office!Excel.Interfaces.ChartDataTableUpdateData#visible:member'
+    package: office!
+    fullName: visible
+    summary: Specifies whether to show the data table of the chart.
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean

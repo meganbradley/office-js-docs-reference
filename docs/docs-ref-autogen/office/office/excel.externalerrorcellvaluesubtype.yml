@@ -1,0 +1,16 @@
+### YamlMime:TSEnum
+name: Excel.ExternalErrorCellValueSubType
+uid: 'office!Excel.ExternalErrorCellValueSubType:enum'
+package: office!
+fullName: Excel.ExternalErrorCellValueSubType
+summary: 'Represents types of \#EXTERNAL! errors.'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: unknown
+    uid: 'office!Excel.ExternalErrorCellValueSubType.unknown:member'
+    package: office!
+    summary: 'An unknown type of error. Displays as error type \#EXTERNAL! in Excel.'
+    value: '"Unknown"'

@@ -1,0 +1,61 @@
+### YamlMime:TSEnum
+name: Word.OutlineLevel
+uid: 'office!Word.OutlineLevel:enum'
+package: office!
+fullName: Word.OutlineLevel
+summary: Represents the outline levels.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+fields:
+  - name: outlineLevel1
+    uid: 'office!Word.OutlineLevel.outlineLevel1:member'
+    package: office!
+    summary: Represents outline level 1.
+    value: '"OutlineLevel1"'
+  - name: outlineLevel2
+    uid: 'office!Word.OutlineLevel.outlineLevel2:member'
+    package: office!
+    summary: Represents outline level 2.
+    value: '"OutlineLevel2"'
+  - name: outlineLevel3
+    uid: 'office!Word.OutlineLevel.outlineLevel3:member'
+    package: office!
+    summary: Represents outline level 3.
+    value: '"OutlineLevel3"'
+  - name: outlineLevel4
+    uid: 'office!Word.OutlineLevel.outlineLevel4:member'
+    package: office!
+    summary: Represents outline level 4.
+    value: '"OutlineLevel4"'
+  - name: outlineLevel5
+    uid: 'office!Word.OutlineLevel.outlineLevel5:member'
+    package: office!
+    summary: Represents outline level 5.
+    value: '"OutlineLevel5"'
+  - name: outlineLevel6
+    uid: 'office!Word.OutlineLevel.outlineLevel6:member'
+    package: office!
+    summary: Represents outline level 6.
+    value: '"OutlineLevel6"'
+  - name: outlineLevel7
+    uid: 'office!Word.OutlineLevel.outlineLevel7:member'
+    package: office!
+    summary: Represents outline level 7.
+    value: '"OutlineLevel7"'
+  - name: outlineLevel8
+    uid: 'office!Word.OutlineLevel.outlineLevel8:member'
+    package: office!
+    summary: Represents outline level 8.
+    value: '"OutlineLevel8"'
+  - name: outlineLevel9
+    uid: 'office!Word.OutlineLevel.outlineLevel9:member'
+    package: office!
+    summary: Represents outline level 9.
+    value: '"OutlineLevel9"'
+  - name: outlineLevelBodyText
+    uid: 'office!Word.OutlineLevel.outlineLevelBodyText:member'
+    package: office!
+    summary: 'Represents outline level body text, not an outline level.'
+    value: '"OutlineLevelBodyText"'

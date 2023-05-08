@@ -1,0 +1,206 @@
+### YamlMime:TSType
+name: Excel.Interfaces.TextFrameLoadOptions
+uid: 'office!Excel.Interfaces.TextFrameLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.TextFrameLoadOptions
+summary: Represents the text frame of a shape object.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: autoSizeSetting
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#autoSizeSetting:member'
+    package: office!
+    fullName: autoSizeSetting
+    summary: >-
+      The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the
+      text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoSizeSetting?: boolean;'
+      return:
+        type: boolean
+  - name: bottomMargin
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#bottomMargin:member'
+    package: office!
+    fullName: bottomMargin
+    summary: 'Represents the bottom margin, in points, of the text frame.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottomMargin?: boolean;'
+      return:
+        type: boolean
+  - name: hasText
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#hasText:member'
+    package: office!
+    fullName: hasText
+    summary: Specifies if the text frame contains text.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasText?: boolean;'
+      return:
+        type: boolean
+  - name: horizontalAlignment
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#horizontalAlignment:member'
+    package: office!
+    fullName: horizontalAlignment
+    summary: Represents the horizontal alignment of the text frame. See `Excel.ShapeTextHorizontalAlignment` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'horizontalAlignment?: boolean;'
+      return:
+        type: boolean
+  - name: horizontalOverflow
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#horizontalOverflow:member'
+    package: office!
+    fullName: horizontalOverflow
+    summary: >-
+      Represents the horizontal overflow behavior of the text frame. See `Excel.ShapeTextHorizontalOverflow` for
+      details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'horizontalOverflow?: boolean;'
+      return:
+        type: boolean
+  - name: leftMargin
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#leftMargin:member'
+    package: office!
+    fullName: leftMargin
+    summary: 'Represents the left margin, in points, of the text frame.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftMargin?: boolean;'
+      return:
+        type: boolean
+  - name: orientation
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#orientation:member'
+    package: office!
+    fullName: orientation
+    summary: >-
+      Represents the angle to which the text is oriented for the text frame. See `Excel.ShapeTextOrientation` for
+      details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'orientation?: boolean;'
+      return:
+        type: boolean
+  - name: readingOrder
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#readingOrder:member'
+    package: office!
+    fullName: readingOrder
+    summary: >-
+      Represents the reading order of the text frame, either left-to-right or right-to-left. See
+      `Excel.ShapeTextReadingOrder` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readingOrder?: boolean;'
+      return:
+        type: boolean
+  - name: rightMargin
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#rightMargin:member'
+    package: office!
+    fullName: rightMargin
+    summary: 'Represents the right margin, in points, of the text frame.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightMargin?: boolean;'
+      return:
+        type: boolean
+  - name: textRange
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#textRange:member'
+    package: office!
+    fullName: textRange
+    summary: >-
+      Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the
+      text. See `Excel.TextRange` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textRange?: Excel.Interfaces.TextRangeLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.TextRangeLoadOptions:interface" />'
+  - name: topMargin
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#topMargin:member'
+    package: office!
+    fullName: topMargin
+    summary: 'Represents the top margin, in points, of the text frame.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topMargin?: boolean;'
+      return:
+        type: boolean
+  - name: verticalAlignment
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#verticalAlignment:member'
+    package: office!
+    fullName: verticalAlignment
+    summary: Represents the vertical alignment of the text frame. See `Excel.ShapeTextVerticalAlignment` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalAlignment?: boolean;'
+      return:
+        type: boolean
+  - name: verticalOverflow
+    uid: 'office!Excel.Interfaces.TextFrameLoadOptions#verticalOverflow:member'
+    package: office!
+    fullName: verticalOverflow
+    summary: Represents the vertical overflow behavior of the text frame. See `Excel.ShapeTextVerticalOverflow` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalOverflow?: boolean;'
+      return:
+        type: boolean

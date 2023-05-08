@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: OneNote.ParagraphType
+uid: 'office!OneNote.ParagraphType:enum'
+package: office!
+fullName: OneNote.ParagraphType
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: image
+    uid: 'office!OneNote.ParagraphType.image:member'
+    package: office!
+    summary: ''
+    value: '"Image"'
+  - name: ink
+    uid: 'office!OneNote.ParagraphType.ink:member'
+    package: office!
+    summary: ''
+    value: '"Ink"'
+  - name: other
+    uid: 'office!OneNote.ParagraphType.other:member'
+    package: office!
+    summary: ''
+    value: '"Other"'
+  - name: richText
+    uid: 'office!OneNote.ParagraphType.richText:member'
+    package: office!
+    summary: ''
+    value: '"RichText"'
+  - name: table
+    uid: 'office!OneNote.ParagraphType.table:member'
+    package: office!
+    summary: ''
+    value: '"Table"'

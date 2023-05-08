@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.SortMethod
+uid: 'office!Excel.SortMethod:enum'
+package: office!
+fullName: Excel.SortMethod
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: pinYin
+    uid: 'office!Excel.SortMethod.pinYin:member'
+    package: office!
+    summary: ''
+    value: '"PinYin"'
+  - name: strokeCount
+    uid: 'office!Excel.SortMethod.strokeCount:member'
+    package: office!
+    summary: ''
+    value: '"StrokeCount"'

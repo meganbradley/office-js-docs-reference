@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: Visio.TaskPaneStateChangedEventArgs
+uid: 'office!Visio.TaskPaneStateChangedEventArgs:interface'
+package: office!
+fullName: Visio.TaskPaneStateChangedEventArgs
+summary: |-
+  Provides information about the TaskPaneStateChanged event.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: isVisible
+    uid: 'office!Visio.TaskPaneStateChangedEventArgs#isVisible:member'
+    package: office!
+    fullName: isVisible
+    summary: |-
+      Current state of the taskpane
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isVisible: boolean;'
+      return:
+        type: boolean
+  - name: paneType
+    uid: 'office!Visio.TaskPaneStateChangedEventArgs#paneType:member'
+    package: office!
+    fullName: paneType
+    summary: |-
+      Type of the TaskPane.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'paneType: Visio.TaskPaneType | "None" | "DataVisualizerProcessMappings" | "DataVisualizerOrgChartMappings";'
+      return:
+        type: >-
+          <xref uid="office!Visio.TaskPaneType:enum" /> | "None" | "DataVisualizerProcessMappings" |
+          "DataVisualizerOrgChartMappings"

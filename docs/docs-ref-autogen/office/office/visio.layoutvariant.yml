@@ -1,0 +1,64 @@
+### YamlMime:TSEnum
+name: Visio.LayoutVariant
+uid: 'office!Visio.LayoutVariant:enum'
+package: office!
+fullName: Visio.LayoutVariant
+summary: |-
+  Represents the type of layout.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: flowchart_BottomToTop
+    uid: 'office!Visio.LayoutVariant.flowchart_BottomToTop:member'
+    package: office!
+    summary: Use Flowchart with BottomToTop orientation
+    value: '"Flowchart_BottomToTop"'
+  - name: flowchart_LeftToRight
+    uid: 'office!Visio.LayoutVariant.flowchart_LeftToRight:member'
+    package: office!
+    summary: Use Flowchart with LeftToRight orientation
+    value: '"Flowchart_LeftToRight"'
+  - name: flowchart_RightToLeft
+    uid: 'office!Visio.LayoutVariant.flowchart_RightToLeft:member'
+    package: office!
+    summary: Use Flowchart with RightToLeft orientation
+    value: '"Flowchart_RightToLeft"'
+  - name: flowchart_TopToBottom
+    uid: 'office!Visio.LayoutVariant.flowchart_TopToBottom:member'
+    package: office!
+    summary: Use Flowchart with TopToBottom orientation
+    value: '"Flowchart_TopToBottom"'
+  - name: pageDefault
+    uid: 'office!Visio.LayoutVariant.pageDefault:member'
+    package: office!
+    summary: Use the Page default layout
+    value: '"PageDefault"'
+  - name: unknown
+    uid: 'office!Visio.LayoutVariant.unknown:member'
+    package: office!
+    summary: Invalid layout
+    value: '"Unknown"'
+  - name: wideTree_DownThenLeft
+    uid: 'office!Visio.LayoutVariant.wideTree_DownThenLeft:member'
+    package: office!
+    summary: Use WideTree with DownThenLeft orientation
+    value: '"WideTree_DownThenLeft"'
+  - name: wideTree_DownThenRight
+    uid: 'office!Visio.LayoutVariant.wideTree_DownThenRight:member'
+    package: office!
+    summary: Use WideTree with DownThenRight orientation
+    value: '"WideTree_DownThenRight"'
+  - name: wideTree_LeftThenDown
+    uid: 'office!Visio.LayoutVariant.wideTree_LeftThenDown:member'
+    package: office!
+    summary: Use WideTree with LeftThenDown orientation
+    value: '"WideTree_LeftThenDown"'
+  - name: wideTree_RightThenDown
+    uid: 'office!Visio.LayoutVariant.wideTree_RightThenDown:member'
+    package: office!
+    summary: Use WideTree with RightThenDown orientation
+    value: '"WideTree_RightThenDown"'

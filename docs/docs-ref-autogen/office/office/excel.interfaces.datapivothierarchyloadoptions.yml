@@ -1,0 +1,118 @@
+### YamlMime:TSType
+name: Excel.Interfaces.DataPivotHierarchyLoadOptions
+uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.DataPivotHierarchyLoadOptions
+summary: Represents the Excel DataPivotHierarchy.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: field
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions#field:member'
+    package: office!
+    fullName: field
+    summary: Returns the PivotFields associated with the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'field?: Excel.Interfaces.PivotFieldLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.PivotFieldLoadOptions:interface" />'
+  - name: id
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: ID of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: Name of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: numberFormat
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions#numberFormat:member'
+    package: office!
+    fullName: numberFormat
+    summary: Number format of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberFormat?: boolean;'
+      return:
+        type: boolean
+  - name: position
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions#position:member'
+    package: office!
+    fullName: position
+    summary: Position of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type: boolean
+  - name: showAs
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions#showAs:member'
+    package: office!
+    fullName: showAs
+    summary: Specifies if the data should be shown as a specific summary calculation.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAs?: boolean;'
+      return:
+        type: boolean
+  - name: summarizeBy
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyLoadOptions#summarizeBy:member'
+    package: office!
+    fullName: summarizeBy
+    summary: Specifies if all items of the DataPivotHierarchy are shown.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'summarizeBy?: boolean;'
+      return:
+        type: boolean

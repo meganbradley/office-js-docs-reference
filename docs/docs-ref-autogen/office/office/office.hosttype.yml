@@ -13,6 +13,7 @@ remarks: |-
   const contextInfo = Office.context.diagnostics;
   console.log("Office application: " + contextInfo.host);
   ```
+example: []
 isPreview: false
 isDeprecated: false
 fields:

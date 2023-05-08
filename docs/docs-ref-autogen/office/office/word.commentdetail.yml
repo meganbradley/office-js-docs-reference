@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: Word.CommentDetail
+uid: 'office!Word.CommentDetail:interface'
+package: office!
+fullName: Word.CommentDetail
+summary: A structure for the ID and reply IDs of this comment.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: 'office!Word.CommentDetail#id:member'
+    package: office!
+    fullName: id
+    summary: Represents the ID of this comment.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id: string;'
+      return:
+        type: string
+  - name: replyIds
+    uid: 'office!Word.CommentDetail#replyIds:member'
+    package: office!
+    fullName: replyIds
+    summary: Represents the IDs of the replies to this comment.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'replyIds: string[];'
+      return:
+        type: 'string[]'

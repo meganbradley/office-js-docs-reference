@@ -1,0 +1,28 @@
+### YamlMime:TSEnum
+name: Excel.TopBottomSelectionType
+uid: 'office!Excel.TopBottomSelectionType:enum'
+package: office!
+fullName: Excel.TopBottomSelectionType
+summary: >-
+  A simple enum for top/bottom filters to select whether to filter by the top N or bottom N percent, number, or sum of
+  values.
+remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: items
+    uid: 'office!Excel.TopBottomSelectionType.items:member'
+    package: office!
+    summary: Filter the top/bottom N number of items as measured by the chosen value.
+    value: '"Items"'
+  - name: percent
+    uid: 'office!Excel.TopBottomSelectionType.percent:member'
+    package: office!
+    summary: Filter the top/bottom N percent of items as measured by the chosen value.
+    value: '"Percent"'
+  - name: sum
+    uid: 'office!Excel.TopBottomSelectionType.sum:member'
+    package: office!
+    summary: Filter the top/bottom N sum as measured by the chosen value.
+    value: '"Sum"'

@@ -1,0 +1,106 @@
+### YamlMime:TSEnum
+name: Excel.CellValueType
+uid: 'office!Excel.CellValueType:enum'
+package: office!
+fullName: Excel.CellValueType
+summary: Represents the types of the `CellValue` object.
+remarks: >-
+  \[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/20-data-types/data-types-error-values.yaml
+
+  // This function sets the value of cell A1 to a #BUSY! error using data types.
+
+  await Excel.run(async (context) => {
+    // Retrieve the Sample worksheet and cell A1 on that sheet.
+    const sheet = context.workbook.worksheets.getItemOrNullObject("Sample");
+    const range = sheet.getRange("A1");
+
+    // Get the error data type and set its type to `busy`. 
+    const error: Excel.ErrorCellValue = {
+      type: Excel.CellValueType.error,
+      errorType: Excel.ErrorCellValueType.busy
+    };
+
+    // Set cell A1 as the busy error.
+    range.valuesAsJson = [[error]];
+    await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: array
+    uid: 'office!Excel.CellValueType.array:member'
+    package: office!
+    summary: Represents an `ArrayCellValue`<!-- -->.
+    value: '"Array"'
+  - name: boolean
+    uid: 'office!Excel.CellValueType.boolean:member'
+    package: office!
+    summary: Represents a `BooleanCellValue`<!-- -->.
+    value: '"Boolean"'
+  - name: double
+    uid: 'office!Excel.CellValueType.double:member'
+    package: office!
+    summary: Represents a `DoubleCellValue`<!-- -->.
+    value: '"Double"'
+  - name: empty
+    uid: 'office!Excel.CellValueType.empty:member'
+    package: office!
+    summary: Represents an `EmptyCellValue`<!-- -->.
+    value: '"Empty"'
+  - name: entity
+    uid: 'office!Excel.CellValueType.entity:member'
+    package: office!
+    summary: Represents an `EntityCellValue`<!-- -->.
+    value: '"Entity"'
+  - name: error
+    uid: 'office!Excel.CellValueType.error:member'
+    package: office!
+    summary: Represents an `ErrorCellValue`<!-- -->.
+    value: '"Error"'
+  - name: formattedNumber
+    uid: 'office!Excel.CellValueType.formattedNumber:member'
+    package: office!
+    summary: Represents a `FormattedNumberCellValue`<!-- -->.
+    value: '"FormattedNumber"'
+  - name: linkedEntity
+    uid: 'office!Excel.CellValueType.linkedEntity:member'
+    package: office!
+    summary: Represents a `LinkedEntityCellValue`<!-- -->.
+    value: '"LinkedEntity"'
+  - name: localImage
+    uid: 'office!Excel.CellValueType.localImage:member'
+    package: office!
+    summary: Represents a `LocalImageCellValue`<!-- -->.
+    value: '"LocalImage"'
+  - name: notAvailable
+    uid: 'office!Excel.CellValueType.notAvailable:member'
+    package: office!
+    summary: Represents a `ValueTypeNotAvailableCellValue`<!-- -->.
+    value: '"NotAvailable"'
+  - name: reference
+    uid: 'office!Excel.CellValueType.reference:member'
+    package: office!
+    summary: Represents a `ReferenceCellValue`<!-- -->.
+    value: '"Reference"'
+  - name: string
+    uid: 'office!Excel.CellValueType.string:member'
+    package: office!
+    summary: Represents a `StringCellValue`<!-- -->.
+    value: '"String"'
+  - name: webImage
+    uid: 'office!Excel.CellValueType.webImage:member'
+    package: office!
+    summary: Represents a `WebImageCellValue`<!-- -->.
+    value: '"WebImage"'

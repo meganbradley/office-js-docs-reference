@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.BusyErrorCellValueSubType
+uid: 'office!Excel.BusyErrorCellValueSubType:enum'
+package: office!
+fullName: Excel.BusyErrorCellValueSubType
+summary: 'Represents types of \#BUSY! errors.'
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: externalLinksGeneric
+    uid: 'office!Excel.BusyErrorCellValueSubType.externalLinksGeneric:member'
+    package: office!
+    summary: 'An error caused by external links. Displays as error type \#BUSY! in Excel.'
+    value: '"ExternalLinksGeneric"'
+  - name: loadingImage
+    uid: 'office!Excel.BusyErrorCellValueSubType.loadingImage:member'
+    package: office!
+    summary: 'An error that displays while an image is loading. Displays as error type \#BUSY! in Excel.'
+    value: '"LoadingImage"'
+  - name: unknown
+    uid: 'office!Excel.BusyErrorCellValueSubType.unknown:member'
+    package: office!
+    summary: 'An unknown type of error. Displays as error type \#BUSY! in Excel.'
+    value: '"Unknown"'

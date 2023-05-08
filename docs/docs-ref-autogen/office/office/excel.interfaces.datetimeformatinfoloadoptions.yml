@@ -1,0 +1,92 @@
+### YamlMime:TSType
+name: Excel.Interfaces.DatetimeFormatInfoLoadOptions
+uid: 'office!Excel.Interfaces.DatetimeFormatInfoLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.DatetimeFormatInfoLoadOptions
+summary: Defines the culturally appropriate format of displaying numbers. This is based on current system culture settings.
+remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: dateSeparator
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoLoadOptions#dateSeparator:member'
+    package: office!
+    fullName: dateSeparator
+    summary: Gets the string used as the date separator. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateSeparator?: boolean;'
+      return:
+        type: boolean
+  - name: longDatePattern
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longDatePattern:member'
+    package: office!
+    fullName: longDatePattern
+    summary: Gets the format string for a long date value. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longDatePattern?: boolean;'
+      return:
+        type: boolean
+  - name: longTimePattern
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoLoadOptions#longTimePattern:member'
+    package: office!
+    fullName: longTimePattern
+    summary: Gets the format string for a long time value. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longTimePattern?: boolean;'
+      return:
+        type: boolean
+  - name: shortDatePattern
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoLoadOptions#shortDatePattern:member'
+    package: office!
+    fullName: shortDatePattern
+    summary: Gets the format string for a short date value. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shortDatePattern?: boolean;'
+      return:
+        type: boolean
+  - name: timeSeparator
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoLoadOptions#timeSeparator:member'
+    package: office!
+    fullName: timeSeparator
+    summary: Gets the string used as the time separator. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeSeparator?: boolean;'
+      return:
+        type: boolean

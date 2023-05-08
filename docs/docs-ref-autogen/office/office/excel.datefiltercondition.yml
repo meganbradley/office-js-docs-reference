@@ -1,0 +1,270 @@
+### YamlMime:TSEnum
+name: Excel.DateFilterCondition
+uid: 'office!Excel.DateFilterCondition:enum'
+package: office!
+fullName: Excel.DateFilterCondition
+summary: >-
+  Enum representing all accepted conditions by which a date filter can be applied. Used to configure the type of
+  PivotFilter that is applied to the field.
+remarks: >-
+  \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-pivotfilters.yaml
+
+  await Excel.run(async (context) => {
+    // Add a date-based PivotFilter.
+
+    // Get the PivotTable.
+    const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+
+    // PivotFilters can only be applied to PivotHierarchies that are being used for pivoting.
+    // If it's not already there, add "Date Updated" to the hierarchies.
+    let dateHierarchy = pivotTable.rowHierarchies.getItemOrNullObject("Date Updated");
+    await context.sync();
+    if (dateHierarchy.isNullObject) {
+      dateHierarchy = pivotTable.rowHierarchies.add(pivotTable.hierarchies.getItem("Date Updated"));
+    }
+
+    // Apply a date filter to filter out anything logged before August.
+    const filterField = dateHierarchy.fields.getItem("Date Updated");
+    const dateFilter = {
+      condition: Excel.DateFilterCondition.afterOrEqualTo,
+      comparator: {
+        date: "2020-08-01",
+        specificity: Excel.FilterDatetimeSpecificity.month
+      }
+    };
+    filterField.applyFilter({ dateFilter: dateFilter });
+
+    await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: after
+    uid: 'office!Excel.DateFilterCondition.after:member'
+    package: office!
+    summary: |-
+      Date is after comparator date.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    value: '"After"'
+  - name: afterOrEqualTo
+    uid: 'office!Excel.DateFilterCondition.afterOrEqualTo:member'
+    package: office!
+    summary: |-
+      Date is after or equal to comparator date.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    value: '"AfterOrEqualTo"'
+  - name: allDatesInPeriodApril
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodApril:member'
+    package: office!
+    summary: Date is in April.
+    value: '"AllDatesInPeriodApril"'
+  - name: allDatesInPeriodAugust
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodAugust:member'
+    package: office!
+    summary: Date is in August.
+    value: '"AllDatesInPeriodAugust"'
+  - name: allDatesInPeriodDecember
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodDecember:member'
+    package: office!
+    summary: Date is in December.
+    value: '"AllDatesInPeriodDecember"'
+  - name: allDatesInPeriodFebruary
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodFebruary:member'
+    package: office!
+    summary: Date is in February.
+    value: '"AllDatesInPeriodFebruary"'
+  - name: allDatesInPeriodJanuary
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodJanuary:member'
+    package: office!
+    summary: Date is in January.
+    value: '"AllDatesInPeriodJanuary"'
+  - name: allDatesInPeriodJuly
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodJuly:member'
+    package: office!
+    summary: Date is in July.
+    value: '"AllDatesInPeriodJuly"'
+  - name: allDatesInPeriodJune
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodJune:member'
+    package: office!
+    summary: Date is in June.
+    value: '"AllDatesInPeriodJune"'
+  - name: allDatesInPeriodMarch
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodMarch:member'
+    package: office!
+    summary: Date is in March.
+    value: '"AllDatesInPeriodMarch"'
+  - name: allDatesInPeriodMay
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodMay:member'
+    package: office!
+    summary: Date is in May.
+    value: '"AllDatesInPeriodMay"'
+  - name: allDatesInPeriodNovember
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodNovember:member'
+    package: office!
+    summary: Date is in November.
+    value: '"AllDatesInPeriodNovember"'
+  - name: allDatesInPeriodOctober
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodOctober:member'
+    package: office!
+    summary: Date is in October.
+    value: '"AllDatesInPeriodOctober"'
+  - name: allDatesInPeriodQuarter1
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodQuarter1:member'
+    package: office!
+    summary: Date is in Quarter 1.
+    value: '"AllDatesInPeriodQuarter1"'
+  - name: allDatesInPeriodQuarter2
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodQuarter2:member'
+    package: office!
+    summary: Date is in Quarter 2.
+    value: '"AllDatesInPeriodQuarter2"'
+  - name: allDatesInPeriodQuarter3
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodQuarter3:member'
+    package: office!
+    summary: Date is in Quarter 3.
+    value: '"AllDatesInPeriodQuarter3"'
+  - name: allDatesInPeriodQuarter4
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodQuarter4:member'
+    package: office!
+    summary: Date is in Quarter 4.
+    value: '"AllDatesInPeriodQuarter4"'
+  - name: allDatesInPeriodSeptember
+    uid: 'office!Excel.DateFilterCondition.allDatesInPeriodSeptember:member'
+    package: office!
+    summary: Date is in September.
+    value: '"AllDatesInPeriodSeptember"'
+  - name: before
+    uid: 'office!Excel.DateFilterCondition.before:member'
+    package: office!
+    summary: |-
+      Date is before comparator date.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    value: '"Before"'
+  - name: beforeOrEqualTo
+    uid: 'office!Excel.DateFilterCondition.beforeOrEqualTo:member'
+    package: office!
+    summary: |-
+      Date is before or equal to comparator date.
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->}<!-- -->.
+    value: '"BeforeOrEqualTo"'
+  - name: between
+    uid: 'office!Excel.DateFilterCondition.between:member'
+    package: office!
+    summary: >-
+      Between `lowerBound` and `upperBound` dates.
+
+
+      Required Criteria: {`lowerBound`<!-- -->, `upperBound`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->,
+      `exclusive`<!-- -->}<!-- -->.
+    value: '"Between"'
+  - name: equals
+    uid: 'office!Excel.DateFilterCondition.equals:member'
+    package: office!
+    summary: >-
+      Equals comparator criterion.
+
+
+      Required Criteria: {`comparator`<!-- -->}<!-- -->. Optional Criteria: {`wholeDays`<!-- -->, `exclusive`<!--
+      -->}<!-- -->.
+    value: '"Equals"'
+  - name: lastMonth
+    uid: 'office!Excel.DateFilterCondition.lastMonth:member'
+    package: office!
+    summary: Date is last month.
+    value: '"LastMonth"'
+  - name: lastQuarter
+    uid: 'office!Excel.DateFilterCondition.lastQuarter:member'
+    package: office!
+    summary: Date is last quarter.
+    value: '"LastQuarter"'
+  - name: lastWeek
+    uid: 'office!Excel.DateFilterCondition.lastWeek:member'
+    package: office!
+    summary: Date is last week.
+    value: '"LastWeek"'
+  - name: lastYear
+    uid: 'office!Excel.DateFilterCondition.lastYear:member'
+    package: office!
+    summary: Date is last year.
+    value: '"LastYear"'
+  - name: nextMonth
+    uid: 'office!Excel.DateFilterCondition.nextMonth:member'
+    package: office!
+    summary: Date is next month.
+    value: '"NextMonth"'
+  - name: nextQuarter
+    uid: 'office!Excel.DateFilterCondition.nextQuarter:member'
+    package: office!
+    summary: Date is next quarter.
+    value: '"NextQuarter"'
+  - name: nextWeek
+    uid: 'office!Excel.DateFilterCondition.nextWeek:member'
+    package: office!
+    summary: Date is next week.
+    value: '"NextWeek"'
+  - name: nextYear
+    uid: 'office!Excel.DateFilterCondition.nextYear:member'
+    package: office!
+    summary: Date is next year.
+    value: '"NextYear"'
+  - name: thisMonth
+    uid: 'office!Excel.DateFilterCondition.thisMonth:member'
+    package: office!
+    summary: Date is this month.
+    value: '"ThisMonth"'
+  - name: thisQuarter
+    uid: 'office!Excel.DateFilterCondition.thisQuarter:member'
+    package: office!
+    summary: Date is this quarter.
+    value: '"ThisQuarter"'
+  - name: thisWeek
+    uid: 'office!Excel.DateFilterCondition.thisWeek:member'
+    package: office!
+    summary: Date is this week.
+    value: '"ThisWeek"'
+  - name: thisYear
+    uid: 'office!Excel.DateFilterCondition.thisYear:member'
+    package: office!
+    summary: Date is this year.
+    value: '"ThisYear"'
+  - name: today
+    uid: 'office!Excel.DateFilterCondition.today:member'
+    package: office!
+    summary: Date is today.
+    value: '"Today"'
+  - name: tomorrow
+    uid: 'office!Excel.DateFilterCondition.tomorrow:member'
+    package: office!
+    summary: Date is tomorrow.
+    value: '"Tomorrow"'
+  - name: unknown
+    uid: 'office!Excel.DateFilterCondition.unknown:member'
+    package: office!
+    summary: '`DateFilterCondition` is unknown or unsupported.'
+    value: '"Unknown"'
+  - name: yearToDate
+    uid: 'office!Excel.DateFilterCondition.yearToDate:member'
+    package: office!
+    summary: Date is in the same year to date.
+    value: '"YearToDate"'
+  - name: yesterday
+    uid: 'office!Excel.DateFilterCondition.yesterday:member'
+    package: office!
+    summary: Date is yesterday.
+    value: '"Yesterday"'

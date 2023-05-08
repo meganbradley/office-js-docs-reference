@@ -1,0 +1,51 @@
+### YamlMime:TSEnum
+name: Excel.DataChangeType
+uid: 'office!Excel.DataChangeType:enum'
+package: office!
+fullName: Excel.DataChangeType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: cellDeleted
+    uid: 'office!Excel.DataChangeType.cellDeleted:member'
+    package: office!
+    summary: '`CellDeleted` indicates that the data change event is triggered by deleting cells.'
+    value: '"CellDeleted"'
+  - name: cellInserted
+    uid: 'office!Excel.DataChangeType.cellInserted:member'
+    package: office!
+    summary: '`CellInserted` indicates that the data change event is triggered by inserting new cells.'
+    value: '"CellInserted"'
+  - name: columnDeleted
+    uid: 'office!Excel.DataChangeType.columnDeleted:member'
+    package: office!
+    summary: '`ColumnDeleted` indicates that the data change event is triggered by deleting columns.'
+    value: '"ColumnDeleted"'
+  - name: columnInserted
+    uid: 'office!Excel.DataChangeType.columnInserted:member'
+    package: office!
+    summary: '`ColumnInserted` indicates that the data change event is triggered by inserting new columns.'
+    value: '"ColumnInserted"'
+  - name: rangeEdited
+    uid: 'office!Excel.DataChangeType.rangeEdited:member'
+    package: office!
+    summary: '`RangeEdited` indicates that the data change event is triggered by a range being edited.'
+    value: '"RangeEdited"'
+  - name: rowDeleted
+    uid: 'office!Excel.DataChangeType.rowDeleted:member'
+    package: office!
+    summary: '`RowDeleted` indicates that the data change event is triggered by deleting rows.'
+    value: '"RowDeleted"'
+  - name: rowInserted
+    uid: 'office!Excel.DataChangeType.rowInserted:member'
+    package: office!
+    summary: '`RowInserted` indicates that the data change event is triggered by inserting new rows.'
+    value: '"RowInserted"'
+  - name: unknown
+    uid: 'office!Excel.DataChangeType.unknown:member'
+    package: office!
+    summary: '`Unknown` indicates that the type of data change is not one of the listed types.'
+    value: '"Unknown"'

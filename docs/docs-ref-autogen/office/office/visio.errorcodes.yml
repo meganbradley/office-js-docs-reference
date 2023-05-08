@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Visio.ErrorCodes
+uid: 'office!Visio.ErrorCodes:enum'
+package: office!
+fullName: Visio.ErrorCodes
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accessDenied
+    uid: 'office!Visio.ErrorCodes.accessDenied:member'
+    package: office!
+    summary: ''
+    value: '"AccessDenied"'
+  - name: generalException
+    uid: 'office!Visio.ErrorCodes.generalException:member'
+    package: office!
+    summary: ''
+    value: '"GeneralException"'
+  - name: invalidArgument
+    uid: 'office!Visio.ErrorCodes.invalidArgument:member'
+    package: office!
+    summary: ''
+    value: '"InvalidArgument"'
+  - name: itemNotFound
+    uid: 'office!Visio.ErrorCodes.itemNotFound:member'
+    package: office!
+    summary: ''
+    value: '"ItemNotFound"'
+  - name: notImplemented
+    uid: 'office!Visio.ErrorCodes.notImplemented:member'
+    package: office!
+    summary: ''
+    value: '"NotImplemented"'
+  - name: unsupportedOperation
+    uid: 'office!Visio.ErrorCodes.unsupportedOperation:member'
+    package: office!
+    summary: ''
+    value: '"UnsupportedOperation"'

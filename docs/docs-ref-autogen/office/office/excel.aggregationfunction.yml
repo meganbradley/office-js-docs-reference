@@ -1,0 +1,100 @@
+### YamlMime:TSEnum
+name: Excel.AggregationFunction
+uid: 'office!Excel.AggregationFunction:enum'
+package: office!
+fullName: Excel.AggregationFunction
+summary: Aggregation function for the `DataPivotHierarchy`<!-- -->.
+remarks: >-
+  \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-filters-and-summaries.yaml
+
+  async function genericFunctionSwitch(functionType: Excel.AggregationFunction) {
+      await Excel.run(async (context) => {
+          const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+          pivotTable.dataHierarchies.load("no-properties-needed");
+          await context.sync();
+
+          pivotTable.dataHierarchies.items[0].summarizeBy = functionType;
+          pivotTable.dataHierarchies.items[1].summarizeBy = functionType;
+          await context.sync();
+      });
+  }
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.AggregationFunction.automatic:member'
+    package: office!
+    summary: Excel will automatically select the aggregation based on the data items.
+    value: '"Automatic"'
+  - name: average
+    uid: 'office!Excel.AggregationFunction.average:member'
+    package: office!
+    summary: 'Aggregate using the average of the data, equivalent to the AVERAGE function.'
+    value: '"Average"'
+  - name: count
+    uid: 'office!Excel.AggregationFunction.count:member'
+    package: office!
+    summary: 'Aggregate using the count of items in the data, equivalent to the COUNTA function.'
+    value: '"Count"'
+  - name: countNumbers
+    uid: 'office!Excel.AggregationFunction.countNumbers:member'
+    package: office!
+    summary: 'Aggregate using the count of numbers in the data, equivalent to the COUNT function.'
+    value: '"CountNumbers"'
+  - name: max
+    uid: 'office!Excel.AggregationFunction.max:member'
+    package: office!
+    summary: 'Aggregate using the maximum value of the data, equivalent to the MAX function.'
+    value: '"Max"'
+  - name: min
+    uid: 'office!Excel.AggregationFunction.min:member'
+    package: office!
+    summary: 'Aggregate using the minimum value of the data, equivalent to the MIN function.'
+    value: '"Min"'
+  - name: product
+    uid: 'office!Excel.AggregationFunction.product:member'
+    package: office!
+    summary: 'Aggregate using the product of the data, equivalent to the PRODUCT function.'
+    value: '"Product"'
+  - name: standardDeviation
+    uid: 'office!Excel.AggregationFunction.standardDeviation:member'
+    package: office!
+    summary: 'Aggregate using the standard deviation of the data, equivalent to the STDEV function.'
+    value: '"StandardDeviation"'
+  - name: standardDeviationP
+    uid: 'office!Excel.AggregationFunction.standardDeviationP:member'
+    package: office!
+    summary: 'Aggregate using the standard deviation of the data, equivalent to the STDEVP function.'
+    value: '"StandardDeviationP"'
+  - name: sum
+    uid: 'office!Excel.AggregationFunction.sum:member'
+    package: office!
+    summary: 'Aggregate using the sum of the data, equivalent to the SUM function.'
+    value: '"Sum"'
+  - name: unknown
+    uid: 'office!Excel.AggregationFunction.unknown:member'
+    package: office!
+    summary: Aggregation function is unknown or unsupported.
+    value: '"Unknown"'
+  - name: variance
+    uid: 'office!Excel.AggregationFunction.variance:member'
+    package: office!
+    summary: 'Aggregate using the variance of the data, equivalent to the VAR function.'
+    value: '"Variance"'
+  - name: varianceP
+    uid: 'office!Excel.AggregationFunction.varianceP:member'
+    package: office!
+    summary: 'Aggregate using the variance of the data, equivalent to the VARP function.'
+    value: '"VarianceP"'

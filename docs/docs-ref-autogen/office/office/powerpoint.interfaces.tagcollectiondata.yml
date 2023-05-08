@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TagCollectionData
+uid: 'office!PowerPoint.Interfaces.TagCollectionData:interface'
+package: office!
+fullName: PowerPoint.Interfaces.TagCollectionData
+summary: An interface describing the data returned by calling `tagCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!PowerPoint.Interfaces.TagCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.TagData[];'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.TagData:interface" />[]'

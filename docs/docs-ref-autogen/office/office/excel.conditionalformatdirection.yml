@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalFormatDirection
+uid: 'office!Excel.ConditionalFormatDirection:enum'
+package: office!
+fullName: Excel.ConditionalFormatDirection
+summary: Represents the direction for a selection.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'office!Excel.ConditionalFormatDirection.bottom:member'
+    package: office!
+    summary: ''
+    value: '"Bottom"'
+  - name: top
+    uid: 'office!Excel.ConditionalFormatDirection.top:member'
+    package: office!
+    summary: ''
+    value: '"Top"'

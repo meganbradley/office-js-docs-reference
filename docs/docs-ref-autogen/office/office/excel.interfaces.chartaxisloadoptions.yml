@@ -1,0 +1,564 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartAxisLoadOptions
+uid: 'office!Excel.Interfaces.ChartAxisLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ChartAxisLoadOptions
+summary: Represents a single axis in a chart.
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: alignment
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#alignment:member'
+    package: office!
+    fullName: alignment
+    summary: Specifies the alignment for the specified axis tick label. See `Excel.ChartTextHorizontalAlignment` for detail.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alignment?: boolean;'
+      return:
+        type: boolean
+  - name: axisGroup
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#axisGroup:member'
+    package: office!
+    fullName: axisGroup
+    summary: Specifies the group for the specified axis. See `Excel.ChartAxisGroup` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'axisGroup?: boolean;'
+      return:
+        type: boolean
+  - name: baseTimeUnit
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#baseTimeUnit:member'
+    package: office!
+    fullName: baseTimeUnit
+    summary: Specifies the base unit for the specified category axis.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseTimeUnit?: boolean;'
+      return:
+        type: boolean
+  - name: categoryType
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#categoryType:member'
+    package: office!
+    fullName: categoryType
+    summary: Specifies the category axis type.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'categoryType?: boolean;'
+      return:
+        type: boolean
+  - name: customDisplayUnit
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#customDisplayUnit:member'
+    package: office!
+    fullName: customDisplayUnit
+    summary: >-
+      Specifies the custom axis display unit value. To set this property, please use the `SetCustomDisplayUnit(double)`
+      method.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'customDisplayUnit?: boolean;'
+      return:
+        type: boolean
+  - name: displayUnit
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#displayUnit:member'
+    package: office!
+    fullName: displayUnit
+    summary: Represents the axis display unit. See `Excel.ChartAxisDisplayUnit` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayUnit?: boolean;'
+      return:
+        type: boolean
+  - name: format
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#format:member'
+    package: office!
+    fullName: format
+    summary: 'Represents the formatting of a chart object, which includes line and font formatting.'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAxisFormatLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartAxisFormatLoadOptions:interface" />'
+  - name: height
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#height:member'
+    package: office!
+    fullName: height
+    summary: 'Specifies the height, in points, of the chart axis. Returns `null` if the axis is not visible.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: isBetweenCategories
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#isBetweenCategories:member'
+    package: office!
+    fullName: isBetweenCategories
+    summary: Specifies if the value axis crosses the category axis between categories.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isBetweenCategories?: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#left:member'
+    package: office!
+    fullName: left
+    summary: >-
+      Specifies the distance, in points, from the left edge of the axis to the left of chart area. Returns `null` if the
+      axis is not visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type: boolean
+  - name: linkNumberFormat
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#linkNumberFormat:member'
+    package: office!
+    fullName: linkNumberFormat
+    summary: >-
+      Specifies if the number format is linked to the cells. If `true`<!-- -->, the number format will change in the
+      labels when it changes in the cells.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkNumberFormat?: boolean;'
+      return:
+        type: boolean
+  - name: logBase
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#logBase:member'
+    package: office!
+    fullName: logBase
+    summary: Specifies the base of the logarithm when using logarithmic scales.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logBase?: boolean;'
+      return:
+        type: boolean
+  - name: majorGridlines
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member'
+    package: office!
+    fullName: majorGridlines
+    summary: Returns an object that represents the major gridlines for the specified axis.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartGridlinesLoadOptions:interface" />'
+  - name: majorTickMark
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#majorTickMark:member'
+    package: office!
+    fullName: majorTickMark
+    summary: Specifies the type of major tick mark for the specified axis. See `Excel.ChartAxisTickMark` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorTickMark?: boolean;'
+      return:
+        type: boolean
+  - name: majorTimeUnitScale
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#majorTimeUnitScale:member'
+    package: office!
+    fullName: majorTimeUnitScale
+    summary: >-
+      Specifies the major unit scale value for the category axis when the `categoryType` property is set to
+      `dateAxis`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorTimeUnitScale?: boolean;'
+      return:
+        type: boolean
+  - name: majorUnit
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#majorUnit:member'
+    package: office!
+    fullName: majorUnit
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorUnit?: boolean;'
+      return:
+        type: boolean
+  - name: maximum
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#maximum:member'
+    package: office!
+    fullName: maximum
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maximum?: boolean;'
+      return:
+        type: boolean
+  - name: minimum
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#minimum:member'
+    package: office!
+    fullName: minimum
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minimum?: boolean;'
+      return:
+        type: boolean
+  - name: minorGridlines
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member'
+    package: office!
+    fullName: minorGridlines
+    summary: Returns an object that represents the minor gridlines for the specified axis.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartGridlinesLoadOptions:interface" />'
+  - name: minorTickMark
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#minorTickMark:member'
+    package: office!
+    fullName: minorTickMark
+    summary: Specifies the type of minor tick mark for the specified axis. See `Excel.ChartAxisTickMark` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorTickMark?: boolean;'
+      return:
+        type: boolean
+  - name: minorTimeUnitScale
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#minorTimeUnitScale:member'
+    package: office!
+    fullName: minorTimeUnitScale
+    summary: >-
+      Specifies the minor unit scale value for the category axis when the `categoryType` property is set to
+      `dateAxis`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorTimeUnitScale?: boolean;'
+      return:
+        type: boolean
+  - name: minorUnit
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#minorUnit:member'
+    package: office!
+    fullName: minorUnit
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorUnit?: boolean;'
+      return:
+        type: boolean
+  - name: multiLevel
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#multiLevel:member'
+    package: office!
+    fullName: multiLevel
+    summary: Specifies if an axis is multilevel.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'multiLevel?: boolean;'
+      return:
+        type: boolean
+  - name: numberFormat
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#numberFormat:member'
+    package: office!
+    fullName: numberFormat
+    summary: Specifies the format code for the axis tick label.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberFormat?: boolean;'
+      return:
+        type: boolean
+  - name: offset
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#offset:member'
+    package: office!
+    fullName: offset
+    summary: >-
+      Specifies the distance between the levels of labels, and the distance between the first level and the axis line.
+      The value should be an integer from 0 to 1000.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offset?: boolean;'
+      return:
+        type: boolean
+  - name: position
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#position:member'
+    package: office!
+    fullName: position
+    summary: Specifies the specified axis position where the other axis crosses. See `Excel.ChartAxisPosition` for details.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type: boolean
+  - name: positionAt
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#positionAt:member'
+    package: office!
+    fullName: positionAt
+    summary: >-
+      Specifies the axis position where the other axis crosses. You should use the `SetPositionAt(double)` method to set
+      this property.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'positionAt?: boolean;'
+      return:
+        type: boolean
+  - name: reversePlotOrder
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#reversePlotOrder:member'
+    package: office!
+    fullName: reversePlotOrder
+    summary: Specifies if Excel plots data points from last to first.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reversePlotOrder?: boolean;'
+      return:
+        type: boolean
+  - name: scaleType
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#scaleType:member'
+    package: office!
+    fullName: scaleType
+    summary: Specifies the value axis scale type. See `Excel.ChartAxisScaleType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scaleType?: boolean;'
+      return:
+        type: boolean
+  - name: showDisplayUnitLabel
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#showDisplayUnitLabel:member'
+    package: office!
+    fullName: showDisplayUnitLabel
+    summary: Specifies if the axis display unit label is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showDisplayUnitLabel?: boolean;'
+      return:
+        type: boolean
+  - name: textOrientation
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#textOrientation:member'
+    package: office!
+    fullName: textOrientation
+    summary: >-
+      Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an
+      integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textOrientation?: boolean;'
+      return:
+        type: boolean
+  - name: tickLabelPosition
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#tickLabelPosition:member'
+    package: office!
+    fullName: tickLabelPosition
+    summary: >-
+      Specifies the position of tick-mark labels on the specified axis. See `Excel.ChartAxisTickLabelPosition` for
+      details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tickLabelPosition?: boolean;'
+      return:
+        type: boolean
+  - name: tickLabelSpacing
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#tickLabelSpacing:member'
+    package: office!
+    fullName: tickLabelSpacing
+    summary: >-
+      Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      empty string for automatic setting. The returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tickLabelSpacing?: boolean;'
+      return:
+        type: boolean
+  - name: tickMarkSpacing
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#tickMarkSpacing:member'
+    package: office!
+    fullName: tickMarkSpacing
+    summary: Specifies the number of categories or series between tick marks.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tickMarkSpacing?: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#title:member'
+    package: office!
+    fullName: title
+    summary: Represents the axis title.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: Excel.Interfaces.ChartAxisTitleLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartAxisTitleLoadOptions:interface" />'
+  - name: top
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#top:member'
+    package: office!
+    fullName: top
+    summary: >-
+      Specifies the distance, in points, from the top edge of the axis to the top of chart area. Returns `null` if the
+      axis is not visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#type:member'
+    package: office!
+    fullName: type
+    summary: Specifies the axis type. See `Excel.ChartAxisType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: visible
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#visible:member'
+    package: office!
+    fullName: visible
+    summary: Specifies if the axis is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'office!Excel.Interfaces.ChartAxisLoadOptions#width:member'
+    package: office!
+    fullName: width
+    summary: 'Specifies the width, in points, of the chart axis. Returns `null` if the axis is not visible.'
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

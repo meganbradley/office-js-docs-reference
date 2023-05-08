@@ -1,0 +1,106 @@
+### YamlMime:TSType
+name: Excel.ChangedEventDetail
+uid: 'office!Excel.ChangedEventDetail:interface'
+package: office!
+fullName: Excel.ChangedEventDetail
+summary: Provides information about the details of a `WorksheetChangedEvent` or `TableChangedEvent`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: valueAfter
+    uid: 'office!Excel.ChangedEventDetail#valueAfter:member'
+    package: office!
+    fullName: valueAfter
+    summary: >-
+      Represents the value after the change. The data returned could be a string, number, or boolean. Cells that contain
+      an error will return the error string.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueAfter: any;'
+      return:
+        type: any
+  - name: valueAsJsonAfter
+    uid: 'office!Excel.ChangedEventDetail#valueAsJsonAfter:member'
+    package: office!
+    fullName: valueAsJsonAfter
+    summary: >-
+      Represents the type of value after the change. Unlike `valueAfter`<!-- -->, `valueAsJsonAfter` can represent all
+      cell values, such as formatted number, web image, and entity data types.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueAsJsonAfter: CellValue;'
+      return:
+        type: '<xref uid="office!Excel.CellValue:type" />'
+  - name: valueAsJsonBefore
+    uid: 'office!Excel.ChangedEventDetail#valueAsJsonBefore:member'
+    package: office!
+    fullName: valueAsJsonBefore
+    summary: >-
+      Represents the type of value before the change. Unlike `valueBefore`<!-- -->, `valueAsJsonBefore` can represent
+      all cell values, such as formatted number, web image, and entity data types.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueAsJsonBefore: CellValue;'
+      return:
+        type: '<xref uid="office!Excel.CellValue:type" />'
+  - name: valueBefore
+    uid: 'office!Excel.ChangedEventDetail#valueBefore:member'
+    package: office!
+    fullName: valueBefore
+    summary: >-
+      Represents the value before the change. The data returned could be a string, number, or boolean. Cells that
+      contain an error will return the error string.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'valueBefore: any;'
+      return:
+        type: any
+  - name: valueTypeAfter
+    uid: 'office!Excel.ChangedEventDetail#valueTypeAfter:member'
+    package: office!
+    fullName: valueTypeAfter
+    summary: Represents the type of value after the change.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        valueTypeAfter: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" |
+        "Error" | "RichValue";
+      return:
+        type: >-
+          <xref uid="office!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" | "String" | "Integer" | "Double" |
+          "Boolean" | "Error" | "RichValue"
+  - name: valueTypeBefore
+    uid: 'office!Excel.ChangedEventDetail#valueTypeBefore:member'
+    package: office!
+    fullName: valueTypeBefore
+    summary: Represents the type of value before the change.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        valueTypeBefore: Excel.RangeValueType | "Unknown" | "Empty" | "String" | "Integer" | "Double" | "Boolean" |
+        "Error" | "RichValue";
+      return:
+        type: >-
+          <xref uid="office!Excel.RangeValueType:enum" /> | "Unknown" | "Empty" | "String" | "Integer" | "Double" |
+          "Boolean" | "Error" | "RichValue"

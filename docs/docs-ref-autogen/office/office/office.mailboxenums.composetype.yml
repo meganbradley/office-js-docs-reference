@@ -1,0 +1,58 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ComposeType
+uid: 'office!Office.MailboxEnums.ComposeType:enum'
+package: office!
+fullName: Office.MailboxEnums.ComposeType
+summary: Specifies a message's compose type.
+remarks: >-
+  \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+
+  **[Applicable Outlook
+  mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
+  Compose
+
+
+  #### Examples
+
+
+  ```javascript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/60-event-based-activation/work-with-client-signatures.yaml
+
+  // Get the compose type of the current message.
+
+  Office.context.mailbox.item.getComposeTypeAsync(function(asyncResult) {
+    if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+      console.log(
+        "getComposeTypeAsync succeeded with composeType: " +
+          asyncResult.value.composeType +
+          " and coercionType: " +
+          asyncResult.value.coercionType
+      );
+    } else {
+      console.error(asyncResult.error);
+    }
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Forward
+    uid: 'office!Office.MailboxEnums.ComposeType.Forward:member'
+    package: office!
+    summary: Forward.
+    value: '"forward"'
+  - name: NewMail
+    uid: 'office!Office.MailboxEnums.ComposeType.NewMail:member'
+    package: office!
+    summary: New mail.
+    value: '"newMail"'
+  - name: Reply
+    uid: 'office!Office.MailboxEnums.ComposeType.Reply:member'
+    package: office!
+    summary: Reply.
+    value: '"reply"'

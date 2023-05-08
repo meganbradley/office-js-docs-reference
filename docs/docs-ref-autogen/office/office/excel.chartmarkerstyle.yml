@@ -1,0 +1,76 @@
+### YamlMime:TSEnum
+name: Excel.ChartMarkerStyle
+uid: 'office!Excel.ChartMarkerStyle:enum'
+package: office!
+fullName: Excel.ChartMarkerStyle
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.ChartMarkerStyle.automatic:member'
+    package: office!
+    summary: ''
+    value: '"Automatic"'
+  - name: circle
+    uid: 'office!Excel.ChartMarkerStyle.circle:member'
+    package: office!
+    summary: ''
+    value: '"Circle"'
+  - name: dash
+    uid: 'office!Excel.ChartMarkerStyle.dash:member'
+    package: office!
+    summary: ''
+    value: '"Dash"'
+  - name: diamond
+    uid: 'office!Excel.ChartMarkerStyle.diamond:member'
+    package: office!
+    summary: ''
+    value: '"Diamond"'
+  - name: dot
+    uid: 'office!Excel.ChartMarkerStyle.dot:member'
+    package: office!
+    summary: ''
+    value: '"Dot"'
+  - name: invalid
+    uid: 'office!Excel.ChartMarkerStyle.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: none
+    uid: 'office!Excel.ChartMarkerStyle.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: picture
+    uid: 'office!Excel.ChartMarkerStyle.picture:member'
+    package: office!
+    summary: ''
+    value: '"Picture"'
+  - name: plus
+    uid: 'office!Excel.ChartMarkerStyle.plus:member'
+    package: office!
+    summary: ''
+    value: '"Plus"'
+  - name: square
+    uid: 'office!Excel.ChartMarkerStyle.square:member'
+    package: office!
+    summary: ''
+    value: '"Square"'
+  - name: star
+    uid: 'office!Excel.ChartMarkerStyle.star:member'
+    package: office!
+    summary: ''
+    value: '"Star"'
+  - name: triangle
+    uid: 'office!Excel.ChartMarkerStyle.triangle:member'
+    package: office!
+    summary: ''
+    value: '"Triangle"'
+  - name: x
+    uid: 'office!Excel.ChartMarkerStyle.x:member'
+    package: office!
+    summary: ''
+    value: '"X"'

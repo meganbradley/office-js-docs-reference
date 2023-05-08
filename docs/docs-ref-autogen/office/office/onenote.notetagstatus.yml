@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: OneNote.NoteTagStatus
+uid: 'office!OneNote.NoteTagStatus:enum'
+package: office!
+fullName: OneNote.NoteTagStatus
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: completed
+    uid: 'office!OneNote.NoteTagStatus.completed:member'
+    package: office!
+    summary: ''
+    value: '"Completed"'
+  - name: disabled
+    uid: 'office!OneNote.NoteTagStatus.disabled:member'
+    package: office!
+    summary: ''
+    value: '"Disabled"'
+  - name: normal
+    uid: 'office!OneNote.NoteTagStatus.normal:member'
+    package: office!
+    summary: ''
+    value: '"Normal"'
+  - name: outlookTask
+    uid: 'office!OneNote.NoteTagStatus.outlookTask:member'
+    package: office!
+    summary: ''
+    value: '"OutlookTask"'
+  - name: taskNotSyncedYet
+    uid: 'office!OneNote.NoteTagStatus.taskNotSyncedYet:member'
+    package: office!
+    summary: ''
+    value: '"TaskNotSyncedYet"'
+  - name: taskRemoved
+    uid: 'office!OneNote.NoteTagStatus.taskRemoved:member'
+    package: office!
+    summary: ''
+    value: '"TaskRemoved"'
+  - name: unknown
+    uid: 'office!OneNote.NoteTagStatus.unknown:member'
+    package: office!
+    summary: ''
+    value: '"Unknown"'

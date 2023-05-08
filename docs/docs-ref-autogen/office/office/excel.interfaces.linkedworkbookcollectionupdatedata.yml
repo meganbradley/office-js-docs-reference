@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: Excel.Interfaces.LinkedWorkbookCollectionUpdateData
+uid: 'office!Excel.Interfaces.LinkedWorkbookCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.LinkedWorkbookCollectionUpdateData
+summary: >-
+  An interface for updating data on the LinkedWorkbookCollection object, for use in `linkedWorkbookCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.LinkedWorkbookData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.LinkedWorkbookData:interface" />[]'
+  - name: workbookLinksRefreshMode
+    uid: 'office!Excel.Interfaces.LinkedWorkbookCollectionUpdateData#workbookLinksRefreshMode:member'
+    package: office!
+    fullName: workbookLinksRefreshMode
+    summary: >-
+      Represents the update mode of the workbook links. The mode is same for all of the workbook links present in the
+      workbook.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'workbookLinksRefreshMode?: Excel.WorkbookLinksRefreshMode | "Manual" | "Automatic";'
+      return:
+        type: '<xref uid="office!Excel.WorkbookLinksRefreshMode:enum" /> | "Manual" | "Automatic"'

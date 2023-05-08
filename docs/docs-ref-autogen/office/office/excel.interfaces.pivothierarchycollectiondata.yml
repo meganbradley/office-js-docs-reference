@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotHierarchyCollectionData
+uid: 'office!Excel.Interfaces.PivotHierarchyCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.PivotHierarchyCollectionData
+summary: An interface describing the data returned by calling `pivotHierarchyCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.PivotHierarchyCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.PivotHierarchyData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.PivotHierarchyData:interface" />[]'

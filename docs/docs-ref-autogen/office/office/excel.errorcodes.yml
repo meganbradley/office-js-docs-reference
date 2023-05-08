@@ -1,0 +1,166 @@
+### YamlMime:TSEnum
+name: Excel.ErrorCodes
+uid: 'office!Excel.ErrorCodes:enum'
+package: office!
+fullName: Excel.ErrorCodes
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accessDenied
+    uid: 'office!Excel.ErrorCodes.accessDenied:member'
+    package: office!
+    summary: ''
+    value: '"AccessDenied"'
+  - name: apiNotFound
+    uid: 'office!Excel.ErrorCodes.apiNotFound:member'
+    package: office!
+    summary: ''
+    value: '"ApiNotFound"'
+  - name: conflict
+    uid: 'office!Excel.ErrorCodes.conflict:member'
+    package: office!
+    summary: ''
+    value: '"Conflict"'
+  - name: emptyChartSeries
+    uid: 'office!Excel.ErrorCodes.emptyChartSeries:member'
+    package: office!
+    summary: ''
+    value: '"EmptyChartSeries"'
+  - name: filteredRangeConflict
+    uid: 'office!Excel.ErrorCodes.filteredRangeConflict:member'
+    package: office!
+    summary: ''
+    value: '"FilteredRangeConflict"'
+  - name: formulaLengthExceedsLimit
+    uid: 'office!Excel.ErrorCodes.formulaLengthExceedsLimit:member'
+    package: office!
+    summary: ''
+    value: '"FormulaLengthExceedsLimit"'
+  - name: generalException
+    uid: 'office!Excel.ErrorCodes.generalException:member'
+    package: office!
+    summary: ''
+    value: '"GeneralException"'
+  - name: inactiveWorkbook
+    uid: 'office!Excel.ErrorCodes.inactiveWorkbook:member'
+    package: office!
+    summary: ''
+    value: '"InactiveWorkbook"'
+  - name: insertDeleteConflict
+    uid: 'office!Excel.ErrorCodes.insertDeleteConflict:member'
+    package: office!
+    summary: ''
+    value: '"InsertDeleteConflict"'
+  - name: invalidArgument
+    uid: 'office!Excel.ErrorCodes.invalidArgument:member'
+    package: office!
+    summary: ''
+    value: '"InvalidArgument"'
+  - name: invalidBinding
+    uid: 'office!Excel.ErrorCodes.invalidBinding:member'
+    package: office!
+    summary: ''
+    value: '"InvalidBinding"'
+  - name: invalidOperation
+    uid: 'office!Excel.ErrorCodes.invalidOperation:member'
+    package: office!
+    summary: ''
+    value: '"InvalidOperation"'
+  - name: invalidOperationInCellEditMode
+    uid: 'office!Excel.ErrorCodes.invalidOperationInCellEditMode:member'
+    package: office!
+    summary: ''
+    value: '"InvalidOperationInCellEditMode"'
+  - name: invalidReference
+    uid: 'office!Excel.ErrorCodes.invalidReference:member'
+    package: office!
+    summary: ''
+    value: '"InvalidReference"'
+  - name: invalidSelection
+    uid: 'office!Excel.ErrorCodes.invalidSelection:member'
+    package: office!
+    summary: ''
+    value: '"InvalidSelection"'
+  - name: itemAlreadyExists
+    uid: 'office!Excel.ErrorCodes.itemAlreadyExists:member'
+    package: office!
+    summary: ''
+    value: '"ItemAlreadyExists"'
+  - name: itemNotFound
+    uid: 'office!Excel.ErrorCodes.itemNotFound:member'
+    package: office!
+    summary: ''
+    value: '"ItemNotFound"'
+  - name: mergedRangeConflict
+    uid: 'office!Excel.ErrorCodes.mergedRangeConflict:member'
+    package: office!
+    summary: ''
+    value: '"MergedRangeConflict"'
+  - name: nonBlankCellOffSheet
+    uid: 'office!Excel.ErrorCodes.nonBlankCellOffSheet:member'
+    package: office!
+    summary: ''
+    value: '"NonBlankCellOffSheet"'
+  - name: notImplemented
+    uid: 'office!Excel.ErrorCodes.notImplemented:member'
+    package: office!
+    summary: ''
+    value: '"NotImplemented"'
+  - name: openWorkbookLinksBlocked
+    uid: 'office!Excel.ErrorCodes.openWorkbookLinksBlocked:member'
+    package: office!
+    summary: ''
+    value: '"OpenWorkbookLinksBlocked"'
+  - name: operationCellsExceedLimit
+    uid: 'office!Excel.ErrorCodes.operationCellsExceedLimit:member'
+    package: office!
+    summary: ''
+    value: '"OperationCellsExceedLimit"'
+  - name: pivotTableRangeConflict
+    uid: 'office!Excel.ErrorCodes.pivotTableRangeConflict:member'
+    package: office!
+    summary: ''
+    value: '"PivotTableRangeConflict"'
+  - name: rangeExceedsLimit
+    uid: 'office!Excel.ErrorCodes.rangeExceedsLimit:member'
+    package: office!
+    summary: ''
+    value: '"RangeExceedsLimit"'
+  - name: refreshWorkbookLinksBlocked
+    uid: 'office!Excel.ErrorCodes.refreshWorkbookLinksBlocked:member'
+    package: office!
+    summary: ''
+    value: '"RefreshWorkbookLinksBlocked"'
+  - name: requestAborted
+    uid: 'office!Excel.ErrorCodes.requestAborted:member'
+    package: office!
+    summary: ''
+    value: '"RequestAborted"'
+  - name: responsePayloadSizeLimitExceeded
+    uid: 'office!Excel.ErrorCodes.responsePayloadSizeLimitExceeded:member'
+    package: office!
+    summary: ''
+    value: '"ResponsePayloadSizeLimitExceeded"'
+  - name: unsupportedFeature
+    uid: 'office!Excel.ErrorCodes.unsupportedFeature:member'
+    package: office!
+    summary: ''
+    value: '"UnsupportedFeature"'
+  - name: unsupportedFillType
+    uid: 'office!Excel.ErrorCodes.unsupportedFillType:member'
+    package: office!
+    summary: ''
+    value: '"UnsupportedFillType"'
+  - name: unsupportedOperation
+    uid: 'office!Excel.ErrorCodes.unsupportedOperation:member'
+    package: office!
+    summary: ''
+    value: '"UnsupportedOperation"'
+  - name: unsupportedSheet
+    uid: 'office!Excel.ErrorCodes.unsupportedSheet:member'
+    package: office!
+    summary: ''
+    value: '"UnsupportedSheet"'

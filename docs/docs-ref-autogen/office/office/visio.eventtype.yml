@@ -1,0 +1,19 @@
+### YamlMime:TSEnum
+name: Visio.EventType
+uid: 'office!Visio.EventType:enum'
+package: office!
+fullName: Visio.EventType
+summary: |-
+  EventType represents the type of the events Host supports
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dataVisualizerDiagramOperationCompleted
+    uid: 'office!Visio.EventType.dataVisualizerDiagramOperationCompleted:member'
+    package: office!
+    summary: DataVisualizer diagram operation complete Event
+    value: '"DataVisualizerDiagramOperationCompleted"'

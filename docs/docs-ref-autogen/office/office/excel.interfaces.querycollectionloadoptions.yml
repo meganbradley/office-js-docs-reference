@@ -1,0 +1,109 @@
+### YamlMime:TSType
+name: Excel.Interfaces.QueryCollectionLoadOptions
+uid: 'office!Excel.Interfaces.QueryCollectionLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.QueryCollectionLoadOptions
+summary: Represents the collection of queries in the workbook.
+remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.QueryCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: error
+    uid: 'office!Excel.Interfaces.QueryCollectionLoadOptions#error:member'
+    package: office!
+    fullName: error
+    summary: 'For EACH ITEM in the collection: Gets the query error message from when the query was last refreshed.'
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'error?: boolean;'
+      return:
+        type: boolean
+  - name: loadedTo
+    uid: 'office!Excel.Interfaces.QueryCollectionLoadOptions#loadedTo:member'
+    package: office!
+    fullName: loadedTo
+    summary: 'For EACH ITEM in the collection: Gets the query loaded to object type.'
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadedTo?: boolean;'
+      return:
+        type: boolean
+  - name: loadedToDataModel
+    uid: 'office!Excel.Interfaces.QueryCollectionLoadOptions#loadedToDataModel:member'
+    package: office!
+    fullName: loadedToDataModel
+    summary: 'For EACH ITEM in the collection: Specifies if the query loaded to the data model.'
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'loadedToDataModel?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Excel.Interfaces.QueryCollectionLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: >-
+      For EACH ITEM in the collection: Gets the name of the query. Query names cannot contain periods or quotation
+      marks.
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: refreshDate
+    uid: 'office!Excel.Interfaces.QueryCollectionLoadOptions#refreshDate:member'
+    package: office!
+    fullName: refreshDate
+    summary: 'For EACH ITEM in the collection: Gets the date and time when the query was last refreshed.'
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'refreshDate?: boolean;'
+      return:
+        type: boolean
+  - name: rowsLoadedCount
+    uid: 'office!Excel.Interfaces.QueryCollectionLoadOptions#rowsLoadedCount:member'
+    package: office!
+    fullName: rowsLoadedCount
+    summary: >-
+      For EACH ITEM in the collection: Gets the number of rows that were loaded when the query was last refreshed. If
+      last refresh has errors the value will be -1.
+    remarks: '\[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowsLoadedCount?: boolean;'
+      return:
+        type: boolean

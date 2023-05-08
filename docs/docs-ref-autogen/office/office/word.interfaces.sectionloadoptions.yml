@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: Word.Interfaces.SectionLoadOptions
+uid: 'office!Word.Interfaces.SectionLoadOptions:interface'
+package: office!
+fullName: Word.Interfaces.SectionLoadOptions
+summary: Represents a section in a Word document.
+remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Word.Interfaces.SectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: body
+    uid: 'office!Word.Interfaces.SectionLoadOptions#body:member'
+    package: office!
+    fullName: body
+    summary: Gets the body object of the section. This does not include the header/footer and other section metadata.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'body?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.BodyLoadOptions:interface" />'

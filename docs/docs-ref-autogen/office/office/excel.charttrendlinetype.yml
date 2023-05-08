@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Excel.ChartTrendlineType
+uid: 'office!Excel.ChartTrendlineType:enum'
+package: office!
+fullName: Excel.ChartTrendlineType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: exponential
+    uid: 'office!Excel.ChartTrendlineType.exponential:member'
+    package: office!
+    summary: ''
+    value: '"Exponential"'
+  - name: linear
+    uid: 'office!Excel.ChartTrendlineType.linear:member'
+    package: office!
+    summary: ''
+    value: '"Linear"'
+  - name: logarithmic
+    uid: 'office!Excel.ChartTrendlineType.logarithmic:member'
+    package: office!
+    summary: ''
+    value: '"Logarithmic"'
+  - name: movingAverage
+    uid: 'office!Excel.ChartTrendlineType.movingAverage:member'
+    package: office!
+    summary: ''
+    value: '"MovingAverage"'
+  - name: polynomial
+    uid: 'office!Excel.ChartTrendlineType.polynomial:member'
+    package: office!
+    summary: ''
+    value: '"Polynomial"'
+  - name: power
+    uid: 'office!Excel.ChartTrendlineType.power:member'
+    package: office!
+    summary: ''
+    value: '"Power"'

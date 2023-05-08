@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartAxisFormatData
+uid: 'office!Excel.Interfaces.ChartAxisFormatData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartAxisFormatData
+summary: An interface describing the data returned by calling `chartAxisFormat.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: font
+    uid: 'office!Excel.Interfaces.ChartAxisFormatData#font:member'
+    package: office!
+    fullName: font
+    summary: 'Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartFontData:interface" />'
+  - name: line
+    uid: 'office!Excel.Interfaces.ChartAxisFormatData#line:member'
+    package: office!
+    fullName: line
+    summary: Specifies chart line formatting.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartLineFormatData:interface" />'

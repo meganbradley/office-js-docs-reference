@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.TableRowCollectionData
+uid: 'office!OneNote.Interfaces.TableRowCollectionData:interface'
+package: office!
+fullName: OneNote.Interfaces.TableRowCollectionData
+summary: An interface describing the data returned by calling `tableRowCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!OneNote.Interfaces.TableRowCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: OneNote.Interfaces.TableRowData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.TableRowData:interface" />[]'

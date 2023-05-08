@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: Excel.ArrayCellValue
+uid: 'office!Excel.ArrayCellValue:interface'
+package: office!
+fullName: Excel.ArrayCellValue
+summary: Represents a 2D array of cell values.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: basicType
+    uid: 'office!Excel.ArrayCellValue#basicType:member'
+    package: office!
+    fullName: basicType
+    summary: Represents the value that would be returned by `Range.valueTypes` for a cell with this value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'basicType?: RangeValueType.error | "Error";'
+      return:
+        type: '<xref uid="office!Excel.RangeValueType.error:member" /> | "Error"'
+  - name: basicValue
+    uid: 'office!Excel.ArrayCellValue#basicValue:member'
+    package: office!
+    fullName: basicValue
+    summary: >-
+      Represents the value that would be returned by `Range.values` for a cell with this value. When accessed through a
+      `valuesAsJson` property, this string value aligns with the en-US locale. When accessed through a
+      `valuesAsJsonLocal` property, this string value aligns with the user's display locale.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'basicValue?: "#VALUE!" | string;'
+      return:
+        type: '"#VALUE!" | string'
+  - name: elements
+    uid: 'office!Excel.ArrayCellValue#elements:member'
+    package: office!
+    fullName: elements
+    summary: Represents the elements of the array. May not directly contain an `ArrayCellValue`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'elements: CellValue[][];'
+      return:
+        type: '<xref uid="office!Excel.CellValue:type" />[][]'
+  - name: referencedValues
+    uid: 'office!Excel.ArrayCellValue#referencedValues:member'
+    package: office!
+    fullName: referencedValues
+    summary: Represents the cell values which are referenced within `ArrayCellValue.elements`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'referencedValues?: ReferencedValue[];'
+      return:
+        type: '<xref uid="office!Excel.ReferencedValue:type" />[]'
+  - name: type
+    uid: 'office!Excel.ArrayCellValue#type:member'
+    package: office!
+    fullName: type
+    summary: Represents the type of this cell value.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: CellValueType.array | ReferenceValueType.array | "Array";'
+      return:
+        type: >-
+          <xref uid="office!Excel.CellValueType.array:member" /> | <xref
+          uid="office!Excel.ReferenceValueType.array:member" /> | "Array"

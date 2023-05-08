@@ -1,0 +1,161 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeLoadOptions
+uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions:interface'
+package: office!
+fullName: PowerPoint.Interfaces.ShapeLoadOptions
+summary: Represents a single shape in the slide.
+remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: fill
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#fill:member'
+    package: office!
+    fullName: fill
+    summary: Returns the fill formatting of this shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fill?: PowerPoint.Interfaces.ShapeFillLoadOptions;'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.ShapeFillLoadOptions:interface" />'
+  - name: height
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#height:member'
+    package: office!
+    fullName: height
+    summary: >-
+      Specifies the height, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the unique ID of the shape.
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#left:member'
+    package: office!
+    fullName: left
+    summary: 'The distance, in points, from the left side of the shape to the left side of the slide.'
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type: boolean
+  - name: lineFormat
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#lineFormat:member'
+    package: office!
+    fullName: lineFormat
+    summary: Returns the line formatting of this shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lineFormat?: PowerPoint.Interfaces.ShapeLineFormatLoadOptions;'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.ShapeLineFormatLoadOptions:interface" />'
+  - name: name
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: Specifies the name of this shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: textFrame
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#textFrame:member'
+    package: office!
+    fullName: textFrame
+    summary: Returns the text frame object of this shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textFrame?: PowerPoint.Interfaces.TextFrameLoadOptions;'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.TextFrameLoadOptions:interface" />'
+  - name: top
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#top:member'
+    package: office!
+    fullName: top
+    summary: 'The distance, in points, from the top edge of the shape to the top edge of the slide.'
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#type:member'
+    package: office!
+    fullName: type
+    summary: 'Returns the type of this shape. See [PowerPoint.ShapeType](xref:office!PowerPoint.ShapeType:enum) for details.'
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'office!PowerPoint.Interfaces.ShapeLoadOptions#width:member'
+    package: office!
+    fullName: width
+    summary: >-
+      Specifies the width, in points, of the shape. Throws an `InvalidArgument` exception when set with a negative
+      value.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean

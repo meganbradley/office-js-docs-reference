@@ -1,0 +1,81 @@
+### YamlMime:TSEnum
+name: Excel.NumberFormatCategory
+uid: 'office!Excel.NumberFormatCategory:enum'
+package: office!
+fullName: Excel.NumberFormatCategory
+summary: Represents a category of number formats.
+remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accounting
+    uid: 'office!Excel.NumberFormatCategory.accounting:member'
+    package: office!
+    summary: Accounting formats line up the currency symbols and decimal points in a column.
+    value: '"Accounting"'
+  - name: currency
+    uid: 'office!Excel.NumberFormatCategory.currency:member'
+    package: office!
+    summary: Currency formats are used for general monetary values. Use Accounting formats to align decimal points in a column.
+    value: '"Currency"'
+  - name: custom
+    uid: 'office!Excel.NumberFormatCategory.custom:member'
+    package: office!
+    summary: A custom format that is not a part of any category.
+    value: '"Custom"'
+  - name: date
+    uid: 'office!Excel.NumberFormatCategory.date:member'
+    package: office!
+    summary: >-
+      Date formats display date and time serial numbers as date values. Date formats that begin with an asterisk (*)
+      respond to changes in regional date and time settings that are specified for the operating system. Formats without
+      an asterisk are not affected by operating system settings.
+    value: '"Date"'
+  - name: fraction
+    uid: 'office!Excel.NumberFormatCategory.fraction:member'
+    package: office!
+    summary: >-
+      Fraction formats display the cell value as a whole number with the remainder rounded to the nearest fraction
+      value.
+    value: '"Fraction"'
+  - name: general
+    uid: 'office!Excel.NumberFormatCategory.general:member'
+    package: office!
+    summary: General format cells have no specific number format.
+    value: '"General"'
+  - name: number
+    uid: 'office!Excel.NumberFormatCategory.number:member'
+    package: office!
+    summary: >-
+      Number is used for general display of numbers. Currency and Accounting offer specialized formatting for monetary
+      value.
+    value: '"Number"'
+  - name: percentage
+    uid: 'office!Excel.NumberFormatCategory.percentage:member'
+    package: office!
+    summary: Percentage formats multiply the cell value by 100 and displays the result with a percent symbol.
+    value: '"Percentage"'
+  - name: scientific
+    uid: 'office!Excel.NumberFormatCategory.scientific:member'
+    package: office!
+    summary: Scientific formats display the cell value as a number between 1 and 10 multiplied by a power of 10.
+    value: '"Scientific"'
+  - name: special
+    uid: 'office!Excel.NumberFormatCategory.special:member'
+    package: office!
+    summary: Special formats are useful for tracking list and database values.
+    value: '"Special"'
+  - name: text
+    uid: 'office!Excel.NumberFormatCategory.text:member'
+    package: office!
+    summary: Text format cells are treated as text even when a number is in the cell. The cell is displayed exactly as entered.
+    value: '"Text"'
+  - name: time
+    uid: 'office!Excel.NumberFormatCategory.time:member'
+    package: office!
+    summary: >-
+      Time formats display date and time serial numbers as date values. Time formats that begin with an asterisk (*)
+      respond to changes in regional date and time settings that are specified for the operating system. Formats without
+      an asterisk are not affected by operating system settings.
+    value: '"Time"'

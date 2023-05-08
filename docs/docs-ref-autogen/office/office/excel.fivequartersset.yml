@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.FiveQuartersSet
+uid: 'office!Excel.FiveQuartersSet:interface'
+package: office!
+fullName: Excel.FiveQuartersSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: blackCircle
+    uid: 'office!Excel.FiveQuartersSet#blackCircle:member'
+    package: office!
+    fullName: blackCircle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blackCircle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: circleWithOneWhiteQuarter
+    uid: 'office!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member'
+    package: office!
+    fullName: circleWithOneWhiteQuarter
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'circleWithOneWhiteQuarter: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: circleWithThreeWhiteQuarters
+    uid: 'office!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member'
+    package: office!
+    fullName: circleWithThreeWhiteQuarters
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'circleWithThreeWhiteQuarters: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: circleWithTwoWhiteQuarters
+    uid: 'office!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member'
+    package: office!
+    fullName: circleWithTwoWhiteQuarters
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'circleWithTwoWhiteQuarters: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: whiteCircleAllWhiteQuarters
+    uid: 'office!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member'
+    package: office!
+    fullName: whiteCircleAllWhiteQuarters
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'whiteCircleAllWhiteQuarters: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

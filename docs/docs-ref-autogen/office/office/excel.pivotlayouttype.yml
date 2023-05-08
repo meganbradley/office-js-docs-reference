@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.PivotLayoutType
+uid: 'office!Excel.PivotLayoutType:enum'
+package: office!
+fullName: Excel.PivotLayoutType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: compact
+    uid: 'office!Excel.PivotLayoutType.compact:member'
+    package: office!
+    summary: A horizontally compressed form with labels from the next field in the same column.
+    value: '"Compact"'
+  - name: outline
+    uid: 'office!Excel.PivotLayoutType.outline:member'
+    package: office!
+    summary: Inner fields' items are on same row as outer fields' items and subtotals are always on the bottom.
+    value: '"Outline"'
+  - name: tabular
+    uid: 'office!Excel.PivotLayoutType.tabular:member'
+    package: office!
+    summary: Inner fields' items are always on a new line relative to the outer fields' items.
+    value: '"Tabular"'

@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideMasterCollectionLoadOptions
+uid: 'office!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions:interface'
+package: office!
+fullName: PowerPoint.Interfaces.SlideMasterCollectionLoadOptions
+summary: Represents the collection of Slide Masters in the presentation.
+remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: Gets the unique ID of the Slide Master.'
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!PowerPoint.Interfaces.SlideMasterCollectionLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: 'For EACH ITEM in the collection: Gets the unique name of the Slide Master.'
+    remarks: '\[ [API set: PowerPointApi 1.3](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean

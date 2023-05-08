@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: Word.Interfaces.InlinePictureData
+uid: 'office!Word.Interfaces.InlinePictureData:interface'
+package: office!
+fullName: Word.Interfaces.InlinePictureData
+summary: An interface describing the data returned by calling `inlinePicture.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: altTextDescription
+    uid: 'office!Word.Interfaces.InlinePictureData#altTextDescription:member'
+    package: office!
+    fullName: altTextDescription
+    summary: Gets or sets a string that represents the alternative text associated with the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextDescription?: string;'
+      return:
+        type: string
+  - name: altTextTitle
+    uid: 'office!Word.Interfaces.InlinePictureData#altTextTitle:member'
+    package: office!
+    fullName: altTextTitle
+    summary: Gets or sets a string that contains the title for the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altTextTitle?: string;'
+      return:
+        type: string
+  - name: height
+    uid: 'office!Word.Interfaces.InlinePictureData#height:member'
+    package: office!
+    fullName: height
+    summary: Gets or sets a number that describes the height of the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: number;'
+      return:
+        type: number
+  - name: hyperlink
+    uid: 'office!Word.Interfaces.InlinePictureData#hyperlink:member'
+    package: office!
+    fullName: hyperlink
+    summary: 'Gets or sets a hyperlink on the image. Use a ''\#'' to separate the address part from the optional location part.'
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hyperlink?: string;'
+      return:
+        type: string
+  - name: imageFormat
+    uid: 'office!Word.Interfaces.InlinePictureData#imageFormat:member'
+    package: office!
+    fullName: imageFormat
+    summary: Gets the format of the inline image.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon"
+        | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
+      return:
+        type: >-
+          <xref uid="office!Word.ImageFormat:enum" /> | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" |
+          "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
+  - name: lockAspectRatio
+    uid: 'office!Word.Interfaces.InlinePictureData#lockAspectRatio:member'
+    package: office!
+    fullName: lockAspectRatio
+    summary: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'office!Word.Interfaces.InlinePictureData#width:member'
+    package: office!
+    fullName: width
+    summary: Gets or sets a number that describes the width of the inline image.
+    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

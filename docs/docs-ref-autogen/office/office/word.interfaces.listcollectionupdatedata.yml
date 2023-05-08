@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Word.Interfaces.ListCollectionUpdateData
+uid: 'office!Word.Interfaces.ListCollectionUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.ListCollectionUpdateData
+summary: 'An interface for updating data on the ListCollection object, for use in `listCollection.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Word.Interfaces.ListCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.ListData[];'
+      return:
+        type: '<xref uid="office!Word.Interfaces.ListData:interface" />[]'

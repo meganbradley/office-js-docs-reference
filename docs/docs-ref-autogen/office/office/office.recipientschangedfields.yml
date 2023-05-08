@@ -1,0 +1,90 @@
+### YamlMime:TSType
+name: Office.RecipientsChangedFields
+uid: 'office!Office.RecipientsChangedFields:interface'
+package: office!
+fullName: Office.RecipientsChangedFields
+summary: Represents `RecipientsChangedEventArgs.changedRecipientFields` object.
+remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bcc
+    uid: 'office!Office.RecipientsChangedFields#bcc:member'
+    package: office!
+    fullName: bcc
+    summary: Gets if recipients in the **bcc** field were changed.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bcc: boolean'
+      return:
+        type: boolean
+  - name: cc
+    uid: 'office!Office.RecipientsChangedFields#cc:member'
+    package: office!
+    fullName: cc
+    summary: Gets if recipients in the **cc** field were changed.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cc: boolean;'
+      return:
+        type: boolean
+  - name: optionalAttendees
+    uid: 'office!Office.RecipientsChangedFields#optionalAttendees:member'
+    package: office!
+    fullName: optionalAttendees
+    summary: Gets if optional attendees were changed.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'optionalAttendees: boolean;'
+      return:
+        type: boolean
+  - name: requiredAttendees
+    uid: 'office!Office.RecipientsChangedFields#requiredAttendees:member'
+    package: office!
+    fullName: requiredAttendees
+    summary: Gets if required attendees were changed.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requiredAttendees: boolean;'
+      return:
+        type: boolean
+  - name: resources
+    uid: 'office!Office.RecipientsChangedFields#resources:member'
+    package: office!
+    fullName: resources
+    summary: Gets if resources were changed.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resources: boolean;'
+      return:
+        type: boolean
+  - name: to
+    uid: 'office!Office.RecipientsChangedFields#to:member'
+    package: office!
+    fullName: to
+    summary: Gets if recipients in the **to** field were changed.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'to: boolean;'
+      return:
+        type: boolean

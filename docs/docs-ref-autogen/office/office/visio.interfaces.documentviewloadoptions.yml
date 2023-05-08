@@ -1,0 +1,110 @@
+### YamlMime:TSType
+name: Visio.Interfaces.DocumentViewLoadOptions
+uid: 'office!Visio.Interfaces.DocumentViewLoadOptions:interface'
+package: office!
+fullName: Visio.Interfaces.DocumentViewLoadOptions
+summary: |-
+  Represents the DocumentView class.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Visio.Interfaces.DocumentViewLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: disableHyperlinks
+    uid: 'office!Visio.Interfaces.DocumentViewLoadOptions#disableHyperlinks:member'
+    package: office!
+    fullName: disableHyperlinks
+    summary: |-
+      Disable Hyperlinks.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableHyperlinks?: boolean;'
+      return:
+        type: boolean
+  - name: disablePan
+    uid: 'office!Visio.Interfaces.DocumentViewLoadOptions#disablePan:member'
+    package: office!
+    fullName: disablePan
+    summary: |-
+      Disable Pan.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disablePan?: boolean;'
+      return:
+        type: boolean
+  - name: disablePanZoomWindow
+    uid: 'office!Visio.Interfaces.DocumentViewLoadOptions#disablePanZoomWindow:member'
+    package: office!
+    fullName: disablePanZoomWindow
+    summary: |-
+      Disable PanZoomWindow.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disablePanZoomWindow?: boolean;'
+      return:
+        type: boolean
+  - name: disableZoom
+    uid: 'office!Visio.Interfaces.DocumentViewLoadOptions#disableZoom:member'
+    package: office!
+    fullName: disableZoom
+    summary: |-
+      Disable Zoom.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'disableZoom?: boolean;'
+      return:
+        type: boolean
+  - name: hideDiagramBoundary
+    uid: 'office!Visio.Interfaces.DocumentViewLoadOptions#hideDiagramBoundary:member'
+    package: office!
+    fullName: hideDiagramBoundary
+    summary: |-
+      Hide Diagram Boundary.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hideDiagramBoundary?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.EventSource
+uid: 'office!Excel.EventSource:enum'
+package: office!
+fullName: Excel.EventSource
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: local
+    uid: 'office!Excel.EventSource.local:member'
+    package: office!
+    summary: Local means the event comes from a local user session.
+    value: '"Local"'
+  - name: remote
+    uid: 'office!Excel.EventSource.remote:member'
+    package: office!
+    summary: Remote means the event comes from a remote user session.
+    value: '"Remote"'

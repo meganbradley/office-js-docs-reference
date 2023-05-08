@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalTopBottomCriterionType
+uid: 'office!Excel.ConditionalTopBottomCriterionType:enum'
+package: office!
+fullName: Excel.ConditionalTopBottomCriterionType
+summary: Represents the criteria for the above/below average conditional format type.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottomItems
+    uid: 'office!Excel.ConditionalTopBottomCriterionType.bottomItems:member'
+    package: office!
+    summary: ''
+    value: '"BottomItems"'
+  - name: bottomPercent
+    uid: 'office!Excel.ConditionalTopBottomCriterionType.bottomPercent:member'
+    package: office!
+    summary: ''
+    value: '"BottomPercent"'
+  - name: invalid
+    uid: 'office!Excel.ConditionalTopBottomCriterionType.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: topItems
+    uid: 'office!Excel.ConditionalTopBottomCriterionType.topItems:member'
+    package: office!
+    summary: ''
+    value: '"TopItems"'
+  - name: topPercent
+    uid: 'office!Excel.ConditionalTopBottomCriterionType.topPercent:member'
+    package: office!
+    summary: ''
+    value: '"TopPercent"'

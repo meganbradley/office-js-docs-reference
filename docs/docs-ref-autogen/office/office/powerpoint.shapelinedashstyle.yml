@@ -1,0 +1,71 @@
+### YamlMime:TSEnum
+name: PowerPoint.ShapeLineDashStyle
+uid: 'office!PowerPoint.ShapeLineDashStyle:enum'
+package: office!
+fullName: PowerPoint.ShapeLineDashStyle
+summary: Specifies the dash style for a line.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dash
+    uid: 'office!PowerPoint.ShapeLineDashStyle.dash:member'
+    package: office!
+    summary: The dash line pattern
+    value: '"Dash"'
+  - name: dashDot
+    uid: 'office!PowerPoint.ShapeLineDashStyle.dashDot:member'
+    package: office!
+    summary: The dash-dot line pattern
+    value: '"DashDot"'
+  - name: dashDotDot
+    uid: 'office!PowerPoint.ShapeLineDashStyle.dashDotDot:member'
+    package: office!
+    summary: The dash-dot-dot line pattern
+    value: '"DashDotDot"'
+  - name: longDash
+    uid: 'office!PowerPoint.ShapeLineDashStyle.longDash:member'
+    package: office!
+    summary: The long dash line pattern
+    value: '"LongDash"'
+  - name: longDashDot
+    uid: 'office!PowerPoint.ShapeLineDashStyle.longDashDot:member'
+    package: office!
+    summary: The long dash-dot line pattern
+    value: '"LongDashDot"'
+  - name: longDashDotDot
+    uid: 'office!PowerPoint.ShapeLineDashStyle.longDashDotDot:member'
+    package: office!
+    summary: The long dash-dot-dot line pattern
+    value: '"LongDashDotDot"'
+  - name: roundDot
+    uid: 'office!PowerPoint.ShapeLineDashStyle.roundDot:member'
+    package: office!
+    summary: The round dot line pattern
+    value: '"RoundDot"'
+  - name: solid
+    uid: 'office!PowerPoint.ShapeLineDashStyle.solid:member'
+    package: office!
+    summary: The solid line pattern
+    value: '"Solid"'
+  - name: squareDot
+    uid: 'office!PowerPoint.ShapeLineDashStyle.squareDot:member'
+    package: office!
+    summary: The square dot line pattern
+    value: '"SquareDot"'
+  - name: systemDash
+    uid: 'office!PowerPoint.ShapeLineDashStyle.systemDash:member'
+    package: office!
+    summary: The system dash line pattern
+    value: '"SystemDash"'
+  - name: systemDashDot
+    uid: 'office!PowerPoint.ShapeLineDashStyle.systemDashDot:member'
+    package: office!
+    summary: The system dash-dot line pattern
+    value: '"SystemDashDot"'
+  - name: systemDot
+    uid: 'office!PowerPoint.ShapeLineDashStyle.systemDot:member'
+    package: office!
+    summary: The system dot line pattern
+    value: '"SystemDot"'

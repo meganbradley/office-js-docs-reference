@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisParagraphCollectionData
+uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface'
+package: office!
+fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionData
+summary: An interface describing the data returned by calling `inkAnalysisParagraphCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: OneNote.Interfaces.InkAnalysisParagraphData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkAnalysisParagraphData:interface" />[]'

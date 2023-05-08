@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: Excel.ConditionalDataBarRule
+uid: 'office!Excel.ConditionalDataBarRule:interface'
+package: office!
+fullName: Excel.ConditionalDataBarRule
+summary: Represents a rule-type for a data bar.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: formula
+    uid: 'office!Excel.ConditionalDataBarRule#formula:member'
+    package: office!
+    fullName: formula
+    summary: 'The formula, if required, on which to evaluate the data bar rule.'
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formula?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Excel.ConditionalDataBarRule#type:member'
+    package: office!
+    fullName: type
+    summary: The type of rule for the data bar.
+    remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type: Excel.ConditionalFormatRuleType | "Invalid" | "Automatic" | "LowestValue" | "HighestValue" | "Number" |
+        "Percent" | "Formula" | "Percentile";
+      return:
+        type: >-
+          <xref uid="office!Excel.ConditionalFormatRuleType:enum" /> | "Invalid" | "Automatic" | "LowestValue" |
+          "HighestValue" | "Number" | "Percent" | "Formula" | "Percentile"

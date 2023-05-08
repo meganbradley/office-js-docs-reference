@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ThreeArrowsSet
+uid: 'office!Excel.ThreeArrowsSet:interface'
+package: office!
+fullName: Excel.ThreeArrowsSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenUpArrow
+    uid: 'office!Excel.ThreeArrowsSet#greenUpArrow:member'
+    package: office!
+    fullName: greenUpArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redDownArrow
+    uid: 'office!Excel.ThreeArrowsSet#redDownArrow:member'
+    package: office!
+    fullName: redDownArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowSideArrow
+    uid: 'office!Excel.ThreeArrowsSet#yellowSideArrow:member'
+    package: office!
+    fullName: yellowSideArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowSideArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

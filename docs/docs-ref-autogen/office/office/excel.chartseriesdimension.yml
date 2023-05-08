@@ -1,0 +1,69 @@
+### YamlMime:TSEnum
+name: Excel.ChartSeriesDimension
+uid: 'office!Excel.ChartSeriesDimension:enum'
+package: office!
+fullName: Excel.ChartSeriesDimension
+summary: Represents the dimensions when getting values from chart series.
+remarks: >-
+  \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/10-chart/chart-bubble-chart.yaml
+
+  await Excel.run(async (context) => {
+    const sheet = context.workbook.worksheets.getItem("Sample");
+
+    // The sample chart is of type `Excel.ChartType.bubble`.
+    const bubbleChart = sheet.charts.getItem("Product Chart");
+
+    // Get the first series in the chart.
+    const firstSeries = bubbleChart.series.getItemAt(0);
+
+    // Get the values for the dimensions we're interested in.
+    const bubbleSize = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.bubbleSizes);
+    const xValues = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.xvalues);
+    const yValues = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.yvalues);
+    const category = firstSeries.getDimensionValues(Excel.ChartSeriesDimension.categories);
+
+    await context.sync();
+
+    // Log the information.
+    console.log(`Series ${category.value} - X:${xValues.value},Y:${yValues.value},Bubble:${bubbleSize.value}`);
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bubbleSizes
+    uid: 'office!Excel.ChartSeriesDimension.bubbleSizes:member'
+    package: office!
+    summary: The chart series axis for the bubble sizes in bubble charts.
+    value: '"BubbleSizes"'
+  - name: categories
+    uid: 'office!Excel.ChartSeriesDimension.categories:member'
+    package: office!
+    summary: The chart series axis for the categories.
+    value: '"Categories"'
+  - name: values
+    uid: 'office!Excel.ChartSeriesDimension.values:member'
+    package: office!
+    summary: The chart series axis for the values.
+    value: '"Values"'
+  - name: xvalues
+    uid: 'office!Excel.ChartSeriesDimension.xvalues:member'
+    package: office!
+    summary: The chart series axis for the x-axis values in scatter and bubble charts.
+    value: '"XValues"'
+  - name: yvalues
+    uid: 'office!Excel.ChartSeriesDimension.yvalues:member'
+    package: office!
+    summary: The chart series axis for the y-axis values in scatter and bubble charts.
+    value: '"YValues"'

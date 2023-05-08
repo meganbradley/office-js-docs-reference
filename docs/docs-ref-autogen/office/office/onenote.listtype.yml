@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: OneNote.ListType
+uid: 'office!OneNote.ListType:enum'
+package: office!
+fullName: OneNote.ListType
+summary: ''
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bullet
+    uid: 'office!OneNote.ListType.bullet:member'
+    package: office!
+    summary: ''
+    value: '"Bullet"'
+  - name: none
+    uid: 'office!OneNote.ListType.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: number
+    uid: 'office!OneNote.ListType.number:member'
+    package: office!
+    summary: ''
+    value: '"Number"'

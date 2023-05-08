@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.Placement
+uid: 'office!Excel.Placement:enum'
+package: office!
+fullName: Excel.Placement
+summary: Specifies the way that an object is attached to its underlying cells.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: absolute
+    uid: 'office!Excel.Placement.absolute:member'
+    package: office!
+    summary: The object is free floating.
+    value: '"Absolute"'
+  - name: oneCell
+    uid: 'office!Excel.Placement.oneCell:member'
+    package: office!
+    summary: The object is moved and sized with the cells.
+    value: '"OneCell"'
+  - name: twoCell
+    uid: 'office!Excel.Placement.twoCell:member'
+    package: office!
+    summary: The object is moved with the cells.
+    value: '"TwoCell"'

@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
+uid: 'office!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions
+summary: >-
+  A scoped collection of custom XML parts. A scoped collection is the result of some operation (e.g., filtering by
+  namespace). A scoped collection cannot be scoped any further.
+remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: The custom XML part''s ID.'
+    remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: namespaceUri
+    uid: 'office!Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions#namespaceUri:member'
+    package: office!
+    fullName: namespaceUri
+    summary: 'For EACH ITEM in the collection: The custom XML part''s namespace URI.'
+    remarks: '\[ [API set: ExcelApi 1.5](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'namespaceUri?: boolean;'
+      return:
+        type: boolean

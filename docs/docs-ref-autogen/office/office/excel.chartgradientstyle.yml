@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.ChartGradientStyle
+uid: 'office!Excel.ChartGradientStyle:enum'
+package: office!
+fullName: Excel.ChartGradientStyle
+summary: Represents the gradient style of a chart series. This is only applicable for region map charts.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: threePhaseColor
+    uid: 'office!Excel.ChartGradientStyle.threePhaseColor:member'
+    package: office!
+    summary: ''
+    value: '"ThreePhaseColor"'
+  - name: twoPhaseColor
+    uid: 'office!Excel.ChartGradientStyle.twoPhaseColor:member'
+    package: office!
+    summary: ''
+    value: '"TwoPhaseColor"'

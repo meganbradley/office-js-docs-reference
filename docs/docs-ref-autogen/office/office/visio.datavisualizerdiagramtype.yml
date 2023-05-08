@@ -1,0 +1,49 @@
+### YamlMime:TSEnum
+name: Visio.DataVisualizerDiagramType
+uid: 'office!Visio.DataVisualizerDiagramType:enum'
+package: office!
+fullName: Visio.DataVisualizerDiagramType
+summary: |-
+  DiagramType for Data Visualizer diagrams
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: audit
+    uid: 'office!Visio.DataVisualizerDiagramType.audit:member'
+    package: office!
+    summary: Audit
+    value: '"Audit"'
+  - name: basicFlowchart
+    uid: 'office!Visio.DataVisualizerDiagramType.basicFlowchart:member'
+    package: office!
+    summary: Basic Flowchart
+    value: '"BasicFlowchart"'
+  - name: crossFunctionalFlowchart_Horizontal
+    uid: 'office!Visio.DataVisualizerDiagramType.crossFunctionalFlowchart_Horizontal:member'
+    package: office!
+    summary: Horizontal Cross-Functional Flowchart
+    value: '"CrossFunctionalFlowchart_Horizontal"'
+  - name: crossFunctionalFlowchart_Vertical
+    uid: 'office!Visio.DataVisualizerDiagramType.crossFunctionalFlowchart_Vertical:member'
+    package: office!
+    summary: Vertical Cross-Functional Flowchart
+    value: '"CrossFunctionalFlowchart_Vertical"'
+  - name: network
+    uid: 'office!Visio.DataVisualizerDiagramType.network:member'
+    package: office!
+    summary: Network
+    value: '"Network"'
+  - name: orgChart
+    uid: 'office!Visio.DataVisualizerDiagramType.orgChart:member'
+    package: office!
+    summary: OrgChart
+    value: '"OrgChart"'
+  - name: unknown
+    uid: 'office!Visio.DataVisualizerDiagramType.unknown:member'
+    package: office!
+    summary: Unknown
+    value: '"Unknown"'

@@ -1,0 +1,41 @@
+### YamlMime:TSType
+name: Excel.CellPropertiesProtection
+uid: 'office!Excel.CellPropertiesProtection:interface'
+package: office!
+fullName: Excel.CellPropertiesProtection
+summary: >-
+  Represents the `format.protection` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
+  `getColumnProperties`<!-- -->, or the `format.protection` input parameter of `setCellProperties`<!-- -->,
+  `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: formulaHidden
+    uid: 'office!Excel.CellPropertiesProtection#formulaHidden:member'
+    package: office!
+    fullName: formulaHidden
+    summary: Represents the `format.protection.formulaHidden` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formulaHidden?: boolean;'
+      return:
+        type: boolean
+  - name: locked
+    uid: 'office!Excel.CellPropertiesProtection#locked:member'
+    package: office!
+    fullName: locked
+    summary: Represents the `format.protection.locked` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'locked?: boolean;'
+      return:
+        type: boolean

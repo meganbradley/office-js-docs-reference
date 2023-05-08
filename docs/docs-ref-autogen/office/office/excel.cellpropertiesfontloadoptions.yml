@@ -1,0 +1,178 @@
+### YamlMime:TSType
+name: Excel.CellPropertiesFontLoadOptions
+uid: 'office!Excel.CellPropertiesFontLoadOptions:interface'
+package: office!
+fullName: Excel.CellPropertiesFontLoadOptions
+summary: Specifies which properties to load on the `format.font` object.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bold
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#bold:member'
+    package: office!
+    fullName: bold
+    summary: Specifies whether to load the `bold` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#color:member'
+    package: office!
+    fullName: color
+    summary: Specifies whether to load the `color` property.
+    remarks: >-
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```typescript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/cell-properties.yaml
+
+      await Excel.run(async (context) => {
+          const cell = context.workbook.getActiveCell();
+
+          // Define the cell properties to get by setting the matching LoadOptions to true.
+          const propertiesToGet = cell.getCellProperties({
+              address: true,
+              format: {
+                  fill: {
+                      color: true
+                  },
+                  font: {
+                      color: true
+                  }
+              },
+              style: true
+          });
+
+          // Sync to get the data from the workbook.
+          await context.sync();
+          const cellProperties = propertiesToGet.value[0][0];
+          console.log(
+              `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+      });
+
+      ```
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: italic
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#italic:member'
+    package: office!
+    fullName: italic
+    summary: Specifies whether to load the `italic` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: Specifies whether to load the `name` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: size
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#size:member'
+    package: office!
+    fullName: size
+    summary: Specifies whether to load the `size` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type: boolean
+  - name: strikethrough
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#strikethrough:member'
+    package: office!
+    fullName: strikethrough
+    summary: Specifies whether to load the `strikethrough` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type: boolean
+  - name: subscript
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#subscript:member'
+    package: office!
+    fullName: subscript
+    summary: Specifies whether to load the `subscript` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type: boolean
+  - name: superscript
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#superscript:member'
+    package: office!
+    fullName: superscript
+    summary: Specifies whether to load the `superscript` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type: boolean
+  - name: tintAndShade
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#tintAndShade:member'
+    package: office!
+    fullName: tintAndShade
+    summary: Specifies whether to load the `tintAndShade` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type: boolean
+  - name: underline
+    uid: 'office!Excel.CellPropertiesFontLoadOptions#underline:member'
+    package: office!
+    fullName: underline
+    summary: Specifies whether to load the `underline` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type: boolean

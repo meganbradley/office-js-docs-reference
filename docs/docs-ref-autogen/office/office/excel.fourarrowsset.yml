@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.FourArrowsSet
+uid: 'office!Excel.FourArrowsSet:interface'
+package: office!
+fullName: Excel.FourArrowsSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenUpArrow
+    uid: 'office!Excel.FourArrowsSet#greenUpArrow:member'
+    package: office!
+    fullName: greenUpArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redDownArrow
+    uid: 'office!Excel.FourArrowsSet#redDownArrow:member'
+    package: office!
+    fullName: redDownArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowDownInclineArrow
+    uid: 'office!Excel.FourArrowsSet#yellowDownInclineArrow:member'
+    package: office!
+    fullName: yellowDownInclineArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowDownInclineArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowUpInclineArrow
+    uid: 'office!Excel.FourArrowsSet#yellowUpInclineArrow:member'
+    package: office!
+    fullName: yellowUpInclineArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowUpInclineArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

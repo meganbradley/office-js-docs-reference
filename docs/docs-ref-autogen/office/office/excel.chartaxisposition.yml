@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Excel.ChartAxisPosition
+uid: 'office!Excel.ChartAxisPosition:enum'
+package: office!
+fullName: Excel.ChartAxisPosition
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.ChartAxisPosition.automatic:member'
+    package: office!
+    summary: ''
+    value: '"Automatic"'
+  - name: custom
+    uid: 'office!Excel.ChartAxisPosition.custom:member'
+    package: office!
+    summary: ''
+    value: '"Custom"'
+  - name: maximum
+    uid: 'office!Excel.ChartAxisPosition.maximum:member'
+    package: office!
+    summary: ''
+    value: '"Maximum"'
+  - name: minimum
+    uid: 'office!Excel.ChartAxisPosition.minimum:member'
+    package: office!
+    summary: ''
+    value: '"Minimum"'

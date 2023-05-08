@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.DataValidationErrorAlert
+uid: 'office!Excel.DataValidationErrorAlert:interface'
+package: office!
+fullName: Excel.DataValidationErrorAlert
+summary: Represents the error alert properties for the data validation.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: message
+    uid: 'office!Excel.DataValidationErrorAlert#message:member'
+    package: office!
+    fullName: message
+    summary: Represents the error alert message.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message: string;'
+      return:
+        type: string
+  - name: showAlert
+    uid: 'office!Excel.DataValidationErrorAlert#showAlert:member'
+    package: office!
+    fullName: showAlert
+    summary: Specifies whether to show an error alert dialog when a user enters invalid data. The default is `true`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAlert: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: 'office!Excel.DataValidationErrorAlert#style:member'
+    package: office!
+    fullName: style
+    summary: 'The data validation alert type, please see `Excel.DataValidationAlertStyle` for details.'
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style: Excel.DataValidationAlertStyle | "Stop" | "Warning" | "Information";'
+      return:
+        type: '<xref uid="office!Excel.DataValidationAlertStyle:enum" /> | "Stop" | "Warning" | "Information"'
+  - name: title
+    uid: 'office!Excel.DataValidationErrorAlert#title:member'
+    package: office!
+    fullName: title
+    summary: Represents the error alert dialog title.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string

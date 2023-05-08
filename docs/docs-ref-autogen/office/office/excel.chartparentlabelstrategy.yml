@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ChartParentLabelStrategy
+uid: 'office!Excel.ChartParentLabelStrategy:enum'
+package: office!
+fullName: Excel.ChartParentLabelStrategy
+summary: Represents the parent label strategy of the chart series layout. This only applies to treemap charts
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: banner
+    uid: 'office!Excel.ChartParentLabelStrategy.banner:member'
+    package: office!
+    summary: ''
+    value: '"Banner"'
+  - name: none
+    uid: 'office!Excel.ChartParentLabelStrategy.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: overlapping
+    uid: 'office!Excel.ChartParentLabelStrategy.overlapping:member'
+    package: office!
+    summary: ''
+    value: '"Overlapping"'

@@ -1,0 +1,48 @@
+### YamlMime:TSEnum
+name: PowerPoint.ParagraphHorizontalAlignment
+uid: 'office!PowerPoint.ParagraphHorizontalAlignment:enum'
+package: office!
+fullName: PowerPoint.ParagraphHorizontalAlignment
+summary: >-
+  Represents the horizontal alignment of the [PowerPoint.TextFrame](xref:office!PowerPoint.TextFrame:class) in a
+  [PowerPoint.Shape](xref:office!PowerPoint.Shape:class)<!-- -->.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: center
+    uid: 'office!PowerPoint.ParagraphHorizontalAlignment.center:member'
+    package: office!
+    summary: Align text in the center.
+    value: '"Center"'
+  - name: distributed
+    uid: 'office!PowerPoint.ParagraphHorizontalAlignment.distributed:member'
+    package: office!
+    summary: Distributes the text words across an entire text line.
+    value: '"Distributed"'
+  - name: justify
+    uid: 'office!PowerPoint.ParagraphHorizontalAlignment.justify:member'
+    package: office!
+    summary: Align text so that it is justified across the whole line.
+    value: '"Justify"'
+  - name: justifyLow
+    uid: 'office!PowerPoint.ParagraphHorizontalAlignment.justifyLow:member'
+    package: office!
+    summary: Specifies the alignment or adjustment of kashida length in Arabic text.
+    value: '"JustifyLow"'
+  - name: left
+    uid: 'office!PowerPoint.ParagraphHorizontalAlignment.left:member'
+    package: office!
+    summary: Align text to the left margin.
+    value: '"Left"'
+  - name: right
+    uid: 'office!PowerPoint.ParagraphHorizontalAlignment.right:member'
+    package: office!
+    summary: Align text to the right margin.
+    value: '"Right"'
+  - name: thaiDistributed
+    uid: 'office!PowerPoint.ParagraphHorizontalAlignment.thaiDistributed:member'
+    package: office!
+    summary: 'Distributes Thai text specially, because each character is treated as a word.'
+    value: '"ThaiDistributed"'

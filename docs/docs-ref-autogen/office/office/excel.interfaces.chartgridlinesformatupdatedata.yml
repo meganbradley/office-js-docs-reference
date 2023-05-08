@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartGridlinesFormatUpdateData
+uid: 'office!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartGridlinesFormatUpdateData
+summary: >-
+  An interface for updating data on the ChartGridlinesFormat object, for use in `chartGridlinesFormat.set({ ... })`<!--
+  -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: line
+    uid: 'office!Excel.Interfaces.ChartGridlinesFormatUpdateData#line:member'
+    package: office!
+    fullName: line
+    summary: Represents chart line formatting.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartLineFormatUpdateData:interface" />'

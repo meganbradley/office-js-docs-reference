@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.RangeAreasCollectionUpdateData
+uid: 'office!Excel.Interfaces.RangeAreasCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.RangeAreasCollectionUpdateData
+summary: >-
+  An interface for updating data on the RangeAreasCollection object, for use in `rangeAreasCollection.set({ ... })`<!--
+  -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.RangeAreasCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.RangeAreasData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.RangeAreasData:interface" />[]'

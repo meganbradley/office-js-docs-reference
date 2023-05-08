@@ -1,0 +1,150 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.TextFrameLoadOptions
+uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions:interface'
+package: office!
+fullName: PowerPoint.Interfaces.TextFrameLoadOptions
+summary: Represents the text frame of a shape object.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: autoSizeSetting
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#autoSizeSetting:member'
+    package: office!
+    fullName: autoSizeSetting
+    summary: >-
+      The automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the
+      text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'autoSizeSetting?: boolean;'
+      return:
+        type: boolean
+  - name: bottomMargin
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#bottomMargin:member'
+    package: office!
+    fullName: bottomMargin
+    summary: 'Represents the bottom margin, in points, of the text frame.'
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottomMargin?: boolean;'
+      return:
+        type: boolean
+  - name: hasText
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#hasText:member'
+    package: office!
+    fullName: hasText
+    summary: Specifies if the text frame contains text.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hasText?: boolean;'
+      return:
+        type: boolean
+  - name: leftMargin
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#leftMargin:member'
+    package: office!
+    fullName: leftMargin
+    summary: 'Represents the left margin, in points, of the text frame.'
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'leftMargin?: boolean;'
+      return:
+        type: boolean
+  - name: rightMargin
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#rightMargin:member'
+    package: office!
+    fullName: rightMargin
+    summary: 'Represents the right margin, in points, of the text frame.'
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rightMargin?: boolean;'
+      return:
+        type: boolean
+  - name: textRange
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#textRange:member'
+    package: office!
+    fullName: textRange
+    summary: >-
+      Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the
+      text. See [PowerPoint.TextRange](xref:office!PowerPoint.TextRange:class) for details.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textRange?: PowerPoint.Interfaces.TextRangeLoadOptions;'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.TextRangeLoadOptions:interface" />'
+  - name: topMargin
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#topMargin:member'
+    package: office!
+    fullName: topMargin
+    summary: 'Represents the top margin, in points, of the text frame.'
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'topMargin?: boolean;'
+      return:
+        type: boolean
+  - name: verticalAlignment
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#verticalAlignment:member'
+    package: office!
+    fullName: verticalAlignment
+    summary: >-
+      Represents the vertical alignment of the text frame. See
+      [PowerPoint.TextVerticalAlignment](xref:office!PowerPoint.TextVerticalAlignment:enum) for details.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'verticalAlignment?: boolean;'
+      return:
+        type: boolean
+  - name: wordWrap
+    uid: 'office!PowerPoint.Interfaces.TextFrameLoadOptions#wordWrap:member'
+    package: office!
+    fullName: wordWrap
+    summary: Determines whether lines break automatically to fit text inside the shape.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'wordWrap?: boolean;'
+      return:
+        type: boolean

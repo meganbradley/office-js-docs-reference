@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.ChartTextHorizontalAlignment
+uid: 'office!Excel.ChartTextHorizontalAlignment:enum'
+package: office!
+fullName: Excel.ChartTextHorizontalAlignment
+summary: Represents the horizontal alignment for the specified object.
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: center
+    uid: 'office!Excel.ChartTextHorizontalAlignment.center:member'
+    package: office!
+    summary: ''
+    value: '"Center"'
+  - name: distributed
+    uid: 'office!Excel.ChartTextHorizontalAlignment.distributed:member'
+    package: office!
+    summary: ''
+    value: '"Distributed"'
+  - name: justify
+    uid: 'office!Excel.ChartTextHorizontalAlignment.justify:member'
+    package: office!
+    summary: ''
+    value: '"Justify"'
+  - name: left
+    uid: 'office!Excel.ChartTextHorizontalAlignment.left:member'
+    package: office!
+    summary: ''
+    value: '"Left"'
+  - name: right
+    uid: 'office!Excel.ChartTextHorizontalAlignment.right:member'
+    package: office!
+    summary: ''
+    value: '"Right"'

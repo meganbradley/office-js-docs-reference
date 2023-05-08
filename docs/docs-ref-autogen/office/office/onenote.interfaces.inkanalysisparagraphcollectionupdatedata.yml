@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
+uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData:interface'
+package: office!
+fullName: OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
+summary: >-
+  An interface for updating data on the InkAnalysisParagraphCollection object, for use in
+  `inkAnalysisParagraphCollection.set({ ... })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: OneNote.Interfaces.InkAnalysisParagraphData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.InkAnalysisParagraphData:interface" />[]'

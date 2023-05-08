@@ -1,0 +1,51 @@
+### YamlMime:TSEnum
+name: Excel.SpecialCellType
+uid: 'office!Excel.SpecialCellType:enum'
+package: office!
+fullName: Excel.SpecialCellType
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: blanks
+    uid: 'office!Excel.SpecialCellType.blanks:member'
+    package: office!
+    summary: Cells with no content.
+    value: '"Blanks"'
+  - name: conditionalFormats
+    uid: 'office!Excel.SpecialCellType.conditionalFormats:member'
+    package: office!
+    summary: All cells with conditional formats.
+    value: '"ConditionalFormats"'
+  - name: constants
+    uid: 'office!Excel.SpecialCellType.constants:member'
+    package: office!
+    summary: Cells containing constants.
+    value: '"Constants"'
+  - name: dataValidations
+    uid: 'office!Excel.SpecialCellType.dataValidations:member'
+    package: office!
+    summary: Cells with validation criteria.
+    value: '"DataValidations"'
+  - name: formulas
+    uid: 'office!Excel.SpecialCellType.formulas:member'
+    package: office!
+    summary: Cells containing formulas.
+    value: '"Formulas"'
+  - name: sameConditionalFormat
+    uid: 'office!Excel.SpecialCellType.sameConditionalFormat:member'
+    package: office!
+    summary: Cells with the same conditional format as the first cell in the range.
+    value: '"SameConditionalFormat"'
+  - name: sameDataValidation
+    uid: 'office!Excel.SpecialCellType.sameDataValidation:member'
+    package: office!
+    summary: Cells with the same data validation criteria as the first cell in the range.
+    value: '"SameDataValidation"'
+  - name: visible
+    uid: 'office!Excel.SpecialCellType.visible:member'
+    package: office!
+    summary: Cells that are visible.
+    value: '"Visible"'

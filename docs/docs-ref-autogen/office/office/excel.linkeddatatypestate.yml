@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.LinkedDataTypeState
+uid: 'office!Excel.LinkedDataTypeState:enum'
+package: office!
+fullName: Excel.LinkedDataTypeState
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: brokenLinkedData
+    uid: 'office!Excel.LinkedDataTypeState.brokenLinkedData:member'
+    package: office!
+    summary: ''
+    value: '"BrokenLinkedData"'
+  - name: disambiguationNeeded
+    uid: 'office!Excel.LinkedDataTypeState.disambiguationNeeded:member'
+    package: office!
+    summary: ''
+    value: '"DisambiguationNeeded"'
+  - name: fetchingData
+    uid: 'office!Excel.LinkedDataTypeState.fetchingData:member'
+    package: office!
+    summary: ''
+    value: '"FetchingData"'
+  - name: none
+    uid: 'office!Excel.LinkedDataTypeState.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: validLinkedData
+    uid: 'office!Excel.LinkedDataTypeState.validLinkedData:member'
+    package: office!
+    summary: ''
+    value: '"ValidLinkedData"'

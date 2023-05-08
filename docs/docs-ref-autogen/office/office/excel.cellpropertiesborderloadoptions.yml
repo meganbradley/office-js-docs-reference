@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.CellPropertiesBorderLoadOptions
+uid: 'office!Excel.CellPropertiesBorderLoadOptions:interface'
+package: office!
+fullName: Excel.CellPropertiesBorderLoadOptions
+summary: Specifies which properties to load on the `format.borders` object.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'office!Excel.CellPropertiesBorderLoadOptions#color:member'
+    package: office!
+    fullName: color
+    summary: Specifies whether to load the `color` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: 'office!Excel.CellPropertiesBorderLoadOptions#style:member'
+    package: office!
+    fullName: style
+    summary: Specifies whether to load the `style` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
+  - name: tintAndShade
+    uid: 'office!Excel.CellPropertiesBorderLoadOptions#tintAndShade:member'
+    package: office!
+    fullName: tintAndShade
+    summary: Specifies whether to load the `tintAndShade` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type: boolean
+  - name: weight
+    uid: 'office!Excel.CellPropertiesBorderLoadOptions#weight:member'
+    package: office!
+    fullName: weight
+    summary: Specifies whether to load the `weight` property.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weight?: boolean;'
+      return:
+        type: boolean

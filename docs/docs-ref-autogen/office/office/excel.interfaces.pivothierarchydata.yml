@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotHierarchyData
+uid: 'office!Excel.Interfaces.PivotHierarchyData:interface'
+package: office!
+fullName: Excel.Interfaces.PivotHierarchyData
+summary: An interface describing the data returned by calling `pivotHierarchy.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: fields
+    uid: 'office!Excel.Interfaces.PivotHierarchyData#fields:member'
+    package: office!
+    fullName: fields
+    summary: Returns the PivotFields associated with the PivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'fields?: Excel.Interfaces.PivotFieldData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.PivotFieldData:interface" />[]'
+  - name: id
+    uid: 'office!Excel.Interfaces.PivotHierarchyData#id:member'
+    package: office!
+    fullName: id
+    summary: ID of the PivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: name
+    uid: 'office!Excel.Interfaces.PivotHierarchyData#name:member'
+    package: office!
+    fullName: name
+    summary: Name of the PivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string

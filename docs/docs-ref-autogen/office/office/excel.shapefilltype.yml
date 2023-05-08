@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Excel.ShapeFillType
+uid: 'office!Excel.ShapeFillType:enum'
+package: office!
+fullName: Excel.ShapeFillType
+summary: Specifies a shape's fill type.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: gradient
+    uid: 'office!Excel.ShapeFillType.gradient:member'
+    package: office!
+    summary: Gradient fill.
+    value: '"Gradient"'
+  - name: mixed
+    uid: 'office!Excel.ShapeFillType.mixed:member'
+    package: office!
+    summary: Mixed fill.
+    value: '"Mixed"'
+  - name: noFill
+    uid: 'office!Excel.ShapeFillType.noFill:member'
+    package: office!
+    summary: No fill.
+    value: '"NoFill"'
+  - name: pattern
+    uid: 'office!Excel.ShapeFillType.pattern:member'
+    package: office!
+    summary: Pattern fill.
+    value: '"Pattern"'
+  - name: pictureAndTexture
+    uid: 'office!Excel.ShapeFillType.pictureAndTexture:member'
+    package: office!
+    summary: Picture and texture fill.
+    value: '"PictureAndTexture"'
+  - name: solid
+    uid: 'office!Excel.ShapeFillType.solid:member'
+    package: office!
+    summary: Solid fill.
+    value: '"Solid"'

@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ThreeSymbolsSet
+uid: 'office!Excel.ThreeSymbolsSet:interface'
+package: office!
+fullName: Excel.ThreeSymbolsSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenCheckSymbol
+    uid: 'office!Excel.ThreeSymbolsSet#greenCheckSymbol:member'
+    package: office!
+    fullName: greenCheckSymbol
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'greenCheckSymbol: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redCrossSymbol
+    uid: 'office!Excel.ThreeSymbolsSet#redCrossSymbol:member'
+    package: office!
+    fullName: redCrossSymbol
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redCrossSymbol: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowExclamationSymbol
+    uid: 'office!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member'
+    package: office!
+    fullName: yellowExclamationSymbol
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowExclamationSymbol: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

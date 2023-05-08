@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalRangeFontUnderlineStyle
+uid: 'office!Excel.ConditionalRangeFontUnderlineStyle:enum'
+package: office!
+fullName: Excel.ConditionalRangeFontUnderlineStyle
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: double
+    uid: 'office!Excel.ConditionalRangeFontUnderlineStyle.double:member'
+    package: office!
+    summary: ''
+    value: '"Double"'
+  - name: none
+    uid: 'office!Excel.ConditionalRangeFontUnderlineStyle.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: single
+    uid: 'office!Excel.ConditionalRangeFontUnderlineStyle.single:member'
+    package: office!
+    summary: ''
+    value: '"Single"'

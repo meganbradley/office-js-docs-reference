@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.Interfaces.CommentCollectionData
+uid: 'office!Excel.Interfaces.CommentCollectionData:interface'
+package: office!
+fullName: Excel.Interfaces.CommentCollectionData
+summary: An interface describing the data returned by calling `commentCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.CommentCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.CommentData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.CommentData:interface" />[]'

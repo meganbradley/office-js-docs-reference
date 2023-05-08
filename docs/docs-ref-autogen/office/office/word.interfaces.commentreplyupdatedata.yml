@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentReplyUpdateData
+uid: 'office!Word.Interfaces.CommentReplyUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.CommentReplyUpdateData
+summary: 'An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: 'office!Word.Interfaces.CommentReplyUpdateData#content:member'
+    package: office!
+    fullName: content
+    summary: Gets or sets the comment reply's content. The string is plain text.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: string;'
+      return:
+        type: string
+  - name: contentRange
+    uid: 'office!Word.Interfaces.CommentReplyUpdateData#contentRange:member'
+    package: office!
+    fullName: contentRange
+    summary: Gets or sets the commentReply's content range.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.CommentContentRangeUpdateData:interface" />'
+  - name: parentComment
+    uid: 'office!Word.Interfaces.CommentReplyUpdateData#parentComment:member'
+    package: office!
+    fullName: parentComment
+    summary: Gets the parent comment of this reply.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'parentComment?: Word.Interfaces.CommentUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.CommentUpdateData:interface" />'

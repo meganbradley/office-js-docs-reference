@@ -1,0 +1,58 @@
+### YamlMime:TSEnum
+name: Excel.VerticalAlignment
+uid: 'office!Excel.VerticalAlignment:enum'
+package: office!
+fullName: Excel.VerticalAlignment
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/42-range/style.yaml
+
+  await Excel.run(async (context) => {
+      let worksheet = context.workbook.worksheets.getItem("Sample");
+      let range = worksheet.getRange("A1:E1");
+      // Apply new style.
+      range.style = ("Diagonal Orientation Style");
+      range.format.verticalAlignment = "Justify";
+
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'office!Excel.VerticalAlignment.bottom:member'
+    package: office!
+    summary: ''
+    value: '"Bottom"'
+  - name: center
+    uid: 'office!Excel.VerticalAlignment.center:member'
+    package: office!
+    summary: ''
+    value: '"Center"'
+  - name: distributed
+    uid: 'office!Excel.VerticalAlignment.distributed:member'
+    package: office!
+    summary: ''
+    value: '"Distributed"'
+  - name: justify
+    uid: 'office!Excel.VerticalAlignment.justify:member'
+    package: office!
+    summary: ''
+    value: '"Justify"'
+  - name: top
+    uid: 'office!Excel.VerticalAlignment.top:member'
+    package: office!
+    summary: ''
+    value: '"Top"'

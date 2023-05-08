@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PageBreakCollectionLoadOptions
+uid: 'office!Excel.Interfaces.PageBreakCollectionLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.PageBreakCollectionLoadOptions
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.PageBreakCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: columnIndex
+    uid: 'office!Excel.Interfaces.PageBreakCollectionLoadOptions#columnIndex:member'
+    package: office!
+    fullName: columnIndex
+    summary: 'For EACH ITEM in the collection: Specifies the column index for the page break.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'columnIndex?: boolean;'
+      return:
+        type: boolean
+  - name: rowIndex
+    uid: 'office!Excel.Interfaces.PageBreakCollectionLoadOptions#rowIndex:member'
+    package: office!
+    fullName: rowIndex
+    summary: 'For EACH ITEM in the collection: Specifies the row index for the page break.'
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type: boolean

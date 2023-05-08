@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: Excel.ChartPlotAreaPosition
+uid: 'office!Excel.ChartPlotAreaPosition:enum'
+package: office!
+fullName: Excel.ChartPlotAreaPosition
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.ChartPlotAreaPosition.automatic:member'
+    package: office!
+    summary: ''
+    value: '"Automatic"'
+  - name: custom
+    uid: 'office!Excel.ChartPlotAreaPosition.custom:member'
+    package: office!
+    summary: ''
+    value: '"Custom"'

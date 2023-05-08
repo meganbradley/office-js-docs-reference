@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartMapOptionsLoadOptions
+uid: 'office!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.ChartMapOptionsLoadOptions
+summary: Encapsulates the properties for a region map chart.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.ChartMapOptionsLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: labelStrategy
+    uid: 'office!Excel.Interfaces.ChartMapOptionsLoadOptions#labelStrategy:member'
+    package: office!
+    fullName: labelStrategy
+    summary: Specifies the series map labels strategy of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'labelStrategy?: boolean;'
+      return:
+        type: boolean
+  - name: level
+    uid: 'office!Excel.Interfaces.ChartMapOptionsLoadOptions#level:member'
+    package: office!
+    fullName: level
+    summary: Specifies the series mapping level of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'level?: boolean;'
+      return:
+        type: boolean
+  - name: projectionType
+    uid: 'office!Excel.Interfaces.ChartMapOptionsLoadOptions#projectionType:member'
+    package: office!
+    fullName: projectionType
+    summary: Specifies the series projection type of a region map chart.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'projectionType?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,96 @@
+### YamlMime:TSEnum
+name: PowerPoint.ShapeFontUnderlineStyle
+uid: 'office!PowerPoint.ShapeFontUnderlineStyle:enum'
+package: office!
+fullName: PowerPoint.ShapeFontUnderlineStyle
+summary: The type of underline applied to a font.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: dash
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dash:member'
+    package: office!
+    summary: Underlining of text with a line containing dashes.
+    value: '"Dash"'
+  - name: dashHeavy
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dashHeavy:member'
+    package: office!
+    summary: Underlining of text with a thick line containing dashes.
+    value: '"DashHeavy"'
+  - name: dashLong
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dashLong:member'
+    package: office!
+    summary: Underlining of text with a line containing long dashes.
+    value: '"DashLong"'
+  - name: dashLongHeavy
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dashLongHeavy:member'
+    package: office!
+    summary: Underlining of text with a thick line containing long dashes.
+    value: '"DashLongHeavy"'
+  - name: dotDash
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dotDash:member'
+    package: office!
+    summary: Underlining of text with a line containing dots and dashes.
+    value: '"DotDash"'
+  - name: dotDashHeavy
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dotDashHeavy:member'
+    package: office!
+    summary: Underlining of text with a thick line containing dots and dashes.
+    value: '"DotDashHeavy"'
+  - name: dotDotDash
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dotDotDash:member'
+    package: office!
+    summary: Underlining of text with a line containing double dots and dashes.
+    value: '"DotDotDash"'
+  - name: dotDotDashHeavy
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dotDotDashHeavy:member'
+    package: office!
+    summary: Underlining of text with a thick line containing double dots and dashes.
+    value: '"DotDotDashHeavy"'
+  - name: dotted
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dotted:member'
+    package: office!
+    summary: Underlining of text with a dotted line.
+    value: '"Dotted"'
+  - name: dottedHeavy
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.dottedHeavy:member'
+    package: office!
+    summary: 'Underlining of text with a thick, dotted line.'
+    value: '"DottedHeavy"'
+  - name: double
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.double:member'
+    package: office!
+    summary: Underlining of text with double lines.
+    value: '"Double"'
+  - name: heavy
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.heavy:member'
+    package: office!
+    summary: Underlining of text with a thick line.
+    value: '"Heavy"'
+  - name: none
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.none:member'
+    package: office!
+    summary: No underlining.
+    value: '"None"'
+  - name: single
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.single:member'
+    package: office!
+    summary: Regular single line underlining.
+    value: '"Single"'
+  - name: wavy
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.wavy:member'
+    package: office!
+    summary: Underlining of text with a wavy line.
+    value: '"Wavy"'
+  - name: wavyDouble
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.wavyDouble:member'
+    package: office!
+    summary: Underlining of text with double wavy lines.
+    value: '"WavyDouble"'
+  - name: wavyHeavy
+    uid: 'office!PowerPoint.ShapeFontUnderlineStyle.wavyHeavy:member'
+    package: office!
+    summary: 'Underlining of text with a thick, wavy line.'
+    value: '"WavyHeavy"'

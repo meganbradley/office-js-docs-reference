@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Word.Interfaces.CustomXmlPartCollectionUpdateData
+uid: 'office!Word.Interfaces.CustomXmlPartCollectionUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.CustomXmlPartCollectionUpdateData
+summary: >-
+  An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Word.Interfaces.CustomXmlPartCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Word.Interfaces.CustomXmlPartData[];'
+      return:
+        type: '<xref uid="office!Word.Interfaces.CustomXmlPartData:interface" />[]'

@@ -1,0 +1,109 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.ShapeFontUpdateData
+uid: 'office!PowerPoint.Interfaces.ShapeFontUpdateData:interface'
+package: office!
+fullName: PowerPoint.Interfaces.ShapeFontUpdateData
+summary: 'An interface for updating data on the ShapeFont object, for use in `shapeFont.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bold
+    uid: 'office!PowerPoint.Interfaces.ShapeFontUpdateData#bold:member'
+    package: office!
+    fullName: bold
+    summary: >-
+      Represents the bold status of font. Returns `null` if the `TextRange` includes both bold and non-bold text
+      fragments.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type: boolean
+  - name: color
+    uid: 'office!PowerPoint.Interfaces.ShapeFontUpdateData#color:member'
+    package: office!
+    fullName: color
+    summary: >-
+      HTML color code representation of the text color (e.g., "\#FF0000" represents red). Returns `null` if the
+      `TextRange` includes text fragments with different colors.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: italic
+    uid: 'office!PowerPoint.Interfaces.ShapeFontUpdateData#italic:member'
+    package: office!
+    fullName: italic
+    summary: >-
+      Represents the italic status of font. Returns 'null' if the 'TextRange' includes both italic and non-italic text
+      fragments.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!PowerPoint.Interfaces.ShapeFontUpdateData#name:member'
+    package: office!
+    fullName: name
+    summary: >-
+      Represents font name (e.g., "Calibri"). If the text is a Complex Script or East Asian language, this is the
+      corresponding font name; otherwise it is the Latin font name.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: size
+    uid: 'office!PowerPoint.Interfaces.ShapeFontUpdateData#size:member'
+    package: office!
+    fullName: size
+    summary: >-
+      Represents font size in points (e.g., 11). Returns null if the TextRange includes text fragments with different
+      font sizes.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size?: number;'
+      return:
+        type: number
+  - name: underline
+    uid: 'office!PowerPoint.Interfaces.ShapeFontUpdateData#underline:member'
+    package: office!
+    fullName: underline
+    summary: >-
+      Type of underline applied to the font. Returns `null` if the `TextRange` includes text fragments with different
+      underline styles. See [PowerPoint.ShapeFontUnderlineStyle](xref:office!PowerPoint.ShapeFontUnderlineStyle:enum)
+      for details.
+    remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        underline?: PowerPoint.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" |
+        "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash"
+        | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+      return:
+        type: >-
+          <xref uid="office!PowerPoint.ShapeFontUnderlineStyle:enum" /> | "None" | "Single" | "Double" | "Heavy" |
+          "Dotted" | "DottedHeavy" | "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" |
+          "DotDotDash" | "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble"

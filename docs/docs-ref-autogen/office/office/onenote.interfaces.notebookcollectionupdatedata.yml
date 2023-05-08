@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.NotebookCollectionUpdateData
+uid: 'office!OneNote.Interfaces.NotebookCollectionUpdateData:interface'
+package: office!
+fullName: OneNote.Interfaces.NotebookCollectionUpdateData
+summary: 'An interface for updating data on the NotebookCollection object, for use in `notebookCollection.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!OneNote.Interfaces.NotebookCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: OneNote.Interfaces.NotebookData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.NotebookData:interface" />[]'

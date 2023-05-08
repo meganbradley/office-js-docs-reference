@@ -1,0 +1,51 @@
+### YamlMime:TSEnum
+name: Excel.BorderIndex
+uid: 'office!Excel.BorderIndex:enum'
+package: office!
+fullName: Excel.BorderIndex
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: diagonalDown
+    uid: 'office!Excel.BorderIndex.diagonalDown:member'
+    package: office!
+    summary: ''
+    value: '"DiagonalDown"'
+  - name: diagonalUp
+    uid: 'office!Excel.BorderIndex.diagonalUp:member'
+    package: office!
+    summary: ''
+    value: '"DiagonalUp"'
+  - name: edgeBottom
+    uid: 'office!Excel.BorderIndex.edgeBottom:member'
+    package: office!
+    summary: ''
+    value: '"EdgeBottom"'
+  - name: edgeLeft
+    uid: 'office!Excel.BorderIndex.edgeLeft:member'
+    package: office!
+    summary: ''
+    value: '"EdgeLeft"'
+  - name: edgeRight
+    uid: 'office!Excel.BorderIndex.edgeRight:member'
+    package: office!
+    summary: ''
+    value: '"EdgeRight"'
+  - name: edgeTop
+    uid: 'office!Excel.BorderIndex.edgeTop:member'
+    package: office!
+    summary: ''
+    value: '"EdgeTop"'
+  - name: insideHorizontal
+    uid: 'office!Excel.BorderIndex.insideHorizontal:member'
+    package: office!
+    summary: ''
+    value: '"InsideHorizontal"'
+  - name: insideVertical
+    uid: 'office!Excel.BorderIndex.insideVertical:member'
+    package: office!
+    summary: ''
+    value: '"InsideVertical"'

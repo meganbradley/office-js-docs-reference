@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Office.CoercionTypeOptions
+uid: 'office!Office.CoercionTypeOptions:interface'
+package: office!
+fullName: Office.CoercionTypeOptions
+summary: Provides an option for the data format.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: coercionType
+    uid: 'office!Office.CoercionTypeOptions#coercionType:member'
+    package: office!
+    fullName: coercionType
+    summary: The desired data format.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'coercionType?: Office.CoercionType | string;'
+      return:
+        type: '<xref uid="office!Office.CoercionType:enum" /> | string'

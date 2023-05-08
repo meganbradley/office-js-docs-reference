@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: Excel.CellBorder
+uid: 'office!Excel.CellBorder:interface'
+package: office!
+fullName: Excel.CellBorder
+summary: >-
+  Represents the properties of a single border returned by `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
+  `getColumnProperties`<!-- -->, or the border property input parameter of `setCellProperties`<!-- -->,
+  `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'office!Excel.CellBorder#color:member'
+    package: office!
+    fullName: color
+    summary: Represents the `color` property of a single border.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: style
+    uid: 'office!Excel.CellBorder#style:member'
+    package: office!
+    fullName: style
+    summary: Represents the `style` property of a single border.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        style?: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+        "SlantDashDot";
+      return:
+        type: >-
+          <xref uid="office!Excel.BorderLineStyle:enum" /> | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+          "Dot" | "Double" | "SlantDashDot"
+  - name: tintAndShade
+    uid: 'office!Excel.CellBorder#tintAndShade:member'
+    package: office!
+    fullName: tintAndShade
+    summary: Represents the `tintAndShade` property of a single border.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type: number
+  - name: weight
+    uid: 'office!Excel.CellBorder#weight:member'
+    package: office!
+    fullName: weight
+    summary: Represents the `weight` property of a single border.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
+      return:
+        type: '<xref uid="office!Excel.BorderWeight:enum" /> | "Hairline" | "Thin" | "Medium" | "Thick"'

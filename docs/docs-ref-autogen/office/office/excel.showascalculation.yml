@@ -1,0 +1,127 @@
+### YamlMime:TSEnum
+name: Excel.ShowAsCalculation
+uid: 'office!Excel.ShowAsCalculation:enum'
+package: office!
+fullName: Excel.ShowAsCalculation
+summary: The ShowAs calculation function for the DataPivotField.
+remarks: >-
+  \[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/38-pivottable/pivottable-calculations.yaml
+
+  await Excel.run(async (context) => {
+      const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
+      const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");        
+      const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
+
+      farmDataHierarchy.load("showAs");
+      wholesaleDataHierarchy.load("showAs");
+      await context.sync();
+
+      // Show the crates of each fruit type sold at the farm as a percentage of the column's total.
+      let farmShowAs = farmDataHierarchy.showAs;
+      farmShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+      farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+      farmDataHierarchy.showAs = farmShowAs;
+
+      let wholesaleShowAs = wholesaleDataHierarchy.showAs;
+      wholesaleShowAs.calculation = Excel.ShowAsCalculation.percentOfColumnTotal;
+      wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Type").fields.getItem("Type");
+      wholesaleDataHierarchy.showAs = wholesaleShowAs;
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: differenceFrom
+    uid: 'office!Excel.ShowAsCalculation.differenceFrom:member'
+    package: office!
+    summary: Difference from the specified Base field and Base item.
+    value: '"DifferenceFrom"'
+  - name: index
+    uid: 'office!Excel.ShowAsCalculation.index:member'
+    package: office!
+    summary: >-
+      Calculates the values as follows: ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand
+      Column Total))
+    value: '"Index"'
+  - name: none
+    uid: 'office!Excel.ShowAsCalculation.none:member'
+    package: office!
+    summary: No calculation is applied.
+    value: '"None"'
+  - name: percentDifferenceFrom
+    uid: 'office!Excel.ShowAsCalculation.percentDifferenceFrom:member'
+    package: office!
+    summary: Difference from the specified Base field and Base item.
+    value: '"PercentDifferenceFrom"'
+  - name: percentOf
+    uid: 'office!Excel.ShowAsCalculation.percentOf:member'
+    package: office!
+    summary: Percent of the specified Base field and Base item.
+    value: '"PercentOf"'
+  - name: percentOfColumnTotal
+    uid: 'office!Excel.ShowAsCalculation.percentOfColumnTotal:member'
+    package: office!
+    summary: Percent of the column total.
+    value: '"PercentOfColumnTotal"'
+  - name: percentOfGrandTotal
+    uid: 'office!Excel.ShowAsCalculation.percentOfGrandTotal:member'
+    package: office!
+    summary: Percent of the grand total.
+    value: '"PercentOfGrandTotal"'
+  - name: percentOfParentColumnTotal
+    uid: 'office!Excel.ShowAsCalculation.percentOfParentColumnTotal:member'
+    package: office!
+    summary: Percent of the column total for the specified Base field.
+    value: '"PercentOfParentColumnTotal"'
+  - name: percentOfParentRowTotal
+    uid: 'office!Excel.ShowAsCalculation.percentOfParentRowTotal:member'
+    package: office!
+    summary: Percent of the row total for the specified Base field.
+    value: '"PercentOfParentRowTotal"'
+  - name: percentOfParentTotal
+    uid: 'office!Excel.ShowAsCalculation.percentOfParentTotal:member'
+    package: office!
+    summary: Percent of the grand total for the specified Base field.
+    value: '"PercentOfParentTotal"'
+  - name: percentOfRowTotal
+    uid: 'office!Excel.ShowAsCalculation.percentOfRowTotal:member'
+    package: office!
+    summary: Percent of the row total.
+    value: '"PercentOfRowTotal"'
+  - name: percentRunningTotal
+    uid: 'office!Excel.ShowAsCalculation.percentRunningTotal:member'
+    package: office!
+    summary: Percent running total of the specified Base field.
+    value: '"PercentRunningTotal"'
+  - name: rankAscending
+    uid: 'office!Excel.ShowAsCalculation.rankAscending:member'
+    package: office!
+    summary: Ascending rank of the specified Base field.
+    value: '"RankAscending"'
+  - name: rankDecending
+    uid: 'office!Excel.ShowAsCalculation.rankDecending:member'
+    package: office!
+    summary: Descending rank of the specified Base field.
+    value: '"RankDecending"'
+  - name: runningTotal
+    uid: 'office!Excel.ShowAsCalculation.runningTotal:member'
+    package: office!
+    summary: Running total of the specified Base field.
+    value: '"RunningTotal"'
+  - name: unknown
+    uid: 'office!Excel.ShowAsCalculation.unknown:member'
+    package: office!
+    summary: Calculation is unknown or unsupported.
+    value: '"Unknown"'

@@ -1,0 +1,192 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalFormatPresetCriterion
+uid: 'office!Excel.ConditionalFormatPresetCriterion:enum'
+package: office!
+fullName: Excel.ConditionalFormatPresetCriterion
+summary: Represents the criteria of the preset criteria conditional format type.
+remarks: >-
+  \[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-advanced.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      queueCommandsToClearAllConditionalFormats(sheet);
+
+      const temperatureDataRange = sheet.tables.getItem("TemperatureTable").getDataBodyRange();
+
+      /* When the priority property of ConditionalFormat objects 
+         is not explicitly set, they are prioritized in the order
+         that they are added, with zero-based numbering: 0, 1, ...
+         Contradictions are resolved in favor of the format with
+         the lower priority number. In the example below, negative
+         numbers will get a green background, but NOT a blue font,
+         because priority goes to the format that gives them a red font.
+      */
+
+      // Set low numbers to bold, dark red font. This format will
+      // get priority 0.
+      const presetFormat = temperatureDataRange.conditionalFormats
+          .add(Excel.ConditionalFormatType.presetCriteria);
+      presetFormat.preset.format.font.color = "red";
+      presetFormat.preset.format.font.bold = true;
+      presetFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage };
+
+       // Set negative numbers to blue font with green background. 
+       // This format will get priority 1.
+      const cellValueFormat = temperatureDataRange.conditionalFormats
+          .add(Excel.ConditionalFormatType.cellValue);
+      cellValueFormat.cellValue.format.font.color = "blue";
+      cellValueFormat.cellValue.format.fill.color = "lightgreen";
+      cellValueFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: aboveAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.aboveAverage:member'
+    package: office!
+    summary: ''
+    value: '"AboveAverage"'
+  - name: belowAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.belowAverage:member'
+    package: office!
+    summary: ''
+    value: '"BelowAverage"'
+  - name: blanks
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.blanks:member'
+    package: office!
+    summary: ''
+    value: '"Blanks"'
+  - name: duplicateValues
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.duplicateValues:member'
+    package: office!
+    summary: ''
+    value: '"DuplicateValues"'
+  - name: equalOrAboveAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.equalOrAboveAverage:member'
+    package: office!
+    summary: ''
+    value: '"EqualOrAboveAverage"'
+  - name: equalOrBelowAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.equalOrBelowAverage:member'
+    package: office!
+    summary: ''
+    value: '"EqualOrBelowAverage"'
+  - name: errors
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.errors:member'
+    package: office!
+    summary: ''
+    value: '"Errors"'
+  - name: invalid
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: lastMonth
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.lastMonth:member'
+    package: office!
+    summary: ''
+    value: '"LastMonth"'
+  - name: lastSevenDays
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.lastSevenDays:member'
+    package: office!
+    summary: ''
+    value: '"LastSevenDays"'
+  - name: lastWeek
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.lastWeek:member'
+    package: office!
+    summary: ''
+    value: '"LastWeek"'
+  - name: nextMonth
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.nextMonth:member'
+    package: office!
+    summary: ''
+    value: '"NextMonth"'
+  - name: nextWeek
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.nextWeek:member'
+    package: office!
+    summary: ''
+    value: '"NextWeek"'
+  - name: nonBlanks
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.nonBlanks:member'
+    package: office!
+    summary: ''
+    value: '"NonBlanks"'
+  - name: nonErrors
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.nonErrors:member'
+    package: office!
+    summary: ''
+    value: '"NonErrors"'
+  - name: oneStdDevAboveAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage:member'
+    package: office!
+    summary: ''
+    value: '"OneStdDevAboveAverage"'
+  - name: oneStdDevBelowAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.oneStdDevBelowAverage:member'
+    package: office!
+    summary: ''
+    value: '"OneStdDevBelowAverage"'
+  - name: thisMonth
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.thisMonth:member'
+    package: office!
+    summary: ''
+    value: '"ThisMonth"'
+  - name: thisWeek
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.thisWeek:member'
+    package: office!
+    summary: ''
+    value: '"ThisWeek"'
+  - name: threeStdDevAboveAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.threeStdDevAboveAverage:member'
+    package: office!
+    summary: ''
+    value: '"ThreeStdDevAboveAverage"'
+  - name: threeStdDevBelowAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.threeStdDevBelowAverage:member'
+    package: office!
+    summary: ''
+    value: '"ThreeStdDevBelowAverage"'
+  - name: today
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.today:member'
+    package: office!
+    summary: ''
+    value: '"Today"'
+  - name: tomorrow
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.tomorrow:member'
+    package: office!
+    summary: ''
+    value: '"Tomorrow"'
+  - name: twoStdDevAboveAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.twoStdDevAboveAverage:member'
+    package: office!
+    summary: ''
+    value: '"TwoStdDevAboveAverage"'
+  - name: twoStdDevBelowAverage
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.twoStdDevBelowAverage:member'
+    package: office!
+    summary: ''
+    value: '"TwoStdDevBelowAverage"'
+  - name: uniqueValues
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.uniqueValues:member'
+    package: office!
+    summary: ''
+    value: '"UniqueValues"'
+  - name: yesterday
+    uid: 'office!Excel.ConditionalFormatPresetCriterion.yesterday:member'
+    package: office!
+    summary: ''
+    value: '"Yesterday"'

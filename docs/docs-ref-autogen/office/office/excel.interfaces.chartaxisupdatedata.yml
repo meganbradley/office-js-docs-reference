@@ -1,0 +1,441 @@
+### YamlMime:TSType
+name: Excel.Interfaces.ChartAxisUpdateData
+uid: 'office!Excel.Interfaces.ChartAxisUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.ChartAxisUpdateData
+summary: 'An interface for updating data on the ChartAxis object, for use in `chartAxis.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: alignment
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#alignment:member'
+    package: office!
+    fullName: alignment
+    summary: Specifies the alignment for the specified axis tick label. See `Excel.ChartTextHorizontalAlignment` for detail.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'alignment?: Excel.ChartTickLabelAlignment | "Center" | "Left" | "Right";'
+      return:
+        type: '<xref uid="office!Excel.ChartTickLabelAlignment:enum" /> | "Center" | "Left" | "Right"'
+  - name: baseTimeUnit
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#baseTimeUnit:member'
+    package: office!
+    fullName: baseTimeUnit
+    summary: Specifies the base unit for the specified category axis.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'baseTimeUnit?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months" | "Years"'
+  - name: categoryType
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#categoryType:member'
+    package: office!
+    fullName: categoryType
+    summary: Specifies the category axis type.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'categoryType?: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisCategoryType:enum" /> | "Automatic" | "TextAxis" | "DateAxis"'
+  - name: displayUnit
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#displayUnit:member'
+    package: office!
+    fullName: displayUnit
+    summary: Represents the axis display unit. See `Excel.ChartAxisDisplayUnit` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        displayUnit?: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+        "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
+      return:
+        type: >-
+          <xref uid="office!Excel.ChartAxisDisplayUnit:enum" /> | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+          "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
+  - name: format
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#format:member'
+    package: office!
+    fullName: format
+    summary: 'Represents the formatting of a chart object, which includes line and font formatting.'
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAxisFormatUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartAxisFormatUpdateData:interface" />'
+  - name: isBetweenCategories
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#isBetweenCategories:member'
+    package: office!
+    fullName: isBetweenCategories
+    summary: Specifies if the value axis crosses the category axis between categories.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isBetweenCategories?: boolean;'
+      return:
+        type: boolean
+  - name: linkNumberFormat
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#linkNumberFormat:member'
+    package: office!
+    fullName: linkNumberFormat
+    summary: >-
+      Specifies if the number format is linked to the cells. If `true`<!-- -->, the number format will change in the
+      labels when it changes in the cells.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'linkNumberFormat?: boolean;'
+      return:
+        type: boolean
+  - name: logBase
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#logBase:member'
+    package: office!
+    fullName: logBase
+    summary: Specifies the base of the logarithm when using logarithmic scales.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logBase?: number;'
+      return:
+        type: number
+  - name: majorGridlines
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member'
+    package: office!
+    fullName: majorGridlines
+    summary: Returns an object that represents the major gridlines for the specified axis.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartGridlinesUpdateData:interface" />'
+  - name: majorTickMark
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member'
+    package: office!
+    fullName: majorTickMark
+    summary: Specifies the type of major tick mark for the specified axis. See `Excel.ChartAxisTickMark` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" | "Inside" | "Outside"'
+  - name: majorTimeUnitScale
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#majorTimeUnitScale:member'
+    package: office!
+    fullName: majorTimeUnitScale
+    summary: >-
+      Specifies the major unit scale value for the category axis when the `categoryType` property is set to
+      `dateAxis`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorTimeUnitScale?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months" | "Years"'
+  - name: majorUnit
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#majorUnit:member'
+    package: office!
+    fullName: majorUnit
+    summary: >-
+      Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
+      returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'majorUnit?: any;'
+      return:
+        type: any
+  - name: maximum
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#maximum:member'
+    package: office!
+    fullName: maximum
+    summary: >-
+      Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'maximum?: any;'
+      return:
+        type: any
+  - name: minimum
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#minimum:member'
+    package: office!
+    fullName: minimum
+    summary: >-
+      Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
+      axis values). The returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minimum?: any;'
+      return:
+        type: any
+  - name: minorGridlines
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#minorGridlines:member'
+    package: office!
+    fullName: minorGridlines
+    summary: Returns an object that represents the minor gridlines for the specified axis.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartGridlinesUpdateData:interface" />'
+  - name: minorTickMark
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member'
+    package: office!
+    fullName: minorTickMark
+    summary: Specifies the type of minor tick mark for the specified axis. See `Excel.ChartAxisTickMark` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorTickMark?: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisTickMark:enum" /> | "None" | "Cross" | "Inside" | "Outside"'
+  - name: minorTimeUnitScale
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#minorTimeUnitScale:member'
+    package: office!
+    fullName: minorTimeUnitScale
+    summary: >-
+      Specifies the minor unit scale value for the category axis when the `categoryType` property is set to
+      `dateAxis`<!-- -->.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorTimeUnitScale?: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisTimeUnit:enum" /> | "Days" | "Months" | "Years"'
+  - name: minorUnit
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#minorUnit:member'
+    package: office!
+    fullName: minorUnit
+    summary: >-
+      Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
+      automatic axis values). The returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'minorUnit?: any;'
+      return:
+        type: any
+  - name: multiLevel
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#multiLevel:member'
+    package: office!
+    fullName: multiLevel
+    summary: Specifies if an axis is multilevel.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'multiLevel?: boolean;'
+      return:
+        type: boolean
+  - name: numberFormat
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#numberFormat:member'
+    package: office!
+    fullName: numberFormat
+    summary: Specifies the format code for the axis tick label.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberFormat?: string;'
+      return:
+        type: string
+  - name: offset
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#offset:member'
+    package: office!
+    fullName: offset
+    summary: >-
+      Specifies the distance between the levels of labels, and the distance between the first level and the axis line.
+      The value should be an integer from 0 to 1000.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'offset?: number;'
+      return:
+        type: number
+  - name: position
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#position:member'
+    package: office!
+    fullName: position
+    summary: Specifies the specified axis position where the other axis crosses. See `Excel.ChartAxisPosition` for details.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: Excel.ChartAxisPosition | "Automatic" | "Maximum" | "Minimum" | "Custom";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisPosition:enum" /> | "Automatic" | "Maximum" | "Minimum" | "Custom"'
+  - name: reversePlotOrder
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#reversePlotOrder:member'
+    package: office!
+    fullName: reversePlotOrder
+    summary: Specifies if Excel plots data points from last to first.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'reversePlotOrder?: boolean;'
+      return:
+        type: boolean
+  - name: scaleType
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#scaleType:member'
+    package: office!
+    fullName: scaleType
+    summary: Specifies the value axis scale type. See `Excel.ChartAxisScaleType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scaleType?: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisScaleType:enum" /> | "Linear" | "Logarithmic"'
+  - name: showDisplayUnitLabel
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#showDisplayUnitLabel:member'
+    package: office!
+    fullName: showDisplayUnitLabel
+    summary: Specifies if the axis display unit label is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showDisplayUnitLabel?: boolean;'
+      return:
+        type: boolean
+  - name: textOrientation
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#textOrientation:member'
+    package: office!
+    fullName: textOrientation
+    summary: >-
+      Specifies the angle to which the text is oriented for the chart axis tick label. The value should either be an
+      integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'textOrientation?: any;'
+      return:
+        type: any
+  - name: tickLabelPosition
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#tickLabelPosition:member'
+    package: office!
+    fullName: tickLabelPosition
+    summary: >-
+      Specifies the position of tick-mark labels on the specified axis. See `Excel.ChartAxisTickLabelPosition` for
+      details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tickLabelPosition?: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None";'
+      return:
+        type: '<xref uid="office!Excel.ChartAxisTickLabelPosition:enum" /> | "NextToAxis" | "High" | "Low" | "None"'
+  - name: tickLabelSpacing
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#tickLabelSpacing:member'
+    package: office!
+    fullName: tickLabelSpacing
+    summary: >-
+      Specifies the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      empty string for automatic setting. The returned value is always a number.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tickLabelSpacing?: any;'
+      return:
+        type: any
+  - name: tickMarkSpacing
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#tickMarkSpacing:member'
+    package: office!
+    fullName: tickMarkSpacing
+    summary: Specifies the number of categories or series between tick marks.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tickMarkSpacing?: number;'
+      return:
+        type: number
+  - name: title
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#title:member'
+    package: office!
+    fullName: title
+    summary: Represents the axis title.
+    remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: Excel.Interfaces.ChartAxisTitleUpdateData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.ChartAxisTitleUpdateData:interface" />'
+  - name: visible
+    uid: 'office!Excel.Interfaces.ChartAxisUpdateData#visible:member'
+    package: office!
+    fullName: visible
+    summary: Specifies if the axis is visible.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.SectionCollectionData
+uid: 'office!OneNote.Interfaces.SectionCollectionData:interface'
+package: office!
+fullName: OneNote.Interfaces.SectionCollectionData
+summary: An interface describing the data returned by calling `sectionCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!OneNote.Interfaces.SectionCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: OneNote.Interfaces.SectionData[];'
+      return:
+        type: '<xref uid="office!OneNote.Interfaces.SectionData:interface" />[]'

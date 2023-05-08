@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: Visio.Interfaces.ShapeViewData
+uid: 'office!Visio.Interfaces.ShapeViewData:interface'
+package: office!
+fullName: Visio.Interfaces.ShapeViewData
+summary: An interface describing the data returned by calling `shapeView.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: highlight
+    uid: 'office!Visio.Interfaces.ShapeViewData#highlight:member'
+    package: office!
+    fullName: highlight
+    summary: |-
+      Represents the highlight around the shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'highlight?: Visio.Highlight;'
+      return:
+        type: '<xref uid="office!Visio.Highlight:interface" />'

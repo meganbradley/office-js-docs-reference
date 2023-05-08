@@ -1,0 +1,51 @@
+### YamlMime:TSEnum
+name: Excel.ChartMapAreaLevel
+uid: 'office!Excel.ChartMapAreaLevel:enum'
+package: office!
+fullName: Excel.ChartMapAreaLevel
+summary: Represents the mapping level of a chart series. This only applies to region map charts.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.ChartMapAreaLevel.automatic:member'
+    package: office!
+    summary: ''
+    value: '"Automatic"'
+  - name: city
+    uid: 'office!Excel.ChartMapAreaLevel.city:member'
+    package: office!
+    summary: ''
+    value: '"City"'
+  - name: continent
+    uid: 'office!Excel.ChartMapAreaLevel.continent:member'
+    package: office!
+    summary: ''
+    value: '"Continent"'
+  - name: country
+    uid: 'office!Excel.ChartMapAreaLevel.country:member'
+    package: office!
+    summary: ''
+    value: '"Country"'
+  - name: county
+    uid: 'office!Excel.ChartMapAreaLevel.county:member'
+    package: office!
+    summary: ''
+    value: '"County"'
+  - name: dataOnly
+    uid: 'office!Excel.ChartMapAreaLevel.dataOnly:member'
+    package: office!
+    summary: ''
+    value: '"DataOnly"'
+  - name: state
+    uid: 'office!Excel.ChartMapAreaLevel.state:member'
+    package: office!
+    summary: ''
+    value: '"State"'
+  - name: world
+    uid: 'office!Excel.ChartMapAreaLevel.world:member'
+    package: office!
+    summary: ''
+    value: '"World"'

@@ -1,0 +1,461 @@
+### YamlMime:TSEnum
+name: Word.FieldType
+uid: 'office!Word.FieldType:enum'
+package: office!
+fullName: Word.FieldType
+summary: Represents the type of Field.
+remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+fields:
+  - name: addin
+    uid: 'office!Word.FieldType.addin:member'
+    package: office!
+    summary: Represents that the field type is Add-in.
+    value: '"Addin"'
+  - name: addressBlock
+    uid: 'office!Word.FieldType.addressBlock:member'
+    package: office!
+    summary: Represents that the field type is AddressBlock.
+    value: '"AddressBlock"'
+  - name: advance
+    uid: 'office!Word.FieldType.advance:member'
+    package: office!
+    summary: Represents that the field type is Advance.
+    value: '"Advance"'
+  - name: ask
+    uid: 'office!Word.FieldType.ask:member'
+    package: office!
+    summary: Represents that the field type is Ask.
+    value: '"Ask"'
+  - name: author
+    uid: 'office!Word.FieldType.author:member'
+    package: office!
+    summary: Represents that the field type is Author.
+    value: '"Author"'
+  - name: autoText
+    uid: 'office!Word.FieldType.autoText:member'
+    package: office!
+    summary: Represents that the field type is AutoText.
+    value: '"AutoText"'
+  - name: autoTextList
+    uid: 'office!Word.FieldType.autoTextList:member'
+    package: office!
+    summary: Represents that the field type is AutoTextList.
+    value: '"AutoTextList"'
+  - name: barCode
+    uid: 'office!Word.FieldType.barCode:member'
+    package: office!
+    summary: Represents that the field type is Barcode.
+    value: '"BarCode"'
+  - name: bibliography
+    uid: 'office!Word.FieldType.bibliography:member'
+    package: office!
+    summary: Represents that the field type is Bibliography.
+    value: '"Bibliography"'
+  - name: bidiOutline
+    uid: 'office!Word.FieldType.bidiOutline:member'
+    package: office!
+    summary: Represents that the field type is BidiOutline.
+    value: '"BidiOutline"'
+  - name: citation
+    uid: 'office!Word.FieldType.citation:member'
+    package: office!
+    summary: Represents that the field type is Citation.
+    value: '"Citation"'
+  - name: comments
+    uid: 'office!Word.FieldType.comments:member'
+    package: office!
+    summary: Represents that the field type is Comments.
+    value: '"Comments"'
+  - name: compare
+    uid: 'office!Word.FieldType.compare:member'
+    package: office!
+    summary: Represents that the field type is Compare.
+    value: '"Compare"'
+  - name: createDate
+    uid: 'office!Word.FieldType.createDate:member'
+    package: office!
+    summary: Represents that the field type is CreateDate.
+    value: '"CreateDate"'
+  - name: data
+    uid: 'office!Word.FieldType.data:member'
+    package: office!
+    summary: Represents that the field type is Data.
+    value: '"Data"'
+  - name: database
+    uid: 'office!Word.FieldType.database:member'
+    package: office!
+    summary: Represents that the field type is Database.
+    value: '"Database"'
+  - name: date
+    uid: 'office!Word.FieldType.date:member'
+    package: office!
+    summary: Represents that the field type is Date.
+    value: '"Date"'
+  - name: displayBarcode
+    uid: 'office!Word.FieldType.displayBarcode:member'
+    package: office!
+    summary: Represents that the field type is DisplayBarcode.
+    value: '"DisplayBarcode"'
+  - name: docProperty
+    uid: 'office!Word.FieldType.docProperty:member'
+    package: office!
+    summary: Represents that the field type is DocumentProperty
+    value: '"DocProperty"'
+  - name: docVariable
+    uid: 'office!Word.FieldType.docVariable:member'
+    package: office!
+    summary: Represents that the field type is DocumentVariable.
+    value: '"DocVariable"'
+  - name: editTime
+    uid: 'office!Word.FieldType.editTime:member'
+    package: office!
+    summary: Represents that the field type is EditTime.
+    value: '"EditTime"'
+  - name: embedded
+    uid: 'office!Word.FieldType.embedded:member'
+    package: office!
+    summary: Represents that the field type is Embedded.
+    value: '"Embedded"'
+  - name: empty
+    uid: 'office!Word.FieldType.empty:member'
+    package: office!
+    summary: Represents that the field type is Empty.
+    value: '"Empty"'
+  - name: eq
+    uid: 'office!Word.FieldType.eq:member'
+    package: office!
+    summary: Represents that the field type is Equation.
+    value: '"EQ"'
+  - name: expression
+    uid: 'office!Word.FieldType.expression:member'
+    package: office!
+    summary: Represents that the field type is Expression.
+    value: '"Expression"'
+  - name: fileName
+    uid: 'office!Word.FieldType.fileName:member'
+    package: office!
+    summary: Represents that the field type is FileName.
+    value: '"FileName"'
+  - name: fileSize
+    uid: 'office!Word.FieldType.fileSize:member'
+    package: office!
+    summary: Represents that the field type is FileSize.
+    value: '"FileSize"'
+  - name: fillIn
+    uid: 'office!Word.FieldType.fillIn:member'
+    package: office!
+    summary: Represents that the field type is FillIn.
+    value: '"FillIn"'
+  - name: formCheckbox
+    uid: 'office!Word.FieldType.formCheckbox:member'
+    package: office!
+    summary: Represents that the field type is FormCheckbox.
+    value: '"FormCheckbox"'
+  - name: formDropdown
+    uid: 'office!Word.FieldType.formDropdown:member'
+    package: office!
+    summary: Represents that the field type is FormDropdown.
+    value: '"FormDropdown"'
+  - name: formText
+    uid: 'office!Word.FieldType.formText:member'
+    package: office!
+    summary: Represents that the field type is FormText.
+    value: '"FormText"'
+  - name: gotoButton
+    uid: 'office!Word.FieldType.gotoButton:member'
+    package: office!
+    summary: Represents that the field type is GotoButton.
+    value: '"GotoButton"'
+  - name: greetingLine
+    uid: 'office!Word.FieldType.greetingLine:member'
+    package: office!
+    summary: Represents that the field type is GreetingLine.
+    value: '"GreetingLine"'
+  - name: hyperlink
+    uid: 'office!Word.FieldType.hyperlink:member'
+    package: office!
+    summary: Represents that the field type is Hyperlink.
+    value: '"Hyperlink"'
+  - name: if
+    uid: 'office!Word.FieldType.if:member'
+    package: office!
+    summary: Represents that the field type is If.
+    value: '"If"'
+  - name: import
+    uid: 'office!Word.FieldType.import:member'
+    package: office!
+    summary: Represents that the field type is Import.
+    value: '"Import"'
+  - name: include
+    uid: 'office!Word.FieldType.include:member'
+    package: office!
+    summary: Represents that the field type is Include.
+    value: '"Include"'
+  - name: includePicture
+    uid: 'office!Word.FieldType.includePicture:member'
+    package: office!
+    summary: Represents that the field type is IncludePicture.
+    value: '"IncludePicture"'
+  - name: includeText
+    uid: 'office!Word.FieldType.includeText:member'
+    package: office!
+    summary: Represents that the field type is IncludeText.
+    value: '"IncludeText"'
+  - name: index
+    uid: 'office!Word.FieldType.index:member'
+    package: office!
+    summary: Represents that the field type is Index.
+    value: '"Index"'
+  - name: info
+    uid: 'office!Word.FieldType.info:member'
+    package: office!
+    summary: Represents that the field type is Information.
+    value: '"Info"'
+  - name: keywords
+    uid: 'office!Word.FieldType.keywords:member'
+    package: office!
+    summary: Represents that the field type is Keywords.
+    value: '"Keywords"'
+  - name: lastSavedBy
+    uid: 'office!Word.FieldType.lastSavedBy:member'
+    package: office!
+    summary: Represents that the field type is LastSavedBy.
+    value: '"LastSavedBy"'
+  - name: link
+    uid: 'office!Word.FieldType.link:member'
+    package: office!
+    summary: Represents that the field type is Link.
+    value: '"Link"'
+  - name: listNum
+    uid: 'office!Word.FieldType.listNum:member'
+    package: office!
+    summary: Represents that the field type is ListNumber.
+    value: '"ListNum"'
+  - name: macroButton
+    uid: 'office!Word.FieldType.macroButton:member'
+    package: office!
+    summary: Represents that the field type is MacroButton.
+    value: '"MacroButton"'
+  - name: mergeBarcode
+    uid: 'office!Word.FieldType.mergeBarcode:member'
+    package: office!
+    summary: Represents that the field type is MergeBarcode.
+    value: '"MergeBarcode"'
+  - name: mergeField
+    uid: 'office!Word.FieldType.mergeField:member'
+    package: office!
+    summary: Represents that the field type is MergeField.
+    value: '"MergeField"'
+  - name: mergeRec
+    uid: 'office!Word.FieldType.mergeRec:member'
+    package: office!
+    summary: Represents that the field type is MergeRecord.
+    value: '"MergeRec"'
+  - name: mergeSeq
+    uid: 'office!Word.FieldType.mergeSeq:member'
+    package: office!
+    summary: Represents that the field type is MergeSequence.
+    value: '"MergeSeq"'
+  - name: next
+    uid: 'office!Word.FieldType.next:member'
+    package: office!
+    summary: Represents that the field type is Next.
+    value: '"Next"'
+  - name: nextIf
+    uid: 'office!Word.FieldType.nextIf:member'
+    package: office!
+    summary: Represents that the field type is NextIf.
+    value: '"NextIf"'
+  - name: noteRef
+    uid: 'office!Word.FieldType.noteRef:member'
+    package: office!
+    summary: Represents that the field type is NoteReference.
+    value: '"NoteRef"'
+  - name: numChars
+    uid: 'office!Word.FieldType.numChars:member'
+    package: office!
+    summary: Represents that the field type is NumberOfCharacters.
+    value: '"NumChars"'
+  - name: numPages
+    uid: 'office!Word.FieldType.numPages:member'
+    package: office!
+    summary: Represents that the field type is NumberOfPages.
+    value: '"NumPages"'
+  - name: numWords
+    uid: 'office!Word.FieldType.numWords:member'
+    package: office!
+    summary: Represents that the field type is NumberOfWords.
+    value: '"NumWords"'
+  - name: ocx
+    uid: 'office!Word.FieldType.ocx:member'
+    package: office!
+    summary: Represents that the field type is ActiveXControl.
+    value: '"OCX"'
+  - name: others
+    uid: 'office!Word.FieldType.others:member'
+    package: office!
+    summary: Represents the field types not supported by the Office JavaScript API.
+    value: '"Others"'
+  - name: page
+    uid: 'office!Word.FieldType.page:member'
+    package: office!
+    summary: Represents that the field type is Page.
+    value: '"Page"'
+  - name: pageRef
+    uid: 'office!Word.FieldType.pageRef:member'
+    package: office!
+    summary: Represents that the field type is PageReference.
+    value: '"PageRef"'
+  - name: print
+    uid: 'office!Word.FieldType.print:member'
+    package: office!
+    summary: Represents that the field type is Print.
+    value: '"Print"'
+  - name: printDate
+    uid: 'office!Word.FieldType.printDate:member'
+    package: office!
+    summary: Represents that the field type is PrintDate.
+    value: '"PrintDate"'
+  - name: private
+    uid: 'office!Word.FieldType.private:member'
+    package: office!
+    summary: Represents that the field type is Private.
+    value: '"Private"'
+  - name: quote
+    uid: 'office!Word.FieldType.quote:member'
+    package: office!
+    summary: Represents that the field type is Quote.
+    value: '"Quote"'
+  - name: rd
+    uid: 'office!Word.FieldType.rd:member'
+    package: office!
+    summary: Represents that the field type is ReferencedDocument.
+    value: '"RD"'
+  - name: ref
+    uid: 'office!Word.FieldType.ref:member'
+    package: office!
+    summary: Represents that the field type is Reference.
+    value: '"Ref"'
+  - name: revNum
+    uid: 'office!Word.FieldType.revNum:member'
+    package: office!
+    summary: Represents that the field type is RevisionNumber.
+    value: '"RevNum"'
+  - name: saveDate
+    uid: 'office!Word.FieldType.saveDate:member'
+    package: office!
+    summary: Represents that the field type is SaveDate.
+    value: '"SaveDate"'
+  - name: section
+    uid: 'office!Word.FieldType.section:member'
+    package: office!
+    summary: Represents that the field type is Section.
+    value: '"Section"'
+  - name: sectionPages
+    uid: 'office!Word.FieldType.sectionPages:member'
+    package: office!
+    summary: Represents that the field type is SectionPages.
+    value: '"SectionPages"'
+  - name: seq
+    uid: 'office!Word.FieldType.seq:member'
+    package: office!
+    summary: Represents that the field type is Sequence.
+    value: '"Seq"'
+  - name: set
+    uid: 'office!Word.FieldType.set:member'
+    package: office!
+    summary: Represents that the field type is Set.
+    value: '"Set"'
+  - name: shape
+    uid: 'office!Word.FieldType.shape:member'
+    package: office!
+    summary: Represents that the field type is Shape.
+    value: '"Shape"'
+  - name: skipIf
+    uid: 'office!Word.FieldType.skipIf:member'
+    package: office!
+    summary: Represents that the field type is SkipIf.
+    value: '"SkipIf"'
+  - name: styleRef
+    uid: 'office!Word.FieldType.styleRef:member'
+    package: office!
+    summary: Represents that the field type is StyleReference.
+    value: '"StyleRef"'
+  - name: subject
+    uid: 'office!Word.FieldType.subject:member'
+    package: office!
+    summary: Represents that the field type is Subject.
+    value: '"Subject"'
+  - name: subscriber
+    uid: 'office!Word.FieldType.subscriber:member'
+    package: office!
+    summary: Represents that the field type is Subscriber.
+    value: '"Subscriber"'
+  - name: symbol
+    uid: 'office!Word.FieldType.symbol:member'
+    package: office!
+    summary: Represents that the field type is Symbol.
+    value: '"Symbol"'
+  - name: ta
+    uid: 'office!Word.FieldType.ta:member'
+    package: office!
+    summary: Represents that the field type is TableOfAuthoritiesEntry.
+    value: '"TA"'
+  - name: tc
+    uid: 'office!Word.FieldType.tc:member'
+    package: office!
+    summary: Represents that the field type is TableOfContentsEntry.
+    value: '"TC"'
+  - name: template
+    uid: 'office!Word.FieldType.template:member'
+    package: office!
+    summary: Represents that the field type is Template.
+    value: '"Template"'
+  - name: time
+    uid: 'office!Word.FieldType.time:member'
+    package: office!
+    summary: Represents that the field type is Time.
+    value: '"Time"'
+  - name: title
+    uid: 'office!Word.FieldType.title:member'
+    package: office!
+    summary: Represents that the field type is Title.
+    value: '"Title"'
+  - name: toa
+    uid: 'office!Word.FieldType.toa:member'
+    package: office!
+    summary: Represents that the field type is TableOfAuthorities.
+    value: '"TOA"'
+  - name: toc
+    uid: 'office!Word.FieldType.toc:member'
+    package: office!
+    summary: Represents that the field type is TableOfContents.
+    value: '"TOC"'
+  - name: undefined
+    uid: 'office!Word.FieldType.undefined:member'
+    package: office!
+    summary: Represents that the field type is Undefined.
+    value: '"Undefined"'
+  - name: userAddress
+    uid: 'office!Word.FieldType.userAddress:member'
+    package: office!
+    summary: Represents that the field type is UserAddress.
+    value: '"UserAddress"'
+  - name: userInitials
+    uid: 'office!Word.FieldType.userInitials:member'
+    package: office!
+    summary: Represents that the field type is UserInitials.
+    value: '"UserInitials"'
+  - name: userName
+    uid: 'office!Word.FieldType.userName:member'
+    package: office!
+    summary: Represents that the field type is UserName.
+    value: '"UserName"'
+  - name: xe
+    uid: 'office!Word.FieldType.xe:member'
+    package: office!
+    summary: Represents that the field type is IndexEntry.
+    value: '"XE"'

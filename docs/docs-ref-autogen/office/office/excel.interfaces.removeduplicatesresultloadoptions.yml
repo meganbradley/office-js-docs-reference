@@ -1,0 +1,53 @@
+### YamlMime:TSType
+name: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
+uid: 'office!Excel.Interfaces.RemoveDuplicatesResultLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
+summary: Represents the results from `Range.removeDuplicates`<!-- -->.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.RemoveDuplicatesResultLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: removed
+    uid: 'office!Excel.Interfaces.RemoveDuplicatesResultLoadOptions#removed:member'
+    package: office!
+    fullName: removed
+    summary: Number of duplicated rows removed by the operation.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removed?: boolean;'
+      return:
+        type: boolean
+  - name: uniqueRemaining
+    uid: 'office!Excel.Interfaces.RemoveDuplicatesResultLoadOptions#uniqueRemaining:member'
+    package: office!
+    fullName: uniqueRemaining
+    summary: Number of remaining unique rows present in the resulting range.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'uniqueRemaining?: boolean;'
+      return:
+        type: boolean

@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: Excel.CardLayoutPropertyReference
+uid: 'office!Excel.CardLayoutPropertyReference:interface'
+package: office!
+fullName: Excel.CardLayoutPropertyReference
+summary: Represents a reference to a property used by the card layout.
+remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: property
+    uid: 'office!Excel.CardLayoutPropertyReference#property:member'
+    package: office!
+    fullName: property
+    summary: Represents the name of the property referenced by the card layout.
+    remarks: '\[ [API set: ExcelApi 1.16](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'property: string;'
+      return:
+        type: string

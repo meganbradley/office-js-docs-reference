@@ -1,0 +1,41 @@
+### YamlMime:TSEnum
+name: Excel.SaveBehavior
+uid: 'office!Excel.SaveBehavior:enum'
+package: office!
+fullName: Excel.SaveBehavior
+summary: Specifies the save behavior for `Workbook.save`<!-- -->.
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/50-workbook/workbook-save-and-close.yaml
+
+  await Excel.run(async (context) => {
+      context.workbook.save(Excel.SaveBehavior.prompt);
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: prompt
+    uid: 'office!Excel.SaveBehavior.prompt:member'
+    package: office!
+    summary: >-
+      Prompts the "Save As" experience to the user if the workbook has not been saved, Ignored if the workbook was
+      previously saved.
+    value: '"Prompt"'
+  - name: save
+    uid: 'office!Excel.SaveBehavior.save:member'
+    package: office!
+    summary: >-
+      Save the workbook without prompting the user. If file is not saved, it will save it with default name in the
+      default location.
+    value: '"Save"'

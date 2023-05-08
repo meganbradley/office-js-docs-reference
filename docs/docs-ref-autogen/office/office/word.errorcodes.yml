@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: Word.ErrorCodes
+uid: 'office!Word.ErrorCodes:enum'
+package: office!
+fullName: Word.ErrorCodes
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accessDenied
+    uid: 'office!Word.ErrorCodes.accessDenied:member'
+    package: office!
+    summary: ''
+    value: '"AccessDenied"'
+  - name: generalException
+    uid: 'office!Word.ErrorCodes.generalException:member'
+    package: office!
+    summary: ''
+    value: '"GeneralException"'
+  - name: invalidArgument
+    uid: 'office!Word.ErrorCodes.invalidArgument:member'
+    package: office!
+    summary: ''
+    value: '"InvalidArgument"'
+  - name: itemNotFound
+    uid: 'office!Word.ErrorCodes.itemNotFound:member'
+    package: office!
+    summary: ''
+    value: '"ItemNotFound"'
+  - name: notImplemented
+    uid: 'office!Word.ErrorCodes.notImplemented:member'
+    package: office!
+    summary: ''
+    value: '"NotImplemented"'
+  - name: searchDialogIsOpen
+    uid: 'office!Word.ErrorCodes.searchDialogIsOpen:member'
+    package: office!
+    summary: ''
+    value: '"SearchDialogIsOpen"'
+  - name: searchStringInvalidOrTooLong
+    uid: 'office!Word.ErrorCodes.searchStringInvalidOrTooLong:member'
+    package: office!
+    summary: ''
+    value: '"SearchStringInvalidOrTooLong"'

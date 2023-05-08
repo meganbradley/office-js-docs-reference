@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ThreeArrowsGraySet
+uid: 'office!Excel.ThreeArrowsGraySet:interface'
+package: office!
+fullName: Excel.ThreeArrowsGraySet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: grayDownArrow
+    uid: 'office!Excel.ThreeArrowsGraySet#grayDownArrow:member'
+    package: office!
+    fullName: grayDownArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: graySideArrow
+    uid: 'office!Excel.ThreeArrowsGraySet#graySideArrow:member'
+    package: office!
+    fullName: graySideArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'graySideArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: grayUpArrow
+    uid: 'office!Excel.ThreeArrowsGraySet#grayUpArrow:member'
+    package: office!
+    fullName: grayUpArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

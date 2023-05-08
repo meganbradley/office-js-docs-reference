@@ -1,0 +1,120 @@
+### YamlMime:TSType
+name: Word.Interfaces.CommentCollectionLoadOptions
+uid: 'office!Word.Interfaces.CommentCollectionLoadOptions:interface'
+package: office!
+fullName: Word.Interfaces.CommentCollectionLoadOptions
+summary: 'Contains a collection of [Word.Comment](xref:office!Word.Comment:class) objects.'
+remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Word.Interfaces.CommentCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: authorEmail
+    uid: 'office!Word.Interfaces.CommentCollectionLoadOptions#authorEmail:member'
+    package: office!
+    fullName: authorEmail
+    summary: 'For EACH ITEM in the collection: Gets the email of the comment''s author.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorEmail?: boolean;'
+      return:
+        type: boolean
+  - name: authorName
+    uid: 'office!Word.Interfaces.CommentCollectionLoadOptions#authorName:member'
+    package: office!
+    fullName: authorName
+    summary: 'For EACH ITEM in the collection: Gets the name of the comment''s author.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorName?: boolean;'
+      return:
+        type: boolean
+  - name: content
+    uid: 'office!Word.Interfaces.CommentCollectionLoadOptions#content:member'
+    package: office!
+    fullName: content
+    summary: 'For EACH ITEM in the collection: Gets or sets the comment''s content as plain text.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content?: boolean;'
+      return:
+        type: boolean
+  - name: contentRange
+    uid: 'office!Word.Interfaces.CommentCollectionLoadOptions#contentRange:member'
+    package: office!
+    fullName: contentRange
+    summary: 'For EACH ITEM in the collection: Gets or sets the comment''s content range.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentRange?: Word.Interfaces.CommentContentRangeLoadOptions;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.CommentContentRangeLoadOptions:interface" />'
+  - name: creationDate
+    uid: 'office!Word.Interfaces.CommentCollectionLoadOptions#creationDate:member'
+    package: office!
+    fullName: creationDate
+    summary: 'For EACH ITEM in the collection: Gets the creation date of the comment.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Word.Interfaces.CommentCollectionLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: Gets the ID of the comment.'
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: resolved
+    uid: 'office!Word.Interfaces.CommentCollectionLoadOptions#resolved:member'
+    package: office!
+    fullName: resolved
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the comment thread's status. Setting to true resolves the comment
+      thread. Getting a value of true means that the comment thread is resolved.
+    remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resolved?: boolean;'
+      return:
+        type: boolean

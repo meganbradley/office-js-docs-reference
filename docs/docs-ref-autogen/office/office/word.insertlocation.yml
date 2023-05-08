@@ -1,0 +1,64 @@
+### YamlMime:TSEnum
+name: Word.InsertLocation
+uid: 'office!Word.InsertLocation:enum'
+package: office!
+fullName: Word.InsertLocation
+summary: The insertion location types.
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  To be used with an API call, such as `obj.insertSomething(newStuff, location);`<!-- -->. If the location is "Before"
+  or "After", the new content will be outside of the modified object. If the location is "Start" or "End", the new
+  content will be included as part of the modified object.
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/insert-section-breaks.yaml
+
+  // Inserts a section without an associated page break.
+
+  await Word.run(async (context) => {
+    const body = context.document.body;
+    body.insertBreak(Word.BreakType.sectionContinuous, Word.InsertLocation.end);
+
+    await context.sync();
+
+    console.log("Inserted section without an associated page break");
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: after
+    uid: 'office!Word.InsertLocation.after:member'
+    package: office!
+    summary: Add content after the contents of the calling object.
+    value: '"After"'
+  - name: before
+    uid: 'office!Word.InsertLocation.before:member'
+    package: office!
+    summary: Add content before the contents of the calling object.
+    value: '"Before"'
+  - name: end
+    uid: 'office!Word.InsertLocation.end:member'
+    package: office!
+    summary: Append content to the contents of the calling object.
+    value: '"End"'
+  - name: replace
+    uid: 'office!Word.InsertLocation.replace:member'
+    package: office!
+    summary: Replace the contents of the current object.
+    value: '"Replace"'
+  - name: start
+    uid: 'office!Word.InsertLocation.start:member'
+    package: office!
+    summary: Prepend content to the contents of the calling object.
+    value: '"Start"'

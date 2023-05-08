@@ -1,0 +1,273 @@
+### YamlMime:TSType
+name: Excel.AllowEditRange
+uid: 'office!Excel.AllowEditRange:class'
+package: office!
+fullName: Excel.AllowEditRange
+summary: >-
+  Represents an `AllowEditRange` object found in a worksheet. This object works with worksheet protection properties.
+  When worksheet protection is enabled, an `AllowEditRange` object can be used to allow editing of a specific range,
+  while maintaining protection on the rest of the worksheet.
+remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: address
+    uid: 'office!Excel.AllowEditRange#address:member'
+    package: office!
+    fullName: address
+    summary: >-
+      Specifies the range associated with the object. Worksheet protection must be disabled or paused for this method to
+      work properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and
+      fails to set the range.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address: string;'
+      return:
+        type: string
+  - name: context
+    uid: 'office!Excel.AllowEditRange#context:member'
+    package: office!
+    fullName: context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type: '<xref uid="office!Excel.RequestContext:class" />'
+  - name: isPasswordProtected
+    uid: 'office!Excel.AllowEditRange#isPasswordProtected:member'
+    package: office!
+    fullName: isPasswordProtected
+    summary: Specifies if the object is password protected.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly isPasswordProtected: boolean;'
+      return:
+        type: boolean
+  - name: title
+    uid: 'office!Excel.AllowEditRange#title:member'
+    package: office!
+    fullName: title
+    summary: >-
+      Specifies the title of the object. Worksheet protection must be disabled or paused for this method to work
+      properly. If worksheet protection is enabled and not paused, this method throws an `AccessDenied` error and fails
+      to set the title. If there is already an existing `AllowEditRange` with the same string, or if the string is
+      `null` or empty (""), then this method throws an `InvalidArgument` error and fails to set the title.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title: string;'
+      return:
+        type: string
+methods:
+  - name: delete()
+    uid: 'office!Excel.AllowEditRange#delete:member(1)'
+    package: office!
+    fullName: delete()
+    summary: >-
+      Deletes the object from the `AllowEditRangeCollection`<!-- -->. Worksheet protection must be disabled or paused
+      for this method to work properly. If worksheet protection is enabled and not paused, this method throws an
+      `AccessDenied` error and fails the delete operation.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type: void
+        description: ''
+  - name: load(options)
+    uid: 'office!Excel.AllowEditRange#load:member(1)'
+    package: office!
+    fullName: load(options)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(options?: Excel.Interfaces.AllowEditRangeLoadOptions): Excel.AllowEditRange;'
+      parameters:
+        - id: options
+          description: Provides options for which properties of the object to load.
+          type: '<xref uid="office!Excel.Interfaces.AllowEditRangeLoadOptions:interface" />'
+      return:
+        type: '<xref uid="office!Excel.AllowEditRange:class" />'
+        description: ''
+  - name: load(propertyNames)
+    uid: 'office!Excel.AllowEditRange#load:member(2)'
+    package: office!
+    fullName: load(propertyNames)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.AllowEditRange;'
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type: 'string | string[]'
+      return:
+        type: '<xref uid="office!Excel.AllowEditRange:class" />'
+        description: ''
+  - name: load(propertyNamesAndPaths)
+    uid: 'office!Excel.AllowEditRange#load:member(3)'
+    package: office!
+    fullName: load(propertyNamesAndPaths)
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: |-
+        load(propertyNamesAndPaths?: {
+                    select?: string;
+                    expand?: string;
+                }): Excel.AllowEditRange;
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and
+            `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+          type: |-
+            {
+                        select?: string;
+                        expand?: string;
+                    }
+      return:
+        type: '<xref uid="office!Excel.AllowEditRange:class" />'
+        description: ''
+  - name: pauseProtection(password)
+    uid: 'office!Excel.AllowEditRange#pauseProtection:member(1)'
+    package: office!
+    fullName: pauseProtection(password)
+    summary: >-
+      Pauses worksheet protection for the object for the user in the current session. This method does nothing if
+      worksheet protection isn't enabled or is already paused. If worksheet protection cannot be paused, this method
+      throws an `UnsupportedOperation` error and fails to pause protection for the object. If the password is incorrect,
+      then this method throws a `BadPassword` error and fails to pause protection for the object. If a password is
+      supplied but the object does not require a password, the inputted password will be ignored and the operation will
+      succeed.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pauseProtection(password?: string): void;'
+      parameters:
+        - id: password
+          description: The password associated with the `AllowEditRange` object.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: 'set(properties, options)'
+    uid: 'office!Excel.AllowEditRange#set:member(1)'
+    package: office!
+    fullName: 'set(properties, options)'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Interfaces.AllowEditRangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type: '<xref uid="office!Excel.Interfaces.AllowEditRangeUpdateData:interface" />'
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type: '<xref uid="office!OfficeExtension.UpdateOptions:interface" />'
+      return:
+        type: void
+        description: ''
+  - name: set(properties)
+    uid: 'office!Excel.AllowEditRange#set:member(2)'
+    package: office!
+    fullName: set(properties)
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'set(properties: Excel.AllowEditRange): void;'
+      parameters:
+        - id: properties
+          description: ''
+          type: '<xref uid="office!Excel.AllowEditRange:class" />'
+      return:
+        type: void
+        description: ''
+  - name: setPassword(password)
+    uid: 'office!Excel.AllowEditRange#setPassword:member(1)'
+    package: office!
+    fullName: setPassword(password)
+    summary: >-
+      Changes the password associated with the object. Setting the password string as empty ("") or `null` will remove
+      password protection from the object. Worksheet protection must be disabled or paused for this method to work
+      properly. If worksheet protection is enabled and not paused, then this method throws an `AccessDenied` error and
+      the set operation fails.
+    remarks: '\[ [API set: ExcelApiOnline 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setPassword(password?: string): void;'
+      parameters:
+        - id: password
+          description: The password associated with the `AllowEditRange` object.
+          type: string
+      return:
+        type: void
+        description: ''
+  - name: toJSON()
+    uid: 'office!Excel.AllowEditRange#toJSON:member(1)'
+    package: office!
+    fullName: toJSON()
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.AllowEditRange object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.AllowEditRangeData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.AllowEditRangeData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.AllowEditRangeData:interface" />'
+        description: ''
+extends: '<xref uid="office!OfficeExtension.ClientObject:class" />'

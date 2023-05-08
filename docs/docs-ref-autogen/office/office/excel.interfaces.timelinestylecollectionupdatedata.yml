@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: Excel.Interfaces.TimelineStyleCollectionUpdateData
+uid: 'office!Excel.Interfaces.TimelineStyleCollectionUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.TimelineStyleCollectionUpdateData
+summary: >-
+  An interface for updating data on the TimelineStyleCollection object, for use in `timelineStyleCollection.set({ ...
+  })`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!Excel.Interfaces.TimelineStyleCollectionUpdateData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: Excel.Interfaces.TimelineStyleData[];'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.TimelineStyleData:interface" />[]'

@@ -1,0 +1,62 @@
+### YamlMime:TSType
+name: Word.Interfaces.TableBorderUpdateData
+uid: 'office!Word.Interfaces.TableBorderUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.TableBorderUpdateData
+summary: 'An interface for updating data on the TableBorder object, for use in `tableBorder.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: 'office!Word.Interfaces.TableBorderUpdateData#color:member'
+    package: office!
+    fullName: color
+    summary: Gets or sets the table border color.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Word.Interfaces.TableBorderUpdateData#type:member'
+    package: office!
+    fullName: type
+    summary: Gets or sets the type of the table border.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" |
+        "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" |
+        "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+        "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
+      return:
+        type: >-
+          <xref uid="office!Word.BorderType:enum" /> | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" |
+          "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" |
+          "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" |
+          "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" |
+          "ThreeDEngrave"
+  - name: width
+    uid: 'office!Word.Interfaces.TableBorderUpdateData#width:member'
+    package: office!
+    fullName: width
+    summary: >-
+      Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed
+      widths.
+    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: number;'
+      return:
+        type: number

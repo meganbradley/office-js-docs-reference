@@ -1,0 +1,59 @@
+### YamlMime:TSEnum
+name: Visio.DataValidationErrorType
+uid: 'office!Visio.DataValidationErrorType:enum'
+package: office!
+fullName: Visio.DataValidationErrorType
+summary: |-
+  Represents the types of data validation error.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: columnNotMapped
+    uid: 'office!Visio.DataValidationErrorType.columnNotMapped:member'
+    package: office!
+    summary: Data does not have one of the mapped column.
+    value: '"ColumnNotMapped"'
+  - name: connectorColumnAndConnectorLabelMappedElsewhere
+    uid: 'office!Visio.DataValidationErrorType.connectorColumnAndConnectorLabelMappedElsewhere:member'
+    package: office!
+    summary: Connector column and connector label column are already mapped to other setting.
+    value: '"ConnectorColumnAndConnectorLabelMappedElsewhere"'
+  - name: connectorColumnError
+    uid: 'office!Visio.DataValidationErrorType.connectorColumnError:member'
+    package: office!
+    summary: Connector column has error
+    value: '"ConnectorColumnError"'
+  - name: connectorColumnMappedElsewhere
+    uid: 'office!Visio.DataValidationErrorType.connectorColumnMappedElsewhere:member'
+    package: office!
+    summary: Connector column is already mapped to another setting
+    value: '"ConnectorColumnMappedElsewhere"'
+  - name: connectorLabelColumnMappedElsewhere
+    uid: 'office!Visio.DataValidationErrorType.connectorLabelColumnMappedElsewhere:member'
+    package: office!
+    summary: Connector label column already mapped to other setting
+    value: '"ConnectorLabelColumnMappedElsewhere"'
+  - name: delimiterError
+    uid: 'office!Visio.DataValidationErrorType.delimiterError:member'
+    package: office!
+    summary: Delimiter can not have more then one character.
+    value: '"DelimiterError"'
+  - name: none
+    uid: 'office!Visio.DataValidationErrorType.none:member'
+    package: office!
+    summary: No error
+    value: '"None"'
+  - name: swimlaneColumnError
+    uid: 'office!Visio.DataValidationErrorType.swimlaneColumnError:member'
+    package: office!
+    summary: Swim-lane column is empty.
+    value: '"SwimlaneColumnError"'
+  - name: uniqueIdColumnError
+    uid: 'office!Visio.DataValidationErrorType.uniqueIdColumnError:member'
+    package: office!
+    summary: UniqueId column has error.
+    value: '"UniqueIdColumnError"'

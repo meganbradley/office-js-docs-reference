@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: Excel.WorksheetFormatChangedEventArgs
+uid: 'office!Excel.WorksheetFormatChangedEventArgs:interface'
+package: office!
+fullName: Excel.WorksheetFormatChangedEventArgs
+summary: Provides information about the worksheet format change event.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'office!Excel.WorksheetFormatChangedEventArgs#address:member'
+    package: office!
+    fullName: address
+    summary: Gets the range address that represents the changed area of a specific worksheet.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address: string;'
+      return:
+        type: string
+  - name: source
+    uid: 'office!Excel.WorksheetFormatChangedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'office!Excel.WorksheetFormatChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "WorksheetFormatChanged";'
+      return:
+        type: '"WorksheetFormatChanged"'
+  - name: worksheetId
+    uid: 'office!Excel.WorksheetFormatChangedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet in which the data changed.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string
+methods:
+  - name: getRange(ctx)
+    uid: 'office!Excel.WorksheetFormatChangedEventArgs#getRange:member(1)'
+    package: office!
+    fullName: getRange(ctx)
+    summary: |-
+      Gets the range that represents the changed area of a specific worksheet.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRange(ctx: Excel.RequestContext): Excel.Range;'
+      parameters:
+        - id: ctx
+          description: ''
+          type: '<xref uid="office!Excel.RequestContext:class" />'
+      return:
+        type: '<xref uid="office!Excel.Range:class" />'
+        description: ''
+  - name: getRangeOrNullObject(ctx)
+    uid: 'office!Excel.WorksheetFormatChangedEventArgs#getRangeOrNullObject:member(1)'
+    package: office!
+    fullName: getRangeOrNullObject(ctx)
+    summary: |-
+      Gets the range that represents the changed area of a specific worksheet. It might return null object.
+
+      \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getRangeOrNullObject(ctx: Excel.RequestContext): Excel.Range;'
+      parameters:
+        - id: ctx
+          description: ''
+          type: '<xref uid="office!Excel.RequestContext:class" />'
+      return:
+        type: '<xref uid="office!Excel.Range:class" />'
+        description: ''

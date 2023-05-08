@@ -1,0 +1,25 @@
+### YamlMime:TSType
+name: PowerPoint.Interfaces.SlideScopedCollectionData
+uid: 'office!PowerPoint.Interfaces.SlideScopedCollectionData:interface'
+package: office!
+fullName: PowerPoint.Interfaces.SlideScopedCollectionData
+summary: An interface describing the data returned by calling `slideScopedCollection.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: items
+    uid: 'office!PowerPoint.Interfaces.SlideScopedCollectionData#items:member'
+    package: office!
+    fullName: items
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'items?: PowerPoint.Interfaces.SlideData[];'
+      return:
+        type: '<xref uid="office!PowerPoint.Interfaces.SlideData:interface" />[]'

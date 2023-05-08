@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.WorksheetSelectionChangedEventArgs
+uid: 'office!Excel.WorksheetSelectionChangedEventArgs:interface'
+package: office!
+fullName: Excel.WorksheetSelectionChangedEventArgs
+summary: Provides information about the worksheet that raised the selection changed event.
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'office!Excel.WorksheetSelectionChangedEventArgs#address:member'
+    package: office!
+    fullName: address
+    summary: Gets the range address that represents the selected area of a specific worksheet.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Excel.WorksheetSelectionChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "WorksheetSelectionChanged";'
+      return:
+        type: '"WorksheetSelectionChanged"'
+  - name: worksheetId
+    uid: 'office!Excel.WorksheetSelectionChangedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet in which the selection changed.
+    remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

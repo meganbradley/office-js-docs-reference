@@ -1,0 +1,63 @@
+### YamlMime:TSEnum
+name: Excel.DataValidationType
+uid: 'office!Excel.DataValidationType:enum'
+package: office!
+fullName: Excel.DataValidationType
+summary: Represents the data validation type enum.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: custom
+    uid: 'office!Excel.DataValidationType.custom:member'
+    package: office!
+    summary: The custom data validation type.
+    value: '"Custom"'
+  - name: date
+    uid: 'office!Excel.DataValidationType.date:member'
+    package: office!
+    summary: The date data validation type.
+    value: '"Date"'
+  - name: decimal
+    uid: 'office!Excel.DataValidationType.decimal:member'
+    package: office!
+    summary: The decimal data validation type.
+    value: '"Decimal"'
+  - name: inconsistent
+    uid: 'office!Excel.DataValidationType.inconsistent:member'
+    package: office!
+    summary: >-
+      Inconsistent means that the range has inconsistent data validation, indicating that there are different rules on
+      different cells.
+    value: '"Inconsistent"'
+  - name: list
+    uid: 'office!Excel.DataValidationType.list:member'
+    package: office!
+    summary: The list data validation type.
+    value: '"List"'
+  - name: mixedCriteria
+    uid: 'office!Excel.DataValidationType.mixedCriteria:member'
+    package: office!
+    summary: Mixed criteria means that the range has data validation present on some but not all cells.
+    value: '"MixedCriteria"'
+  - name: none
+    uid: 'office!Excel.DataValidationType.none:member'
+    package: office!
+    summary: 'None means allow any value, indicating that there is no data validation in the range.'
+    value: '"None"'
+  - name: textLength
+    uid: 'office!Excel.DataValidationType.textLength:member'
+    package: office!
+    summary: The text length data validation type.
+    value: '"TextLength"'
+  - name: time
+    uid: 'office!Excel.DataValidationType.time:member'
+    package: office!
+    summary: The time data validation type.
+    value: '"Time"'
+  - name: wholeNumber
+    uid: 'office!Excel.DataValidationType.wholeNumber:member'
+    package: office!
+    summary: The whole number data validation type.
+    value: '"WholeNumber"'

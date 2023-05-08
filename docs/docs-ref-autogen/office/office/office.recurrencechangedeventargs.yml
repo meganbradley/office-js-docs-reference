@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: Office.RecurrenceChangedEventArgs
+uid: 'office!Office.RecurrenceChangedEventArgs:interface'
+package: office!
+fullName: Office.RecurrenceChangedEventArgs
+summary: Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
+remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: recurrence
+    uid: 'office!Office.RecurrenceChangedEventArgs#recurrence:member'
+    package: office!
+    fullName: recurrence
+    summary: Gets the updated recurrence object.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'recurrence: Recurrence;'
+      return:
+        type: '<xref uid="office!Office.Recurrence:interface" />'
+  - name: type
+    uid: 'office!Office.RecurrenceChangedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: >-
+      Gets the type of the event. For details, refer to
+      [Office.EventType](https://learn.microsoft.com/javascript/api/office/office.eventtype)<!-- -->.
+    remarks: '\[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "olkRecurrenceChanged";'
+      return:
+        type: '"olkRecurrenceChanged"'

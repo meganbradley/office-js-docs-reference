@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ThreeStarsSet
+uid: 'office!Excel.ThreeStarsSet:interface'
+package: office!
+fullName: Excel.ThreeStarsSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: goldStar
+    uid: 'office!Excel.ThreeStarsSet#goldStar:member'
+    package: office!
+    fullName: goldStar
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'goldStar: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: halfGoldStar
+    uid: 'office!Excel.ThreeStarsSet#halfGoldStar:member'
+    package: office!
+    fullName: halfGoldStar
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'halfGoldStar: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: silverStar
+    uid: 'office!Excel.ThreeStarsSet#silverStar:member'
+    package: office!
+    fullName: silverStar
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'silverStar: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

@@ -1,0 +1,73 @@
+### YamlMime:TSEnum
+name: Excel.DocumentTaskChangeAction
+uid: 'office!Excel.DocumentTaskChangeAction:enum'
+package: office!
+fullName: Excel.DocumentTaskChangeAction
+summary: Represents the type of change recorded in the task change record.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+fields:
+  - name: assign
+    uid: 'office!Excel.DocumentTaskChangeAction.assign:member'
+    package: office!
+    summary: Represents a user being assigned to a task.
+    value: '"assign"'
+  - name: create
+    uid: 'office!Excel.DocumentTaskChangeAction.create:member'
+    package: office!
+    summary: Represents the creation of a new task.
+    value: '"create"'
+  - name: remove
+    uid: 'office!Excel.DocumentTaskChangeAction.remove:member'
+    package: office!
+    summary: Represents the deletion of a task.
+    value: '"remove"'
+  - name: restore
+    uid: 'office!Excel.DocumentTaskChangeAction.restore:member'
+    package: office!
+    summary: Represents the restoration of a task.
+    value: '"restore"'
+  - name: setPercentComplete
+    uid: 'office!Excel.DocumentTaskChangeAction.setPercentComplete:member'
+    package: office!
+    summary: Represents an update to a task's percentage complete.
+    value: '"setPercentComplete"'
+  - name: setPriority
+    uid: 'office!Excel.DocumentTaskChangeAction.setPriority:member'
+    package: office!
+    summary: Represents an update to a task's priority.
+    value: '"setPriority"'
+  - name: setSchedule
+    uid: 'office!Excel.DocumentTaskChangeAction.setSchedule:member'
+    package: office!
+    summary: Represents an update to a task's `startDateTime` or `dueDateTime`<!-- -->.
+    value: '"setSchedule"'
+  - name: setTitle
+    uid: 'office!Excel.DocumentTaskChangeAction.setTitle:member'
+    package: office!
+    summary: Represents a change in the title of a task.
+    value: '"setTitle"'
+  - name: unassign
+    uid: 'office!Excel.DocumentTaskChangeAction.unassign:member'
+    package: office!
+    summary: Represents a user being unassigned from a task.
+    value: '"unassign"'
+  - name: unassignAll
+    uid: 'office!Excel.DocumentTaskChangeAction.unassignAll:member'
+    package: office!
+    summary: Represents all users being unassigned from a task.
+    value: '"unassignAll"'
+  - name: undo
+    uid: 'office!Excel.DocumentTaskChangeAction.undo:member'
+    package: office!
+    summary: Represents a previous task action being undone.
+    value: '"undo"'
+  - name: unknown
+    uid: 'office!Excel.DocumentTaskChangeAction.unknown:member'
+    package: office!
+    summary: >-
+      Represents an unknown change type. This value will be returned when the version of Excel running doesn't
+      understand the type of the change record that is in the loaded file.
+    value: '"unknown"'

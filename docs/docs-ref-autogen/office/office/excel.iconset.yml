@@ -1,0 +1,167 @@
+### YamlMime:TSEnum
+name: Excel.IconSet
+uid: 'office!Excel.IconSet:enum'
+package: office!
+fullName: Excel.IconSet
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/14-conditional-formatting/conditional-formatting-basic.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Sample");
+      const range = sheet.getRange("B8:E13");
+      const conditionalFormat = range.conditionalFormats
+          .add(Excel.ConditionalFormatType.iconSet);
+      const iconSetCF = conditionalFormat.iconSet;
+      iconSetCF.style = Excel.IconSet.threeTriangles;
+
+      /*
+          The iconSetCF.criteria array is automatically prepopulated with
+          criterion elements whose properties have been given default settings.
+          You can't write to each property of a criterion directly. Instead,
+          replace the whole criteria object.
+
+          With a "three*" icon set style, such as "threeTriangles", the third
+          element in the criteria array (criteria[2]) defines the "top" icon;
+          e.g., a green triangle. The second (criteria[1]) defines the "middle"
+          icon. The first (criteria[0]) defines the "low" icon, but it
+          can often be left empty as the following object shows, because every
+          cell that does not match the other two criteria always gets the low
+          icon.            
+      */
+      iconSetCF.criteria = [
+          {} as any,
+          {
+              type: Excel.ConditionalFormatIconRuleType.number,
+              operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+              formula: "=700"
+          },
+          {
+              type: Excel.ConditionalFormatIconRuleType.number,
+              operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+              formula: "=1000",
+          }
+      ];
+
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: fiveArrows
+    uid: 'office!Excel.IconSet.fiveArrows:member'
+    package: office!
+    summary: ''
+    value: '"FiveArrows"'
+  - name: fiveArrowsGray
+    uid: 'office!Excel.IconSet.fiveArrowsGray:member'
+    package: office!
+    summary: ''
+    value: '"FiveArrowsGray"'
+  - name: fiveBoxes
+    uid: 'office!Excel.IconSet.fiveBoxes:member'
+    package: office!
+    summary: ''
+    value: '"FiveBoxes"'
+  - name: fiveQuarters
+    uid: 'office!Excel.IconSet.fiveQuarters:member'
+    package: office!
+    summary: ''
+    value: '"FiveQuarters"'
+  - name: fiveRating
+    uid: 'office!Excel.IconSet.fiveRating:member'
+    package: office!
+    summary: ''
+    value: '"FiveRating"'
+  - name: fourArrows
+    uid: 'office!Excel.IconSet.fourArrows:member'
+    package: office!
+    summary: ''
+    value: '"FourArrows"'
+  - name: fourArrowsGray
+    uid: 'office!Excel.IconSet.fourArrowsGray:member'
+    package: office!
+    summary: ''
+    value: '"FourArrowsGray"'
+  - name: fourRating
+    uid: 'office!Excel.IconSet.fourRating:member'
+    package: office!
+    summary: ''
+    value: '"FourRating"'
+  - name: fourRedToBlack
+    uid: 'office!Excel.IconSet.fourRedToBlack:member'
+    package: office!
+    summary: ''
+    value: '"FourRedToBlack"'
+  - name: fourTrafficLights
+    uid: 'office!Excel.IconSet.fourTrafficLights:member'
+    package: office!
+    summary: ''
+    value: '"FourTrafficLights"'
+  - name: invalid
+    uid: 'office!Excel.IconSet.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: threeArrows
+    uid: 'office!Excel.IconSet.threeArrows:member'
+    package: office!
+    summary: ''
+    value: '"ThreeArrows"'
+  - name: threeArrowsGray
+    uid: 'office!Excel.IconSet.threeArrowsGray:member'
+    package: office!
+    summary: ''
+    value: '"ThreeArrowsGray"'
+  - name: threeFlags
+    uid: 'office!Excel.IconSet.threeFlags:member'
+    package: office!
+    summary: ''
+    value: '"ThreeFlags"'
+  - name: threeSigns
+    uid: 'office!Excel.IconSet.threeSigns:member'
+    package: office!
+    summary: ''
+    value: '"ThreeSigns"'
+  - name: threeStars
+    uid: 'office!Excel.IconSet.threeStars:member'
+    package: office!
+    summary: ''
+    value: '"ThreeStars"'
+  - name: threeSymbols
+    uid: 'office!Excel.IconSet.threeSymbols:member'
+    package: office!
+    summary: ''
+    value: '"ThreeSymbols"'
+  - name: threeSymbols2
+    uid: 'office!Excel.IconSet.threeSymbols2:member'
+    package: office!
+    summary: ''
+    value: '"ThreeSymbols2"'
+  - name: threeTrafficLights1
+    uid: 'office!Excel.IconSet.threeTrafficLights1:member'
+    package: office!
+    summary: ''
+    value: '"ThreeTrafficLights1"'
+  - name: threeTrafficLights2
+    uid: 'office!Excel.IconSet.threeTrafficLights2:member'
+    package: office!
+    summary: ''
+    value: '"ThreeTrafficLights2"'
+  - name: threeTriangles
+    uid: 'office!Excel.IconSet.threeTriangles:member'
+    package: office!
+    summary: ''
+    value: '"ThreeTriangles"'

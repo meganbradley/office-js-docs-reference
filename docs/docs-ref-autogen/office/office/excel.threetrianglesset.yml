@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ThreeTrianglesSet
+uid: 'office!Excel.ThreeTrianglesSet:interface'
+package: office!
+fullName: Excel.ThreeTrianglesSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenUpTriangle
+    uid: 'office!Excel.ThreeTrianglesSet#greenUpTriangle:member'
+    package: office!
+    fullName: greenUpTriangle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'greenUpTriangle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redDownTriangle
+    uid: 'office!Excel.ThreeTrianglesSet#redDownTriangle:member'
+    package: office!
+    fullName: redDownTriangle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redDownTriangle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowDash
+    uid: 'office!Excel.ThreeTrianglesSet#yellowDash:member'
+    package: office!
+    fullName: yellowDash
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowDash: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

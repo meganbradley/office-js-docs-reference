@@ -1,0 +1,79 @@
+### YamlMime:TSType
+name: Excel.Interfaces.PivotFieldLoadOptions
+uid: 'office!Excel.Interfaces.PivotFieldLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.PivotFieldLoadOptions
+summary: Represents the Excel PivotField.
+remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.PivotFieldLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Excel.Interfaces.PivotFieldLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: ID of the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Excel.Interfaces.PivotFieldLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: Name of the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: showAllItems
+    uid: 'office!Excel.Interfaces.PivotFieldLoadOptions#showAllItems:member'
+    package: office!
+    fullName: showAllItems
+    summary: Determines whether to show all items of the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAllItems?: boolean;'
+      return:
+        type: boolean
+  - name: subtotals
+    uid: 'office!Excel.Interfaces.PivotFieldLoadOptions#subtotals:member'
+    package: office!
+    fullName: subtotals
+    summary: Subtotals of the PivotField.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'subtotals?: boolean;'
+      return:
+        type: boolean

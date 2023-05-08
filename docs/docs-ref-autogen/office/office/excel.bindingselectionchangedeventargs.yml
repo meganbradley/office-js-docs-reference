@@ -1,0 +1,84 @@
+### YamlMime:TSType
+name: Excel.BindingSelectionChangedEventArgs
+uid: 'office!Excel.BindingSelectionChangedEventArgs:interface'
+package: office!
+fullName: Excel.BindingSelectionChangedEventArgs
+summary: >-
+  Provides information about the selection that raised the selection changed event.
+
+
+  *Note**: If multiple, discontiguous cells are selected, `Binding.onSelectionChanged` only reports row and column
+  information for one selection. Use `Worksheet.onSelectionChanged` for multiple selected ranges.
+remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: binding
+    uid: 'office!Excel.BindingSelectionChangedEventArgs#binding:member'
+    package: office!
+    fullName: binding
+    summary: >-
+      Gets a temporary `Binding` object that contains the ID of the `Binding` object that raised the event. Use that ID
+      with `BindingCollection.getItem(id)` to get the binding.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'binding: Excel.Binding;'
+      return:
+        type: '<xref uid="office!Excel.Binding:class" />'
+  - name: columnCount
+    uid: 'office!Excel.BindingSelectionChangedEventArgs#columnCount:member'
+    package: office!
+    fullName: columnCount
+    summary: Gets the number of columns selected.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type: number
+  - name: rowCount
+    uid: 'office!Excel.BindingSelectionChangedEventArgs#rowCount:member'
+    package: office!
+    fullName: rowCount
+    summary: Gets the number of rows selected.
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type: number
+  - name: startColumn
+    uid: 'office!Excel.BindingSelectionChangedEventArgs#startColumn:member'
+    package: office!
+    fullName: startColumn
+    summary: Gets the index of the first column of the selection (zero-based).
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startColumn: number;'
+      return:
+        type: number
+  - name: startRow
+    uid: 'office!Excel.BindingSelectionChangedEventArgs#startRow:member'
+    package: office!
+    fullName: startRow
+    summary: Gets the index of the first row of the selection (zero-based).
+    remarks: '\[ [API set: ExcelApi 1.2](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startRow: number;'
+      return:
+        type: number

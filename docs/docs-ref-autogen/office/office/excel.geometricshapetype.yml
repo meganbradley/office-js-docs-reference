@@ -1,0 +1,918 @@
+### YamlMime:TSEnum
+name: Excel.GeometricShapeType
+uid: 'office!Excel.GeometricShapeType:enum'
+package: office!
+fullName: Excel.GeometricShapeType
+summary: Specifies the shape type for a `GeometricShape` object.
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-create-and-delete.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Shapes");
+      const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
+      shape.left = 5;
+      shape.top = 5;
+      shape.height = 175;
+      shape.width = 200;
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: accentBorderCallout1
+    uid: 'office!Excel.GeometricShapeType.accentBorderCallout1:member'
+    package: office!
+    summary: ''
+    value: '"AccentBorderCallout1"'
+  - name: accentBorderCallout2
+    uid: 'office!Excel.GeometricShapeType.accentBorderCallout2:member'
+    package: office!
+    summary: ''
+    value: '"AccentBorderCallout2"'
+  - name: accentBorderCallout3
+    uid: 'office!Excel.GeometricShapeType.accentBorderCallout3:member'
+    package: office!
+    summary: ''
+    value: '"AccentBorderCallout3"'
+  - name: accentCallout1
+    uid: 'office!Excel.GeometricShapeType.accentCallout1:member'
+    package: office!
+    summary: ''
+    value: '"AccentCallout1"'
+  - name: accentCallout2
+    uid: 'office!Excel.GeometricShapeType.accentCallout2:member'
+    package: office!
+    summary: ''
+    value: '"AccentCallout2"'
+  - name: accentCallout3
+    uid: 'office!Excel.GeometricShapeType.accentCallout3:member'
+    package: office!
+    summary: ''
+    value: '"AccentCallout3"'
+  - name: actionButtonBackPrevious
+    uid: 'office!Excel.GeometricShapeType.actionButtonBackPrevious:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonBackPrevious"'
+  - name: actionButtonBeginning
+    uid: 'office!Excel.GeometricShapeType.actionButtonBeginning:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonBeginning"'
+  - name: actionButtonBlank
+    uid: 'office!Excel.GeometricShapeType.actionButtonBlank:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonBlank"'
+  - name: actionButtonDocument
+    uid: 'office!Excel.GeometricShapeType.actionButtonDocument:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonDocument"'
+  - name: actionButtonEnd
+    uid: 'office!Excel.GeometricShapeType.actionButtonEnd:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonEnd"'
+  - name: actionButtonForwardNext
+    uid: 'office!Excel.GeometricShapeType.actionButtonForwardNext:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonForwardNext"'
+  - name: actionButtonHelp
+    uid: 'office!Excel.GeometricShapeType.actionButtonHelp:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonHelp"'
+  - name: actionButtonHome
+    uid: 'office!Excel.GeometricShapeType.actionButtonHome:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonHome"'
+  - name: actionButtonInformation
+    uid: 'office!Excel.GeometricShapeType.actionButtonInformation:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonInformation"'
+  - name: actionButtonMovie
+    uid: 'office!Excel.GeometricShapeType.actionButtonMovie:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonMovie"'
+  - name: actionButtonReturn
+    uid: 'office!Excel.GeometricShapeType.actionButtonReturn:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonReturn"'
+  - name: actionButtonSound
+    uid: 'office!Excel.GeometricShapeType.actionButtonSound:member'
+    package: office!
+    summary: ''
+    value: '"ActionButtonSound"'
+  - name: arc
+    uid: 'office!Excel.GeometricShapeType.arc:member'
+    package: office!
+    summary: ''
+    value: '"Arc"'
+  - name: bentArrow
+    uid: 'office!Excel.GeometricShapeType.bentArrow:member'
+    package: office!
+    summary: ''
+    value: '"BentArrow"'
+  - name: bentUpArrow
+    uid: 'office!Excel.GeometricShapeType.bentUpArrow:member'
+    package: office!
+    summary: ''
+    value: '"BentUpArrow"'
+  - name: bevel
+    uid: 'office!Excel.GeometricShapeType.bevel:member'
+    package: office!
+    summary: ''
+    value: '"Bevel"'
+  - name: blockArc
+    uid: 'office!Excel.GeometricShapeType.blockArc:member'
+    package: office!
+    summary: ''
+    value: '"BlockArc"'
+  - name: borderCallout1
+    uid: 'office!Excel.GeometricShapeType.borderCallout1:member'
+    package: office!
+    summary: ''
+    value: '"BorderCallout1"'
+  - name: borderCallout2
+    uid: 'office!Excel.GeometricShapeType.borderCallout2:member'
+    package: office!
+    summary: ''
+    value: '"BorderCallout2"'
+  - name: borderCallout3
+    uid: 'office!Excel.GeometricShapeType.borderCallout3:member'
+    package: office!
+    summary: ''
+    value: '"BorderCallout3"'
+  - name: bracePair
+    uid: 'office!Excel.GeometricShapeType.bracePair:member'
+    package: office!
+    summary: ''
+    value: '"BracePair"'
+  - name: bracketPair
+    uid: 'office!Excel.GeometricShapeType.bracketPair:member'
+    package: office!
+    summary: ''
+    value: '"BracketPair"'
+  - name: callout1
+    uid: 'office!Excel.GeometricShapeType.callout1:member'
+    package: office!
+    summary: ''
+    value: '"Callout1"'
+  - name: callout2
+    uid: 'office!Excel.GeometricShapeType.callout2:member'
+    package: office!
+    summary: ''
+    value: '"Callout2"'
+  - name: callout3
+    uid: 'office!Excel.GeometricShapeType.callout3:member'
+    package: office!
+    summary: ''
+    value: '"Callout3"'
+  - name: can
+    uid: 'office!Excel.GeometricShapeType.can:member'
+    package: office!
+    summary: ''
+    value: '"Can"'
+  - name: chartPlus
+    uid: 'office!Excel.GeometricShapeType.chartPlus:member'
+    package: office!
+    summary: ''
+    value: '"ChartPlus"'
+  - name: chartStar
+    uid: 'office!Excel.GeometricShapeType.chartStar:member'
+    package: office!
+    summary: ''
+    value: '"ChartStar"'
+  - name: chartX
+    uid: 'office!Excel.GeometricShapeType.chartX:member'
+    package: office!
+    summary: ''
+    value: '"ChartX"'
+  - name: chevron
+    uid: 'office!Excel.GeometricShapeType.chevron:member'
+    package: office!
+    summary: ''
+    value: '"Chevron"'
+  - name: chord
+    uid: 'office!Excel.GeometricShapeType.chord:member'
+    package: office!
+    summary: ''
+    value: '"Chord"'
+  - name: circularArrow
+    uid: 'office!Excel.GeometricShapeType.circularArrow:member'
+    package: office!
+    summary: ''
+    value: '"CircularArrow"'
+  - name: cloud
+    uid: 'office!Excel.GeometricShapeType.cloud:member'
+    package: office!
+    summary: ''
+    value: '"Cloud"'
+  - name: cloudCallout
+    uid: 'office!Excel.GeometricShapeType.cloudCallout:member'
+    package: office!
+    summary: ''
+    value: '"CloudCallout"'
+  - name: corner
+    uid: 'office!Excel.GeometricShapeType.corner:member'
+    package: office!
+    summary: ''
+    value: '"Corner"'
+  - name: cornerTabs
+    uid: 'office!Excel.GeometricShapeType.cornerTabs:member'
+    package: office!
+    summary: ''
+    value: '"CornerTabs"'
+  - name: cube
+    uid: 'office!Excel.GeometricShapeType.cube:member'
+    package: office!
+    summary: ''
+    value: '"Cube"'
+  - name: curvedDownArrow
+    uid: 'office!Excel.GeometricShapeType.curvedDownArrow:member'
+    package: office!
+    summary: ''
+    value: '"CurvedDownArrow"'
+  - name: curvedLeftArrow
+    uid: 'office!Excel.GeometricShapeType.curvedLeftArrow:member'
+    package: office!
+    summary: ''
+    value: '"CurvedLeftArrow"'
+  - name: curvedRightArrow
+    uid: 'office!Excel.GeometricShapeType.curvedRightArrow:member'
+    package: office!
+    summary: ''
+    value: '"CurvedRightArrow"'
+  - name: curvedUpArrow
+    uid: 'office!Excel.GeometricShapeType.curvedUpArrow:member'
+    package: office!
+    summary: ''
+    value: '"CurvedUpArrow"'
+  - name: decagon
+    uid: 'office!Excel.GeometricShapeType.decagon:member'
+    package: office!
+    summary: ''
+    value: '"Decagon"'
+  - name: diagonalStripe
+    uid: 'office!Excel.GeometricShapeType.diagonalStripe:member'
+    package: office!
+    summary: ''
+    value: '"DiagonalStripe"'
+  - name: diamond
+    uid: 'office!Excel.GeometricShapeType.diamond:member'
+    package: office!
+    summary: ''
+    value: '"Diamond"'
+  - name: dodecagon
+    uid: 'office!Excel.GeometricShapeType.dodecagon:member'
+    package: office!
+    summary: ''
+    value: '"Dodecagon"'
+  - name: donut
+    uid: 'office!Excel.GeometricShapeType.donut:member'
+    package: office!
+    summary: ''
+    value: '"Donut"'
+  - name: doubleWave
+    uid: 'office!Excel.GeometricShapeType.doubleWave:member'
+    package: office!
+    summary: ''
+    value: '"DoubleWave"'
+  - name: downArrow
+    uid: 'office!Excel.GeometricShapeType.downArrow:member'
+    package: office!
+    summary: ''
+    value: '"DownArrow"'
+  - name: downArrowCallout
+    uid: 'office!Excel.GeometricShapeType.downArrowCallout:member'
+    package: office!
+    summary: ''
+    value: '"DownArrowCallout"'
+  - name: ellipse
+    uid: 'office!Excel.GeometricShapeType.ellipse:member'
+    package: office!
+    summary: ''
+    value: '"Ellipse"'
+  - name: ellipseRibbon
+    uid: 'office!Excel.GeometricShapeType.ellipseRibbon:member'
+    package: office!
+    summary: ''
+    value: '"EllipseRibbon"'
+  - name: ellipseRibbon2
+    uid: 'office!Excel.GeometricShapeType.ellipseRibbon2:member'
+    package: office!
+    summary: ''
+    value: '"EllipseRibbon2"'
+  - name: flowChartAlternateProcess
+    uid: 'office!Excel.GeometricShapeType.flowChartAlternateProcess:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartAlternateProcess"'
+  - name: flowChartCollate
+    uid: 'office!Excel.GeometricShapeType.flowChartCollate:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartCollate"'
+  - name: flowChartConnector
+    uid: 'office!Excel.GeometricShapeType.flowChartConnector:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartConnector"'
+  - name: flowChartDecision
+    uid: 'office!Excel.GeometricShapeType.flowChartDecision:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartDecision"'
+  - name: flowChartDelay
+    uid: 'office!Excel.GeometricShapeType.flowChartDelay:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartDelay"'
+  - name: flowChartDisplay
+    uid: 'office!Excel.GeometricShapeType.flowChartDisplay:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartDisplay"'
+  - name: flowChartDocument
+    uid: 'office!Excel.GeometricShapeType.flowChartDocument:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartDocument"'
+  - name: flowChartExtract
+    uid: 'office!Excel.GeometricShapeType.flowChartExtract:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartExtract"'
+  - name: flowChartInputOutput
+    uid: 'office!Excel.GeometricShapeType.flowChartInputOutput:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartInputOutput"'
+  - name: flowChartInternalStorage
+    uid: 'office!Excel.GeometricShapeType.flowChartInternalStorage:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartInternalStorage"'
+  - name: flowChartMagneticDisk
+    uid: 'office!Excel.GeometricShapeType.flowChartMagneticDisk:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartMagneticDisk"'
+  - name: flowChartMagneticDrum
+    uid: 'office!Excel.GeometricShapeType.flowChartMagneticDrum:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartMagneticDrum"'
+  - name: flowChartMagneticTape
+    uid: 'office!Excel.GeometricShapeType.flowChartMagneticTape:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartMagneticTape"'
+  - name: flowChartManualInput
+    uid: 'office!Excel.GeometricShapeType.flowChartManualInput:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartManualInput"'
+  - name: flowChartManualOperation
+    uid: 'office!Excel.GeometricShapeType.flowChartManualOperation:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartManualOperation"'
+  - name: flowChartMerge
+    uid: 'office!Excel.GeometricShapeType.flowChartMerge:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartMerge"'
+  - name: flowChartMultidocument
+    uid: 'office!Excel.GeometricShapeType.flowChartMultidocument:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartMultidocument"'
+  - name: flowChartOfflineStorage
+    uid: 'office!Excel.GeometricShapeType.flowChartOfflineStorage:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartOfflineStorage"'
+  - name: flowChartOffpageConnector
+    uid: 'office!Excel.GeometricShapeType.flowChartOffpageConnector:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartOffpageConnector"'
+  - name: flowChartOnlineStorage
+    uid: 'office!Excel.GeometricShapeType.flowChartOnlineStorage:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartOnlineStorage"'
+  - name: flowChartOr
+    uid: 'office!Excel.GeometricShapeType.flowChartOr:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartOr"'
+  - name: flowChartPredefinedProcess
+    uid: 'office!Excel.GeometricShapeType.flowChartPredefinedProcess:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartPredefinedProcess"'
+  - name: flowChartPreparation
+    uid: 'office!Excel.GeometricShapeType.flowChartPreparation:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartPreparation"'
+  - name: flowChartProcess
+    uid: 'office!Excel.GeometricShapeType.flowChartProcess:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartProcess"'
+  - name: flowChartPunchedCard
+    uid: 'office!Excel.GeometricShapeType.flowChartPunchedCard:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartPunchedCard"'
+  - name: flowChartPunchedTape
+    uid: 'office!Excel.GeometricShapeType.flowChartPunchedTape:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartPunchedTape"'
+  - name: flowChartSort
+    uid: 'office!Excel.GeometricShapeType.flowChartSort:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartSort"'
+  - name: flowChartSummingJunction
+    uid: 'office!Excel.GeometricShapeType.flowChartSummingJunction:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartSummingJunction"'
+  - name: flowChartTerminator
+    uid: 'office!Excel.GeometricShapeType.flowChartTerminator:member'
+    package: office!
+    summary: ''
+    value: '"FlowChartTerminator"'
+  - name: foldedCorner
+    uid: 'office!Excel.GeometricShapeType.foldedCorner:member'
+    package: office!
+    summary: ''
+    value: '"FoldedCorner"'
+  - name: frame
+    uid: 'office!Excel.GeometricShapeType.frame:member'
+    package: office!
+    summary: ''
+    value: '"Frame"'
+  - name: funnel
+    uid: 'office!Excel.GeometricShapeType.funnel:member'
+    package: office!
+    summary: ''
+    value: '"Funnel"'
+  - name: gear6
+    uid: 'office!Excel.GeometricShapeType.gear6:member'
+    package: office!
+    summary: ''
+    value: '"Gear6"'
+  - name: gear9
+    uid: 'office!Excel.GeometricShapeType.gear9:member'
+    package: office!
+    summary: ''
+    value: '"Gear9"'
+  - name: halfFrame
+    uid: 'office!Excel.GeometricShapeType.halfFrame:member'
+    package: office!
+    summary: ''
+    value: '"HalfFrame"'
+  - name: heart
+    uid: 'office!Excel.GeometricShapeType.heart:member'
+    package: office!
+    summary: ''
+    value: '"Heart"'
+  - name: heptagon
+    uid: 'office!Excel.GeometricShapeType.heptagon:member'
+    package: office!
+    summary: ''
+    value: '"Heptagon"'
+  - name: hexagon
+    uid: 'office!Excel.GeometricShapeType.hexagon:member'
+    package: office!
+    summary: ''
+    value: '"Hexagon"'
+  - name: homePlate
+    uid: 'office!Excel.GeometricShapeType.homePlate:member'
+    package: office!
+    summary: ''
+    value: '"HomePlate"'
+  - name: horizontalScroll
+    uid: 'office!Excel.GeometricShapeType.horizontalScroll:member'
+    package: office!
+    summary: ''
+    value: '"HorizontalScroll"'
+  - name: irregularSeal1
+    uid: 'office!Excel.GeometricShapeType.irregularSeal1:member'
+    package: office!
+    summary: ''
+    value: '"IrregularSeal1"'
+  - name: irregularSeal2
+    uid: 'office!Excel.GeometricShapeType.irregularSeal2:member'
+    package: office!
+    summary: ''
+    value: '"IrregularSeal2"'
+  - name: leftArrow
+    uid: 'office!Excel.GeometricShapeType.leftArrow:member'
+    package: office!
+    summary: ''
+    value: '"LeftArrow"'
+  - name: leftArrowCallout
+    uid: 'office!Excel.GeometricShapeType.leftArrowCallout:member'
+    package: office!
+    summary: ''
+    value: '"LeftArrowCallout"'
+  - name: leftBrace
+    uid: 'office!Excel.GeometricShapeType.leftBrace:member'
+    package: office!
+    summary: ''
+    value: '"LeftBrace"'
+  - name: leftBracket
+    uid: 'office!Excel.GeometricShapeType.leftBracket:member'
+    package: office!
+    summary: ''
+    value: '"LeftBracket"'
+  - name: leftCircularArrow
+    uid: 'office!Excel.GeometricShapeType.leftCircularArrow:member'
+    package: office!
+    summary: ''
+    value: '"LeftCircularArrow"'
+  - name: leftRightArrow
+    uid: 'office!Excel.GeometricShapeType.leftRightArrow:member'
+    package: office!
+    summary: ''
+    value: '"LeftRightArrow"'
+  - name: leftRightArrowCallout
+    uid: 'office!Excel.GeometricShapeType.leftRightArrowCallout:member'
+    package: office!
+    summary: ''
+    value: '"LeftRightArrowCallout"'
+  - name: leftRightCircularArrow
+    uid: 'office!Excel.GeometricShapeType.leftRightCircularArrow:member'
+    package: office!
+    summary: ''
+    value: '"LeftRightCircularArrow"'
+  - name: leftRightRibbon
+    uid: 'office!Excel.GeometricShapeType.leftRightRibbon:member'
+    package: office!
+    summary: ''
+    value: '"LeftRightRibbon"'
+  - name: leftRightUpArrow
+    uid: 'office!Excel.GeometricShapeType.leftRightUpArrow:member'
+    package: office!
+    summary: ''
+    value: '"LeftRightUpArrow"'
+  - name: leftUpArrow
+    uid: 'office!Excel.GeometricShapeType.leftUpArrow:member'
+    package: office!
+    summary: ''
+    value: '"LeftUpArrow"'
+  - name: lightningBolt
+    uid: 'office!Excel.GeometricShapeType.lightningBolt:member'
+    package: office!
+    summary: ''
+    value: '"LightningBolt"'
+  - name: lineInverse
+    uid: 'office!Excel.GeometricShapeType.lineInverse:member'
+    package: office!
+    summary: ''
+    value: '"LineInverse"'
+  - name: mathDivide
+    uid: 'office!Excel.GeometricShapeType.mathDivide:member'
+    package: office!
+    summary: ''
+    value: '"MathDivide"'
+  - name: mathEqual
+    uid: 'office!Excel.GeometricShapeType.mathEqual:member'
+    package: office!
+    summary: ''
+    value: '"MathEqual"'
+  - name: mathMinus
+    uid: 'office!Excel.GeometricShapeType.mathMinus:member'
+    package: office!
+    summary: ''
+    value: '"MathMinus"'
+  - name: mathMultiply
+    uid: 'office!Excel.GeometricShapeType.mathMultiply:member'
+    package: office!
+    summary: ''
+    value: '"MathMultiply"'
+  - name: mathNotEqual
+    uid: 'office!Excel.GeometricShapeType.mathNotEqual:member'
+    package: office!
+    summary: ''
+    value: '"MathNotEqual"'
+  - name: mathPlus
+    uid: 'office!Excel.GeometricShapeType.mathPlus:member'
+    package: office!
+    summary: ''
+    value: '"MathPlus"'
+  - name: moon
+    uid: 'office!Excel.GeometricShapeType.moon:member'
+    package: office!
+    summary: ''
+    value: '"Moon"'
+  - name: nonIsoscelesTrapezoid
+    uid: 'office!Excel.GeometricShapeType.nonIsoscelesTrapezoid:member'
+    package: office!
+    summary: ''
+    value: '"NonIsoscelesTrapezoid"'
+  - name: noSmoking
+    uid: 'office!Excel.GeometricShapeType.noSmoking:member'
+    package: office!
+    summary: ''
+    value: '"NoSmoking"'
+  - name: notchedRightArrow
+    uid: 'office!Excel.GeometricShapeType.notchedRightArrow:member'
+    package: office!
+    summary: ''
+    value: '"NotchedRightArrow"'
+  - name: octagon
+    uid: 'office!Excel.GeometricShapeType.octagon:member'
+    package: office!
+    summary: ''
+    value: '"Octagon"'
+  - name: parallelogram
+    uid: 'office!Excel.GeometricShapeType.parallelogram:member'
+    package: office!
+    summary: ''
+    value: '"Parallelogram"'
+  - name: pentagon
+    uid: 'office!Excel.GeometricShapeType.pentagon:member'
+    package: office!
+    summary: ''
+    value: '"Pentagon"'
+  - name: pie
+    uid: 'office!Excel.GeometricShapeType.pie:member'
+    package: office!
+    summary: ''
+    value: '"Pie"'
+  - name: pieWedge
+    uid: 'office!Excel.GeometricShapeType.pieWedge:member'
+    package: office!
+    summary: ''
+    value: '"PieWedge"'
+  - name: plaque
+    uid: 'office!Excel.GeometricShapeType.plaque:member'
+    package: office!
+    summary: ''
+    value: '"Plaque"'
+  - name: plaqueTabs
+    uid: 'office!Excel.GeometricShapeType.plaqueTabs:member'
+    package: office!
+    summary: ''
+    value: '"PlaqueTabs"'
+  - name: plus
+    uid: 'office!Excel.GeometricShapeType.plus:member'
+    package: office!
+    summary: ''
+    value: '"Plus"'
+  - name: quadArrow
+    uid: 'office!Excel.GeometricShapeType.quadArrow:member'
+    package: office!
+    summary: ''
+    value: '"QuadArrow"'
+  - name: quadArrowCallout
+    uid: 'office!Excel.GeometricShapeType.quadArrowCallout:member'
+    package: office!
+    summary: ''
+    value: '"QuadArrowCallout"'
+  - name: rectangle
+    uid: 'office!Excel.GeometricShapeType.rectangle:member'
+    package: office!
+    summary: ''
+    value: '"Rectangle"'
+  - name: ribbon
+    uid: 'office!Excel.GeometricShapeType.ribbon:member'
+    package: office!
+    summary: ''
+    value: '"Ribbon"'
+  - name: ribbon2
+    uid: 'office!Excel.GeometricShapeType.ribbon2:member'
+    package: office!
+    summary: ''
+    value: '"Ribbon2"'
+  - name: rightArrow
+    uid: 'office!Excel.GeometricShapeType.rightArrow:member'
+    package: office!
+    summary: ''
+    value: '"RightArrow"'
+  - name: rightArrowCallout
+    uid: 'office!Excel.GeometricShapeType.rightArrowCallout:member'
+    package: office!
+    summary: ''
+    value: '"RightArrowCallout"'
+  - name: rightBrace
+    uid: 'office!Excel.GeometricShapeType.rightBrace:member'
+    package: office!
+    summary: ''
+    value: '"RightBrace"'
+  - name: rightBracket
+    uid: 'office!Excel.GeometricShapeType.rightBracket:member'
+    package: office!
+    summary: ''
+    value: '"RightBracket"'
+  - name: rightTriangle
+    uid: 'office!Excel.GeometricShapeType.rightTriangle:member'
+    package: office!
+    summary: ''
+    value: '"RightTriangle"'
+  - name: round1Rectangle
+    uid: 'office!Excel.GeometricShapeType.round1Rectangle:member'
+    package: office!
+    summary: ''
+    value: '"Round1Rectangle"'
+  - name: round2DiagonalRectangle
+    uid: 'office!Excel.GeometricShapeType.round2DiagonalRectangle:member'
+    package: office!
+    summary: ''
+    value: '"Round2DiagonalRectangle"'
+  - name: round2SameRectangle
+    uid: 'office!Excel.GeometricShapeType.round2SameRectangle:member'
+    package: office!
+    summary: ''
+    value: '"Round2SameRectangle"'
+  - name: roundRectangle
+    uid: 'office!Excel.GeometricShapeType.roundRectangle:member'
+    package: office!
+    summary: ''
+    value: '"RoundRectangle"'
+  - name: smileyFace
+    uid: 'office!Excel.GeometricShapeType.smileyFace:member'
+    package: office!
+    summary: ''
+    value: '"SmileyFace"'
+  - name: snip1Rectangle
+    uid: 'office!Excel.GeometricShapeType.snip1Rectangle:member'
+    package: office!
+    summary: ''
+    value: '"Snip1Rectangle"'
+  - name: snip2DiagonalRectangle
+    uid: 'office!Excel.GeometricShapeType.snip2DiagonalRectangle:member'
+    package: office!
+    summary: ''
+    value: '"Snip2DiagonalRectangle"'
+  - name: snip2SameRectangle
+    uid: 'office!Excel.GeometricShapeType.snip2SameRectangle:member'
+    package: office!
+    summary: ''
+    value: '"Snip2SameRectangle"'
+  - name: snipRoundRectangle
+    uid: 'office!Excel.GeometricShapeType.snipRoundRectangle:member'
+    package: office!
+    summary: ''
+    value: '"SnipRoundRectangle"'
+  - name: squareTabs
+    uid: 'office!Excel.GeometricShapeType.squareTabs:member'
+    package: office!
+    summary: ''
+    value: '"SquareTabs"'
+  - name: star10
+    uid: 'office!Excel.GeometricShapeType.star10:member'
+    package: office!
+    summary: ''
+    value: '"Star10"'
+  - name: star12
+    uid: 'office!Excel.GeometricShapeType.star12:member'
+    package: office!
+    summary: ''
+    value: '"Star12"'
+  - name: star16
+    uid: 'office!Excel.GeometricShapeType.star16:member'
+    package: office!
+    summary: ''
+    value: '"Star16"'
+  - name: star24
+    uid: 'office!Excel.GeometricShapeType.star24:member'
+    package: office!
+    summary: ''
+    value: '"Star24"'
+  - name: star32
+    uid: 'office!Excel.GeometricShapeType.star32:member'
+    package: office!
+    summary: ''
+    value: '"Star32"'
+  - name: star4
+    uid: 'office!Excel.GeometricShapeType.star4:member'
+    package: office!
+    summary: ''
+    value: '"Star4"'
+  - name: star5
+    uid: 'office!Excel.GeometricShapeType.star5:member'
+    package: office!
+    summary: ''
+    value: '"Star5"'
+  - name: star6
+    uid: 'office!Excel.GeometricShapeType.star6:member'
+    package: office!
+    summary: ''
+    value: '"Star6"'
+  - name: star7
+    uid: 'office!Excel.GeometricShapeType.star7:member'
+    package: office!
+    summary: ''
+    value: '"Star7"'
+  - name: star8
+    uid: 'office!Excel.GeometricShapeType.star8:member'
+    package: office!
+    summary: ''
+    value: '"Star8"'
+  - name: stripedRightArrow
+    uid: 'office!Excel.GeometricShapeType.stripedRightArrow:member'
+    package: office!
+    summary: ''
+    value: '"StripedRightArrow"'
+  - name: sun
+    uid: 'office!Excel.GeometricShapeType.sun:member'
+    package: office!
+    summary: ''
+    value: '"Sun"'
+  - name: swooshArrow
+    uid: 'office!Excel.GeometricShapeType.swooshArrow:member'
+    package: office!
+    summary: ''
+    value: '"SwooshArrow"'
+  - name: teardrop
+    uid: 'office!Excel.GeometricShapeType.teardrop:member'
+    package: office!
+    summary: ''
+    value: '"Teardrop"'
+  - name: trapezoid
+    uid: 'office!Excel.GeometricShapeType.trapezoid:member'
+    package: office!
+    summary: ''
+    value: '"Trapezoid"'
+  - name: triangle
+    uid: 'office!Excel.GeometricShapeType.triangle:member'
+    package: office!
+    summary: ''
+    value: '"Triangle"'
+  - name: upArrow
+    uid: 'office!Excel.GeometricShapeType.upArrow:member'
+    package: office!
+    summary: ''
+    value: '"UpArrow"'
+  - name: upArrowCallout
+    uid: 'office!Excel.GeometricShapeType.upArrowCallout:member'
+    package: office!
+    summary: ''
+    value: '"UpArrowCallout"'
+  - name: upDownArrow
+    uid: 'office!Excel.GeometricShapeType.upDownArrow:member'
+    package: office!
+    summary: ''
+    value: '"UpDownArrow"'
+  - name: upDownArrowCallout
+    uid: 'office!Excel.GeometricShapeType.upDownArrowCallout:member'
+    package: office!
+    summary: ''
+    value: '"UpDownArrowCallout"'
+  - name: uturnArrow
+    uid: 'office!Excel.GeometricShapeType.uturnArrow:member'
+    package: office!
+    summary: ''
+    value: '"UturnArrow"'
+  - name: verticalScroll
+    uid: 'office!Excel.GeometricShapeType.verticalScroll:member'
+    package: office!
+    summary: ''
+    value: '"VerticalScroll"'
+  - name: wave
+    uid: 'office!Excel.GeometricShapeType.wave:member'
+    package: office!
+    summary: ''
+    value: '"Wave"'
+  - name: wedgeEllipseCallout
+    uid: 'office!Excel.GeometricShapeType.wedgeEllipseCallout:member'
+    package: office!
+    summary: ''
+    value: '"WedgeEllipseCallout"'
+  - name: wedgeRectCallout
+    uid: 'office!Excel.GeometricShapeType.wedgeRectCallout:member'
+    package: office!
+    summary: ''
+    value: '"WedgeRectCallout"'
+  - name: wedgeRRectCallout
+    uid: 'office!Excel.GeometricShapeType.wedgeRRectCallout:member'
+    package: office!
+    summary: ''
+    value: '"WedgeRRectCallout"'

@@ -1,0 +1,31 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalRangeBorderIndex
+uid: 'office!Excel.ConditionalRangeBorderIndex:enum'
+package: office!
+fullName: Excel.ConditionalRangeBorderIndex
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: edgeBottom
+    uid: 'office!Excel.ConditionalRangeBorderIndex.edgeBottom:member'
+    package: office!
+    summary: ''
+    value: '"EdgeBottom"'
+  - name: edgeLeft
+    uid: 'office!Excel.ConditionalRangeBorderIndex.edgeLeft:member'
+    package: office!
+    summary: ''
+    value: '"EdgeLeft"'
+  - name: edgeRight
+    uid: 'office!Excel.ConditionalRangeBorderIndex.edgeRight:member'
+    package: office!
+    summary: ''
+    value: '"EdgeRight"'
+  - name: edgeTop
+    uid: 'office!Excel.ConditionalRangeBorderIndex.edgeTop:member'
+    package: office!
+    summary: ''
+    value: '"EdgeTop"'

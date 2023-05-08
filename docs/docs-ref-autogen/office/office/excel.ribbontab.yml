@@ -1,0 +1,71 @@
+### YamlMime:TSEnum
+name: Excel.RibbonTab
+uid: 'office!Excel.RibbonTab:enum'
+package: office!
+fullName: Excel.RibbonTab
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: addIns
+    uid: 'office!Excel.RibbonTab.addIns:member'
+    package: office!
+    summary: ''
+    value: '"AddIns"'
+  - name: data
+    uid: 'office!Excel.RibbonTab.data:member'
+    package: office!
+    summary: ''
+    value: '"Data"'
+  - name: developer
+    uid: 'office!Excel.RibbonTab.developer:member'
+    package: office!
+    summary: ''
+    value: '"Developer"'
+  - name: draw
+    uid: 'office!Excel.RibbonTab.draw:member'
+    package: office!
+    summary: ''
+    value: '"Draw"'
+  - name: formulas
+    uid: 'office!Excel.RibbonTab.formulas:member'
+    package: office!
+    summary: ''
+    value: '"Formulas"'
+  - name: help
+    uid: 'office!Excel.RibbonTab.help:member'
+    package: office!
+    summary: ''
+    value: '"Help"'
+  - name: home
+    uid: 'office!Excel.RibbonTab.home:member'
+    package: office!
+    summary: ''
+    value: '"Home"'
+  - name: insert
+    uid: 'office!Excel.RibbonTab.insert:member'
+    package: office!
+    summary: ''
+    value: '"Insert"'
+  - name: others
+    uid: 'office!Excel.RibbonTab.others:member'
+    package: office!
+    summary: ''
+    value: '"Others"'
+  - name: pageLayout
+    uid: 'office!Excel.RibbonTab.pageLayout:member'
+    package: office!
+    summary: ''
+    value: '"PageLayout"'
+  - name: review
+    uid: 'office!Excel.RibbonTab.review:member'
+    package: office!
+    summary: ''
+    value: '"Review"'
+  - name: view
+    uid: 'office!Excel.RibbonTab.view:member'
+    package: office!
+    summary: ''
+    value: '"View"'

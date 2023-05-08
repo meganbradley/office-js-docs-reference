@@ -1,0 +1,108 @@
+### YamlMime:TSType
+name: Excel.Interfaces.DataPivotHierarchyData
+uid: 'office!Excel.Interfaces.DataPivotHierarchyData:interface'
+package: office!
+fullName: Excel.Interfaces.DataPivotHierarchyData
+summary: An interface describing the data returned by calling `dataPivotHierarchy.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: field
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyData#field:member'
+    package: office!
+    fullName: field
+    summary: Returns the PivotFields associated with the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'field?: Excel.Interfaces.PivotFieldData;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.PivotFieldData:interface" />'
+  - name: id
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyData#id:member'
+    package: office!
+    fullName: id
+    summary: ID of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: name
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyData#name:member'
+    package: office!
+    fullName: name
+    summary: Name of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string;'
+      return:
+        type: string
+  - name: numberFormat
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyData#numberFormat:member'
+    package: office!
+    fullName: numberFormat
+    summary: Number format of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'numberFormat?: string;'
+      return:
+        type: string
+  - name: position
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyData#position:member'
+    package: office!
+    fullName: position
+    summary: Position of the DataPivotHierarchy.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: number;'
+      return:
+        type: number
+  - name: showAs
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyData#showAs:member'
+    package: office!
+    fullName: showAs
+    summary: Specifies if the data should be shown as a specific summary calculation.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showAs?: Excel.ShowAsRule;'
+      return:
+        type: '<xref uid="office!Excel.ShowAsRule:interface" />'
+  - name: summarizeBy
+    uid: 'office!Excel.Interfaces.DataPivotHierarchyData#summarizeBy:member'
+    package: office!
+    fullName: summarizeBy
+    summary: Specifies if all items of the DataPivotHierarchy are shown.
+    remarks: '\[ [API set: ExcelApi 1.8](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        summarizeBy?: Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min"
+        | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
+      return:
+        type: >-
+          <xref uid="office!Excel.AggregationFunction:enum" /> | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" |
+          "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" |
+          "VarianceP"

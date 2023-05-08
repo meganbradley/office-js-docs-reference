@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: Word.Interfaces.StyleUpdateData
+uid: 'office!Word.Interfaces.StyleUpdateData:interface'
+package: office!
+fullName: Word.Interfaces.StyleUpdateData
+summary: 'An interface for updating data on the Style object, for use in `style.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: font
+    uid: 'office!Word.Interfaces.StyleUpdateData#font:member'
+    package: office!
+    fullName: font
+    summary: Gets a font object that represents the character formatting of the specified style.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'font?: Word.Interfaces.FontUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.FontUpdateData:interface" />'
+  - name: listTemplate
+    uid: 'office!Word.Interfaces.StyleUpdateData#listTemplate:member'
+    package: office!
+    fullName: listTemplate
+    summary: Gets a ListTemplate object that represents the list formatting for the specified Style object.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'listTemplate?: Word.Interfaces.ListTemplateUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.ListTemplateUpdateData:interface" />'
+  - name: paragraphFormat
+    uid: 'office!Word.Interfaces.StyleUpdateData#paragraphFormat:member'
+    package: office!
+    fullName: paragraphFormat
+    summary: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'paragraphFormat?: Word.Interfaces.ParagraphFormatUpdateData;'
+      return:
+        type: '<xref uid="office!Word.Interfaces.ParagraphFormatUpdateData:interface" />'
+  - name: priority
+    uid: 'office!Word.Interfaces.StyleUpdateData#priority:member'
+    package: office!
+    fullName: priority
+    summary: Gets or sets the priority.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'priority?: number;'
+      return:
+        type: number
+  - name: quickStyle
+    uid: 'office!Word.Interfaces.StyleUpdateData#quickStyle:member'
+    package: office!
+    fullName: quickStyle
+    summary: Gets or sets whether the style corresponds to an available quick style.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'quickStyle?: boolean;'
+      return:
+        type: boolean
+  - name: unhideWhenUsed
+    uid: 'office!Word.Interfaces.StyleUpdateData#unhideWhenUsed:member'
+    package: office!
+    fullName: unhideWhenUsed
+    summary: >-
+      Gets or sets whether the specified style is made visible as a recommended style in the Styles and in the Styles
+      task pane in Microsoft Word after it's used in the document.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'unhideWhenUsed?: boolean;'
+      return:
+        type: boolean
+  - name: visibility
+    uid: 'office!Word.Interfaces.StyleUpdateData#visibility:member'
+    package: office!
+    fullName: visibility
+    summary: >-
+      Gets or sets whether the specified style is visible as a recommended style in the Styles gallery and in the Styles
+      task pane.
+    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'visibility?: boolean;'
+      return:
+        type: boolean

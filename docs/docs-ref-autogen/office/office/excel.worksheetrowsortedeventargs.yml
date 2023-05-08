@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Excel.WorksheetRowSortedEventArgs
+uid: 'office!Excel.WorksheetRowSortedEventArgs:interface'
+package: office!
+fullName: Excel.WorksheetRowSortedEventArgs
+summary: Provides information about the row-sorted event and its related worksheet.
+remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: address
+    uid: 'office!Excel.WorksheetRowSortedEventArgs#address:member'
+    package: office!
+    fullName: address
+    summary: >-
+      Gets the range address that represents the sorted areas of a specific worksheet. Only rows changed as a result of
+      the sort operation are returned.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'address: string;'
+      return:
+        type: string
+  - name: source
+    uid: 'office!Excel.WorksheetRowSortedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'office!Excel.WorksheetRowSortedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "WorksheetRowSorted";'
+      return:
+        type: '"WorksheetRowSorted"'
+  - name: worksheetId
+    uid: 'office!Excel.WorksheetRowSortedEventArgs#worksheetId:member'
+    package: office!
+    fullName: worksheetId
+    summary: Gets the ID of the worksheet where the sorting happened.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type: string

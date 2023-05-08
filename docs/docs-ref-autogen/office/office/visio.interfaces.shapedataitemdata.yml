@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: Visio.Interfaces.ShapeDataItemData
+uid: 'office!Visio.Interfaces.ShapeDataItemData:interface'
+package: office!
+fullName: Visio.Interfaces.ShapeDataItemData
+summary: An interface describing the data returned by calling `shapeDataItem.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: format
+    uid: 'office!Visio.Interfaces.ShapeDataItemData#format:member'
+    package: office!
+    fullName: format
+    summary: |-
+      A string that specifies the format of the shape data item. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format?: string;'
+      return:
+        type: string
+  - name: formattedValue
+    uid: 'office!Visio.Interfaces.ShapeDataItemData#formattedValue:member'
+    package: office!
+    fullName: formattedValue
+    summary: |-
+      A string that specifies the formatted value of the shape data item. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'formattedValue?: string;'
+      return:
+        type: string
+  - name: label
+    uid: 'office!Visio.Interfaces.ShapeDataItemData#label:member'
+    package: office!
+    fullName: label
+    summary: |-
+      A string that specifies the label of the shape data item. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'label?: string;'
+      return:
+        type: string
+  - name: value
+    uid: 'office!Visio.Interfaces.ShapeDataItemData#value:member'
+    package: office!
+    fullName: value
+    summary: |-
+      A string that specifies the value of the shape data item. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value?: string;'
+      return:
+        type: string

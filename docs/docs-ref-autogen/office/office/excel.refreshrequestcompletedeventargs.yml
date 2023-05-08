@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.RefreshRequestCompletedEventArgs
+uid: 'office!Excel.RefreshRequestCompletedEventArgs:interface'
+package: office!
+fullName: Excel.RefreshRequestCompletedEventArgs
+summary: The argument that is passed to the event handler upon completion of refresh request to an external service or link.
+remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: refreshed
+    uid: 'office!Excel.RefreshRequestCompletedEventArgs#refreshed:member'
+    package: office!
+    fullName: refreshed
+    summary: Indicates if the request to refresh was successful.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'refreshed: boolean;'
+      return:
+        type: boolean
+  - name: serviceId
+    uid: 'office!Excel.RefreshRequestCompletedEventArgs#serviceId:member'
+    package: office!
+    fullName: serviceId
+    summary: The unique ID of the object whose refresh request was completed.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'serviceId: number;'
+      return:
+        type: number
+  - name: source
+    uid: 'office!Excel.RefreshRequestCompletedEventArgs#source:member'
+    package: office!
+    fullName: source
+    summary: Gets the source of the event. See `Excel.EventSource` for details.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type: '<xref uid="office!Excel.EventSource:enum" /> | "Local" | "Remote"'
+  - name: type
+    uid: 'office!Excel.RefreshRequestCompletedEventArgs#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the event. See `Excel.EventType` for details.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type: "LinkedDataTypeRefreshRequestCompleted";'
+      return:
+        type: '"LinkedDataTypeRefreshRequestCompleted"'
+  - name: warnings
+    uid: 'office!Excel.RefreshRequestCompletedEventArgs#warnings:member'
+    package: office!
+    fullName: warnings
+    summary: An array that contains any warnings generated from the refresh request.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'warnings?: string[];'
+      return:
+        type: 'string[]'

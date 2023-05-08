@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.PivotAxis
+uid: 'office!Excel.PivotAxis:enum'
+package: office!
+fullName: Excel.PivotAxis
+summary: Represents the axis from which to get the PivotItems.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: column
+    uid: 'office!Excel.PivotAxis.column:member'
+    package: office!
+    summary: The column axis.
+    value: '"Column"'
+  - name: data
+    uid: 'office!Excel.PivotAxis.data:member'
+    package: office!
+    summary: The data axis.
+    value: '"Data"'
+  - name: filter
+    uid: 'office!Excel.PivotAxis.filter:member'
+    package: office!
+    summary: The filter axis.
+    value: '"Filter"'
+  - name: row
+    uid: 'office!Excel.PivotAxis.row:member'
+    package: office!
+    summary: The row axis.
+    value: '"Row"'
+  - name: unknown
+    uid: 'office!Excel.PivotAxis.unknown:member'
+    package: office!
+    summary: The axis or region is unknown or unsupported.
+    value: '"Unknown"'

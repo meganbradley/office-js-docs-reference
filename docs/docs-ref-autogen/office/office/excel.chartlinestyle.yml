@@ -1,0 +1,66 @@
+### YamlMime:TSEnum
+name: Excel.ChartLineStyle
+uid: 'office!Excel.ChartLineStyle:enum'
+package: office!
+fullName: Excel.ChartLineStyle
+summary: ''
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.ChartLineStyle.automatic:member'
+    package: office!
+    summary: ''
+    value: '"Automatic"'
+  - name: continuous
+    uid: 'office!Excel.ChartLineStyle.continuous:member'
+    package: office!
+    summary: ''
+    value: '"Continuous"'
+  - name: dash
+    uid: 'office!Excel.ChartLineStyle.dash:member'
+    package: office!
+    summary: ''
+    value: '"Dash"'
+  - name: dashDot
+    uid: 'office!Excel.ChartLineStyle.dashDot:member'
+    package: office!
+    summary: ''
+    value: '"DashDot"'
+  - name: dashDotDot
+    uid: 'office!Excel.ChartLineStyle.dashDotDot:member'
+    package: office!
+    summary: ''
+    value: '"DashDotDot"'
+  - name: dot
+    uid: 'office!Excel.ChartLineStyle.dot:member'
+    package: office!
+    summary: ''
+    value: '"Dot"'
+  - name: grey25
+    uid: 'office!Excel.ChartLineStyle.grey25:member'
+    package: office!
+    summary: ''
+    value: '"Grey25"'
+  - name: grey50
+    uid: 'office!Excel.ChartLineStyle.grey50:member'
+    package: office!
+    summary: ''
+    value: '"Grey50"'
+  - name: grey75
+    uid: 'office!Excel.ChartLineStyle.grey75:member'
+    package: office!
+    summary: ''
+    value: '"Grey75"'
+  - name: none
+    uid: 'office!Excel.ChartLineStyle.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'
+  - name: roundDot
+    uid: 'office!Excel.ChartLineStyle.roundDot:member'
+    package: office!
+    summary: ''
+    value: '"RoundDot"'

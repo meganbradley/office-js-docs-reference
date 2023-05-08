@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Excel.Interfaces.DatetimeFormatInfoData
+uid: 'office!Excel.Interfaces.DatetimeFormatInfoData:interface'
+package: office!
+fullName: Excel.Interfaces.DatetimeFormatInfoData
+summary: An interface describing the data returned by calling `datetimeFormatInfo.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: dateSeparator
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoData#dateSeparator:member'
+    package: office!
+    fullName: dateSeparator
+    summary: Gets the string used as the date separator. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'dateSeparator?: string;'
+      return:
+        type: string
+  - name: longDatePattern
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoData#longDatePattern:member'
+    package: office!
+    fullName: longDatePattern
+    summary: Gets the format string for a long date value. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longDatePattern?: string;'
+      return:
+        type: string
+  - name: longTimePattern
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoData#longTimePattern:member'
+    package: office!
+    fullName: longTimePattern
+    summary: Gets the format string for a long time value. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longTimePattern?: string;'
+      return:
+        type: string
+  - name: shortDatePattern
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoData#shortDatePattern:member'
+    package: office!
+    fullName: shortDatePattern
+    summary: Gets the format string for a short date value. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shortDatePattern?: string;'
+      return:
+        type: string
+  - name: timeSeparator
+    uid: 'office!Excel.Interfaces.DatetimeFormatInfoData#timeSeparator:member'
+    package: office!
+    fullName: timeSeparator
+    summary: Gets the string used as the time separator. This is based on current system settings.
+    remarks: '\[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeSeparator?: string;'
+      return:
+        type: string

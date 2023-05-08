@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: OneNote.Interfaces.NoteTagLoadOptions
+uid: 'office!OneNote.Interfaces.NoteTagLoadOptions:interface'
+package: office!
+fullName: OneNote.Interfaces.NoteTagLoadOptions
+summary: A container for the NoteTag in a paragraph.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!OneNote.Interfaces.NoteTagLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!OneNote.Interfaces.NoteTagLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: Gets the Id of the NoteTag object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: status
+    uid: 'office!OneNote.Interfaces.NoteTagLoadOptions#status:member'
+    package: office!
+    fullName: status
+    summary: Gets the status of the NoteTag object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'status?: boolean;'
+      return:
+        type: boolean
+  - name: type
+    uid: 'office!OneNote.Interfaces.NoteTagLoadOptions#type:member'
+    package: office!
+    fullName: type
+    summary: Gets the type of the NoteTag object. Read-only.
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type: boolean

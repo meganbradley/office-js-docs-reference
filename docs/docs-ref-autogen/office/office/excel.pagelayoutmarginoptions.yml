@@ -1,0 +1,90 @@
+### YamlMime:TSType
+name: Excel.PageLayoutMarginOptions
+uid: 'office!Excel.PageLayoutMarginOptions:interface'
+package: office!
+fullName: Excel.PageLayoutMarginOptions
+summary: Represents the options in page layout margins.
+remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bottom
+    uid: 'office!Excel.PageLayoutMarginOptions#bottom:member'
+    package: office!
+    fullName: bottom
+    summary: Specifies the page layout bottom margin in the unit specified to use for printing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottom?: number;'
+      return:
+        type: number
+  - name: footer
+    uid: 'office!Excel.PageLayoutMarginOptions#footer:member'
+    package: office!
+    fullName: footer
+    summary: Specifies the page layout footer margin in the unit specified to use for printing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'footer?: number;'
+      return:
+        type: number
+  - name: header
+    uid: 'office!Excel.PageLayoutMarginOptions#header:member'
+    package: office!
+    fullName: header
+    summary: Specifies the page layout header margin in the unit specified to use for printing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'header?: number;'
+      return:
+        type: number
+  - name: left
+    uid: 'office!Excel.PageLayoutMarginOptions#left:member'
+    package: office!
+    fullName: left
+    summary: Specifies the page layout left margin in the unit specified to use for printing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: number;'
+      return:
+        type: number
+  - name: right
+    uid: 'office!Excel.PageLayoutMarginOptions#right:member'
+    package: office!
+    fullName: right
+    summary: Specifies the page layout right margin in the unit specified to use for printing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'right?: number;'
+      return:
+        type: number
+  - name: top
+    uid: 'office!Excel.PageLayoutMarginOptions#top:member'
+    package: office!
+    fullName: top
+    summary: Specifies the page layout top margin in the unit specified to use for printing.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: number;'
+      return:
+        type: number

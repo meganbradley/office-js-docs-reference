@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: OneNote.ImageOcrData
+uid: 'office!OneNote.ImageOcrData:interface'
+package: office!
+fullName: OneNote.ImageOcrData
+summary: Represents data obtained by OCR (optical character recognition) of an image.
+remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ocrLanguageId
+    uid: 'office!OneNote.ImageOcrData#ocrLanguageId:member'
+    package: office!
+    fullName: ocrLanguageId
+    summary: 'Represents the OCR language, with values such as EN-US'
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ocrLanguageId: string;'
+      return:
+        type: string
+  - name: ocrText
+    uid: 'office!OneNote.ImageOcrData#ocrText:member'
+    package: office!
+    fullName: ocrText
+    summary: Represents the text obtained by OCR of the image
+    remarks: '\[ [API set: OneNoteApi 1.1](/javascript/api/requirement-sets/onenote/onenote-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ocrText: string;'
+      return:
+        type: string

@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalDataBarAxisFormat
+uid: 'office!Excel.ConditionalDataBarAxisFormat:enum'
+package: office!
+fullName: Excel.ConditionalDataBarAxisFormat
+summary: Represents the format options for a data bar axis.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.ConditionalDataBarAxisFormat.automatic:member'
+    package: office!
+    summary: ''
+    value: '"Automatic"'
+  - name: cellMidPoint
+    uid: 'office!Excel.ConditionalDataBarAxisFormat.cellMidPoint:member'
+    package: office!
+    summary: ''
+    value: '"CellMidPoint"'
+  - name: none
+    uid: 'office!Excel.ConditionalDataBarAxisFormat.none:member'
+    package: office!
+    summary: ''
+    value: '"None"'

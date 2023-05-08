@@ -1,0 +1,50 @@
+### YamlMime:TSEnum
+name: Excel.ShapeAutoSize
+uid: 'office!Excel.ShapeAutoSize:enum'
+package: office!
+fullName: Excel.ShapeAutoSize
+summary: Determines the type of automatic sizing allowed.
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-textboxes.yaml
+
+  await Excel.run(async (context) => {
+      const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+      const textbox = shapes.getItem("Textbox");
+      textbox.textFrame.autoSizeSetting = Excel.ShapeAutoSize.autoSizeShapeToFitText;
+      await context.sync();
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: autoSizeMixed
+    uid: 'office!Excel.ShapeAutoSize.autoSizeMixed:member'
+    package: office!
+    summary: A combination of automatic sizing schemes are used.
+    value: '"AutoSizeMixed"'
+  - name: autoSizeNone
+    uid: 'office!Excel.ShapeAutoSize.autoSizeNone:member'
+    package: office!
+    summary: No autosizing.
+    value: '"AutoSizeNone"'
+  - name: autoSizeShapeToFitText
+    uid: 'office!Excel.ShapeAutoSize.autoSizeShapeToFitText:member'
+    package: office!
+    summary: The shape is adjusted to fit the text.
+    value: '"AutoSizeShapeToFitText"'
+  - name: autoSizeTextToFitShape
+    uid: 'office!Excel.ShapeAutoSize.autoSizeTextToFitShape:member'
+    package: office!
+    summary: The text is adjusted to fit the shape.
+    value: '"AutoSizeTextToFitShape"'

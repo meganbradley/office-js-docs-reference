@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.FourArrowsGraySet
+uid: 'office!Excel.FourArrowsGraySet:interface'
+package: office!
+fullName: Excel.FourArrowsGraySet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: grayDownArrow
+    uid: 'office!Excel.FourArrowsGraySet#grayDownArrow:member'
+    package: office!
+    fullName: grayDownArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: grayDownInclineArrow
+    uid: 'office!Excel.FourArrowsGraySet#grayDownInclineArrow:member'
+    package: office!
+    fullName: grayDownInclineArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayDownInclineArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: grayUpArrow
+    uid: 'office!Excel.FourArrowsGraySet#grayUpArrow:member'
+    package: office!
+    fullName: grayUpArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: grayUpInclineArrow
+    uid: 'office!Excel.FourArrowsGraySet#grayUpInclineArrow:member'
+    package: office!
+    fullName: grayUpInclineArrow
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayUpInclineArrow: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

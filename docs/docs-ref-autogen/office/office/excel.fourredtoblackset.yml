@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: Excel.FourRedToBlackSet
+uid: 'office!Excel.FourRedToBlackSet:interface'
+package: office!
+fullName: Excel.FourRedToBlackSet
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: blackCircle
+    uid: 'office!Excel.FourRedToBlackSet#blackCircle:member'
+    package: office!
+    fullName: blackCircle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'blackCircle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: grayCircle
+    uid: 'office!Excel.FourRedToBlackSet#grayCircle:member'
+    package: office!
+    fullName: grayCircle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'grayCircle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: pinkCircle
+    uid: 'office!Excel.FourRedToBlackSet#pinkCircle:member'
+    package: office!
+    fullName: pinkCircle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pinkCircle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redCircle
+    uid: 'office!Excel.FourRedToBlackSet#redCircle:member'
+    package: office!
+    fullName: redCircle
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redCircle: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

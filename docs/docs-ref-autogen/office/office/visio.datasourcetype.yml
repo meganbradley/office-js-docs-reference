@@ -1,0 +1,24 @@
+### YamlMime:TSEnum
+name: Visio.DataSourceType
+uid: 'office!Visio.DataSourceType:enum'
+package: office!
+fullName: Visio.DataSourceType
+summary: |-
+  Represents the type of source for the data connection.
+
+  \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: excel
+    uid: 'office!Visio.DataSourceType.excel:member'
+    package: office!
+    summary: Microsoft Excel workbook
+    value: '"Excel"'
+  - name: unknown
+    uid: 'office!Visio.DataSourceType.unknown:member'
+    package: office!
+    summary: Unknown Data Source
+    value: '"Unknown"'

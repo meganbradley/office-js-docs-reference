@@ -1,0 +1,52 @@
+### YamlMime:TSEnum
+name: PowerPoint.TextVerticalAlignment
+uid: 'office!PowerPoint.TextVerticalAlignment:enum'
+package: office!
+fullName: PowerPoint.TextVerticalAlignment
+summary: >-
+  Represents the vertical alignment of a [PowerPoint.TextFrame](xref:office!PowerPoint.TextFrame:class) in a
+  [PowerPoint.Shape](xref:office!PowerPoint.Shape:class)<!-- -->. If one the centered options are selected, the contents
+  of the `TextFrame` will be centered horizontally within the `Shape` as a group. To change the horizontal alignment of
+  a text, see [PowerPoint.ParagraphFormat](xref:office!PowerPoint.ParagraphFormat:class) and
+  [PowerPoint.ParagraphHorizontalAlignment](xref:office!PowerPoint.ParagraphHorizontalAlignment:enum)<!-- -->.
+remarks: '\[ [API set: PowerPointApi 1.4](/javascript/api/requirement-sets/powerpoint/powerpoint-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'office!PowerPoint.TextVerticalAlignment.bottom:member'
+    package: office!
+    summary: Specifies that the `TextFrame` should be bottom aligned to the `Shape`<!-- -->.
+    value: '"Bottom"'
+  - name: bottomCentered
+    uid: 'office!PowerPoint.TextVerticalAlignment.bottomCentered:member'
+    package: office!
+    summary: >-
+      Specifies that the `TextFrame` should be bottom aligned vertically to the `Shape`<!-- -->. Contents of the
+      `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
+    value: '"BottomCentered"'
+  - name: middle
+    uid: 'office!PowerPoint.TextVerticalAlignment.middle:member'
+    package: office!
+    summary: Specifies that the `TextFrame` should be center aligned to the `Shape`<!-- -->.
+    value: '"Middle"'
+  - name: middleCentered
+    uid: 'office!PowerPoint.TextVerticalAlignment.middleCentered:member'
+    package: office!
+    summary: >-
+      Specifies that the `TextFrame` should be center aligned vertically to the `Shape`<!-- -->. Contents of the
+      `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
+    value: '"MiddleCentered"'
+  - name: top
+    uid: 'office!PowerPoint.TextVerticalAlignment.top:member'
+    package: office!
+    summary: Specifies that the `TextFrame` should be top aligned to the `Shape`<!-- -->.
+    value: '"Top"'
+  - name: topCentered
+    uid: 'office!PowerPoint.TextVerticalAlignment.topCentered:member'
+    package: office!
+    summary: >-
+      Specifies that the `TextFrame` should be top aligned vertically to the `Shape`<!-- -->. Contents of the
+      `TextFrame` will be centered horizontally within the `Shape`<!-- -->.
+    value: '"TopCentered"'

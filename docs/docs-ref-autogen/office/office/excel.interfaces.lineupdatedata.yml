@@ -1,0 +1,107 @@
+### YamlMime:TSType
+name: Excel.Interfaces.LineUpdateData
+uid: 'office!Excel.Interfaces.LineUpdateData:interface'
+package: office!
+fullName: Excel.Interfaces.LineUpdateData
+summary: 'An interface for updating data on the Line object, for use in `line.set({ ... })`<!-- -->.'
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: beginArrowheadLength
+    uid: 'office!Excel.Interfaces.LineUpdateData#beginArrowheadLength:member'
+    package: office!
+    fullName: beginArrowheadLength
+    summary: Represents the length of the arrowhead at the beginning of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'beginArrowheadLength?: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
+      return:
+        type: '<xref uid="office!Excel.ArrowheadLength:enum" /> | "Short" | "Medium" | "Long"'
+  - name: beginArrowheadStyle
+    uid: 'office!Excel.Interfaces.LineUpdateData#beginArrowheadStyle:member'
+    package: office!
+    fullName: beginArrowheadStyle
+    summary: Represents the style of the arrowhead at the beginning of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'beginArrowheadStyle?: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      return:
+        type: >-
+          <xref uid="office!Excel.ArrowheadStyle:enum" /> | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" |
+          "Open"
+  - name: beginArrowheadWidth
+    uid: 'office!Excel.Interfaces.LineUpdateData#beginArrowheadWidth:member'
+    package: office!
+    fullName: beginArrowheadWidth
+    summary: Represents the width of the arrowhead at the beginning of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'beginArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
+      return:
+        type: '<xref uid="office!Excel.ArrowheadWidth:enum" /> | "Narrow" | "Medium" | "Wide"'
+  - name: connectorType
+    uid: 'office!Excel.Interfaces.LineUpdateData#connectorType:member'
+    package: office!
+    fullName: connectorType
+    summary: Represents the connector type for the line.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connectorType?: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";'
+      return:
+        type: '<xref uid="office!Excel.ConnectorType:enum" /> | "Straight" | "Elbow" | "Curve"'
+  - name: endArrowheadLength
+    uid: 'office!Excel.Interfaces.LineUpdateData#endArrowheadLength:member'
+    package: office!
+    fullName: endArrowheadLength
+    summary: Represents the length of the arrowhead at the end of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endArrowheadLength?: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
+      return:
+        type: '<xref uid="office!Excel.ArrowheadLength:enum" /> | "Short" | "Medium" | "Long"'
+  - name: endArrowheadStyle
+    uid: 'office!Excel.Interfaces.LineUpdateData#endArrowheadStyle:member'
+    package: office!
+    fullName: endArrowheadStyle
+    summary: Represents the style of the arrowhead at the end of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endArrowheadStyle?: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      return:
+        type: >-
+          <xref uid="office!Excel.ArrowheadStyle:enum" /> | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" |
+          "Open"
+  - name: endArrowheadWidth
+    uid: 'office!Excel.Interfaces.LineUpdateData#endArrowheadWidth:member'
+    package: office!
+    fullName: endArrowheadWidth
+    summary: Represents the width of the arrowhead at the end of the specified line.
+    remarks: '\[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
+      return:
+        type: '<xref uid="office!Excel.ArrowheadWidth:enum" /> | "Narrow" | "Medium" | "Wide"'

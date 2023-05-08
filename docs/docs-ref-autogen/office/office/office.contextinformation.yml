@@ -9,6 +9,7 @@ remarks: >-
   sets, you can use the
   [Office.context.mailbox.diagnostics](https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member)
   property to get similar information.
+example: []
 isPreview: false
 isDeprecated: false
 type: interface
@@ -19,6 +20,7 @@ properties:
     fullName: host
     summary: Gets the Office application in which the add-in is running.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -40,6 +42,7 @@ properties:
     fullName: platform
     summary: Gets the platform on which the add-in is running.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:
@@ -61,6 +64,7 @@ properties:
     fullName: version
     summary: Gets the version of Office on which the add-in is running.
     remarks: ''
+    example: []
     isPreview: false
     isDeprecated: false
     syntax:

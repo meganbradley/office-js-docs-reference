@@ -1,0 +1,48 @@
+### YamlMime:TSEnum
+name: Excel.NamedItemType
+uid: 'office!Excel.NamedItemType:enum'
+package: office!
+fullName: Excel.NamedItemType
+summary: ''
+remarks: >-
+  \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+  Array](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: array
+    uid: 'office!Excel.NamedItemType.array:member'
+    package: office!
+    summary: ''
+    value: '"Array"'
+  - name: boolean
+    uid: 'office!Excel.NamedItemType.boolean:member'
+    package: office!
+    summary: ''
+    value: '"Boolean"'
+  - name: double
+    uid: 'office!Excel.NamedItemType.double:member'
+    package: office!
+    summary: ''
+    value: '"Double"'
+  - name: error
+    uid: 'office!Excel.NamedItemType.error:member'
+    package: office!
+    summary: ''
+    value: '"Error"'
+  - name: integer
+    uid: 'office!Excel.NamedItemType.integer:member'
+    package: office!
+    summary: ''
+    value: '"Integer"'
+  - name: range
+    uid: 'office!Excel.NamedItemType.range:member'
+    package: office!
+    summary: ''
+    value: '"Range"'
+  - name: string
+    uid: 'office!Excel.NamedItemType.string:member'
+    package: office!
+    summary: ''
+    value: '"String"'

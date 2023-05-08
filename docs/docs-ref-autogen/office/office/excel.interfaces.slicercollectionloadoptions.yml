@@ -1,0 +1,209 @@
+### YamlMime:TSType
+name: Excel.Interfaces.SlicerCollectionLoadOptions
+uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions:interface'
+package: office!
+fullName: Excel.Interfaces.SlicerCollectionLoadOptions
+summary: Represents a collection of all the slicer objects in the workbook or a worksheet.
+remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: $all
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#$all:member'
+    package: office!
+    fullName: $all
+    summary: >-
+      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
+      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type: boolean
+  - name: caption
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#caption:member'
+    package: office!
+    fullName: caption
+    summary: 'For EACH ITEM in the collection: Represents the caption of the slicer.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'caption?: boolean;'
+      return:
+        type: boolean
+  - name: height
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#height:member'
+    package: office!
+    fullName: height
+    summary: >-
+      For EACH ITEM in the collection: Represents the height, in points, of the slicer. Throws an `InvalidArgument`
+      exception when set with a negative value or zero as an input.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type: boolean
+  - name: id
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#id:member'
+    package: office!
+    fullName: id
+    summary: 'For EACH ITEM in the collection: Represents the unique ID of the slicer.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type: boolean
+  - name: isFilterCleared
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#isFilterCleared:member'
+    package: office!
+    fullName: isFilterCleared
+    summary: 'For EACH ITEM in the collection: Value is `true` if all filters currently applied on the slicer are cleared.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'isFilterCleared?: boolean;'
+      return:
+        type: boolean
+  - name: left
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#left:member'
+    package: office!
+    fullName: left
+    summary: >-
+      For EACH ITEM in the collection: Represents the distance, in points, from the left side of the slicer to the left
+      of the worksheet. Throws an `InvalidArgument` error when set with a negative value as an input.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type: boolean
+  - name: name
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#name:member'
+    package: office!
+    fullName: name
+    summary: 'For EACH ITEM in the collection: Represents the name of the slicer.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type: boolean
+  - name: nameInFormula
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#nameInFormula:member'
+    package: office!
+    fullName: nameInFormula
+    summary: 'For EACH ITEM in the collection: Represents the slicer name used in the formula.'
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'nameInFormula?: boolean;'
+      return:
+        type: boolean
+  - name: slicerStyle
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#slicerStyle:member'
+    package: office!
+    fullName: slicerStyle
+    summary: 'For EACH ITEM in the collection: The style applied to the slicer.'
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'slicerStyle?: Excel.Interfaces.SlicerStyleLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.SlicerStyleLoadOptions:interface" />'
+  - name: sortBy
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#sortBy:member'
+    package: office!
+    fullName: sortBy
+    summary: >-
+      For EACH ITEM in the collection: Represents the sort order of the items in the slicer. Possible values are:
+      "DataSourceOrder", "Ascending", "Descending".
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sortBy?: boolean;'
+      return:
+        type: boolean
+  - name: style
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#style:member'
+    package: office!
+    fullName: style
+    summary: >-
+      For EACH ITEM in the collection: Constant value that represents the slicer style. Possible values are:
+      "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1"
+      through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type: boolean
+  - name: top
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#top:member'
+    package: office!
+    fullName: top
+    summary: >-
+      For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the slicer to the top of
+      the worksheet. Throws an `InvalidArgument` error when set with a negative value as an input.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type: boolean
+  - name: width
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#width:member'
+    package: office!
+    fullName: width
+    summary: >-
+      For EACH ITEM in the collection: Represents the width, in points, of the slicer. Throws an `InvalidArgument` error
+      when set with a negative value or zero as an input.
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type: boolean
+  - name: worksheet
+    uid: 'office!Excel.Interfaces.SlicerCollectionLoadOptions#worksheet:member'
+    package: office!
+    fullName: worksheet
+    summary: 'For EACH ITEM in the collection: Represents the worksheet containing the slicer.'
+    remarks: '\[ [API set: ExcelApi 1.10](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type: '<xref uid="office!Excel.Interfaces.WorksheetLoadOptions:interface" />'

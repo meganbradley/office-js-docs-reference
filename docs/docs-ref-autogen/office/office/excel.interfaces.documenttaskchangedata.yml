@@ -1,0 +1,188 @@
+### YamlMime:TSType
+name: Excel.Interfaces.DocumentTaskChangeData
+uid: 'office!Excel.Interfaces.DocumentTaskChangeData:interface'
+package: office!
+fullName: Excel.Interfaces.DocumentTaskChangeData
+summary: An interface describing the data returned by calling `documentTaskChange.toJSON()`<!-- -->.
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: assignee
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#assignee:member'
+    package: office!
+    fullName: assignee
+    summary: >-
+      Represents the user assigned to the task for an `assign` change action, or the user unassigned from the task for
+      an `unassign` change action.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'assignee?: Excel.EmailIdentity;'
+      return:
+        type: '<xref uid="office!Excel.EmailIdentity:interface" />'
+  - name: changedBy
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#changedBy:member'
+    package: office!
+    fullName: changedBy
+    summary: Represents the identity of the user who made the task change.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'changedBy?: Excel.EmailIdentity;'
+      return:
+        type: '<xref uid="office!Excel.EmailIdentity:interface" />'
+  - name: commentId
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#commentId:member'
+    package: office!
+    fullName: commentId
+    summary: Represents the ID of the `Comment` or `CommentReply` to which the task change is anchored.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'commentId?: string;'
+      return:
+        type: string
+  - name: createdDateTime
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#createdDateTime:member'
+    package: office!
+    fullName: createdDateTime
+    summary: Represents the creation date and time of the task change record. All dates are in UTC.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'createdDateTime?: Date;'
+      return:
+        type: Date
+  - name: dueDateTime
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#dueDateTime:member'
+    package: office!
+    fullName: dueDateTime
+    summary: >-
+      Represents the task's due date and time. It is used for the `setSchedule` change action. It is in UTC time zone.
+      It can be set to `null` to remove the due date and time. It should be set together with `startDateTime` to avoid
+      conflicts.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'dueDateTime?: Date;'
+      return:
+        type: Date
+  - name: id
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#id:member'
+    package: office!
+    fullName: id
+    summary: The unique GUID of the task change.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'id?: string;'
+      return:
+        type: string
+  - name: percentComplete
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#percentComplete:member'
+    package: office!
+    fullName: percentComplete
+    summary: >-
+      Represents the task's completion percentage. It is used for the `setPercentComplete` change action. This is a
+      value between 0 and 100, where 100 represents a completed task. Changing this value to 100 also completes the
+      associated comment. Changing the completion from 100 to a lower value reactivates the associated comment.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'percentComplete?: number;'
+      return:
+        type: number
+  - name: priority
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#priority:member'
+    package: office!
+    fullName: priority
+    summary: >-
+      Represents the task's priority. It is used for the `setPriority` change action. This is a value between 0 and 10,
+      with 5 being the default priority if not set, and where 0 represents the highest priority.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'priority?: number;'
+      return:
+        type: number
+  - name: startDateTime
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#startDateTime:member'
+    package: office!
+    fullName: startDateTime
+    summary: >-
+      Represents the task's start date and time. It is used for the `setSchedule` change action. It is in UTC time zone.
+      It can be set to `null` to remove the start date and time. It should be set together with `dueDateTime` to avoid
+      conflicts.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'startDateTime?: Date;'
+      return:
+        type: Date
+  - name: title
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#title:member'
+    package: office!
+    fullName: title
+    summary: Represents the task's title. It is used for the `setTitle` change action.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'title?: string;'
+      return:
+        type: string
+  - name: type
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#type:member'
+    package: office!
+    fullName: type
+    summary: >-
+      Represents the action type of the task change record. Some examples of action types are `assign`<!-- -->,
+      `undo`<!-- -->, and `setPriority`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        type?: Excel.DocumentTaskChangeAction | "unknown" | "create" | "assign" | "unassign" | "unassignAll" |
+        "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" | "undo";
+      return:
+        type: >-
+          <xref uid="office!Excel.DocumentTaskChangeAction:enum" /> | "unknown" | "create" | "assign" | "unassign" |
+          "unassignAll" | "setSchedule" | "setPercentComplete" | "setPriority" | "remove" | "restore" | "setTitle" |
+          "undo"
+  - name: undoChangeId
+    uid: 'office!Excel.Interfaces.DocumentTaskChangeData#undoChangeId:member'
+    package: office!
+    fullName: undoChangeId
+    summary: Represents the `DocumentTaskChange.id` property that was undone for the `undo` change action.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    example: []
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'undoChangeId?: string;'
+      return:
+        type: string

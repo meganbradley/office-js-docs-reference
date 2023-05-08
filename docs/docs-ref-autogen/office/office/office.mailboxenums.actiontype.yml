@@ -1,0 +1,34 @@
+### YamlMime:TSEnum
+name: Office.MailboxEnums.ActionType
+uid: 'office!Office.MailboxEnums.ActionType:enum'
+package: office!
+fullName: Office.MailboxEnums.ActionType
+summary: Specifies the type of custom action in a notification message.
+remarks: |-
+  \[ [API set: Mailbox 1.10](/office/dev/add-ins/reference/javascript-api-for-office) \]
+
+  #### Examples
+
+  ```javascript
+  // Define an insight notification message.
+  const insightMessage = {
+      type: Office.MailboxEnums.ItemNotificationMessageType.InsightMessage,
+      message: "This is an insight notification",
+      icon: "Icon.80x80",
+      actions: [{
+          actionText: "Open insight",
+          actionType: Office.MailboxEnums.ActionType.ShowTaskPane,
+          commandId: "msgComposeOpenPaneButton",
+          contextData: JSON.stringify({a: "aValue", b: "bValue"})
+      }]
+  };
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ShowTaskPane
+    uid: 'office!Office.MailboxEnums.ActionType.ShowTaskPane:member'
+    package: office!
+    summary: The `showTaskPane` action.
+    value: '"showTaskPane"'

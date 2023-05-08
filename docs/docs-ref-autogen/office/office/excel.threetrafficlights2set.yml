@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: Excel.ThreeTrafficLights2Set
+uid: 'office!Excel.ThreeTrafficLights2Set:interface'
+package: office!
+fullName: Excel.ThreeTrafficLights2Set
+summary: ''
+remarks: ''
+example: []
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: greenTrafficLight
+    uid: 'office!Excel.ThreeTrafficLights2Set#greenTrafficLight:member'
+    package: office!
+    fullName: greenTrafficLight
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'greenTrafficLight: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: redTrafficLight
+    uid: 'office!Excel.ThreeTrafficLights2Set#redTrafficLight:member'
+    package: office!
+    fullName: redTrafficLight
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'redTrafficLight: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'
+  - name: yellowTrafficLight
+    uid: 'office!Excel.ThreeTrafficLights2Set#yellowTrafficLight:member'
+    package: office!
+    fullName: yellowTrafficLight
+    summary: ''
+    remarks: ''
+    example: []
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'yellowTrafficLight: Icon;'
+      return:
+        type: '<xref uid="office!Excel.Icon:interface" />'

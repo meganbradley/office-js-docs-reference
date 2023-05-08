@@ -1,0 +1,64 @@
+### YamlMime:TSEnum
+name: Excel.PictureFormat
+uid: 'office!Excel.PictureFormat:enum'
+package: office!
+fullName: Excel.PictureFormat
+summary: The format of the image.
+remarks: >-
+  \[ [API set: ExcelApi 1.9](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/excel/44-shape/shape-images.yaml
+
+  await Excel.run(async (context) => {
+      const sheet = context.workbook.worksheets.getItem("Shapes");
+      const shape = sheet.shapes.getItem("Image");
+      const result = shape.getAsImage(Excel.PictureFormat.png);
+      await context.sync();
+
+      const imageString = result.value;
+      // Your add-in would save this string as a .png file.
+      console.log("The image's Base64-encoded string: " + imageString);
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bmp
+    uid: 'office!Excel.PictureFormat.bmp:member'
+    package: office!
+    summary: Bitmap image.
+    value: '"BMP"'
+  - name: gif
+    uid: 'office!Excel.PictureFormat.gif:member'
+    package: office!
+    summary: Graphics Interchange Format.
+    value: '"GIF"'
+  - name: jpeg
+    uid: 'office!Excel.PictureFormat.jpeg:member'
+    package: office!
+    summary: Joint Photographic Experts Group.
+    value: '"JPEG"'
+  - name: png
+    uid: 'office!Excel.PictureFormat.png:member'
+    package: office!
+    summary: Portable Network Graphics.
+    value: '"PNG"'
+  - name: svg
+    uid: 'office!Excel.PictureFormat.svg:member'
+    package: office!
+    summary: Scalable Vector Graphic.
+    value: '"SVG"'
+  - name: unknown
+    uid: 'office!Excel.PictureFormat.unknown:member'
+    package: office!
+    summary: ''
+    value: '"UNKNOWN"'

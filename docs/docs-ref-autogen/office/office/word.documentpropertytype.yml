@@ -1,0 +1,52 @@
+### YamlMime:TSEnum
+name: Word.DocumentPropertyType
+uid: 'office!Word.DocumentPropertyType:enum'
+package: office!
+fullName: Word.DocumentPropertyType
+summary: ''
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```typescript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/30-properties/read-write-custom-document-properties.yaml
+
+  await Word.run(async (context) => {
+      const properties = context.document.properties.customProperties;
+      properties.load("key,type,value");
+
+      await context.sync();
+      for (let i = 0; i < properties.items.length; i++)
+          console.log("Property Name:" + properties.items[i].key + "; Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+  });
+
+  ```
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: boolean
+    uid: 'office!Word.DocumentPropertyType.boolean:member'
+    package: office!
+    summary: ''
+    value: '"Boolean"'
+  - name: date
+    uid: 'office!Word.DocumentPropertyType.date:member'
+    package: office!
+    summary: ''
+    value: '"Date"'
+  - name: number
+    uid: 'office!Word.DocumentPropertyType.number:member'
+    package: office!
+    summary: ''
+    value: '"Number"'
+  - name: string
+    uid: 'office!Word.DocumentPropertyType.string:member'
+    package: office!
+    summary: ''
+    value: '"String"'

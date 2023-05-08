@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: Excel.ChartTextVerticalAlignment
+uid: 'office!Excel.ChartTextVerticalAlignment:enum'
+package: office!
+fullName: Excel.ChartTextVerticalAlignment
+summary: Represents the vertical alignment for the specified object.
+remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: bottom
+    uid: 'office!Excel.ChartTextVerticalAlignment.bottom:member'
+    package: office!
+    summary: ''
+    value: '"Bottom"'
+  - name: center
+    uid: 'office!Excel.ChartTextVerticalAlignment.center:member'
+    package: office!
+    summary: ''
+    value: '"Center"'
+  - name: distributed
+    uid: 'office!Excel.ChartTextVerticalAlignment.distributed:member'
+    package: office!
+    summary: ''
+    value: '"Distributed"'
+  - name: justify
+    uid: 'office!Excel.ChartTextVerticalAlignment.justify:member'
+    package: office!
+    summary: ''
+    value: '"Justify"'
+  - name: top
+    uid: 'office!Excel.ChartTextVerticalAlignment.top:member'
+    package: office!
+    summary: ''
+    value: '"Top"'

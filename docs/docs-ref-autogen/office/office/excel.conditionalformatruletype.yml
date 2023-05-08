@@ -1,0 +1,51 @@
+### YamlMime:TSEnum
+name: Excel.ConditionalFormatRuleType
+uid: 'office!Excel.ConditionalFormatRuleType:enum'
+package: office!
+fullName: Excel.ConditionalFormatRuleType
+summary: Represents the types of conditional format values.
+remarks: '\[ [API set: ExcelApi 1.6](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+example: []
+isPreview: false
+isDeprecated: false
+fields:
+  - name: automatic
+    uid: 'office!Excel.ConditionalFormatRuleType.automatic:member'
+    package: office!
+    summary: ''
+    value: '"Automatic"'
+  - name: formula
+    uid: 'office!Excel.ConditionalFormatRuleType.formula:member'
+    package: office!
+    summary: ''
+    value: '"Formula"'
+  - name: highestValue
+    uid: 'office!Excel.ConditionalFormatRuleType.highestValue:member'
+    package: office!
+    summary: ''
+    value: '"HighestValue"'
+  - name: invalid
+    uid: 'office!Excel.ConditionalFormatRuleType.invalid:member'
+    package: office!
+    summary: ''
+    value: '"Invalid"'
+  - name: lowestValue
+    uid: 'office!Excel.ConditionalFormatRuleType.lowestValue:member'
+    package: office!
+    summary: ''
+    value: '"LowestValue"'
+  - name: number
+    uid: 'office!Excel.ConditionalFormatRuleType.number:member'
+    package: office!
+    summary: ''
+    value: '"Number"'
+  - name: percent
+    uid: 'office!Excel.ConditionalFormatRuleType.percent:member'
+    package: office!
+    summary: ''
+    value: '"Percent"'
+  - name: percentile
+    uid: 'office!Excel.ConditionalFormatRuleType.percentile:member'
+    package: office!
+    summary: ''
+    value: '"Percentile"'
