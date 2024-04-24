@@ -5553,7 +5553,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.XmlSvg</code></td>
-         *     <td><ul><li>Excel on Windows and on Mac</li><li>PowerPoint on the web, on Windows, and on Mac</li></ul></td>
+         *     <td><ul><li>Excel on Windows and on Mac</li></ul></td>
          *   </tr>
          * </table>
          *
@@ -5645,7 +5645,7 @@ export declare namespace Office {
          *   </tr>
          *   <tr>
          *     <td><code>Office.CoercionType.XmlSvg</code></td>
-         *     <td><ul><li>Excel on Windows and on Mac</li><li>PowerPoint on the web, on Windows, and on Mac</li></ul></td>
+         *     <td><ul><li>Excel on Windows and on Mac</li></ul></td>
          *   </tr>
          * </table>
          *

@@ -1706,8 +1706,8 @@ methods:
       <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td><ul><li>Excel</li><li>Word</li></ul></td>
       </tr> <tr> <td><code>Office.CoercionType.Text</code> (string)</td>
       <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td> </tr> <tr>
-      <td><code>Office.CoercionType.XmlSvg</code></td> <td><ul><li>Excel on Windows and on Mac</li><li>PowerPoint on the
-      web, on Windows, and on Mac</li></ul></td> </tr> </table>
+      <td><code>Office.CoercionType.XmlSvg</code></td> <td><ul><li>Excel on Windows and on Mac</li></ul></td> </tr>
+      </table>
 
 
       #### Examples
@@ -1926,8 +1926,8 @@ methods:
       <td><code>Office.CoercionType.Table</code> (TableData object)</td> <td><ul><li>Excel</li><li>Word</li></ul></td>
       </tr> <tr> <td><code>Office.CoercionType.Text</code> (string)</td>
       <td><ul><li>Excel</li><li>PowerPoint</li><li>Project</li><li>Word</li></ul></td> </tr> <tr>
-      <td><code>Office.CoercionType.XmlSvg</code></td> <td><ul><li>Excel on Windows and on Mac</li><li>PowerPoint on the
-      web, on Windows, and on Mac</li></ul></td> </tr> </table>
+      <td><code>Office.CoercionType.XmlSvg</code></td> <td><ul><li>Excel on Windows and on Mac</li></ul></td> </tr>
+      </table>
     isPreview: false
     isDeprecated: false
     syntax:
