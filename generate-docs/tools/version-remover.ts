@@ -49,6 +49,22 @@ if (process.argv[3] === "ExcelApi 1.11") {
     wholeDts = wholeDts.replace(/content: CommentRichContent \| string,/g, "content: string,");
 }
 
+if (process.argv[3] === "Mailbox 1.14") {
+    console.log("Address SpamReportingEventCompletedOptions reference when removing Mailbox 1.14");
+    wholeDts = wholeDts.replace(/options\?: SmartAlertsEventCompletedOptions \| SpamReportingEventCompletedOptions/g, "options?: SmartAlertsEventCompletedOptions");
+}
+
+if (process.argv[3] === "Mailbox 1.12") {
+    console.log("Address SmartAlertsEventCompletedOptions reference when removing Mailbox 1.12");
+    wholeDts = wholeDts.replace(/options\?: SmartAlertsEventCompletedOptions/g, "");
+    wholeDts = wholeDts.replace(/@param options - Optional. An object that specifies the behavior of an event-based or spam-reporting add-in when it completes processing an event./g, "");
+}
+
+if (process.argv[3] === "WordApiDesktop 1.1") {
+    console.log("Address ImportedStylesConflictBehavior reference when removing WordApiDesktop 1.1");
+    wholeDts = wholeDts.replace(/importedStylesConflictBehavior\?: Word.ImportedStylesConflictBehavior/g, "importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior");
+}
+
 fsx.writeFileSync(process.argv[4], wholeDts);
 
 

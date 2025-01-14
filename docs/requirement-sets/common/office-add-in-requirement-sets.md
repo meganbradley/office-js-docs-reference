@@ -1,7 +1,7 @@
 ---
 title: Office Common API requirement sets
 description: Learn more about the Office Common API requirement sets.
-ms.date: 04/15/2024
+ms.date: 10/17/2024
 ms.topic: overview
 ms.localizationpriority: medium
 ---
@@ -30,7 +30,7 @@ The following sections list the Common API requirement sets, the methods in each
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| <ul><li>PowerPoint on the web</li><ul><li>PowerPoint on Windows</li><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
+| <ul><li>PowerPoint on the web</li><li>PowerPoint on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>PowerPoint on Mac</li><li>PowerPoint on iPad</li></ul> | <ul><li>Document.getActiveViewAsync</li></ul> |
 
 ---
 
@@ -61,6 +61,14 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
 | <ul><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | <ul><li>CustomXmlNode.getNodesAsync</li><li>CustomXmlNode.getNodeValueAsync</li><li>CustomXmlNode.getTextAsync</li><li>CustomXmlNode.getXmlAsync</li><li>CustomXmlNode.setNodeValueAsync</li><li>CustomXmlNode.setTextAsync</li><li>CustomXmlNode.setXmlAsync</li><li>CustomXmlPart.addHandlerAsync</li><li>CustomXmlPart.deleteAsync</li><li>CustomXmlPart.getNodesAsync</li><li>CustomXmlPart.getXmlAsync</li><li>CustomXmlPart.removeHandlerAsync</li><li>CustomXmlParts.addAsync</li><li>CustomXmlParts.getByIdAsync</li><li>CustomXmlParts.getByNamespaceAsync</li><li>CustomXmlPrefixMappings.addNamespaceAsync</li><li>CustomXmlPrefixMappings.getNamespaceAsync</li><li>CustomXmlPrefixMappings.getPrefixAsync</li></ul> |
+
+---
+
+### DevicePermissionService
+
+| Minimum Office application support | Methods in set |
+|:-----|:-----|
+| See [Device Permission Service requirement sets](device-permission-service-requirement-sets.md). | <ul><li>DevicePermission.requestPermissions</li><li>DevicePermission.requestPermissionsAsync</li></ul> |
 
 ---
 
@@ -132,7 +140,7 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
-| <ul><li>Outlook on the web</li><li>[new Outlook on Windows (preview)](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)</li><li>Outlook on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Outlook on Android</li><li>Outlook on Mac</li><li>Outlook on iOS</li></ul> | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
+| <ul><li>Outlook on the web</li><li>[new Outlook on Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)</li><li>classic Outlook on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Outlook on Android</li><li>Outlook on Mac</li><li>Outlook on iOS</li></ul> | See [Understanding Outlook API requirement sets](../outlook/outlook-api-requirement-sets.md). |
 
 ---
 
@@ -149,6 +157,14 @@ See [Add-in command requirement sets](add-in-commands-requirement-sets.md).
 | Minimum Office application support | Methods in set |
 |:-----|:-----|
 | <ul><li>Excel on the web</li><li>Excel on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Excel on Mac</li><li>Excel on iPad</li><li>Word on the web</li><li>Word on Windows</li><ul><li>Microsoft 365 subscription</li><li>perpetual Office 2016</li></ul><li>Word on Mac</li><li>Word on iPad</li></ul> | Supports coercion to the "matrix" (array of arrays) data structure (Office.CoercionType.Matrix) when reading and writing data using the Document.getSelectedDataAsync, Document.setSelectedDataAsync, Binding.getDataAsync, or Binding.setDataAsync methods. |
+
+---
+
+### NestedAppAuth
+
+| Minimum Office application support | Methods in set |
+|:-----|:-----|
+| See [Nested app auth requirement sets](nested-app-auth-requirement-sets.md). | <ul><li>Office.auth.getAuthContext</li></ul> |
 
 ---
 
@@ -275,4 +291,4 @@ The following methods in the Office JavaScript API aren't part of a requirement 
 
 - [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)
 - [Specify Office applications and API requirements](/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
-- [Office Add-ins XML manifest](/office/dev/add-ins/develop/add-in-manifests)
+- [Office Add-ins manifest](/office/dev/add-ins/develop/add-in-manifests)

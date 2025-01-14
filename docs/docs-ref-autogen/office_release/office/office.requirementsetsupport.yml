@@ -4,7 +4,19 @@ uid: 'office!Office.RequirementSetSupport:interface'
 package: office!
 fullName: Office.RequirementSetSupport
 summary: Provides information about which Requirement Sets are supported in the current environment.
-remarks: ''
+remarks: |-
+
+
+  #### Examples
+
+  ```TypeScript
+  const requirements : Office.RequirementSetSupport = Office.context.requirements; 
+  if (requirements.isSetSupported('Mailbox', '1.14')) {
+      // Code that uses APIs from the 'Mailbox 1.14' requirement set.
+  } else {
+      // An alternate path (such as a message to the user) when the requirement set isn't supported.
+  }
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -33,12 +45,7 @@ methods:
     uid: 'office!Office.RequirementSetSupport#isSetSupported:member(2)'
     package: office!
     fullName: 'isSetSupported(name, minVersionNumber)'
-    summary: >-
-      Check if the specified requirement set is supported by the Office application.
-
-
-      **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) has been deprecated. Use
-      the string overload of `isSetSupported` instead.
+    summary: Check if the specified requirement set is supported by the Office application.
     remarks: ''
     isPreview: false
     isDeprecated: true

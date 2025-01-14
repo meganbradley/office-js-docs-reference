@@ -31,6 +31,7 @@ enums:
   - 'word!Word.FieldType:enum'
   - 'word!Word.HeaderFooterType:enum'
   - 'word!Word.ImageFormat:enum'
+  - 'word!Word.ImportedStylesConflictBehavior:enum'
   - 'word!Word.InsertLocation:enum'
   - 'word!Word.ListBuiltInNumberStyle:enum'
   - 'word!Word.ListBullet:enum'
@@ -40,9 +41,12 @@ enums:
   - 'word!Word.NoteItemType:enum'
   - 'word!Word.OutlineLevel:enum'
   - 'word!Word.RangeLocation:enum'
+  - 'word!Word.RelativeHorizontalPosition:enum'
+  - 'word!Word.RelativeVerticalPosition:enum'
   - 'word!Word.SaveBehavior:enum'
   - 'word!Word.SelectionMode:enum'
   - 'word!Word.ShadingTextureType:enum'
+  - 'word!Word.ShapeType:enum'
   - 'word!Word.StyleType:enum'
   - 'word!Word.TrackedChangeType:enum'
   - 'word!Word.TrailingCharacter:enum'
@@ -56,6 +60,7 @@ classes:
   - 'word!Word.Border:class'
   - 'word!Word.BorderCollection:class'
   - 'word!Word.CheckboxContentControl:class'
+  - 'word!Word.ComboBoxContentControl:class'
   - 'word!Word.Comment:class'
   - 'word!Word.CommentCollection:class'
   - 'word!Word.CommentContentRange:class'
@@ -100,6 +105,8 @@ classes:
   - 'word!Word.Setting:class'
   - 'word!Word.SettingCollection:class'
   - 'word!Word.Shading:class'
+  - 'word!Word.Shape:class'
+  - 'word!Word.ShapeCollection:class'
   - 'word!Word.Style:class'
   - 'word!Word.StyleCollection:class'
   - 'word!Word.Table:class'
@@ -125,7 +132,6 @@ interfaces:
   - 'word!Word.ContentControlDataChangedEventArgs:interface'
   - 'word!Word.ContentControlDeletedEventArgs:interface'
   - 'word!Word.ContentControlEnteredEventArgs:interface'
-  - 'word!Word.ContentControlEventArgs:interface'
   - 'word!Word.ContentControlExitedEventArgs:interface'
   - 'word!Word.ContentControlOptions:interface'
   - 'word!Word.ContentControlSelectionChangedEventArgs:interface'
@@ -134,6 +140,7 @@ interfaces:
   - 'word!Word.DocumentCompareOptions:interface'
   - 'word!Word.GetTextOptions:interface'
   - 'word!Word.InsertFileOptions:interface'
+  - 'word!Word.InsertShapeOptions:interface'
   - 'word!Word.Interfaces.AnnotationCollectionData:interface'
   - 'word!Word.Interfaces.AnnotationCollectionLoadOptions:interface'
   - 'word!Word.Interfaces.AnnotationCollectionUpdateData:interface'
@@ -152,6 +159,7 @@ interfaces:
   - 'word!Word.Interfaces.CheckboxContentControlLoadOptions:interface'
   - 'word!Word.Interfaces.CheckboxContentControlUpdateData:interface'
   - 'word!Word.Interfaces.CollectionLoadOptions:interface'
+  - 'word!Word.Interfaces.ComboBoxContentControlData:interface'
   - 'word!Word.Interfaces.CommentCollectionData:interface'
   - 'word!Word.Interfaces.CommentCollectionLoadOptions:interface'
   - 'word!Word.Interfaces.CommentCollectionUpdateData:interface'
@@ -276,6 +284,12 @@ interfaces:
   - 'word!Word.Interfaces.ShadingData:interface'
   - 'word!Word.Interfaces.ShadingLoadOptions:interface'
   - 'word!Word.Interfaces.ShadingUpdateData:interface'
+  - 'word!Word.Interfaces.ShapeCollectionData:interface'
+  - 'word!Word.Interfaces.ShapeCollectionLoadOptions:interface'
+  - 'word!Word.Interfaces.ShapeCollectionUpdateData:interface'
+  - 'word!Word.Interfaces.ShapeData:interface'
+  - 'word!Word.Interfaces.ShapeLoadOptions:interface'
+  - 'word!Word.Interfaces.ShapeUpdateData:interface'
   - 'word!Word.Interfaces.StyleCollectionData:interface'
   - 'word!Word.Interfaces.StyleCollectionLoadOptions:interface'
   - 'word!Word.Interfaces.StyleCollectionUpdateData:interface'
@@ -333,14 +347,14 @@ functions:
           description: >-
             An array of previously created API objects. The array will be validated to make sure that all of the objects
             share the same context. The batch will use this shared RequestContext, which means that any changes applied
-            to these objects will be picked up by "context.sync()".
+            to these objects will be picked up by `context.sync()`<!-- -->.
           type: '<xref uid="office!OfficeExtension.ClientObject:class" />[]'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
-            add-in and the Word application run in two different processes, the RequestContext is required to get access
-            to the Word object model from the add-in.
+            `context.sync()`<!-- -->). The context parameter facilitates requests to the Word application. Since the
+            Office add-in and the Word application run in two different processes, the RequestContext is required to get
+            access to the Word object model from the add-in.
           type: '(context: <xref uid="word!Word.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
@@ -363,14 +377,14 @@ functions:
         - id: object
           description: >-
             A previously created API object. The batch will use the same RequestContext as the passed-in object, which
-            means that any changes applied to the object will be picked up by "context.sync()".
+            means that any changes applied to the object will be picked up by `context.sync()`<!-- -->.
           type: '<xref uid="office!OfficeExtension.ClientObject:class" />'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
-            add-in and the Word application run in two different processes, the RequestContext is required to get access
-            to the Word object model from the add-in.
+            `context.sync()`<!-- -->). The context parameter facilitates requests to the Word application. Since the
+            Office add-in and the Word application run in two different processes, the RequestContext is required to get
+            access to the Word object model from the add-in.
           type: '(context: <xref uid="word!Word.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;
@@ -390,9 +404,9 @@ functions:
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
-            add-in and the Word application run in two different processes, the RequestContext is required to get access
-            to the Word object model from the add-in.
+            `context.sync()`<!-- -->). The context parameter facilitates requests to the Word application. Since the
+            Office add-in and the Word application run in two different processes, the RequestContext is required to get
+            access to the Word object model from the add-in.
           type: '(context: <xref uid="word!Word.RequestContext:class" />) =&gt; Promise&lt;T&gt;'
       return:
         type: Promise&lt;T&gt;

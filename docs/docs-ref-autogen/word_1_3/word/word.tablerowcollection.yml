@@ -20,14 +20,12 @@ remarks: >-
   // Gets content alignment details about the first row of the first table in the document.
 
   await Word.run(async (context) => {
-    const firstTable = context.document.body.tables.getFirst();
-    const firstTableRow = firstTable.rows.getFirst();
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
+    const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
     firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
     await context.sync();
 
-    console.log(`Details about the alignment of the first table's first row:`);
-    console.log(`- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`);
-    console.log(`- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+    console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
   });
 
   ```
@@ -83,17 +81,14 @@ methods:
       // Gets border details about the first row of the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
-        const firstTableRow = firstTable.rows.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
         const borderLocation = Word.BorderLocation.bottom;
-        const border = firstTableRow.getBorder(borderLocation);
+        const border: Word.TableBorder = firstTableRow.getBorder(borderLocation);
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table's first row:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table's first row:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```
@@ -190,7 +185,7 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
       passed to it.) Whereas the original `Word.TableRowCollection` object is an API object, the `toJSON` method returns
       a plain JavaScript object (typed as `Word.Interfaces.TableRowCollectionData`<!-- -->) that contains an "items"
       array with shallow copies of any loaded properties from the collection's items.

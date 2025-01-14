@@ -7,7 +7,25 @@ summary: >-
   Range represents a set of one or more contiguous cells such as a cell, a row, a column, or a block of cells. To learn
   more about how ranges are used throughout the API, start with [Ranges in the Excel JavaScript
   API](https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-core-concepts#ranges)<!-- -->.
-remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Get a Range object by its address.
+  await Excel.run(async (context) => {
+      const sheetName = "Sheet1";
+      const rangeAddress = "A1:F8";
+      const worksheet = context.workbook.worksheets.getItem(sheetName);
+      const range = worksheet.getRange(rangeAddress);
+      const cell = range.getCell(0,0);
+      cell.load('address');
+      await context.sync();
+      
+      console.log(cell.address);
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -115,6 +133,20 @@ properties:
       content: 'context: RequestContext;'
       return:
         type: '<xref uid="excel!Excel.RequestContext:class" />'
+  - name: control
+    uid: 'excel!Excel.Range#control:member'
+    package: excel!
+    fullName: control
+    summary: >-
+      Accesses the cell control applied to this range. If the range has multiple cell controls, this returns
+      `EmptyCellControl`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'control: CellControl;'
+      return:
+        type: '<xref uid="excel!Excel.CellControl:type" />'
   - name: dataValidation
     uid: 'excel!Excel.Range#dataValidation:member'
     package: excel!
@@ -324,8 +356,7 @@ properties:
     fullName: numberFormat
     summary: >-
       Represents Excel's number format code for the given range. For more information about Excel number formatting, see
-      [Number format
-      codes](https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
+      [Number format codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
     remarks: |-
       \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -782,7 +813,7 @@ methods:
     uid: 'excel!Excel.Range#clear:member(1)'
     package: excel!
     fullName: clear(applyTo)
-    summary: 'Clear range values, format, fill, border, etc.'
+    summary: 'Clear range values and formatting, such as fill and border.'
     remarks: |-
       \[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -813,16 +844,35 @@ methods:
     uid: 'excel!Excel.Range#clear:member(2)'
     package: excel!
     fullName: clear(applyToString)
-    summary: 'Clear range values, format, fill, border, etc.'
+    summary: 'Clear range values and formatting, such as fill and border.'
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
+      content: >-
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"):
+        void;
       parameters:
         - id: applyToString
           description: Optional. Determines the type of clear action. See `Excel.ClearApplyTo` for details.
-          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
+          type: '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks" | "ResetContents"'
+      return:
+        type: void
+        description: ''
+  - name: clearOrResetContents()
+    uid: 'excel!Excel.Range#clearOrResetContents:member(1)'
+    package: excel!
+    fullName: clearOrResetContents()
+    summary: >-
+      Clears the values of the cells in the range, with special consideration given to cells containing controls. If the
+      range contains only blank values and controls set to their default value, then the values and control formatting
+      are removed. Otherwise, this sets the cells with controls to their default value and clears the values of the
+      other cells in the range.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'clearOrResetContents(): void;'
       return:
         type: void
         description: ''
@@ -1390,7 +1440,8 @@ methods:
     fullName: getDependents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the dependent cells of a specified
-      range in the same worksheet or across multiple worksheets.
+      range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound` error if no
+      dependents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.15](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1441,7 +1492,8 @@ methods:
     fullName: getDirectDependents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the direct dependent cells of a
-      specified range in the same worksheet or across multiple worksheets.
+      specified range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound`
+      error if no dependents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.13](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1488,7 +1540,8 @@ methods:
     fullName: getDirectPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the direct precedent cells of a
-      specified range in the same worksheet or across multiple worksheets.
+      specified range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound`
+      error if no precedents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.12](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -1530,6 +1583,30 @@ methods:
       return:
         type: '<xref uid="excel!Excel.WorkbookRangeAreas:class" />'
         description: ''
+  - name: getDisplayedCellProperties(cellPropertiesLoadOptions)
+    uid: 'excel!Excel.Range#getDisplayedCellProperties:member(1)'
+    package: excel!
+    fullName: getDisplayedCellProperties(cellPropertiesLoadOptions)
+    summary: >-
+      Returns a 2D array, encapsulating the display data for each cell's font, fill, borders, alignment, and other
+      properties. Unlike `getCellProperties`<!-- -->, which only shows properties that are set directly for the cell,
+      this returns properties that are displayed from indirect sources, such as conditional formatting or styles.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        getDisplayedCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions):
+        OfficeExtension.ClientResult<CellProperties[][]>;
+      parameters:
+        - id: cellPropertiesLoadOptions
+          description: An object that represents which cell properties to load.
+          type: '<xref uid="excel!Excel.CellPropertiesLoadOptions:interface" />'
+      return:
+        type: >-
+          <xref uid="office!OfficeExtension.ClientResult:class" />&lt;<xref uid="excel!Excel.CellProperties:interface"
+          />[][]&gt;
+        description: A 2D array where each item represents the requested display properties of the corresponding cell.
   - name: getEntireColumn()
     uid: 'excel!Excel.Range#getEntireColumn:member(1)'
     package: excel!
@@ -1684,7 +1761,7 @@ methods:
     package: excel!
     fullName: getImage()
     summary: >-
-      Renders the range as a base64-encoded png image. *Important**: This API is currently unsupported in Excel for
+      Renders the range as a Base64-encoded PNG image. *Important**: This API is currently unsupported in Excel for
       Mac. Visit [OfficeDev/office-js Issue \#235](https://github.com/OfficeDev/office-js/issues/235) for the current
       status.
     remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
@@ -2060,7 +2137,8 @@ methods:
     fullName: getPrecedents()
     summary: >-
       Returns a `WorkbookRangeAreas` object that represents the range containing all the precedent cells of a specified
-      range in the same worksheet or across multiple worksheets.
+      range in the same worksheet or across multiple worksheets. Note: This API returns an `ItemNotFound` error if no
+      precedents are found.
     remarks: >-
       \[ [API set: ExcelApi 1.14](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
 
@@ -3469,8 +3547,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Excel.Range object is an API object, the `toJSON` method returns a plain
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Excel.Range` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''
@@ -3488,8 +3566,8 @@ methods:
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for
-      [context.trackedObjects.add(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
-      -->. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
+      [context.trackedObjects.add(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      -->. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and
       get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the
       object to the tracked object collection when the object was first created.
     remarks: ''
@@ -3591,9 +3669,9 @@ methods:
     fullName: untrack()
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
-      [context.trackedObjects.remove(thisObject)](https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
+      [context.trackedObjects.remove(thisObject)](https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member)<!--
       -->. Having many tracked objects slows down the host application, so please remember to free any objects you add,
-      once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
+      once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
     remarks: ''
     isPreview: false
     isDeprecated: false

@@ -1,7 +1,7 @@
 ---
 title: Excel JavaScript API online-only requirement set
 description: Details about the ExcelApiOnline requirement set.
-ms.date: 08/24/2022
+ms.date: 08/29/2024
 ms.topic: whats-new
 ms.localizationpriority: medium
 ---
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The `ExcelApiOnline` requirement set is a special requirement set that includes features that are only available for Excel on the web. APIs in this requirement set are considered to be production APIs (not subject to undocumented behavioral or structural changes) for the Excel on the web application. `ExcelApiOnline` APIs are considered to be "preview" APIs for other platforms (Windows, Mac, iOS) and may not be supported by any of those platforms.
 
-When APIs in the `ExcelApiOnline` requirement set are supported across all platforms, they will added to the next released requirement set (`ExcelApi 1.[NEXT]`). Once that new requirement is public, those APIs will be removed from `ExcelApiOnline`. Think of this as a similar promotion process to an API moving from preview to release.
+When APIs in the `ExcelApiOnline` requirement set are supported across all platforms, they will be added to the next released requirement set (`ExcelApi 1.[NEXT]`). Once that new requirement set is public, those APIs will be removed from `ExcelApiOnline`. Think of this as a similar promotion process to an API moving from preview to release.
 
 > [!IMPORTANT]
 > `ExcelApiOnline` is a superset of the latest numbered requirement set.
@@ -47,8 +47,10 @@ Once the API is in a cross-platform requirement set, you should remove or edit t
 The following table lists the Excel JavaScript APIs currently included in the `ExcelApiOnline` requirement set. For a complete list of all Excel JavaScript APIs (including `ExcelApiOnline` APIs and previously released APIs), see [all Excel JavaScript APIs](/javascript/api/excel?view=excel-js-online&preserve-view=true).
 
 [!INCLUDE[API table](../../includes/excel-online.md)]
+
 ## See also
 
 - [Excel JavaScript API Reference Documentation](/javascript/api/excel?view=excel-js-online&preserve-view=true)
 - [Excel JavaScript preview APIs](excel-preview-apis.md)
 - [Excel JavaScript API requirement sets](excel-api-requirement-sets.md)
+- [Understanding platform-specific requirement sets](https://aka.ms/PlatformSpecificReqtSets)

@@ -20,16 +20,13 @@ remarks: >-
   // Gets border details about the first table in the document.
 
   await Word.run(async (context) => {
-    const firstTable = context.document.body.tables.getFirst();
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
     const borderLocation = Word.BorderLocation.top;
-    const border = firstTable.getBorder(borderLocation);
+    const border: Word.TableBorder = firstTable.getBorder(borderLocation);
     border.load(["type", "color", "width"]);
     await context.sync();
 
-    console.log(`Details about the ${borderLocation} border of the first table:`);
-    console.log(`- Color: ${border.color}`);
-    console.log(`- Type: ${border.type}`);
-    console.log(`- Width: ${border.width} points`);
+    console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
   });
 
   ```

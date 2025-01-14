@@ -17,6 +17,8 @@ items:
             items:
               - name: ConnectorType
                 uid: 'powerpoint!PowerPoint.ConnectorType:enum'
+              - name: DocumentPropertyType
+                uid: 'powerpoint!PowerPoint.DocumentPropertyType:enum'
               - name: ErrorCodes
                 uid: 'powerpoint!PowerPoint.ErrorCodes:enum'
               - name: GeometricShapeType
@@ -45,6 +47,22 @@ items:
             uid: 'powerpoint!PowerPoint.Application:class'
           - name: BulletFormat
             uid: 'powerpoint!PowerPoint.BulletFormat:class'
+          - name: CustomProperty
+            uid: 'powerpoint!PowerPoint.CustomProperty:class'
+          - name: CustomPropertyCollection
+            uid: 'powerpoint!PowerPoint.CustomPropertyCollection:class'
+          - name: CustomXmlPart
+            uid: 'powerpoint!PowerPoint.CustomXmlPart:class'
+          - name: CustomXmlPartCollection
+            uid: 'powerpoint!PowerPoint.CustomXmlPartCollection:class'
+          - name: CustomXmlPartScopedCollection
+            uid: 'powerpoint!PowerPoint.CustomXmlPartScopedCollection:class'
+          - name: DocumentProperties
+            uid: 'powerpoint!PowerPoint.DocumentProperties:class'
+          - name: Hyperlink
+            uid: 'powerpoint!PowerPoint.Hyperlink:class'
+          - name: HyperlinkCollection
+            uid: 'powerpoint!PowerPoint.HyperlinkCollection:class'
           - name: InsertSlideOptions
             uid: 'powerpoint!PowerPoint.InsertSlideOptions:interface'
           - name: ParagraphFormat
@@ -114,6 +132,8 @@ items:
                     uid: 'office!Office.CoercionType:enum'
                   - name: CustomXMLNodeType
                     uid: 'office!Office.CustomXMLNodeType:enum'
+                  - name: DevicePermissionType
+                    uid: 'office!Office.DevicePermissionType:enum'
                   - name: DocumentMode
                     uid: 'office!Office.DocumentMode:enum'
                   - name: EventType
@@ -146,6 +166,8 @@ items:
                     uid: 'office!Office.StartupBehavior:enum'
                   - name: Table
                     uid: 'office!Office.Table:enum'
+                  - name: ThemeId
+                    uid: 'office!Office.ThemeId:enum'
                   - name: ValueFormat
                     uid: 'office!Office.ValueFormat:enum'
                   - name: VisibilityMode
@@ -172,6 +194,8 @@ items:
                 uid: 'office!Office.AsyncResult:interface'
               - name: Auth
                 uid: 'office!Office.Auth:interface'
+              - name: AuthContext
+                uid: 'office!Office.AuthContext:interface'
               - name: AuthOptions
                 uid: 'office!Office.AuthOptions:interface'
               - name: BeforeDocumentCloseNotification
@@ -198,6 +222,8 @@ items:
                 uid: 'office!Office.CustomXmlParts:interface'
               - name: CustomXmlPrefixMappings
                 uid: 'office!Office.CustomXmlPrefixMappings:interface'
+              - name: DevicePermission
+                uid: 'office!Office.DevicePermission:interface'
               - name: Dialog
                 uid: 'office!Office.Dialog:interface'
               - name: DialogMessageOptions
@@ -329,9 +355,9 @@ items:
                 uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
               - name: Storage
                 uid: 'office-runtime!OfficeRuntime.Storage:interface'
-  - name: Manifest reference
+  - name: Add-in only manifest reference
     items:
-      - name: Manifest overview
+      - name: Add-in only manifest overview
         href: ../../manifest/manifest.md
       - name: AllowSnapshot
         href: ../../manifest/allowsnapshot.md
@@ -509,7 +535,6 @@ items:
             href: ../../manifest/mobileformfactor.md
           - name: MoreInfo
             href: ../../manifest/moreinfo.md
-            displayName: preview
           - name: OfficeMenu
             href: ../../manifest/officemenu.md
           - name: OfficeTab
@@ -522,13 +547,10 @@ items:
             href: ../../manifest/page.md
           - name: PreProcessingDialog
             href: ../../manifest/preprocessingdialog.md
-            displayName: preview
           - name: ReportPhishingCustomization
             href: ../../manifest/reportphishingcustomization.md
-            displayName: preview
           - name: ReportingOptions
             href: ../../manifest/reportingoptions.md
-            displayName: preview
           - name: Resources
             href: ../../manifest/resources.md
           - name: Runtime
@@ -651,6 +673,22 @@ items:
               - name: Office.context.mailbox.item
                 href: >-
                   ../../requirement-sets/outlook/preview-requirement-set/Office.context.mailbox.item.md
+          - name: Mailbox requirement set 1.14
+            items:
+              - name: Overview
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md
+              - name: Office
+                href: ../../requirement-sets/outlook/requirement-set-1.14/office.md
+              - name: Office.context
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.md
+              - name: Office.context.mailbox
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.mailbox.md
+              - name: Office.context.mailbox.item
+                href: >-
+                  ../../requirement-sets/outlook/requirement-set-1.14/Office.context.mailbox.item.md
           - name: Mailbox requirement set 1.13
             items:
               - name: Overview
@@ -868,6 +906,14 @@ items:
           - name: PowerPoint preview APIs
             href: ../../requirement-sets/powerpoint/powerpoint-preview-apis.md
             displayName: PowerPoint
+          - name: PowerPointApi 1.7 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-7-requirement-set.md
+            displayName: PowerPoint
+          - name: PowerPointApi 1.6 requirement set
+            href: >-
+              ../../requirement-sets/powerpoint/powerpoint-api-1-6-requirement-set.md
+            displayName: PowerPoint
           - name: PowerPointApi 1.5 requirement set
             href: >-
               ../../requirement-sets/powerpoint/powerpoint-api-1-5-requirement-set.md
@@ -899,6 +945,16 @@ items:
           - name: WordApi online-only requirement set
             href: ../../requirement-sets/word/word-api-online-requirement-set.md
             displayName: Word
+          - name: WordApiDesktop 1.1 requirement set
+            href: >-
+              ../../requirement-sets/word/word-api-desktop-1.1-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.9 requirement set
+            href: ../../requirement-sets/word/word-api-1-9-requirement-set.md
+            displayName: Word
+          - name: WordApi 1.8 requirement set
+            href: ../../requirement-sets/word/word-api-1-8-requirement-set.md
+            displayName: Word
           - name: WordApi 1.7 requirement set
             href: ../../requirement-sets/word/word-api-1-7-requirement-set.md
             displayName: Word
@@ -926,6 +982,9 @@ items:
             href: ../../requirement-sets/common/office-add-in-requirement-sets.md
           - name: Add-in commands requirement sets
             href: ../../requirement-sets/common/add-in-commands-requirement-sets.md
+          - name: Device Permission Service requirement sets
+            href: >-
+              ../../requirement-sets/common/device-permission-service-requirement-sets.md
           - name: Dialog API requirement sets
             href: ../../requirement-sets/common/dialog-api-requirement-sets.md
           - name: Dialog Origin requirement sets
@@ -937,6 +996,8 @@ items:
           - name: Keyboard Shortcuts requirement sets
             href: >-
               ../../requirement-sets/common/keyboard-shortcuts-requirement-sets.md
+          - name: Nested App Auth requirement sets
+            href: ../../requirement-sets/common/nested-app-auth-requirement-sets.md
           - name: Open Browser Window requirement sets
             href: >-
               ../../requirement-sets/common/open-browser-window-api-requirement-sets.md

@@ -115,7 +115,7 @@
 |[DataConnectionCollection](/javascript/api/excel/excel.dataconnectioncollection)|[refreshAll()](/javascript/api/excel/excel.dataconnectioncollection#excel-excel-dataconnectioncollection-refreshall-member(1))|Refreshes data connections in the collection, such as from a PivotTable to a Power BI dataset, or a Data Model to a table or range in the same workbook.|
 |[DocumentProperties](/javascript/api/excel/excel.documentproperties)|[author](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-author-member)|The author of the workbook.|
 ||[category](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-category-member)|The category of the workbook.|
-||[comments](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-comments-member)|The comments of the workbook.|
+||[comments](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-comments-member)|The Comments field in the metadata of the workbook.|
 ||[company](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-company-member)|The company of the workbook.|
 ||[creationDate](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-creationdate-member)|Gets the creation date of the workbook.|
 ||[custom](/javascript/api/excel/excel.documentproperties#excel-excel-documentproperties-custom-member)|Gets the collection of custom properties of the workbook.|
@@ -130,7 +130,7 @@
 |[NamedItemArrayValues](/javascript/api/excel/excel.nameditemarrayvalues)|[types](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-types-member)|Represents the types for each item in the named item array|
 ||[values](/javascript/api/excel/excel.nameditemarrayvalues#excel-excel-nameditemarrayvalues-values-member)|Represents the values of each item in the named item array.|
 |[Range](/javascript/api/excel/excel.range)|[getAbsoluteResizedRange(numRows: number, numColumns: number)](/javascript/api/excel/excel.range#excel-excel-range-getabsoluteresizedrange-member(1))|Gets a `Range` object with the same top-left cell as the current `Range` object, but with the specified numbers of rows and columns.|
-||[getImage()](/javascript/api/excel/excel.range#excel-excel-range-getimage-member(1))|Renders the range as a base64-encoded png image.|
+||[getImage()](/javascript/api/excel/excel.range#excel-excel-range-getimage-member(1))|Renders the range as a Base64-encoded PNG image.|
 ||[getSurroundingRegion()](/javascript/api/excel/excel.range#excel-excel-range-getsurroundingregion-member(1))|Returns a `Range` object that represents the surrounding region for the top-left cell in this range.|
 ||[hyperlink](/javascript/api/excel/excel.range#excel-excel-range-hyperlink-member)|Represents the hyperlink for the current range.|
 ||[isEntireColumn](/javascript/api/excel/excel.range#excel-excel-range-isentirecolumn-member)|Represents if the current range is an entire column.|
@@ -190,9 +190,9 @@
 ||[properties](/javascript/api/excel/excel.workbook#excel-excel-workbook-properties-member)|Gets the workbook properties.|
 ||[protection](/javascript/api/excel/excel.workbook#excel-excel-workbook-protection-member)|Returns the protection object for a workbook.|
 ||[styles](/javascript/api/excel/excel.workbook#excel-excel-workbook-styles-member)|Represents a collection of styles associated with the workbook.|
-|[WorkbookProtection](/javascript/api/excel/excel.workbookprotection)|[protect(password?: string)](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-protect-member(1))|Protects a workbook.|
+|[WorkbookProtection](/javascript/api/excel/excel.workbookprotection)|[protect(password?: string)](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-protect-member(1))|Protects the workbook.|
 ||[protected](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-protected-member)|Specifies if the workbook is protected.|
-||[unprotect(password?: string)](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-unprotect-member(1))|Unprotects a workbook.|
+||[unprotect(password?: string)](/javascript/api/excel/excel.workbookprotection#excel-excel-workbookprotection-unprotect-member(1))|Unprotects the workbook.|
 |[Worksheet](/javascript/api/excel/excel.worksheet)|[copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-copy-member(1))|Copies a worksheet and places it at the specified position.|
 ||[freezePanes](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-freezepanes-member)|Gets an object that can be used to manipulate frozen panes on the worksheet.|
 ||[getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number)](/javascript/api/excel/excel.worksheet#excel-excel-worksheet-getrangebyindexes-member(1))|Gets the `Range` object beginning at a particular row index and column index, and spanning a certain number of rows and columns.|

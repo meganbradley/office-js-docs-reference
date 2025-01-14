@@ -6,21 +6,30 @@ import * as path from "path";
 import * as fsx from 'fs-extra';
 
 tryCatch(async () => {
-    // ----
-    // Display prompts
-    // ----
-    console.log('\n\n');
+    const args = process.argv.slice(2);
+    let sourceChoice;
 
-    console.log('\n');
-    const sourceChoice = await promptFromList({
-        message: `What is the source of the Office-js TypeScript definition files that should be used to generate the docs?`,
-        choices: [
-            { name: "DefinitelyTyped (optimized rebuild)", value: "DT" },
-            { name: "DefinitelyTyped (full rebuild)", value: "DT+" },
-            { name: "CDN (if available)", value: "CDN" },
-            { name: "Local files [generate-docs\\script-inputs\\*.d.ts]", value: "Local" }
-        ]
-    });
+    // Bypass the prompt - for use with the GitHub Action.
+    if (args.length > 0 && args[0] !== null && args[0].trim().length > 0) {
+        sourceChoice = args[0].trim();
+        console.log(`Bypassing prompt with source choice ${sourceChoice}`);
+    } else {
+        // ----
+        // Display prompts
+        // ----
+        console.log('\n\n');
+
+        console.log('\n');
+        sourceChoice = await promptFromList({
+            message: `What is the source of the Office-js TypeScript definition files that should be used to generate the docs?`,
+            choices: [
+                { name: "DefinitelyTyped (optimized rebuild)", value: "DT" },
+                { name: "DefinitelyTyped (full rebuild)", value: "DT+" },
+                { name: "CDN (if available)", value: "CDN" },
+                { name: "Local files [generate-docs\\script-inputs\\*.d.ts]", value: "Local" }
+            ]
+        });
+    }
 
 
     let urlToCopyOfficeJsFrom = "";
@@ -39,15 +48,19 @@ tryCatch(async () => {
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;
         case "CDN":
-            urlToCopyOfficeJsFrom = "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts";
-            urlToCopyPreviewOfficeJsFrom = "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts";
+            urlToCopyOfficeJsFrom = "https://res-sdp.public.cdn.office.net/appsforoffice/_1cdn_bucketedcontent/lib/1.1/hosted/office.d.ts";
+            urlToCopyPreviewOfficeJsFrom = "https://res-sdp.public.cdn.office.net/appsforoffice/_1cdn_bucketedcontent/lib/beta/hosted/office.d.ts";
             urlToCopyCustomFunctionsRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/custom-functions-runtime/index.d.ts";
             urlToCopyOfficeRuntimeFrom = "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-runtime/index.d.ts";
             break;
-        // Note: using "appsforoffice.officeapps.live.com" instead of "appsforoffice.microsoft.com"
+        // Note: Using 1CDN instead of "appsforoffice.microsoft.com"
         //     to avoid being redirected to the EDOG environment on corpnet.
         // If we ever want to generate not just public d.ts but also "office-with-first-party.d.ts",
         //     replace the filename.
+        case "Local":
+            break;
+        default:
+            throw new Error(`Invalid prompt selection: ${sourceChoice}`);
     }
 
     console.log("\nStarting preprocessor script...\n");
@@ -130,7 +143,7 @@ tryCatch(async () => {
 
     console.log("create file: outlook.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts',
+        '../api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true),
         "outlook",
         forceRebuild
@@ -146,7 +159,7 @@ tryCatch(async () => {
 
     console.log("create file: powerpoint.d.ts (release)");
     makeDtsAndClearJsonIfNew(
-        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_5/powerpoint.d.ts',
+        '../api-extractor-inputs-powerpoint-release/PowerPoint_1_7/powerpoint.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs")), "Other", true),
         "powerpoint",
         forceRebuild

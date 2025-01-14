@@ -47,40 +47,35 @@ export declare namespace Word {
      * Properties defining the behavior of the pop-up menu for a given critique.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.8]
      */
     export interface CritiquePopupOptions {
         /**
          * Gets the manifest resource ID of the string to use for branding. This branding text appears next to your add-in icon in the pop-up menu.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         brandingTextResourceId: string;
         /**
          * Gets the manifest resource ID of the string to use as the subtitle.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         subtitleResourceId: string;
         /**
          * Gets the suggestions to display in the critique pop-up menu.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         suggestions: string[];
         /**
          * Gets the manifest resource ID of the string to use as the title.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         titleResourceId: string;
     }
@@ -92,14 +87,14 @@ export declare namespace Word {
      */
     export interface Critique {
         /**
-         * Gets the color scheme of the critique.
+         * Specifies the color scheme of the critique.
          *
          * @remarks
          * [Api set: WordApi 1.7]
          */
         colorScheme: Word.CritiqueColorScheme | "Red" | "Green" | "Blue" | "Lavender" | "Berry";
         /**
-         * Gets the length of the critique inside paragraph.
+         * Specifies the length of the critique inside paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.7]
@@ -109,12 +104,11 @@ export declare namespace Word {
          * Specifies the behavior of the pop-up menu for the critique.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
-        popupOptions: Word.CritiquePopupOptions;
+        popupOptions?: Word.CritiquePopupOptions;
         /**
-         * Gets the start index of the critique inside paragraph.
+         * Specifies the start index of the critique inside paragraph.
          *
          * @remarks
          * [Api set: WordApi 1.7]
@@ -188,9 +182,9 @@ export declare namespace Word {
          */
         untrack(): Word.CritiqueAnnotation;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.CritiqueAnnotation object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CritiqueAnnotationData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CritiqueAnnotation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CritiqueAnnotationData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.CritiqueAnnotationData;
     }
     /**
@@ -301,9 +295,9 @@ export declare namespace Word {
          */
         untrack(): Word.Annotation;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Annotation object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.AnnotationData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Annotation` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.AnnotationData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.AnnotationData;
     }
     /**
@@ -370,32 +364,28 @@ export declare namespace Word {
      * Represents action information that's passed back on annotation pop-up action event.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.8]
      */
     export interface AnnotationPopupActionEventArgs {
         /**
          * Specifies the chosen action in the pop-up menu.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         action: string;
         /**
          * Specifies the accepted suggestion (only populated when accepting a critique suggestion).
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         critiqueSuggestion: string;
         /**
          * Specifies the annotation ID for which the event was fired.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         id: string;
     }
@@ -453,9 +443,9 @@ export declare namespace Word {
          */
         untrack(): Word.AnnotationCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.AnnotationCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.AnnotationCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.AnnotationCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.AnnotationCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.AnnotationCollectionData;
     }
     /**
@@ -502,12 +492,12 @@ export declare namespace Word {
          */
         retrieveStylesFromBase64(base64File: string): OfficeExtension.ClientResult<string>;
         /**
-         * Create a new instance of Word.Application object
+         * Create a new instance of the `Word.Application` object.
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Application` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): {
             [key: string]: string;
@@ -623,6 +613,14 @@ export declare namespace Word {
          */
         readonly parentSectionOrNullObject: Word.Section;
         /**
+         * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shapes: Word.ShapeCollection;
+        /**
          * Gets the collection of table objects in the body.
          *
          * @remarks
@@ -656,7 +654,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.3]
          */
-        readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem";
+        readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem" | "Shape";
         /**
          * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
@@ -757,17 +755,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         /**
          * Inserts a document into the body at the specified location.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -951,17 +950,16 @@ export declare namespace Word {
          */
         untrack(): Word.Body;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Body` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.BodyData;
     }
     /**
      * Represents the Border object for text, a paragraph, or a table.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class Border extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -970,40 +968,35 @@ export declare namespace Word {
          * Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         color: string;
         /**
          * Gets the location of the border.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly location: Word.BorderLocation | "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All";
         /**
          * Specifies the border type for the border.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         type: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
         /**
          * Specifies whether the border is visible.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         visible: boolean;
         /**
          * Specifies the width for the border.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         width: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         /**
@@ -1044,17 +1037,16 @@ export declare namespace Word {
          */
         untrack(): Word.Border;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Border object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BorderData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Border` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BorderData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.BorderData;
     }
     /**
      * Represents the collection of border styles.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class BorderCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -1065,80 +1057,70 @@ export declare namespace Word {
          * Specifies the 24-bit color of the inside borders. Color is specified in ‘#RRGGBB’ format or by using the color name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         insideBorderColor: string;
         /**
          * Specifies the border type of the inside borders.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         insideBorderType: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
         /**
          * Specifies the width of the inside borders.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         insideBorderWidth: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         /**
          * Specifies the 24-bit color of the outside borders. Color is specified in ‘#RRGGBB’ format or by using the color name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         outsideBorderColor: string;
         /**
          * Specifies the border type of the outside borders.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         outsideBorderType: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
         /**
          * Specifies the width of the outside borders.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         outsideBorderWidth: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         /**
          * Gets the border that has the specified location.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getByLocation(borderLocation: Word.BorderLocation.top | Word.BorderLocation.left | Word.BorderLocation.bottom | Word.BorderLocation.right | Word.BorderLocation.insideHorizontal | Word.BorderLocation.insideVertical | "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical"): Word.Border;
         /**
          * Gets the first border in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getFirst(): Word.Border;
         /**
          * Gets the first border in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getFirstOrNullObject(): Word.Border;
         /**
          * Gets a Border object by its index in the collection.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param index - A number that identifies the index location of a Border object.
          */
@@ -1170,9 +1152,9 @@ export declare namespace Word {
          */
         untrack(): Word.BorderCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.BorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.BorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.BorderCollectionData;
     }
     /**
@@ -1229,9 +1211,9 @@ export declare namespace Word {
          */
         untrack(): Word.CheckboxContentControl;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.CheckboxContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CheckboxContentControlData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CheckboxContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CheckboxContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.CheckboxContentControlData;
     }
     /**
@@ -1360,9 +1342,9 @@ export declare namespace Word {
          */
         untrack(): Word.Comment;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Comment` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.CommentData;
     }
     /**
@@ -1417,9 +1399,9 @@ export declare namespace Word {
          */
         untrack(): Word.CommentCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.CommentCollectionData;
     }
     /**
@@ -1526,9 +1508,9 @@ export declare namespace Word {
          */
         untrack(): Word.CommentContentRange;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.CommentContentRange object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentContentRangeData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CommentContentRange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentContentRangeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.CommentContentRangeData;
     }
     /**
@@ -1634,9 +1616,9 @@ export declare namespace Word {
          */
         untrack(): Word.CommentReply;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.CommentReply object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CommentReply` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.CommentReplyData;
     }
     /**
@@ -1691,13 +1673,13 @@ export declare namespace Word {
          */
         untrack(): Word.CommentReplyCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.CommentReplyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CommentReplyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CommentReplyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.CommentReplyCollectionData;
     }
     /**
-     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+     * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -1706,12 +1688,19 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
+         * Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
          *
          * @remarks
          * [Api set: WordApi 1.7]
          */
         readonly checkboxContentControl: Word.CheckboxContentControl;
+        /**
+         * Gets the data of the content control when its type is 'ComboBox'. It's `null` otherwise.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        readonly comboBoxContentControl: Word.ComboBoxContentControl;
         /**
          * Gets the collection of content control objects in the content control.
          *
@@ -1720,11 +1709,10 @@ export declare namespace Word {
          */
         readonly contentControls: Word.ContentControlCollection;
         /**
-         * Specifies the dropdown list-related data if the content control's type is 'DropDownList'. It's null otherwise.
+         * Gets the data of the content control when its type is 'DropDownList'. It's `null` otherwise.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         readonly dropDownListContentControl: Word.DropDownListContentControl;
         /**
@@ -1871,8 +1859,6 @@ export declare namespace Word {
         readonly id: number;
         /**
          * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                    
-                    Note: The set operation for this property isn't supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -2052,7 +2038,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
@@ -2311,13 +2297,13 @@ export declare namespace Word {
          */
         untrack(): Word.ContentControl;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ContentControlData;
     }
     /**
-     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
+     * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
      *
      * @remarks
      * [Api set: WordApi 1.1]
@@ -2431,43 +2417,39 @@ export declare namespace Word {
          */
         untrack(): Word.ContentControlCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.ContentControlCollectionData;
     }
     /**
-     * Represents a list item in a dropdown list content control.
+     * Represents a list item in a dropdown list or combo box content control.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.9]
      */
     export class ContentControlListItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Specifies the display text of a list item for a dropdown list content control.
+         * Specifies the display text of a list item for a dropdown list or combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         displayText: string;
         /**
          * Specifies the index location of a content control list item in the collection of list items.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         index: number;
         /**
-         * Specifies the programmatic value of a list item for a dropdown list content control.
+         * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         value: string;
         /**
@@ -2482,16 +2464,14 @@ export declare namespace Word {
          * Deletes the list item.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         delete(): void;
         /**
          * Selects the list item and sets the text of the content control to the value of the list item.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         select(): void;
         /**
@@ -2524,17 +2504,16 @@ export declare namespace Word {
          */
         untrack(): Word.ContentControlListItem;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.ContentControlListItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ContentControlListItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ContentControlListItemData;
     }
     /**
-     * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list content control.
+     * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list or combo box content control.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.9]
      */
     export class ContentControlListItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -2545,8 +2524,7 @@ export declare namespace Word {
          * Gets the first list item in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         getFirst(): Word.ContentControlListItem;
         /**
@@ -2555,8 +2533,7 @@ export declare namespace Word {
                     see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         getFirstOrNullObject(): Word.ContentControlListItem;
         /**
@@ -2582,13 +2559,13 @@ export declare namespace Word {
          */
         track(): Word.ContentControlListItemCollection;
         /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
          */
         untrack(): Word.ContentControlListItemCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.ContentControlListItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ContentControlListItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlListItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.ContentControlListItemCollectionData;
     }
     /**
@@ -2599,12 +2576,13 @@ export declare namespace Word {
      */
     export interface ContentControlOptions {
         /**
-         * An array of content control types, item must be 'RichText', 'PlainText', or 'CheckBox'.
+         * An array of content control types, item must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'.
          *
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Note: `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * Note: 'PlainText' support was added in WordApi 1.5. 'CheckBox' support was added in WordApi 1.7.
+         * 'DropDownList' and 'ComboBox' support was added in WordApi 1.9.
          */
         types: Word.ContentControlType[];
     }
@@ -2683,9 +2661,9 @@ export declare namespace Word {
          */
         untrack(): Word.CustomProperty;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.CustomProperty object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CustomProperty` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.CustomPropertyData;
     }
     /**
@@ -2768,9 +2746,9 @@ export declare namespace Word {
          */
         untrack(): Word.CustomPropertyCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.CustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.CustomPropertyCollectionData;
     }
     /**
@@ -3047,9 +3025,9 @@ export declare namespace Word {
          */
         untrack(): Word.CustomXmlPart;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.CustomXmlPart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CustomXmlPart` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.CustomXmlPartData;
     }
     /**
@@ -3133,9 +3111,9 @@ export declare namespace Word {
          */
         untrack(): Word.CustomXmlPartCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.CustomXmlPartCollectionData;
     }
     /**
@@ -3215,9 +3193,9 @@ export declare namespace Word {
          */
         untrack(): Word.CustomXmlPartScopedCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.CustomXmlPartScopedCollectionData;
     }
     /**
@@ -3315,6 +3293,8 @@ export declare namespace Word {
         addStyle(name: string, typeString: "Character" | "List" | "Paragraph" | "Table"): Word.Style;
         /**
          * Closes the current document.
+                    
+                    Note: This API isn't supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -3324,6 +3304,8 @@ export declare namespace Word {
         close(closeBehavior?: Word.CloseBehavior): void;
         /**
          * Closes the current document.
+                    
+                    Note: This API isn't supported in Word on the web.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -3335,13 +3317,23 @@ export declare namespace Word {
          * Displays revision marks that indicate where the specified document differs from another document.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param filePath - Required. The path of the document with which the specified document is compared.
          * @param documentCompareOptions - Optional. The additional options that specifies the behavior of comparing document.
          */
         compare(filePath: string, documentCompareOptions?: Word.DocumentCompareOptions): void;
+        /**
+         * Displays revision marks that indicate where the specified document differs from another document.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param base64File - Required. The Base64-encoded content of the document with which the specified document is compared.
+         * @param documentCompareOptions - Optional. The additional options that specify the behavior for comparing the documents. Note that the `compareTarget` option isn't allowed to be `CompareTargetSelected` in this API.
+         */
+        compareFromBase64(base64File: string, documentCompareOptions?: Word.DocumentCompareOptions): void;
         /**
          * Deletes a bookmark, if it exists, from the document.
          *
@@ -3434,9 +3426,24 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          *
+         * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
+         *
          * @param stylesJson - Required. A JSON-formatted string representing the styles.
+         * @param importedStylesConflictBehavior - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
          */
-        importStylesFromJson(stylesJson: string): OfficeExtension.ClientResult<string[]>;
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehavior?: Word.ImportedStylesConflictBehavior): OfficeExtension.ClientResult<string[]>;
+        /**
+         * Import styles from a JSON-formatted string.
+         *
+         * @remarks
+         * [Api set: WordApi 1.6]
+         *
+         * Note: The `importedStylesConflictBehavior` parameter was introduced in WordApiDesktop 1.1.
+         *
+         * @param stylesJson - Required. A JSON-formatted string representing the styles.
+         * @param importedStylesConflictBehaviorString - Optional. Specifies how to handle any imported styles with the same name as existing styles in the current document.
+         */
+        importStylesFromJson(stylesJson: string, importedStylesConflictBehaviorString?: "Ignore" | "Overwrite" | "CreateNew"): OfficeExtension.ClientResult<string[]>;
         /**
          * Inserts a document into the target document at a specific location with additional properties.
                     Headers, footers, watermarks, and other section properties are copied by default.
@@ -3444,7 +3451,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -3542,10 +3549,9 @@ export declare namespace Word {
          * Occurs when the user performs an action in an annotation pop-up menu.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApi 1.8]
          *
          * @eventproperty
-         * @beta
          */
         readonly onAnnotationPopupAction: OfficeExtension.EventHandlers<Word.AnnotationPopupActionEventArgs>;
         /**
@@ -3602,9 +3608,9 @@ export declare namespace Word {
          */
         untrack(): Word.Document;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Document object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Document` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.DocumentData;
     }
     /**
@@ -3747,7 +3753,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApiHiddenDocument 1.5]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -3815,9 +3821,9 @@ export declare namespace Word {
          */
         untrack(): Word.DocumentCreated;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.DocumentCreated object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentCreatedData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.DocumentCreated` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentCreatedData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.DocumentCreatedData;
     }
     /**
@@ -3858,7 +3864,7 @@ export declare namespace Word {
          */
         category: string;
         /**
-         * Specifies the comments of the document.
+         * Specifies the Comments field in the metadata of the document. These have no connection to comments by users made in the document.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -3993,17 +3999,16 @@ export declare namespace Word {
          */
         untrack(): Word.DocumentProperties;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.DocumentProperties object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.DocumentProperties` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.DocumentPropertiesData;
     }
     /**
      * The data specific to content controls of type DropDownList.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApi 1.9]
      */
     export class DropDownListContentControl extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4012,16 +4017,14 @@ export declare namespace Word {
          * Gets the collection of list items in the dropdown list content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         readonly listItems: Word.ContentControlListItemCollection;
         /**
          * Adds a new list item to this dropdown list content control and returns a {@link Word.ContentControlListItem} object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          *
          * @param displayText - Required. Display text of the list item.
          * @param value - Optional. Value of the list item.
@@ -4032,8 +4035,7 @@ export declare namespace Word {
          * Deletes all list items in this dropdown list content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         deleteAllListItems(): void;
         /**
@@ -4060,10 +4062,73 @@ export declare namespace Word {
          */
         untrack(): Word.DropDownListContentControl;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.DropDownListContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DropDownListContentControlData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.DropDownListContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DropDownListContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.DropDownListContentControlData;
+    }
+    /**
+     * The data specific to content controls of type 'ComboBox'.
+     *
+     * @remarks
+     * [Api set: WordApi 1.9]
+     */
+    export class ComboBoxContentControl extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Gets the collection of list items in the combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        readonly listItems: Word.ContentControlListItemCollection;
+        /**
+         * Adds a new list item to this combo box content control and returns a {@link Word.ContentControlListItem} object.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         *
+         * @param displayText - Required. Display text of the list item.
+         * @param value - Optional. Value of the list item.
+         * @param index - Optional. Index location of the new item in the list. If an item exists at the position specified, the existing item is pushed down in the list. If omitted, the new item is added to the end of the list.
+         */
+        addListItem(displayText: string, value?: string, index?: number): Word.ContentControlListItem;
+        /**
+         * Deletes all list items in this combo box content control.
+         *
+         * @remarks
+         * [Api set: WordApi 1.9]
+         */
+        deleteAllListItems(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ComboBoxContentControl;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.ComboBoxContentControl;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ComboBoxContentControl;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ComboBoxContentControl;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ComboBoxContentControl` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ComboBoxContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ComboBoxContentControlData;
     }
     /**
      * Represents a field.
@@ -4071,7 +4136,11 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.4]
      *
-     * Important: To learn more about which fields can be inserted, see the Word.Range.insertField API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}), the `Addin` field is editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+     * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
+     * Support for managing fields is similar to what's available in the Word UI.
+     * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
+     * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+     * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class Field extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4142,7 +4211,7 @@ export declare namespace Word {
          */
         code: string;
         /**
-         * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+         * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
          *
          * @remarks
          * [Api set: WordApi 1.5]
@@ -4166,8 +4235,7 @@ export declare namespace Word {
          * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         showCodes: boolean;
         /**
@@ -4261,9 +4329,9 @@ export declare namespace Word {
          */
         untrack(): Word.Field;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Field object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FieldData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Field` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FieldData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.FieldData;
     }
     /**
@@ -4272,7 +4340,11 @@ export declare namespace Word {
      * @remarks
      * [Api set: WordApi 1.4]
      *
-     * Important: To learn more about which fields can be inserted, see the Word.Range.insertField API introduced in requirement set 1.5. Support for managing fields is similar to what's available in the Word UI. However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}), the `Addin` field is editable. To learn more about Word UI clients that more fully support fields, see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
+     * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
+     * Support for managing fields is similar to what's available in the Word UI.
+     * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
+     * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+     * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
      */
     export class FieldCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -4329,9 +4401,9 @@ export declare namespace Word {
          */
         untrack(): Word.FieldCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.FieldCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FieldCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.FieldCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FieldCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.FieldCollectionData;
     }
     /**
@@ -4373,7 +4445,7 @@ export declare namespace Word {
          */
         hidden: boolean;
         /**
-         * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+         * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
          *
          * @remarks
          * [Api set: WordApi 1.1]
@@ -4466,9 +4538,9 @@ export declare namespace Word {
          */
         untrack(): Word.Font;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Font object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Font` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.FontData;
     }
     /**
@@ -4561,8 +4633,7 @@ export declare namespace Word {
          * Gets the format of the inline image.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly imageFormat: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
         /**
@@ -4647,7 +4718,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.2]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Before' or 'After'.
@@ -4751,9 +4822,9 @@ export declare namespace Word {
          */
         untrack(): Word.InlinePicture;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.InlinePicture object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.InlinePicture` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.InlinePictureData;
     }
     /**
@@ -4808,9 +4879,9 @@ export declare namespace Word {
          */
         untrack(): Word.InlinePictureCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.InlinePictureCollectionData;
     }
     /**
@@ -4823,7 +4894,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets paragraphs in the list. Read-only.
+         * Gets paragraphs in the list.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -4854,8 +4925,7 @@ export declare namespace Word {
          * Gets the font of the bullet, number, or picture at the specified level in the list.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param level - Required. The level in the list.
          */
@@ -4873,8 +4943,7 @@ export declare namespace Word {
          * Gets the Base64-encoded string representation of the picture at the specified level in the list.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param level - Required. The level in the list.
          */
@@ -4902,8 +4971,7 @@ export declare namespace Word {
          * Resets the font of the bullet, number, or picture at the specified level in the list.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param level - Required. The level in the list.
          * @param resetFontName - Optional. Indicates whether to reset the font name. Default is false that indicates the font name is kept unchanged.
@@ -4990,8 +5058,7 @@ export declare namespace Word {
          * Sets the picture at the specified level in the list.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          *
          * @param level - Required. The level in the list.
          * @param base64EncodedImage - Optional. The Base64-encoded image to be set. If not given, the default picture is set.
@@ -5037,9 +5104,9 @@ export declare namespace Word {
          */
         untrack(): Word.List;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.List object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.List` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ListData;
     }
     /**
@@ -5121,9 +5188,9 @@ export declare namespace Word {
          */
         untrack(): Word.ListCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.ListCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ListCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.ListCollectionData;
     }
     /**
@@ -5221,17 +5288,16 @@ export declare namespace Word {
          */
         untrack(): Word.ListItem;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.ListItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListItemData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ListItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListItemData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ListItemData;
     }
     /**
      * Represents a list level.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class ListLevel extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5240,88 +5306,77 @@ export declare namespace Word {
          * Gets a Font object that represents the character formatting of the specified object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly font: Word.Font;
         /**
          * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          * Specifies the name of the style that's linked to the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         linkedStyle: string;
         /**
          * Specifies the number format for the specified list level.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         numberFormat: string;
         /**
          * Specifies the position (in points) of the number or bullet for the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         numberPosition: number;
         /**
          * Specifies the number style for the list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         numberStyle: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
         /**
          * Specifies the list level that must appear before the specified list level restarts numbering at 1.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         resetOnHigher: number;
         /**
          * Specifies the starting number for the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         startAt: number;
         /**
          * Specifies the tab position for the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         tabPosition: number;
         /**
          * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         textPosition: number;
         /**
          * Specifies the character inserted after the number for the specified list level.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         trailingCharacter: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
         /**
@@ -5362,17 +5417,16 @@ export declare namespace Word {
          */
         untrack(): Word.ListLevel;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.ListLevel object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListLevelData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ListLevel` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListLevelData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ListLevelData;
     }
     /**
      * Contains a collection of {@link Word.ListLevel} objects.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class ListLevelCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5383,16 +5437,14 @@ export declare namespace Word {
          * Gets the first list level in this collection. Throws an `ItemNotFound` error if this collection is empty.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getFirst(): Word.ListLevel;
         /**
          * Gets the first list level in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         getFirstOrNullObject(): Word.ListLevel;
         /**
@@ -5422,17 +5474,16 @@ export declare namespace Word {
          */
         untrack(): Word.ListLevelCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.ListLevelCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListLevelCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ListLevelCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListLevelCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.ListLevelCollectionData;
     }
     /**
      * Represents a ListTemplate.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export class ListTemplate extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -5441,16 +5492,14 @@ export declare namespace Word {
          * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly listLevels: Word.ListLevelCollection;
         /**
          * Specifies whether the specified ListTemplate object is outline numbered.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         outlineNumbered: boolean;
         /**
@@ -5491,9 +5540,9 @@ export declare namespace Word {
          */
         untrack(): Word.ListTemplate;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.ListTemplate object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListTemplateData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ListTemplate` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListTemplateData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ListTemplateData;
     }
     /**
@@ -5585,9 +5634,9 @@ export declare namespace Word {
          */
         untrack(): Word.NoteItem;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.NoteItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.NoteItem` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.NoteItemData;
     }
     /**
@@ -5642,9 +5691,9 @@ export declare namespace Word {
          */
         untrack(): Word.NoteItemCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.NoteItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.NoteItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.NoteItemCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.NoteItemCollectionData;
     }
     /**
@@ -5775,6 +5824,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.3]
          */
         readonly parentTableOrNullObject: Word.Table;
+        /**
+         * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shapes: Word.ShapeCollection;
         /**
          * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
          *
@@ -6086,17 +6143,18 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         /**
          * Inserts a document into the paragraph at the specified location.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
@@ -6164,6 +6222,17 @@ export declare namespace Word {
          * @param insertLocation - Required. The value must be 'Replace', 'Start', or 'End'.
          */
         insertText(text: string, insertLocation: Word.InsertLocation.replace | Word.InsertLocation.start | Word.InsertLocation.end | "Replace" | "Start" | "End"): Word.Range;
+        /**
+         * Inserts a floating text box with its anchor at the beginning of the paragraph.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param text - Optional. The text to insert into the text box.
+         * @param insertShapeOptions - Optional. The size and location of the text box. The default location and size is (0, 0, 100, 100).
+         */
+        insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
         /**
          * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
          *
@@ -6298,9 +6367,9 @@ export declare namespace Word {
          */
         untrack(): Word.Paragraph;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Paragraph` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ParagraphData;
     }
     /**
@@ -6369,9 +6438,9 @@ export declare namespace Word {
          */
         untrack(): Word.ParagraphCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in  turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.ParagraphCollectionData;
     }
     /**
@@ -6519,9 +6588,9 @@ export declare namespace Word {
          */
         untrack(): Word.ParagraphFormat;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.ParagraphFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ParagraphFormat` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphFormatData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ParagraphFormatData;
     }
     /**
@@ -6641,6 +6710,14 @@ export declare namespace Word {
          */
         readonly parentTableOrNullObject: Word.Table;
         /**
+         * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly shapes: Word.ShapeCollection;
+        /**
          * Gets the collection of table objects in the range.
          *
          * @remarks
@@ -6714,7 +6791,7 @@ export declare namespace Word {
          */
         delete(): void;
         /**
-         * Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges do not have a union.
+         * Returns a new range that extends from this range in either direction to cover another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges don't have a union.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -6852,8 +6929,7 @@ export declare namespace Word {
                     To highlight the text permanently, set the range's Font.HighlightColor.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         highlight(): void;
         /**
@@ -6894,10 +6970,11 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          *
          * Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi 1.5. `CheckBox` support was added in WordApi 1.7.
+         * `DropDownList` and `ComboBox` support was added in WordApi 1.9.
          *
-         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is 'RichText'.
+         * @param contentControlType - Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or 'ComboBox'. The default is 'RichText'.
          */
-        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText | Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox | "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
         /**
          * Inserts an endnote. The endnote reference is placed after the range.
          *
@@ -6915,17 +6992,17 @@ export declare namespace Word {
          *
          * Important:
          *
-         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except Word.FieldType.others.
+         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
          *
          * In Word on the web, the API supports inserting and managing the following field types.
          *
-         * - Word.FieldType.addin
+         * - `Word.FieldType.addin`
          *
-         * - Word.FieldType.date
+         * - `Word.FieldType.date`
          *
-         * - Word.FieldType.hyperlink
+         * - `Word.FieldType.hyperlink`
          *
-         * - Word.FieldType.toc
+         * - `Word.FieldType.toc`
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldType - Optional. Can be any FieldType constant. The default value is Empty.
@@ -6941,17 +7018,17 @@ export declare namespace Word {
          *
          * Important:
          *
-         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except Word.FieldType.others.
+         * In Word on Windows and on Mac, the API supports inserting and managing all types listed in {@link Word.FieldType} except `Word.FieldType.others`.
          *
          * In Word on the web, the API supports inserting and managing the following field types.
          *
-         * - Word.FieldType.addin
+         * - `Word.FieldType.addin`
          *
-         * - Word.FieldType.date
+         * - `Word.FieldType.date`
          *
-         * - Word.FieldType.hyperlink
+         * - `Word.FieldType.hyperlink`
          *
-         * - Word.FieldType.toc
+         * - `Word.FieldType.toc`
          *
          * @param insertLocation - Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
          * @param fieldTypeString - Optional. Can be any FieldType constant. The default value is Empty.
@@ -6965,7 +7042,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.1]
          *
-         * Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+         * Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
          *
          * @param base64File - Required. The Base64-encoded content of a .docx file.
          * @param insertLocation - Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
@@ -7043,6 +7120,17 @@ export declare namespace Word {
          */
         insertText(text: string, insertLocation: Word.InsertLocation | "Replace" | "Start" | "End" | "Before" | "After"): Word.Range;
         /**
+         * Inserts a floating text box with its anchor at the beginning of the range.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param text - Optional. The text to insert into the text box.
+         * @param insertShapeOptions - Optional. The size and location of the text box. The default location and size is (0, 0, 100, 100).
+         */
+        insertTextBox(text?: string, insertShapeOptions?: Word.InsertShapeOptions): Word.Shape;
+        /**
          * Returns a new range as the intersection of this range with another range. This range isn't changed. Throws an `ItemNotFound` error if the two ranges aren't overlapped or adjacent.
          *
          * @remarks
@@ -7064,8 +7152,7 @@ export declare namespace Word {
          * Removes the highlight added by the Highlight function if any.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         removeHighlight(): void;
         /**
@@ -7186,9 +7273,9 @@ export declare namespace Word {
          */
         untrack(): Word.Range;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Range` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.RangeData;
     }
     /**
@@ -7243,10 +7330,51 @@ export declare namespace Word {
          */
         untrack(): Word.RangeCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.RangeCollectionData;
+    }
+    /**
+     * Specifies the options to determine size and location when inserting a shape.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface InsertShapeOptions {
+        /**
+         * Represents the height of the shape being inserted.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height?: number;
+        /**
+         * Represents the left position of the shape being inserted.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left?: number;
+        /**
+         * Represents the top position of the shape being inserted.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top?: number;
+        /**
+         * Represents the width of the shape being inserted.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width?: number;
     }
     /**
      * Specifies the options to determine what to copy when inserting a file.
@@ -7401,12 +7529,12 @@ export declare namespace Word {
             expand?: string;
         }): Word.SearchOptions;
         /**
-         * Create a new instance of Word.SearchOptions object
+         * Create a new instance of the `Word.SearchOptions` object.
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;
         /**
-        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-        * Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.SearchOptions` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.
         */
         toJSON(): Word.Interfaces.SearchOptionsData;
     }
@@ -7436,16 +7564,14 @@ export declare namespace Word {
      * Specifies the options to be included in a compare document operation.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     export interface DocumentCompareOptions {
         /**
          * True adds the document to the list of recently used files on the File menu. The default value is True.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         addToRecentFiles?: boolean;
         /**
@@ -7453,48 +7579,42 @@ export declare namespace Word {
                     If unspecified, the value defaults to the author name of the revised document or the string "Comparison" if no author information is present.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         authorName?: string;
         /**
          * The target document for the comparison. Default value is 'CompareTargetCurrent'.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         compareTarget?: Word.CompareTarget | "CompareTargetCurrent" | "CompareTargetSelected" | "CompareTargetNew";
         /**
          * True (default) for the comparison to include detection of format changes.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         detectFormatChanges?: boolean;
         /**
          * True compares the documents without notifying a user of problems. The default value is False.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         ignoreAllComparisonWarnings?: boolean;
         /**
          * True removes date and time stamp information from tracked changes in the returned Document object. The default value is False.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         removeDateAndTime?: boolean;
         /**
          * True removes all user information from comments, revisions, and the properties dialog box in the returned Document object. The default value is False.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         removePersonalInformation?: boolean;
     }
@@ -7602,9 +7722,9 @@ export declare namespace Word {
          */
         untrack(): Word.Section;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Section object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Section` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.SectionData;
     }
     /**
@@ -7659,9 +7779,9 @@ export declare namespace Word {
          */
         untrack(): Word.SectionCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.SectionCollectionData;
     }
     /**
@@ -7732,9 +7852,9 @@ export declare namespace Word {
          */
         untrack(): Word.Setting;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Setting object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Setting` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.SettingData;
     }
     /**
@@ -7817,9 +7937,9 @@ export declare namespace Word {
          */
         untrack(): Word.SettingCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.SettingCollectionData;
     }
     /**
@@ -7894,9 +8014,9 @@ export declare namespace Word {
          */
         untrack(): Word.StyleCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.StyleCollectionData;
     }
     /**
@@ -7912,8 +8032,7 @@ export declare namespace Word {
          * Specifies a BorderCollection object that represents all the borders for the specified style.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly borders: Word.BorderCollection;
         /**
@@ -7927,8 +8046,7 @@ export declare namespace Word {
          * Gets a ListTemplate object that represents the list formatting for the specified Style object.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         readonly listTemplate: Word.ListTemplate;
         /**
@@ -8086,9 +8204,9 @@ export declare namespace Word {
          */
         untrack(): Word.Style;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Style object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Style` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.StyleData;
     }
     /**
@@ -8111,16 +8229,14 @@ export declare namespace Word {
          * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         foregroundPatternColor: string;
         /**
          * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         texture: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         /**
@@ -8161,9 +8277,9 @@ export declare namespace Word {
          */
         untrack(): Word.Shading;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Shading object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShadingData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Shading` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShadingData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.ShadingData;
     }
     /**
@@ -8697,9 +8813,9 @@ export declare namespace Word {
          */
         untrack(): Word.Table;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Table` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.TableData;
     }
     /**
@@ -8715,16 +8831,14 @@ export declare namespace Word {
          * Specifies the table's alignment against the page margin.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         alignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
         /**
          * Specifies whether lines in tables formatted with a specified style break across pages.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         allowBreakAcrossPage: boolean;
         /**
@@ -8800,9 +8914,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableStyle;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.TableStyle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableStyleData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TableStyle` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableStyleData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.TableStyleData;
     }
     /**
@@ -8857,9 +8971,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.TableCollectionData;
     }
     /**
@@ -8872,7 +8986,7 @@ export declare namespace Word {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext;
         /**
-         * Gets cells. Read-only.
+         * Gets cells.
          *
          * @remarks
          * [Api set: WordApi 1.3]
@@ -9045,8 +9159,7 @@ export declare namespace Word {
          * Inserts a content control on the row.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         insertContentControl(): Word.ContentControl;
         /**
@@ -9153,9 +9266,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableRow;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TableRow` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.TableRowData;
     }
     /**
@@ -9210,9 +9323,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableRowCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.TableRowCollectionData;
     }
     /**
@@ -9455,9 +9568,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableCell;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.TableCell object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TableCell` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.TableCellData;
     }
     /**
@@ -9512,9 +9625,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableCellCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.TableCellCollectionData;
     }
     /**
@@ -9585,9 +9698,9 @@ export declare namespace Word {
          */
         untrack(): Word.TableBorder;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.TableBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableBorderData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TableBorder` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableBorderData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.TableBorderData;
     }
     /**
@@ -9692,9 +9805,9 @@ export declare namespace Word {
          */
         untrack(): Word.TrackedChange;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original Word.TrackedChange object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TrackedChangeData`) that contains shallow copies of any loaded child properties from the original object.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TrackedChange` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TrackedChangeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
         toJSON(): Word.Interfaces.TrackedChangeData;
     }
     /**
@@ -9763,10 +9876,243 @@ export declare namespace Word {
          */
         untrack(): Word.TrackedChangeCollection;
         /**
-         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-         * Whereas the original `Word.TrackedChangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TrackedChangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
-         */
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.TrackedChangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TrackedChangeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
         toJSON(): Word.Interfaces.TrackedChangeCollectionData;
+    }
+    /**
+     * Represents a shape in the header footer or document body. Currently, only TextBox shapes are supported.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Shape extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /**
+         * Represents the body object of the shape. Only applies to TextBox shapes.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly body: Word.Body;
+        /**
+         * The height, in points, of the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        height: number;
+        /**
+         * Gets an integer that represents the shape identifier.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: number;
+        /**
+         * The distance, in points, from the left side of the shape to the horizontal relative position. For a floating shape, it will return 0 and can't be set.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        left: number;
+        /**
+         * The relative horizontal position of the shape. For a floating shape, it can't be set.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        relativeHorizontalPosition: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
+        /**
+         * The relative vertical position of the shape. For a floating shape, it can't be set.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        relativeVerticalPosition: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+        /**
+         * The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape, it will return 0 and can't be set.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        top: number;
+        /**
+         * Gets the shape type. Currently, only TextBox shapes are supported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly type: Word.ShapeType | "Unsupported" | "TextBox";
+        /**
+         * The width, in points, of the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        width: number;
+        /**
+         * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.ShapeUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Shape): void;
+        /**
+         * Deletes the shape and its content.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Selects the shape.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param selectMultipleShapes - Optional. Whether to select multiple floating shapes. The default value is false.
+         */
+        select(selectMultipleShapes?: boolean): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ShapeLoadOptions): Word.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: {
+            select?: string;
+            expand?: string;
+        }): Word.Shape;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.Shape;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.Shape;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.Shape` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.ShapeData;
+    }
+    /**
+     * Contains a collection of {@link Word.Shape} objects. Currently, only TextBox shapes are supported.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class ShapeCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext;
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Shape[];
+        /**
+         * Gets a shape by its identifier. Throws an `ItemNotFound` error if there isn't a shape with the identifier in this collection.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - Required. A shape identifier.
+         */
+        getById(id: number): Word.Shape;
+        /**
+         * Gets a shape by its identifier. If there isn't a shape with the identifier in this collection, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - Required. A shape identifier.
+         */
+        getByIdOrNullObject(id: number): Word.Shape;
+        /**
+         * Gets the shapes that have the specified types.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param types - Required. An array of shape types.
+         */
+        getByTypes(types: Word.ShapeType[]): Word.ShapeCollection;
+        /**
+         * Gets the first shape in this collection. Throws an `ItemNotFound` error if this collection is empty.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirst(): Word.Shape;
+        /**
+         * Gets the first shape in this collection. If this collection is empty, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getFirstOrNullObject(): Word.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(options?: Word.Interfaces.ShapeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ShapeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.ShapeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         *
+         * @param propertyNamesAndPaths - `propertyNamesAndPaths.select` is a comma-delimited string that specifies the properties to load, and `propertyNamesAndPaths.expand` is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: OfficeExtension.LoadOption): Word.ShapeCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you're using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
+         */
+        track(): Word.ShapeCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You'll need to call `context.sync()` before the memory release takes effect.
+         */
+        untrack(): Word.ShapeCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that's passed to it.)
+        * Whereas the original `Word.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ShapeCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.ShapeCollectionData;
     }
     /**
      * ChangeTracking mode.
@@ -9922,6 +10268,24 @@ export declare namespace Word {
          */
         contentControlAdded = "ContentControlAdded",
         /**
+         * AnnotationAdded represents the event an annotation has been added to the document.
+         * @remarks
+         * [Api set: WordApiOnline 1.1]
+         */
+        annotationAdded = "AnnotationAdded",
+        /**
+         * AnnotationChanged represents the event an annotation has been updated in the document.
+         * @remarks
+         * [Api set: WordApiOnline 1.1]
+         */
+        annotationChanged = "AnnotationChanged",
+        /**
+         * AnnotationDeleted represents the event an annotation has been deleted from the document.
+         * @remarks
+         * [Api set: WordApiOnline 1.1]
+         */
+        annotationDeleted = "AnnotationDeleted",
+        /**
          * Represents that one or more comments were deleted.
          * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
@@ -9969,6 +10333,12 @@ export declare namespace Word {
          */
         contentControlExited = "ContentControlExited",
         /**
+         * Represents that a word count has been changed.
+         * @remarks
+         * [Api set: WordApi Unknown Version, this API may or may not work on a client. This API may not be released to 3rd parties.]
+         */
+        documentWordCountChanged = "DocumentWordCountChanged",
+        /**
          * Represents that one or more new paragraphs were added.
          * @remarks
          * [Api set: WordApi 1.6]
@@ -10013,8 +10383,7 @@ export declare namespace Word {
         /**
          * Represents an action in the annotation pop-up.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.8]
          */
         annotationPopupAction = "AnnotationPopupAction",
     }
@@ -10037,47 +10406,6 @@ export declare namespace Word {
         remote = "Remote",
     }
     /**
-     * Provides information about the content control that raised an event.
-     *
-     * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-    export interface ContentControlEventArgs {
-        /**
-         * The object that raised the event. Load this object to get its properties.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        contentControl: Word.ContentControl;
-        /**
-         * The event type. See Word.EventType for details.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
-        /**
-         * Gets the content control IDs.
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        ids: number[];
-        /**
-         * The source of the event. It can be local or remote (through coauthoring).
-         *
-         * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
-         */
-        source: Word.EventSource | "Local" | "Remote";
-    }
-    /**
      * Provides information about the content control that raised contentControlAdded event.
      *
      * @remarks
@@ -10090,7 +10418,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -10119,7 +10447,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -10148,7 +10476,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -10177,7 +10505,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -10206,7 +10534,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -10235,7 +10563,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.5]
          */
-        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the content control IDs.
          *
@@ -10271,7 +10599,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *
@@ -10300,7 +10628,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *
@@ -10329,7 +10657,7 @@ export declare namespace Word {
          * @remarks
          * [Api set: WordApi 1.6]
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
         /**
          * Gets the unique IDs of the involved paragraphs. IDs are in standard 8-4-4-4-12 GUID format without curly braces and differ across sessions and coauthors.
          *
@@ -10377,7 +10705,7 @@ export declare namespace Word {
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
+        type: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted" | "CommentDeleted" | "CommentSelected" | "CommentDeselected" | "CommentChanged" | "CommentAdded" | "ContentControlEntered" | "ContentControlExited" | "DocumentWordCountChanged" | "ParagraphAdded" | "ParagraphChanged" | "ParagraphDeleted" | "AnnotationClicked" | "AnnotationHovered" | "AnnotationInserted" | "AnnotationRemoved" | "AnnotationPopupAction";
     }
     /**
      * A structure for the ID and reply IDs of this comment.
@@ -10896,55 +11224,73 @@ export declare namespace Word {
         evenPages = "EvenPages",
     }
     /**
+     * Represents the types of body objects.
+     *
      * @remarks
      * [Api set: WordApi 1.3]
      */
     enum BodyType {
         /**
+         * Unknown body type.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         unknown = "Unknown",
         /**
+         * Main document body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         mainDoc = "MainDoc",
         /**
+         * Section body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         section = "Section",
         /**
+         * Header body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         header = "Header",
         /**
+         * Footer body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         footer = "Footer",
         /**
+         * Table cell body.
          * @remarks
          * [Api set: WordApi 1.3]
          */
         tableCell = "TableCell",
         /**
+         * Footnote body.
          * @remarks
          * [Api set: WordApi 1.5]
          */
         footnote = "Footnote",
         /**
+         * Endnote body.
          * @remarks
          * [Api set: WordApi 1.5]
          */
         endnote = "Endnote",
         /**
+         * Note body e.g., endnote, footnote.
          * @remarks
          * [Api set: WordApi 1.5]
          */
         noteItem = "NoteItem",
+        /**
+         * Shape body.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        shape = "Shape",
     }
     /**
      * This enum sets where the cursor (insertion point) in the document is after a selection.
@@ -10974,78 +11320,77 @@ export declare namespace Word {
     }
     /**
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum ImageFormat {
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         unsupported = "Unsupported",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         undefined = "Undefined",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         bmp = "Bmp",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         jpeg = "Jpeg",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gif = "Gif",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tiff = "Tiff",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         png = "Png",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         icon = "Icon",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         exif = "Exif",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         wmf = "Wmf",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         emf = "Emf",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         pict = "Pict",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         pdf = "Pdf",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         svg = "Svg",
     }
@@ -11262,85 +11607,73 @@ export declare namespace Word {
      * Represents the width of a style's border.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum BorderWidth {
         /**
          * None width.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         none = "None",
         /**
          * 0.25 point.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt025 = "Pt025",
         /**
          * 0.50 point.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt050 = "Pt050",
         /**
          * 0.75 point.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt075 = "Pt075",
         /**
          * 1.00 point. This is the default.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt100 = "Pt100",
         /**
          * 1.50 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt150 = "Pt150",
         /**
          * 2.25 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt225 = "Pt225",
         /**
          * 3.00 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt300 = "Pt300",
         /**
          * 4.50 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt450 = "Pt450",
         /**
          * 6.00 points.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         pt600 = "Pt600",
         /**
          * Mixed width.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         mixed = "Mixed",
     }
@@ -13108,376 +13441,371 @@ export declare namespace Word {
      * Represents the character inserted after the list item mark.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum TrailingCharacter {
         /**
          * A tab is inserted.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         trailingTab = "TrailingTab",
         /**
          * A space is inserted. Default.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         trailingSpace = "TrailingSpace",
         /**
          * No character is inserted.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         trailingNone = "TrailingNone",
     }
     /**
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum ListBuiltInNumberStyle {
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         none = "None",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabic = "Arabic",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         upperRoman = "UpperRoman",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowerRoman = "LowerRoman",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         upperLetter = "UpperLetter",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowerLetter = "LowerLetter",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         ordinal = "Ordinal",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         cardinalText = "CardinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         ordinalText = "OrdinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         kanji = "Kanji",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         kanjiDigit = "KanjiDigit",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         aiueoHalfWidth = "AiueoHalfWidth",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         irohaHalfWidth = "IrohaHalfWidth",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicFullWidth = "ArabicFullWidth",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         kanjiTraditional = "KanjiTraditional",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         kanjiTraditional2 = "KanjiTraditional2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         numberInCircle = "NumberInCircle",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         aiueo = "Aiueo",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         iroha = "Iroha",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicLZ = "ArabicLZ",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         bullet = "Bullet",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         ganada = "Ganada",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         chosung = "Chosung",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gbnum1 = "GBNum1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gbnum2 = "GBNum2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gbnum3 = "GBNum3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         gbnum4 = "GBNum4",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         zodiac1 = "Zodiac1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         zodiac2 = "Zodiac2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         zodiac3 = "Zodiac3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tradChinNum1 = "TradChinNum1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tradChinNum2 = "TradChinNum2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tradChinNum3 = "TradChinNum3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         tradChinNum4 = "TradChinNum4",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         simpChinNum1 = "SimpChinNum1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         simpChinNum2 = "SimpChinNum2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         simpChinNum3 = "SimpChinNum3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         simpChinNum4 = "SimpChinNum4",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hanjaRead = "HanjaRead",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hanjaReadDigit = "HanjaReadDigit",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hangul = "Hangul",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hanja = "Hanja",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hebrew1 = "Hebrew1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabic1 = "Arabic1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hebrew2 = "Hebrew2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabic2 = "Arabic2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hindiLetter1 = "HindiLetter1",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hindiLetter2 = "HindiLetter2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hindiArabic = "HindiArabic",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         hindiCardinalText = "HindiCardinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         thaiLetter = "ThaiLetter",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         thaiArabic = "ThaiArabic",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         thaiCardinalText = "ThaiCardinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         vietCardinalText = "VietCardinalText",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowercaseRussian = "LowercaseRussian",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         uppercaseRussian = "UppercaseRussian",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowercaseGreek = "LowercaseGreek",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         uppercaseGreek = "UppercaseGreek",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicLZ2 = "ArabicLZ2",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicLZ3 = "ArabicLZ3",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         arabicLZ4 = "ArabicLZ4",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowercaseTurkish = "LowercaseTurkish",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         uppercaseTurkish = "UppercaseTurkish",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         lowercaseBulgarian = "LowercaseBulgarian",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         uppercaseBulgarian = "UppercaseBulgarian",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         pictureBullet = "PictureBullet",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         legal = "Legal",
         /**
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * [Api set: WordApiDesktop 1.1]
          */
         legalLZ = "LegalLZ",
     }
@@ -13485,267 +13813,229 @@ export declare namespace Word {
      * Represents the shading texture. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum ShadingTextureType {
         /**
          * Represents dark diagonal-down texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkDiagonalDown = "DarkDiagonalDown",
         /**
          * Represents dark diagonal-up texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkDiagonalUp = "DarkDiagonalUp",
         /**
          * Represents dark horizontal-cross texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkGrid = "DarkGrid",
         /**
          * Represents dark horizontal texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkHorizontal = "DarkHorizontal",
         /**
          * Represents dark diagonal-cross texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkTrellis = "DarkTrellis",
         /**
          * Represents dark vertical texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         darkVertical = "DarkVertical",
         /**
          * Represents light diagonal-down texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightDiagonalDown = "LightDiagonalDown",
         /**
          * Represents light diagonal-up texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightDiagonalUp = "LightDiagonalUp",
         /**
          * Represents light horizontal-cross texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightGrid = "LightGrid",
         /**
          * Represents light horizontal texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightHorizontal = "LightHorizontal",
         /**
          * Represents light diagonal-cross texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightTrellis = "LightTrellis",
         /**
          * Represents light vertical texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         lightVertical = "LightVertical",
         /**
          * Represents that there's no texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         none = "None",
         /**
          * Represents 10 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent10 = "Percent10",
         /**
          * Represents 12.5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent12Pt5 = "Percent12Pt5",
         /**
          * Represents 15 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent15 = "Percent15",
         /**
          * Represents 20 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent20 = "Percent20",
         /**
          * Represents 25 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent25 = "Percent25",
         /**
          * Represents 30 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent30 = "Percent30",
         /**
          * Represents 35 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent35 = "Percent35",
         /**
          * Represents 37.5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent37Pt5 = "Percent37Pt5",
         /**
          * Represents 40 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent40 = "Percent40",
         /**
          * Represents 45 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent45 = "Percent45",
         /**
          * Represents 5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent5 = "Percent5",
         /**
          * Represents 50 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent50 = "Percent50",
         /**
          * Represents 55 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent55 = "Percent55",
         /**
          * Represents 60 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent60 = "Percent60",
         /**
          * Represents 62.5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent62Pt5 = "Percent62Pt5",
         /**
          * Represents 65 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent65 = "Percent65",
         /**
          * Represents 70 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent70 = "Percent70",
         /**
          * Represents 75 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent75 = "Percent75",
         /**
          * Represents 80 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent80 = "Percent80",
         /**
          * Represents 85 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent85 = "Percent85",
         /**
          * Represents 87.5 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent87Pt5 = "Percent87Pt5",
         /**
          * Represents 90 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent90 = "Percent90",
         /**
          * Represents 95 percent texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         percent95 = "Percent95",
         /**
          * Represents solid texture.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         solid = "Solid",
     }
@@ -13753,31 +14043,208 @@ export declare namespace Word {
      * Specifies the target document for displaying document comparison differences.
      *
      * @remarks
-     * [Api set: WordApi BETA (PREVIEW ONLY)]
-     * @beta
+     * [Api set: WordApiDesktop 1.1]
      */
     enum CompareTarget {
         /**
          * Places comparison differences in the current document.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         compareTargetCurrent = "CompareTargetCurrent",
         /**
          * Places comparison differences in the target document.
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         compareTargetSelected = "CompareTargetSelected",
         /**
          * Places comparison differences in a new document.
          * @remarks
+         * [Api set: WordApiDesktop 1.1]
+         */
+        compareTargetNew = "CompareTargetNew",
+    }
+    /**
+     * Specifies how to handle any conflicts, that is, when imported styles have the same name as existing styles in the current document.
+     *
+     * @remarks
+     * [Api set: WordApiDesktop 1.1]
+     */
+    enum ImportedStylesConflictBehavior {
+        /**
+         * Ignore conflicting imported styles and keep the existing version of those styles in the current document.
+         * @remarks
+         * [Api set: WordApiDesktop 1.1]
+         */
+        ignore = "Ignore",
+        /**
+         * Overwrite the existing styles in the current document.
+         * @remarks
+         * [Api set: WordApiDesktop 1.1]
+         */
+        overwrite = "Overwrite",
+        /**
+         * Rename conflicting imported styles so that both versions are kept in the current document. For example, if MyStyle already exists in the document, then the imported version could be added as MyStyle1.
+         * @remarks
+         * [Api set: WordApiDesktop 1.1]
+         */
+        createNew = "CreateNew",
+    }
+    /**
+     * Represents the shape type.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum ShapeType {
+        /**
+         * Unsupported shape type.
+         * @remarks
          * [Api set: WordApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        compareTargetNew = "CompareTargetNew",
+        unsupported = "Unsupported",
+        /**
+         * Text box shape.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        textBox = "TextBox",
+    }
+    /**
+     * Represents what the horizontal position of a shape is relative to.
+                For more information about margins, see {@link https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829 | Change the margins in your Word document}.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RelativeHorizontalPosition {
+        /**
+         * Relative to margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        margin = "Margin",
+        /**
+         * Relative to page.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        page = "Page",
+        /**
+         * Relative to column.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        column = "Column",
+        /**
+         * Relative to character.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        character = "Character",
+        /**
+         * Relative to left margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        leftMargin = "LeftMargin",
+        /**
+         * Relative to right margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        rightMargin = "RightMargin",
+        /**
+         * Relative to inside margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insideMargin = "InsideMargin",
+        /**
+         * Relative to outside margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outsideMargin = "OutsideMargin",
+    }
+    /**
+     * Represents what the vertical position of a shape is relative to.
+                For more information about margins, see {@link https://support.microsoft.com/office/c95c1ea1-70b1-4dde-a1da-f5aa2042c829 | Change the margins in your Word document}.
+     *
+     * @remarks
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RelativeVerticalPosition {
+        /**
+         * Relative to margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        margin = "Margin",
+        /**
+         * Relative to page.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        page = "Page",
+        /**
+         * Relative to paragraph.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        paragraph = "Paragraph",
+        /**
+         * Relative to line.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        line = "Line",
+        /**
+         * Relative to top margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        topMargin = "TopMargin",
+        /**
+         * Relative to bottom margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        bottomMargin = "BottomMargin",
+        /**
+         * Relative to inside margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insideMargin = "InsideMargin",
+        /**
+         * Relative to outside margin.
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        outsideMargin = "OutsideMargin",
     }
     enum ErrorCodes {
         accessDenied = "AccessDenied",
@@ -13803,11 +14270,11 @@ export declare namespace Word {
             */
             $skip?: number;
         }
-        /** An interface for updating data on the AnnotationCollection object, for use in `annotationCollection.set({ ... })`. */
+        /** An interface for updating data on the `AnnotationCollection` object, for use in `annotationCollection.set({ ... })`. */
         export interface AnnotationCollectionUpdateData {
             items?: Word.Interfaces.AnnotationData[];
         }
-        /** An interface for updating data on the Body object, for use in `body.set({ ... })`. */
+        /** An interface for updating data on the `Body` object, for use in `body.set({ ... })`. */
         export interface BodyUpdateData {
             /**
             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
@@ -13831,94 +14298,84 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
-        /** An interface for updating data on the Border object, for use in `border.set({ ... })`. */
+        /** An interface for updating data on the `Border` object, for use in `border.set({ ... })`. */
         export interface BorderUpdateData {
             /**
              * Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             color?: string;
             /**
              * Specifies the border type for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              * Specifies whether the border is visible.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             visible?: boolean;
             /**
              * Specifies the width for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             width?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         }
-        /** An interface for updating data on the BorderCollection object, for use in `borderCollection.set({ ... })`. */
+        /** An interface for updating data on the `BorderCollection` object, for use in `borderCollection.set({ ... })`. */
         export interface BorderCollectionUpdateData {
             /**
              * Specifies the 24-bit color of the inside borders. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             insideBorderColor?: string;
             /**
              * Specifies the border type of the inside borders.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             insideBorderType?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              * Specifies the width of the inside borders.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             insideBorderWidth?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
             /**
              * Specifies the 24-bit color of the outside borders. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outsideBorderColor?: string;
             /**
              * Specifies the border type of the outside borders.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outsideBorderType?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              * Specifies the width of the outside borders.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outsideBorderWidth?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
             items?: Word.Interfaces.BorderData[];
         }
-        /** An interface for updating data on the CheckboxContentControl object, for use in `checkboxContentControl.set({ ... })`. */
+        /** An interface for updating data on the `CheckboxContentControl` object, for use in `checkboxContentControl.set({ ... })`. */
         export interface CheckboxContentControlUpdateData {
             /**
              * Specifies the current state of the checkbox.
@@ -13928,7 +14385,7 @@ export declare namespace Word {
              */
             isChecked?: boolean;
         }
-        /** An interface for updating data on the Comment object, for use in `comment.set({ ... })`. */
+        /** An interface for updating data on the `Comment` object, for use in `comment.set({ ... })`. */
         export interface CommentUpdateData {
             /**
             * Specifies the comment's content range.
@@ -13952,11 +14409,11 @@ export declare namespace Word {
              */
             resolved?: boolean;
         }
-        /** An interface for updating data on the CommentCollection object, for use in `commentCollection.set({ ... })`. */
+        /** An interface for updating data on the `CommentCollection` object, for use in `commentCollection.set({ ... })`. */
         export interface CommentCollectionUpdateData {
             items?: Word.Interfaces.CommentData[];
         }
-        /** An interface for updating data on the CommentContentRange object, for use in `commentContentRange.set({ ... })`. */
+        /** An interface for updating data on the `CommentContentRange` object, for use in `commentContentRange.set({ ... })`. */
         export interface CommentContentRangeUpdateData {
             /**
              * Specifies a value that indicates whether the comment text is bold.
@@ -13994,7 +14451,7 @@ export declare namespace Word {
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         }
-        /** An interface for updating data on the CommentReply object, for use in `commentReply.set({ ... })`. */
+        /** An interface for updating data on the `CommentReply` object, for use in `commentReply.set({ ... })`. */
         export interface CommentReplyUpdateData {
             /**
             * Specifies the commentReply's content range.
@@ -14018,25 +14475,25 @@ export declare namespace Word {
              */
             content?: string;
         }
-        /** An interface for updating data on the CommentReplyCollection object, for use in `commentReplyCollection.set({ ... })`. */
+        /** An interface for updating data on the `CommentReplyCollection` object, for use in `commentReplyCollection.set({ ... })`. */
         export interface CommentReplyCollectionUpdateData {
             items?: Word.Interfaces.CommentReplyData[];
         }
-        /** An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`. */
+        /** An interface for updating data on the `ContentControl` object, for use in `contentControl.set({ ... })`. */
         export interface ContentControlUpdateData {
             /**
-             * Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
-             *
-             * @remarks
-             * [Api set: WordApi 1.7]
-             */
+            * Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
+            *
+            * @remarks
+            * [Api set: WordApi 1.7]
+            */
             checkboxContentControl?: Word.Interfaces.CheckboxContentControlUpdateData;
             /**
-             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             font?: Word.Interfaces.FontUpdateData;
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
@@ -14068,8 +14525,6 @@ export declare namespace Word {
             color?: string;
             /**
              * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                        
-                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -14111,42 +14566,39 @@ export declare namespace Word {
              */
             title?: string;
         }
-        /** An interface for updating data on the ContentControlCollection object, for use in `contentControlCollection.set({ ... })`. */
+        /** An interface for updating data on the `ContentControlCollection` object, for use in `contentControlCollection.set({ ... })`. */
         export interface ContentControlCollectionUpdateData {
             items?: Word.Interfaces.ContentControlData[];
         }
-        /** An interface for updating data on the ContentControlListItem object, for use in `contentControlListItem.set({ ... })`. */
+        /** An interface for updating data on the `ContentControlListItem` object, for use in `contentControlListItem.set({ ... })`. */
         export interface ContentControlListItemUpdateData {
             /**
-             * Specifies the display text of a list item for a dropdown list content control.
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             displayText?: string;
             /**
              * Specifies the index location of a content control list item in the collection of list items.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             index?: number;
             /**
-             * Specifies the programmatic value of a list item for a dropdown list content control.
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             value?: string;
         }
-        /** An interface for updating data on the ContentControlListItemCollection object, for use in `contentControlListItemCollection.set({ ... })`. */
+        /** An interface for updating data on the `ContentControlListItemCollection` object, for use in `contentControlListItemCollection.set({ ... })`. */
         export interface ContentControlListItemCollectionUpdateData {
             items?: Word.Interfaces.ContentControlListItemData[];
         }
-        /** An interface for updating data on the CustomProperty object, for use in `customProperty.set({ ... })`. */
+        /** An interface for updating data on the `CustomProperty` object, for use in `customProperty.set({ ... })`. */
         export interface CustomPropertyUpdateData {
             /**
              * Specifies the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
@@ -14156,19 +14608,19 @@ export declare namespace Word {
              */
             value?: any;
         }
-        /** An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ... })`. */
+        /** An interface for updating data on the `CustomPropertyCollection` object, for use in `customPropertyCollection.set({ ... })`. */
         export interface CustomPropertyCollectionUpdateData {
             items?: Word.Interfaces.CustomPropertyData[];
         }
-        /** An interface for updating data on the CustomXmlPartCollection object, for use in `customXmlPartCollection.set({ ... })`. */
+        /** An interface for updating data on the `CustomXmlPartCollection` object, for use in `customXmlPartCollection.set({ ... })`. */
         export interface CustomXmlPartCollectionUpdateData {
             items?: Word.Interfaces.CustomXmlPartData[];
         }
-        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in `customXmlPartScopedCollection.set({ ... })`. */
+        /** An interface for updating data on the `CustomXmlPartScopedCollection` object, for use in `customXmlPartScopedCollection.set({ ... })`. */
         export interface CustomXmlPartScopedCollectionUpdateData {
             items?: Word.Interfaces.CustomXmlPartData[];
         }
-        /** An interface for updating data on the Document object, for use in `document.set({ ... })`. */
+        /** An interface for updating data on the `Document` object, for use in `document.set({ ... })`. */
         export interface DocumentUpdateData {
             /**
             * Gets the body object of the main document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
@@ -14192,7 +14644,7 @@ export declare namespace Word {
              */
             changeTrackingMode?: Word.ChangeTrackingMode | "Off" | "TrackAll" | "TrackMineOnly";
         }
-        /** An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`. */
+        /** An interface for updating data on the `DocumentCreated` object, for use in `documentCreated.set({ ... })`. */
         export interface DocumentCreatedUpdateData {
             /**
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
@@ -14209,7 +14661,7 @@ export declare namespace Word {
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
         }
-        /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
+        /** An interface for updating data on the `DocumentProperties` object, for use in `documentProperties.set({ ... })`. */
         export interface DocumentPropertiesUpdateData {
             /**
              * Specifies the author of the document.
@@ -14226,7 +14678,7 @@ export declare namespace Word {
              */
             category?: string;
             /**
-             * Specifies the comments of the document.
+             * Specifies the Comments field in the metadata of the document. These have no connection to comments by users made in the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -14275,7 +14727,7 @@ export declare namespace Word {
              */
             title?: string;
         }
-        /** An interface for updating data on the Field object, for use in `field.set({ ... })`. */
+        /** An interface for updating data on the `Field` object, for use in `field.set({ ... })`. */
         export interface FieldUpdateData {
             /**
             * Gets the field's result data.
@@ -14294,7 +14746,7 @@ export declare namespace Word {
              */
             code?: string;
             /**
-             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi 1.5]
@@ -14311,16 +14763,15 @@ export declare namespace Word {
              * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             showCodes?: boolean;
         }
-        /** An interface for updating data on the FieldCollection object, for use in `fieldCollection.set({ ... })`. */
+        /** An interface for updating data on the `FieldCollection` object, for use in `fieldCollection.set({ ... })`. */
         export interface FieldCollectionUpdateData {
             items?: Word.Interfaces.FieldData[];
         }
-        /** An interface for updating data on the Font object, for use in `font.set({ ... })`. */
+        /** An interface for updating data on the `Font` object, for use in `font.set({ ... })`. */
         export interface FontUpdateData {
             /**
              * Specifies a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
@@ -14352,7 +14803,7 @@ export declare namespace Word {
              */
             hidden?: boolean;
             /**
-             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -14408,7 +14859,7 @@ export declare namespace Word {
              */
             underline?: Word.UnderlineType | "Mixed" | "None" | "Hidden" | "DotLine" | "Single" | "Word" | "Double" | "Thick" | "Dotted" | "DottedHeavy" | "DashLine" | "DashLineHeavy" | "DashLineLong" | "DashLineLongHeavy" | "DotDashLine" | "DotDashLineHeavy" | "TwoDotDashLine" | "TwoDotDashLineHeavy" | "Wave" | "WaveHeavy" | "WaveDouble";
         }
-        /** An interface for updating data on the InlinePicture object, for use in `inlinePicture.set({ ... })`. */
+        /** An interface for updating data on the `InlinePicture` object, for use in `inlinePicture.set({ ... })`. */
         export interface InlinePictureUpdateData {
             /**
              * Specifies a string that represents the alternative text associated with the inline image.
@@ -14453,15 +14904,15 @@ export declare namespace Word {
              */
             width?: number;
         }
-        /** An interface for updating data on the InlinePictureCollection object, for use in `inlinePictureCollection.set({ ... })`. */
+        /** An interface for updating data on the `InlinePictureCollection` object, for use in `inlinePictureCollection.set({ ... })`. */
         export interface InlinePictureCollectionUpdateData {
             items?: Word.Interfaces.InlinePictureData[];
         }
-        /** An interface for updating data on the ListCollection object, for use in `listCollection.set({ ... })`. */
+        /** An interface for updating data on the `ListCollection` object, for use in `listCollection.set({ ... })`. */
         export interface ListCollectionUpdateData {
             items?: Word.Interfaces.ListData[];
         }
-        /** An interface for updating data on the ListItem object, for use in `listItem.set({ ... })`. */
+        /** An interface for updating data on the `ListItem` object, for use in `listItem.set({ ... })`. */
         export interface ListItemUpdateData {
             /**
              * Specifies the level of the item in the list.
@@ -14471,113 +14922,101 @@ export declare namespace Word {
              */
             level?: number;
         }
-        /** An interface for updating data on the ListLevel object, for use in `listLevel.set({ ... })`. */
+        /** An interface for updating data on the `ListLevel` object, for use in `listLevel.set({ ... })`. */
         export interface ListLevelUpdateData {
             /**
             * Gets a Font object that represents the character formatting of the specified object.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiDesktop 1.1]
             */
             font?: Word.Interfaces.FontUpdateData;
             /**
              * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies the name of the style that's linked to the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             linkedStyle?: string;
             /**
              * Specifies the number format for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberFormat?: string;
             /**
              * Specifies the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberPosition?: number;
             /**
              * Specifies the number style for the list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
             /**
              * Specifies the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             resetOnHigher?: number;
             /**
              * Specifies the starting number for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             startAt?: number;
             /**
              * Specifies the tab position for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             tabPosition?: number;
             /**
              * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             textPosition?: number;
             /**
              * Specifies the character inserted after the number for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             trailingCharacter?: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
         }
-        /** An interface for updating data on the ListLevelCollection object, for use in `listLevelCollection.set({ ... })`. */
+        /** An interface for updating data on the `ListLevelCollection` object, for use in `listLevelCollection.set({ ... })`. */
         export interface ListLevelCollectionUpdateData {
             items?: Word.Interfaces.ListLevelData[];
         }
-        /** An interface for updating data on the ListTemplate object, for use in `listTemplate.set({ ... })`. */
+        /** An interface for updating data on the `ListTemplate` object, for use in `listTemplate.set({ ... })`. */
         export interface ListTemplateUpdateData {
             /**
              * Specifies whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outlineNumbered?: boolean;
         }
-        /** An interface for updating data on the NoteItem object, for use in `noteItem.set({ ... })`. */
+        /** An interface for updating data on the `NoteItem` object, for use in `noteItem.set({ ... })`. */
         export interface NoteItemUpdateData {
             /**
             * Represents the body object of the note item. It's the portion of the text within the footnote or endnote.
@@ -14594,11 +15033,11 @@ export declare namespace Word {
             */
             reference?: Word.Interfaces.RangeUpdateData;
         }
-        /** An interface for updating data on the NoteItemCollection object, for use in `noteItemCollection.set({ ... })`. */
+        /** An interface for updating data on the `NoteItemCollection` object, for use in `noteItemCollection.set({ ... })`. */
         export interface NoteItemCollectionUpdateData {
             items?: Word.Interfaces.NoteItemData[];
         }
-        /** An interface for updating data on the Paragraph object, for use in `paragraph.set({ ... })`. */
+        /** An interface for updating data on the `Paragraph` object, for use in `paragraph.set({ ... })`. */
         export interface ParagraphUpdateData {
             /**
             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
@@ -14706,11 +15145,11 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
-        /** An interface for updating data on the ParagraphCollection object, for use in `paragraphCollection.set({ ... })`. */
+        /** An interface for updating data on the `ParagraphCollection` object, for use in `paragraphCollection.set({ ... })`. */
         export interface ParagraphCollectionUpdateData {
             items?: Word.Interfaces.ParagraphData[];
         }
-        /** An interface for updating data on the ParagraphFormat object, for use in `paragraphFormat.set({ ... })`. */
+        /** An interface for updating data on the `ParagraphFormat` object, for use in `paragraphFormat.set({ ... })`. */
         export interface ParagraphFormatUpdateData {
             /**
              * Specifies the alignment for the specified paragraphs.
@@ -14811,7 +15250,7 @@ export declare namespace Word {
              */
             widowControl?: boolean;
         }
-        /** An interface for updating data on the Range object, for use in `range.set({ ... })`. */
+        /** An interface for updating data on the `Range` object, for use in `range.set({ ... })`. */
         export interface RangeUpdateData {
             /**
             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
@@ -14842,11 +15281,11 @@ export declare namespace Word {
              */
             styleBuiltIn?: Word.BuiltInStyleName | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" | "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" | "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" | "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" | "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" | "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" | "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" | "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
         }
-        /** An interface for updating data on the RangeCollection object, for use in `rangeCollection.set({ ... })`. */
+        /** An interface for updating data on the `RangeCollection` object, for use in `rangeCollection.set({ ... })`. */
         export interface RangeCollectionUpdateData {
             items?: Word.Interfaces.RangeData[];
         }
-        /** An interface for updating data on the SearchOptions object, for use in `searchOptions.set({ ... })`. */
+        /** An interface for updating data on the `SearchOptions` object, for use in `searchOptions.set({ ... })`. */
         export interface SearchOptionsUpdateData {
             /**
              * Specifies a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
@@ -14898,7 +15337,7 @@ export declare namespace Word {
              */
             matchWildcards?: boolean;
         }
-        /** An interface for updating data on the Section object, for use in `section.set({ ... })`. */
+        /** An interface for updating data on the `Section` object, for use in `section.set({ ... })`. */
         export interface SectionUpdateData {
             /**
             * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
@@ -14908,11 +15347,11 @@ export declare namespace Word {
             */
             body?: Word.Interfaces.BodyUpdateData;
         }
-        /** An interface for updating data on the SectionCollection object, for use in `sectionCollection.set({ ... })`. */
+        /** An interface for updating data on the `SectionCollection` object, for use in `sectionCollection.set({ ... })`. */
         export interface SectionCollectionUpdateData {
             items?: Word.Interfaces.SectionData[];
         }
-        /** An interface for updating data on the Setting object, for use in `setting.set({ ... })`. */
+        /** An interface for updating data on the `Setting` object, for use in `setting.set({ ... })`. */
         export interface SettingUpdateData {
             /**
              * Specifies the value of the setting.
@@ -14922,59 +15361,57 @@ export declare namespace Word {
              */
             value?: any;
         }
-        /** An interface for updating data on the SettingCollection object, for use in `settingCollection.set({ ... })`. */
+        /** An interface for updating data on the `SettingCollection` object, for use in `settingCollection.set({ ... })`. */
         export interface SettingCollectionUpdateData {
             items?: Word.Interfaces.SettingData[];
         }
-        /** An interface for updating data on the StyleCollection object, for use in `styleCollection.set({ ... })`. */
+        /** An interface for updating data on the `StyleCollection` object, for use in `styleCollection.set({ ... })`. */
         export interface StyleCollectionUpdateData {
             items?: Word.Interfaces.StyleData[];
         }
-        /** An interface for updating data on the Style object, for use in `style.set({ ... })`. */
+        /** An interface for updating data on the `Style` object, for use in `style.set({ ... })`. */
         export interface StyleUpdateData {
             /**
-             * Specifies a BorderCollection object that represents all the borders for the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * Specifies a BorderCollection object that represents all the borders for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApiDesktop 1.1]
+            */
             borders?: Word.Interfaces.BorderCollectionUpdateData;
             /**
-             * Gets a font object that represents the character formatting of the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.5]
-             */
+            * Gets a font object that represents the character formatting of the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.5]
+            */
             font?: Word.Interfaces.FontUpdateData;
             /**
-             * Gets a ListTemplate object that represents the list formatting for the specified Style object.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+            *
+            * @remarks
+            * [Api set: WordApiDesktop 1.1]
+            */
             listTemplate?: Word.Interfaces.ListTemplateUpdateData;
             /**
-             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.5]
-             */
+            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.5]
+            */
             paragraphFormat?: Word.Interfaces.ParagraphFormatUpdateData;
             /**
-             * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.6]
-             */
+            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.6]
+            */
             shading?: Word.Interfaces.ShadingUpdateData;
             /**
-             * Gets a TableStyle object representing Style properties that can be applied to a table.
-             *
-             * @remarks
-             * [Api set: WordApi 1.6]
-             */
+            * Gets a TableStyle object representing Style properties that can be applied to a table.
+            *
+            * @remarks
+            * [Api set: WordApi 1.6]
+            */
             tableStyle?: Word.Interfaces.TableStyleUpdateData;
             /**
              * Specifies the name of an existing style to use as the base formatting of another style.
@@ -15023,7 +15460,7 @@ export declare namespace Word {
              */
             visibility?: boolean;
         }
-        /** An interface for updating data on the Shading object, for use in `shading.set({ ... })`. */
+        /** An interface for updating data on the `Shading` object, for use in `shading.set({ ... })`. */
         export interface ShadingUpdateData {
             /**
              * Specifies the color for the background of the object. You can provide the value in the '#RRGGBB' format or the color name.
@@ -15036,20 +15473,18 @@ export declare namespace Word {
              * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             foregroundPatternColor?: string;
             /**
              * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             texture?: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         }
-        /** An interface for updating data on the Table object, for use in `table.set({ ... })`. */
+        /** An interface for updating data on the `Table` object, for use in `table.set({ ... })`. */
         export interface TableUpdateData {
             /**
             * Gets the font. Use this to get and set font name, size, color, and other properties.
@@ -15157,22 +15592,20 @@ export declare namespace Word {
              */
             width?: number;
         }
-        /** An interface for updating data on the TableStyle object, for use in `tableStyle.set({ ... })`. */
+        /** An interface for updating data on the `TableStyle` object, for use in `tableStyle.set({ ... })`. */
         export interface TableStyleUpdateData {
             /**
              * Specifies the table's alignment against the page margin.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies whether lines in tables formatted with a specified style break across pages.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             allowBreakAcrossPage?: boolean;
             /**
@@ -15211,11 +15644,11 @@ export declare namespace Word {
              */
             topCellMargin?: number;
         }
-        /** An interface for updating data on the TableCollection object, for use in `tableCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableCollection` object, for use in `tableCollection.set({ ... })`. */
         export interface TableCollectionUpdateData {
             items?: Word.Interfaces.TableData[];
         }
-        /** An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`. */
+        /** An interface for updating data on the `TableRow` object, for use in `tableRow.set({ ... })`. */
         export interface TableRowUpdateData {
             /**
             * Gets the font. Use this to get and set font name, size, color, and other properties.
@@ -15260,11 +15693,11 @@ export declare namespace Word {
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         }
-        /** An interface for updating data on the TableRowCollection object, for use in `tableRowCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableRowCollection` object, for use in `tableRowCollection.set({ ... })`. */
         export interface TableRowCollectionUpdateData {
             items?: Word.Interfaces.TableRowData[];
         }
-        /** An interface for updating data on the TableCell object, for use in `tableCell.set({ ... })`. */
+        /** An interface for updating data on the `TableCell` object, for use in `tableCell.set({ ... })`. */
         export interface TableCellUpdateData {
             /**
             * Gets the body object of the cell.
@@ -15309,11 +15742,11 @@ export declare namespace Word {
              */
             verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";
         }
-        /** An interface for updating data on the TableCellCollection object, for use in `tableCellCollection.set({ ... })`. */
+        /** An interface for updating data on the `TableCellCollection` object, for use in `tableCellCollection.set({ ... })`. */
         export interface TableCellCollectionUpdateData {
             items?: Word.Interfaces.TableCellData[];
         }
-        /** An interface for updating data on the TableBorder object, for use in `tableBorder.set({ ... })`. */
+        /** An interface for updating data on the `TableBorder` object, for use in `tableBorder.set({ ... })`. */
         export interface TableBorderUpdateData {
             /**
              * Specifies the table border color.
@@ -15337,9 +15770,72 @@ export declare namespace Word {
              */
             width?: number;
         }
-        /** An interface for updating data on the TrackedChangeCollection object, for use in `trackedChangeCollection.set({ ... })`. */
+        /** An interface for updating data on the `TrackedChangeCollection` object, for use in `trackedChangeCollection.set({ ... })`. */
         export interface TrackedChangeCollectionUpdateData {
             items?: Word.Interfaces.TrackedChangeData[];
+        }
+        /** An interface for updating data on the `Shape` object, for use in `shape.set({ ... })`. */
+        export interface ShapeUpdateData {
+            /**
+            * Represents the body object of the shape. Only applies to TextBox shapes.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            body?: Word.Interfaces.BodyUpdateData;
+            /**
+             * The height, in points, of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * The distance, in points, from the left side of the shape to the horizontal relative position. For a floating shape, it will return 0 and can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: number;
+            /**
+             * The relative horizontal position of the shape. For a floating shape, it can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
+            /**
+             * The relative vertical position of the shape. For a floating shape, it can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+            /**
+             * The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape, it will return 0 and can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: number;
+            /**
+             * The width, in points, of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+        }
+        /** An interface for updating data on the `ShapeCollection` object, for use in `shapeCollection.set({ ... })`. */
+        export interface ShapeCollectionUpdateData {
+            items?: Word.Interfaces.ShapeData[];
         }
         /** An interface describing the data returned by calling `critiqueAnnotation.toJSON()`. */
         export interface CritiqueAnnotationData {
@@ -15375,55 +15871,63 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `body.toJSON()`. */
         export interface BodyData {
             /**
-             * Gets the collection of rich text content control objects in the body.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the collection of rich text content control objects in the body.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
-             * Gets the collection of field objects in the body.
-             *
-             * @remarks
-             * [Api set: WordApi 1.4]
-             */
+            * Gets the collection of field objects in the body.
+            *
+            * @remarks
+            * [Api set: WordApi 1.4]
+            */
             fields?: Word.Interfaces.FieldData[];
             /**
-             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             font?: Word.Interfaces.FontData;
             /**
-             * Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the collection of InlinePicture objects in the body. The collection doesn't include floating images.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-             * Gets the collection of list objects in the body.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the collection of list objects in the body.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             lists?: Word.Interfaces.ListData[];
             /**
-             * Gets the collection of paragraph objects in the body.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             *
-             * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
-             */
+            * Gets the collection of paragraph objects in the body.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            *
+            * Important: Paragraphs in tables aren't returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
+            */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
-             * Gets the collection of table objects in the body.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the collection of shape objects in the body, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shapes?: Word.Interfaces.ShapeData[];
+            /**
+            * Gets the collection of table objects in the body.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             tables?: Word.Interfaces.TableData[];
             /**
              * Specifies the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -15452,7 +15956,7 @@ export declare namespace Word {
              * @remarks
              * [Api set: WordApi 1.3]
              */
-            type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem";
+            type?: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell" | "Footnote" | "Endnote" | "NoteItem" | "Shape";
         }
         /** An interface describing the data returned by calling `border.toJSON()`. */
         export interface BorderData {
@@ -15460,40 +15964,35 @@ export declare namespace Word {
              * Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             color?: string;
             /**
              * Gets the location of the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             location?: Word.BorderLocation | "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All";
             /**
              * Specifies the border type for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             type?: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
             /**
              * Specifies whether the border is visible.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             visible?: boolean;
             /**
              * Specifies the width for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             width?: Word.BorderWidth | "None" | "Pt025" | "Pt050" | "Pt075" | "Pt100" | "Pt150" | "Pt225" | "Pt300" | "Pt450" | "Pt600" | "Mixed";
         }
@@ -15685,70 +16184,76 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControl.toJSON()`. */
         export interface ContentControlData {
             /**
-             * Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
-             *
-             * @remarks
-             * [Api set: WordApi 1.7]
-             */
+            * Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
+            *
+            * @remarks
+            * [Api set: WordApi 1.7]
+            */
             checkboxContentControl?: Word.Interfaces.CheckboxContentControlData;
             /**
-             * Gets the collection of content control objects in the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the data of the content control when its type is 'ComboBox'. It's `null` otherwise.
+            *
+            * @remarks
+            * [Api set: WordApi 1.9]
+            */
+            comboBoxContentControl?: Word.Interfaces.ComboBoxContentControlData;
+            /**
+            * Gets the collection of content control objects in the content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
-             * Specifies the dropdown list-related data if the content control's type is 'DropDownList'. It's null otherwise.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * Gets the data of the content control when its type is 'DropDownList'. It's `null` otherwise.
+            *
+            * @remarks
+            * [Api set: WordApi 1.9]
+            */
             dropDownListContentControl?: Word.Interfaces.DropDownListContentControlData;
             /**
-             * Gets the collection of field objects in the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.4]
-             */
+            * Gets the collection of field objects in the content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.4]
+            */
             fields?: Word.Interfaces.FieldData[];
             /**
-             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             font?: Word.Interfaces.FontData;
             /**
-             * Gets the collection of InlinePicture objects in the content control. The collection doesn't include floating images.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the collection of InlinePicture objects in the content control. The collection doesn't include floating images.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
-             * Gets the collection of list objects in the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the collection of list objects in the content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             lists?: Word.Interfaces.ListData[];
             /**
-             * Gets the collection of paragraph objects in the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             *
-             * Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
-             */
+            * Gets the collection of paragraph objects in the content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            *
+            * Important: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this content control aren't returned. From requirement set 1.3, paragraphs in such tables are also returned.
+            */
             paragraphs?: Word.Interfaces.ParagraphData[];
             /**
-             * Gets the collection of table objects in the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the collection of table objects in the content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             tables?: Word.Interfaces.TableData[];
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
@@ -15787,8 +16292,6 @@ export declare namespace Word {
             id?: number;
             /**
              * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                        
-                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -15858,27 +16361,24 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `contentControlListItem.toJSON()`. */
         export interface ContentControlListItemData {
             /**
-             * Specifies the display text of a list item for a dropdown list content control.
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             displayText?: string;
             /**
              * Specifies the index location of a content control list item in the collection of list items.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             index?: number;
             /**
-             * Specifies the programmatic value of a list item for a dropdown list content control.
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             value?: string;
         }
@@ -16081,7 +16581,7 @@ export declare namespace Word {
              */
             category?: string;
             /**
-             * Specifies the comments of the document.
+             * Specifies the Comments field in the metadata of the document. These have no connection to comments by users made in the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -16182,6 +16682,9 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `dropDownListContentControl.toJSON()`. */
         export interface DropDownListContentControlData {
         }
+        /** An interface describing the data returned by calling `comboBoxContentControl.toJSON()`. */
+        export interface ComboBoxContentControlData {
+        }
         /** An interface describing the data returned by calling `field.toJSON()`. */
         export interface FieldData {
             /**
@@ -16201,7 +16704,7 @@ export declare namespace Word {
              */
             code?: string;
             /**
-             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi 1.5]
@@ -16225,8 +16728,7 @@ export declare namespace Word {
              * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             showCodes?: boolean;
             /**
@@ -16273,7 +16775,7 @@ export declare namespace Word {
              */
             hidden?: boolean;
             /**
-             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -16363,8 +16865,7 @@ export declare namespace Word {
              * Gets the format of the inline image.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
             /**
@@ -16389,7 +16890,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `list.toJSON()`. */
         export interface ListData {
             /**
-            * Gets paragraphs in the list. Read-only.
+            * Gets paragraphs in the list.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -16451,88 +16952,77 @@ export declare namespace Word {
             * Gets a Font object that represents the character formatting of the specified object.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiDesktop 1.1]
             */
             font?: Word.Interfaces.FontData;
             /**
              * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies the name of the style that's linked to the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             linkedStyle?: string;
             /**
              * Specifies the number format for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberFormat?: string;
             /**
              * Specifies the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberPosition?: number;
             /**
              * Specifies the number style for the list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberStyle?: Word.ListBuiltInNumberStyle | "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter" | "Ordinal" | "CardinalText" | "OrdinalText" | "Kanji" | "KanjiDigit" | "AiueoHalfWidth" | "IrohaHalfWidth" | "ArabicFullWidth" | "KanjiTraditional" | "KanjiTraditional2" | "NumberInCircle" | "Aiueo" | "Iroha" | "ArabicLZ" | "Bullet" | "Ganada" | "Chosung" | "GBNum1" | "GBNum2" | "GBNum3" | "GBNum4" | "Zodiac1" | "Zodiac2" | "Zodiac3" | "TradChinNum1" | "TradChinNum2" | "TradChinNum3" | "TradChinNum4" | "SimpChinNum1" | "SimpChinNum2" | "SimpChinNum3" | "SimpChinNum4" | "HanjaRead" | "HanjaReadDigit" | "Hangul" | "Hanja" | "Hebrew1" | "Arabic1" | "Hebrew2" | "Arabic2" | "HindiLetter1" | "HindiLetter2" | "HindiArabic" | "HindiCardinalText" | "ThaiLetter" | "ThaiArabic" | "ThaiCardinalText" | "VietCardinalText" | "LowercaseRussian" | "UppercaseRussian" | "LowercaseGreek" | "UppercaseGreek" | "ArabicLZ2" | "ArabicLZ3" | "ArabicLZ4" | "LowercaseTurkish" | "UppercaseTurkish" | "LowercaseBulgarian" | "UppercaseBulgarian" | "PictureBullet" | "Legal" | "LegalLZ";
             /**
              * Specifies the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             resetOnHigher?: number;
             /**
              * Specifies the starting number for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             startAt?: number;
             /**
              * Specifies the tab position for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             tabPosition?: number;
             /**
              * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             textPosition?: number;
             /**
              * Specifies the character inserted after the number for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             trailingCharacter?: Word.TrailingCharacter | "TrailingTab" | "TrailingSpace" | "TrailingNone";
         }
@@ -16546,16 +17036,14 @@ export declare namespace Word {
             * Gets a ListLevels collection that represents all the levels for the specified ListTemplate.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiDesktop 1.1]
             */
             listLevels?: Word.Interfaces.ListLevelData[];
             /**
              * Specifies whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outlineNumbered?: boolean;
         }
@@ -16624,6 +17112,14 @@ export declare namespace Word {
             * [Api set: WordApi 1.3]
             */
             listItemOrNullObject?: Word.Interfaces.ListItemData;
+            /**
+            * Gets the collection of shape objects anchored in the paragraph, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shapes?: Word.Interfaces.ShapeData[];
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
              *
@@ -16873,6 +17369,14 @@ export declare namespace Word {
             */
             inlinePictures?: Word.Interfaces.InlinePictureData[];
             /**
+            * Gets the collection of shape objects anchored in the range, including both inline and floating shapes. Currently, only TextBox shapes are supported.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            shapes?: Word.Interfaces.ShapeData[];
+            /**
              * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
              *
              * @remarks
@@ -17006,48 +17510,46 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `style.toJSON()`. */
         export interface StyleData {
             /**
-             * Specifies a BorderCollection object that represents all the borders for the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * Specifies a BorderCollection object that represents all the borders for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApiDesktop 1.1]
+            */
             borders?: Word.Interfaces.BorderData[];
             /**
-             * Gets a font object that represents the character formatting of the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.5]
-             */
+            * Gets a font object that represents the character formatting of the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.5]
+            */
             font?: Word.Interfaces.FontData;
             /**
-             * Gets a ListTemplate object that represents the list formatting for the specified Style object.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+            *
+            * @remarks
+            * [Api set: WordApiDesktop 1.1]
+            */
             listTemplate?: Word.Interfaces.ListTemplateData;
             /**
-             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.5]
-             */
+            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.5]
+            */
             paragraphFormat?: Word.Interfaces.ParagraphFormatData;
             /**
-             * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.6]
-             */
+            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.6]
+            */
             shading?: Word.Interfaces.ShadingData;
             /**
-             * Gets a TableStyle object representing Style properties that can be applied to a table.
-             *
-             * @remarks
-             * [Api set: WordApi 1.6]
-             */
+            * Gets a TableStyle object representing Style properties that can be applied to a table.
+            *
+            * @remarks
+            * [Api set: WordApi 1.6]
+            */
             tableStyle?: Word.Interfaces.TableStyleData;
             /**
              * Specifies the name of an existing style to use as the base formatting of another style.
@@ -17152,16 +17654,14 @@ export declare namespace Word {
              * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             foregroundPatternColor?: string;
             /**
              * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             texture?: Word.ShadingTextureType | "DarkDiagonalDown" | "DarkDiagonalUp" | "DarkGrid" | "DarkHorizontal" | "DarkTrellis" | "DarkVertical" | "LightDiagonalDown" | "LightDiagonalUp" | "LightGrid" | "LightHorizontal" | "LightTrellis" | "LightVertical" | "None" | "Percent10" | "Percent12Pt5" | "Percent15" | "Percent20" | "Percent25" | "Percent30" | "Percent35" | "Percent37Pt5" | "Percent40" | "Percent45" | "Percent5" | "Percent50" | "Percent55" | "Percent60" | "Percent62Pt5" | "Percent65" | "Percent70" | "Percent75" | "Percent80" | "Percent85" | "Percent87Pt5" | "Percent90" | "Percent95" | "Solid";
         }
@@ -17321,16 +17821,14 @@ export declare namespace Word {
              * Specifies the table's alignment against the page margin.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";
             /**
              * Specifies whether lines in tables formatted with a specified style break across pages.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             allowBreakAcrossPage?: boolean;
             /**
@@ -17376,7 +17874,7 @@ export declare namespace Word {
         /** An interface describing the data returned by calling `tableRow.toJSON()`. */
         export interface TableRowData {
             /**
-            * Gets cells. Read-only.
+            * Gets cells.
             *
             * @remarks
             * [Api set: WordApi 1.3]
@@ -17586,6 +18084,85 @@ export declare namespace Word {
         export interface TrackedChangeCollectionData {
             items?: Word.Interfaces.TrackedChangeData[];
         }
+        /** An interface describing the data returned by calling `shape.toJSON()`. */
+        export interface ShapeData {
+            /**
+            * Represents the body object of the shape. Only applies to TextBox shapes.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            body?: Word.Interfaces.BodyData;
+            /**
+             * The height, in points, of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             * Gets an integer that represents the shape identifier.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: number;
+            /**
+             * The distance, in points, from the left side of the shape to the horizontal relative position. For a floating shape, it will return 0 and can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: number;
+            /**
+             * The relative horizontal position of the shape. For a floating shape, it can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relativeHorizontalPosition?: Word.RelativeHorizontalPosition | "Margin" | "Page" | "Column" | "Character" | "LeftMargin" | "RightMargin" | "InsideMargin" | "OutsideMargin";
+            /**
+             * The relative vertical position of the shape. For a floating shape, it can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relativeVerticalPosition?: Word.RelativeVerticalPosition | "Margin" | "Page" | "Paragraph" | "Line" | "TopMargin" | "BottomMargin" | "InsideMargin" | "OutsideMargin";
+            /**
+             * The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape, it will return 0 and can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: number;
+            /**
+             * Gets the shape type. Currently, only TextBox shapes are supported.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: Word.ShapeType | "Unsupported" | "TextBox";
+            /**
+             * The width, in points, of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
+        }
+        /** An interface describing the data returned by calling `shapeCollection.toJSON()`. */
+        export interface ShapeCollectionData {
+            items?: Word.Interfaces.ShapeData[];
+        }
         /**
          * Represents an annotation wrapper around critique displayed in the document.
          *
@@ -17594,7 +18171,7 @@ export declare namespace Word {
          */
         export interface CritiqueAnnotationLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17620,7 +18197,7 @@ export declare namespace Word {
          */
         export interface AnnotationLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17653,7 +18230,7 @@ export declare namespace Word {
          */
         export interface AnnotationCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17686,7 +18263,7 @@ export declare namespace Word {
          */
         export interface BodyLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17771,52 +18348,46 @@ export declare namespace Word {
          * Represents the Border object for text, a paragraph, or a table.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface BorderLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
              * Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             color?: boolean;
             /**
              * Gets the location of the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             location?: boolean;
             /**
              * Specifies the border type for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             type?: boolean;
             /**
              * Specifies whether the border is visible.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             visible?: boolean;
             /**
              * Specifies the width for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             width?: boolean;
         }
@@ -17824,52 +18395,46 @@ export declare namespace Word {
          * Represents the collection of border styles.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface BorderCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the color for the border. Color is specified in ‘#RRGGBB’ format or by using the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             color?: boolean;
             /**
              * For EACH ITEM in the collection: Gets the location of the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             location?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the border type for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             type?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies whether the border is visible.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             visible?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the width for the border.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             width?: boolean;
         }
@@ -17881,7 +18446,7 @@ export declare namespace Word {
          */
         export interface CheckboxContentControlLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17900,7 +18465,7 @@ export declare namespace Word {
          */
         export interface CommentLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -17961,7 +18526,7 @@ export declare namespace Word {
          */
         export interface CommentCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18020,7 +18585,7 @@ export declare namespace Word {
          */
         export interface CommentContentRangeLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18081,7 +18646,7 @@ export declare namespace Word {
          */
         export interface CommentReplyLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18142,7 +18707,7 @@ export declare namespace Word {
          */
         export interface CommentReplyCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18196,78 +18761,78 @@ export declare namespace Word {
             id?: boolean;
         }
         /**
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         export interface ContentControlLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
-             *
-             * @remarks
-             * [Api set: WordApi 1.7]
-             */
+            * Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
+            *
+            * @remarks
+            * [Api set: WordApi 1.7]
+            */
             checkboxContentControl?: Word.Interfaces.CheckboxContentControlLoadOptions;
             /**
-             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-             * Gets the parent body of the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the parent body of the content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-             * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-             * Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-             * Gets the table that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the table that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-             * Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table cell.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-             * Gets the table cell that contains the content control. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the table cell that contains the content control. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-             * Gets the table that contains the content control. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the table that contains the content control. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              * Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
@@ -18306,8 +18871,6 @@ export declare namespace Word {
             id?: boolean;
             /**
              * Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                        
-                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -18371,78 +18934,78 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
+         * Contains a collection of {@link Word.ContentControl} objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content controls are supported.
          *
          * @remarks
          * [Api set: WordApi 1.1]
          */
         export interface ContentControlCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
-             *
-             * @remarks
-             * [Api set: WordApi 1.7]
-             */
+            * For EACH ITEM in the collection: Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
+            *
+            * @remarks
+            * [Api set: WordApi 1.7]
+            */
             checkboxContentControl?: Word.Interfaces.CheckboxContentControlLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the parent body of the content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the parent body of the content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws an `ItemNotFound` error if there isn't a parent content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the content control that contains the content control. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the table that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the table that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table cell.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the table cell that contains the content control. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the table cell that contains the content control. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the table that contains the content control. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the table that contains the content control. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
@@ -18481,8 +19044,6 @@ export declare namespace Word {
             id?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-                        
-                        Note: The set operation for this property isn't supported in Word on the web.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -18546,76 +19107,68 @@ export declare namespace Word {
             type?: boolean;
         }
         /**
-         * Represents a list item in a dropdown list content control.
+         * Represents a list item in a dropdown list or combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         export interface ContentControlListItemLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * Specifies the display text of a list item for a dropdown list content control.
+             * Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             displayText?: boolean;
             /**
              * Specifies the index location of a content control list item in the collection of list items.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             index?: boolean;
             /**
-             * Specifies the programmatic value of a list item for a dropdown list content control.
+             * Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             value?: boolean;
         }
         /**
-         * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list content control.
+         * Contains a collection of {@link Word.ContentControlListItem} objects that represent the items in a dropdown list or combo box content control.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApi 1.9]
          */
         export interface ContentControlListItemCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list content control.
+             * For EACH ITEM in the collection: Specifies the display text of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             displayText?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the index location of a content control list item in the collection of list items.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             index?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list content control.
+             * For EACH ITEM in the collection: Specifies the programmatic value of a list item for a dropdown list or combo box content control.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApi 1.9]
              */
             value?: boolean;
         }
@@ -18627,7 +19180,7 @@ export declare namespace Word {
          */
         export interface CustomPropertyLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18660,7 +19213,7 @@ export declare namespace Word {
          */
         export interface CustomPropertyCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18693,7 +19246,7 @@ export declare namespace Word {
          */
         export interface CustomXmlPartLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18719,7 +19272,7 @@ export declare namespace Word {
          */
         export interface CustomXmlPartCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18745,7 +19298,7 @@ export declare namespace Word {
          */
         export interface CustomXmlPartScopedCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18771,7 +19324,7 @@ export declare namespace Word {
          */
         export interface DocumentLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18811,7 +19364,7 @@ export declare namespace Word {
          */
         export interface DocumentCreatedLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18844,7 +19397,7 @@ export declare namespace Word {
          */
         export interface DocumentPropertiesLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -18869,7 +19422,7 @@ export declare namespace Word {
              */
             category?: boolean;
             /**
-             * Specifies the comments of the document.
+             * Specifies the Comments field in the metadata of the document. These have no connection to comments by users made in the document.
              *
              * @remarks
              * [Api set: WordApi 1.3]
@@ -18972,10 +19525,16 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.4]
+         *
+         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField` API introduced in requirement set 1.5.
+         * Support for managing fields is similar to what's available in the Word UI.
+         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
+         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+         * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19044,7 +19603,7 @@ export declare namespace Word {
              */
             code?: boolean;
             /**
-             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+             * Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi 1.5]
@@ -19068,8 +19627,7 @@ export declare namespace Word {
              * Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             showCodes?: boolean;
             /**
@@ -19085,10 +19643,16 @@ export declare namespace Word {
          *
          * @remarks
          * [Api set: WordApi 1.4]
+         *
+         * Important: To learn more about which fields can be inserted, see the `Word.Range.insertField API` introduced in requirement set 1.5.
+         * Support for managing fields is similar to what's available in the Word UI.
+         * However, while the Word UI on the web primarily only supports fields as read-only (see {@link https://support.microsoft.com/office/d8f46094-13c3-4966-98c3-259748f3caf1 | Field codes in Word for the web}),
+         * the `Addin` field is editable. To learn more about Word UI clients that more fully support fields,
+         * see the product list at the beginning of {@link https://support.microsoft.com/office/c429bbb0-8669-48a7-bd24-bab6ba6b06bb | Insert, edit, and view fields in Word}.
          */
         export interface FieldCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19157,7 +19721,7 @@ export declare namespace Word {
              */
             code?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+             * For EACH ITEM in the collection: Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general exception when code attempts to set it.
              *
              * @remarks
              * [Api set: WordApi 1.5]
@@ -19181,8 +19745,7 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Specifies whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             showCodes?: boolean;
             /**
@@ -19201,7 +19764,7 @@ export declare namespace Word {
          */
         export interface FontLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19234,7 +19797,7 @@ export declare namespace Word {
              */
             hidden?: boolean;
             /**
-             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * Specifies the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
              *
              * @remarks
              * [Api set: WordApi 1.1]
@@ -19298,7 +19861,7 @@ export declare namespace Word {
          */
         export interface InlinePictureLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19382,8 +19945,7 @@ export declare namespace Word {
              * Gets the format of the inline image.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             imageFormat?: boolean;
             /**
@@ -19409,57 +19971,57 @@ export declare namespace Word {
          */
         export interface InlinePictureCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
-             *
-             * @remarks
-             * [Api set: WordApi 1.2]
-             */
+            * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
+            *
+            * @remarks
+            * [Api set: WordApi 1.2]
+            */
             paragraph?: Word.Interfaces.ParagraphLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws an `ItemNotFound` error if there isn't a parent content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the content control that contains the inline image. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the content control that contains the inline image. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws an `ItemNotFound` error if it isn't contained in a table.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws an `ItemNotFound` error if it isn't contained in a table.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws an `ItemNotFound` error if it isn't contained in a table cell.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the table cell that contains the inline image. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets the table that contains the inline image. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * For EACH ITEM in the collection: Gets the table that contains the inline image. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies a string that represents the alternative text associated with the inline image.
@@ -19493,8 +20055,7 @@ export declare namespace Word {
              * For EACH ITEM in the collection: Gets the format of the inline image.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             imageFormat?: boolean;
             /**
@@ -19520,7 +20081,7 @@ export declare namespace Word {
          */
         export interface ListLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19553,7 +20114,7 @@ export declare namespace Word {
          */
         export interface ListCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19586,7 +20147,7 @@ export declare namespace Word {
          */
         export interface ListItemLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19615,100 +20176,88 @@ export declare namespace Word {
          * Represents a list level.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface ListLevelLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
             * Gets a Font object that represents the character formatting of the specified object.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiDesktop 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
              * Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: boolean;
             /**
              * Specifies the name of the style that's linked to the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             linkedStyle?: boolean;
             /**
              * Specifies the number format for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberFormat?: boolean;
             /**
              * Specifies the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberPosition?: boolean;
             /**
              * Specifies the number style for the list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberStyle?: boolean;
             /**
              * Specifies the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             resetOnHigher?: boolean;
             /**
              * Specifies the starting number for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             startAt?: boolean;
             /**
              * Specifies the tab position for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             tabPosition?: boolean;
             /**
              * Specifies the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             textPosition?: boolean;
             /**
              * Specifies the character inserted after the number for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             trailingCharacter?: boolean;
         }
@@ -19716,100 +20265,88 @@ export declare namespace Word {
          * Contains a collection of {@link Word.ListLevel} objects.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface ListLevelCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
             * For EACH ITEM in the collection: Gets a Font object that represents the character formatting of the specified object.
             *
             * @remarks
-            * [Api set: WordApi BETA (PREVIEW ONLY)]
-            * @beta
+            * [Api set: WordApiDesktop 1.1]
             */
             font?: Word.Interfaces.FontLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies the horizontal alignment of the list level. The value can be 'Left', 'Centered', or 'Right'.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the name of the style that's linked to the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             linkedStyle?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the number format for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberFormat?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the position (in points) of the number or bullet for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberPosition?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the number style for the list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             numberStyle?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the list level that must appear before the specified list level restarts numbering at 1.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             resetOnHigher?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the starting number for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             startAt?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the tab position for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             tabPosition?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the position (in points) for the second line of wrapping text for the specified list level object.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             textPosition?: boolean;
             /**
              * For EACH ITEM in the collection: Specifies the character inserted after the number for the specified list level.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             trailingCharacter?: boolean;
         }
@@ -19817,20 +20354,18 @@ export declare namespace Word {
          * Represents a ListTemplate.
          *
          * @remarks
-         * [Api set: WordApi BETA (PREVIEW ONLY)]
-         * @beta
+         * [Api set: WordApiDesktop 1.1]
          */
         export interface ListTemplateLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
              * Specifies whether the specified ListTemplate object is outline numbered.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             outlineNumbered?: boolean;
         }
@@ -19842,7 +20377,7 @@ export declare namespace Word {
          */
         export interface NoteItemLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19875,7 +20410,7 @@ export declare namespace Word {
          */
         export interface NoteItemCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -19908,92 +20443,92 @@ export declare namespace Word {
          */
         export interface ParagraphLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-             * Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph isn't in a list.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph isn't in a list.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             list?: Word.Interfaces.ListLoadOptions;
             /**
-             * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph isn't part of a list.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             listItem?: Word.Interfaces.ListItemLoadOptions;
             /**
-             * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the ListItem for the paragraph. If the paragraph isn't part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
             /**
-             * Gets the List to which this paragraph belongs. If the paragraph isn't in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the List to which this paragraph belongs. If the paragraph isn't in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             listOrNullObject?: Word.Interfaces.ListLoadOptions;
             /**
-             * Gets the parent body of the paragraph.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the parent body of the paragraph.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentBody?: Word.Interfaces.BodyLoadOptions;
             /**
-             * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
             /**
-             * Gets the content control that contains the paragraph. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the content control that contains the paragraph. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
             /**
-             * Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it isn't contained in a table.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it isn't contained in a table.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTable?: Word.Interfaces.TableLoadOptions;
             /**
-             * Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it isn't contained in a table cell.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it isn't contained in a table cell.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableCell?: Word.Interfaces.TableCellLoadOptions;
             /**
-             * Gets the table cell that contains the paragraph. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the table cell that contains the paragraph. If it isn't contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
             /**
-             * Gets the table that contains the paragraph. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
-             *
-             * @remarks
-             * [Api set: WordApi 1.3]
-             */
+            * Gets the table that contains the paragraph. If it isn't contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://learn.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+            *
+            * @remarks
+            * [Api set: WordApi 1.3]
+            */
             parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
             /**
              * Specifies the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
@@ -20123,7 +20658,7 @@ export declare namespace Word {
          */
         export interface ParagraphCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -20338,7 +20873,7 @@ export declare namespace Word {
          */
         export interface ParagraphFormatLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -20448,7 +20983,7 @@ export declare namespace Word {
          */
         export interface RangeLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -20551,7 +21086,7 @@ export declare namespace Word {
          */
         export interface RangeCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -20655,7 +21190,7 @@ export declare namespace Word {
          */
         export interface SearchOptionsLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -20716,15 +21251,15 @@ export declare namespace Word {
          */
         export interface SectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
-             */
+            * Gets the body object of the section. This doesn't include the header/footer and other section metadata.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
+            */
             body?: Word.Interfaces.BodyLoadOptions;
         }
         /**
@@ -20735,14 +21270,14 @@ export declare namespace Word {
          */
         export interface SectionCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Gets the body object of the section. This doesn't include the header/footer and other section metadata.
-             *
-             * @remarks
-             * [Api set: WordApi 1.1]
+            * For EACH ITEM in the collection: Gets the body object of the section. This doesn't include the header/footer and other section metadata.
+            *
+            * @remarks
+            * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyLoadOptions;
         }
@@ -20754,7 +21289,7 @@ export declare namespace Word {
          */
         export interface SettingLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -20780,7 +21315,7 @@ export declare namespace Word {
          */
         export interface SettingCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -20806,52 +21341,50 @@ export declare namespace Word {
          */
         export interface StyleCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * For EACH ITEM in the collection: Specifies a BorderCollection object that represents all the borders for the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * For EACH ITEM in the collection: Specifies a BorderCollection object that represents all the borders for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApiDesktop 1.1]
+            */
             borders?: Word.Interfaces.BorderCollectionLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a font object that represents the character formatting of the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.5]
-             */
+            * For EACH ITEM in the collection: Gets a font object that represents the character formatting of the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.5]
+            */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a ListTemplate object that represents the list formatting for the specified Style object.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * For EACH ITEM in the collection: Gets a ListTemplate object that represents the list formatting for the specified Style object.
+            *
+            * @remarks
+            * [Api set: WordApiDesktop 1.1]
+            */
             listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.5]
-             */
+            * For EACH ITEM in the collection: Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.5]
+            */
             paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.6]
-             */
+            * For EACH ITEM in the collection: Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.6]
+            */
             shading?: Word.Interfaces.ShadingLoadOptions;
             /**
-             * For EACH ITEM in the collection: Gets a TableStyle object representing Style properties that can be applied to a table.
-             *
-             * @remarks
-             * [Api set: WordApi 1.6]
-             */
+            * For EACH ITEM in the collection: Gets a TableStyle object representing Style properties that can be applied to a table.
+            *
+            * @remarks
+            * [Api set: WordApi 1.6]
+            */
             tableStyle?: Word.Interfaces.TableStyleLoadOptions;
             /**
              * For EACH ITEM in the collection: Specifies the name of an existing style to use as the base formatting of another style.
@@ -20951,52 +21484,50 @@ export declare namespace Word {
          */
         export interface StyleLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
-             * Specifies a BorderCollection object that represents all the borders for the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * Specifies a BorderCollection object that represents all the borders for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApiDesktop 1.1]
+            */
             borders?: Word.Interfaces.BorderCollectionLoadOptions;
             /**
-             * Gets a font object that represents the character formatting of the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.5]
-             */
+            * Gets a font object that represents the character formatting of the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.5]
+            */
             font?: Word.Interfaces.FontLoadOptions;
             /**
-             * Gets a ListTemplate object that represents the list formatting for the specified Style object.
-             *
-             * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
-             */
+            * Gets a ListTemplate object that represents the list formatting for the specified Style object.
+            *
+            * @remarks
+            * [Api set: WordApiDesktop 1.1]
+            */
             listTemplate?: Word.Interfaces.ListTemplateLoadOptions;
             /**
-             * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.5]
-             */
+            * Gets a ParagraphFormat object that represents the paragraph settings for the specified style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.5]
+            */
             paragraphFormat?: Word.Interfaces.ParagraphFormatLoadOptions;
             /**
-             * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
-             *
-             * @remarks
-             * [Api set: WordApi 1.6]
-             */
+            * Gets a Shading object that represents the shading for the specified style. Not applicable to List style.
+            *
+            * @remarks
+            * [Api set: WordApi 1.6]
+            */
             shading?: Word.Interfaces.ShadingLoadOptions;
             /**
-             * Gets a TableStyle object representing Style properties that can be applied to a table.
-             *
-             * @remarks
-             * [Api set: WordApi 1.6]
-             */
+            * Gets a TableStyle object representing Style properties that can be applied to a table.
+            *
+            * @remarks
+            * [Api set: WordApi 1.6]
+            */
             tableStyle?: Word.Interfaces.TableStyleLoadOptions;
             /**
              * Specifies the name of an existing style to use as the base formatting of another style.
@@ -21096,7 +21627,7 @@ export declare namespace Word {
          */
         export interface ShadingLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21110,16 +21641,14 @@ export declare namespace Word {
              * Specifies the color for the foreground of the object. You can provide the value in the '#RRGGBB' format or the color name.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             foregroundPatternColor?: boolean;
             /**
              * Specifies the shading texture of the object. To learn more about how to apply backgrounds like textures, see {@link https://support.microsoft.com/office/db481e61-7af6-4063-bbcd-b276054a5515 | Add, change, or delete the background color in Word}.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             texture?: boolean;
         }
@@ -21131,7 +21660,7 @@ export declare namespace Word {
          */
         export interface TableLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21318,23 +21847,21 @@ export declare namespace Word {
          */
         export interface TableStyleLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
              * Specifies the table's alignment against the page margin.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             alignment?: boolean;
             /**
              * Specifies whether lines in tables formatted with a specified style break across pages.
              *
              * @remarks
-             * [Api set: WordApi BETA (PREVIEW ONLY)]
-             * @beta
+             * [Api set: WordApiDesktop 1.1]
              */
             allowBreakAcrossPage?: boolean;
             /**
@@ -21381,7 +21908,7 @@ export declare namespace Word {
          */
         export interface TableCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21568,7 +22095,7 @@ export declare namespace Word {
          */
         export interface TableRowLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21650,7 +22177,7 @@ export declare namespace Word {
          */
         export interface TableRowCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21732,7 +22259,7 @@ export declare namespace Word {
          */
         export interface TableCellLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21821,7 +22348,7 @@ export declare namespace Word {
          */
         export interface TableCellCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21910,7 +22437,7 @@ export declare namespace Word {
          */
         export interface TableBorderLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21943,7 +22470,7 @@ export declare namespace Word {
          */
         export interface TrackedChangeLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -21983,7 +22510,7 @@ export declare namespace Word {
          */
         export interface TrackedChangeCollectionLoadOptions {
             /**
-              Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
              */
             $all?: boolean;
             /**
@@ -22015,6 +22542,176 @@ export declare namespace Word {
              */
             type?: boolean;
         }
+        /**
+         * Represents a shape in the header footer or document body. Currently, only TextBox shapes are supported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ShapeLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * Represents the body object of the shape. Only applies to TextBox shapes.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+            /**
+             * The height, in points, of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * Gets an integer that represents the shape identifier.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * The distance, in points, from the left side of the shape to the horizontal relative position. For a floating shape, it will return 0 and can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             * The relative horizontal position of the shape. For a floating shape, it can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relativeHorizontalPosition?: boolean;
+            /**
+             * The relative vertical position of the shape. For a floating shape, it can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relativeVerticalPosition?: boolean;
+            /**
+             * The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape, it will return 0 and can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             * Gets the shape type. Currently, only TextBox shapes are supported.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * The width, in points, of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+        }
+        /**
+         * Contains a collection of {@link Word.Shape} objects. Currently, only TextBox shapes are supported.
+         *
+         * @remarks
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface ShapeCollectionLoadOptions {
+            /**
+              Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`) but not the navigational properties (such as `Range.format.fill.color`).
+             */
+            $all?: boolean;
+            /**
+            * For EACH ITEM in the collection: Represents the body object of the shape. Only applies to TextBox shapes.
+            *
+            * @remarks
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            body?: Word.Interfaces.BodyLoadOptions;
+            /**
+             * For EACH ITEM in the collection: The height, in points, of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets an integer that represents the shape identifier.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             * For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the horizontal relative position. For a floating shape, it will return 0 and can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
+            /**
+             * For EACH ITEM in the collection: The relative horizontal position of the shape. For a floating shape, it can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relativeHorizontalPosition?: boolean;
+            /**
+             * For EACH ITEM in the collection: The relative vertical position of the shape. For a floating shape, it can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            relativeVerticalPosition?: boolean;
+            /**
+             * For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the vertical relative position. For a floating shape, it will return 0 and can't be set.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             * For EACH ITEM in the collection: Gets the shape type. Currently, only TextBox shapes are supported.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            type?: boolean;
+            /**
+             * For EACH ITEM in the collection: The width, in points, of the shape.
+             *
+             * @remarks
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
+        }
     }
 }
 export declare namespace Word {
@@ -22029,19 +22726,19 @@ export declare namespace Word {
     }
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously created API objects.
-     * @param objects - An array of previously created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param objects - An array of previously created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by `context.sync()`.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of `context.sync()`). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by `context.sync()`.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of `context.sync()`). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of `context.sync()`). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
     export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
 }

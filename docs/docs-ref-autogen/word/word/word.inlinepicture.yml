@@ -101,7 +101,7 @@ properties:
     fullName: imageFormat
     summary: Gets the format of the inline image.
     remarks: >-
-      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+      \[ [API set: WordApiDesktop 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
       #### Examples
@@ -110,18 +110,17 @@ properties:
       ```TypeScript
 
       // Link to full sample:
-      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-get-pictures.yaml
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/15-images/insert-and-get-pictures.yaml
 
 
       // Gets the first image in the document.
 
       await Word.run(async (context) => {
-        const firstPicture = context.document.body.inlinePictures.getFirst();
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
         firstPicture.load("width, height, imageFormat");
 
         await context.sync();
-        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-        console.log(`Image format: ${firstPicture.imageFormat}`);
+        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`, `Image format: ${firstPicture.imageFormat}`);
         // Get the image encoded as Base64.
         const base64 = firstPicture.getBase64ImageSrc();
 
@@ -130,7 +129,7 @@ properties:
       });
 
       ```
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -302,11 +301,11 @@ methods:
       // Gets the first image in the document.
 
       await Word.run(async (context) => {
-        const firstPicture = context.document.body.inlinePictures.getFirst();
-        firstPicture.load("width, height");
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
+        firstPicture.load("width, height, imageFormat");
 
         await context.sync();
-        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`, `Image format: ${firstPicture.imageFormat}`);
         // Get the image encoded as Base64.
         const base64 = firstPicture.getBase64ImageSrc();
 
@@ -472,8 +471,8 @@ methods:
       \[ [API set: WordApi 1.2](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
-      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
+      Consider replacing such a form field with a content control or other option appropriate for your scenario.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -760,8 +759,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.InlinePicture object is an API object, the `toJSON` method returns a
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.InlinePicture` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`<!-- -->) that contains shallow copies of any
       loaded child properties from the original object.
     remarks: ''

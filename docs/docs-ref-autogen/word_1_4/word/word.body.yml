@@ -4,7 +4,23 @@ uid: 'word!Word.Body:class'
 package: word!
 fullName: Word.Body
 summary: Represents the body of a document or a section.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: |-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+  #### Examples
+
+  ```TypeScript
+  // Get the body object and read its font size.
+  await Word.run(async (context) => {
+      // Create a proxy object for the document body.
+      const body = context.document.body;
+      body.load("font/size");
+
+      await context.sync();
+
+      console.log("Font size: " + body.font.size);
+  });
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -56,7 +72,7 @@ properties:
       // Gets all fields in the document body.
 
       await Word.run(async (context) => {
-        const fields = context.document.body.fields.load("items");
+        const fields: Word.FieldCollection = context.document.body.fields.load("items");
 
         await context.sync();
 
@@ -67,8 +83,7 @@ properties:
           await context.sync();
 
           for (let i = 0; i < fields.items.length; i++) {
-            console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`);
-            console.log(`Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
+            console.log(`Field ${i + 1}'s code: ${fields.items[i].code}`, `Field ${i + 1}'s result: ${JSON.stringify(fields.items[i].result)}`);
           }
         }
       });
@@ -104,7 +119,7 @@ properties:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to load font and style information for the document body.
         body.load("font/size, font/name, font/color, style");
@@ -154,11 +169,11 @@ properties:
       // Gets the first image in the document.
 
       await Word.run(async (context) => {
-        const firstPicture = context.document.body.inlinePictures.getFirst();
-        firstPicture.load("width, height");
+        const firstPicture: Word.InlinePicture = context.document.body.inlinePictures.getFirst();
+        firstPicture.load("width, height, imageFormat");
 
         await context.sync();
-        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+        console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`, `Image format: ${firstPicture.imageFormat}`);
         // Get the image encoded as Base64.
         const base64 = firstPicture.getBase64ImageSrc();
 
@@ -178,7 +193,52 @@ properties:
     package: word!
     fullName: lists
     summary: Gets the collection of list objects in the body.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/20-lists/organize-list.yaml
+
+
+      // Gets information about the first list in the document.
+
+      await Word.run(async (context) => {
+        const lists: Word.ListCollection = context.document.body.lists;
+        lists.load("items");
+
+        await context.sync();
+
+        if (lists.items.length === 0) {
+          console.warn("There are no lists in this document.");
+          return;
+        }
+        
+        // Get the first list.
+        const list: Word.List = lists.getFirst();
+        list.load("levelTypes,levelExistences");
+
+        await context.sync();
+
+        const levelTypes  = list.levelTypes;
+        console.log("Level types of the first list:");
+        for (let i = 0; i < levelTypes.length; i++) {
+          console.log(`- Level ${i + 1} (index ${i}): ${levelTypes[i]}`);
+        }
+
+        const levelExistences = list.levelExistences;
+        console.log("Level existences of the first list:");
+        for (let i = 0; i < levelExistences.length; i++) {
+          console.log(`- Level ${i + 1} (index ${i}): ${levelExistences[i]}`);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -210,7 +270,7 @@ properties:
       // Counts how many times each term appears in the document.
 
       await Word.run(async (context) => {
-        const paragraphs = context.document.body.paragraphs;
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
         paragraphs.load("text");
         await context.sync();
 
@@ -465,7 +525,7 @@ properties:
       // Gets the content of the first cell in the first table.
 
       await Word.run(async (context) => {
-        const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+        const firstCell: Word.Body = context.document.body.tables.getFirst().getCell(0, 0).body;
         firstCell.load("text");
 
         await context.sync();
@@ -503,7 +563,7 @@ properties:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to load the text in document body.
         body.load("text");
@@ -544,13 +604,13 @@ properties:
       // Gets the referenced note's item type and body type, which are both "Footnote".
 
       await Word.run(async (context) => {
-        const footnotes = context.document.body.footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.body.footnotes;
         footnotes.load("items");
         await context.sync();
 
         const referenceNumber = $("#input-reference").val();
         const mark = (referenceNumber as number) - 1;
-        const item = footnotes.items[mark];
+        const item: Word.NoteItem = footnotes.items[mark];
         console.log(`Note type of footnote ${referenceNumber}: ${item.type}`);
 
         item.body.load("type");
@@ -595,7 +655,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to clear the contents of the body.
         body.clear();
@@ -637,14 +697,13 @@ methods:
       // Gets the comments in the document body.
 
       await Word.run(async (context) => {
-        const comments = context.document.body.getComments();
+        const comments: Word.CommentCollection = context.document.body.getComments();
 
-        // Load objects for display in Script Lab console.
+        // Load objects to log in the console.
         comments.load();
         await context.sync();
 
-        console.log("All comments:");
-        console.log(comments);
+        console.log("All comments:", comments);
       });
 
       ```
@@ -683,7 +742,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to get the HTML contents of the body.
         const bodyHTML = body.getHtml();
@@ -726,7 +785,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to get the OOXML contents of the body.
         const bodyOOXML = body.getOoxml();
@@ -826,7 +885,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert a page break at the start of the document body.
         body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
@@ -869,7 +928,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5. `CheckBox` support was added in WordApi 1.7.
+      1.5. `CheckBox` support was added in WordApi 1.7. `DropDownList` and `ComboBox` support was added in WordApi 1.9.
 
 
       #### Examples
@@ -887,7 +946,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to wrap the body in a content control.
         body.insertContentControl();
@@ -904,16 +963,20 @@ methods:
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox |
+        "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: >-
-            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
-            'RichText'.
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or
+            'ComboBox'. The default is 'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | <xref
-            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
+            uid="word!Word.ContentControlType.checkBox:member" /> | <xref
+            uid="word!Word.ContentControlType.dropDownList:member" /> | <xref
+            uid="word!Word.ContentControlType.comboBox:member" /> | "RichText" | "PlainText" | "CheckBox" |
+            "DropDownList" | "ComboBox"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -945,7 +1008,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert the Base64-encoded string representation of the body of the selected .docx file at the beginning of the current document.
         body.insertFileFromBase64(externalDocument, Word.InsertLocation.start);
@@ -999,7 +1062,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert HTML at the beginning of the document.
         body.insertHtml("<strong>This is text inserted with body.insertHtml()</strong>", Word.InsertLocation.start);
@@ -1053,7 +1116,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Base64-encoded image to insert inline.
         const base64EncodedImg =
@@ -1111,7 +1174,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert OOXML at the beginning of the body.
         body.insertOoxml(
@@ -1174,7 +1237,7 @@ methods:
 
       await Word.run(async (context) => {
         // Second sentence, let's insert it as a paragraph after the previously inserted one.
-        const secondSentence = context.document.body.insertParagraph(
+        const secondSentence: Word.Paragraph = context.document.body.insertParagraph(
           "This is the first text with a custom style.",
           "End"
         );
@@ -1232,7 +1295,7 @@ methods:
           ["Tokyo", "Beijing", "Seattle"],
           ["Apple", "Orange", "Pineapple"]
         ];
-        const table = context.document.body.insertTable(2, 3, "Start", data);
+        const table: Word.Table = context.document.body.insertTable(2, 3, "Start", data);
         table.styleBuiltIn = Word.BuiltInStyleName.gridTable5Dark_Accent2;
         table.styleFirstColumn = false;
 
@@ -1288,7 +1351,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to insert text at the beginning of the current document.
         body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
@@ -1296,7 +1359,7 @@ methods:
         // Synchronize the document state by executing the queued commands, and return a promise to indicate task completion.
         await context.sync();
 
-        console.log('Text added to the beginning of the document body.');
+        console.log("Text added to the beginning of the document body.");
       });
 
       ```
@@ -1408,7 +1471,7 @@ methods:
       // Does a basic text search and highlights matches in the document.
 
       await Word.run(async (context) => {
-        const results = context.document.body.search("Online");
+        const results : Word.RangeCollection = context.document.body.search("extend");
         results.load("length");
 
         await context.sync();
@@ -1429,7 +1492,7 @@ methods:
 
       await Word.run(async (context) => {
         // Construct a wildcard expression and set matchWildcards to true in order to use wildcards.
-        const results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+        const results : Word.RangeCollection = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
         results.load("length");
 
         await context.sync();
@@ -1500,7 +1563,7 @@ methods:
 
       await Word.run(async (context) => {
         // Create a proxy object for the document body.
-        const body = context.document.body;
+        const body: Word.Body = context.document.body;
 
         // Queue a command to select the document body.
         // The Word UI will move to the selected document body.
@@ -1585,8 +1648,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.Body` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.BodyData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''

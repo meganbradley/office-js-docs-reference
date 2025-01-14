@@ -4,7 +4,29 @@ uid: 'word!Word.Paragraph:class'
 package: word!
 fullName: Word.Paragraph
 summary: 'Represents a single paragraph in a selection, range, content control, or document body.'
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+
+  await Word.run(async (context) => {
+    // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
+    const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
+    paragraph.load("text");
+
+    await context.sync();
+    console.log(paragraph.text);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -514,7 +536,7 @@ properties:
           return;
         }
 
-        const style = context.document.getStyles().getByNameOrNullObject(styleName);
+        const style: Word.Style = context.document.getStyles().getByNameOrNullObject(styleName);
         style.load();
         await context.sync();
 
@@ -523,13 +545,13 @@ properties:
         } else if (style.type != Word.StyleType.paragraph) {
           console.log(`The '${styleName}' style isn't a paragraph style.`);
         } else {
-          const body = context.document.body;
+          const body: Word.Body = context.document.body;
           body.clear();
           body.insertParagraph(
-            "Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.",
+            "Do you want to create a solution that extends the functionality of Word? You can use the Office Add-ins platform to extend Word clients running on the web, on a Windows desktop, or on a Mac.",
             "Start"
           );
-          const paragraph = body.paragraphs.getFirst();
+          const paragraph: Word.Paragraph = body.paragraphs.getFirst();
           paragraph.style = style.nameLocal;
           console.log(`'${styleName}' style applied to first paragraph.`);
         }
@@ -563,28 +585,28 @@ properties:
 
 
       await Word.run(async (context) => {
-          const paragraph = context.document.body.insertParagraph("Timeline", "End");
+          const paragraph: Word.Paragraph = context.document.body.insertParagraph("Timeline", "End");
           paragraph.styleBuiltIn = "Heading2";
-          const paragraph2 = context.document.body.insertParagraph("The Services shall commence on July 31, 2015, and shall continue through July 29, 2015.", "End");
+          const paragraph2: Word.Paragraph = context.document.body.insertParagraph("The Services shall commence on July 31, 2015, and shall continue through July 29, 2015.", "End");
           paragraph2.styleBuiltIn = "Normal";
-          const paragraph3 = context.document.body.insertParagraph("Project Costs by Phase", "End");
+          const paragraph3: Word.Paragraph = context.document.body.insertParagraph("Project Costs by Phase", "End");
           paragraph3.styleBuiltIn = "Heading2";
           // Note a content control with the title of "ProjectCosts" is added. Content will be replaced later.
-          const paragraph4 = context.document.body.insertParagraph("<Add Project Costs Here>", "End");
+          const paragraph4: Word.Paragraph = context.document.body.insertParagraph("<Add Project Costs Here>", "End");
           paragraph4.styleBuiltIn = "Normal";
           paragraph4.font.highlightColor = "#FFFF00";
-          const contentControl = paragraph4.insertContentControl();
+          const contentControl: Word.ContentControl = paragraph4.insertContentControl();
           contentControl.title = "ProjectCosts";
-          const paragraph5 = context.document.body.insertParagraph("Project Team", "End");
+          const paragraph5: Word.Paragraph = context.document.body.insertParagraph("Project Team", "End");
           paragraph5.styleBuiltIn = "Heading2";
           paragraph5.font.highlightColor = "#FFFFFF";
-          const paragraph6 = context.document.body.insertParagraph("Terms of Work", "End");
+          const paragraph6: Word.Paragraph = context.document.body.insertParagraph("Terms of Work", "End");
           paragraph6.styleBuiltIn = "Heading1";
-          const paragraph7 = context.document.body.insertParagraph("Contractor shall provide the Services and Deliverable(s) as follows:", "End");
+          const paragraph7: Word.Paragraph = context.document.body.insertParagraph("Contractor shall provide the Services and Deliverable(s) as follows:", "End");
           paragraph7.styleBuiltIn = "Normal";
-          const paragraph8 = context.document.body.insertParagraph("Out-of-Pocket Expenses / Invoice Procedures", "End");
+          const paragraph8: Word.Paragraph = context.document.body.insertParagraph("Out-of-Pocket Expenses / Invoice Procedures", "End");
           paragraph8.styleBuiltIn = "Heading2";
-          const paragraph9 = context.document.body.insertParagraph("Client will be invoiced monthly for the consulting services and T&L expenses. Standard Contractor invoicing is assumed to be acceptable. Invoices are due upon receipt. client will be invoiced all costs associated with out-of-pocket expenses (including, without limitation, costs and expenses associated with meals, lodging, local transportation and any other applicable business expenses) listed on the invoice as a separate line item. Reimbursement for out-of-pocket expenses in connection with performance of this SOW, when authorized and up to the limits set forth in this SOW, shall be in accordance with Client's then-current published policies governing travel and associated business expenses, which information shall be provided by the Client Project Manager.", "End");
+          const paragraph9 : Word.Paragraph= context.document.body.insertParagraph("Client will be invoiced monthly for the consulting services and T&L expenses. Standard Contractor invoicing is assumed to be acceptable. Invoices are due upon receipt. client will be invoiced all costs associated with out-of-pocket expenses (including, without limitation, costs and expenses associated with meals, lodging, local transportation and any other applicable business expenses) listed on the invoice as a separate line item. Reimbursement for out-of-pocket expenses in connection with performance of this SOW, when authorized and up to the limits set forth in this SOW, shall be in accordance with Client's then-current published policies governing travel and associated business expenses, which information shall be provided by the Client Project Manager.", "End");
           paragraph9.styleBuiltIn = "Normal";
           // Insert a page break at the end of the document.
           context.document.body.insertBreak("Page", "End");
@@ -694,7 +716,7 @@ properties:
 
       await Word.run(async (context) => {
         // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
-        const paragraph = context.document.getSelection().paragraphs.getFirst();
+        const paragraph: Word.Paragraph = context.document.getSelection().paragraphs.getFirst();
         paragraph.load("text");
 
         await context.sync();
@@ -1023,14 +1045,14 @@ methods:
 
       await Word.run(async (context) => {
         // Get the complete sentence (as range) associated with the insertion point.
-        const sentences = context.document
+        const sentences: Word.RangeCollection = context.document
           .getSelection()
           .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
         sentences.load("$none");
         await context.sync();
 
         // Expand the range to the end of the paragraph to get all the complete sentences.
-        const sentencesToTheEndOfParagraph = sentences.items[0]
+        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
           .getRange()
           .expandTo(
             context.document
@@ -1176,7 +1198,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5. `CheckBox` support was added in WordApi 1.7.
+      1.5. `CheckBox` support was added in WordApi 1.7. `DropDownList` and `ComboBox` support was added in WordApi 1.9.
 
 
       #### Examples
@@ -1212,21 +1234,55 @@ methods:
       });
 
       ```
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-content-controls.yaml
+
+
+      // Traverses each paragraph of the document and wraps a content control on each with either a even or odd tags.
+
+      await Word.run(async (context) => {
+        let paragraphs = context.document.body.paragraphs;
+        paragraphs.load("$none"); // Don't need any properties; just wrap each paragraph with a content control.
+
+        await context.sync();
+
+        for (let i = 0; i < paragraphs.items.length; i++) {
+          let contentControl = paragraphs.items[i].insertContentControl();
+          // For even, tag "even".
+          if (i % 2 === 0) {
+            contentControl.tag = "even";
+          } else {
+            contentControl.tag = "odd";
+          }
+        }
+        console.log("Content controls inserted: " + paragraphs.items.length);
+
+        await context.sync();
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox |
+        "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: >-
-            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
-            'RichText'.
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or
+            'ComboBox'. The default is 'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | <xref
-            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
+            uid="word!Word.ContentControlType.checkBox:member" /> | <xref
+            uid="word!Word.ContentControlType.dropDownList:member" /> | <xref
+            uid="word!Word.ContentControlType.comboBox:member" /> | "RichText" | "PlainText" | "CheckBox" |
+            "DropDownList" | "ComboBox"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -1468,7 +1524,7 @@ methods:
 
       await Word.run(async (context) => {
         // Replace the last paragraph.
-        const range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
+        const range: Word.Range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
         range.font.highlightColor = "black";
         range.font.color = "white";
 
@@ -1702,7 +1758,7 @@ methods:
 
 
           await Word.run(async (context) => {
-            const paragraph = context.document.body.paragraphs.getFirst();
+            const paragraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
             paragraph.set({
               leftIndent: 30,
               font: {
@@ -1719,8 +1775,8 @@ methods:
 
 
           await Word.run(async (context) => {
-            const firstParagraph = context.document.body.paragraphs.getFirst();
-            const secondParagraph = firstParagraph.getNext();
+            const firstParagraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
+            const secondParagraph: Word.Paragraph = firstParagraph.getNext();
             firstParagraph.load("text, font/color, font/bold, leftIndent");
 
             await context.sync();
@@ -1767,7 +1823,7 @@ methods:
 
 
       await Word.run(async (context) => {
-        const paragraph = context.document.body.paragraphs.getFirst();
+        const paragraph: Word.Paragraph = context.document.body.paragraphs.getFirst();
         const words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
         words.load("text");
 
@@ -1828,20 +1884,20 @@ methods:
       // This example starts a new list with the second paragraph.
 
       await Word.run(async (context) => {
-        const paragraphs = context.document.body.paragraphs;
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
         paragraphs.load("$none");
 
         await context.sync();
 
         // Start new list using the second paragraph.
-        const list = paragraphs.items[1].startNewList();
+        const list: Word.List = paragraphs.items[1].startNewList();
         list.load("$none");
 
         await context.sync();
 
         // To add new items to the list, use Start or End on the insertLocation parameter.
         list.insertParagraph("New list item at the start of the list", "Start");
-        const paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
+        const paragraph: Word.Paragraph = list.insertParagraph("New list item at the end of the list (set to list level 5)", "End");
 
         // Set up list level for the list item.
         paragraph.listItem.level = 4;
@@ -1866,8 +1922,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Paragraph object is an API object, the `toJSON` method returns a plain
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.Paragraph` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.ParagraphData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''

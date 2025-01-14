@@ -4,7 +4,32 @@ uid: 'word!Word.TableBorder:class'
 package: word!
 fullName: Word.TableBorder
 summary: Specifies the border style.
-remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/40-tables/manage-formatting.yaml
+
+
+  // Gets border details about the first table in the document.
+
+  await Word.run(async (context) => {
+    const firstTable: Word.Table = context.document.body.tables.getFirst();
+    const borderLocation = Word.BorderLocation.top;
+    const border: Word.TableBorder = firstTable.getBorder(borderLocation);
+    border.load(["type", "color", "width"]);
+    await context.sync();
+
+    console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -30,16 +55,13 @@ properties:
       // Gets border details about the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
         const borderLocation = Word.BorderLocation.top;
-        const border = firstTable.getBorder(borderLocation);
+        const border: Word.TableBorder = firstTable.getBorder(borderLocation);
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```
@@ -84,16 +106,13 @@ properties:
       // Gets border details about the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
         const borderLocation = Word.BorderLocation.top;
-        const border = firstTable.getBorder(borderLocation);
+        const border: Word.TableBorder = firstTable.getBorder(borderLocation);
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```
@@ -133,16 +152,13 @@ properties:
       // Gets border details about the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
         const borderLocation = Word.BorderLocation.top;
-        const border = firstTable.getBorder(borderLocation);
+        const border: Word.TableBorder = firstTable.getBorder(borderLocation);
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```
@@ -267,10 +283,10 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.TableBorder object is an API object, the `toJSON` method returns a plain
-      JavaScript object (typed as `Word.Interfaces.TableBorderData`<!-- -->) that contains shallow copies of any loaded
-      child properties from the original object.
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.TableBorder` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.TableBorderData`<!-- -->) that contains shallow copies of any
+      loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

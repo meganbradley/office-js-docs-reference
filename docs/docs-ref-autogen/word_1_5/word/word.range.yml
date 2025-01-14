@@ -4,7 +4,39 @@ uid: 'word!Word.Range:class'
 package: word!
 fullName: Word.Range
 summary: Represents a contiguous area in a document.
-remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Gets the range of the first comment in the selected content.
+
+  await Word.run(async (context) => {
+    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+    comment.load("contentRange");
+    const range: Word.Range = comment.getRange();
+    range.load("text");
+    await context.sync();
+
+    if (comment.isNullObject) {
+      console.warn("No comments in the selection, so no range to get.");
+      return;
+    }
+
+    console.log(`Comment location: ${range.text}`);
+    const contentRange: Word.CommentContentRange = comment.contentRange;
+    console.log("Comment content range:", contentRange);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -92,7 +124,7 @@ properties:
       // Gets the footnotes in the selected document range.
 
       await Word.run(async (context) => {
-        const footnotes = context.document.getSelection().footnotes;
+        const footnotes: Word.NoteItemCollection = context.document.getSelection().footnotes;
         footnotes.load("length");
         await context.sync();
 
@@ -193,7 +225,58 @@ properties:
     summary: >-
       Gets the currently supported content control that contains the range. Throws an `ItemNotFound` error if there
       isn't a parent content control.
-    remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Toggles the isChecked property of the first checkbox content control found in the selection.
+
+      await Word.run(async (context) => {
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.checkBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,checkboxContentControl/isChecked");
+
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,checkboxContentControl/isChecked");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.checkBox) {
+            console.warn("No checkbox content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        const isCheckedBefore = selectedContentControl.checkboxContentControl.isChecked;
+        console.log("isChecked state before:", `id: ${selectedContentControl.id} ... isChecked: ${isCheckedBefore}`);
+        selectedContentControl.checkboxContentControl.isChecked = !isCheckedBefore;
+        selectedContentControl.load("id,checkboxContentControl/isChecked");
+        await context.sync();
+
+        console.log(
+          "isChecked state after:",
+          `id: ${selectedContentControl.id} ... isChecked: ${selectedContentControl.checkboxContentControl.isChecked}`
+        );
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -309,7 +392,7 @@ properties:
 
 
       await Word.run(async (context) => {
-          const header = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
+          const header: Word.Range = context.document.body.insertText("This is a sample Heading 1 Title!!\n",
               "Start" /*this means at the beginning of the body */);
           header.styleBuiltIn = Word.BuiltInStyleName.heading1;
 
@@ -466,19 +549,20 @@ methods:
       // Compares the location of one paragraph in relation to another paragraph.
 
       await Word.run(async (context) => {
-        const paragraphs = context.document.body.paragraphs;
+        const paragraphs: Word.ParagraphCollection = context.document.body.paragraphs;
         paragraphs.load("items");
 
         await context.sync();
 
-        const firstParagraphAsRange = paragraphs.items[0].getRange();
-        const secondParagraphAsRange = paragraphs.items[1].getRange();
+        const firstParagraphAsRange: Word.Range = paragraphs.items[0].getRange();
+        const secondParagraphAsRange: Word.Range = paragraphs.items[1].getRange();
 
         const comparedLocation = firstParagraphAsRange.compareLocationWith(secondParagraphAsRange);
 
         await context.sync();
 
-        console.log(`Location of the first paragraph in relation to the second paragraph: ${comparedLocation.value}`);
+        const locationValue: Word.LocationRelation = comparedLocation.value;
+        console.log(`Location of the first paragraph in relation to the second paragraph: ${locationValue}`);
       });
 
       ```
@@ -534,7 +618,46 @@ methods:
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range isn't
       changed. Throws an `ItemNotFound` error if the two ranges do not have a union.
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/25-paragraph/get-paragraph-on-insertion-point.yaml
+
+
+      await Word.run(async (context) => {
+        // Get the complete sentence (as range) associated with the insertion point.
+        const sentences: Word.RangeCollection = context.document
+          .getSelection()
+          .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+        sentences.load("$none");
+        await context.sync();
+
+        // Expand the range to the end of the paragraph to get all the complete sentences.
+        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
+          .getRange()
+          .expandTo(
+            context.document
+              .getSelection()
+              .paragraphs.getFirst()
+              .getRange(Word.RangeLocation.end)
+          )
+          .getTextRanges(["."], false /* Don't trim spaces*/);
+        sentencesToTheEndOfParagraph.load("text");
+        await context.sync();
+
+        for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+          console.log(sentencesToTheEndOfParagraph.items[i].text);
+        }
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -615,14 +738,13 @@ methods:
       // Gets the comments in the selected content.
 
       await Word.run(async (context) => {
-        const comments = context.document.getSelection().getComments();
+        const comments: Word.CommentCollection = context.document.getSelection().getComments();
 
-        // Load objects for display in Script Lab console.
+        // Load objects to log in the console.
         comments.load();
         await context.sync();
 
-        console.log("Comments:");
-        console.log(comments);
+        console.log("Comments:", comments);
       });
 
       ```
@@ -647,6 +769,51 @@ methods:
       [Word.ContentControl](xref:word!Word.ContentControl:class) that aren't relevant for the specific type. With time,
       additional types of content controls may be supported. Therefore, your add-in should request and handle specific
       types of content controls.
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Deletes the first checkbox content control found in the selection.
+
+      await Word.run(async (context) => {
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.checkBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id");
+
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.checkBox) {
+            console.warn("No checkbox content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        console.log(`About to delete checkbox content control with id: ${selectedContentControl.id}`);
+        selectedContentControl.delete(false);
+        await context.sync();
+
+        console.log("Deleted checkbox content control.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -821,7 +988,30 @@ methods:
     package: word!
     fullName: getRange(rangeLocation)
     summary: 'Clones the range, or gets the starting or ending point of the range as a new range.'
-    remarks: '\[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi 1.3](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
+
+
+      // Places a dropdown list content control at the end of the selection.
+
+      await Word.run(async (context) => {
+        let selection = context.document.getSelection();
+        selection.getRange(Word.RangeLocation.end).insertContentControl(Word.ContentControlType.dropDownList);
+        await context.sync();
+
+        console.log("Dropdown list content control inserted at the end of the selection.");
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -860,14 +1050,13 @@ methods:
       // Gets the reviewed text.
 
       await Word.run(async (context) => {
-        const range = context.document.getSelection();
+        const range: Word.Range = context.document.getSelection();
         const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
         const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
 
         await context.sync();
 
-        console.log(`Reviewed text (before):\n${before.value}`);
-        console.log(`Reviewed text (after):\n${after.value}`);
+        console.log("Reviewed text (before):", before.value, "Reviewed text (after):", after.value);
       });
 
       ```
@@ -919,14 +1108,14 @@ methods:
 
       await Word.run(async (context) => {
         // Get the complete sentence (as range) associated with the insertion point.
-        const sentences = context.document
+        const sentences: Word.RangeCollection = context.document
           .getSelection()
           .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
         sentences.load("$none");
         await context.sync();
 
         // Expand the range to the end of the paragraph to get all the complete sentences.
-        const sentencesToTheEndOfParagraph = sentences.items[0]
+        const sentencesToTheEndOfParagraph: Word.RangeCollection = sentences.items[0]
           .getRange()
           .expandTo(
             context.document
@@ -1059,14 +1248,13 @@ methods:
         const text = $("#comment-text")
           .val()
           .toString();
-        const comment = context.document.getSelection().insertComment(text);
+        const comment: Word.Comment = context.document.getSelection().insertComment(text);
 
-        // Load object for display in Script Lab console.
+        // Load object to log in the console.
         comment.load();
         await context.sync();
 
-        console.log("Comment inserted:");
-        console.log(comment);
+        console.log("Comment inserted:", comment);
       });
 
       ```
@@ -1091,7 +1279,7 @@ methods:
 
 
       Note: The `contentControlType` parameter was introduced in WordApi 1.5. `PlainText` support was added in WordApi
-      1.5. `CheckBox` support was added in WordApi 1.7.
+      1.5. `CheckBox` support was added in WordApi 1.7. `DropDownList` and `ComboBox` support was added in WordApi 1.9.
 
 
       #### Examples
@@ -1112,18 +1300,18 @@ methods:
       // finally sets a tag and title property on each content control.
 
       await Word.run(async (context) => {
-          const results = context.document.body.search("Contractor");
+          const results: Word.RangeCollection = context.document.body.search("Contractor");
           results.load("font/bold");
 
           // Check to make sure these content controls haven't been added yet.
-          const customerContentControls = context.document.contentControls.getByTag("customer");
+          const customerContentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("customer");
           customerContentControls.load("text");
           await context.sync();
 
         if (customerContentControls.items.length === 0) {
           for (let i = 0; i < results.items.length; i++) { 
               results.items[i].font.bold = true;
-              let cc = results.items[i].insertContentControl();
+              let cc: Word.ContentControl = results.items[i].insertContentControl();
               cc.tag = "customer";  // This value is used in the next step of this sample.
               cc.title = "Customer Name " + i;
           }
@@ -1137,16 +1325,20 @@ methods:
     syntax:
       content: >-
         insertContentControl(contentControlType?: Word.ContentControlType.richText | Word.ContentControlType.plainText |
-        Word.ContentControlType.checkBox | "RichText" | "PlainText" | "CheckBox"): Word.ContentControl;
+        Word.ContentControlType.checkBox | Word.ContentControlType.dropDownList | Word.ContentControlType.comboBox |
+        "RichText" | "PlainText" | "CheckBox" | "DropDownList" | "ComboBox"): Word.ContentControl;
       parameters:
         - id: contentControlType
           description: >-
-            Optional. Content control type to insert. Must be 'RichText', 'PlainText', or 'CheckBox'. The default is
-            'RichText'.
+            Optional. Content control type to insert. Must be 'RichText', 'PlainText', 'CheckBox', 'DropDownList', or
+            'ComboBox'. The default is 'RichText'.
           type: >-
             <xref uid="word!Word.ContentControlType.richText:member" /> | <xref
             uid="word!Word.ContentControlType.plainText:member" /> | <xref
-            uid="word!Word.ContentControlType.checkBox:member" /> | "RichText" | "PlainText" | "CheckBox"
+            uid="word!Word.ContentControlType.checkBox:member" /> | <xref
+            uid="word!Word.ContentControlType.dropDownList:member" /> | <xref
+            uid="word!Word.ContentControlType.comboBox:member" /> | "RichText" | "PlainText" | "CheckBox" |
+            "DropDownList" | "ComboBox"
       return:
         type: '<xref uid="word!Word.ContentControl:class" />'
         description: ''
@@ -1180,22 +1372,22 @@ methods:
 
 
       In Word on Windows and on Mac, the API supports inserting and managing all types listed in
-      [Word.FieldType](xref:word!Word.FieldType:enum) except Word.FieldType.others.
+      [Word.FieldType](xref:word!Word.FieldType:enum) except `Word.FieldType.others`<!-- -->.
 
 
       In Word on the web, the API supports inserting and managing the following field types.
 
 
-      - Word.FieldType.addin
+      - `Word.FieldType.addin`
 
 
-      - Word.FieldType.date
+      - `Word.FieldType.date`
 
 
-      - Word.FieldType.hyperlink
+      - `Word.FieldType.hyperlink`
 
 
-      - Word.FieldType.toc
+      - `Word.FieldType.toc`
 
 
       #### Examples
@@ -1210,9 +1402,9 @@ methods:
       // Inserts a Date field before selection.
 
       await Word.run(async (context) => {
-        var range = context.document.getSelection().getRange();
+        const range: Word.Range = context.document.getSelection().getRange();
 
-        const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+        const field: Word.Field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
 
         field.load("result,code");
         await context.sync();
@@ -1220,8 +1412,7 @@ methods:
         if (field.isNullObject) {
           console.log("There are no fields in this document.");
         } else {
-          console.log("Code of the field: " + field.code);
-          console.log("Result of the field: " + JSON.stringify(field.result));
+          console.log("Code of the field: " + field.code, "Result of the field: " + JSON.stringify(field.result));
         }
       });
 
@@ -1265,22 +1456,22 @@ methods:
 
 
       In Word on Windows and on Mac, the API supports inserting and managing all types listed in
-      [Word.FieldType](xref:word!Word.FieldType:enum) except Word.FieldType.others.
+      [Word.FieldType](xref:word!Word.FieldType:enum) except `Word.FieldType.others`<!-- -->.
 
 
       In Word on the web, the API supports inserting and managing the following field types.
 
 
-      - Word.FieldType.addin
+      - `Word.FieldType.addin`
 
 
-      - Word.FieldType.date
+      - `Word.FieldType.date`
 
 
-      - Word.FieldType.hyperlink
+      - `Word.FieldType.hyperlink`
 
 
-      - Word.FieldType.toc
+      - `Word.FieldType.toc`
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1405,7 +1596,7 @@ methods:
         const text = $("#input-footnote")
           .val()
           .toString();
-        const footnote = context.document.getSelection().insertFootnote(text);
+        const footnote: Word.NoteItem = context.document.getSelection().insertFootnote(text);
         await context.sync();
 
         console.log("Inserted footnote.");
@@ -1940,8 +2131,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Range object is an API object, the `toJSON` method returns a plain
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.Range` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''

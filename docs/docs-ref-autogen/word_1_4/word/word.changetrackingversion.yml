@@ -20,14 +20,13 @@ remarks: >-
   // Gets the reviewed text.
 
   await Word.run(async (context) => {
-    const range = context.document.getSelection();
+    const range: Word.Range = context.document.getSelection();
     const before = range.getReviewedText(Word.ChangeTrackingVersion.original);
     const after = range.getReviewedText(Word.ChangeTrackingVersion.current);
 
     await context.sync();
 
-    console.log(`Reviewed text (before):\n${before.value}`);
-    console.log(`Reviewed text (after):\n${after.value}`);
+    console.log("Reviewed text (before):", before.value, "Reviewed text (after):", after.value);
   });
 
   ```

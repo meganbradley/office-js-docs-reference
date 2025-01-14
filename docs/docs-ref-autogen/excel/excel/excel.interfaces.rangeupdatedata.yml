@@ -3,7 +3,7 @@ name: Excel.Interfaces.RangeUpdateData
 uid: 'excel!Excel.Interfaces.RangeUpdateData:interface'
 package: excel!
 fullName: Excel.Interfaces.RangeUpdateData
-summary: 'An interface for updating data on the Range object, for use in `range.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Range` object, for use in `range.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -24,6 +24,20 @@ properties:
       content: 'columnHidden?: boolean;'
       return:
         type: boolean
+  - name: control
+    uid: 'excel!Excel.Interfaces.RangeUpdateData#control:member'
+    package: excel!
+    fullName: control
+    summary: >-
+      Accesses the cell control applied to this range. If the range has multiple cell controls, this returns
+      `EmptyCellControl`<!-- -->.
+    remarks: '\[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'control?: CellControl;'
+      return:
+        type: '<xref uid="excel!Excel.CellControl:type" />'
   - name: dataValidation
     uid: 'excel!Excel.Interfaces.RangeUpdateData#dataValidation:member'
     package: excel!
@@ -105,8 +119,7 @@ properties:
     fullName: numberFormat
     summary: >-
       Represents Excel's number format code for the given range. For more information about Excel number formatting, see
-      [Number format
-      codes](https://support.microsoft.com/office/number-format-codes-5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
+      [Number format codes](https://support.microsoft.com/office/5026bbd6-04bc-48cd-bf33-80f18b4eae68)<!-- -->.
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

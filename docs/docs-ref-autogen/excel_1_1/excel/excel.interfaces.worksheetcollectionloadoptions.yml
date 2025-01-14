@@ -14,8 +14,8 @@ properties:
     package: excel!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -53,7 +53,7 @@ properties:
     uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#name:member'
     package: excel!
     fullName: name
-    summary: 'For EACH ITEM in the collection: The display name of the worksheet.'
+    summary: 'For EACH ITEM in the collection: The display name of the worksheet. The name must be fewer than 32 characters.'
     remarks: '\[ [API set: ExcelApi 1.1](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

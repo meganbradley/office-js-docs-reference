@@ -10,6 +10,21 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.BulletFormatLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.BulletFormatUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.CollectionLoadOptions:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomPropertyUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.DocumentPropertiesUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkCollectionUpdateData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkData:interface'
+  - 'powerpoint!PowerPoint.Interfaces.HyperlinkUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ParagraphFormatUpdateData:interface'
@@ -30,7 +45,6 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.ShapeLineFormatUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionData:interface'
-  - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeScopedCollectionUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.ShapeUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideCollectionData:interface'
@@ -49,7 +63,6 @@ interfaces:
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterData:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideMasterLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionData:interface'
-  - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionLoadOptions:interface'
   - 'powerpoint!PowerPoint.Interfaces.SlideScopedCollectionUpdateData:interface'
   - 'powerpoint!PowerPoint.Interfaces.TagCollectionData:interface'
   - 'powerpoint!PowerPoint.Interfaces.TagCollectionLoadOptions:interface'
@@ -103,7 +116,7 @@ functions:
     uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
     package: powerpoint!
     summary: >-
-      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded
+      Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a Base64-encoded
       .pptx file.
 
 
@@ -115,7 +128,7 @@ functions:
       content: 'export function createPresentation(base64File?: string): Promise<void>;'
       parameters:
         - id: base64File
-          description: Optional. The base64-encoded .pptx file. The default value is null.
+          description: Optional. The Base64-encoded .pptx file. The default value is null.
           type: string
       return:
         type: Promise&lt;void&gt;

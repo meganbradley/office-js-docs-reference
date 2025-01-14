@@ -12,8 +12,9 @@ summary: >-
   one or more categories to an item.
 
 
-  **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in Compose
-  mode.
+  **Important**: In Outlook on the web and [new Outlook on
+  Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API to
+  manage categories applied to a message in Compose mode.
 remarks: >-
   \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -37,10 +38,6 @@ methods:
     summary: >-
       Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a
       unique name but multiple categories can use the same color.
-
-
-      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message or
-      appointment item in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -53,6 +50,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories applied to a message or appointment item in Compose mode.
 
 
       **Errors**:
@@ -127,10 +129,6 @@ methods:
     summary: >-
       Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a
       unique name but multiple categories can use the same color.
-
-
-      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message or
-      appointment item in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -143,6 +141,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories applied to a message or appointment item in Compose mode.
 
 
       **Errors**:
@@ -180,7 +183,9 @@ methods:
       version so make sure to handle both cases.
 
 
-      - In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories applied to a message in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -231,7 +236,9 @@ methods:
       version so make sure to handle both cases.
 
 
-      - In Outlook on the web, you can't use the API to manage categories applied to a message in Compose mode.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories applied to a message in Compose mode.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -290,12 +297,7 @@ methods:
     uid: 'outlook!Office.Categories#removeAsync:member(1)'
     package: outlook!
     fullName: 'removeAsync(categories, options, callback)'
-    summary: >-
-      Removes categories from an item.
-
-
-      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in
-      Compose mode.
+    summary: Removes categories from an item.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -308,6 +310,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories applied to a message or appointment item in Compose mode.
 
 
       #### Examples
@@ -369,12 +376,7 @@ methods:
     uid: 'outlook!Office.Categories#removeAsync:member(2)'
     package: outlook!
     fullName: 'removeAsync(categories, callback)'
-    summary: >-
-      Removes categories from an item.
-
-
-      **Important**: In Outlook on the web, you can't use the API to manage categories applied to a message in
-      Compose mode.
+    summary: Removes categories from an item.
     remarks: >-
       \[ [API set: Mailbox 1.8](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -387,6 +389,11 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose or Read
+
+
+      **Important**: In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, you can't use the API
+      to manage categories applied to a message or appointment item in Compose mode.
     isPreview: false
     isDeprecated: false
     syntax:

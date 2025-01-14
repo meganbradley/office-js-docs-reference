@@ -23,7 +23,7 @@ remarks: >-
       ["Tokyo", "Beijing", "Seattle"],
       ["Apple", "Orange", "Pineapple"]
     ];
-    const table = context.document.body.insertTable(2, 3, "Start", data);
+    const table: Word.Table = context.document.body.insertTable(2, 3, "Start", data);
     table.styleBuiltIn = Word.BuiltInStyleName.gridTable5Dark_Accent2;
     table.styleFirstColumn = false;
 
@@ -56,14 +56,11 @@ properties:
       // Gets alignment details about the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
         firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table:`);
-        console.log(`- Alignment of the table within the containing page column: ${firstTable.alignment}`);
-        console.log(`- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`);
-        console.log(`- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
       });
 
       ```
@@ -134,14 +131,11 @@ properties:
       // Gets alignment details about the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
         firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table:`);
-        console.log(`- Alignment of the table within the containing page column: ${firstTable.alignment}`);
-        console.log(`- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`);
-        console.log(`- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
       });
 
       ```
@@ -310,14 +304,12 @@ properties:
       // Gets content alignment details about the first row of the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
-        const firstTableRow = firstTable.rows.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
+        const firstTableRow: Word.TableRow = firstTable.rows.getFirst();
         firstTableRow.load(["horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table's first row:`);
-        console.log(`- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`);
-        console.log(`- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table's first row:`, `- Horizontal alignment of every cell in the row: ${firstTableRow.horizontalAlignment}`, `- Vertical alignment of every cell in the row: ${firstTableRow.verticalAlignment}`);
       });
 
       ```
@@ -535,14 +527,11 @@ properties:
       // Gets alignment details about the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
         firstTable.load(["alignment", "horizontalAlignment", "verticalAlignment"]);
         await context.sync();
 
-        console.log(`Details about the alignment of the first table:`);
-        console.log(`- Alignment of the table within the containing page column: ${firstTable.alignment}`);
-        console.log(`- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`);
-        console.log(`- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
+        console.log(`Details about the alignment of the first table:`, `- Alignment of the table within the containing page column: ${firstTable.alignment}`, `- Horizontal alignment of every cell in the table: ${firstTable.horizontalAlignment}`, `- Vertical alignment of every cell in the table: ${firstTable.verticalAlignment}`);
       });
 
       ```
@@ -736,16 +725,13 @@ methods:
       // Gets border details about the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
         const borderLocation = Word.BorderLocation.top;
-        const border = firstTable.getBorder(borderLocation);
+        const border: Word.TableBorder = firstTable.getBorder(borderLocation);
         border.load(["type", "color", "width"]);
         await context.sync();
 
-        console.log(`Details about the ${borderLocation} border of the first table:`);
-        console.log(`- Color: ${border.color}`);
-        console.log(`- Type: ${border.type}`);
-        console.log(`- Width: ${border.width} points`);
+        console.log(`Details about the ${borderLocation} border of the first table:`, `- Color: ${border.color}`, `- Type: ${border.type}`, `- Width: ${border.width} points`);
       });
 
       ```
@@ -802,7 +788,7 @@ methods:
       // Gets the content of the first cell in the first table.
 
       await Word.run(async (context) => {
-        const firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+        const firstCell: Word.Body = context.document.body.tables.getFirst().getCell(0, 0).body;
         firstCell.load("text");
 
         await context.sync();
@@ -870,7 +856,7 @@ methods:
       // Gets cell padding details about the first table in the document.
 
       await Word.run(async (context) => {
-        const firstTable = context.document.body.tables.getFirst();
+        const firstTable: Word.Table = context.document.body.tables.getFirst();
         const cellPaddingLocation = Word.CellPaddingLocation.right;
         const cellPadding = firstTable.getCellPadding(cellPaddingLocation);
         await context.sync();
@@ -1320,8 +1306,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Table object is an API object, the `toJSON` method returns a plain
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.Table` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.TableData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
     remarks: ''

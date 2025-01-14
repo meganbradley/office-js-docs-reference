@@ -1,5 +1,12 @@
 #!/bin/bash
 
+while getopts b: flag
+do
+  case "${flag}" in
+    b) bypassPrompt=${OPTARG};;
+  esac
+done
+
 if [ -e "build-log.txt" ]; then
     rm build-log.txt
 fi
@@ -35,7 +42,7 @@ npm install
 pushd scripts
 npm install
 npm run build
-node preprocessor.js
+node preprocessor.js $bypassPrompt
 popd
 
 
@@ -62,6 +69,8 @@ node version-remover ../api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts 
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts "ExcelApi 1.2" ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts
 node version-remover ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts "ExcelApi 1.1" ./tool-inputs/excel-base.d.ts
 
+node version-remover ../api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts "Mailbox 1.14" ../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts
+node ../scripts/versioned-dts-cleanup ../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts Outlook 1.13
 node version-remover ../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts "Mailbox 1.13" ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts
 node ../scripts/versioned-dts-cleanup ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts Outlook 1.12
 node version-remover ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts "Mailbox 1.12" ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts
@@ -88,23 +97,34 @@ node version-remover ../api-extractor-inputs-outlook-release/outlook_1_2/outlook
 node ../scripts/versioned-dts-cleanup ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts Outlook 1.1
 node version-remover ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts "Mailbox 1.1" ./tool-inputs/outlook-base.d.ts
 
+node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts "PowerPointApi 1.7" ../api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts
+node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts "PowerPointApi 1.6" ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts "PowerPointApi 1.5" ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts "PowerPointApi 1.4" ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts "PowerPointApi 1.3" ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts "PowerPointApi 1.2" ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts
 node version-remover ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts "PowerPointApi 1.1" ./tool-inputs/powerpoint-base.d.ts
 
-node version-remover ../api-extractor-inputs-word-release/word_online/word-init.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_online/word-init.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_online/word-online1.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_online/word-online1.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_online/word-online2.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_online/word-online2.d.ts "WordApiHiddenDocument 1.3" ../api-extractor-inputs-word-release/word_online/word.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts "WordApi 1.7" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts "WordApi 1.6" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-init.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop1.d.ts "WordApi 1.9" ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop2.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop2.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop3.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop3.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop4.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop4.d.ts "WordApiHiddenDocument 1.3" ../api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-init.d.ts "WordApiDesktop 1.1" ../api-extractor-inputs-word-release/word_online/word-online1.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-online1.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_online/word-online2.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-online2.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_online/word-online3.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word-online3.d.ts "WordApiHiddenDocument 1.3" ../api-extractor-inputs-word-release/word_online/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_desktop_1_1/word-desktop2.d.ts "WordApiDesktop 1.1" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop1.d.ts "WordApi 1.8" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop2.d.ts "WordApi 1.7" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word-desktop3.d.ts "WordApi 1.6" ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts "WordApiHiddenDocument 1.5" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts "WordApi 1.5" ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts "WordApiHiddenDocument 1.4" ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts "WordApi 1.4" ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts
-node version-remover ../api-extractor-inputs-word-release/word_online/word.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_7/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_online/word.d.ts "WordApiOnline 1.1" ../api-extractor-inputs-word-release/word_1_9/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_9/word.d.ts "WordApi 1.9" ../api-extractor-inputs-word-release/word_1_8/word.d.ts
+node version-remover ../api-extractor-inputs-word-release/word_1_8/word.d.ts "WordApi 1.8" ../api-extractor-inputs-word-release/word_1_7/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_7/word.d.ts "WordApi 1.7" ../api-extractor-inputs-word-release/word_1_6/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_6/word.d.ts "WordApi 1.6" ../api-extractor-inputs-word-release/word_1_5/word.d.ts
 node version-remover ../api-extractor-inputs-word-release/word_1_5/word.d.ts "WordApi 1.5" ../api-extractor-inputs-word-release/word_1_4/word.d.ts
@@ -134,7 +154,8 @@ node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_3/excel.d.ts 
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_2/excel.d.ts ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ../../docs/includes/excel-1_2
 node whats-new excel ../api-extractor-inputs-excel-release/Excel_1_1/excel.d.ts ./tool-inputs/excel-base.d.ts ../../docs/includes/excel-1_1
 
-node whats-new outlook ../api-extractor-inputs-outlook/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts ../../docs/includes/outlook-preview
+node whats-new outlook ../api-extractor-inputs-outlook/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts ../../docs/includes/outlook-preview
+node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_14/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts ../../docs/includes/outlook-1_14
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_13/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts ../../docs/includes/outlook-1_13
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_12/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../../docs/includes/outlook-1_12
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_11/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_10/outlook.d.ts ../../docs/includes/outlook-1_11
@@ -149,7 +170,9 @@ node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_3/outlo
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_2/outlook.d.ts ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ../../docs/includes/outlook-1_2
 node whats-new outlook ../api-extractor-inputs-outlook-release/outlook_1_1/outlook.d.ts ./tool-inputs/outlook-base.d.ts ../../docs/includes/outlook-1_1
 
-node whats-new powerpoint ../api-extractor-inputs-powerpoint/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../../docs/includes/powerpoint-preview
+node whats-new powerpoint ../api-extractor-inputs-powerpoint/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts ../../docs/includes/powerpoint-preview
+node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_7/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts ../../docs/includes/powerpoint-1_7
+node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_6/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../../docs/includes/powerpoint-1_6
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_5/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts ../../docs/includes/powerpoint-1_5
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_4/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts ../../docs/includes/powerpoint-1_4
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_3/powerpoint.d.ts ../api-extractor-inputs-powerpoint-release/powerpoint_1_2/powerpoint.d.ts ../../docs/includes/powerpoint-1_3
@@ -157,10 +180,13 @@ node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_
 node whats-new powerpoint ../api-extractor-inputs-powerpoint-release/powerpoint_1_1/powerpoint.d.ts ./tool-inputs/powerpoint-base.d.ts ../../docs/includes/powerpoint-1_1
 
 node whats-new word ../api-extractor-inputs-word/word.d.ts ../api-extractor-inputs-word-release/word_online/word-init.d.ts ../../docs/includes/word-preview
-node whats-new word ../api-extractor-inputs-word-release/word_online/word.d.ts ../api-extractor-inputs-word-release/word_1_7/word.d.ts ../../docs/includes/word-online
+node whats-new word ../api-extractor-inputs-word-release/word_online/word.d.ts ../api-extractor-inputs-word-release/word_1_9/word.d.ts ../../docs/includes/word-online
+node whats-new word ../api-extractor-inputs-word-release/word_desktop_1_1/word.d.ts ../api-extractor-inputs-word-release/word_1_8/word.d.ts ../../docs/includes/word-desktop-1.1
 node whats-new word ../api-extractor-inputs-word-release/word_1_5_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_4_hidden_document/word-desktop1.d.ts ../../docs/includes/word-1_5_hidden_document
 node whats-new word ../api-extractor-inputs-word-release/word_1_4_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3_hidden_document/word-desktop1.d.ts ../../docs/includes/word-1_4_hidden_document
 node whats-new word ../api-extractor-inputs-word-release/word_1_3_hidden_document/word.d.ts ../api-extractor-inputs-word-release/word_1_3/word.d.ts ../../docs/includes/word-1_3_hidden_document
+node whats-new word ../api-extractor-inputs-word-release/word_1_9/word.d.ts ../api-extractor-inputs-word-release/word_1_8/word.d.ts ../../docs/includes/word-1_9
+node whats-new word ../api-extractor-inputs-word-release/word_1_8/word.d.ts ../api-extractor-inputs-word-release/word_1_7/word.d.ts ../../docs/includes/word-1_8
 node whats-new word ../api-extractor-inputs-word-release/word_1_7/word.d.ts ../api-extractor-inputs-word-release/word_1_6/word.d.ts ../../docs/includes/word-1_7
 node whats-new word ../api-extractor-inputs-word-release/word_1_6/word.d.ts ../api-extractor-inputs-word-release/word_1_5/word.d.ts ../../docs/includes/word-1_6
 node whats-new word ../api-extractor-inputs-word-release/word_1_5/word.d.ts ../api-extractor-inputs-word-release/word_1_4/word.d.ts ../../docs/includes/word-1_5
@@ -312,6 +338,12 @@ if [ ! -d "json/outlook" ]; then
     ../node_modules/.bin/api-extractor run
     popd
 fi
+if [ ! -d "json/outlook_1_14" ]; then
+    echo Running API Extractor for Outlook 1.14.
+    pushd api-extractor-inputs-outlook-release/outlook_1_14
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
 if [ ! -d "json/outlook_1_13" ]; then
     echo Running API Extractor for Outlook 1.13.
     pushd api-extractor-inputs-outlook-release/outlook_1_13
@@ -397,6 +429,18 @@ if [ ! -d "json/powerpoint" ]; then
     ../node_modules/.bin/api-extractor run
     popd
 fi
+if [ ! -d "json/powerpoint_1_7" ]; then
+    echo Running API Extractor for PowerPoint 1.7.
+    pushd api-extractor-inputs-powerpoint-release/PowerPoint_1_7
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/powerpoint_1_6" ]; then
+    echo Running API Extractor for PowerPoint 1.6.
+    pushd api-extractor-inputs-powerpoint-release/PowerPoint_1_6
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
 if [ ! -d "json/powerpoint_1_5" ]; then
     echo Running API Extractor for PowerPoint 1.5.
     pushd api-extractor-inputs-powerpoint-release/PowerPoint_1_5
@@ -447,21 +491,39 @@ if [ ! -d "json/word_online" ]; then
     ../../node_modules/.bin/api-extractor run
     popd
 fi
+if [ ! -d "json/word_desktop_1_1" ]; then
+    echo Running API Extractor for Word desktop 1.1.
+    pushd api-extractor-inputs-word-release/word_desktop_1_1
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
 if [ ! -d "json/word_1_5_hidden_document" ]; then
-    echo Running API Extractor for Word desktop 1.5.
+    echo Running API Extractor for Word desktop hidden document 1.5.
     pushd api-extractor-inputs-word-release/word_1_5_hidden_document
     ../../node_modules/.bin/api-extractor run
     popd
 fi
 if [ ! -d "json/word_1_4_hidden_document" ]; then
-    echo Running API Extractor for Word desktop 1.4.
+    echo Running API Extractor for Word desktop hidden document 1.4.
     pushd api-extractor-inputs-word-release/word_1_4_hidden_document
     ../../node_modules/.bin/api-extractor run
     popd
 fi
 if [ ! -d "json/word_1_3_hidden_document" ]; then
-    echo Running API Extractor for Word desktop 1.3.
+    echo Running API Extractor for Word desktop hidden document 1.3.
     pushd api-extractor-inputs-word-release/word_1_3_hidden_document
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/word_1_9" ]; then
+    echo Running API Extractor for Word 1.9.
+    pushd api-extractor-inputs-word-release/word_1_9
+    ../../node_modules/.bin/api-extractor run
+    popd
+fi
+if [ ! -d "json/word_1_8" ]; then
+    echo Running API Extractor for Word 1.8.
+    pushd api-extractor-inputs-word-release/word_1_8
     ../../node_modules/.bin/api-extractor run
     popd
 fi
@@ -528,6 +590,10 @@ if [ ! -d "yaml/office" ]; then
 fi
 if [ ! -d "yaml/office_release" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/office_release --output-folder ./yaml/office_release --office 2>/dev/null
+fi
+
+if [ ! -d "yaml/office-runtime" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/office-runtime --output-folder ./yaml/office-runtime --office
 fi
 
 if [ ! -d "yaml/excel" ]; then
@@ -632,6 +698,9 @@ fi
 if [ ! -d "yaml/outlook_1_13" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_13 --output-folder ./yaml/outlook_1_13 --office 2>/dev/null
 fi
+if [ ! -d "yaml/outlook_1_14" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/outlook_1_14 --output-folder ./yaml/outlook_1_14 --office 2>/dev/null
+fi
 if [ ! -d "yaml/powerpoint" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint --output-folder ./yaml/powerpoint --office
 fi
@@ -649,6 +718,12 @@ if [ ! -d "yaml/powerpoint_1_4" ]; then
 fi
 if [ ! -d "yaml/powerpoint_1_5" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_5 --output-folder ./yaml/powerpoint_1_5 --office 2>/dev/null
+fi
+if [ ! -d "yaml/powerpoint_1_6" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_6 --output-folder ./yaml/powerpoint_1_6 --office 2>/dev/null
+fi
+if [ ! -d "yaml/powerpoint_1_7" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/powerpoint_1_7 --output-folder ./yaml/powerpoint_1_7 --office 2>/dev/null
 fi
 if [ ! -d "yaml/visio" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/visio --output-folder ./yaml/visio --office
@@ -677,6 +752,12 @@ fi
 if [ ! -d "yaml/word_1_7" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_7 --output-folder ./yaml/word_1_7 --office 2>/dev/null
 fi
+if [ ! -d "yaml/word_1_8" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_8 --output-folder ./yaml/word_1_8 --office 2>/dev/null
+fi
+if [ ! -d "yaml/word_1_9" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_9 --output-folder ./yaml/word_1_9 --office 2>/dev/null
+fi
 if [ ! -d "yaml/word_1_3_hidden_document" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_3_hidden_document --output-folder ./yaml/word_1_3_hidden_document --office 2>/dev/null
 fi
@@ -685,6 +766,9 @@ if [ ! -d "yaml/word_1_4_hidden_document" ]; then
 fi
 if [ ! -d "yaml/word_1_5_hidden_document" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_1_5_hidden_document --output-folder ./yaml/word_1_5_hidden_document --office 2>/dev/null
+fi
+if [ ! -d "yaml/word_desktop_1_1" ]; then
+    ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_desktop_1_1 --output-folder ./yaml/word_desktop_1_1 --office 2>/dev/null
 fi
 if [ ! -d "yaml/word_online" ]; then
     ./node_modules/.bin/api-documenter yaml --input-folder ./json/word_online --output-folder ./yaml/word_online --office 2>/dev/null

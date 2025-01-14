@@ -14,8 +14,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -84,7 +84,7 @@ properties:
     summary: >-
       Specifies the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To remove
       highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty string for
-      mixed highlight colors, or null for no highlight color. Note: Only the default highlight colors are available in
+      mixed highlight colors, or `null` for no highlight color. Note: Only the default highlight colors are available in
       Office for Windows Desktop. These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal",
       "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black". When the add-in runs in Office for
       Windows Desktop, any other color is converted to the closest color when applied to the font.

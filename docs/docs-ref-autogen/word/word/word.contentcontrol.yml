@@ -6,7 +6,8 @@ fullName: Word.ContentControl
 summary: >-
   Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as
   containers for specific types of content. Individual content controls may contain contents such as images, tables, or
-  paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+  paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content
+  controls are supported.
 remarks: |-
   \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
@@ -114,8 +115,59 @@ properties:
     uid: 'word!Word.ContentControl#checkboxContentControl:member'
     package: word!
     fullName: checkboxContentControl
-    summary: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
-    remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    summary: Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-checkbox-content-control.yaml
+
+
+      // Toggles the isChecked property of the first checkbox content control found in the selection.
+
+      await Word.run(async (context) => {
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.checkBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,checkboxContentControl/isChecked");
+
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,checkboxContentControl/isChecked");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.checkBox) {
+            console.warn("No checkbox content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        const isCheckedBefore = selectedContentControl.checkboxContentControl.isChecked;
+        console.log("isChecked state before:", `id: ${selectedContentControl.id} ... isChecked: ${isCheckedBefore}`);
+        selectedContentControl.checkboxContentControl.isChecked = !isCheckedBefore;
+        selectedContentControl.load("id,checkboxContentControl/isChecked");
+        await context.sync();
+
+        console.log(
+          "isChecked state after:",
+          `id: ${selectedContentControl.id} ... isChecked: ${selectedContentControl.checkboxContentControl.isChecked}`
+        );
+      });
+
+      ```
     isPreview: false
     isDeprecated: false
     syntax:
@@ -134,6 +186,66 @@ properties:
       content: 'color: string;'
       return:
         type: string
+  - name: comboBoxContentControl
+    uid: 'word!Word.ContentControl#comboBoxContentControl:member'
+    package: word!
+    fullName: comboBoxContentControl
+    summary: Gets the data of the content control when its type is 'ComboBox'. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-combo-box-content-control.yaml
+
+
+      // Adds the provided list item to the first combo box content control in the selection.
+
+      await Word.run(async (context) => {
+        const listItemText = $("#item-to-add")
+          .val()
+          .toString()
+          .trim();
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.comboBox]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,comboBoxContentControl");
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,comboBoxContentControl");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.comboBox) {
+            console.warn("No combo box content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        selectedContentControl.comboBoxContentControl.addListItem(listItemText);
+        await context.sync();
+
+        console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
+      });
+
+      ```
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'readonly comboBoxContentControl: Word.ComboBoxContentControl;'
+      return:
+        type: '<xref uid="word!Word.ComboBoxContentControl:class" />'
   - name: contentControls
     uid: 'word!Word.ContentControl#contentControls:member'
     package: word!
@@ -164,9 +276,57 @@ properties:
     uid: 'word!Word.ContentControl#dropDownListContentControl:member'
     package: word!
     fullName: dropDownListContentControl
-    summary: Specifies the dropdown list-related data if the content control's type is 'DropDownList'. It's null otherwise.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
-    isPreview: true
+    summary: Gets the data of the content control when its type is 'DropDownList'. It's `null` otherwise.
+    remarks: >-
+      \[ [API set: WordApi 1.9](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/10-content-controls/insert-and-change-dropdown-list-content-control.yaml
+
+
+      // Adds the provided list item to the first dropdown list content control in the selection.
+
+      await Word.run(async (context) => {
+        const listItemText = $("#item-to-add")
+          .val()
+          .toString()
+          .trim();
+        const selectedRange: Word.Range = context.document.getSelection();
+        let selectedContentControl = selectedRange
+          .getContentControls({
+            types: [Word.ContentControlType.dropDownList]
+          })
+          .getFirstOrNullObject();
+        selectedContentControl.load("id,dropDownListContentControl");
+        await context.sync();
+
+        if (selectedContentControl.isNullObject) {
+          const parentContentControl: Word.ContentControl = selectedRange.parentContentControl;
+          parentContentControl.load("id,type,dropDownListContentControl");
+          await context.sync();
+
+          if (parentContentControl.isNullObject || parentContentControl.type !== Word.ContentControlType.dropDownList) {
+            console.warn("No dropdown list content control is currently selected.");
+            return;
+          } else {
+            selectedContentControl = parentContentControl;
+          }
+        }
+
+        selectedContentControl.dropDownListContentControl.addListItem(listItemText);
+        await context.sync();
+
+        console.log(`List item added to control with ID ${selectedContentControl.id}: ${listItemText}`);
+      });
+
+      ```
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'readonly dropDownListContentControl: Word.DropDownListContentControl;'
@@ -385,9 +545,6 @@ properties:
     summary: >-
       Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is
       empty.
-
-
-      Note: The set operation for this property isn't supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -722,15 +879,14 @@ methods:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls.getByTag("forTesting");
+        const contentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("forTesting");
         contentControls.load("items");
         await context.sync();
 
         if (contentControls.items.length === 0) {
           console.log("There are no content controls in this document.");
         } else {
-          console.log("Control to be deleted:");
-          console.log(contentControls.items[0]);
+          console.log("Control to be deleted:", contentControls.items[0]);
           contentControls.items[0].delete(false);
           await context.sync();
         }
@@ -1041,8 +1197,8 @@ methods:
       \[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
 
 
-      Note: Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form
-      field). Consider replacing such a form field with a content control or other option appropriate for your scenario.
+      Insertion isn't supported if the document being inserted contains an ActiveX control (likely in a form field).
+      Consider replacing such a form field with a content control or other option appropriate for your scenario.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -1491,7 +1647,38 @@ methods:
     package: word!
     fullName: resetState()
     summary: Resets the state of the content control.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-content-controls.yaml
+
+
+      // Resets the state of the first content control.
+
+      await Word.run(async (context) => {
+        let firstContentControl = context.document.contentControls.getFirstOrNullObject();
+        await context.sync();
+
+        if (firstContentControl.isNullObject) {
+          console.warn("There are no content controls in this document.");
+          return;
+        }
+        
+        firstContentControl.resetState();
+        firstContentControl.load("id");
+        await context.sync();
+
+        console.log(`Reset state of first content control with ID: ${firstContentControl.id}`);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -1651,7 +1838,7 @@ methods:
             await context.sync();
 
             for (let i = 0; i < evenContentControls.items.length; i++) {
-              // Change a few properties and append a paragraph
+              // Change a few properties and append a paragraph.
               evenContentControls.items[i].set({
                 color: "red",
                 title: "Odd ContentControl #" + (i + 1),
@@ -1661,7 +1848,7 @@ methods:
             }
 
             for (let j = 0; j < oddContentControls.items.length; j++) {
-              // Change a few properties and append a paragraph
+              // Change a few properties and append a paragraph.
               oddContentControls.items[j].set({
                 color: "green",
                 title: "Even ContentControl #" + (j + 1),
@@ -1696,7 +1883,39 @@ methods:
     package: word!
     fullName: setState(contentControlState)
     summary: Sets the state of the content control.
-    remarks: '\[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+    remarks: >-
+      \[ [API set: WordApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+      #### Examples
+
+
+      ```TypeScript
+
+      // Link to full sample:
+      https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/99-preview-apis/insert-and-change-content-controls.yaml
+
+
+      // Sets the state of the first content control.
+
+      await Word.run(async (context) => {
+        const state = ($("#state-to-set").val() as unknown) as Word.ContentControlState;
+        let firstContentControl = context.document.contentControls.getFirstOrNullObject();
+        await context.sync();
+
+        if (firstContentControl.isNullObject) {
+          console.warn("There are no content controls in this document.");
+          return;
+        }
+
+        firstContentControl.setState(state);
+        firstContentControl.load("id");
+        await context.sync();
+
+        console.log(`Set state of first content control with ID ${firstContentControl.id} to ${state}.`);
+      });
+
+      ```
     isPreview: true
     isDeprecated: false
     syntax:
@@ -1766,8 +1985,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.ContentControl` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Word.Interfaces.ContentControlData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''
@@ -1893,7 +2112,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -1918,8 +2137,7 @@ events:
 
       async function contentControlDataChanged(event: Word.ContentControlDataChangedEventArgs) {
         await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. IDs of content controls where data was changed:`);
-          console.log(event.ids);
+          console.log(`${event.eventType} event detected. IDs of content controls where data was changed:`, event.ids);
         });
       }
 
@@ -1953,7 +2171,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -1978,8 +2196,7 @@ events:
 
       async function contentControlDeleted(event: Word.ContentControlDeletedEventArgs) {
         await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`);
-          console.log(event.ids);
+          console.log(`${event.eventType} event detected. IDs of content controls that were deleted:`, event.ids);
         });
       }
 
@@ -2011,7 +2228,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -2068,7 +2285,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -2125,7 +2342,7 @@ events:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls;
+        const contentControls: Word.ContentControlCollection = context.document.contentControls;
         contentControls.load("items");
         await context.sync();
 
@@ -2149,8 +2366,7 @@ events:
 
       async function contentControlSelectionChanged(event: Word.ContentControlSelectionChangedEventArgs) {
         await Word.run(async (context) => {
-          console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`);
-          console.log(event.ids);
+          console.log(`${event.eventType} event detected. IDs of content controls where selection was changed:`, event.ids);
         });
       }
 

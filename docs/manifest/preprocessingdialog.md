@@ -1,15 +1,15 @@
 ---
-title: PreProcessingDialog element in the manifest file (preview)
+title: PreProcessingDialog element in the manifest file
 description: The PreProcessingDialog element configures the preprocessing dialog of a spam-reporting add-in in Outlook.
-ms.date: 07/20/2023
+ms.date: 05/20/2024
 ms.localizationpriority: medium
 ---
 
-# PreProcessingDialog element (preview)
+# PreProcessingDialog element
 
 Configures the preprocessing dialog of a spam-reporting add-in in Outlook, so that users can provide additional information about the message they're reporting.
 
-To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in (preview)](/office/dev/add-ins/outlook/spam-reporting).
+To learn more about how to implement the spam reporting feature in your add-in, see [Implement an integrated spam-reporting add-in](/office/dev/add-ins/outlook/spam-reporting).
 
 **Add-in type**: Mail
 
@@ -17,15 +17,15 @@ To learn more about how to implement the spam reporting feature in your add-in, 
 
 - Mail 1.1
 
-For more information, see [Version overrides in the manifest](/office/dev/add-ins/develop/add-in-manifests#version-overrides-in-the-manifest).
+For more information, see [Version overrides in the add-in only manifest](/office/dev/add-ins/develop/xml-manifest-overview#version-overrides-in-the-manifest).
 
 **Associated with these requirement sets**:
 
-- [Mailbox preview](../requirement-sets/outlook/preview-requirement-set/outlook-requirement-set-preview.md)
+- [Mailbox 1.14](../requirement-sets/outlook/requirement-set-1.14/outlook-requirement-set-1.14.md)
 
 ## Contained in
 
-- [ReportPhishingCustomization (preview)](reportphishingcustomization.md)
+- [ReportPhishingCustomization](reportphishingcustomization.md)
 
 ## Attributes
 

@@ -4,7 +4,46 @@ uid: 'word!Word.Setting:class'
 package: word!
 fullName: Word.Setting
 summary: Represents a setting of the add-in.
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-settings.yaml
+
+
+  // Adds a new custom setting or
+
+  // edits the value of an existing one.
+
+  await Word.run(async (context) => {
+    const key = $("#key")
+      .val()
+      .toString();
+
+    if (key == "") {
+      console.error("Key shouldn't be empty.");
+      return;
+    }
+
+    const value = $("#value")
+      .val()
+      .toString();
+
+    const settings: Word.SettingCollection = context.document.settings;
+    const setting: Word.Setting = settings.add(key, value);
+    setting.load();
+    await context.sync();
+
+    console.log("Setting added or edited:", setting);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -51,7 +90,7 @@ properties:
           .toString();
 
         if (key == "") {
-          console.error("Key shouldn't be empty");
+          console.error("Key shouldn't be empty.");
           return;
         }
 
@@ -59,13 +98,12 @@ properties:
           .val()
           .toString();
 
-        const settings = context.document.settings;
-        const setting = settings.add(key, value);
+        const settings: Word.SettingCollection = context.document.settings;
+        const setting: Word.Setting = settings.add(key, value);
         setting.load();
         await context.sync();
 
-        console.log("Setting added or edited:");
-        console.log(setting);
+        console.log("Setting added or edited:", setting);
       });
 
       ```
@@ -103,7 +141,7 @@ properties:
           .toString();
 
         if (key == "") {
-          console.error("Key shouldn't be empty");
+          console.error("Key shouldn't be empty.");
           return;
         }
 
@@ -111,13 +149,12 @@ properties:
           .val()
           .toString();
 
-        const settings = context.document.settings;
-        const setting = settings.add(key, value);
+        const settings: Word.SettingCollection = context.document.settings;
+        const setting: Word.Setting = settings.add(key, value);
         setting.load();
         await context.sync();
 
-        console.log("Setting added or edited:");
-        console.log(setting);
+        console.log("Setting added or edited:", setting);
       });
 
       ```
@@ -287,8 +324,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.Setting object is an API object, the `toJSON` method returns a plain
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.Setting` object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Word.Interfaces.SettingData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
     remarks: ''

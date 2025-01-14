@@ -27,6 +27,7 @@ remarks: >-
     eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
     eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
     eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+    eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
 
     await context.sync();
 
@@ -39,12 +40,12 @@ remarks: >-
 
   async function onHoveredHandler(args: Word.AnnotationHoveredEventArgs) {
     await Word.run(async (context) => {
-      const annotation = context.document.getAnnotationById(args.id);
+      const annotation: Word.Annotation = context.document.getAnnotationById(args.id);
       annotation.load("critiqueAnnotation");
 
       await context.sync();
 
-      console.log(`AnnotationHovered: ${args.id} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+      console.log(`AnnotationHovered: ID ${args.id}:`, annotation.critiqueAnnotation.critique);
     });
   }
 

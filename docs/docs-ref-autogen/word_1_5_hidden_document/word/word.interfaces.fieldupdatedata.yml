@@ -3,7 +3,7 @@ name: Word.Interfaces.FieldUpdateData
 uid: 'word!Word.Interfaces.FieldUpdateData:interface'
 package: word!
 fullName: Word.Interfaces.FieldUpdateData
-summary: 'An interface for updating data on the Field object, for use in `field.set({ ... })`<!-- -->.'
+summary: 'An interface for updating data on the `Field` object, for use in `field.set({ ... })`<!-- -->.'
 remarks: ''
 isPreview: false
 isDeprecated: false
@@ -29,7 +29,7 @@ properties:
     package: word!
     fullName: data
     summary: >-
-      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general
+      Specifies data in an "Addin" field. If the field isn't an "Addin" field, it is `null` and it will throw a general
       exception when code attempts to set it.
     remarks: '\[ [API set: WordApi 1.5](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false

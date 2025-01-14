@@ -8,16 +8,6 @@ remarks: '\[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/exce
 isPreview: false
 isDeprecated: false
 fields:
-  - name: agaveVisualUpdate
-    uid: 'excel!Excel.EventType.agaveVisualUpdate:member'
-    package: excel!
-    summary: >-
-      `AgaveVisualUpdate` represents the type of an event that is associated with an agave visual and carries a new data
-      view following a data change.
-
-
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"AgaveVisualUpdate"'
   - name: annotationAdded
     uid: 'excel!Excel.EventType.annotationAdded:member'
     package: excel!
@@ -143,6 +133,16 @@ fields:
 
       * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
     value: '"LinkedWorkbookWorkbookLinksChanged"'
+  - name: queryQueryRefreshCompleted
+    uid: 'excel!Excel.EventType.queryQueryRefreshCompleted:member'
+    package: excel!
+    summary: >-
+      TableQueryRefreshCompleted represents the type of event registered when a table query refresh is completed.
+
+
+      * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
+      \]
+    value: '"QueryQueryRefreshCompleted"'
   - name: rangeValuesPreviewDismissed
     uid: 'excel!Excel.EventType.rangeValuesPreviewDismissed:member'
     package: excel!
@@ -274,14 +274,6 @@ fields:
       * \[ [API set: ExcelApi BETA (PREVIEW ONLY)](/javascript/api/requirement-sets/excel/excel-api-requirement-sets)
       \]
     value: '"WorkbookFormulaReferenceStyleChanged"'
-  - name: workbookNavigationObjectChanged
-    uid: 'excel!Excel.EventType.workbookNavigationObjectChanged:member'
-    package: excel!
-    summary: |-
-      LineageActivityUpdateAvailable represents the type of event registered when new revision updates lineage model.
-
-      * \[ [API set: ExcelApi 1.7](/javascript/api/requirement-sets/excel/excel-api-requirement-sets) \]
-    value: '"WorkbookNavigationObjectChanged"'
   - name: worksheetActivated
     uid: 'excel!Excel.EventType.worksheetActivated:member'
     package: excel!

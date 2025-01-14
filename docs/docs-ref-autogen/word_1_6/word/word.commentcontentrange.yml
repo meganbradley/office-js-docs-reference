@@ -4,7 +4,39 @@ uid: 'word!Word.CommentContentRange:class'
 package: word!
 fullName: Word.CommentContentRange
 summary: ''
-remarks: '\[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
+remarks: >-
+  \[ [API set: WordApi 1.4](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/word/50-document/manage-comments.yaml
+
+
+  // Gets the range of the first comment in the selected content.
+
+  await Word.run(async (context) => {
+    const comment: Word.Comment = context.document.getSelection().getComments().getFirstOrNullObject();
+    comment.load("contentRange");
+    const range: Word.Range = comment.getRange();
+    range.load("text");
+    await context.sync();
+
+    if (comment.isNullObject) {
+      console.warn("No comments in the selection, so no range to get.");
+      return;
+    }
+
+    console.log(`Comment location: ${range.text}`);
+    const contentRange: Word.CommentContentRange = comment.contentRange;
+    console.log("Comment content range:", contentRange);
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: class
@@ -255,10 +287,10 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.CommentContentRange object is an API object, the `toJSON` method returns
-      a plain JavaScript object (typed as `Word.Interfaces.CommentContentRangeData`<!-- -->) that contains shallow
-      copies of any loaded child properties from the original object.
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.CommentContentRange` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Word.Interfaces.CommentContentRangeData`<!-- -->) that contains
+      shallow copies of any loaded child properties from the original object.
     remarks: ''
     isPreview: false
     isDeprecated: false

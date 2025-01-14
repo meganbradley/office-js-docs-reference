@@ -20,9 +20,9 @@ remarks: >-
   // Inserts a Date field before selection.
 
   await Word.run(async (context) => {
-    var range = context.document.getSelection().getRange();
+    const range: Word.Range = context.document.getSelection().getRange();
 
-    const field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
+    const field: Word.Field = range.insertField(Word.InsertLocation.before, Word.FieldType.date, '\\@ "M/d/yyyy h:mm am/pm"', true);
 
     field.load("result,code");
     await context.sync();
@@ -30,8 +30,7 @@ remarks: >-
     if (field.isNullObject) {
       console.log("There are no fields in this document.");
     } else {
-      console.log("Code of the field: " + field.code);
-      console.log("Result of the field: " + JSON.stringify(field.result));
+      console.log("Code of the field: " + field.code, "Result of the field: " + JSON.stringify(field.result));
     }
   });
 

@@ -27,6 +27,7 @@ remarks: >-
     eventContexts[3] = context.document.onAnnotationHovered.add(onHoveredHandler);
     eventContexts[4] = context.document.onAnnotationInserted.add(onInsertedHandler);
     eventContexts[5] = context.document.onAnnotationRemoved.add(onRemovedHandler);
+    eventContexts[6] = context.document.onAnnotationPopupAction.add(onPopupActionHandler);
 
     await context.sync();
 
@@ -41,7 +42,7 @@ remarks: >-
     await Word.run(async (context) => {
       const annotations = [];
       for (let i = 0; i < args.ids.length; i++) {
-        let annotation = context.document.getAnnotationById(args.ids[i]);
+        let annotation: Word.Annotation = context.document.getAnnotationById(args.ids[i]);
         annotation.load("id,critiqueAnnotation");
 
         annotations.push(annotation);
@@ -50,7 +51,7 @@ remarks: >-
       await context.sync();
 
       for (let annotation of annotations) {
-        console.log(`AnnotationInserted: ${annotation.id} - ${JSON.stringify(annotation.critiqueAnnotation.critique)}`);
+        console.log(`AnnotationInserted: ID ${annotation.id}:`, annotation.critiqueAnnotation.critique);
       }
     });
   }

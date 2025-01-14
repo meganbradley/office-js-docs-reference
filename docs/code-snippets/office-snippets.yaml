@@ -1,3 +1,51 @@
+Office.Actions#areShortcutsInUse:member(1):
+  - |-
+    // Checks if a specific keyboard shortcut is in use.
+    const shortcuts = ["Ctrl+Shift+1", "Ctrl+Shift+2"];
+    Office.actions.areShortcutsInUse(shortcuts)
+        .then((shortcutsInUse) => {
+            const availableShortcuts = shortcutsInUse.filter((shortcut) => { return !shortcut.inUse; });
+            console.log(`Available keyboard shortcuts: ${availableShortcuts}`);
+            const usedShortcuts = shortcutsInUse.filter((shortcut) => { return shortcut.inUse; });
+            console.log(`Shortcuts in use: ${usedShortcuts}`);
+    });
+Office.Actions#associate:member(1):
+  - |-
+    // Maps the action ID to the showTaskPane function.
+    Office.actions.associate("ShowTaskpane", showTaskPane);
+
+    // Displays the add-in's task pane.
+    function showTaskPane() {
+        return Office.addin.showAsTaskpane()
+            .then(() => { console.log("Task pane is visible."); })
+            .catch((error) => {
+                console.log(error.code);
+            });
+    }
+Office.Actions#getShortcuts:member(1):
+  - |-
+    // Gets the list of keyboard shortcuts for an add-in.
+    Office.actions.getShortcuts()
+        .then((shortcuts) => {
+            for (const action in shortcuts) {
+                let shortcut = shortcuts[action];
+                console.log(`${action}: ${shortcut}`);
+            }
+    });
+Office.Actions#replaceShortcuts:member(1):
+  - |-
+    // Replaces the keyboard shortcuts of an add-in.
+    const customShortcuts = {
+        ShowTaskpane:"Ctrl+Shift+1",
+        HideTaskpane:"Ctrl+Shift+2"
+    };
+    Office.actions.replaceShortcuts(customShortcuts)
+        .then(() => { console.log("Keyboard shortcuts successfully registered."); })
+        .catch((error) => {
+            if (error.code == "InvalidOperation") {
+                console.log("ActionId does not exist or shortcut combination is invalid.");
+            }
+    });
 Office.ActiveView:enum:
   - |-
     // Get whether the current view is edit or read.
@@ -440,6 +488,27 @@ Office.AsyncResultStatus:enum:
             console.log(`Selected data: ${result.value}`);
         }
     );
+Office.Auth:interface:
+  - |-
+    // Get the auth context object and use it to get an
+    // access token.
+    const authContext = Office.context.auth;
+    authContext.getAccessTokenAsync(function(result) {
+        if (result.status === Office.AsyncResultStatus.Succeeded) {
+            const token = result.value;
+            console.log(token);
+        } else {
+            console.log("Error obtaining token", result.error);
+        }
+    });
+Office.Auth#getAuthContext:member(1):
+  - |-
+    try{
+        const authContext = await Office.auth.getAuthContext();
+        console.log(authContext.userPrincipalName);
+    } catch (error) {
+        console.log("Error obtaining token", error);
+    }
 Office.Auth#getAccessToken:member(1):
   - |-
     try{
@@ -927,6 +996,15 @@ Office.Context#contentLanguage:member:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Context#commerceAllowed:member:
+  - |-
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
 Office.Context#diagnostics:member:
   - |-
     const contextInfo = Office.context.diagnostics;
@@ -964,21 +1042,44 @@ Office.Context#document:member:
         _document = Office.context.document;
         });
     }
+Office.Context#host:member:
+  - |-
+    const host = Office.context.host;
+    if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+        // Do something.
+    } else if (host === Office.HostType.Outlook) {
+        // Do something.
+    }
+Office.Context#license:member:
+  - |-
+    const license = Office.context.license;
+    console.log(`Office license: ${license}`);
 Office.Context#mailbox:member:
   - |-
     // The following line of code access the item object of the JavaScript API for Office.
     const item = Office.context.mailbox.item;
 Office.Context#officeTheme:member:
   - |-
-    function applyOfficeTheme(){
-        // Get office theme colors.
+    function applyOfficeTheme() {
+        // Identify the current Office theme in use.
+        const currentOfficeTheme = Office.context.officeTheme.themeId;
+
+        if (currentOfficeTheme === Office.ThemeId.Colorful || currentOfficeTheme === Office.ThemeId.White) {
+            console.log("No changes required.");
+        }
+
+        // Get the colors of the current Office theme.
         const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
         const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
         const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
         const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
-        // Apply body background color to a CSS class.
-        $('.body').css('background-color', bodyBackgroundColor);
+        // Apply theme colors to a CSS class.
+        $("body").css("background-color", bodyBackgroundColor);
+
+        if (Office.context.officeTheme.isDarkTheme()) {
+            $("h1").css("color", controlForegroundColor);
+        }
     }
 Office.Context#partitionKey:member:
   - |-
@@ -1015,6 +1116,53 @@ Office.Context#partitionKey:member:
             return localStorage.getItem(key);
         }
     }
+Office.Context#platform:member:
+- |-
+    // Request permission from a user to access their devices from Office on the web.
+    if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.microphone
+        ];
+        Office.devicePermission
+            .requestPermissions(deviceCapabilities)
+            .then((isGranted) => {
+                if (isGranted) {
+                    // Do something with device capabilities.
+                }
+            })
+            .catch((error) => {
+                console.log("Permission denied.");
+                console.error(error);
+            });
+    }
+Office.Context#requirements:member:
+  - |-
+    // To use the setCellProperties API, check if ExcelApi 1.9 is supported.
+    if (Office.context.requirements.isSetSupported("ExcelApi", "1.9")) {
+        const cellProperties: Excel.SettableCellProperties[][] =
+        colors2D.map(row =>
+            row.map(color =>
+                ({
+                    format: {
+                        fill: {
+                            color: color
+                        }
+                    }
+                })
+            )
+        );
+        sheet.getRangeByIndexes(1, 1, originalSize, originalSize).setCellProperties(cellProperties);
+    }
+    ...
+Office.Context#roamingSettings:member:
+  - |-
+    // Get the current value of the 'myKey' setting.
+    const value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting.
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change.
+    Office.context.roamingSettings.saveAsync();
 Office.Context#sensitivityLabelsCatalog:member:
   - |-
     // Check if the catalog of sensitivity labels is enabled on the current mailbox.
@@ -1034,14 +1182,29 @@ Office.Context#sensitivityLabelsCatalog:member:
             console.log("Action failed with error: " + asyncResult.error.message);
         }
     });
-Office.Context#roamingSettings:member:
+Office.Context#touchEnabled:member:
   - |-
-    // Get the current value of the 'myKey' setting.
-    const value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting.
-    Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change.
-    Office.context.roamingSettings.saveAsync();
+    // Check if the add-in is running on an iPad.
+    const allowCommerce = Office.context.commerceAllowed;
+    const isTouchEnabled = Office.context.touchEnabled;
+    if (!allowCommerce && isTouchEnabled) {
+        // Add-in is running on an iPad.
+        // Do something.
+    }
+Office.Context#ui:member:
+  - |-
+    // Open a dialog and register an event handler.
+    Office.context.ui.displayDialogAsync(
+        "https://www.contoso.com/myDialog.html",
+        { height: 30, width: 20 },
+        (asyncResult) => {
+            const dialog = asyncResult.value;
+            dialog.addEventHandler(Office.EventType.DialogMessageReceived, (arg) => {
+                dialog.close();
+                processMessage(arg);
+            });
+        }
+    );
 Office.Context#urls:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.
@@ -1477,6 +1640,129 @@ Office.CustomXmlParts#getByNamespaceAsync:member(2):
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.DevicePermission#requestPermissions:member(1):
+  - |-
+    // Request permission from a user to access their camera and microphone.
+    if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.microphone
+        ];
+        Office.devicePermission
+            .requestPermissions(deviceCapabilities)
+            .then((isGranted) => {
+                if (isGranted) {
+                    console.log("Permission granted.");
+                    // Reload your add-in before you run code that uses the device capabilities.
+                    location.reload();
+                } else {
+                    console.log("Permission has been previously granted and is already set in the iframe.");
+
+                    // Since permission has been previously granted, you don't need to reload your add-in.
+
+                    // Do something with the device capabilities.
+                }
+            })
+            .catch((error) => {
+                console.log("Permission denied.");
+                console.error(error);
+
+                // Do something when permission is denied.
+            });
+    }
+Office.DevicePermission#requestPermissionsAsync:member(2):
+  - |-
+    // Request permission from a user to access their camera, geolocation, and microphone.
+    if (Office.context.mailbox.diagnostics.hostName === "OutlookWebApp") {
+        const deviceCapabilities = [
+            Office.DevicePermissionType.camera,
+            Office.DevicePermissionType.geolocation,
+            Office.DevicePermissionType.microphone
+        ];
+
+        Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log("Permission denied.");
+
+                // Do something when permission is denied.
+            } else {
+                if (asyncResult.value) {
+                    console.log("Permission granted.");
+                    // Reload your add-in before you run code that uses the device capabilities.
+                    location.reload();
+                } else {
+                    console.log("Permission has been previously granted and is already set in the iframe.");
+                    
+                    // Since permission has been previously granted, you don't need to reload your add-in.
+
+                    // Do something with the device capabilities.
+                }
+            }
+        });
+    }
+Office.DevicePermissionType:enum:
+  - |-
+    // Request permission from a user to access their device capabilities.
+    const host = Office.context.host;
+    if (host === Office.HostType.Excel || host === Office.HostType.PowerPoint || host === Office.HostType.Word) {
+        if (Office.context.platform === Office.PlatformType.OfficeOnline) {
+            const deviceCapabilities = [
+                Office.DevicePermissionType.camera,
+                Office.DevicePermissionType.microphone
+            ];
+            Office.devicePermission
+                .requestPermissions(deviceCapabilities)
+                .then((isGranted) => {
+                    if (isGranted) {
+                        console.log("Permission granted.");
+                        // Reload your add-in before you run code that uses the device capabilities.
+                        location.reload();
+                    } else {
+                        console.log("Permission has been previously granted and is already set in the iframe.");
+
+                        // Since permission has been previously granted, you don't need to reload your add-in.
+
+                        // Do something with the device capabilities.
+                    }
+                })
+                .catch((error) => {
+                    console.log("Permission denied.");
+                    console.error(error);
+
+                    // Do something when permission is denied.
+                });
+        }
+    } else if (host === Office.HostType.Outlook) {
+        if (Office.context.mailbox.diagnostics.hostName === "OutlookWebApp") {
+            const deviceCapabilities = [
+                Office.DevicePermissionType.camera,
+                Office.DevicePermissionType.geolocation,
+                Office.DevicePermissionType.microphone
+            ];
+
+            Office.devicePermission.requestPermissionsAsync(deviceCapabilities, (asyncResult) => {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    console.log("Permission denied.");
+
+                    // Do something when permission is denied.
+                } else {
+                    if (asyncResult.value) {
+                        console.log("Permission granted.");
+                        // Reload your add-in before you run code that uses the device capabilities.
+                        location.reload();
+                    } else {
+                        console.log("Permission has been previously granted and is already set in the iframe.");
+                        
+                        // Since permission has been previously granted, you don't need to reload your add-in.
+
+                        // Do something with the device capabilities.
+                    }
+                }
+            });
+        }
+    } else {
+        console.log("The add-in isn't running in Excel, Outlook, PowerPoint, or Word.");
+    }
 Office.Dialog#addEventHandler:member(1):
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -1531,6 +1817,22 @@ Office.Dialog#close:member(1):
             });
         }
     );
+Office.Dialog#messageChild:member(1):
+  - |-
+    // The following example shows how to send information about the current active worksheet to the dialog.
+    await Excel.run(async (context) => {
+        const worksheet = context.workbook.worksheets.getActiveWorksheet();
+        worksheet.load();
+        await context.sync();
+        worksheetPropertiesChanged(worksheet);
+    });
+
+    ...
+
+    function worksheetPropertiesChanged(currentWorksheet) {
+        const messageToDialog = JSON.stringify(currentWorksheet);
+        dialog.messageChild(messageToDialog);
+    }
 Office.DialogOptions#height:member:
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -2552,15 +2854,26 @@ Office.MatrixBinding#rowCount:member:
     }
 Office.OfficeTheme:interface:
   - |-
-    function applyOfficeTheme(){
-        // Get office theme colors.
+    function applyOfficeTheme() {
+        // Identify the current Office theme in use.
+        const currentOfficeTheme = Office.context.officeTheme.themeId;
+
+        if (currentOfficeTheme === Office.ThemeId.Colorful || currentOfficeTheme === Office.ThemeId.White) {
+            console.log("No changes required.");
+        }
+
+        // Get the colors of the current Office theme.
         const bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
         const bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
         const controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
         const controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
-        // Apply body background color to a CSS class.
-        $('.body').css('background-color', bodyBackgroundColor);
+        // Apply theme colors to a CSS class.
+        $("body").css("background-color", bodyBackgroundColor);
+
+        if (Office.context.officeTheme.isDarkTheme()) {
+            $("h1").css("color", controlForegroundColor);
+        }
     }
 Office.Document#getMaxResourceIndexAsync:member(2):
   - |-
@@ -3633,6 +3946,22 @@ Office.PlatformType:enum:
     const contextInfo = Office.context.diagnostics;
     const platformType: Office.PlatformType = contextInfo.platform;
     console.log("Platform: " + platformType);
+Office.RequirementSetSupport:interface:
+  - |-
+    const requirements : Office.RequirementSetSupport = Office.context.requirements; 
+    if (requirements.isSetSupported('Mailbox', '1.14')) {
+        // Code that uses APIs from the 'Mailbox 1.14' requirement set.
+    } else {
+        // An alternate path (such as a message to the user) when the requirement set isn't supported.
+    }
+Office.Ribbon#requestCreateControls:member(1):
+  - |-
+    // Registers a custom contextual tab with Office.
+    Office.onReady(async () => {
+        const contextualTabJSON = ` ... `; // Assign the JSON string.
+        const contextualTab = JSON.parse(contextualTabJSON);
+        await Office.ribbon.requestCreateControls(contextualTab);
+    });
 Office.Ribbon#requestUpdate:member(1):
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -3760,6 +4089,16 @@ Office.StartupBehavior:enum:
   - |-
     // Configure your add-in to load and start running when the document is opened.
     Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+Office.Tab:interface:
+  - |-
+    // Create an Office.Tab object (a contextual tab), set its visibility
+    // and add it to the ribbon.
+    async function showDataTab() {
+        // Create the Office.Tab object.
+        const myContextualTab = { id: "CtxTab1", visible: true };
+        const ribbonUpdater = { tabs: [ myContextualTab ] };
+        await Office.ribbon.requestUpdate(ribbonUpdater);
+    }
 Office.Tab#id:member:
   - |-
     // Office.Tab objects are properties of ribbon updater objects that are passed to the 
@@ -3949,6 +4288,24 @@ Office.TableData#rows:member:
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
     }
+Office.ThemeId:enum:
+  - |-
+    // The following example sets the color of a heading based on the current Office theme.
+    function setHeadingColor() {
+        // Identify the current Office theme in use.
+        const currentOfficeTheme = Office.context.officeTheme.themeId;
+
+        if (currentOfficeTheme === Office.ThemeId.Colorful) {
+            $("h1").css("color", "#1849ff");
+        }
+
+        ...
+    }
+Office.UI:interface:
+  - |-
+    // Get an Office.UI object and use it to open a dialog with a specified size. 
+    const uiContext = Office.context.ui;
+    uiContext.displayDialogAsync("https://www.contoso.com/myDialog.html", { height: 30, width: 20 });
 Office.UI#addHandlerAsync:member(2):
   - |-
     // The following example shows how to add an event handler for the DialogParentMessageReceived event.
@@ -3971,6 +4328,11 @@ Office.UI#addHandlerAsync:member(2):
             return;
         }
     }
+Office.UI#closeContainer:member(1):
+  - |-
+    // The following example shows how to open a browser window to a download page and then close the add-in task pane.
+    Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
+    Office.context.ui.closeContainer();
 Office.UI#displayDialogAsync:member(1):
   - |-
     // The following example shows how to open a dialog with a specified size. It also shows
@@ -4009,6 +4371,11 @@ Office.UI#messageParent:member(1):
         };
         Office.context.ui.messageParent(JSON.stringify(profileMessage));
     }
+Office.UI#openBrowserWindow:member(1):
+  - |-
+    // The following example shows how to open a browser window to a download page and then close the add-in task pane.
+    Office.context.ui.openBrowserWindow("https://www.contoso.com/download");
+    Office.context.ui.closeContainer();
 Office.Urls#javascriptRuntimeUrl:member:
   - |-
     // Get the value of the first parameter of the JavaScript runtime URL.
@@ -4070,6 +4437,29 @@ OfficeExtension.ClientObject#isNullObject:member:
         }
 
         await context.sync();
+    });
+OfficeExtension.ClientObject#context:member:
+  - |-
+    // *.run methods automatically create an OfficeExtension.ClientRequestContext
+    // object to work with the Office file.
+    await Excel.run(async (context: Excel.RequestContext) => {
+      // `context` is the Excel-specific extension of OfficeExtension.ClientRequestContext.
+      
+      const workbook = context.workbook;
+      // Interact with the Excel workbook...
+    });
+OfficeExtension.ClientResult:class:
+  - |-
+    await Excel.run(async (context) => {
+        // Get the count of worksheets in the Excel workbook.
+        const workbook = context.workbook;
+        let countResult: OfficeExtension.ClientResult<number> = workbook.worksheets.getCount();
+
+        // Sync to populate the countResult object.
+        await context.sync();
+
+        // Log the count using the value parameter.
+        console.log(countResult.value);
     });
 OfficeExtension.Error#traceMessages:member:
   - |-

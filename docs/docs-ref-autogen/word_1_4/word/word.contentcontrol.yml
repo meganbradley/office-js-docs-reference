@@ -337,9 +337,6 @@ properties:
     summary: >-
       Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is
       empty.
-
-
-      Note: The set operation for this property isn't supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -674,15 +671,14 @@ methods:
 
 
       await Word.run(async (context) => {
-        const contentControls = context.document.contentControls.getByTag("forTesting");
+        const contentControls: Word.ContentControlCollection = context.document.contentControls.getByTag("forTesting");
         contentControls.load("items");
         await context.sync();
 
         if (contentControls.items.length === 0) {
           console.log("There are no content controls in this document.");
         } else {
-          console.log("Control to be deleted:");
-          console.log(contentControls.items[0]);
+          console.log("Control to be deleted:", contentControls.items[0]);
           contentControls.items[0].delete(false);
           await context.sync();
         }
@@ -1552,7 +1548,7 @@ methods:
             await context.sync();
 
             for (let i = 0; i < evenContentControls.items.length; i++) {
-              // Change a few properties and append a paragraph
+              // Change a few properties and append a paragraph.
               evenContentControls.items[i].set({
                 color: "red",
                 title: "Odd ContentControl #" + (i + 1),
@@ -1562,7 +1558,7 @@ methods:
             }
 
             for (let j = 0; j < oddContentControls.items.length; j++) {
-              // Change a few properties and append a paragraph
+              // Change a few properties and append a paragraph.
               oddContentControls.items[j].set({
                 color: "green",
                 title: "Even ContentControl #" + (j + 1),
@@ -1633,8 +1629,8 @@ methods:
     fullName: toJSON()
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
-      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
-      passed to it.) Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that's
+      passed to it.) Whereas the original `Word.ContentControl` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Word.Interfaces.ContentControlData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
     remarks: ''

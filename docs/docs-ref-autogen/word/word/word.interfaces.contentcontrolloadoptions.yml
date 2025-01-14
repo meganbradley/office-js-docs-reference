@@ -6,7 +6,8 @@ fullName: Word.Interfaces.ContentControlLoadOptions
 summary: >-
   Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as
   containers for specific types of content. Individual content controls may contain contents such as images, tables, or
-  paragraphs of formatted text. Currently, only rich text, plain text, and checkbox content controls are supported.
+  paragraphs of formatted text. Currently, only rich text, plain text, checkbox, dropdown list, and combo box content
+  controls are supported.
 remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
 isPreview: false
 isDeprecated: false
@@ -17,8 +18,8 @@ properties:
     package: word!
     fullName: $all
     summary: >-
-      Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`<!-- -->) but not the
-      navigational properties (e.g.: `Range.format.fill.color`<!-- -->).
+      Specifying `$all` for the load options loads all the scalar properties (such as `Range.address`<!-- -->) but not
+      the navigational properties (such as `Range.format.fill.color`<!-- -->).
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -68,7 +69,7 @@ properties:
     uid: 'word!Word.Interfaces.ContentControlLoadOptions#checkboxContentControl:member'
     package: word!
     fullName: checkboxContentControl
-    summary: Specifies the checkbox-related data if the content control's type is 'CheckBox'. It's null otherwise.
+    summary: Gets the data of the content control when its type is 'CheckBox'. It's `null` otherwise.
     remarks: '\[ [API set: WordApi 1.7](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false
@@ -222,9 +223,6 @@ properties:
     summary: >-
       Specifies the placeholder text of the content control. Dimmed text will be displayed when the content control is
       empty.
-
-
-      Note: The set operation for this property isn't supported in Word on the web.
     remarks: '\[ [API set: WordApi 1.1](/javascript/api/requirement-sets/word/word-api-requirement-sets) \]'
     isPreview: false
     isDeprecated: false

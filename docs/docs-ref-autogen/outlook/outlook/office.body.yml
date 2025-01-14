@@ -26,6 +26,50 @@ remarks: >-
   **[Applicable Outlook
   mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!-- -->**:
   Compose or Read
+
+
+  #### Examples
+
+
+  ```TypeScript
+
+  // Link to full sample:
+  https://raw.githubusercontent.com/OfficeDev/office-js-snippets/prod/samples/outlook/20-item-body/add-inline-base64-image.yaml
+
+
+  const mailItem = Office.context.mailbox.item;
+
+  const base64String =
+    "iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAnUExURQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN0S+bUAAAAMdFJOUwAQIDBAUI+fr7/P7yEupu8AAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVGhD7dfLdoMwDEVR6Cspzf9/b20QYOthS5Zn0Z2kVdY6O2WULrFYLBaLxd5ur4mDZD14b8ogWS/dtxV+dmx9ysA2QUj9TQRWv5D7HyKwuIW9n0vc8tkpHP0W4BOg3wQ8wtlvA+PC1e8Ao8Ld7wFjQtHvAiNC2e8DdqHqKwCrUPc1gE1AfRVgEXBfB+gF0lcCWoH2tYBOYPpqQCNwfT3QF9i+AegJfN8CtAWhbwJagtS3AbIg9o2AJMh9M5C+SVGBvx6zAfmT0r+Bv8JMwP4kyFPir+cswF5KL3WLv14zAFBCLf56Tw9cparFX4upgaJUtPhrOS1QlY5W+vWTXrGgBFB/b72ev3/0igUdQPppP/nfowfKUUEFcP207y/yxKmgAYQ+PywoAFOfCH3A2MdCFzD3kdADBvq10AGG+pXQBgb7pdAEhvuF0AIc/VtoAK7+JciAs38KIuDugyAC/v4hiMCE/i7IwLRBsh68N2WQjMVisVgs9i5bln8LGScNcCrONQAAAABJRU5ErkJggg==";
+
+  // Get the current body of the message or appointment.
+
+  mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
+    if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
+      // Insert the Base64-encoded image to the beginning of the body.
+      const options = { isInline: true, asyncContext: bodyResult.value };
+      mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
+        if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
+          let body = attachResult.asyncContext;
+          body = body.replace("<p class=MsoNormal>", `<p class=MsoNormal><img src="cid:sample.png">`);
+
+          mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
+            if (setResult.status === Office.AsyncResultStatus.Succeeded) {
+              console.log("Inline Base64-encoded image added to the body.");
+            } else {
+              console.log(setResult.error.message);
+            }
+          });
+        } else {
+          console.log(attachResult.error.message);
+        }
+      });
+    } else {
+      console.log(bodyResult.error.message);
+    }
+  });
+
+  ```
 isPreview: false
 isDeprecated: false
 type: interface
@@ -43,26 +87,6 @@ methods:
       permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->. To learn more about append-on-send and its configuration, see [Implement append-on-send in your Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
-
-
-      **Important**: If the [on-send
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows) is
-      implemented with append-on-send, the following apply.
-
-
-      - If the user is running add-ins that implement the on-send feature using `ItemSend` in the manifest,
-      append-on-send runs before on-send functionality.
-
-
-      - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler, the
-      `appendOnSendAsync` call returns an error as this scenario isn't supported.
-
-
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-
-
-      **Note**: To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data`
-      parameter set to `null`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -75,6 +99,37 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
+      parameter.
+
+
+      **Important**:
+
+
+      - If the user is running add-ins that implement the [on-send
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins) using `ItemSend` in the
+      manifest, append-on-send runs before on-send functionality.
+
+
+      - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler, the
+      `appendOnSendAsync` call returns an error as this scenario isn't supported.
+
+
+      - To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to
+      `null`<!-- -->.
+
+
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `appendOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `appendOnSendAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -162,26 +217,6 @@ methods:
       permissions](https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions)<!--
       -->. To learn more about append-on-send and its configuration, see [Implement append-on-send in your Outlook
       add-in](https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send)<!-- -->.
-
-
-      **Important**: If the [on-send
-      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows) is
-      implemented with append-on-send, the following apply.
-
-
-      - If the user is running add-ins that implement the on-send feature using `ItemSend` in the manifest,
-      append-on-send runs before on-send functionality.
-
-
-      - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler, the
-      `appendOnSendAsync` call returns an error as this scenario isn't supported.
-
-
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
-
-
-      **Note**: To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data`
-      parameter set to `null`<!-- -->.
     remarks: >-
       \[ [API set: Mailbox 1.9](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -194,6 +229,37 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass its returned value to the `options.coercionType`
+      parameter.
+
+
+      **Important**:
+
+
+      - If the user is running add-ins that implement the [on-send
+      feature](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-on-send-addins) using `ItemSend` in the
+      manifest, append-on-send runs before on-send functionality.
+
+
+      - If your add-in implements the on-send feature and calls `appendOnSendAsync` in the `ItemSend` handler, the
+      `appendOnSendAsync` call returns an error as this scenario isn't supported.
+
+
+      - To clear data from a previous `appendOnSendAsync` call, you can call it again with the `data` parameter set to
+      `null`<!-- -->.
+
+
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `appendOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `appendOnSendAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -243,10 +309,18 @@ methods:
       -->**: Compose or Read
 
 
-      **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the
-      `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync`
-      method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering
-      engine.
+      **Important**:
+
+
+      - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
+      method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The
+      client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the body contains
+      formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
+      Otherwise, you may receive an unexpected value, such as an empty string.
 
 
       #### Examples
@@ -318,10 +392,18 @@ methods:
       -->**: Compose or Read
 
 
-      **Important**: When working with HTML-formatted bodies, it's important to note that the value returned by the
-      `Body.getAsync` method won't necessarily be the exact same value that was previously passed in the `Body.setAsync`
-      method. The client may modify the value passed to `setAsync` to make it render efficiently with its rendering
-      engine.
+      **Important**:
+
+
+      - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
+      method won't necessarily be the exact same value that was previously passed in the `Body.setAsync` method. The
+      client may modify the value passed to `setAsync` to make it render efficiently with its rendering engine.
+
+
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, if the body contains
+      formatted elements, such as tables, lists, and links, specify `Office.CoercionType.Html` in the `getAsync` call.
+      Otherwise, you may receive an unexpected value, such as an empty string.
 
 
       #### Examples
@@ -342,7 +424,7 @@ methods:
 
       mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
         if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
-          // Insert the Base64 image to the beginning of the body.
+          // Insert the Base64-encoded image to the beginning of the body.
           const options = { isInline: true, asyncContext: bodyResult.value };
           mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
             if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -351,7 +433,7 @@ methods:
 
               mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
                 if (setResult.status === Office.AsyncResultStatus.Succeeded) {
-                  console.log("Inline Base64 image added to the body.");
+                  console.log("Inline Base64-encoded image added to the body.");
                 } else {
                   console.log(setResult.error.message);
                 }
@@ -512,15 +594,21 @@ methods:
       -->**: Compose
 
 
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      parameter.
+
+
       **Important**:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
-      For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
-      appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
-      the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
-      the user selects something in the body of the mail item.
+      Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the cursor
+      position remains the same in the preexisting content of the body. For example, if the cursor was positioned at the
+      beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the
+      preexisting content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor
+      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
+      mail item.
 
 
       - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to
@@ -539,8 +627,15 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync`
+      method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -560,10 +655,10 @@ methods:
 
       /* This snippet adds text to the beginning of the message or appointment's body. 
         
-        When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'.
+        When prepending a link in HTML markup to the body, you can disable the online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
-      const text = $("#text-field").val();
+      const text = $("#text-field").val().toString();
 
 
       // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
@@ -633,15 +728,21 @@ methods:
       -->**: Compose
 
 
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      parameter.
+
+
       **Important**:
 
 
       - After the content is prepended, the position of the cursor depends on which client the add-in is running. In
-      Outlook on the web and on Windows, the cursor position remains the same in the pre-existing content of the body.
-      For example, if the cursor was positioned at the beginning of the body prior to the `prependAsync` call, it will
-      appear between the prepended content and the pre-existing content of the body after the call. In Outlook on Mac,
-      the cursor position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when
-      the user selects something in the body of the mail item.
+      Outlook on the web and on Windows
+      ([new](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627) and classic), the cursor
+      position remains the same in the preexisting content of the body. For example, if the cursor was positioned at the
+      beginning of the body prior to the `prependAsync` call, it will appear between the prepended content and the
+      preexisting content of the body after the call. In Outlook on Mac, the cursor position isn't preserved. The cursor
+      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
+      mail item.
 
 
       - When working with HTML-formatted bodies, it's important to note that the client may modify the value passed to
@@ -660,8 +761,15 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `prependAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `prependAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync`
+      method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -734,6 +842,17 @@ methods:
       text will be inserted into an HTML body.
 
 
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `prependOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `prependOnSendAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -755,7 +874,7 @@ methods:
 
       // This snippet prepends text to the beginning of the message or appointment's body once it's sent.
 
-      const text = $("#text-field").val();
+      const text = $("#text-field").val().toString();
 
 
       // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
@@ -857,6 +976,17 @@ methods:
       text will be inserted into an HTML body.
 
 
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `prependOnSendAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `prependOnSendAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
+
+
       **Errors**:
 
 
@@ -903,14 +1033,20 @@ methods:
       -->**: Compose
 
 
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      parameter.
+
+
       **Important**:
 
 
       - After the body is replaced with the specified content, the position of the cursor depends on which client the
-      add-in is running. In Outlook on Windows, the cursor appears at the beginning of the body of the mail item, while
-      in Outlook on the web, the cursor appears at the end of the body of the mail item. In Outlook on Mac, the cursor
-      position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user
-      selects something in the body of the mail item.
+      add-in is running. In classic Outlook on Windows, the cursor appears at the beginning of the body of the mail
+      item. In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the cursor appears at
+      the end of the body of the mail item. In Outlook on Mac, the cursor position isn't preserved. The cursor
+      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
+      mail item.
 
 
       - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
@@ -922,8 +1058,8 @@ methods:
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo**
-      command.
+      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
+      **Undo** command.
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -932,8 +1068,15 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `setAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -957,20 +1100,20 @@ methods:
 
       Office.context.mailbox.item.body.setAsync(
           '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          {coercionType: Office.CoercionType.Html},
-          callback);
-      Office.context.mailbox.item.body.setAsync(
-          "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
-          { coercionType: "html", asyncContext: "This is passed to the callback" },
-          function callback(result) {
+          { 
+              coercionType: Office.CoercionType.Html,
+              asyncContext: "This is passed to the callback"
+          },
+          (result) => {
               // Process the result.
-      });
+          }
+      );
 
 
       // The following is an example of the result parameter passed to the callback function.
 
       {
-          "value":null,
+          "value": null,
           "status": "succeeded",
           "asyncContext": "This is passed to the callback"
       }
@@ -992,7 +1135,7 @@ methods:
 
       mailItem.body.getAsync(Office.CoercionType.Html, (bodyResult) => {
         if (bodyResult.status === Office.AsyncResultStatus.Succeeded) {
-          // Insert the Base64 image to the beginning of the body.
+          // Insert the Base64-encoded image to the beginning of the body.
           const options = { isInline: true, asyncContext: bodyResult.value };
           mailItem.addFileAttachmentFromBase64Async(base64String, "sample.png", options, (attachResult) => {
             if (attachResult.status === Office.AsyncResultStatus.Succeeded) {
@@ -1001,7 +1144,7 @@ methods:
 
               mailItem.body.setAsync(body, { coercionType: Office.CoercionType.Html }, (setResult) => {
                 if (setResult.status === Office.AsyncResultStatus.Succeeded) {
-                  console.log("Inline Base64 image added to the body.");
+                  console.log("Inline Base64-encoded image added to the body.");
                 } else {
                   console.log(setResult.error.message);
                 }
@@ -1062,14 +1205,20 @@ methods:
       -->**: Compose
 
 
+      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
+      parameter.
+
+
       **Important**:
 
 
       - After the body is replaced with the specified content, the position of the cursor depends on which client the
-      add-in is running. In Outlook on Windows, the cursor appears at the beginning of the body of the mail item, while
-      in Outlook on the web, the cursor appears at the end of the body of the mail item. In Outlook on Mac, the cursor
-      position isn't preserved. The cursor disappears after the `prependAsync` call and only reappears when the user
-      selects something in the body of the mail item.
+      add-in is running. In classic Outlook on Windows, the cursor appears at the beginning of the body of the mail
+      item. In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, the cursor appears at
+      the end of the body of the mail item. In Outlook on Mac, the cursor position isn't preserved. The cursor
+      disappears after the `prependAsync` call and only reappears when the user selects something in the body of the
+      mail item.
 
 
       - When working with HTML-formatted bodies, it's important to note that the value returned by the `Body.getAsync`
@@ -1081,8 +1230,8 @@ methods:
       anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
 
 
-      - In Outlook on Windows and on Mac, the add-in user isn't able to revert this action with the **Undo**
-      command.
+      - In Outlook on Windows (classic) and on Mac, the add-in user isn't able to revert this action with the
+      **Undo** command.
 
 
       - In Outlook on Android and on iOS, this method isn't supported in the Message Compose mode. Only the Appointment
@@ -1091,8 +1240,15 @@ methods:
       devices](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-mobile-apis)<!-- -->.
 
 
-      **Recommended**: Call `getTypeAsync`<!-- -->, then pass the returned value to the `options.coercionType`
-      parameter.
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `setAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setAsync` method isn't supported on a message that's currently loaded using the `loadItemByIdAsync` method.
+      For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1132,13 +1288,6 @@ methods:
       if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
       or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
       insertion, the cursor is placed at the end of the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1151,6 +1300,27 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+
+
+      **Important**:
+
+
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1174,10 +1344,10 @@ methods:
 
       /* This snippet replaces selected text in a message or appointment's body with specified text.
         
-        If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>'.
+        If you want to use a link in HTML markup as a value of the setSelectedDataAsync call's data parameter, you can disable online link preview by setting the anchor tag's id attribute to "LPNoLP". For example, '<a id="LPNoLP" href="https://www.contoso.com">Click here!</a>'.
       */
 
-      const text = $("#text-field").val();
+      const text = $("#text-field").val().toString();
 
 
       // It's recommended to call getTypeAsync and pass its returned value to the options.coercionType parameter of the
@@ -1240,13 +1410,6 @@ methods:
       if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
       or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
       insertion, the cursor is placed at the end of the inserted content.
-
-
-      When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
-      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
-
-
-      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
     remarks: >-
       \[ [API set: Mailbox 1.1](/javascript/api/requirement-sets/outlook/outlook-api-requirement-sets) \]
 
@@ -1259,6 +1422,27 @@ methods:
       **[Applicable Outlook
       mode](https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points)<!--
       -->**: Compose
+
+
+      **Recommended**: Call `getTypeAsync` then pass the returned value to the `options.coercionType` parameter.
+
+
+      **Important**:
+
+
+      - When including links in HTML markup, you can disable online link preview by setting the `id` attribute on the
+      anchor (<!-- -->&lt;<!-- -->a<!-- -->&gt;<!-- -->) to "LPNoLP" (see the **Examples** section for a sample).
+
+
+      - SVG files aren't supported. Use JPG or PNG files instead.
+
+
+      - The `setSelectedDataAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setSelectedDataAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1310,7 +1494,9 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web, `setSignatureAsync` only works on messages.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, `setSignatureAsync`
+      only works on messages.
 
 
       - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a
@@ -1325,6 +1511,17 @@ methods:
       manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
       item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
       the form without making other edits, they won't be prompted to save changes.
+
+
+      - SVG files aren't supported in mail signatures. Use JPG or PNG files instead.
+
+
+      - The `setSignatureAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setSignatureAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
@@ -1444,7 +1641,9 @@ methods:
       **Important**:
 
 
-      - In Outlook on the web, `setSignatureAsync` only works on messages.
+      - In Outlook on the web and [new Outlook on
+      Windows](https://support.microsoft.com/office/656bb8d9-5a60-49b2-a98b-ba7822bc7627)<!-- -->, `setSignatureAsync`
+      only works on messages.
 
 
       - This method is supported in Message Compose on Outlook on Android and on iOS starting in Version 4.2352.0. For a
@@ -1459,6 +1658,17 @@ methods:
       manifest](https://learn.microsoft.com/office/dev/add-ins/outlook/autolaunch)<!-- -->. When the user composes a new
       item (including reply or forward), the signature is set but doesn't modify the form. This means if the user closes
       the form without making other edits, they won't be prompted to save changes.
+
+
+      - SVG files aren't supported in mail signatures. Use JPG or PNG files instead.
+
+
+      - The `setSignatureAsync` method doesn't support inline CSS. Use internal or external CSS instead.
+
+
+      - The `setSignatureAsync` method isn't supported on a message that's currently loaded using the
+      `loadItemByIdAsync` method. For more information, see [Activate your Outlook add-in on multiple
+      messages](https://learn.microsoft.com/office/dev/add-ins/outlook/item-multi-select)<!-- -->.
 
 
       **Errors**:
